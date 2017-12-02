@@ -21,7 +21,7 @@ const urls = [
   'https://www.bbc.com/news/technology-40762328'
 ]
 
-storiesOf('Card', module).add('small square', () => (
+storiesOf('small', module).add('square', () => (
   <div>
     {urls.map(url =>
       <MicrolinkCard
@@ -33,26 +33,26 @@ storiesOf('Card', module).add('small square', () => (
   </div>
 ))
 
-storiesOf('Card', module).add('small rounded', () => (
+storiesOf('small', module).add('small rounded', () => (
   <div>
     {urls.map(url =>
       <MicrolinkCard
         key={url}
         url={url}
         style={{marginBottom: '20px'}}
-        rounded/>
+        rounded />
     )}
   </div>
 ))
 
-storiesOf('Card', module).add('small rounded custom', () => (
+storiesOf('small', module).add('rounded custom', () => (
   <div>
     {urls.map(url =>
       <MicrolinkCard
         key={url}
         url={url}
         style={{marginBottom: '20px'}}
-        rounded={'4px'}/>
+        rounded={'4px'} />
     )}
   </div>
 ))
