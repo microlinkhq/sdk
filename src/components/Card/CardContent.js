@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import styled from 'styled-components'
-import humanizeUrl from 'humanize-url'
+import extractDomain from 'extract-domain'
 
 type ContentProps = {
   title?: string,
@@ -17,7 +17,6 @@ const ContentWrap = styled.div`
 
 const Title = styled.h2`
   font-size: 16px;
-  text-transform: uppercase;
   margin: 0 0 8px;
   white-space: nowrap;
   overflow: hidden;
@@ -46,14 +45,12 @@ const Url = styled.span`
   display: inline-block;
 `
 
-const CardContent = ({ title, description, url }: ContentProps) => {
-  return (
-    <ContentWrap>
-      <Title title={title}>{title}</Title>
-      <Text>{description}</Text>
-      <Url>{humanizeUrl(url)}</Url>
-    </ContentWrap>
-  )
-}
+const CardContent = ({ title, description, url, logo }: ContentProps) => (
+  <ContentWrap>
+    <Title title={title}>{title}</Title>
+    <Text>{description}</Text>
+    <Url>{extractDomain(url)}</Url>
+  </ContentWrap>
+)
 
 export default CardContent
