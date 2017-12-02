@@ -86,3 +86,17 @@ storiesOf('small', module).add('height custom', () => (
     )}
   </div>
 ))
+
+storiesOf('small', module).add('contrast', () => (
+  <div>
+    {urls.map(url =>
+      <MicrolinkCard
+        key={url}
+        url={url}
+        style={{marginBottom: '20px'}}
+        rounded
+        contrast
+        />
+    )}
+  </div>
+))
