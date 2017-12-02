@@ -40,7 +40,6 @@ const Url = styled.span`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #b3b6bc;
   margin-top: 10px;
   display: inline-block;
 `
