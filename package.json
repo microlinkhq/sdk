@@ -107,9 +107,6 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
     "testEnvironment": "node",
     "testMatch": [
       "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}",
