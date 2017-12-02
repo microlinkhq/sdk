@@ -7,6 +7,8 @@ import CardContent from './CardContent'
 
 const API_ENDPOINT = 'https://api.microlink.io'
 
+const getUrlPath = data => typeof data === 'object' ? data.url : data
+
 type CardProps = {
   url: string
 }
@@ -33,20 +35,20 @@ const MicrolinkCard = class extends Component <CardProps, State> {
     fetch(endpoint)
       .then(res => res.json())
       .then(res => {
-        const { title, description, url, logo: image } = res.data
-        this.setState({ title, description, url, image, loaded: true })
+        const { title, description, url, image, logo } = res.data
+        this.setState({ title, description, url, image, logo, loaded: true })
       })
   }
 
   render() {
-    const { title, description, image, url, loaded } = this.state
-    const { target, rel, ...props } = this.props
-    const imagePath = typeof image === 'object' ? image.url : image
-    
+    const { title, description, image, url, logo, loaded } = this.state
+    const imagePath = getUrlPath(image)
+    const logoPath = getUrlPath(logo)
+        
     return loaded && (
-      <CardWrap href={url} title={title} target={target} rel={rel} {...props}>
+      <CardWrap href={url} title={title} {...this.props}>
         {image && <CardImage image={imagePath} />}
-        <CardContent title={title} description={description} url={url} />
+        <CardContent title={title} description={description} url={url} logo={logoPath} />
       </CardWrap>
     )
   }
@@ -54,6 +56,7 @@ const MicrolinkCard = class extends Component <CardProps, State> {
 
 MicrolinkCard.defaultProps = {
   rel: 'noopener noreferrer',
+  rounded: false,
   target: '_blank',
   description: '',
   image: '',
