@@ -1,6 +1,7 @@
 // @flow
 import React from 'react'
 import styled from 'styled-components'
+import humanizeUrl from 'humanize-url'
 
 type ContentProps = {
   title?: string,
@@ -50,7 +51,7 @@ const CardContent = ({ title, description, url }: ContentProps) => {
     <ContentWrap>
       <Title title={title}>{title}</Title>
       <Text>{description}</Text>
-      <Url>{url}</Url>
+      <Url>{humanizeUrl(url)}</Url>
     </ContentWrap>
   )
 }
