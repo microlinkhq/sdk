@@ -64,6 +64,8 @@
     "babel-preset-stage-0": "latest",
     "eslint-plugin-flowtype": "latest",
     "flow-bin": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
     "prettier": "latest",
     "standard": "latest",
     "standard-markdown": "latest"
@@ -73,8 +75,14 @@
     "build": "node scripts/build.js",
     "lib": "babel src/ -d lib/",
     "test": "node scripts/test.js --env=jsdom",
+    "prelint": "npm run pretty",
+    "precommit": "lint-staged",
+    "precommit-lint": "prettier-standard",
+    "lint": "standard-markdown && standard",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard {src,config,build,stories}/**/*.js",
     "prepublish": "yarn run build"
   },
   "jest": {
@@ -118,6 +126,12 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "lint-staged": {
+    "*.js": [
+      "precommit-lint",
+      "git add"
+    ]
   },
   "standard": {
     "parser": "babel-eslint",
