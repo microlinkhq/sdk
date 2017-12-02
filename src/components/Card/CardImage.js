@@ -10,8 +10,8 @@ type CardImageProps = {
 const ImageSquare = styled.div`
   display: block;
   flex: 0 0 132px;
-  background: ${props => (props.image ? `url(${props.image})` : ``)} no-repeat
-    center center / cover;
+  background: #e1e8ed ${props => (props.image ? `url(${props.image})` : ``)}
+    no-repeat center center / cover;
 
   &:before {
     content: '';

@@ -6,7 +6,8 @@ import extractDomain from 'extract-domain'
 type ContentProps = {
   title?: string,
   description?: string,
-  url?: string
+  url?: string,
+  empty?: boolean
 }
 
 const ContentWrap = styled.div`
@@ -45,11 +46,49 @@ const Url = styled.span`
   display: inline-block;
 `
 
-const CardContent = ({ title, description, url, logo }: ContentProps) => (
+const EmptyContent = styled.div`
+  opacity: 0.5;
+`
+
+const EmptyTitle = styled.span`
+  height: 16px;
+  width: 80%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 8px;
+`
+const EmptyDescription = styled.span`
+  height: 54px;
+  width: 100%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+`
+const EmptyLink = styled.span`
+  height: 12px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+`
+
+const CardContent = ({
+  title,
+  description,
+  url,
+  logo,
+  empty = false
+}: ContentProps) => (
   <ContentWrap>
-    <Title title={title}>{title}</Title>
-    <Text>{description}</Text>
-    <Url>{extractDomain(url)}</Url>
+    {empty && (
+      <EmptyContent>
+        <EmptyTitle />
+        <EmptyDescription />
+        <EmptyLink />
+      </EmptyContent>
+    )}
+    {title && <Title title={title}>{title}</Title>}
+    {description && <Text>{description}</Text>}
+    {url && <Url>{extractDomain(url)}</Url>}
   </ContentWrap>
 )
 
