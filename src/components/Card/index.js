@@ -24,14 +24,14 @@ type State = {
 const MicrolinkCard = class extends Component <CardProps, State> {
   state = { loaded: false }
 
-  constructor(props: CardProps) {
+  constructor (props: CardProps) {
     super()
   }
 
-  componentWillMount() {
+  componentWillMount () {
     const {url} = this.props
     const endpoint = `${API_ENDPOINT}/?url=${url}`
-    
+
     fetch(endpoint)
       .then(res => res.json())
       .then(res => {
@@ -40,11 +40,11 @@ const MicrolinkCard = class extends Component <CardProps, State> {
       })
   }
 
-  render() {
+  render () {
     const { title, description, image, url, logo, loaded } = this.state
     const imagePath = getUrlPath(image)
     const logoPath = getUrlPath(logo)
-        
+
     return loaded && (
       <CardWrap href={url} title={title} {...this.props}>
         {image && <CardImage image={imagePath} />}
@@ -57,11 +57,7 @@ const MicrolinkCard = class extends Component <CardProps, State> {
 MicrolinkCard.defaultProps = {
   rel: 'noopener noreferrer',
   rounded: false,
-  target: '_blank',
-  description: '',
-  image: '',
-  url: '',
-  title: '',
-};
+  target: '_blank'
+}
 
 export default MicrolinkCard

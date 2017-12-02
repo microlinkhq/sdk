@@ -40,7 +40,8 @@ storiesOf('small', module).add('small rounded', () => (
         key={url}
         url={url}
         style={{marginBottom: '20px'}}
-        rounded />
+        rounded
+        />
     )}
   </div>
 ))
@@ -52,7 +53,36 @@ storiesOf('small', module).add('rounded custom', () => (
         key={url}
         url={url}
         style={{marginBottom: '20px'}}
-        rounded={'4px'} />
+        rounded={'4px'}
+        />
+    )}
+  </div>
+))
+
+storiesOf('small', module).add('width custom', () => (
+  <div>
+    {urls.map(url =>
+      <MicrolinkCard
+        key={url}
+        url={url}
+        style={{marginBottom: '20px'}}
+        rounded={'4px'}
+        height={'150px'}
+        />
+    )}
+  </div>
+))
+
+storiesOf('small', module).add('height custom', () => (
+  <div>
+    {urls.map(url =>
+      <MicrolinkCard
+        key={url}
+        url={url}
+        style={{marginBottom: '20px'}}
+        rounded={'4px'}
+        width={'550px'}
+        />
     )}
   </div>
 ))
