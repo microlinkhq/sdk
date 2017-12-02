@@ -33,7 +33,7 @@ storiesOf('small', module).add('square', () => (
   </div>
 ))
 
-storiesOf('small', module).add('small rounded', () => (
+storiesOf('small', module).add('rounded', () => (
   <div>
     {urls.map(url =>
       <MicrolinkCard
