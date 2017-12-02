@@ -40,8 +40,8 @@ export default class extends Component <CardProps, State> {
     fetch(url)
       .then(res => res.json())
       .then(res => {
-        const { title, description, url, image, logo } = res.data
-        this.setState({ title, description, url, image, logo, loaded: true })
+        const { title, description, url, image } = res.data
+        this.setState({ title, description, url, image, loaded: true })
       })
   }
 

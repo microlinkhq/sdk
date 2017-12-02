@@ -7,7 +7,8 @@ const DEFAULT = {
   width: '500px',
   height: '125px',
   background: '#fff',
-  color: '#181919'
+  color: '#181919',
+  borderColor: '#E1E8ED'
 }
 
 const get = createGet(DEFAULT)
@@ -23,7 +24,9 @@ const CardWrap = styled.a`
   background-color: ${props => get(props, 'image.background_color', 'background')};
   max-width: ${props => get(props, 'width')};
   border-radius: ${props => props.rounded && getBoolean(props, 'rounded')};
-  border: 1px solid #E1E8ED;
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${props => get(props, 'image.color', 'borderColor')};
   overflow: hidden;
   display: flex;
   height: ${props => get(props, 'height')};
