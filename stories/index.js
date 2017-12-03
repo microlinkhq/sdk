@@ -29,7 +29,8 @@ const getRandomSize = (sizes: Array<number> = [
   700,
   800
 ]): string => {
-  return `${sizes[Math.floor(Math.random() * (sizes.length - 1))]}px`
+  const randomNumber: number = Math.floor(Math.random() * sizes.length)
+  return `${sizes[randomNumber]}px`
 }
 
 storiesOf('Card/Normal', module)
@@ -63,7 +64,7 @@ storiesOf('Card/Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded={'4px'}
+          rounded={getRandomSize([6, 10, 20, 30, 50, 9999])}
           />
       )}
     </div>
@@ -75,7 +76,6 @@ storiesOf('Card/Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded={'4px'}
           width={getRandomSize()}
           />
       )}
@@ -88,7 +88,6 @@ storiesOf('Card/Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded={'4px'}
           height={getRandomSize([75, 125, 150, 175, 200, 250])}
           />
       )}
@@ -101,7 +100,6 @@ storiesOf('Card/Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded
           contrast
           />
       )}
@@ -130,6 +128,19 @@ storiesOf('Card/Large', module)
           style={{marginBottom: '20px'}}
           size='large'
           rounded
+          />
+      )}
+    </div>
+  ))
+  .add('with custom rounded prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          rounded={getRandomSize([6, 10, 20, 30])}
           />
       )}
     </div>
