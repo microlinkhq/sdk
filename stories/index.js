@@ -4,7 +4,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import 'unfetch/polyfill'
 
-import { MicrolinkCard } from '../src/'
+import { MicrolinkCard } from '../dist'
 
 const urls = [
   'https://twitter.com/stripe/status/750230305399681024',
