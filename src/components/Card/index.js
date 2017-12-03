@@ -11,7 +11,8 @@ type CardProps = {
   contrast?: boolean,
   endpoint?: string,
   url: string,
-  size?: CardSizes
+  endpoint: string,
+  large?: boolean
 }
 
 type State = {

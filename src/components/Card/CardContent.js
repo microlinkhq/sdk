@@ -7,7 +7,8 @@ type ContentProps = {
   title?: string,
   description?: string,
   url?: string,
-  large?: boolean
+  large?: boolean,
+  className?: string
 }
 
 const CardContent = styled.div`
