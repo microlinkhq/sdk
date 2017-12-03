@@ -13,9 +13,9 @@ const DEFAULT = {
 
 const get = createGet(DEFAULT)
 
-const getBoolean = (props, name, defaultName) => {
+const getBorderRadius = (props, name, defaultName) => {
   const value = get(props, name)
-  return value === true ? '.42857em' : value
+  return value === true ? DEFAULT.rounded : value
 }
 
 const CardWrap = styled.a`
@@ -23,7 +23,7 @@ const CardWrap = styled.a`
   color: ${props => get(props, 'image.color', 'color')};;
   background-color: ${props => get(props, 'image.background_color', 'background')};
   max-width: ${props => get(props, 'width')};
-  border-radius: ${props => props.rounded && getBoolean(props, 'rounded')};
+  border-radius: ${props => props.rounded && getBorderRadius(props, 'rounded')};
   border-width: 1px;
   border-style: solid;
   border-color: ${props => get(props, 'image.color', 'borderColor')};
