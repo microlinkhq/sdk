@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react'
-import 'whatwg-fetch'
 import getValue from 'get-value'
+import fetch from 'unfetch'
 
 import CardWrap from './CardWrap'
 import CardImage from './CardImage'
