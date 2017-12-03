@@ -129,6 +129,7 @@
     ],
     "parser": "babel-eslint",
     "plugins": [
+      "flowtype",
       "jsx-a11y"
     ]
   }
