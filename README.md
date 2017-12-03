@@ -1,6 +1,4 @@
-<p style="margin:0 auto 30px;max-width:600px">
 ![react-microlink](https://user-images.githubusercontent.com/5795227/33524600-521efb8e-d820-11e7-8e07-c11e794af466.png)
-</p>
 
 > A React component for displaying [microlink.io](https://microlink.io) cards
 
