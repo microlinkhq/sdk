@@ -52,7 +52,7 @@
   "devDependencies": {
     "@storybook/react": "latest",
     "babel-cli": "latest",
-    "babel-eslint": "latest",
+    "babel-eslint": "7.2.1",
     "eslint-plugin-flowtype": "latest",
     "flow-bin": "latest",
     "husky": "latest",
