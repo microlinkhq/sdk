@@ -11,7 +11,7 @@ type ContentProps = {
 
 export const ContentWrap = styled.div`
   flex: 1;
-  padding: 15px;
+  padding: 10px 15px;
   min-width: 0;
 `
 
