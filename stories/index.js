@@ -100,3 +100,17 @@ storiesOf('small', module).add('contrast', () => (
     )}
   </div>
 ))
+
+storiesOf('small', module).add('custom style', () => (
+  <div>
+    {urls.map(url =>
+      <MicrolinkCard
+        key={url}
+        url={url}
+        style={{marginBottom: '20px'}}
+        rounded
+        fontFamily='Nitti, "Microsoft YaHei", 微软雅黑, monospace'
+        />
+    )}
+  </div>
+))

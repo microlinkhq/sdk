@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from 'react'
-import getValue from 'get-value'
 
 import CardWrap from './CardWrap'
 import CardImage from './CardImage'
@@ -8,7 +7,7 @@ import CardContent from './CardContent'
 
 const API_ENDPOINT = 'https://api.microlink.io'
 
-const getUrlPath = data => getValue(data, 'url') || data
+const getUrlPath = data => typeof data === 'object' ? data.url : data
 
 type CardProps = {
   url: string
@@ -25,8 +24,15 @@ type State = {
 export default class extends Component <CardProps, State> {
   static defaultProps = {
     rel: 'noopener noreferrer',
+    fontFamily: `'Helvetica Neue', Helvetica, Arial, sans-serif`,
     rounded: false,
-    target: '_blank'
+    target: '_blank',
+    width: '500px',
+    height: '125px',
+    background: '#fff',
+    color: '#181919',
+    borderColor: '#E1E8ED',
+    transition: 'opacity .15s ease-in'
   }
 
   state = { loaded: false }
