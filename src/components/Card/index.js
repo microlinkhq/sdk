@@ -5,8 +5,6 @@ import CardWrap from './CardWrap'
 import CardImage from './CardImage'
 import CardContent from './CardContent'
 
-const API_ENDPOINT = 'https://api.microlink.io'
-
 const getUrlPath = data => typeof data === 'object' ? data.url : data
 
 type CardProps = {
@@ -35,7 +33,8 @@ export default class extends Component<CardProps, State> {
     background: '#fff',
     color: '#181919',
     borderColor: '#E1E8ED',
-    transition: 'opacity .15s ease-in'
+    transition: 'opacity .15s ease-in',
+    endpoint: 'https://api.microlink.io'
   }
 
   state: State = { loaded: false }
@@ -44,7 +43,7 @@ export default class extends Component<CardProps, State> {
     const {
       url: targetUrl,
       contrast,
-      endpoint: api = API_ENDPOINT
+      endpoint: api
     } = this.props
 
     let url = `${api}/?url=${targetUrl}`
