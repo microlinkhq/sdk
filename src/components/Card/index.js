@@ -15,11 +15,11 @@ type CardProps = {
   contrast?: boolean,
   endpoint: string,
   key?: Key,
-  rel?: string,
+  rel: string,
   rounded?: boolean | string,
   size?: CardSizes,
   style?: {[string]: mixed},
-  target?: string,
+  target: string,
   url: string
 }
 
