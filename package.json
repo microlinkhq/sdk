@@ -127,8 +127,7 @@
   },
   "standard": {
     "globals": [
-      "React",
-      "fetch"
+      "React"
     ],
     "parser": "babel-eslint",
     "plugins": [
