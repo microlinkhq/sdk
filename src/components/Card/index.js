@@ -81,5 +81,3 @@ export default class extends Component<CardProps, State> {
     )
   }
 }
-
-export default MicrolinkCard
