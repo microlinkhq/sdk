@@ -11,10 +11,13 @@ const API_ENDPOINT = 'https://api.microlink.io'
 
 const getUrlPath = data => getValue(data, 'url') || data
 
+type CardSizes = 'large'
+
 type CardProps = {
   contrast?: boolean,
   endpoint?: string,
-  url: string
+  url: string,
+  size?: CardSizes
 }
 
 type State = {
@@ -54,11 +57,13 @@ export default class extends Component<CardProps, State> {
 
   render () {
     const { title, description, image, url, loaded } = this.state
+    const { size } = this.props
     const imagePath = getUrlPath(image)
+    const largeClass = size === 'large' ? '-MicrolinkCard-large' : ''
 
     return (
       loaded && (
-        <CardWrap href={url} title={title} {...this.props} {...this.state}>
+        <CardWrap href={url} title={title} {...this.props} {...this.state} className={largeClass}>
           {image && <CardImage image={imagePath} />}
           <CardContent
             title={title}

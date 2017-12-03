@@ -1,3 +1,4 @@
+// @flow
 import styled from 'styled-components'
 
 import createGet from '../../helpers/get'
@@ -11,7 +12,12 @@ const DEFAULT = {
   borderColor: '#E1E8ED'
 }
 
+const DEFAULT_LARGE = {
+  height: 'auto'
+}
+
 const get = createGet(DEFAULT)
+const getLarge = createGet(DEFAULT_LARGE)
 
 const getBorderRadius = (props, name, defaultName) => {
   const value = get(props, name)
@@ -29,10 +35,15 @@ const CardWrap = styled.a`
   border-color: ${props => get(props, 'image.color', 'borderColor')};
   overflow: hidden;
   display: flex;
-  height: ${props => get(props, 'height')};
+  height: ${props => get(props, 'height', 'height')};
   text-decoration: none;
   opacity:1;
   transition:opacity .15s ease-in;
+
+  &.-MicrolinkCard-large {
+    flex-direction: column;
+    height: ${props => getLarge(props, 'height', 'height')};
+  }
 
   &:hover {
     opacity:.5;
@@ -40,7 +51,7 @@ const CardWrap = styled.a`
   }
 
   &:active {
-    opacity:.8
+    opacity:.8;
     transition:opacity .15s ease-out;
   }
 `

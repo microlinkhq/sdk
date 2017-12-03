@@ -18,6 +18,12 @@ const ImageSquare = styled.div`
     padding-bottom: 100%;
     display: block;
   }
+
+  .-MicrolinkCard-large > & {
+    &:before {
+      padding-bottom: calc(80% - 125px);
+    }
+  }
 `
 
 const CardImage = ({ className, image }: CardImageProps) => (
