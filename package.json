@@ -54,6 +54,7 @@
     "@storybook/react": "latest",
     "babel-cli": "latest",
     "babel-eslint": "7.2.1",
+    "bundlesize": "latest",
     "eslint-plugin-flowtype": "latest",
     "flow-bin": "latest",
     "husky": "latest",
