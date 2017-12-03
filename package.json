@@ -79,7 +79,7 @@
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "start": "node scripts/start.js",
     "storybook": "start-storybook -p 6006",
-    "test": "exit 0"
+    "test": "bundlesize"
   },
   "license": "MIT",
   "babel": {
