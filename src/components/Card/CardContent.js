@@ -3,16 +3,24 @@ import React from 'react'
 import styled from 'styled-components'
 import extractDomain from 'extract-domain'
 
+import type { CardSizes } from './index'
+import { CardContentLarge } from './CardLarge'
+
 type ContentProps = {
+  cardSize?: CardSizes,
   title?: string,
   description?: string,
-  url?: string
+  url?: string,
+  className?: string
 }
 
 export const ContentWrap = styled.div`
   flex: 1;
   padding: 10px 15px;
   min-width: 0;
+  box-sizing: border-box;
+
+  ${props => props.cardSize === 'large' && CardContentLarge}
 `
 
 const Title = styled.h2`
@@ -24,7 +32,7 @@ const Title = styled.h2`
   max-width: 95%;
 `
 
-const Text = styled.p`
+const Description = styled.p`
   font-size: 14px;
   margin: 0;
   line-height: 18px;
@@ -44,12 +52,10 @@ const Url = styled.span`
   display: inline-block;
 `
 
-const CardContent = ({ title, description, url }: ContentProps) => (
-  <ContentWrap>
-    {title && <Title title={title}>{title}</Title>}
-    {description && <Text>{description}</Text>}
-    {url && <Url>{extractDomain(url)}</Url>}
+export default ({ title, description, url, cardSize, className }: ContentProps) => (
+  <ContentWrap className={className} cardSize={cardSize}>
+    {title && <Title className='microlink_card__content_title' title={title}>{title}</Title>}
+    {description && <Description className='microlink_card__content_description'>{description}</Description>}
+    {url && <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>}
   </ContentWrap>
 )
-
-export default CardContent

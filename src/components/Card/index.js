@@ -1,47 +1,50 @@
 // @flow
 import React, { Component } from 'react'
+import type { Key } from 'react'
 
 import CardWrap from './CardWrap'
 import CardImage from './CardImage'
 import CardContent from './CardContent'
 import CardEmptyState from './CardEmptyState'
 
-const API_ENDPOINT = 'https://api.microlink.io'
+import { getUrlPath } from '../utils'
 
-const getUrlPath = (data: Object | string): string => {
-  return typeof data === 'object' ? data.url : data
-}
+export type CardSizes = 'large' | 'small'
 
 type CardProps = {
+  className?: string,
   contrast?: boolean,
-  endpoint?: string,
+  endpoint: string,
+  key?: Key,
+  rel: string,
+  rounded?: boolean | string,
+  size?: CardSizes,
+  style?: {[string]: mixed},
+  target: string,
   url: string
 }
 
 type State = {
+  backgroundColor?: string,
+  color?: string,
+  description?: string,
+  image?: string,
   loading: boolean,
   title?: string,
-  description?: string,
-  image?: Object | string,
-  logo?: Object | string,
   url?: string
 }
 
 export default class extends Component<CardProps, State> {
   static defaultProps = {
+    endpoint: 'https://api.microlink.io',
     rel: 'noopener noreferrer',
-    rounded: false,
     target: '_blank'
   }
 
   state: State = { loading: false }
 
   componentWillMount () {
-    const {
-      url: targetUrl,
-      contrast,
-      endpoint: api = API_ENDPOINT
-    } = this.props
+    const { url: targetUrl, contrast, endpoint: api } = this.props
 
     let url = `${api}/?url=${targetUrl}`
     if (contrast) url = `${url}&palette`
@@ -51,31 +54,50 @@ export default class extends Component<CardProps, State> {
         .then(res => res.json())
         .then(res => {
           const { title, description, url, image } = res.data
-          this.setState({ title, description, url, image, loading: false })
+          const {color, background_color: backgroundColor} = image
+          const imagePath: string = getUrlPath(image)
+          this.setState({ title, description, url, color, backgroundColor, image: imagePath, loading: false })
         })
     )
   }
 
   render () {
-    const { title, description, image, url, loading } = this.state
+    const { title, description, color, backgroundColor, url, image, loading } = this.state
+    const { size, className, rounded, style, contrast } = this.props
+    const cardClassName = `microlink_card ${typeof className === 'string' ? className : ``}`
     let loadedView = []
 
     if (!loading) {
       if (image) {
-        const imagePath: string = getUrlPath(image)
-        loadedView.push(<CardImage image={imagePath} />)
+        loadedView.push(<CardImage
+          className='microlink_card__image'
+          image={image}
+          cardSize={size}
+        />)
       }
       loadedView.push(
         <CardContent
+          className='microlink_card__content'
           title={title}
           description={description}
           url={url}
+          cardSize={size}
         />
       )
     }
 
     return (
-      <CardWrap href={url} title={title} {...this.props} {...this.state}>
+      <CardWrap
+        className={cardClassName}
+        href={url}
+        title={title}
+        cardSize={size}
+        contrast={contrast}
+        color={color}
+        backgroundColor={backgroundColor}
+        rounded={rounded}
+        style={style}
+      >
         {!loading ? loadedView : <CardEmptyState />}
       </CardWrap>
     )
