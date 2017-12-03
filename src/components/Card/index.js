@@ -10,6 +10,8 @@ const API_ENDPOINT = 'https://api.microlink.io'
 const getUrlPath = data => typeof data === 'object' ? data.url : data
 
 type CardProps = {
+  contrast?: boolean,
+  endpoint?: string,
   url: string
 }
 
@@ -21,7 +23,7 @@ type State = {
   url?: string
 }
 
-export default class extends Component <CardProps, State> {
+export default class extends Component<CardProps, State> {
   static defaultProps = {
     rel: 'noopener noreferrer',
     fontFamily: `'Helvetica Neue', Helvetica, Arial, sans-serif`,
@@ -35,10 +37,14 @@ export default class extends Component <CardProps, State> {
     transition: 'opacity .15s ease-in'
   }
 
-  state = { loaded: false }
+  state: State = { loaded: false }
 
   componentWillMount () {
-    const {url: targetUrl, contrast, endpoint: api = API_ENDPOINT} = this.props
+    const {
+      url: targetUrl,
+      contrast,
+      endpoint: api = API_ENDPOINT
+    } = this.props
 
     let url = `${api}/?url=${targetUrl}`
     if (contrast) url = `${url}&palette`
@@ -52,20 +58,20 @@ export default class extends Component <CardProps, State> {
   }
 
   render () {
-    const { title, description, image, url, logo, loaded } = this.state
+    const { title, description, image, url, loaded } = this.state
     const imagePath = getUrlPath(image)
-    const logoPath = getUrlPath(logo)
 
-    return loaded && (
-      <CardWrap href={url} title={title} {...this.props} {...this.state}>
-        {image && <CardImage image={imagePath} />}
-        <CardContent
-          title={title}
-          description={description}
-          url={url}
-          logo={logoPath}
-        />
-      </CardWrap>
+    return (
+      loaded && (
+        <CardWrap href={url} title={title} {...this.props} {...this.state}>
+          {image && <CardImage image={imagePath} />}
+          <CardContent
+            title={title}
+            description={description}
+            url={url}
+          />
+        </CardWrap>
+      )
     )
   }
 }
