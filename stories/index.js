@@ -96,3 +96,56 @@ storiesOf('Card/Normal', module)
       )}
     </div>
   ))
+
+storiesOf('Card/Large', module)
+  .add('default', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          />
+      )}
+    </div>
+  ))
+  .add('with rounded prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          rounded
+          />
+      )}
+    </div>
+  ))
+  .add('with custom width', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          width='700px'
+          />
+      )}
+    </div>
+  ))
+  .add('with custom height', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          height='600px'
+          />
+      )}
+    </div>
+  ))
