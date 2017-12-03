@@ -1,27 +1,21 @@
 // @flow
-import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { CardImageLarge } from './CardLarge'
 
-type CardImageProps = {
-  className?: string,
-  image?: string
-}
-
-const ImageSquare = styled.div`
+export default styled.div`
   display: block;
   flex: 0 0 125px;
-  background: ${props => (props.image ? `url(${props.image})` : ``)} no-repeat
-    center center / cover;
+  background: no-repeat center center / cover;
 
-  &:before {
+  ${({ image }) => image && css`
+    background-image: url(${image});
+  `};
+
+  &::before {
     content: '';
     padding-bottom: 100%;
     display: block;
   }
+
+  ${props => props.cardSize === 'large' && CardImageLarge}
 `
-
-const CardImage = ({ className, image }: CardImageProps) => (
-  <ImageSquare className={className} image={image} />
-)
-
-export default CardImage

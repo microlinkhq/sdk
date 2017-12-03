@@ -22,7 +22,19 @@ const urls = [
   'https://www.bbc.com/news/technology-40762328'
 ]
 
-storiesOf('Card/Normal', module)
+const getRandomSize = (sizes: Array<number> = [
+  300,
+  400,
+  500,
+  600,
+  700,
+  800
+]): string => {
+  const randomNumber: number = Math.floor(Math.random() * sizes.length)
+  return `${sizes[randomNumber]}px`
+}
+
+storiesOf('Normal', module)
   .add('default', () => (
     <div>
       {urls.map(url =>
@@ -53,7 +65,7 @@ storiesOf('Card/Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded={'4px'}
+          rounded={getRandomSize([6, 10, 20, 30, 50, 9999])}
           />
       )}
     </div>
@@ -64,9 +76,7 @@ storiesOf('Card/Normal', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
-          rounded={'4px'}
-          width={'550px'}
+          style={{marginBottom: '20px', width: getRandomSize()}}
           />
       )}
     </div>
@@ -77,9 +87,7 @@ storiesOf('Card/Normal', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
-          rounded={'4px'}
-          height={'150px'}
+          style={{marginBottom: '20px', height: getRandomSize([75, 125, 150, 175, 200, 250])}}
           />
       )}
     </div>
@@ -91,7 +99,6 @@ storiesOf('Card/Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded
           contrast
           />
       )}
@@ -103,9 +110,98 @@ storiesOf('Card/Normal', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
+          style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
           rounded
-          fontFamily='Nitti, "Microsoft YaHei", 微软雅黑, monospace'
+          />
+      )}
+    </div>
+  ))
+
+storiesOf('Large', module)
+  .add('default', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          />
+      )}
+    </div>
+  ))
+  .add('with rounded prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          rounded
+          />
+      )}
+    </div>
+  ))
+  .add('with custom rounded prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          rounded={getRandomSize([6, 10, 20, 30])}
+          />
+      )}
+    </div>
+  ))
+  .add('with custom width', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px', width: getRandomSize()}}
+          size='large'
+          />
+      )}
+    </div>
+  ))
+  .add('with custom height', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px', height: getRandomSize()}}
+          size='large'
+          />
+      )}
+    </div>
+  ))
+  .add('with contrast prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          contrast
+          />
+      )}
+    </div>
+  ))
+  .add('with custom style', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
+          rounded
+          size='large'
           />
       )}
     </div>
