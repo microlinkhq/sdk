@@ -97,3 +97,16 @@ storiesOf('Card/Normal', module)
       )}
     </div>
   ))
+  .add('with custom style', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded
+          fontFamily='Nitti, "Microsoft YaHei", 微软雅黑, monospace'
+          />
+      )}
+    </div>
+  ))

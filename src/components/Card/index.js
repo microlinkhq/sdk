@@ -26,8 +26,15 @@ type State = {
 export default class extends Component<CardProps, State> {
   static defaultProps = {
     rel: 'noopener noreferrer',
+    fontFamily: `'Helvetica Neue', Helvetica, Arial, sans-serif`,
     rounded: false,
-    target: '_blank'
+    target: '_blank',
+    width: '500px',
+    height: '125px',
+    background: '#fff',
+    color: '#181919',
+    borderColor: '#E1E8ED',
+    transition: 'opacity .15s ease-in'
   }
 
   state: State = { loaded: false }
