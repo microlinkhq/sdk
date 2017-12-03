@@ -13,6 +13,7 @@ const ContentWrap = styled.div`
   flex: 1;
   padding: 10px 15px;
   min-width: 0;
+  box-sizing: border-box;
 
   .-MicrolinkCard-large > & {
     flex: 0 0 125px;
