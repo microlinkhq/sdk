@@ -2,6 +2,12 @@
 
 > A React component for displaying [microlink.io](https://microlink.io) cards
 
+![Last version](https://img.shields.io/github/tag/microlinkhq/react-microlink.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/microlinkhq/react-microlink/master.svg?style=flat-square)](https://travis-ci.org/microlinkhq/react-microlink)
+[![Dependency status](https://img.shields.io/david/microlinkhq/react-microlink.svg?style=flat-square)](https://david-dm.org/microlinkhq/react-microlink)
+[![Dev Dependencies Status](https://img.shields.io/david/dev/microlinkhq/react-microlink.svg?style=flat-square)](https://david-dm.org/microlinkhq/react-microlink#info=devDependencies)
+[![NPM Status](https://img.shields.io/npm/dm/react-microlink.svg?style=flat-square)](https://www.npmjs.org/package/react-microlink)
+
 ## Available Scripts
 
 In the project directory, you can run:
