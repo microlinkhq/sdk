@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react'
+import 'whatwg-fetch'
 import getValue from 'get-value'
 
 import CardWrap from './CardWrap'
