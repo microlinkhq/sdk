@@ -21,6 +21,17 @@ const urls = [
   'https://www.bbc.com/news/technology-40762328'
 ]
 
+const getRandomSize = (sizes: Array<number> = [
+  300,
+  400,
+  500,
+  600,
+  700,
+  800
+]): string => {
+  return `${sizes[Math.floor(Math.random() * (sizes.length - 1))]}px`
+}
+
 storiesOf('Card/Normal', module)
   .add('default', () => (
     <div>
@@ -65,7 +76,7 @@ storiesOf('Card/Normal', module)
           url={url}
           style={{marginBottom: '20px'}}
           rounded={'4px'}
-          width={'550px'}
+          width={getRandomSize()}
           />
       )}
     </div>
@@ -78,7 +89,7 @@ storiesOf('Card/Normal', module)
           url={url}
           style={{marginBottom: '20px'}}
           rounded={'4px'}
-          height={'150px'}
+          height={getRandomSize([75, 125, 150, 175, 200, 250])}
           />
       )}
     </div>
@@ -131,7 +142,7 @@ storiesOf('Card/Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           size='large'
-          width='700px'
+          width={getRandomSize()}
           />
       )}
     </div>
@@ -144,7 +155,7 @@ storiesOf('Card/Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           size='large'
-          height='600px'
+          height={getRandomSize()}
           />
       )}
     </div>
