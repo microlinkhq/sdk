@@ -1,7 +1,5 @@
 // @flow
 import React, { Component } from 'react'
-import 'whatwg-fetch'
-import getValue from 'get-value'
 
 import CardWrap from './CardWrap'
 import CardImage from './CardImage'
@@ -9,7 +7,7 @@ import CardContent from './CardContent'
 
 const API_ENDPOINT = 'https://api.microlink.io'
 
-const getUrlPath = data => getValue(data, 'url') || data
+const getUrlPath = data => typeof data === 'object' ? data.url : data
 
 type CardSizes = 'large'
 
@@ -31,8 +29,15 @@ type State = {
 export default class extends Component<CardProps, State> {
   static defaultProps = {
     rel: 'noopener noreferrer',
+    fontFamily: `'Helvetica Neue', Helvetica, Arial, sans-serif`,
     rounded: false,
-    target: '_blank'
+    target: '_blank',
+    width: '500px',
+    height: '125px',
+    background: '#fff',
+    color: '#181919',
+    borderColor: '#E1E8ED',
+    transition: 'opacity .15s ease-in'
   }
 
   state: State = { loaded: false }
@@ -57,18 +62,25 @@ export default class extends Component<CardProps, State> {
 
   render () {
     const { title, description, image, url, loaded } = this.state
-    const { size } = this.props
+    const { large } = this.props
     const imagePath = getUrlPath(image)
-    const largeClass = size === 'large' ? '-MicrolinkCard-large' : ''
 
     return (
       loaded && (
-        <CardWrap href={url} title={title} {...this.props} {...this.state} className={largeClass}>
-          {image && <CardImage image={imagePath} />}
+        <CardWrap href={url} title={title} {...this.props} {...this.state} className={`microlink_card__wrapper`} large={large}>
+          {image &&
+            <CardImage
+              className='microlink_card__image'
+              image={imagePath}
+              large={large}
+            />
+          }
           <CardContent
+            className='microlink_card__content'
             title={title}
             description={description}
             url={url}
+            large={large}
           />
         </CardWrap>
       )

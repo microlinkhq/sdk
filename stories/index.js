@@ -105,6 +105,19 @@ storiesOf('Card/Normal', module)
       )}
     </div>
   ))
+  .add('with custom style', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded
+          fontFamily='Nitti, "Microsoft YaHei", 微软雅黑, monospace'
+          />
+      )}
+    </div>
+  ))
 
 storiesOf('Card/Large', module)
   .add('default', () => (
@@ -114,7 +127,7 @@ storiesOf('Card/Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          size='large'
+          large
           />
       )}
     </div>
@@ -126,7 +139,7 @@ storiesOf('Card/Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          size='large'
+          large
           rounded
           />
       )}
@@ -139,7 +152,7 @@ storiesOf('Card/Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          size='large'
+          large
           rounded={getRandomSize([6, 10, 20, 30])}
           />
       )}
@@ -152,7 +165,7 @@ storiesOf('Card/Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          size='large'
+          large
           width={getRandomSize()}
           />
       )}
@@ -165,7 +178,7 @@ storiesOf('Card/Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          size='large'
+          large
           height={getRandomSize()}
           />
       )}
@@ -178,8 +191,22 @@ storiesOf('Card/Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          size='large'
+          large
           contrast
+          />
+      )}
+    </div>
+  ))
+  .add('with custom style', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded
+          large
+          fontFamily='Nitti, "Microsoft YaHei", 微软雅黑, monospace'
           />
       )}
     </div>
