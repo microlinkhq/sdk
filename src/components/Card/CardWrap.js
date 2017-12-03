@@ -2,7 +2,7 @@
 import styled, { css } from 'styled-components'
 import { CardWrapLarge } from './CardLarge'
 
-const CardWrap = styled.a`
+export default styled.a`
   height: 123px;
   width: 558px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -42,5 +42,3 @@ const CardWrap = styled.a`
     transition: opacity .15s ease-out;
   }
 `
-
-export default CardWrap
