@@ -2,6 +2,7 @@
   "name": "react-microlink",
   "description": "Microlink card(s) for React",
   "version": "0.1.0-alpha",
+  "main": "dist/index.js",
   "author": {
     "email": "hi@breadadams.com",
     "name": "Brad Adams",
@@ -67,7 +68,7 @@
     "node": ">= 8"
   },
   "scripts": {
-    "build": "BABEL_ENV=production NODE_ENV=production babel src --out-dir dist",
+    "build": "mkdir -p dist && BABEL_ENV=production NODE_ENV=production babel src --out-file dist/index.js",
     "build-storybook": "build-storybook",
     "lib": "babel src/ -d lib/",
     "lint": "standard-markdown && standard",
