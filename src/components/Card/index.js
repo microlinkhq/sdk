@@ -51,10 +51,21 @@ export default class extends Component<CardProps, State> {
     fetch(url)
       .then(res => res.json())
       .then(res => {
-        const { title, description, url, image } = res.data
-        const {color, background_color: backgroundColor} = image
-        const imagePath = getUrlPath(image)
-        this.setState({ title, description, url, color, backgroundColor, image: imagePath, loaded: true })
+        const { title, description, url, image }: {
+          title?: string,
+          description?: string,
+          url?: string,
+          image?: string | Object,
+        } = res.data
+        if (image) {
+          if (typeof image === 'object') {
+            const {color, background_color: backgroundColor}: {color: string, background_color: string} = image
+            this.setState({color, backgroundColor})
+          }
+          const imagePath = getUrlPath(image)
+          this.setState({image: imagePath})
+        }
+        this.setState({ title, description, url, loaded: true })
       })
   }
 

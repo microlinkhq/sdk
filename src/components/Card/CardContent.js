@@ -52,10 +52,13 @@ const Url = styled.span`
   display: inline-block;
 `
 
-export default ({ title, description, url, cardSize, className }: ContentProps) => (
-  <CardContent className={className} cardSize={cardSize}>
-    <Title className='microlink_card__content_title' title={title}>{title}</Title>
-    <Description className='microlink_card__content_description'>{description}</Description>
-    <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>
-  </CardContent>
-)
+export default ({ title, description, url, cardSize, className }: ContentProps) => {
+  const prettyUrl: string = extractDomain(url)
+  return (
+    <CardContent className={className} cardSize={cardSize}>
+      <Title className='microlink_card__content_title' title={title}>{title}</Title>
+      <Description className='microlink_card__content_description'>{description}</Description>
+      <Url className='microlink_card__content_url'>{prettyUrl}</Url>
+    </CardContent>
+  )
+}

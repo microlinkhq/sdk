@@ -119,6 +119,7 @@
   },
   "lint-staged": {
     "*.js": [
+      "flow",
       "prettier-standard",
       "git add"
     ]
