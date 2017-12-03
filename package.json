@@ -62,6 +62,7 @@
     "prettier-standard": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
+    "unfetch": "^3.0.0",
     "webpack-dev-server": "latest"
   },
   "engines": {
