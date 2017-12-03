@@ -4,8 +4,7 @@
       "modules": false,
       "targets": { "browsers": ["last 2 versions", "ie >= 9"] }
     }],
-    "react",
-    "flow"
+    "react"
   ],
   "plugins": [
     "transform-class-properties",
