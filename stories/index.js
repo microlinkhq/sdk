@@ -160,3 +160,16 @@ storiesOf('Card/Large', module)
       )}
     </div>
   ))
+  .add('with contrast prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          size='large'
+          contrast
+          />
+      )}
+    </div>
+  ))
