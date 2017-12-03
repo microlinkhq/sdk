@@ -1,4 +1,3 @@
-// @flow
 import styled, { css } from 'styled-components'
 import { CardImageLarge } from './CardLarge'
 
