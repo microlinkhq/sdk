@@ -2,7 +2,7 @@
   "name": "react-microlink",
   "description": "Microlink card(s) for React",
   "version": "0.1.0-alpha",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "author": {
     "email": "hi@breadadams.com",
     "name": "Brad Adams",
@@ -44,7 +44,6 @@
     "react-dom": "~16.2.0",
     "style-loader": "~0.19.0",
     "styled-components": "~2.2.4",
-    "sw-precache-webpack-plugin": "~0.11.4",
     "url-loader": "~0.6.2",
     "webpack": "~3.9.1",
     "webpack-manifest-plugin": "~1.3.2"
@@ -68,14 +67,15 @@
     "node": ">= 8"
   },
   "scripts": {
-    "build": "BABEL_ENV=production NODE_ENV=production babel src --out-dir dist",
+    "postinstall": "npm run lib",
     "build-storybook": "build-storybook",
     "flow": "flow",
-    "lib": "babel src/ -d lib/",
+    "lib": "babel src -d lib",
     "lint": "standard-markdown && standard src stories",
     "posttest": "npm run size",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
+    "build": "node scripts/build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "size": "size-limit",
