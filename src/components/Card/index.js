@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from 'react'
-import getValue from 'get-value'
 
 import CardWrap from './CardWrap'
 import CardImage from './CardImage'
@@ -8,7 +7,7 @@ import CardContent from './CardContent'
 
 const API_ENDPOINT = 'https://api.microlink.io'
 
-const getUrlPath = data => getValue(data, 'url') || data
+const getUrlPath = data => typeof data === 'object' ? data.url : data
 
 type CardProps = {
   contrast?: boolean,
