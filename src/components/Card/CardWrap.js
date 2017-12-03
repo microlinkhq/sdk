@@ -1,79 +1,45 @@
-import styled, {css} from 'styled-components'
-import { style } from 'styled-system'
-
-const fontFamily = style({
-  prop: 'fontFamily',
-  cssProperty: 'fontFamily'
-})
-
-const height = style({
-  prop: 'height',
-  cssProperty: 'height'
-})
-
-const width = style({
-  prop: 'width',
-  cssProperty: 'maxWidth'
-})
-
-const borderRadius = style({
-  prop: 'borderRadius',
-  cssProperty: 'borderRadius'
-})
-
-const backgroundColor = style({
-  prop: 'backgroundColor',
-  cssProperty: 'backgroundColor'
-})
-
-const borderColor = style({
-  prop: 'borderColor',
-  cssProperty: 'borderColor'
-})
-
-const color = style({
-  prop: 'color',
-  cssProperty: 'color'
-})
+// @flow
+import styled, { css } from 'styled-components'
+import { CardWrapLarge } from './CardLarge'
 
 const CardWrap = styled.a`
-  ${fontFamily}
-  ${height}
-  ${borderRadius}
-  ${backgroundColor}
-  ${color}
-  ${width}
-  ${borderColor}
+  height: 123px;
+  width: 558px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #181919;
   border-width: 1px;
   border-style: solid;
+  border-color: #E1E8ED;
   overflow: hidden;
   display: flex;
   text-decoration: none;
   opacity:1;
   transition: opacity .15s ease-in;
 
-  ${props => props.rounded && css`
-    border-radius: .42857em;
+  ${({ rounded }) => rounded && css`
+    border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
   `}
 
-  ${props => props.contrast && css`
-    background-color: ${props => props.image.background_color};
-    color: ${props => props.image.color};
-    border-color: ${props => props.image.color};
-  `}
+  ${({ contrast, color, backgroundColor }) => {
+    return contrast && color && backgroundColor && css`
+      background-color: ${backgroundColor};
+      color: ${color};
+      border-color: ${color};
+    `
+  }}
 
-  ${props => props.large && css`
-    flex-direction: column;
-  `}
+
+  ${({ cardSize }) => cardSize === 'large' && CardWrapLarge}
 
   &:hover {
-    opacity:.5;
-    transition:opacity .15s ease-in;
+    opacity: .5;
+    transition: opacity .15s ease-in;
   }
 
   &:active {
-    opacity:.8;
-    transition:opacity .15s ease-out;
+    opacity: .8;
+    transition: opacity .15s ease-out;
   }
 `
 
