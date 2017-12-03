@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react'
+import 'whatwg-fetch'
 import getValue from 'get-value'
 
 import CardWrap from './CardWrap'
@@ -12,6 +13,8 @@ const API_ENDPOINT = 'https://api.microlink.io'
 const getUrlPath = data => getValue(data, 'url') || data
 
 type CardProps = {
+  contrast?: boolean,
+  endpoint?: string,
   url: string
 }
 
@@ -24,20 +27,16 @@ type State = {
   url?: string
 }
 
-const MicrolinkCard = class extends Component<CardProps, State> {
+export default class extends Component<CardProps, State> {
   static defaultProps = {
     rel: 'noopener noreferrer',
     rounded: false,
     target: '_blank'
   }
 
-  state = { loading: false }
+  state: State = { loading: false }
 
-  constructor(props: CardProps) {
-    super()
-  }
-
-  componentWillMount() {
+  componentWillMount () {
     const {
       url: targetUrl,
       contrast,
@@ -58,9 +57,8 @@ const MicrolinkCard = class extends Component<CardProps, State> {
   }
 
   render() {
-    const { title, description, image, url, logo, loading } = this.state
+    const { title, description, image, url, loading } = this.state
     const imagePath = getUrlPath(image)
-    const logoPath = getUrlPath(logo)
     let loadedView = []
 
     if (!loading) {
@@ -72,7 +70,6 @@ const MicrolinkCard = class extends Component<CardProps, State> {
           title={title}
           description={description}
           url={url}
-          logo={logoPath}
         />
       )
     }
