@@ -76,8 +76,7 @@ storiesOf('Normal', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
-          width={getRandomSize()}
+          style={{marginBottom: '20px', width: getRandomSize()}}
           />
       )}
     </div>
@@ -88,8 +87,7 @@ storiesOf('Normal', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
-          height={getRandomSize([75, 125, 150, 175, 200, 250])}
+          style={{marginBottom: '20px', height: getRandomSize([75, 125, 150, 175, 200, 250])}}
           />
       )}
     </div>
@@ -112,9 +110,8 @@ storiesOf('Normal', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
+          style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
           rounded
-          fontFamily='Nitti, "Microsoft YaHei", 微软雅黑, monospace'
           />
       )}
     </div>
@@ -128,7 +125,7 @@ storiesOf('Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          large
+          size='large'
           />
       )}
     </div>
@@ -140,7 +137,7 @@ storiesOf('Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          large
+          size='large'
           rounded
           />
       )}
@@ -153,7 +150,7 @@ storiesOf('Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          large
+          size='large'
           rounded={getRandomSize([6, 10, 20, 30])}
           />
       )}
@@ -165,9 +162,8 @@ storiesOf('Large', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
-          large
-          width={getRandomSize()}
+          style={{marginBottom: '20px', width: getRandomSize()}}
+          size='large'
           />
       )}
     </div>
@@ -178,9 +174,8 @@ storiesOf('Large', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
-          large
-          height={getRandomSize()}
+          style={{marginBottom: '20px', height: getRandomSize()}}
+          size='large'
           />
       )}
     </div>
@@ -192,7 +187,7 @@ storiesOf('Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          large
+          size='large'
           contrast
           />
       )}
@@ -204,10 +199,9 @@ storiesOf('Large', module)
         <MicrolinkCard
           key={url}
           url={url}
-          style={{marginBottom: '20px'}}
+          style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
           rounded
-          large
-          fontFamily='Nitti, "Microsoft YaHei", 微软雅黑, monospace'
+          size='large'
           />
       )}
     </div>
