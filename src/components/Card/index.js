@@ -1,7 +1,5 @@
 // @flow
 import React, { Component } from 'react'
-import 'whatwg-fetch'
-import getValue from 'get-value'
 
 import CardWrap from './CardWrap'
 import CardImage from './CardImage'
@@ -11,7 +9,7 @@ import CardEmptyState from './CardEmptyState'
 const API_ENDPOINT = 'https://api.microlink.io'
 
 const getUrlPath = (data: Object | string): string => {
-  return getValue(data, 'url') || (data instanceof String ? data : '')
+  return typeof data === 'object' ? data.url : data
 }
 
 type CardProps = {
