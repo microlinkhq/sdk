@@ -10,7 +10,7 @@ const EmptyTitle = styled.span`
   width: 80%;
   display: block;
   background: #e1e8ed;
-  margin-bottom: 8px;
+  margin: 2px 0 8px;
   opacity: 0.8;
 `
 const EmptyDescription = styled.span`
@@ -20,9 +20,27 @@ const EmptyDescription = styled.span`
   background: #e1e8ed;
   margin-bottom: 12px;
   opacity: 0.8;
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: #fff;
+  }
+
+  &:before {
+    top: 14px;
+  }
+
+  &:after {
+    bottom: 14px;
+  }
 `
 const EmptyLink = styled.span`
-  height: 12px;
+  height: 10px;
   width: 60%;
   display: block;
   background: #e1e8ed;
