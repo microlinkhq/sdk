@@ -35,14 +35,14 @@ const CardWrap = styled.a`
   border-color: ${props => get(props, 'image.color', 'borderColor')};
   overflow: hidden;
   display: flex;
-  height: ${props => get(props, 'height', 'height')};
+  height: ${props => get(props, 'height')};
   text-decoration: none;
   opacity:1;
   transition:opacity .15s ease-in;
 
   &.-MicrolinkCard-large {
     flex-direction: column;
-    height: ${props => getLarge(props, 'height', 'height')};
+    height: ${props => getLarge(props, 'height')};
   }
 
   &:hover {
