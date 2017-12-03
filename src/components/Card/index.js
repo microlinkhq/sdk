@@ -10,7 +10,9 @@ import CardEmptyState from './CardEmptyState'
 
 const API_ENDPOINT = 'https://api.microlink.io'
 
-const getUrlPath = data => getValue(data, 'url') || data
+const getUrlPath = (data: Object | string): string => {
+  return getValue(data, 'url') || (data instanceof String ? data : '')
+}
 
 type CardProps = {
   contrast?: boolean,
@@ -56,13 +58,13 @@ export default class extends Component<CardProps, State> {
     )
   }
 
-  render() {
+  render () {
     const { title, description, image, url, loading } = this.state
-    const imagePath = getUrlPath(image)
     let loadedView = []
 
     if (!loading) {
-      if (imagePath) {
+      if (image) {
+        const imagePath: string = getUrlPath(image)
         loadedView.push(<CardImage image={imagePath} />)
       }
       loadedView.push(
