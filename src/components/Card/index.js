@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react'
+import getValue from 'get-value'
 
 import CardWrap from './CardWrap'
 import CardImage from './CardImage'
@@ -8,7 +9,7 @@ import CardEmptyState from './CardEmptyState'
 
 const API_ENDPOINT = 'https://api.microlink.io'
 
-const getUrlPath = data => (typeof data === 'object' ? data.url : data)
+const getUrlPath = data => getValue(data, 'url') || data
 
 type CardProps = {
   url: string
@@ -24,6 +25,12 @@ type State = {
 }
 
 const MicrolinkCard = class extends Component<CardProps, State> {
+  static defaultProps = {
+    rel: 'noopener noreferrer',
+    rounded: false,
+    target: '_blank'
+  }
+
   state = { loading: false }
 
   constructor(props: CardProps) {
@@ -31,21 +38,21 @@ const MicrolinkCard = class extends Component<CardProps, State> {
   }
 
   componentWillMount() {
-    const { url } = this.props
-    const endpoint = `${API_ENDPOINT}/?url=${url}`
+    const {
+      url: targetUrl,
+      contrast,
+      endpoint: api = API_ENDPOINT
+    } = this.props
+
+    let url = `${api}/?url=${targetUrl}`
+    if (contrast) url = `${url}&palette`
+
     this.setState({ loading: true }, () =>
-      fetch(endpoint)
+      fetch(url)
         .then(res => res.json())
         .then(res => {
-          const { title, description, url, image, logo } = res.data
-          this.setState({
-            title,
-            description,
-            url,
-            image,
-            logo,
-            loading: false
-          })
+          const { title, description, url, image } = res.data
+          this.setState({ title, description, url, image, loading: false })
         })
     )
   }
@@ -71,17 +78,11 @@ const MicrolinkCard = class extends Component<CardProps, State> {
     }
 
     return (
-      <CardWrap href={url} title={title} {...this.props}>
+      <CardWrap href={url} title={title} {...this.props} {...this.state}>
         {!loading ? loadedView : <CardEmptyState />}
       </CardWrap>
     )
   }
-}
-
-MicrolinkCard.defaultProps = {
-  rel: 'noopener noreferrer',
-  rounded: false,
-  target: '_blank'
 }
 
 export default MicrolinkCard

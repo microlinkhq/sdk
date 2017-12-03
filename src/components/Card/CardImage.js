@@ -20,8 +20,8 @@ const ImageSquare = styled.div`
   }
 `
 
-const CardImage = ({ className, image }: CardImageProps) => {
-  return <ImageSquare className={className} image={image} />
-}
+const CardImage = ({ className, image }: CardImageProps) => (
+  <ImageSquare className={className} image={image} />
+)
 
 export default CardImage

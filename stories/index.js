@@ -33,7 +33,7 @@ storiesOf('small', module).add('square', () => (
   </div>
 ))
 
-storiesOf('small', module).add('small rounded', () => (
+storiesOf('small', module).add('rounded', () => (
   <div>
     {urls.map(url =>
       <MicrolinkCard
@@ -82,6 +82,20 @@ storiesOf('small', module).add('height custom', () => (
         style={{marginBottom: '20px'}}
         rounded={'4px'}
         width={'550px'}
+        />
+    )}
+  </div>
+))
+
+storiesOf('small', module).add('contrast', () => (
+  <div>
+    {urls.map(url =>
+      <MicrolinkCard
+        key={url}
+        url={url}
+        style={{marginBottom: '20px'}}
+        rounded
+        contrast
         />
     )}
   </div>
