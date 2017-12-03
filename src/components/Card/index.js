@@ -67,7 +67,7 @@ export default class extends Component<CardProps, State> {
 
     return (
       loaded && (
-        <CardWrap href={url} title={title} {...props} {...this.state} className={`microlink_card__wrapper`} large={large}>
+        <CardWrap href={url} title={title} {...props} {...this.state} className={`microlink_card`} large={large}>
           {image &&
             <CardImage
               className='microlink_card__image'

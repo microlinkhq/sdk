@@ -30,7 +30,7 @@ const Title = styled.h2`
   max-width: 95%;
 `
 
-const Text = styled.p`
+const Description = styled.p`
   font-size: 14px;
   margin: 0;
   line-height: 18px;
@@ -50,10 +50,10 @@ const Url = styled.span`
   display: inline-block;
 `
 
-export default ({ title, description, url, logo, large }: ContentProps) => (
-  <CardContent large={large}>
-    <Title title={title}>{title}</Title>
-    <Text>{description}</Text>
-    <Url>{extractDomain(url)}</Url>
+export default ({ title, description, url, logo, large, className }: ContentProps) => (
+  <CardContent className={className} large={large}>
+    <Title className='microlink_card__content_title' title={title}>{title}</Title>
+    <Description className='microlink_card__content_description'>{description}</Description>
+    <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>
   </CardContent>
 )
