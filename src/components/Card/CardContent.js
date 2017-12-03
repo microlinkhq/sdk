@@ -13,6 +13,10 @@ const ContentWrap = styled.div`
   flex: 1;
   padding: 10px 15px;
   min-width: 0;
+
+  .-MicrolinkCard-large > & {
+    flex: 0 0 125px;
+  }
 `
 
 const Title = styled.h2`

@@ -20,8 +20,10 @@ const ImageSquare = styled.div`
   }
 
   .-MicrolinkCard-large > & {
+    flex: 1;
+
     &:before {
-      padding-bottom: calc(80% - 125px);
+      padding-bottom: 0;
     }
   }
 `

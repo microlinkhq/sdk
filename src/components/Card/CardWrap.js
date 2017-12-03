@@ -13,7 +13,7 @@ const DEFAULT = {
 }
 
 const DEFAULT_LARGE = {
-  height: 'auto'
+  height: '420px'
 }
 
 const get = createGet(DEFAULT)
