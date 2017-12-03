@@ -48,8 +48,7 @@
     "sw-precache-webpack-plugin": "~0.11.4",
     "url-loader": "~0.6.2",
     "webpack": "~3.9.1",
-    "webpack-manifest-plugin": "~1.3.2",
-    "whatwg-fetch": "^2.0.3"
+    "webpack-manifest-plugin": "~1.3.2"
   },
   "devDependencies": {
     "@storybook/react": "latest",
@@ -62,6 +61,7 @@
     "prettier-standard": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
+    "unfetch": "^3.0.0",
     "webpack-dev-server": "latest"
   },
   "engines": {
