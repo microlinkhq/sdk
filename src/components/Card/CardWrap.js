@@ -64,7 +64,6 @@ const CardWrap = styled.a`
 
   ${props => props.large && css`
     flex-direction: column;
-    height: 409px;
   `}
 
   &:hover {

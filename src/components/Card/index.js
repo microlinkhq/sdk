@@ -24,17 +24,16 @@ type State = {
 
 export default class extends Component<CardProps, State> {
   static defaultProps = {
-    rel: 'noopener noreferrer',
+    background: '#fff',
+    borderColor: '#E1E8ED',
+    color: '#181919',
+    endpoint: 'https://api.microlink.io',
     fontFamily: `'Helvetica Neue', Helvetica, Arial, sans-serif`,
+    rel: 'noopener noreferrer',
     rounded: false,
     target: '_blank',
-    width: '500px',
-    height: '125px',
-    background: '#fff',
-    color: '#181919',
-    borderColor: '#E1E8ED',
     transition: 'opacity .15s ease-in',
-    endpoint: 'https://api.microlink.io'
+    width: '558px'
   }
 
   state: State = { loaded: false }
@@ -62,9 +61,13 @@ export default class extends Component<CardProps, State> {
     const { large } = this.props
     const imagePath = getUrlPath(image)
 
+    const props = Object.assign({}, this.props, {
+      height: large ? '382px' : '123px'
+    })
+
     return (
       loaded && (
-        <CardWrap href={url} title={title} {...this.props} {...this.state} className={`microlink_card__wrapper`} large={large}>
+        <CardWrap href={url} title={title} {...props} {...this.state} className={`microlink_card__wrapper`} large={large}>
           {image &&
             <CardImage
               className='microlink_card__image'
