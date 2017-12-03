@@ -71,7 +71,7 @@
     "build": "mkdir -p dist && BABEL_ENV=production NODE_ENV=production babel src --out-file dist/index.js",
     "build-storybook": "build-storybook",
     "lib": "babel src/ -d lib/",
-    "lint": "standard-markdown && standard",
+    "lint": "standard-markdown && standard src stories",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
     "pretest": "npm run lint",
