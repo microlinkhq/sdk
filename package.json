@@ -67,7 +67,7 @@
     "node": ">= 8"
   },
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "BABEL_ENV=production NODE_ENV=production babel src --out-dir dist",
     "build-storybook": "build-storybook",
     "lib": "babel src/ -d lib/",
     "lint": "standard-markdown && standard",
