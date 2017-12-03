@@ -9,8 +9,6 @@ const API_ENDPOINT = 'https://api.microlink.io'
 
 const getUrlPath = data => typeof data === 'object' ? data.url : data
 
-type CardSizes = 'large'
-
 type CardProps = {
   contrast?: boolean,
   endpoint?: string,
