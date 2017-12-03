@@ -21,82 +21,78 @@ const urls = [
   'https://www.bbc.com/news/technology-40762328'
 ]
 
-storiesOf('small', module).add('square', () => (
-  <div>
-    {urls.map(url =>
-      <MicrolinkCard
-        key={url}
-        url={url}
-        style={{marginBottom: '20px'}}
-        />
-    )}
-  </div>
-))
-
-storiesOf('small', module).add('rounded', () => (
-  <div>
-    {urls.map(url =>
-      <MicrolinkCard
-        key={url}
-        url={url}
-        style={{marginBottom: '20px'}}
-        rounded
-        />
-    )}
-  </div>
-))
-
-storiesOf('small', module).add('rounded custom', () => (
-  <div>
-    {urls.map(url =>
-      <MicrolinkCard
-        key={url}
-        url={url}
-        style={{marginBottom: '20px'}}
-        rounded={'4px'}
-        />
-    )}
-  </div>
-))
-
-storiesOf('small', module).add('width custom', () => (
-  <div>
-    {urls.map(url =>
-      <MicrolinkCard
-        key={url}
-        url={url}
-        style={{marginBottom: '20px'}}
-        rounded={'4px'}
-        height={'150px'}
-        />
-    )}
-  </div>
-))
-
-storiesOf('small', module).add('height custom', () => (
-  <div>
-    {urls.map(url =>
-      <MicrolinkCard
-        key={url}
-        url={url}
-        style={{marginBottom: '20px'}}
-        rounded={'4px'}
-        width={'550px'}
-        />
-    )}
-  </div>
-))
-
-storiesOf('small', module).add('contrast', () => (
-  <div>
-    {urls.map(url =>
-      <MicrolinkCard
-        key={url}
-        url={url}
-        style={{marginBottom: '20px'}}
-        rounded
-        contrast
-        />
-    )}
-  </div>
-))
+storiesOf('Card/Normal', module)
+  .add('default', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          />
+      )}
+    </div>
+  ))
+  .add('with rounded prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded
+          />
+      )}
+    </div>
+  ))
+  .add('with custom rounded prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded={'4px'}
+          />
+      )}
+    </div>
+  ))
+  .add('with custom width', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded={'4px'}
+          width={'550px'}
+          />
+      )}
+    </div>
+  ))
+  .add('with custom height', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded={'4px'}
+          height={'150px'}
+          />
+      )}
+    </div>
+  ))
+  .add('with contrast prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          rounded
+          contrast
+          />
+      )}
+    </div>
+  ))
