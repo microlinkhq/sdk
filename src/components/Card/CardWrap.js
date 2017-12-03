@@ -17,19 +17,20 @@ const CardWrap = styled.a`
   opacity:1;
   transition: opacity .15s ease-in;
 
-  ${props => props.rounded && css`
-    border-radius: ${typeof props.rounded === 'boolean'
-    ? `.42857em`
-    : props.rounded};
+  ${({ rounded }) => rounded && css`
+    border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
   `}
 
-  ${props => props.contrast && css`
-    background-color: ${props => props.image.background_color};
-    color: ${props => props.image.color};
-    border-color: ${props => props.image.color};
-  `}
+  ${({ contrast, color, backgroundColor }) => {
+    return contrast && color && backgroundColor && css`
+      background-color: ${backgroundColor};
+      color: ${color};
+      border-color: ${color};
+    `
+  }}
 
-  ${props => props.cardSize === 'large' && CardWrapLarge}
+
+  ${({ cardSize }) => cardSize === 'large' && CardWrapLarge}
 
   &:hover {
     opacity: .5;

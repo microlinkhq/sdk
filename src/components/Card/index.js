@@ -24,10 +24,12 @@ type CardProps = {
 }
 
 type State = {
-  loaded: boolean,
-  title?: string,
+  backgroundColor?: string,
+  color?: string,
   description?: string,
   image?: string,
+  loaded: boolean,
+  title?: string,
   url?: string
 }
 
@@ -50,15 +52,16 @@ export default class extends Component<CardProps, State> {
       .then(res => res.json())
       .then(res => {
         const { title, description, url, image } = res.data
-        this.setState({ title, description, url, image, loaded: true })
+        const {color, background_color: backgroundColor} = image
+        const imagePath = getUrlPath(image)
+        this.setState({ title, description, url, color, backgroundColor, image: imagePath, loaded: true })
       })
   }
 
   render () {
-    const { title, description, image, url, loaded } = this.state
-    const { size, className, rounded, style } = this.props
+    const { title, description, color, backgroundColor, url, image, loaded } = this.state
+    const { size, className, rounded, style, contrast } = this.props
     const cardClassName = `microlink_card ${typeof className === 'string' ? className : ``}`
-    const imagePath = getUrlPath(image)
 
     return (
       loaded && (
@@ -67,13 +70,16 @@ export default class extends Component<CardProps, State> {
           href={url}
           title={title}
           cardSize={size}
+          contrast={contrast}
+          color={color}
+          backgroundColor={backgroundColor}
           rounded={rounded}
           style={style}
         >
           {image && (
             <CardImage
               className='microlink_card__image'
-              image={imagePath}
+              image={image}
               cardSize={size}
             />
           )}
