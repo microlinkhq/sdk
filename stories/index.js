@@ -34,7 +34,7 @@ const getRandomSize = (sizes: Array<number> = [
   return `${sizes[randomNumber]}px`
 }
 
-storiesOf('Card/Normal', module)
+storiesOf('Normal', module)
   .add('default', () => (
     <div>
       {urls.map(url =>
@@ -120,7 +120,7 @@ storiesOf('Card/Normal', module)
     </div>
   ))
 
-storiesOf('Card/Large', module)
+storiesOf('Large', module)
   .add('default', () => (
     <div>
       {urls.map(url =>
