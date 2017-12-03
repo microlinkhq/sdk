@@ -2,8 +2,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import type { CardSizes } from './index'
 import CardImage from './CardImage'
 import { ContentWrap } from './CardContent'
+
+type EmptyStateProps = {
+  cardSize?: CardSizes
+}
 
 const EmptyTitle = styled.span`
   height: 16px;
@@ -47,10 +52,10 @@ const EmptyLink = styled.span`
   opacity: 0.8;
 `
 
-const CardEmptyState = () => {
+const CardEmptyState = ({cardSize}: EmptyStateProps) => {
   return [
-    <CardImage />,
-    <ContentWrap>
+    <CardImage cardSize={cardSize} />,
+    <ContentWrap cardSize={cardSize}>
       <EmptyTitle />
       <EmptyDescription />
       <EmptyLink />

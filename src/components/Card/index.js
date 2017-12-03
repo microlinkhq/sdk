@@ -98,7 +98,7 @@ export default class extends Component<CardProps, State> {
         rounded={rounded}
         style={style}
       >
-        {!loading ? loadedView : <CardEmptyState />}
+        {!loading ? loadedView : <CardEmptyState cardSize={size}/>}
       </CardWrap>
     )
   }
