@@ -10,13 +10,13 @@
 
 ## Overview
 
-MicrolinkJS lets you create beautiful links previews from any website.
+MicrolinkJS lets you create beautiful link previews from any website.
 
-It is a perfect complement for improve the engagement of your articles or blog publications, bringing your user to see what is behind any link.
+It is a perfect complement to improve the engagement of your articles or blog publications, bringing your user to see what is behind any link.
 
-It uses default styles by default, but you can customize the display via options and CSS styling. The [examples](/examples) demonstrate a few customization ideas. Also we provided different ways to integrate it in your site.
+It has some *out-of-the-box* default styles, but you can customize the display via options and CSS styling. The [examples](/examples) demonstrate a few customization ideas. We also provided multiple ways to integrate it in your site.
 
-Finally, MicrolinkJS is powered by [Microlink API](https://docs.microlink.io).
+Finally, MicrolinkJS is powered by the [Microlink API](https://docs.microlink.io).
 
 ## Integration
 
@@ -33,14 +33,14 @@ $ npm install react-microlink
 ```jsx
 import MicrolinkCard from 'react-microlink'
 
-// Just provide an URL to create a card
-<MicrolinkCard url='https://microlink.io' />
+// Just provide a URL to create a card
+<MicrolinkCard url='https://github.com' />
 
 // Customizing the card
-<MicrolinkCard url='https://microlink.io' contast />
+<MicrolinkCard url='https://reactjs.org' contrast />
 
 // You can pass extra props
-<MicrolinkCard url='https://microlink.io' target='_blank' />
+<MicrolinkCard url='https://stackoverflow.com' target='_blank' />
 ```
 
 ### Vanilla/UMD
@@ -66,7 +66,7 @@ You could also include it via a CDN:
 // Replace all links for Microlink cards
 microlink('a')
 
-// Provide options for customize the cards (See API section)
+// Provide options to customize the cards (See API section)
 microlink('a', { rounded: true })
 
 // Replace links after DOMContentLoaded
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 ## API
 
-Even we provided different ways to integrate MicrolinkJS with your site and your code, our API is isomorphic.
+We even provided different ways to integrate MicrolinkJS with your site and your code, our API is isomorphic.
 
 The same parameters are available for all of our official integrations.
 
@@ -86,46 +86,46 @@ The same parameters are available for all of our official integrations.
 *Required*<br>
 Type: `string`
 
-The URL for getting information based on the content.
+The URL for which to retrieve Microlink data.
 
 ### endpoint
 
 Type: `string`<br>
 Default: `'https://api.microlink.io'`
 
-The API endpoint for make the request
+The API endpoint where the request is made
 
 ### contrast
 
 Type: `boolean`
 Default: `false`
 
-When it is enabled, it will generate a high contrast card based on predominant colors detected in the feature image detected from the url.
+When enabled, it will generate a high contrast card based on predominant colors detected in the feature image from the provided `url`.
 
 ### is
 
 Type: `string`
 Default: `'a'`
 
-Determinate the type of the root node element for rendering the card.
+Determine the type of the root node element for rendering the card.
 
 ### rounded
 
 Type: `boolean|string`
 Default: `false`
 
-Determinate if the card preview has or not rounded borders.
+Determine if the card preview should have rounded corners or not.
 
-If you provided a `string` value, it will be provided as `border-radius` value.
+If you provided a `string` value, it will be passed as the `border-radius`.
 
 ### size
 
 Type: `string`
-Default: `'normal'`
+Default: `''`
 
-It determinates the card layout. Currently we have two layouts supported:
+It determines the card layout. Currently we have two layouts supported:
 
-- `'normal'`
+- `'normal'` (default, no parameter required)
 - `'large'`
 
 ## Community
