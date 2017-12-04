@@ -7,15 +7,16 @@ export default styled.div`
   flex: 0 0 125px;
   background: #e1e8ed no-repeat center center / cover;
 
-  ${({ image }) => image && css`
-    background-image: url(${image});
-  `};
-
   &::before {
     content: '';
     padding-bottom: 100%;
     display: block;
   }
 
-  ${({ cardSize }) => cardSize === 'large' && CardImageLarge}
+  ${({ image, cardSize }) => [
+    image && css`
+      background-image: url(${image});
+    `,
+    cardSize === 'large' && CardImageLarge
+  ]};
 `

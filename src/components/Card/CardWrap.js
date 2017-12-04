@@ -19,20 +19,6 @@ const styledElement = (tag: string) => {
     opacity:1;
     transition: opacity .15s ease-in;
 
-    ${({ backgroundColor, color, contrast, cardSize, rounded }) => {
-      return [
-        rounded && css`
-          border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
-        `,
-        cardSize === 'large' && CardWrapLarge,
-        contrast && color && backgroundColor && css`
-          background-color: ${backgroundColor};
-          color: ${color};
-          border-color: ${color};
-        `
-      ]
-    }}
-
     &:hover {
       opacity: .5;
       transition: opacity .15s ease-in;
@@ -42,6 +28,18 @@ const styledElement = (tag: string) => {
       opacity: .8;
       transition: opacity .15s ease-out;
     }
+
+    ${({ backgroundColor, color, contrast, cardSize, rounded }) => [
+      rounded && css`
+        border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
+      `,
+      cardSize === 'large' && CardWrapLarge,
+      contrast && color && backgroundColor && css`
+        background-color: ${backgroundColor};
+        color: ${color};
+        border-color: ${color};
+      `
+    ]}
   `
 }
 
