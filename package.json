@@ -24,7 +24,6 @@
     "previsualization"
   ],
   "dependencies": {
-    "autoprefixer": "~7.1.6",
     "babel-core": "~6.26.0",
     "babel-jest": "~21.2.0",
     "babel-loader": "~7.1.2",
@@ -37,23 +36,21 @@
     "babel-runtime": "~6.26.0",
     "case-sensitive-paths-webpack-plugin": "~2.1.1",
     "chalk": "~2.3.0",
-    "css-loader": "~0.28.7",
+    "dom101": "~2.2.1",
     "dotenv": "~4.0.0",
     "eslint-plugin-jsx-a11y": "~6.0.2",
     "extract-domain": "~2.0.0",
     "extract-text-webpack-plugin": "~3.0.2",
-    "file-loader": "~1.1.5",
     "fs-extra": "~4.0.2",
     "html-webpack-plugin": "~2.30.1",
     "jest": "~21.2.1",
     "postcss-flexbugs-fixes": "~3.2.0",
-    "postcss-loader": "~2.0.9",
+    "preact-compat": "~3.17.0",
     "react": "~16.2.0",
     "react-dev-utils": "~4.2.1",
     "react-dom": "~16.2.0",
-    "style-loader": "~0.19.0",
     "styled-components": "~2.2.4",
-    "url-loader": "~0.6.2",
+    "unminified-webpack-plugin": "~1.4.2",
     "webpack": "~3.9.1",
     "webpack-manifest-plugin": "~1.3.2"
   },
@@ -83,7 +80,6 @@
     "lint": "standard-markdown && standard src stories",
     "postinstall": "npm run lib",
     "posttest": "npm run size",
-    "precommit": "lint-staged",
     "prepublish": "npm run build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
@@ -138,8 +134,8 @@
   },
   "size-limit": [
     {
-      "path": "./dist",
-      "limit": "20 kB"
+      "path": "./lib",
+      "limit": "50 kB"
     }
   ],
   "standard": {
