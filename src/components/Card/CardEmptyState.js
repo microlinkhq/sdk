@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import type { CardSizes } from './index'
 import CardImage from './CardImage'
-import { ContentWrap } from './CardContent'
+import { Content } from './CardContent'
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimations'
 
 type EmptyStateProps = {
@@ -67,11 +67,11 @@ const EmptyLink = styled.span`
 const CardEmptyState = ({cardSize}: EmptyStateProps) => {
   return [
     <EmptyImage cardSize={cardSize} emptyState />,
-    <ContentWrap cardSize={cardSize}>
+    <Content cardSize={cardSize}>
       <EmptyTitle />
       <EmptyDescription />
       <EmptyLink />
-    </ContentWrap>
+    </Content>
   ]
 }
 

@@ -14,7 +14,7 @@ type ContentProps = {
   className?: string
 }
 
-export const ContentWrap = styled.div`
+export const Content = styled.div`
   flex: 1;
   padding: 10px 15px;
   min-width: 0;
@@ -52,10 +52,13 @@ const Url = styled.span`
   display: inline-block;
 `
 
-export default ({ title, description, url, cardSize, className }: ContentProps) => (
-  <ContentWrap className={className} cardSize={cardSize}>
-    {title && <Title className='microlink_card__content_title' title={title}>{title}</Title>}
-    {description && <Description className='microlink_card__content_description'>{description}</Description>}
-    {url && <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>}
-  </ContentWrap>
-)
+export default ({ title, description, url, cardSize, className }: ContentProps) => {
+  const prettyUrl: string = extractDomain(url)
+  return (
+    <Content className={className} cardSize={cardSize}>
+      <Title className='microlink_card__content_title' title={title}>{title}</Title>
+      <Description className='microlink_card__content_description'>{description}</Description>
+      <Url className='microlink_card__content_url'>{prettyUrl}</Url>
+    </Content>
+  )
+}

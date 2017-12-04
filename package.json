@@ -2,7 +2,7 @@
   "name": "react-microlink",
   "description": "Microlink card(s) for React",
   "version": "0.1.0-alpha",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "author": {
     "email": "hi@breadadams.com",
     "name": "Brad Adams",
@@ -15,38 +15,33 @@
     "react-component"
   ],
   "dependencies": {
-    "autoprefixer": "~7.1.6",
     "babel-core": "~6.26.0",
     "babel-jest": "~21.2.0",
     "babel-loader": "~7.1.2",
     "babel-plugin-transform-class-properties": "~6.24.1",
     "babel-plugin-transform-object-rest-spread": "~6.26.0",
     "babel-preset-env": "~1.6.1",
-    "babel-preset-flow": "~6.23.0 ",
     "babel-preset-react": "~6.24.1",
     "babel-preset-react-app": "~3.1.0",
     "babel-preset-react-optimize": "~1.0.1",
     "babel-runtime": "~6.26.0",
     "case-sensitive-paths-webpack-plugin": "~2.1.1",
     "chalk": "~2.3.0",
-    "css-loader": "~0.28.7",
+    "dom101": "~2.2.1",
     "dotenv": "~4.0.0",
     "eslint-plugin-jsx-a11y": "~6.0.2",
     "extract-domain": "~2.0.0",
     "extract-text-webpack-plugin": "~3.0.2",
-    "file-loader": "~1.1.5",
     "fs-extra": "~4.0.2",
     "html-webpack-plugin": "~2.30.1",
     "jest": "~21.2.1",
     "postcss-flexbugs-fixes": "~3.2.0",
-    "postcss-loader": "~2.0.9",
+    "preact-compat": "~3.17.0",
     "react": "~16.2.0",
     "react-dev-utils": "~4.2.1",
     "react-dom": "~16.2.0",
-    "style-loader": "~0.19.0",
     "styled-components": "~2.2.4",
-    "sw-precache-webpack-plugin": "~0.11.4",
-    "url-loader": "~0.6.2",
+    "unminified-webpack-plugin": "~1.4.2",
     "webpack": "~3.9.1",
     "webpack-manifest-plugin": "~1.3.2"
   },
@@ -59,6 +54,7 @@
     "husky": "latest",
     "lint-staged": "latest",
     "prettier-standard": "latest",
+    "size-limit": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "unfetch": "latest",
@@ -68,15 +64,17 @@
     "node": ">= 8"
   },
   "scripts": {
-    "build": "mkdir -p dist && BABEL_ENV=production NODE_ENV=production babel src --out-file dist/index.js",
+    "postinstall": "npm run lib",
     "build-storybook": "build-storybook",
     "flow": "flow",
-    "lib": "babel src/ -d lib/",
+    "lib": "babel src -d lib",
     "lint": "standard-markdown && standard src stories",
-    "precommit": "lint-staged",
+    "posttest": "npm run size",
     "prepublish": "npm run build",
+    "build": "node scripts/build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "size": "size-limit",
     "start": "node scripts/start.js",
     "storybook": "start-storybook -p 6006",
     "test": "exit 0"
@@ -87,12 +85,6 @@
       "react-app"
     ]
   },
-  "bundlesize": [
-    {
-      "path": "./dist/index.js",
-      "maxSize": "5 kB"
-    }
-  ],
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
@@ -131,6 +123,12 @@
       "git add"
     ]
   },
+  "size-limit": [
+    {
+      "path": "./lib",
+      "limit": "50 kB"
+    }
+  ],
   "standard": {
     "globals": [
       "React",

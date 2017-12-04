@@ -17,5 +17,5 @@ export default styled.div`
     display: block;
   }
 
-  ${({cardSize}) => cardSize === 'large' && CardImageLarge}
+  ${({ cardSize }) => cardSize === 'large' && CardImageLarge}
 `
