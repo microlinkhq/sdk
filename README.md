@@ -48,14 +48,17 @@ import MicrolinkCard from 'react-microlink'
 #### Installation
 
 ```sh
-$ npm install microlink.js
+$ npm install microlinkjs
 ```
 
-You could also include it via a CDN like CDNJS, jsDelivr or unpkg.com.
+You could also include it via a CDN:
 
-```sh
-$ npm install microlink.js
-```
+````html
+// normal
+<script type="text/javascript" src="https://unpkg.com/microlinkjs@latest/umd/microlink.js"></script>
+// minify
+<script type="text/javascript" src="https://unpkg.com/microlinkjs@latest/umd/microlink.min.js"></script>
+````
 
 #### Usage
 
