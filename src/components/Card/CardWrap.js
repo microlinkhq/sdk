@@ -1,4 +1,4 @@
-import {createElement} from 'react'
+import { createElement } from 'react'
 import styled, { css } from 'styled-components'
 
 import { CardWrapLarge } from './CardLarge'
