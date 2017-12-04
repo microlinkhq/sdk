@@ -20,7 +20,7 @@ export const ContentWrap = styled.div`
   min-width: 0;
   box-sizing: border-box;
 
-  ${props => props.cardSize === 'large' && CardContentLarge}
+  ${({cardSize}) => cardSize === 'large' && CardContentLarge}
 `
 
 const Title = styled.h2`

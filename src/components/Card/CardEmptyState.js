@@ -12,7 +12,7 @@ type EmptyStateProps = {
 }
 
 const EmptyImage = CardImage.extend`
-  ${props => props.emptyState && emptyStateImageAnimation}
+  ${({emptyState}) => emptyState && emptyStateImageAnimation}
 `
 
 const EmptyTitle = styled.span`
