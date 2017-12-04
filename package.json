@@ -1,6 +1,6 @@
 {
-  "name": "react-microlink",
-  "description": "Microlink card(s) for React",
+  "name": "microlink",
+  "description": "Convert your links into beautiful previews",
   "version": "0.1.0-alpha",
   "main": "lib/index.js",
   "author": {
