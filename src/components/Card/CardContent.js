@@ -14,12 +14,13 @@ type ContentProps = {
   className?: string
 }
 
-const Content = styled.div`
+export const Content = styled.div`
   flex: 1;
   padding: 10px 15px;
   min-width: 0;
   box-sizing: border-box;
-  ${props => props.cardSize === 'large' && CardContentLarge}
+
+  ${({cardSize}) => cardSize === 'large' && CardContentLarge}
 `
 
 const Title = styled.h2`

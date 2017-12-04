@@ -116,6 +116,11 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
+  .add('with empty state', () => (
+    <MicrolinkCard
+      url='somesitethatwontresolve.com'
+    />
+  ))
 
 storiesOf('Large', module)
   .add('default', () => (
@@ -205,4 +210,10 @@ storiesOf('Large', module)
           />
       )}
     </div>
+  ))
+  .add('with empty state', () => (
+    <MicrolinkCard
+      size='large'
+      url='somesitethatwontresolve.com'
+    />
   ))
