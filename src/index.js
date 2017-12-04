@@ -32,9 +32,7 @@ type State = {
 
 export default class extends Component<CardProps, State> {
   static defaultProps = {
-    endpoint: 'https://api.microlink.io',
-    rel: 'noopener noreferrer',
-    target: '_blank'
+    endpoint: 'https://api.microlink.io'
   }
 
   state: State = { loaded: false }
@@ -68,13 +66,12 @@ export default class extends Component<CardProps, State> {
 
   render () {
     const { title, description, color, backgroundColor, url, image, loaded } = this.state
-    const { size, className, rounded, style, contrast } = this.props
-    const cardClassName = `microlink_card ${typeof className === 'string' ? className : ``}`
+    const { size, className, rounded, style, contrast, is } = this.props
 
     return (
       loaded && (
         <CardWrap
-          className={cardClassName}
+          className={className ? `microlink_card ${className}` : className}
           href={url}
           title={title}
           cardSize={size}
@@ -83,6 +80,7 @@ export default class extends Component<CardProps, State> {
           backgroundColor={backgroundColor}
           rounded={rounded}
           style={style}
+          is={is}
         >
           {image && (
             <CardImage
