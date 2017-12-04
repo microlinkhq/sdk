@@ -128,6 +128,10 @@ It determinates the card layout. Currently we have two layouts supported:
 - `'normal'`
 - `'large'`
 
+## Community
+
+- [microlink-card](https://github.com/jroji/microlink-card) – Polymer card wrapper for https://microlink.io/ service.
+
 ## License
 
 **microlink** © [Microlink](https://microlink.io), Released under the [MIT](https://github.com/Kikobeats/free-email-domains/blob/master/LICENSE.md) License.<br>
