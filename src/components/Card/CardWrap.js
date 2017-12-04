@@ -19,19 +19,19 @@ const styledElement = (tag: string) => {
     opacity:1;
     transition: opacity .15s ease-in;
 
-    ${({ rounded }) => rounded && css`
-      border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
-    `}
-
-    ${({ contrast, color, backgroundColor }) => {
-      return contrast && color && backgroundColor && css`
-        background-color: ${backgroundColor};
-        color: ${color};
-        border-color: ${color};
-      `
+    ${({ backgroundColor, color, contrast, cardSize, rounded }) => {
+      return [
+        rounded && css`
+          border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
+        `,
+        cardSize === 'large' && CardWrapLarge,
+        contrast && color && backgroundColor && css`
+          background-color: ${backgroundColor};
+          color: ${color};
+          border-color: ${color};
+        `
+      ]
     }}
-
-    ${({ cardSize }) => cardSize === 'large' && CardWrapLarge}
 
     &:hover {
       opacity: .5;
