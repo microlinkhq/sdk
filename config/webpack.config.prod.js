@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
+const UnminifiedWebpackPlugin = require('unminified-webpack-plugin')
 const paths = require('./paths')
 const getClientEnvironment = require('./env')
 
@@ -43,7 +44,7 @@ module.exports = {
     // Generated JS file names (with nested folders).
     // There will be one main bundle, and one file per asynchronous chunk.
     // We don't currently advertise code splitting but Webpack supports it.
-    filename: 'microlink.js',
+    filename: 'microlink.min.js',
     library: 'microlink',
     libraryTarget: 'umd',
     // chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
@@ -164,6 +165,7 @@ module.exports = {
       },
       sourceMap: shouldUseSourceMap
     }),
+    new UnminifiedWebpackPlugin(),
     // Generate a manifest file which contains a mapping of all asset filenames
     // to their corresponding output file so that tools can pick it up without
     // having to parse `index.html`.
