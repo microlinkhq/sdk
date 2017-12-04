@@ -8,11 +8,20 @@
     "name": "Brad Adams",
     "url": "https://breadadams.com"
   },
+  "contributors": [
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com",
+      "url": "https://github.com/Kikobeats"
+    }
+  ],
   "keywords": [
-    "data-extraction",
+    "data",
+    "extraction",
+    "link",
     "microlink",
-    "react",
-    "react-component"
+    "preview",
+    "previsualization"
   ],
   "dependencies": {
     "autoprefixer": "~7.1.6",
@@ -67,15 +76,15 @@
     "node": ">= 8"
   },
   "scripts": {
-    "postinstall": "npm run lib",
+    "build": "node scripts/build",
     "build-storybook": "build-storybook",
     "flow": "flow",
     "lib": "babel src -d lib",
     "lint": "standard-markdown && standard src stories",
+    "postinstall": "npm run lib",
     "posttest": "npm run size",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
-    "build": "node scripts/build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "size": "size-limit",
