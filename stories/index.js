@@ -118,7 +118,7 @@ storiesOf('Normal', module)
   ))
   .add('with empty state', () => (
     <MicrolinkCard
-      url={''}
+      url='somesitethatwontresolve.com'
     />
   ))
 
@@ -214,6 +214,6 @@ storiesOf('Large', module)
   .add('with empty state', () => (
     <MicrolinkCard
       size='large'
-      url={''}
+      url='somesitethatwontresolve.com'
     />
   ))
