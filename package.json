@@ -70,7 +70,6 @@
     "lib": "babel src -d lib",
     "lint": "standard-markdown && standard src stories",
     "posttest": "npm run size",
-    "precommit": "lint-staged",
     "prepublish": "npm run build",
     "build": "node scripts/build",
     "pretest": "npm run lint",
@@ -126,8 +125,8 @@
   },
   "size-limit": [
     {
-      "path": "./dist",
-      "limit": "20 kB"
+      "path": "./lib",
+      "limit": "50 kB"
     }
   ],
   "standard": {
