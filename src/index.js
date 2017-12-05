@@ -1,5 +1,5 @@
 // @flow
-import React, { Component } from 'react'
+import React, { Fragment, Component } from 'react'
 import type { Key } from 'react'
 
 import { CardWrap, CardImage, CardContent, CardEmptyState } from './components/Card'
@@ -74,23 +74,17 @@ export default class extends Component<CardProps, State> {
     }
   }
 
-  render () {
-    const { title, description, color, backgroundColor, url, image, loading } = this.state
-    const { size, className, rounded, style, contrast, is } = this.props
-    let loadedView = []
+  renderContent () {
+    const { title, description, url, image } = this.state
+    const { size } = this.props
 
-    if (!loading) {
-      if (image) {
-        loadedView.push(
-          <CardImage
-            className='microlink_card__image'
-            image={image}
-            cardSize={size}
-          />
-        )
-      }
-
-      loadedView.push(
+    return (
+      <Fragment>
+        <CardImage
+          className='microlink_card__image'
+          image={image}
+          cardSize={size}
+        />
         <CardContent
           className='microlink_card__content'
           title={title}
@@ -98,8 +92,13 @@ export default class extends Component<CardProps, State> {
           url={url}
           cardSize={size}
         />
-      )
-    }
+      </Fragment>
+    )
+  }
+
+  render () {
+    const { title, color, backgroundColor, url, loading } = this.state
+    const { size, className } = this.props
 
     return (
       <CardWrap
@@ -107,14 +106,11 @@ export default class extends Component<CardProps, State> {
         href={url}
         title={title}
         cardSize={size}
-        contrast={contrast}
         color={color}
         backgroundColor={backgroundColor}
-        rounded={rounded}
-        style={style}
-        is={is}
+        {...this.props}
       >
-        {!loading ? loadedView : <CardEmptyState cardSize={size} />}
+        {!loading ? this.renderContent() : <CardEmptyState cardSize={size} />}
       </CardWrap>
     )
   }
