@@ -10,7 +10,8 @@ const {default: MicrolinkCard} = require('./index.js')
 module.exports = (selector, {is = 'div', ...opts} = {}) => (
   each(qa(selector), el => {
     const url = el.getAttribute('href')
-    const card = React.createElement(MicrolinkCard, { url, is, ...opts })
+    const params = { url, is, ...opts }
+    const card = React.createElement(MicrolinkCard, params)
     ReactDOM.render(card, el)
   })
 )

@@ -1,5 +1,4 @@
-// @flow
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { CardImageLarge } from './CardLarge'
 
 export default styled.div`
@@ -13,10 +12,6 @@ export default styled.div`
     display: block;
   }
 
-  ${({ image, cardSize }) => [
-    image && css`
-      background-image: url(${image});
-    `,
-    cardSize === 'large' && CardImageLarge
-  ]};
+  ${({image}) => image && `background-image: url(${image});`}
+  ${({cardSize}) => cardSize === 'large' && CardImageLarge}
 `

@@ -19,7 +19,6 @@ export const Content = styled.div`
   padding: 10px 15px;
   min-width: 0;
   box-sizing: border-box;
-
   ${({cardSize}) => cardSize === 'large' && CardContentLarge}
 `
 
@@ -52,13 +51,10 @@ const Url = styled.span`
   display: inline-block;
 `
 
-export default ({ title, description, url, cardSize, className }: ContentProps) => {
-  const prettyUrl: string = extractDomain(url)
-  return (
-    <Content className={className} cardSize={cardSize}>
-      <Title className='microlink_card__content_title' title={title}>{title}</Title>
-      <Description className='microlink_card__content_description'>{description}</Description>
-      <Url className='microlink_card__content_url'>{prettyUrl}</Url>
-    </Content>
-  )
-}
+export default ({ title, description, url, cardSize, className }: ContentProps) => (
+  <Content className={className} cardSize={cardSize}>
+    <Title className='microlink_card__content_title' title={title}>{title}</Title>
+    <Description className='microlink_card__content_description'>{description}</Description>
+    <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>
+  </Content>
+)

@@ -12,7 +12,7 @@ type EmptyStateProps = {
 }
 
 const EmptyImage = CardImage.extend`
-  ${({emptyState}) => emptyState && emptyStateImageAnimation}
+  ${emptyStateImageAnimation}
 `
 
 const EmptyTitle = styled.span`
@@ -66,7 +66,7 @@ const EmptyLink = styled.span`
 
 const CardEmptyState = ({cardSize}: EmptyStateProps) => (
   <Fragment>
-    <EmptyImage cardSize={cardSize} emptyState />
+    <EmptyImage cardSize={cardSize} />
     <Content cardSize={cardSize}>
       <EmptyTitle />
       <EmptyDescription />
