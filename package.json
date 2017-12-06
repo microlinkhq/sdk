@@ -70,6 +70,7 @@
     "lib": "babel src -d lib",
     "lint": "standard-markdown && standard src stories",
     "posttest": "npm run size",
+    "precommit": "lint-staged",
     "prepublish": "npm run build",
     "build": "node scripts/build",
     "pretest": "npm run lint",
