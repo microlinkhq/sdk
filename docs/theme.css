@@ -635,8 +635,20 @@ section.cover .cover-main {
   z-index: 1;
 }
 
-section.cover a {
-  color: inherit;
+.demo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.demo-link {
+  text-align: left;
+}
+
+section.cover a:not(.demo-link) {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 section.cover a,
@@ -644,10 +656,12 @@ section.cover a:hover {
   text-decoration: none;
 }
 
-section.cover p {
+section.cover p:not(.microlink_card__content_description) {
   line-height: 24px;
   line-height: 1.5rem;
-  margin: 1em 0;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 section.cover h1 {
@@ -665,12 +679,6 @@ section.cover h1 a {
 
 section.cover h1 span {
   font-weight: bold;
-}
-
-section.cover p {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
 }
 
 section.cover h1 small {

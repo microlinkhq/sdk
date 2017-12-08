@@ -67,6 +67,7 @@
     "standard": "latest",
     "standard-markdown": "latest",
     "unfetch": "latest",
+    "docsify": "latest",
     "webpack-dev-server": "latest"
   },
   "engines": {
@@ -76,6 +77,7 @@
     "build": "node scripts/build",
     "build-storybook": "build-storybook",
     "flow": "flow",
+    "docs": "docsify serve docs",
     "lib": "babel src -d lib",
     "lint": "standard-markdown && standard src stories",
     "postinstall": "npm run lib",
