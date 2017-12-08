@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components'
 import { CardWrapLarge } from './CardLarge'
 
 const style = css`
-  height: 123px;
   width: 558px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #fff;
@@ -41,9 +40,9 @@ const style = css`
   ]}
 `
 
-const CardWrap = ({ is, rel, target, ...props }) => {
+const CardWrap = ({ is, rel, href, target, ...props }) => {
   const el = styled[is]`${style}`
-  const opts = is === 'a' ? { ...props, rel, target } : props
+  const opts = is === 'a' ? { ...props, href, rel, target } : props
   return createElement(el, opts)
 }
 
