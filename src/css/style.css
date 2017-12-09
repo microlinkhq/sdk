@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600');
 
 :root {
-  --primary-color: #08AEEA;
+  --primary-color: #08aeea;
   --secondary-color: #34495e;
-  --bg-color: #FAFBFC;
+  --bg-color: #fafbfc;
   --sans-font: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
-  --code-font: Nitti, "Microsoft YaHei", 微软雅黑, monospace;
+  --code-font: Nitti, 'Microsoft YaHei', 微软雅黑, monospace;
 }
 
 * {

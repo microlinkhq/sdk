@@ -43,18 +43,19 @@
   },
   "scripts": {
     "bootstrap": "npm install && lerna bootstrap",
-    "build": "lerna run build",
+    "build-packages": "lerna run build",
+    "build": "gulp build",
     "dev": "concurrently \"gulp\" \"docsify serve docs\"",
     "lint": "standard-markdown && standard src",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
-    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "pretty": "prettier-standard src/**/*.{js,css} --single-quote",
     "test": "exit 0"
   },
   "private": true,
   "license": "MIT",
   "lint-staged": {
-    "*.js": [
+    "src/**/*.{js,css}": [
       "prettier-standard",
       "git add"
     ]
