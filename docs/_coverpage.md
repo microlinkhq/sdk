@@ -10,5 +10,5 @@ into beautiful previews
 <a href="https://vimeo.com/188175573" class="demo-link" target="_blank">vimeo.com/188175573</a>
 </p>
 
-[GitHub](https://github.com/microlinkhq/microlink)
+[Examples](https://microlink-storybook.netlify.com)
 [Get Started](#microlink)
