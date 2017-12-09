@@ -48,7 +48,7 @@ export default class extends Component<CardProps, State> {
       this.setState({ loading: true }, () =>
         fetch(url)
           .then(res => res.json())
-          .then(res => {
+          .then((res: Object) => {
             const {status = '', data}: {status: string, data: Object} = res
             if (status === 'success') {
               const { title, description, url, image }: {

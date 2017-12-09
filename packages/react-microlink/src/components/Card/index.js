@@ -1,6 +1,4 @@
-import CardContent from './CardContent'
-import CardEmptyState from './CardEmptyState'
-import CardImage from './CardImage'
-import CardWrap from './CardWrap'
-
-export { CardContent, CardEmptyState, CardImage, CardWrap }
+export { default as CardContent } from './CardContent'
+export { default as CardEmptyState } from './CardEmptyState'
+export { default as CardImage } from './CardImage'
+export { default as CardWrap } from './CardWrap'
