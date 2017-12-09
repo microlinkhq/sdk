@@ -16,6 +16,18 @@ Finally, microlink is powered by [Microlink API](https://docs.microlink.io).
 
 ## Integration
 
+?> Did not find your connector? let's [open an issue](https://github.com/microlinkhq/microlinkjs/issues) for create it.
+
+In order to make easy integrate microlink with the less friction with your website, we provide you a set of official connectors implemented using different web technologies.
+
+Just use the right connector for your stack. All the connectors follow the same API and default style.
+
+All of the connectors use [fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API) to make asynchronous HTTP calls.
+
+The connector should be tiny as possible, so we don't ship polyfill with the library.
+
+If you want to support old browsers versions, you need to attach your polyfill first. If you want a tiny fetch polyfill, we recommend you use [unfetch](https://github.com/developit/unfetch).
+
 ### React
 
 #### Installation
@@ -52,13 +64,13 @@ You could also include it via a CDN:
 **Normal version**
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/microlink@latest/umd/microlink.js"></script>
+<script type="text/javascript" src="//unpkg.com/microlink@latest/umd/microlink.js"></script>
 ```
 
 **Minify version**
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/microlink@latest/umd/microlink.min.js"></script>
+<script type="text/javascript" src="//unpkg.com/microlink@latest/umd/microlink.min.js"></script>
 ```
 
 #### Usage
@@ -126,12 +138,8 @@ Default: `''`
 
 It determines the card layout. Currently we have two layouts supported:
 
-- `'normal'` (default, no parameter required)
+- `'normal'` (default, no parameter required).
 - `'large'`
-
-## Community
-
-- [microlink-card](https://github.com/jroji/microlink-card) – Polymer card wrapper for https://microlink.io/ service.
 
 ## License
 
