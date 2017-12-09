@@ -44,8 +44,13 @@
 <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
 <script src="https://rawgit.com/microlinkhq/microlinkjs/master/packages/microlinkjs/umd/microlink.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function (event) {
-    microlink('.demo-link', {rounded: true})
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      microlink('.demo-link', {
+        rounded: true
+      })
+    }, 0)
   })
 </script>
+
 </html>
