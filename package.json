@@ -43,11 +43,9 @@
   },
   "scripts": {
     "dev": "concurrently \"gulp\" \"docsify serve docs\"",
-    "lint": "standard-markdown && standard src stories",
+    "lint": "standard-markdown && standard src",
     "posttest": "npm run size",
     "precommit": "lint-staged",
-    "prepublish": "npm run build",
-    "build": "node scripts/build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "test": "exit 0"
