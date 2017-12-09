@@ -27,7 +27,6 @@
     "dom101": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-microlink": "latest",
     "babel-loader": "latest",
     "babel-preset-env": "latest",
     "babel-preset-react": "latest",

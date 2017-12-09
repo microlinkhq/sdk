@@ -42,6 +42,7 @@
     "node": ">= 8"
   },
   "scripts": {
+    "bootstrap": "npm install && lerna bootstrap",
     "dev": "concurrently \"gulp\" \"docsify serve docs\"",
     "lint": "standard-markdown && standard src",
     "posttest": "npm run size",
