@@ -46,7 +46,6 @@
     "build": "lerna run build",
     "dev": "concurrently \"gulp\" \"docsify serve docs\"",
     "lint": "standard-markdown && standard src",
-    "posttest": "npm run size",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
