@@ -1,7 +1,8 @@
 {
-  "name": "microlink",
+  "name": "microlinkjs",
   "description": "Convert your links into beautiful previews",
   "version": "0.0.0",
+  "main": "umd/microlink.min.js",
   "author": {
     "email": "hi@breadadams.com",
     "name": "Brad Adams",
@@ -23,36 +24,47 @@
     "previsualization"
   ],
   "devDependencies": {
-    "concurrently": "latest",
+    "dom101": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-microlink": "latest",
+    "babel-loader": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-react-app": "latest",
+    "case-sensitive-paths-webpack-plugin": "latest",
+    "chalk": "latest",
+    "dotenv": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "fs-extra": "latest",
+    "html-webpack-plugin": "latest",
+    "unminified-webpack-plugin": "latest",
+    "webpack-manifest-plugin": "latest",
+    "babel-cli": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
     "docsify": "latest",
-    "gulp": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-concat": "latest",
-    "gulp-cssnano": "latest",
-    "gulp-strip-css-comments": "latest",
-    "gulp-uglify": "latest",
     "husky": "latest",
-    "lerna": "latest",
     "lint-staged": "latest",
     "prettier-standard": "latest",
+    "react-dev-utils": "latest",
     "standard": "latest",
-    "standard-markdown": "latest"
+    "standard-markdown": "latest",
+    "webpack": "latest",
+    "webpack-dev-server": "latest"
   },
   "engines": {
     "node": ">= 8"
   },
   "scripts": {
-    "dev": "concurrently \"gulp\" \"docsify serve docs\"",
-    "lint": "standard-markdown && standard src stories",
-    "posttest": "npm run size",
-    "precommit": "lint-staged",
-    "prepublish": "npm run build",
     "build": "node scripts/build",
+    "dev": "node scripts/start.js",
+    "docs": "docsify serve docs",
+    "lint": "standard-markdown && standard",
+    "prepublish": "npm run build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "test": "exit 0"
   },
-  "private": true,
   "license": "MIT",
   "lint-staged": {
     "*.js": [

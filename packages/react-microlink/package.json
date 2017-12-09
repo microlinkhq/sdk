@@ -1,0 +1,94 @@
+{
+  "name": "react-microlink",
+  "description": "Convert your links into beautiful previews",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": {
+    "email": "hi@breadadams.com",
+    "name": "Brad Adams",
+    "url": "https://breadadams.com"
+  },
+  "contributors": [
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com",
+      "url": "https://github.com/Kikobeats"
+    }
+  ],
+  "keywords": [
+    "data",
+    "extraction",
+    "link",
+    "microlink",
+    "preview",
+    "previsualization"
+  ],
+  "dependencies": {
+    "extract-domain": "~2.0.0",
+    "react": "~16.2.0",
+    "react-dom": "~16.2.0",
+    "styled-components": "~2.2.4"
+  },
+  "devDependencies": {
+    "@storybook/react": "latest",
+    "babel-cli": "latest",
+    "babel-eslint": "latest",
+    "babel-plugin-transform-class-properties": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-react-optimize": "latest",
+    "eslint-plugin-flowtype": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "flow-bin": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "prettier-standard": "latest",
+    "size-limit": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest",
+    "unfetch": "latest"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "dev": "start-storybook -p 6006",
+    "flow": "flow",
+    "lib": "babel src -d lib",
+    "lint": "standard-markdown && standard src stories",
+    "postinstall": "npm run lib",
+    "posttest": "npm run size",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "size": "size-limit",
+    "start": "node scripts/start.js",
+    "test": "exit 0"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "flow",
+      "prettier-standard",
+      "git add"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "./lib",
+      "limit": "50 kB"
+    }
+  ],
+  "standard": {
+    "globals": [
+      "React",
+      "fetch"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype",
+      "jsx-a11y"
+    ]
+  }
+}
