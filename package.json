@@ -43,6 +43,7 @@
   },
   "scripts": {
     "bootstrap": "npm install && lerna bootstrap",
+    "build": "lerna run build",
     "dev": "concurrently \"gulp\" \"docsify serve docs\"",
     "lint": "standard-markdown && standard src",
     "posttest": "npm run size",
