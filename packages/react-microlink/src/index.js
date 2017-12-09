@@ -108,6 +108,7 @@ export default class extends Component<CardProps, State> {
         cardSize={size}
         color={color}
         backgroundColor={backgroundColor}
+        loading={loading}
         {...this.props}
       >
         {!loading ? this.renderContent() : <CardEmptyState cardSize={size} />}

@@ -17,15 +17,17 @@ const style = css`
   opacity:1;
   transition: opacity .15s ease-in;
 
-  &:hover {
-    opacity: .5;
-    transition: opacity .15s ease-in;
-  }
+  ${({loading}) => !loading && css`
+    &:hover {
+      opacity: .5;
+      transition: opacity .15s ease-in;
+    }
 
-  &:active {
-    opacity: .8;
-    transition: opacity .15s ease-out;
-  }
+    &:active {
+      opacity: .8;
+      transition: opacity .15s ease-out;
+    }
+  `}
 
   ${({ backgroundColor, color, contrast, cardSize, rounded }) => [
     rounded && css`
