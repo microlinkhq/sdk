@@ -23,7 +23,14 @@
     "previsualization"
   ],
   "devDependencies": {
+    "concurrently": "latest",
     "docsify": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-strip-css-comments": "latest",
+    "gulp-uglify": "latest",
     "husky": "latest",
     "lerna": "latest",
     "lint-staged": "latest",
@@ -35,7 +42,7 @@
     "node": ">= 8"
   },
   "scripts": {
-    "dev": "docsify serve docs",
+    "dev": "concurrently \"gulp\" \"docsify serve docs\"",
     "lint": "standard-markdown && standard src stories",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
@@ -48,12 +55,5 @@
       "prettier-standard",
       "git add"
     ]
-  },
-  "standard": {
-    "globals": [
-      "React",
-      "fetch"
-    ],
-    "parser": "babel-eslint"
   }
 }
