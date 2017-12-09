@@ -49,12 +49,17 @@ $ npm install microlink
 
 You could also include it via a CDN:
 
-````html
-// normal
+**Normal version**
+
+```html
 <script type="text/javascript" src="https://unpkg.com/microlink@latest/umd/microlink.js"></script>
-// minify
+```
+
+**Minify version**
+
+```html
 <script type="text/javascript" src="https://unpkg.com/microlink@latest/umd/microlink.min.js"></script>
-````
+```
 
 #### Usage
 

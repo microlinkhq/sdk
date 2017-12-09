@@ -35,7 +35,8 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <!--inject-app-->
+  <!--inject-config-->
 </body>
 <script src="main.min.js"></script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -44,8 +45,8 @@
 <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
 <script src="https://rawgit.com/microlinkhq/microlinkjs/master/packages/microlinkjs/umd/microlink.min.js"></script>
 <script>
-  setTimeout(function() {
+  document.addEventListener('DOMContentLoaded', function (event) {
     microlink('.demo-link', {rounded: true})
-  }, 0)
+  })
 </script>
 </html>
