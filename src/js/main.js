@@ -5,5 +5,6 @@ window.$docsify = {
   subMaxLevel: 2,
   executeScript: true,
   auto2top: true,
-  coverpage: true
+  coverpage: true,
+  ga: 'UA-108549225-3'
 }
