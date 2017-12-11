@@ -12,7 +12,7 @@ plugins:
       plugin: bumped-changelog
     Committing new version:
       plugin: bumped-terminal
-      command: 'git add CHANGELOG.md package.json lib && git commit -m "Release microlinkjs@$newVersion"'
+      command: 'git add CHANGELOG.md package.json umd && git commit -m "Release microlinkjs@$newVersion"'
     Detecting problems before publish:
       plugin: bumped-terminal
       command: 'npm test'
