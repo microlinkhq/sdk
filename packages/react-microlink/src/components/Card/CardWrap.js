@@ -15,31 +15,36 @@ const style = css`
   display: flex;
   text-decoration: none;
   opacity:1;
-  transition: opacity .15s ease-in;
 
-  ${({loading}) => !loading && css`
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  ${({loading, contrast}) => !loading && !contrast && css`
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
     &:hover {
-      opacity: .5;
-      transition: opacity .15s ease-in;
-    }
-
-    &:active {
-      opacity: .8;
-      transition: opacity .15s ease-out;
+      background: #F5F8FA;
+      border-color: rgba(136,153,166,.5);
     }
   `}
 
-  ${({ backgroundColor, color, contrast, cardSize, rounded }) => [
-    rounded && css`
-      border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
-    `,
-    cardSize === 'large' && CardWrapLarge,
-    contrast && color && backgroundColor && css`
-      background-color: ${backgroundColor};
-      color: ${color};
-      border-color: ${color};
-    `
-  ]}
+  ${({rounded}) => rounded && css`
+    border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
+  `}
+
+  ${({cardSize}) => cardSize === 'large' && CardWrapLarge}
+
+  ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && css`
+    background-color: ${backgroundColor};
+    color: ${color};
+    border-color: ${color};
+    transition: filter .15s ease-in-out;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  `}
 `
 
 const CardWrap = ({ is, rel, href, target, ...props }) => {
