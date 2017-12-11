@@ -6,19 +6,19 @@
 
 ## Overview
 
-microlink lets you create beautiful links previews from any website.
+**microlinkjs** lets you create beautiful links previews from any website.
 
 It is a perfect complement to improve the engagement of your articles or blog publications, bringing your user to see what is behind any link.
 
 It has some *out-of-the-box* default styles, but you can customize the display via options and CSS styling. The [examples](/examples) demonstrate a few customization ideas. We also provided multiple ways to integrate it in your site.
 
-Finally, microlink is powered by [Microlink API](https://docs.microlink.io).
+Finally, **microlinkjs** is powered by [Microlink API](https://docs.microlink.io).
 
 ## Integration
 
 ?> Did not find your connector? let's [open an issue](https://github.com/microlinkhq/microlinkjs/issues) for create it.
 
-In order to make easy integrate microlink with the less friction with your website, we provide you a set of official connectors implemented using different web technologies.
+In order to make easy integrate **microlinkjs** with the less friction with your website, we provide you a set of official connectors implemented using different web technologies.
 
 Just use the right connector for your stack. All the connectors follow the same API and default style.
 
@@ -132,6 +132,23 @@ It determines the card layout. Currently we have two layouts supported:
 
 - `'normal'` (default, no parameter required).
 - `'large'`
+
+## Customization
+
+We do not inject any CSS in your application.
+
+** microlinkjs** is shipped with a default minimal inline style.
+
+If you need to adapt the *look and feel*, each component of the card has been declared as a [BEM](http://getbem.com/introduction) class name.
+
+All the class names availables are:
+
+- `microlink_card`
+- `microlink_card__image`
+- `microlink_card__content`
+- `microlink_card__content_title`
+- `microlink_card__content_description`
+- `microlink_card__content_url`
 
 ## License
 
