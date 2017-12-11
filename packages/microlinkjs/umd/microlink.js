@@ -5793,10 +5793,10 @@ var emptyStateImageAnimation = Object(__WEBPACK_IMPORTED_MODULE_0_styled_compone
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CardLarge__ = __webpack_require__(3);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _templateObject = _taggedTemplateLiteral(['\n  width: 558px;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  background-color: #fff;\n  color: #181919;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  transition: opacity .15s ease-in;\n\n  ', '\n\n  ', '\n'], ['\n  width: 558px;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  background-color: #fff;\n  color: #181919;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  transition: opacity .15s ease-in;\n\n  ', '\n\n  ', '\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    &:hover {\n      opacity: .5;\n      transition: opacity .15s ease-in;\n    }\n\n    &:active {\n      opacity: .8;\n      transition: opacity .15s ease-out;\n    }\n  '], ['\n    &:hover {\n      opacity: .5;\n      transition: opacity .15s ease-in;\n    }\n\n    &:active {\n      opacity: .8;\n      transition: opacity .15s ease-out;\n    }\n  ']),
-    _templateObject3 = _taggedTemplateLiteral(['\n      border-radius: ', ';\n    '], ['\n      border-radius: ', ';\n    ']),
-    _templateObject4 = _taggedTemplateLiteral(['\n      background-color: ', ';\n      color: ', ';\n      border-color: ', ';\n    '], ['\n      background-color: ', ';\n      color: ', ';\n      border-color: ', ';\n    ']),
+var _templateObject = _taggedTemplateLiteral(['\n  width: 558px;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  background-color: #fff;\n  color: #181919;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  width: 558px;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  background-color: #fff;\n  color: #181919;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n    &:hover {\n      background: #F5F8FA;\n      border-color: rgba(136,153,166,.5);\n    }\n  '], ['\n    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n    &:hover {\n      background: #F5F8FA;\n      border-color: rgba(136,153,166,.5);\n    }\n  ']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    border-radius: ', ';\n  '], ['\n    border-radius: ', ';\n  ']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    background-color: ', ';\n    color: ', ';\n    border-color: ', ';\n    transition: filter .15s ease-in-out;\n\n    &:hover {\n      filter: brightness(90%);\n    }\n  '], ['\n    background-color: ', ';\n    color: ', ';\n    border-color: ', ';\n    transition: filter .15s ease-in-out;\n\n    &:hover {\n      filter: brightness(90%);\n    }\n  ']),
     _templateObject5 = _taggedTemplateLiteral(['', ''], ['', '']);
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -5809,23 +5809,28 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 
 var style = Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* css */])(_templateObject, function (_ref) {
-  var loading = _ref.loading;
-  return !loading && Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* css */])(_templateObject2);
+  var loading = _ref.loading,
+      contrast = _ref.contrast;
+  return !loading && !contrast && Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* css */])(_templateObject2);
 }, function (_ref2) {
-  var backgroundColor = _ref2.backgroundColor,
-      color = _ref2.color,
-      contrast = _ref2.contrast,
-      cardSize = _ref2.cardSize,
-      rounded = _ref2.rounded;
-  return [rounded && Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* css */])(_templateObject3, typeof rounded === 'boolean' ? '.42857em' : rounded), cardSize === 'large' && __WEBPACK_IMPORTED_MODULE_2__CardLarge__["c" /* CardWrapLarge */], contrast && color && backgroundColor && Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* css */])(_templateObject4, backgroundColor, color, color)];
+  var rounded = _ref2.rounded;
+  return rounded && Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* css */])(_templateObject3, typeof rounded === 'boolean' ? '.42857em' : rounded);
+}, function (_ref3) {
+  var cardSize = _ref3.cardSize;
+  return cardSize === 'large' && __WEBPACK_IMPORTED_MODULE_2__CardLarge__["c" /* CardWrapLarge */];
+}, function (_ref4) {
+  var backgroundColor = _ref4.backgroundColor,
+      color = _ref4.color,
+      contrast = _ref4.contrast;
+  return contrast && color && backgroundColor && Object(__WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* css */])(_templateObject4, backgroundColor, color, color);
 });
 
-var CardWrap = function CardWrap(_ref3) {
-  var is = _ref3.is,
-      rel = _ref3.rel,
-      href = _ref3.href,
-      target = _ref3.target,
-      props = _objectWithoutProperties(_ref3, ['is', 'rel', 'href', 'target']);
+var CardWrap = function CardWrap(_ref5) {
+  var is = _ref5.is,
+      rel = _ref5.rel,
+      href = _ref5.href,
+      target = _ref5.target,
+      props = _objectWithoutProperties(_ref5, ['is', 'rel', 'href', 'target']);
 
   var el = __WEBPACK_IMPORTED_MODULE_1_styled_components__["b" /* default */][is](_templateObject5, style);
   var opts = is === 'a' ? _extends({}, props, { href: href, rel: rel, target: target }) : props;

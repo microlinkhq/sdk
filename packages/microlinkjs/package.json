@@ -1,7 +1,7 @@
 {
   "name": "microlinkjs",
   "description": "Convert your links into beautiful previews",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "umd/microlink.min.js",
   "author": {
     "email": "hi@breadadams.com",
