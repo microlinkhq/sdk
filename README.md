@@ -135,7 +135,7 @@ It determines the card layout. Currently we have two layouts supported:
 
 ## License
 
-**microlink** © [Microlink](https://microlink.io), Released under the [MIT](https://github.com/Kikobeats/free-email-domains/blob/master/LICENSE.md) License.<br>
-Authored and maintained by Kiko Beats with help from [contributors](https://github.com/Kikobeats/free-email-domains/contributors).
+**microlink** © [Microlink](https://microlink.io), Released under the [MIT](https://github.com/microlinkhq/microlinkjs/blob/master/LICENSE.md) License.<br>
+Authored and maintained by Kiko Beats with help from [contributors](https://github.com/microlinkhq/microlinkjs/contributors).
 
 > [microlink.io](https://microlink.io) · GitHub [@MicrolinkHQ](https://github.com/microlinkhq) · Twitter [@microlinkio](https://twitter.com/microlinkio)
