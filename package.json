@@ -1,6 +1,7 @@
 {
-  "name": "microlink",
+  "name": "microlinkjs",
   "description": "Convert your links into beautiful previews",
+  "homepage": "https://microlink.js.org",
   "version": "0.0.0",
   "author": {
     "email": "hi@breadadams.com",
@@ -14,6 +15,13 @@
       "url": "https://github.com/Kikobeats"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlinkhq/microlinkjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/microlinkhq/microlinkjs/issues"
+  },
   "keywords": [
     "data",
     "extraction",
@@ -43,8 +51,8 @@
   },
   "scripts": {
     "bootstrap": "npm install && lerna bootstrap",
-    "build-packages": "lerna run build",
     "build": "gulp build",
+    "build-packages": "lerna run build",
     "dev": "concurrently \"gulp\" \"docsify serve docs\"",
     "lint": "standard-markdown && standard src",
     "precommit": "lint-staged",
