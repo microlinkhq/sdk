@@ -2,8 +2,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13,29 +11,21 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 import React, { Fragment, Component } from 'react';
-
+import PropTypes from 'prop-types';
 
 import { CardWrap, CardImage, CardContent, CardEmptyState } from './components/Card';
 import { getUrlPath } from './utils';
 
-var _class = function (_Component) {
-  _inherits(_class, _Component);
+var Microlink = function (_Component) {
+  _inherits(Microlink, _Component);
 
-  function _class() {
-    var _ref;
+  function Microlink() {
+    _classCallCheck(this, Microlink);
 
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, _class);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _class.__proto__ || Object.getPrototypeOf(_class)).call.apply(_ref, [this].concat(args))), _this), _this.state = { loading: true }, _temp), _possibleConstructorReturn(_this, _ret);
+    return _possibleConstructorReturn(this, (Microlink.__proto__ || Object.getPrototypeOf(Microlink)).apply(this, arguments));
   }
 
-  _createClass(_class, [{
+  _createClass(Microlink, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
       var _this2 = this;
@@ -47,37 +37,31 @@ var _class = function (_Component) {
 
 
       if (targetUrl) {
-        var _url = api + '/?url=' + targetUrl;
-        if (contrast) _url = _url + '&palette';
+        var url = api + '/?url=' + targetUrl;
+        if (contrast) url = url + '&palette';
 
         this.setState({ loading: true }, function () {
-          return fetch(_url).then(function (res) {
+          return fetch(url).then(function (res) {
             return res.json();
-          }).then(function (res) {
-            var _res$status = res.status,
-                status = _res$status === undefined ? '' : _res$status,
-                data = res.data;
+          }).then(function (_ref) {
+            var status = _ref.status,
+                data = _ref.data;
+            var title = data.title,
+                description = data.description,
+                url = data.url,
+                image = data.image;
+            var color = image.color,
+                backgroundColor = image.background_color;
 
-            if (status === 'success') {
-              var _title = data.title,
-                  _description = data.description,
-                  _url2 = data.url,
-                  _image = data.image;
-
-
-              if (_image) {
-                if ((typeof _image === 'undefined' ? 'undefined' : _typeof(_image)) === 'object') {
-                  var _color = _image.color,
-                      _backgroundColor = _image.background_color;
-
-                  _this2.setState({ color: _color, backgroundColor: _backgroundColor });
-                }
-                var imagePath = getUrlPath(_image);
-                _this2.setState({ image: imagePath });
-              }
-
-              _this2.setState({ title: _title, description: _description, url: _url2, loading: false });
-            }
+            _this2.setState({
+              color: color,
+              backgroundColor: backgroundColor,
+              title: title,
+              description: description,
+              url: url,
+              loading: false,
+              image: getUrlPath(image)
+            });
           });
         });
       }
@@ -122,7 +106,7 @@ var _class = function (_Component) {
       return React.createElement(
         CardWrap,
         _extends({
-          className: className ? 'microlink_card ' + className : className,
+          className: className ? 'microlink_card ' + className : 'microlink_card',
           href: url,
           title: title,
           cardSize: size,
@@ -137,10 +121,12 @@ var _class = function (_Component) {
     }
   }]);
 
-  return _class;
+  return Microlink;
 }(Component);
 
-_class.defaultProps = {
-  endpoint: 'https://api.microlink.io'
+Microlink.defaultProps = {
+  endpoint: 'https://api.microlink.io',
+  size: 'normal'
 };
-export default _class;
+
+export default Microlink;
