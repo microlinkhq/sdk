@@ -1,15 +1,9 @@
-// @flow
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
-import type { CardSizes } from './index'
 import CardImage from './CardImage'
 import { Content } from './CardContent'
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimations'
-
-type EmptyStateProps = {
-  cardSize?: CardSizes
-}
 
 const EmptyImage = CardImage.extend`
   ${emptyStateImageAnimation}
@@ -64,7 +58,7 @@ const EmptyLink = styled.span`
   animation-delay: .25s;
 `
 
-const CardEmptyState = ({cardSize}: EmptyStateProps) => (
+const CardEmptyState = ({cardSize}) => (
   <Fragment>
     <EmptyImage cardSize={cardSize} />
     <Content cardSize={cardSize}>
