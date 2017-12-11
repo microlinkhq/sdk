@@ -1,7 +1,7 @@
 {
   "name": "react-microlink",
   "description": "Convert your links into beautiful previews",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "author": {
     "email": "hi@breadadams.com",
