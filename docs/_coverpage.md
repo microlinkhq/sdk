@@ -11,4 +11,4 @@ into beautiful previews
 </p>
 
 [Examples](https://microlink-storybook.netlify.com)
-[Get Started](#microlink)
+[Get Started](#microlinkjs)
