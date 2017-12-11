@@ -61,7 +61,7 @@
     "build": "node scripts/build",
     "dev": "node scripts/start.js",
     "docs": "docsify serve docs",
-    "lint": "standard-markdown && standard",
+    "lint": "standard-markdown && standard src",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "test": "exit 0"
