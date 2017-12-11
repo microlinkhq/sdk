@@ -1,18 +1,8 @@
-// @flow
 import React from 'react'
 import styled from 'styled-components'
 import extractDomain from 'extract-domain'
 
-import type { CardSizes } from './index'
 import { CardContentLarge } from './CardLarge'
-
-type ContentProps = {
-  cardSize?: CardSizes,
-  title?: string,
-  description?: string,
-  url?: string,
-  className?: string
-}
 
 export const Content = styled.div`
   flex: 1;
@@ -51,7 +41,7 @@ const Url = styled.span`
   display: inline-block;
 `
 
-export default ({ title, description, url, cardSize, className }: ContentProps) => (
+export default ({ title, description, url, cardSize, className }) => (
   <Content className={className} cardSize={cardSize}>
     <Title className='microlink_card__content_title' title={title}>{title}</Title>
     <Description className='microlink_card__content_description'>{description}</Description>
