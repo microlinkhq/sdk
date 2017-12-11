@@ -52,13 +52,15 @@
   "engines": {
     "node": ">= 8"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
+    "build": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
     "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
     "flow": "flow",
-    "build": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
     "lint": "standard-markdown && standard src stories",
-    "postinstall": "npm run build",
     "posttest": "npm run size",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
