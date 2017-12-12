@@ -102,21 +102,21 @@ The API endpoint where the request is made
 
 ### contrast
 
-Type: `boolean`
+Type: `boolean`<br>
 Default: `false`
 
 When enabled, it will generate a high contrast card based on predominant colors detected in the feature image from the provided `url`.
 
 ### is
 
-Type: `string`
+Type: `string`<br>
 Default: `'a'`
 
 Determine the type of the root node element for rendering the card.
 
 ### rounded
 
-Type: `boolean|string`
+Type: `boolean|string`<br>
 Default: `false`
 
 Determine if the card preview should have rounded corners or not.
@@ -125,7 +125,7 @@ If you provided a `string` value, it will be passed as the `border-radius`.
 
 ### size
 
-Type: `string`
+Type: `string`<br>
 Default: `''`
 
 It determines the card layout. Currently we have two layouts supported:
