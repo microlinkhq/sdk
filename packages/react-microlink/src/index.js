@@ -16,7 +16,7 @@ class Microlink extends Component {
         fetch(url)
           .then(res => res.json())
           .then(({status, data}) => {
-            const { title, description, url, image } = data
+            const { title, description, url, image, logo } = data
             const {color, background_color: backgroundColor} = image
             this.setState({
               color,
@@ -25,7 +25,7 @@ class Microlink extends Component {
               description,
               url,
               loading: false,
-              image: getUrlPath(image)
+              image: getUrlPath(image || logo)
             })
           })
       )
