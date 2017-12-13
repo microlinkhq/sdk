@@ -80,6 +80,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 })
 ```
 
+Also, you can declare inline options in the HTML markup as `data` attributes:
+
+```html
+<a class="link" data-rounded="true" href="http://microlink.js.org">microlink.js.org</a>
+```
+
 ## API
 
 We even provided different ways to integrate microlink with your site and your code, our API is isomorphic.
