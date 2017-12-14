@@ -6,7 +6,7 @@
 
 ## Overview
 
-**microlinkjs** lets you create beautiful links previews from any website.
+**microlinkjs** lets you create beautiful link previews from any website.
 
 It is a perfect complement to improve the engagement of your articles or blog publications, bringing your user to see what is behind any link.
 
@@ -143,11 +143,11 @@ It determines the card layout. Currently we have two layouts supported:
 
 We do not inject any CSS in your application.
 
-** microlinkjs** is shipped with a default minimal inline style.
+** microlinkjs** is shipped with default minimal inline styles.
 
-If you need to adapt the *look and feel*, each component of the card has been declared as a [BEM](http://getbem.com/introduction) class name.
+If you need to adapt the *look and feel*, each component of the card has been assigned a [BEM](http://getbem.com/introduction) class name.
 
-All the class names availables are:
+The available class names are:
 
 - `microlink_card`
 - `microlink_card__image`
