@@ -16,7 +16,7 @@ Finally, **microlinkjs** is powered by [Microlink API](https://docs.microlink.io
 
 ## Integration
 
-Can't find your connector? Let's [open an issue](https://github.com/microlinkhq/microlinkjs/issues) to create it.
+?> Can't find your connector? Let's [open an issue](https://github.com/microlinkhq/microlinkjs/issues) to create it.
 
 In order to make integrating **microlinkjs** your website as simple as possible, we provide you a set of official connectors implemented using different web technologies.
 
