@@ -31,7 +31,6 @@
     "previsualization"
   ],
   "devDependencies": {
-    "concurrently": "latest",
     "docsify": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
@@ -53,7 +52,7 @@
     "bootstrap": "npm install && lerna bootstrap",
     "build": "gulp build",
     "build-packages": "lerna run build",
-    "dev": "concurrently \"gulp\" \"docsify serve docs\"",
+    "dev": "gulp",
     "lint": "standard-markdown && standard src",
     "precommit": "lint-staged",
     "pretest": "npm run lint",

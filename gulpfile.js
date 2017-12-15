@@ -13,7 +13,7 @@ const src = {
 }
 
 const dist = {
-  path: 'docs',
+  path: 'static',
   name: {
     css: 'style',
     js: 'main'
