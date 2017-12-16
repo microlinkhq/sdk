@@ -26,3 +26,6 @@ npm-shrinkwrap.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+packages/react-microlink/lib
+packages/microlinkjs/umd
