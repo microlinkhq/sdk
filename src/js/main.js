@@ -1,8 +1,8 @@
 window.$docsify = {
   name: 'microlink.js',
   repo: 'microlinkhq/microlinkjs',
-  subMaxLevel: 2,
   executeScript: true,
+  maxLevel: 3,
   auto2top: true,
   coverpage: true,
   ga: 'UA-108549225-3'

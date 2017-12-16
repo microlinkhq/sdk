@@ -75,6 +75,8 @@ See [API](#API) for know what option you can pass.
 
 ### Jekyll
 
+#### Installation
+
 The Jekyll integration is pretty similar to [Vanilla/UMD](#vanillaumd) approach.
 
 Just you need to be sure to load the script. You can do it, for example, at the end of `_layouts/default.html`:
@@ -89,7 +91,9 @@ Just you need to be sure to load the script. You can do it, for example, at the 
 </script>
 ```
 
-In the code above, I'm associating microlink cards with the class `card-preview`, so now, when I'm going to create a markdown post, I will associate the `card-preview` class with the link:
+#### Usage
+
+In the code above, we are associating microlink cards with the class `card-preview`, so now, when we write a new markdown post, we are going to use the `card-preview` class to associate the link:
 
 ```md
 [](https://blog.codinghorror.com/computers-are-lousy-random-number-generators){:.card-preview}
@@ -179,7 +183,7 @@ It determines the card layout. Currently we have two layouts supported:
 - `'normal'` (default, no parameter required).
 - `'large'`
 
-## Customization
+## Styling
 
 We do not inject any CSS in your application.
 
