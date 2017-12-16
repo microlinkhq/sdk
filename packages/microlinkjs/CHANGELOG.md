@@ -1,3 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+<a name="1.1.0"></a>
+# 1.1.0 (2017-12-16)
+
+
+
+
+**Note:** Version bump only for package microlinkjs
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-12-13)
 
@@ -711,6 +724,3 @@
 * Use unfetch instead of fetch ([15c1e5a](https://github.com/microlinkhq/react-microlink/commit/15c1e5a))
 * User size-limit instead of bundlesize ([ebc4cd8](https://github.com/microlinkhq/react-microlink/commit/ebc4cd8))
 * v0.1.0-alpha ([05092a3](https://github.com/microlinkhq/react-microlink/commit/05092a3))
-
-
-
