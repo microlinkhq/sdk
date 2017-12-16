@@ -23,7 +23,7 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules && cd packages && eachdir rm -rf node_modules",
-    "publish": "lerna publish --sort --conventional-commits --cd-version",
+    "publish": "lerna exec npm run prepublishOnly && git add packages/microlinkjs/umd packages/react-microlink/lib && lerna publish --sort --conventional-commits --cd-version",
     "postinstall": "lerna bootstrap && lerna link --force-local",
     "build": "gulp build",
     "build-packages": "lerna run build",
