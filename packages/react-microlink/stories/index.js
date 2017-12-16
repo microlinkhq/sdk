@@ -114,6 +114,19 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
+  .add('with custom image', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          image={'logo'}
+          rounded
+          />
+      )}
+    </div>
+  ))
   .add('with empty state', () => (
     <MicrolinkCard
       url='somesitethatwontresolve.com'
@@ -203,6 +216,20 @@ storiesOf('Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
+          rounded
+          size='large'
+          />
+      )}
+    </div>
+  ))
+  .add('with custom image', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          image={'logo'}
           rounded
           size='large'
           />

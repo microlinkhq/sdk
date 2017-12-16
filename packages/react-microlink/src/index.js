@@ -2,11 +2,14 @@ import React, { Fragment, Component } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardImage, CardContent, CardEmptyState } from './components/Card'
-import { getUrlPath } from './utils'
+import { getUrlPath, uniqArray, someProp } from './utils'
+
+const IMAGES_PROPS = ['screenshot', 'image', 'logo']
 
 class Microlink extends Component {
   componentWillMount () {
-    const { url: targetUrl, contrast, endpoint: api } = this.props
+    const { url: targetUrl, contrast, endpoint: api, image } = this.props
+    const imagesProps = uniqArray([].concat(image).concat(IMAGES_PROPS))
 
     if (targetUrl) {
       let url = `${api}/?url=${targetUrl}`
@@ -16,7 +19,9 @@ class Microlink extends Component {
         fetch(url)
           .then(res => res.json())
           .then(({status, data}) => {
-            const { title, description, url, image, logo } = data
+            const image = getUrlPath(someProp(data, imagesProps))
+
+            const { title, description, url } = data
             const {color, background_color: backgroundColor} = image
             this.setState({
               color,
@@ -25,7 +30,7 @@ class Microlink extends Component {
               description,
               url,
               loading: false,
-              image: getUrlPath(image || logo)
+              image
             })
           })
       )
