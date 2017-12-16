@@ -89,15 +89,15 @@ Just you need to be sure to load the script. You can do it, for example, at the 
 </script>
 ```
 
-In the code above, I'm associating microlink cards with the class `card-preview`, so now, when I create a post, I'm going to declare a link that uses these class:
+In the code above, I'm associating microlink cards with the class `card-preview`, so now, when I'm going to create a markdown post, I will associate the `card-preview` class with the link:
 
-```html
+```md
 [](https://blog.codinghorror.com/computers-are-lousy-random-number-generators){:.card-preview}
 ```
 
 You can pass custom option as well:
 
-```html
+```md
 [](https://www.random.org/randomness){:.card-preview data-image="logo"}
 ```
 
