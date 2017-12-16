@@ -70,6 +70,7 @@
     "lint": "standard-markdown && standard src stories",
     "posttest": "npm run size",
     "pretest": "npm run lint",
+    "prepublishOnly": "npm run build",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "size": "size-limit",
     "start": "node scripts/start.js",

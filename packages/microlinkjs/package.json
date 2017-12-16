@@ -31,6 +31,9 @@
     "preview",
     "previsualization"
   ],
+  "dependencies": {
+    "react-microlink": "^1.0.0"
+  },
   "devDependencies": {
     "babel-cli": "latest",
     "babel-loader": "latest",
@@ -67,6 +70,7 @@
   ],
   "scripts": {
     "build": "node scripts/build",
+    "prepublishOnly": "npm run build",
     "dev": "node scripts/start.js",
     "docs": "docsify serve docs",
     "lint": "standard-markdown && standard src",
