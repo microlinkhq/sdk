@@ -70,7 +70,7 @@
   ],
   "scripts": {
     "build": "node scripts/build",
-    "prepublishOnly": "npm run build",
+    "prepublish": "npm run build",
     "dev": "node scripts/start.js",
     "docs": "docsify serve docs",
     "lint": "standard-markdown && standard src",
