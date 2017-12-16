@@ -28,6 +28,81 @@ Each connector is developed to be as tiny possible, so we don't ship any polyfil
 
 If you want to support older browsers versions, you need to attach your own polyfill first. If you're looking for a tiny `fetch` polyfill, we suggest using [unfetch](https://github.com/developit/unfetch).
 
+### Vanilla/UMD
+
+#### Installation
+
+```sh
+$ npm install microlinkjs
+```
+
+You could also include it via a CDN as well
+
+**from unpkg.com**
+
+```html
+<script type="text/javascript" src="//unpkg.com/microlinkjs@latest"></script>
+```
+
+**from jsdelivr.com**
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/microlinkjs@1/umd/microlink.min.js"></script>
+```
+
+#### Usage
+
+```js
+// Replace all `a` for microlink cards
+microlink('a')
+
+// Provide options to customize the cards (See API section)
+microlink('a', { rounded: true })
+
+// Replace links after DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function (event) {
+  microlink('a', { rounded: true })
+})
+```
+
+Also, you can declare inline options in the HTML markup as `data` attributes:
+
+```html
+<a class="link" data-rounded="true" href="http://microlink.js.org">microlink.js.org</a>
+```
+
+See [API](#API) for know what option you can pass.
+
+### Jekyll
+
+The Jekyll integration is pretty similar to [Vanilla/UMD](#vanillaumd) approach.
+
+Just you need to be sure to load the script. You can do it, for example, at the end of `_layouts/default.html`:
+
+```html
+<script type="text/javascript" src="//unpkg.com/microlinkjs@latest"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    microlink('.card-preview', {rounded: true})
+    anchors.add();
+  });
+</script>
+```
+
+In the code above, I'm associating microlink cards with the class `card-preview`, so now, when I create a post, I'm going to declare a link that uses these class:
+
+```html
+[](https://blog.codinghorror.com/computers-are-lousy-random-number-generators){:.card-preview}
+```
+
+You can pass custom option as well:
+
+```html
+[](https://www.random.org/randomness){:.card-preview data-image="logo"}
+```
+
+See [API](#API) for know what option you can pass.
+
 ### React
 
 #### Installation
@@ -49,41 +124,6 @@ import MicrolinkCard from 'react-microlink'
 
 // You can pass extra props
 <MicrolinkCard url='https://stackoverflow.com' target='_blank' />
-```
-
-### Vanilla/UMD
-
-#### Installation
-
-```sh
-$ npm install microlink
-```
-
-You could also include it via a CDN:
-
-```html
-<script type="text/javascript" src="//unpkg.com/microlinkjs@latest"></script>
-```
-
-#### Usage
-
-```js
-// Replace all links for Microlink cards
-microlink('a')
-
-// Provide options to customize the cards (See API section)
-microlink('a', { rounded: true })
-
-// Replace links after DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function (event) {
-  microlink('a', { rounded: true })
-})
-```
-
-Also, you can declare inline options in the HTML markup as `data` attributes:
-
-```html
-<a class="link" data-rounded="true" href="http://microlink.js.org">microlink.js.org</a>
 ```
 
 ## API
