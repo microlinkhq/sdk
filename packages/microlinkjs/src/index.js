@@ -9,6 +9,10 @@ const {default: MicrolinkCard} = require('react-microlink')
 
 const BOOLEAN_STRINGS = ['true', 'false']
 
+const DEFAULT_OPTS = {
+  is: 'div'
+}
+
 const getBoolean = str => str === 'true'
 const isStringBoolean = str => BOOLEAN_STRINGS.includes(str)
 
@@ -18,11 +22,13 @@ const getDataAttributes = el => Object.keys(el.dataset).reduce((acc, key) => {
   return acc
 }, {})
 
-module.exports = (selector, {is = 'div', ...opts} = {}) => (
-  each(qa(selector), el => {
+module.exports = (selector, opts) => {
+  opts = Object.assign({}, DEFAULT_OPTS, opts)
+
+  return each(qa(selector), el => {
     const url = el.getAttribute('href')
-    const params = { url, is, ...opts, ...getDataAttributes(el) }
+    const params = Object.assign({url}, opts, getDataAttributes(el))
     const card = React.createElement(MicrolinkCard, params)
     ReactDOM.render(card, el)
   })
-)
+}
