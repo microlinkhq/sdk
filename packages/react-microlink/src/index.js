@@ -8,12 +8,13 @@ const IMAGE_PROPS = ['screenshot', 'image', 'logo']
 
 class Microlink extends Component {
   componentWillMount () {
-    const { url: targetUrl, contrast, endpoint: api, image } = this.props
+    const { url: targetUrl, contrast, endpoint: api, image, prerender } = this.props
     const imagesProps = uniqArray([].concat(image).concat(IMAGE_PROPS))
 
     if (targetUrl) {
       let url = `${api}/?url=${targetUrl}`
       if (contrast) url = `${url}&palette`
+      if (prerender) url = `${url}&prerender`
 
       this.setState({ loading: true }, () =>
         fetch(url)
@@ -82,13 +83,15 @@ class Microlink extends Component {
 Microlink.defaultProps = {
   endpoint: 'https://api.microlink.io',
   image: 'image',
-  size: 'normal'
+  size: 'normal',
+  prerender: false
 }
 
 Microlink.propTypes = {
   url: PropTypes.string.isRequired,
   size: PropTypes.string,
   endpoint: PropTypes.string,
+  prerender: PropTypes.bool,
   image: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)

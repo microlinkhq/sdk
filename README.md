@@ -192,6 +192,13 @@ It determines the card layout. Currently we have two layouts supported:
 - `'normal'` (default, no parameter required).
 - `'large'`
 
+### prerender
+
+Type: `boolean`<br>
+Default: `false`
+
+Perform an API call using [prerender](https://docs.microlink.io/#prerender) feature.
+
 ## Styling
 
 We do not inject any CSS in your application.
