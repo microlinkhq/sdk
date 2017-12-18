@@ -1,0 +1,357 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+
+<dom-module id="microlink-card">
+  <template>
+    <style>
+
+      :host {
+        display: flex;
+      }
+
+      @keyframes loading {
+        0% {
+          background-color: #e1e8ed;
+        }
+
+        70% {
+          background-color: #dce3e8;
+        }
+
+        100% {
+          background-color: #e1e8ed;
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .microlink_card {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e1e8ed;
+        cursor: pointer;
+        display: flex;
+        overflow: hidden;
+        transition: all 0.2s;
+        width: 100%;
+        @apply --microlink-card;
+      }
+
+      .microlink_card--large {
+        flex-direction: column;
+      }
+
+      .microlink_card--large .microlink_card__image {
+        min-height: var(--microlink-large-image-min-height, 250px);
+      }
+      :host([round]) .microlink_card{
+        border-radius: var(--microlink-rounded-border, .42857em);
+      }
+
+      :host([loading]) .microlink_card__image {
+          display: block;
+          -webkit-flex: 0 0 125px;
+          -ms-flex: 0 0 125px;
+          flex: 0 0 125px;
+          background: #e1e8ed no-repeat center center / cover;
+          -webkit-animation: loading 1.25s linear infinite;
+          animation: loading 1.25s linear infinite;
+      }
+
+      :host(:hover) .microlink_card {
+        background: #f5f8fa;
+        border-color: rgba(136,153,166,.5);
+        @apply --microlink-card-hover;
+      }
+
+      .microlink_card {
+        display: flex;
+      }
+
+      .microlink_card__image {
+        overflow: hidden;
+        text-align: center;
+        display: block;
+        -webkit-flex: 0 0 125px;
+        -ms-flex: 0 0 125px;
+        flex: 0 0 125px;
+        background-color: #e1e8ed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        -webkit-animation: loading 1.25s linear infinite;
+        animation: loading 1.25s linear infinite;
+        margin: 0;
+        @apply --microlink-card;
+      }
+
+      .microlink_card__content {
+        color: #181919;
+        position: relative;
+        width: 100%;
+        flex: 1;
+        padding: 10px 15px;
+        min-width: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        @apply --microlink-card-content;
+      }
+
+      .microlink_card__content_title {
+        font-size: 16px;
+        margin: 0 0 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 95%;
+        @apply --microlink-card-content-title;
+      }
+
+      .microlink_card__content_url {
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 10px;
+        display: inline-block;
+        @apply --microlink-card-content-content-url;
+      }
+
+      .microlink_card__content_description {
+        font-size: 14px;
+        margin: 0;
+        line-height: 18px;
+        height: 54px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        @apply --microlink-card-content-description;
+      }
+
+      .placeholder {
+        height: 54px;
+        width: 100%;
+        display: block;
+        background: #e1e8ed;
+        margin-bottom: 12px;
+        opacity: 0.8;
+        position: relative;
+        -webkit-animation: loading .75s linear infinite;
+        animation: loading .75s linear infinite;
+        -webkit-animation-delay: .125s;
+        animation-delay: .125s;
+      }
+
+      .placeholder--top {
+        height: 16px;
+        width: 80%;
+        display: block;
+        background: #e1e8ed;
+        margin: 2px 0 8px;
+        opacity: 0.8;
+        -webkit-animation: loading .75s linear infinite;
+        animation: loading .75s linear infinite;
+      }
+
+      .placeholder--bottom {
+        height: 10px;
+        width: 60%;
+        display: block;
+        background: #e1e8ed;
+        opacity: 0.8;
+        -webkit-animation: kQScTh .75s linear infinite;
+        animation: kQScTh .75s linear infinite;
+        -webkit-animation-delay: .25s;
+        animation-delay: .25s;
+      }
+
+      .placeholder:before,
+      .placeholder:after {
+        content: '';
+        position: absolute;
+        left: -1px;
+        right: -1px;
+        height: 6px;
+        background: #fff;
+      }
+
+      .placeholder:before {
+        top: 14px;
+      }
+
+      .placeholder:after {
+        bottom: 14px;
+      }
+    </style>
+
+    <iron-ajax url="[[_fullUrl]]" id="microlinkAjax" method="GET" loading="{{loading}}" last-response="{{_response}}"></iron-ajax>
+
+    <a class$="microlink_card microlink_card--{{size}}" target="_blank" href="[[_response.data.url]]">
+      <figure class="microlink_card__image" style="background-image:url([[_cardImage]])"></figure>
+
+      <section class="microlink_card__content">
+        <template is="dom-if" if="{{loading}}">
+          <div class="placeholder--top"></div>
+          <div class="placeholder"></div>
+          <div class="placeholder--bottom"></div>
+        </template>
+        <template is="dom-if" if="{{!loading}}">
+          <h2 class="microlink_card__content_title">[[_response.data.title]]</h2>
+          <p class="microlink_card__content_description">[[_response.data.description]]</p>
+          <span class="microlink_card__content_url">[[_extractDomain(url)]]</span>
+        </template>
+      </section>
+    </a>
+
+  </template>
+
+  <script>
+    /**
+     * `polymer-microlink`
+     * ### Styling
+     *
+     * `<paper-button>` provides the following custom properties and mixins
+     * for styling:
+     *
+     * Custom property | Description | Default
+     * ----------------|-------------|----------
+     * `--microlink-card`      | Border radius of the card | 5px
+     * `--microlink-card-content`  | Mixins applied to the card content  | (none) |
+     * `--microlink-card-content-description`  | Mixins applied to the card content description  | (none) |
+     * `--microlink-card-content-url`  | Mixins applied to the card link url  | (none) |
+     * `--microlink-large-image-min-height`  | Min height of the image on large layout  | 250px |
+     *
+     * Polymer wrapper for https://microlink.io
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MicrolinkCard extends Polymer.Element {
+      static get is() { return 'microlink-card'; }
+
+      static get properties() {
+        return {
+          /**
+          * Response data from microlinks ajax request
+          * @type {Object}
+          */
+          _response: {
+            type: Object,
+            notify: true,
+          },
+          /**
+          * The URL for which to retrieve Microlink data.
+          *
+          * @type {String}
+          */
+          url: String,
+          /**
+          * API-KEY from microlinks
+          */
+          key: String,
+          /**
+          * Custom image for the card
+          */
+          image: String,
+
+          _cardImage: {
+            type: String,
+            computed: '_setImage(image, _response.data.*)'
+          },
+
+          /**
+          * The API endpoint where the request is made
+          */
+          endpoint: {
+            type: String,
+            value: 'https://api.microlink.io',
+          },
+          /**
+          * Loading state of the AJAX request
+          *
+          * @type {Boolean}
+          */
+          loading: {
+            type: Boolean,
+            value: true,
+            notify: true,
+            reflectToAttribute: true,
+          },
+
+          /**
+          * Determine if the card preview should have rounded corners or not.
+          * If you provided a string value, it will be passed as the border-radius.
+          * @type boolean|string
+          */
+          round: {
+            value: false,
+            observer: '_setCustomVar'
+          },
+
+          /**
+          * It determines the card layout. Currently we have two layouts supported:
+          * 'normal' (default, no parameter required).
+          * 'large'
+          */
+          size: {
+            type: String,
+            value: 'normal',
+          },
+
+          _fullUrl: {
+            type: String,
+            computed: '_computeFullUrl(url, key)',
+            observer: '_getMicrolinkData'
+          },
+
+          _baseUrl: {
+            type: String,
+            readOnly: true,
+            value: 'https://api.microlink.io'
+          },
+        };
+      }
+
+      _getLogo(response) {
+        const logo = response.data.logo;
+        if (!logo) { return false; }
+        return typeof logo === 'string' ? logo : logo.url;
+      }
+
+      _getMicrolinkData(url) {
+        return !url ? false : this.shadowRoot.querySelector('#microlinkAjax').generateRequest();
+      }
+
+      _setImage(image, data) {
+        return image ? image : data.base.image.url;
+      }
+
+      _setCustomVar(rounded) {
+        if(!rounded || typeof rounded === 'boolean') { return false; }
+        this.updateStyles({ '--microlink-rounded-border': rounded });
+      }
+
+      _computeFullUrl(url, key) {
+        if (!url) { return null; }
+        return key ? `${this._baseUrl}?url=${url}?key=${key}` : `${this._baseUrl}?url=${url}`
+      }
+
+      _cleanByChar(str, neddle, padding) {
+        return str.indexOf(neddle) != -1 ? str.substring(str.indexOf(neddle) + padding) : str;
+      }
+      _extractDomain(url) {
+        if(!url) { return url; }
+        let parsedUrl = this._cleanByChar(url, '//', 2);
+        parsedUrl = this._cleanByChar(parsedUrl, 'www.', 4);
+        return parsedUrl.indexOf('/') != -1 ? parsedUrl.substring(0, parsedUrl.indexOf('/')) : parsedUrl; 
+      }
+    }
+
+    window.customElements.define(MicrolinkCard.is, MicrolinkCard);
+  </script>
+</dom-module>

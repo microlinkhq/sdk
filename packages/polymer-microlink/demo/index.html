@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>polymer-microlink demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../microlink-card.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles"></style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic polymer-microlink demo</h3>
+      <demo-snippet>
+        <template>
+          <microlink-card url="https://twitter.com/stripe/status/750230305399681024" scale-on-hover></microlink-card>
+        </template>
+      </demo-snippet>
+      <h3>Rounded polymer-microlink demo</h3>
+      <demo-snippet>
+        <template>
+          <microlink-card round url="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"></microlink-card>
+        </template>
+      </demo-snippet>
+      <h3>Custom rounded polymer-microlink demo</h3>
+      <demo-snippet>
+        <template>
+          <microlink-card round="25px" url="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"></microlink-card>
+        </template>
+      </demo-snippet>
+      <h3>Custom width polymer-microlink demo</h3>
+      <demo-snippet>
+        <template>
+          <microlink-card style="width:250px;" round="25px" url="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"></microlink-card>
+        </template>
+      </demo-snippet>
+      <h3>Custom height polymer-microlink demo</h3>
+      <demo-snippet>
+        <template>
+          <microlink-card style="height:200px;" round="25px" url="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"></microlink-card>
+        </template>
+      </demo-snippet>
+      <h3>Custom height polymer-microlink demo</h3>
+      <demo-snippet>
+        <template>
+          <microlink-card image="https://cdn-images-1.medium.com/fit/c/304/304/1*8I-HPL0bfoIzGied-dzOvA.png" url="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"></microlink-card>
+        </template>
+      </demo-snippet>
+      <h3>Large layout polymer-microlink demo</h3>
+      <demo-snippet>
+        <template>
+          <microlink-card size="large" url="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"></microlink-card>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,548 @@
+{
+  "schema_version": "1.0.0",
+  "elements": [
+    {
+      "description": "`polymer-microlink`\n### Styling\n\n`<paper-button>` provides the following custom properties and mixins\nfor styling:\n\nCustom property | Description | Default\n----------------|-------------|----------\n`--microlink-border-radius` | Border radius of the card | 5px\n`--microlink-box-shadow` | Shadow box of the card | 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),0 3px 1px -2px rgba(0, 0, 0, 0.2)\n`--microlink-content-title-size` | Title font size| 20px\n`--microlink-content-text-size` | Description font size | 14px\n`--microlink-content-color` | Text color | #333333\n`--microlink-content-padding` | Content section padding | 20px\n`--microlink-header-max-height` | Max height of the header | 150px\n\nPolymer wrapper for https://microlink.io",
+      "summary": "",
+      "path": "packages/polymer-microlink/microlink-card.html",
+      "properties": [
+        {
+          "name": "_response",
+          "type": "Object",
+          "description": "Response data from microlinks ajax request",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 244,
+              "column": 10
+            },
+            "end": {
+              "line": 247,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "notify": true
+            }
+          }
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL for which to retrieve Microlink data.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 253,
+              "column": 10
+            },
+            "end": {
+              "line": 253,
+              "column": 21
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "description": "API-KEY from microlinks",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 257,
+              "column": 10
+            },
+            "end": {
+              "line": 257,
+              "column": 21
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Custom image for the card",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 261,
+              "column": 10
+            },
+            "end": {
+              "line": 261,
+              "column": 23
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_cardImage",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 263,
+              "column": 10
+            },
+            "end": {
+              "line": 266,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "readOnly": true
+            }
+          }
+        },
+        {
+          "name": "endpoint",
+          "type": "string",
+          "description": "The API endpoint where the request is made",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 271,
+              "column": 10
+            },
+            "end": {
+              "line": 274,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"https://api.microlink.io\""
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "description": "Loading state of the AJAX request",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 280,
+              "column": 10
+            },
+            "end": {
+              "line": 285,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "notify": true
+            }
+          },
+          "defaultValue": "true"
+        },
+        {
+          "name": "rounded",
+          "type": "?",
+          "description": "Determine if the card preview should have rounded corners or not.\nIf you provided a string value, it will be passed as the border-radius.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 292,
+              "column": 10
+            },
+            "end": {
+              "line": 295,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "observer": "\"_setCustomVar\""
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "description": "It determines the card layout. Currently we have two layouts supported:\n'normal' (default, no parameter required).\n'large'",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 302,
+              "column": 10
+            },
+            "end": {
+              "line": 305,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"normal\""
+        },
+        {
+          "name": "_fullUrl",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 307,
+              "column": 10
+            },
+            "end": {
+              "line": 311,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "observer": "\"_getMicrolinkData\"",
+              "readOnly": true
+            }
+          }
+        },
+        {
+          "name": "_baseUrl",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 313,
+              "column": 10
+            },
+            "end": {
+              "line": 317,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "readOnly": true
+            }
+          },
+          "defaultValue": "\"https://api.microlink.io\""
+        }
+      ],
+      "methods": [
+        {
+          "name": "_getLogo",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 321,
+              "column": 6
+            },
+            "end": {
+              "line": 325,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "response"
+            }
+          ]
+        },
+        {
+          "name": "_getMicrolinkData",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 327,
+              "column": 6
+            },
+            "end": {
+              "line": 329,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "url"
+            }
+          ]
+        },
+        {
+          "name": "_setImage",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 331,
+              "column": 6
+            },
+            "end": {
+              "line": 333,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "image"
+            },
+            {
+              "name": "data"
+            }
+          ]
+        },
+        {
+          "name": "_setCustomVar",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 335,
+              "column": 6
+            },
+            "end": {
+              "line": 338,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "rounded"
+            }
+          ]
+        },
+        {
+          "name": "_computeFullUrl",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 340,
+              "column": 6
+            },
+            "end": {
+              "line": 343,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "url"
+            },
+            {
+              "name": "key"
+            }
+          ]
+        },
+        {
+          "name": "_cleanByChar",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 345,
+              "column": 6
+            },
+            "end": {
+              "line": 347,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "str"
+            },
+            {
+              "name": "neddle"
+            },
+            {
+              "name": "padding"
+            }
+          ]
+        },
+        {
+          "name": "_extractDomain",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 348,
+              "column": 6
+            },
+            "end": {
+              "line": 353,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "url"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 235,
+          "column": 4
+        },
+        "end": {
+          "line": 354,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "MicrolinkCard",
+      "attributes": [
+        {
+          "name": "url",
+          "description": "The URL for which to retrieve Microlink data.",
+          "sourceRange": {
+            "start": {
+              "line": 253,
+              "column": 10
+            },
+            "end": {
+              "line": 253,
+              "column": 21
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "key",
+          "description": "API-KEY from microlinks",
+          "sourceRange": {
+            "start": {
+              "line": 257,
+              "column": 10
+            },
+            "end": {
+              "line": 257,
+              "column": 21
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "image",
+          "description": "Custom image for the card",
+          "sourceRange": {
+            "start": {
+              "line": 261,
+              "column": 10
+            },
+            "end": {
+              "line": 261,
+              "column": 23
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "endpoint",
+          "description": "The API endpoint where the request is made",
+          "sourceRange": {
+            "start": {
+              "line": 271,
+              "column": 10
+            },
+            "end": {
+              "line": 274,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "loading",
+          "description": "Loading state of the AJAX request",
+          "sourceRange": {
+            "start": {
+              "line": 280,
+              "column": 10
+            },
+            "end": {
+              "line": 285,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "rounded",
+          "description": "Determine if the card preview should have rounded corners or not.\nIf you provided a string value, it will be passed as the border-radius.",
+          "sourceRange": {
+            "start": {
+              "line": 292,
+              "column": 10
+            },
+            "end": {
+              "line": 295,
+              "column": 11
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "name": "size",
+          "description": "It determines the card layout. Currently we have two layouts supported:\n'normal' (default, no parameter required).\n'large'",
+          "sourceRange": {
+            "start": {
+              "line": 302,
+              "column": 10
+            },
+            "end": {
+              "line": 305,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "type": "CustomEvent",
+          "name": "loading-changed",
+          "description": "Fired when the `loading` property changes.",
+          "metadata": {}
+        }
+      ],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "microlink-card"
+    }
+  ]
+}
