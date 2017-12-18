@@ -34,7 +34,7 @@
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "pretty": "prettier-standard src/**/*.{js,css} --single-quote",
-    "test": "exit 0"
+    "test": "lerna exec npm run test"
   },
   "license": "MIT",
   "lint-staged": {
