@@ -157,6 +157,15 @@ Default: `false`
 
 When enabled, it will generate a high contrast card based on predominant colors detected in the feature image from the provided `url`.
 
+### image
+
+Type: `string|array`<br>
+Default: `'image'`
+
+Setup the image to use for the card.
+
+The value will be determined the property to get from the [API response](https://docs.microlink.io). If you set up the value as an `array` of values, then they will be applied as fallback values until finding the first value that resolves.
+
 ### is
 
 Type: `string`<br>
@@ -187,7 +196,7 @@ It determines the card layout. Currently we have two layouts supported:
 
 We do not inject any CSS in your application.
 
-** microlinkjs** is shipped with default minimal inline styles.
+**microlinkjs** is shipped with default minimal inline styles.
 
 If you need to adapt the *look and feel*, each component of the card has been assigned a [BEM](http://getbem.com/introduction) class name.
 
