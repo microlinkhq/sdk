@@ -46,7 +46,6 @@ module.exports = {
     // We don't currently advertise code splitting but Webpack supports it.
     filename: 'microlink.min.js',
     library: 'microlink',
-    libraryTarget: 'umd',
     // chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: '',
