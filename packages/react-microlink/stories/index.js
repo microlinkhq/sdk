@@ -44,26 +44,26 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with rounded prop', () => (
+  .add('with round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded
+          round
           />
       )}
     </div>
   ))
-  .add('with custom rounded prop', () => (
+  .add('with custom round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          rounded={getRandomSize([6, 10, 20, 30, 50, 9999])}
+          round={getRandomSize([6, 10, 20, 30, 50, 9999])}
           />
       )}
     </div>
@@ -109,7 +109,7 @@ storiesOf('Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
-          rounded
+          round
           />
       )}
     </div>
@@ -122,7 +122,7 @@ storiesOf('Normal', module)
           url={url}
           style={{marginBottom: '20px'}}
           image={'logo'}
-          rounded
+          round
           />
       )}
     </div>
@@ -146,7 +146,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with rounded prop', () => (
+  .add('with round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -154,12 +154,12 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           size='large'
-          rounded
+          round
           />
       )}
     </div>
   ))
-  .add('with custom rounded prop', () => (
+  .add('with custom round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -167,7 +167,7 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           size='large'
-          rounded={getRandomSize([6, 10, 20, 30])}
+          round={getRandomSize([6, 10, 20, 30])}
           />
       )}
     </div>
@@ -216,7 +216,7 @@ storiesOf('Large', module)
           key={url}
           url={url}
           style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
-          rounded
+          round
           size='large'
           />
       )}
@@ -230,7 +230,7 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           image={'logo'}
-          rounded
+          round
           size='large'
           />
       )}

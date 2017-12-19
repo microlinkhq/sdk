@@ -57,18 +57,18 @@ You could also include it via a CDN as well
 microlink('a')
 
 // Provide options to customize the cards (See API section)
-microlink('a', { rounded: true })
+microlink('a', { round: true })
 
 // Replace links after DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function (event) {
-  microlink('a', { rounded: true })
+  microlink('a', { round: true })
 })
 ```
 
 Also, you can declare inline options in the HTML markup as `data` attributes:
 
 ```html
-<a class="link" data-rounded="true" href="http://microlink.js.org">microlink.js.org</a>
+<a class="link" data-round="true" href="http://microlink.js.org">microlink.js.org</a>
 ```
 
 See [API](#API) for know what option you can pass.
@@ -85,7 +85,7 @@ Just you need to be sure to load the script. You can do it, for example, at the 
 <script type="text/javascript" src="//unpkg.com/microlinkjs@latest"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
-    microlink('.card-preview', {rounded: true})
+    microlink('.card-preview', {round: true})
     anchors.add();
   });
 </script>
@@ -173,12 +173,12 @@ Default: `'a'`
 
 Determine the type of the root node element for rendering the card.
 
-### rounded
+### round
 
 Type: `boolean|string`<br>
 Default: `false`
 
-Determine if the card preview should have rounded corners or not.
+Determine if the card preview should have round corners or not.
 
 If you provided a `string` value, it will be passed as the `border-radius`.
 

@@ -29,8 +29,8 @@ const style = css`
     }
   `}
 
-  ${({rounded}) => rounded && css`
-    border-radius: ${typeof rounded === 'boolean' ? `.42857em` : rounded};
+  ${({round}) => round && css`
+    border-radius: ${typeof round === 'boolean' ? `.42857em` : round};
   `}
 
   ${({cardSize}) => cardSize === 'large' && CardWrapLarge}
