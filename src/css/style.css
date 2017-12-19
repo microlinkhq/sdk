@@ -340,8 +340,7 @@ main {
 }
 
 .sidebar-toggle {
-  background-color: transparent;
-  background-color: hsla(0, 0%, 100%, 0.8);
+  background-color: var(--bg-color);
   border: 0;
   outline: none;
   padding: 10px;
