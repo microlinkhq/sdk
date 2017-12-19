@@ -28,26 +28,46 @@ Each connector is developed to be as tiny possible, so we don't ship any polyfil
 
 If you want to support older browsers versions, you need to attach your own polyfill first. If you're looking for a tiny `fetch` polyfill, we suggest using [unfetch](https://github.com/developit/unfetch).
 
-### Vanilla/UMD
+### Vanilla
 
 #### Installation
+
+##### From NPM
 
 ```sh
 $ npm install microlinkjs
 ```
 
-You could also include it via a CDN as well
+##### From CDN
 
-**from unpkg.com**
+###### UMD
 
 ```html
-<script type="text/javascript" src="//unpkg.com/microlinkjs@latest"></script>
+// from unpkg.com
+<script type="text/javascript" src="//unpkg.com/microlinkjs@latest/umd/microlink.min.js"></script>
+
+// from jsdelivr.com
+<script src="https://cdn.jsdelivr.net/npm/microlinkjs@1/umd/microlink.min.js"></script>
 ```
 
-**from jsdelivr.com**
+###### AMD
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/microlinkjs@1/umd/microlink.min.js"></script>
+// from unpkg.com
+<script type="text/javascript" src="//unpkg.com/microlinkjs@latest/amd/microlink.min.js"></script>
+
+// from jsdelivr.com
+<script src="https://cdn.jsdelivr.net/npm/microlinkjs@1/amd/microlink.min.js"></script>
+```
+
+###### CommonJS
+
+```html
+// from unpkg.com
+<script type="text/javascript" src="//unpkg.com/microlinkjs@latest/commonjs/microlink.min.js"></script>
+
+// from jsdelivr.com
+<script src="https://cdn.jsdelivr.net/npm/microlinkjs@1/commonjs/microlink.min.js"></script>
 ```
 
 #### Usage

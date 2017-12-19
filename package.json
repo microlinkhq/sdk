@@ -8,6 +8,7 @@
     "conventional-changelog-cli": "latest",
     "docsify": "latest",
     "eachdir": "latest",
+    "finepack": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
@@ -43,6 +44,10 @@
   "lint-staged": {
     "src/**/*.{js,css}": [
       "prettier-standard",
+      "git add"
+    ],
+    "package.json": [
+      "finepack",
       "git add"
     ]
   }
