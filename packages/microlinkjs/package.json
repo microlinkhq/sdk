@@ -51,6 +51,7 @@
     "html-webpack-plugin": "latest",
     "husky": "latest",
     "lint-staged": "latest",
+    "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "react": "latest",
     "react-dev-utils": "latest",
@@ -70,13 +71,14 @@
   ],
   "scripts": {
     "build": "node scripts/build",
-    "prepublishOnly": "npm run build",
     "dev": "node scripts/start.js",
     "docs": "docsify serve docs",
     "lint": "standard-markdown && standard src",
-    "pretest": "npm run lint",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run lint && npm run update",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
-    "test": "exit 0"
+    "test": "exit 0",
+    "update": "ncu --error-level 2"
   },
   "license": "MIT",
   "lint-staged": {

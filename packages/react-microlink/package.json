@@ -50,6 +50,7 @@
     "eslint-plugin-jsx-a11y": "latest",
     "husky": "latest",
     "lint-staged": "latest",
+    "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
     "size-limit": "latest",
@@ -69,12 +70,13 @@
     "dev": "start-storybook -p 6006",
     "lint": "standard-markdown && standard src stories",
     "posttest": "npm run size",
-    "pretest": "npm run lint",
     "prepublishOnly": "npm run build",
+    "pretest": "npm run lint && npm run update",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "size": "size-limit",
     "start": "node scripts/start.js",
-    "test": "exit 0"
+    "test": "exit 0",
+    "update": "ncu --error-level 2"
   },
   "license": "MIT",
   "lint-staged": {
