@@ -7,10 +7,11 @@ import {getUrlPath, uniqArray, someProp} from './utils'
 const IMAGE_PROPS = ['screenshot', 'image', 'logo']
 
 const createApiUrl = props => {
-  const {url: targetUrl, apiEndpoint, apiKey, prerender, contrast} = props
+  const {url: targetUrl, screenshot, apiEndpoint, apiKey, prerender, contrast} = props
   let url = `${apiEndpoint}/?url=${targetUrl}`
   if (contrast) url = `${url}&palette`
   if (prerender) url = `${url}&prerender`
+  if (screenshot) url = `${url}&screenshot=${screenshot}`
   if (apiKey) url = `${url}&key=${apiKey}`
   return url
 }
@@ -82,20 +83,23 @@ class Microlink extends Component {
 
 Microlink.defaultProps = {
   apiEndpoint: 'https://api.microlink.io',
+  apiKey: null,
+  contrast: false,
   image: 'image',
-  size: 'normal',
   prerender: false,
-  apiKey: null
+  screenshot: false,
+  size: 'normal'
 }
 
 Microlink.propTypes = {
-  url: PropTypes.string.isRequired,
-  size: PropTypes.string,
   apiEndpoint: PropTypes.string,
   apiKey: PropTypes.string,
-  prerender: PropTypes.bool,
+  contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
-  contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
+  prerender: PropTypes.bool,
+  screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  size: PropTypes.string,
+  url: PropTypes.string.isRequired
 }
 
 export default Microlink

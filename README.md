@@ -199,6 +199,13 @@ Default: `false`
 
 Perform an API call using [prerender](https://docs.microlink.io/#prerender) feature.
 
+### screenshot
+
+Type: `boolean|string`<br>
+Default: `false`
+
+Take a [screenshot](https://docs.microlink.io/#screenshot) of the target url and use it as card image.
+
 ## Styling
 
 We do not inject any CSS in your application.
