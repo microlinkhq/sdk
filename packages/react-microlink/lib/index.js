@@ -18,6 +18,22 @@ import { getUrlPath, uniqArray, someProp } from './utils';
 
 var IMAGE_PROPS = ['screenshot', 'image', 'logo'];
 
+var createApiUrl = function createApiUrl(props) {
+  var targetUrl = props.url,
+      screenshot = props.screenshot,
+      apiEndpoint = props.apiEndpoint,
+      apiKey = props.apiKey,
+      prerender = props.prerender,
+      contrast = props.contrast;
+
+  var url = apiEndpoint + '/?url=' + targetUrl;
+  if (contrast) url = url + '&palette';
+  if (prerender) url = url + '&prerender';
+  if (screenshot) url = url + '&screenshot=' + screenshot;
+  if (apiKey) url = url + '&key=' + apiKey;
+  return url;
+};
+
 var Microlink = function (_Component) {
   _inherits(Microlink, _Component);
 
@@ -32,46 +48,38 @@ var Microlink = function (_Component) {
     value: function componentWillMount() {
       var _this2 = this;
 
-      var _props = this.props,
-          targetUrl = _props.url,
-          contrast = _props.contrast,
-          api = _props.endpoint,
-          image = _props.image;
+      var image = this.props.image;
 
       var imagesProps = uniqArray([].concat(image).concat(IMAGE_PROPS));
+      var url = createApiUrl(this.props);
 
-      if (targetUrl) {
-        var url = api + '/?url=' + targetUrl;
-        if (contrast) url = url + '&palette';
+      this.setState({ loading: true }, function () {
+        return fetch(url).then(function (res) {
+          return res.json();
+        }).then(function (_ref) {
+          var status = _ref.status,
+              data = _ref.data;
 
-        this.setState({ loading: true }, function () {
-          return fetch(url).then(function (res) {
-            return res.json();
-          }).then(function (_ref) {
-            var status = _ref.status,
-                data = _ref.data;
+          var image = getUrlPath(someProp(data, imagesProps));
+          var title = data.title,
+              description = data.description,
+              url = data.url;
 
-            var image = getUrlPath(someProp(data, imagesProps));
-            var title = data.title,
-                description = data.description,
-                url = data.url;
+          var _ref2 = image || {},
+              color = _ref2.color,
+              backgroundColor = _ref2.background_color;
 
-            var _ref2 = image || {},
-                color = _ref2.color,
-                backgroundColor = _ref2.background_color;
-
-            _this2.setState({
-              color: color,
-              backgroundColor: backgroundColor,
-              title: title,
-              description: description,
-              url: url,
-              loading: false,
-              image: image
-            });
+          _this2.setState({
+            color: color,
+            backgroundColor: backgroundColor,
+            title: title,
+            description: description,
+            url: url,
+            loading: false,
+            image: image
           });
         });
-      }
+      });
     }
   }, {
     key: 'renderContent',
@@ -105,9 +113,9 @@ var Microlink = function (_Component) {
           backgroundColor = _state2.backgroundColor,
           url = _state2.url,
           loading = _state2.loading;
-      var _props2 = this.props,
-          size = _props2.size,
-          className = _props2.className;
+      var _props = this.props,
+          size = _props.size,
+          className = _props.className;
 
 
       return React.createElement(
@@ -132,8 +140,12 @@ var Microlink = function (_Component) {
 }(Component);
 
 Microlink.defaultProps = {
-  endpoint: 'https://api.microlink.io',
+  apiEndpoint: 'https://api.microlink.io',
+  apiKey: null,
+  contrast: false,
   image: 'image',
+  prerender: false,
+  screenshot: false,
   size: 'normal'
 };
 

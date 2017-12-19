@@ -20,8 +20,8 @@ var style = css(_templateObject, function (_ref) {
       contrast = _ref.contrast;
   return !loading && !contrast && css(_templateObject2);
 }, function (_ref2) {
-  var rounded = _ref2.rounded;
-  return rounded && css(_templateObject3, typeof rounded === 'boolean' ? '.42857em' : rounded);
+  var round = _ref2.round;
+  return round && css(_templateObject3, typeof round === 'boolean' ? '.42857em' : round);
 }, function (_ref3) {
   var cardSize = _ref3.cardSize;
   return cardSize === 'large' && CardWrapLarge;
