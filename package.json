@@ -36,7 +36,7 @@
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "pretty": "prettier-standard src/**/*.{js,css} --single-quote",
-    "publish": "lerna exec npm run prepublishOnly && git add packages/microlinkjs/umd packages/react-microlink/lib && lerna publish --sort --cd-version",
+    "publish": "lerna prepublishOnly && git add packages/microlinkjs/umd packages/microlinkjs/amd packages/microlinkjs/commonjs packages/react-microlink/lib && lerna publish --sort --cd-version",
     "test": "lerna exec npm run test"
   },
   "private": true,
