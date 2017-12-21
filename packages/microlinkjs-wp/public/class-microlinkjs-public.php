@@ -73,6 +73,7 @@ class Microlinkjs_Public {
 		 * class.
 		 */
 
+		wp_enqueue_script( 'microlink.min.js', '//unpkg.com/microlinkjs@latest/umd/microlink.min.js', null, '', false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/microlinkjs-public.js', array( 'jquery' ), $this->version, false );
 
 	}

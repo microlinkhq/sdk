@@ -1,5 +1,5 @@
 (function($) {
   $(window).load(function() {
-    console.log('Loaded')
+    microlink('a[data-microlinkwp-preview]')
   })
 })(jQuery);

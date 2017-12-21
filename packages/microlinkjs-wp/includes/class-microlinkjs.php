@@ -122,6 +122,11 @@ class Microlinkjs {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-microlinkjs-public.php';
 
+		/**
+		 * The class responsible for defining all shortcodes
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-microlinkjs-shortcodes.php';
+
 		$this->loader = new Microlinkjs_Loader();
 
 	}
@@ -180,6 +185,7 @@ class Microlinkjs {
 	 */
 	public function run() {
 		$this->loader->run();
+		new Microlinkjs_Shortcodes();
 	}
 
 	/**
