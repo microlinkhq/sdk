@@ -55,49 +55,52 @@ class Microlinkjs_Admin {
 	}
 
 	/**
-	 * Register the stylesheets for the admin area.
+	 * Register the menu item for settings page in WP `Settings` menu
 	 *
 	 * @since    1.0.0
 	 */
-	public function enqueue_styles() {
+	public function admin_menu_item() {
+		 add_options_page( 'Microlinkjs Settings', 'Microlinkjs', 'manage_options', 'microlinkjs-settings', array($this, 'settings_page') );
+	}
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Microlinkjs_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Microlinkjs_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/microlinkjs-admin.css', array(), $this->version, 'all' );
-
+	/**
+	 * Register the options page for `microlinkjs_settings_page`
+	 *
+	 * @since    1.0.0
+	 */
+	public function register_settings() {
+		 register_setting( 'microlinkjs-settings', 'microlink_api_key' );
 	}
 
 	/**
-	 * Register the JavaScript for the admin area.
+	 * Register the options page for `microlinkjs_settings_page`
 	 *
 	 * @since    1.0.0
 	 */
-	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Microlinkjs_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Microlinkjs_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/microlinkjs-admin.js', array( 'jquery' ), $this->version, false );
-
+	public function settings_page() {
+	?>
+	<div class="wrap">
+		<h1><?php _e('Microlinkjs Settings', $this->plugin_name);?></h1>
+		<p>Global settings applied to all instances of the <code>[microlink/]</code> shortcode.</p>
+		<form method="post" action="options.php">
+		<?php
+			settings_fields( 'microlinkjs-settings' );
+			do_settings_sections( 'microlinkjs-settings' );
+		?>
+			<table class="form-table">
+				<tr valign="top">
+					<th scope="row"><?php _e('API Key', $this->plugin_name);?></th>
+					<td>
+						<input type="text" name="microlink_api_key" value="<?php echo esc_attr( get_option('microlink_api_key') ); ?>" />
+					</td>
+				</tr>
+		 	</table>
+			<?php submit_button(); ?>
+		</form>
+	</div>
+	<?php
 	}
+
 
 }
