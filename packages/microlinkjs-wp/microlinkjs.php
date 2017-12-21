@@ -6,9 +6,9 @@
  * @package           Microlinkjs
  *
  * @wordpress-plugin
- * Plugin Name:       MicrolinkJS
+ * Plugin Name:       Microlinkjs
  * Plugin URI:        https://microlink.js.org/
- * Description:       Convert your links into beautiful previews
+ * Description:       Convert your links into beautiful previews with our [microlink] shortcode
  * Version:           1.0.0
  * Author:            Microlink
  * Author URI:        https://microlink.io/
@@ -29,27 +29,6 @@ if ( ! defined( 'WPINC' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'PLUGIN_NAME_VERSION', '1.0.0' );
-
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-microlinkjs-activator.php
- */
-function activate_microlinkjs() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-microlinkjs-activator.php';
-	Microlinkjs_Activator::activate();
-}
-
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-microlinkjs-deactivator.php
- */
-function deactivate_microlinkjs() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-microlinkjs-deactivator.php';
-	Microlinkjs_Deactivator::deactivate();
-}
-
-register_activation_hook( __FILE__, 'activate_microlinkjs' );
-register_deactivation_hook( __FILE__, 'deactivate_microlinkjs' );
 
 /**
  * The core plugin class that is used to define internationalization,
