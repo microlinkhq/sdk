@@ -33,8 +33,7 @@
   ],
   "dependencies": {
     "extract-domain": "~2.0.0",
-    "react": "~16.2.0",
-    "react-dom": "~16.2.0",
+    "prop-types": "~15.5.4",
     "styled-components": "~2.3.2"
   },
   "devDependencies": {
@@ -52,7 +51,8 @@
     "lint-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
-    "prop-types": "latest",
+    "react": "^16",
+    "react-dom": "^16",
     "size-limit": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
@@ -84,6 +84,9 @@
       "prettier-standard",
       "git add"
     ]
+  },
+  "peerDependencies": {
+    "react": ">= 16 < 17"
   },
   "size-limit": [
     {
