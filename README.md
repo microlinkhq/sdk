@@ -163,12 +163,23 @@ Type: `string`
 
 The URL for which to retrieve Microlink data.
 
-### endpoint
+### apiEndpoint
 
 Type: `string`<br>
 Default: `'https://api.microlink.io'`
 
-The API endpoint where the request is made
+The API endpoint where the request is made.
+
+### apiKey
+
+Type: `string`<br>
+Default: `undefined`
+
+The API Key used for authenticating your requests as `x-api-key` header. 
+
+See more at [docs.microlink.io#authentication](https://docs.microlink.io/#authentication).
+
+The API endpoint where the request is made.
 
 ### contrast
 
