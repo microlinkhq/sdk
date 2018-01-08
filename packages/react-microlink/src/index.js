@@ -7,23 +7,22 @@ import {getUrlPath, uniqArray, someProp} from './utils'
 const IMAGE_PROPS = ['screenshot', 'image', 'logo']
 
 const createApiUrl = props => {
-  const {url: targetUrl, screenshot, apiEndpoint, apiKey, prerender, contrast} = props
+  const {url: targetUrl, screenshot, apiEndpoint, prerender, contrast} = props
   let url = `${apiEndpoint}/?url=${targetUrl}`
   if (contrast) url = `${url}&palette`
   if (prerender) url = `${url}&prerender`
   if (screenshot) url = `${url}&screenshot=${screenshot}`
-  if (apiKey) url = `${url}&key=${apiKey}`
   return url
 }
 
 class Microlink extends Component {
   componentWillMount () {
-    const {image} = this.props
+    const {image, apiKey} = this.props
     const imagesProps = uniqArray([].concat(image).concat(IMAGE_PROPS))
     const url = createApiUrl(this.props)
 
     this.setState({loading: true}, () =>
-      fetch(url)
+      fetch(url, {headers: {'x-api-key': apiKey}})
         .then(res => res.json())
         .then(({status, data}) => {
           const image = getUrlPath(someProp(data, imagesProps))
@@ -39,6 +38,7 @@ class Microlink extends Component {
             image
           })
         })
+        .catch((err) => console.log('microlink', err))
     )
   }
 
@@ -83,7 +83,7 @@ class Microlink extends Component {
 
 Microlink.defaultProps = {
   apiEndpoint: 'https://api.microlink.io',
-  apiKey: null,
+  apiKey: undefined,
   contrast: false,
   image: 'image',
   prerender: false,

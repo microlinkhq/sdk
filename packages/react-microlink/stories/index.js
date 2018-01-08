@@ -20,14 +20,16 @@ const urls = [
   'https://www.bbc.com/news/technology-40762328'
 ]
 
-const getRandomSize = (sizes: Array<number> = [
+const randomSizes = [
   300,
   400,
   500,
   600,
   700,
   800
-]): string => {
+]
+
+const getRandomSize = (sizes = randomSizes) => {
   const randomNumber: number = Math.floor(Math.random() * sizes.length)
   return `${sizes[randomNumber]}px`
 }
@@ -37,6 +39,8 @@ storiesOf('Normal', module)
     <div>
       {urls.map(url =>
         <MicrolinkCard
+          apiKey='QJ4Zrx7Vw69gk02v9PCa77ojA8xGsyVP5Fh04TXN'
+          apiEndpoint={'https://qn8rql9281.execute-api.us-east-1.amazonaws.com/production'}
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
