@@ -4,6 +4,13 @@
 
 
 
+<a name="1.2.4"></a>
+## 1.2.4 (2018-01-11)
+
+* v1.2.4 ([68271fa](https://github.com/microlinkhq/react-microlink/commit/68271fa))
+
+
+
 <a name="1.2.3"></a>
 ## 1.2.3 (2018-01-11)
 
