@@ -4,6 +4,16 @@
 
 
 
+<a name="1.2.5"></a>
+## 1.2.5 (2018-01-11)
+
+* Ship module build ([1b746ec](https://github.com/microlinkhq/react-microlink/commit/1b746ec))
+* Update Changelog ([22d507f](https://github.com/microlinkhq/react-microlink/commit/22d507f))
+* Update scripts ([538da90](https://github.com/microlinkhq/react-microlink/commit/538da90))
+* v1.2.5 ([973a68f](https://github.com/microlinkhq/react-microlink/commit/973a68f))
+
+
+
 <a name="1.2.4"></a>
 ## 1.2.4 (2018-01-11)
 
