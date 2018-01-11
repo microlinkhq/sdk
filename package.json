@@ -36,7 +36,7 @@
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "pretty": "prettier-standard src/**/*.{js,css} --single-quote",
-    "publish": "npm run build:packages && npm run changelog && lerna publish --sort",
+    "publish": "npm run build:packages && npm run changelog && git add . && lerna publish --sort",
     "test": "lerna exec npm run test"
   },
   "private": true,

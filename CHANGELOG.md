@@ -1,6 +1,34 @@
 <a name=""></a>
-#  (2017-12-19)
+#  (2018-01-11)
 
+
+
+
+<a name="1.2.3"></a>
+## 1.2.3 (2018-01-11)
+
+* Setup publish script ([d8b7442](https://github.com/microlinkhq/react-microlink/commit/d8b7442))
+* v1.2.3 ([97534a4](https://github.com/microlinkhq/react-microlink/commit/97534a4))
+
+
+
+<a name="1.2.2"></a>
+## 1.2.2 (2018-01-09)
+
+* Update pro plan props ([1ad681c](https://github.com/microlinkhq/react-microlink/commit/1ad681c))
+* Update README.md ([b06ccdc](https://github.com/microlinkhq/react-microlink/commit/b06ccdc))
+* v1.2.2 ([92afeb0](https://github.com/microlinkhq/react-microlink/commit/92afeb0))
+
+
+
+<a name="1.2.1"></a>
+## 1.2.1 (2018-01-05)
+
+* Declare react as peer dependencies ([5cbf15f](https://github.com/microlinkhq/react-microlink/commit/5cbf15f))
+* Update changelog ([a0e2b88](https://github.com/microlinkhq/react-microlink/commit/a0e2b88))
+* Update deps ([5f46b94](https://github.com/microlinkhq/react-microlink/commit/5f46b94))
+* Update script ([206a90c](https://github.com/microlinkhq/react-microlink/commit/206a90c))
+* v1.2.1 ([a8e0576](https://github.com/microlinkhq/react-microlink/commit/a8e0576))
 
 
 
@@ -115,7 +143,7 @@
 * Add umd bundle approach ([73da566](https://github.com/microlinkhq/react-microlink/commit/73da566))
 * Add unify build process ([606b5e6](https://github.com/microlinkhq/react-microlink/commit/606b5e6))
 * Add yarn/npm lock files to .gitignore ([fc18975](https://github.com/microlinkhq/react-microlink/commit/fc18975))
-* Adjust card CardProp type definition ([3fae44b](https://github.com/microlinkhq/react-microlink/commit/3fae44b))
+* Adjust card CardProp type definition ([3fae44b](https://github.com/microlinkhq/react-microlink/commit/3fae44b)), closes [/github.com/microlinkhq/react-microlink/pull/19#discussion_r154528473](https://github.com//github.com/microlinkhq/react-microlink/pull/19/issues/discussion_r154528473)
 * Adjust emptyState stories ([e1eb68c](https://github.com/microlinkhq/react-microlink/commit/e1eb68c))
 * Adjust image/content sizing ([a3c043b](https://github.com/microlinkhq/react-microlink/commit/a3c043b))
 * Adjust microlinkjs bundle folder ([f56dc6d](https://github.com/microlinkhq/react-microlink/commit/f56dc6d))

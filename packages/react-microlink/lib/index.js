@@ -22,7 +22,6 @@ var createApiUrl = function createApiUrl(props) {
   var targetUrl = props.url,
       screenshot = props.screenshot,
       apiEndpoint = props.apiEndpoint,
-      apiKey = props.apiKey,
       prerender = props.prerender,
       contrast = props.contrast;
 
@@ -30,7 +29,6 @@ var createApiUrl = function createApiUrl(props) {
   if (contrast) url = url + '&palette';
   if (prerender) url = url + '&prerender';
   if (screenshot) url = url + '&screenshot=' + screenshot;
-  if (apiKey) url = url + '&key=' + apiKey;
   return url;
 };
 
@@ -48,13 +46,15 @@ var Microlink = function (_Component) {
     value: function componentWillMount() {
       var _this2 = this;
 
-      var image = this.props.image;
+      var _props = this.props,
+          image = _props.image,
+          apiKey = _props.apiKey;
 
       var imagesProps = uniqArray([].concat(image).concat(IMAGE_PROPS));
       var url = createApiUrl(this.props);
 
       this.setState({ loading: true }, function () {
-        return fetch(url).then(function (res) {
+        return fetch(url, { headers: { 'x-api-key': apiKey } }).then(function (res) {
           return res.json();
         }).then(function (_ref) {
           var status = _ref.status,
@@ -78,6 +78,8 @@ var Microlink = function (_Component) {
             loading: false,
             image: image
           });
+        }).catch(function (err) {
+          return console.log('microlink', err);
         });
       });
     }
@@ -113,9 +115,9 @@ var Microlink = function (_Component) {
           backgroundColor = _state2.backgroundColor,
           url = _state2.url,
           loading = _state2.loading;
-      var _props = this.props,
-          size = _props.size,
-          className = _props.className;
+      var _props2 = this.props,
+          size = _props2.size,
+          className = _props2.className;
 
 
       return React.createElement(
@@ -141,7 +143,7 @@ var Microlink = function (_Component) {
 
 Microlink.defaultProps = {
   apiEndpoint: 'https://api.microlink.io',
-  apiKey: null,
+  apiKey: undefined,
   contrast: false,
   image: 'image',
   prerender: false,
