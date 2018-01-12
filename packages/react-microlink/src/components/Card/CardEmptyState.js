@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
-import CardImage from './CardImage'
-import { Content } from './CardContent'
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimations'
+import { Content } from './CardContent'
+import CardImage from './CardImage'
+import { media } from '../../utils'
 
 const EmptyImage = CardImage.extend`
   ${emptyStateImageAnimation}
@@ -20,7 +21,6 @@ const EmptyTitle = styled.span`
 `
 
 const EmptyDescription = styled.span`
-  height: 54px;
   width: 100%;
   display: block;
   background: #e1e8ed;
@@ -30,14 +30,22 @@ const EmptyDescription = styled.span`
   ${emptyStateAnimation}
   animation-delay: .125s;
 
-  &:before, &:after {
-    content: '';
-    position: absolute;
-    left: -1px;
-    right: -1px;
-    height: 6px;
-    background: #fff;
-  }
+  ${({cardSize}) => cardSize !== 'large' && media.mobile`
+    height: 14px;
+  `}
+
+  ${({cardSize}) => cardSize !== 'large' && media.desktop`
+    height: 54px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: -1px;
+      right: -1px;
+      height: 6px;
+      background: #fff;
+    }
+  `}
 
   &:before {
     top: 14px;
@@ -58,15 +66,18 @@ const EmptyLink = styled.span`
   animation-delay: .25s;
 `
 
-const CardEmptyState = ({cardSize}) => (
-  <Fragment>
-    <EmptyImage cardSize={cardSize} />
-    <Content cardSize={cardSize}>
-      <EmptyTitle />
-      <EmptyDescription />
-      <EmptyLink />
-    </Content>
-  </Fragment>
-)
+const CardEmptyState = ({cardSize}) => {
+  console.log('cardSize', cardSize)
+  return (
+    <Fragment>
+      <EmptyImage cardSize={cardSize} />
+      <Content cardSize={cardSize}>
+        <EmptyTitle />
+        <EmptyDescription cardSize={cardSize} />
+        <EmptyLink />
+      </Content>
+    </Fragment>
+  )
+}
 
 export default CardEmptyState
