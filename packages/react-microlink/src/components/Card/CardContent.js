@@ -34,7 +34,7 @@ const Description = styled.p`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 
-  ${media.mobile`
+  ${({cardSize}) => cardSize !== 'large' && media.mobile`
     white-space: nowrap;
   `}
 
@@ -52,7 +52,10 @@ const Url = styled.span`
 export default ({ title, description, url, cardSize, className }) => (
   <Content className={className} cardSize={cardSize}>
     <Title className='microlink_card__content_title' title={title}>{title}</Title>
-    <Description className='microlink_card__content_description'>{description}</Description>
+    <Description
+      className='microlink_card__content_description'
+      cardSize={cardSize}
+    >{description}</Description>
     <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>
   </Content>
 )

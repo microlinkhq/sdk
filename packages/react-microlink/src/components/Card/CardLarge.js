@@ -1,8 +1,15 @@
 import { css } from 'styled-components'
+import { media } from '../../utils'
+
+const HEIGHT = '382px'
 
 export const CardWrapLarge = css`
   flex-direction: column;
-  height: 382px;
+  height: ${HEIGHT};
+
+  ${media.mobile`
+    height: calc(${HEIGHT} * 7/9);
+  `}
 `
 
 export const CardContentLarge = css`
