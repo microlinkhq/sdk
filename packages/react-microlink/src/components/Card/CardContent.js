@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import extractDomain from 'extract-domain'
 
 import { CardContentLarge } from './CardLarge'
+import { media } from '../../utils'
 
 export const Content = styled.div`
   flex: 1;
@@ -15,28 +16,35 @@ export const Content = styled.div`
 const Title = styled.h2`
   font-size: 16px;
   margin: 0 0 8px;
-  white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   max-width: 95%;
+
+  ${media.mobile`
+    white-space: nowrap;
+  `}
 `
 
 const Description = styled.p`
   font-size: 14px;
   margin: 0;
   line-height: 18px;
-  height: 54px;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+
+  ${media.mobile`
+    white-space: nowrap;
+  `}
+
+  ${media.desktop`
+    height: 54px;
+  `}
 `
 
 const Url = styled.span`
   font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin-top: 10px;
   display: inline-block;
 `

@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 import { CardWrapLarge } from './CardLarge'
 
 const style = css`
-  width: 558px;
+  max-width: 558px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #fff;
   color: #181919;
