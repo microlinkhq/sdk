@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@storybook/addon-options": "latest",
+    "@storybook/addon-viewport": "~3.3.8",
     "@storybook/react": "latest",
     "babel-cli": "latest",
     "babel-eslint": "latest",
