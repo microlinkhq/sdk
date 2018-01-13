@@ -1,4 +1,4 @@
-import { css, style } from 'styled-components'
+import { css } from 'styled-components'
 
 export const getUrlPath = data => typeof data === 'object' ? data.url : data
 
@@ -19,8 +19,3 @@ export const media = {
     }
   `
 }
-
-export const ellipsis = `
-  text-overflow: ellipsis;
-  overflow: hidden;
-`

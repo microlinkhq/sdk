@@ -17,6 +17,7 @@ const Title = styled.h2`
   font-size: 16px;
   margin: 0 0 8px;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
   max-width: 95%;
 
