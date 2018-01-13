@@ -12,7 +12,7 @@ const EmptyImage = CardImage.extend`
 
 const EmptyTitle = styled.span`
   height: 16px;
-  width: 80%;
+  width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
@@ -21,7 +21,7 @@ const EmptyTitle = styled.span`
 `
 
 const EmptyDescription = styled.span`
-  width: 100%;
+  width: 95%;
   display: block;
   background: #e1e8ed;
   margin-bottom: 12px;
@@ -30,22 +30,16 @@ const EmptyDescription = styled.span`
   ${emptyStateAnimation}
   animation-delay: .125s;
 
-  ${({cardSize}) => cardSize !== 'large' && media.mobile`
-    height: 14px;
-  `}
+  height: 33px;
 
-  ${({cardSize}) => cardSize !== 'large' && media.desktop`
-    height: 54px;
-
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      left: -1px;
-      right: -1px;
-      height: 6px;
-      background: #fff;
-    }
-  `}
+  &:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    height: 6px;
+    background: #fff;
+  }
 
   &:before {
     top: 14px;
@@ -54,11 +48,15 @@ const EmptyDescription = styled.span`
   &:after {
     bottom: 14px;
   }
+
+  ${({cardSize}) => cardSize !== 'large' && media.mobile`
+    height: 14px;
+  `}
 `
 
 const EmptyLink = styled.span`
   height: 10px;
-  width: 60%;
+  width: 30%;
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
