@@ -66,18 +66,15 @@ const EmptyLink = styled.span`
   animation-delay: .25s;
 `
 
-const CardEmptyState = ({cardSize}) => {
-  console.log('cardSize', cardSize)
-  return (
-    <Fragment>
-      <EmptyImage cardSize={cardSize} />
-      <Content cardSize={cardSize}>
-        <EmptyTitle />
-        <EmptyDescription cardSize={cardSize} />
-        <EmptyLink />
-      </Content>
-    </Fragment>
+const CardEmptyState = ({cardSize}) => (
+  <Fragment>
+    <EmptyImage cardSize={cardSize} />
+    <Content cardSize={cardSize}>
+      <EmptyTitle />
+      <EmptyDescription cardSize={cardSize} />
+      <EmptyLink />
+    </Content>
+  </Fragment>
   )
-}
 
 export default CardEmptyState
