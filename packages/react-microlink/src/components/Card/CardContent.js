@@ -1,62 +1,73 @@
 import React from 'react'
 import styled from 'styled-components'
 import extractDomain from 'extract-domain'
+import ClampLines from 'react-clamp-lines'
 
-import { CardContentLarge } from './CardLarge'
-import { media } from '../../utils'
+import {CardContentLarge} from './CardLarge'
+import {media} from '../../utils'
 
 export const Content = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   flex: 1;
   padding: 10px 15px;
   min-width: 0;
   box-sizing: border-box;
-  ${({cardSize}) => cardSize === 'large' && CardContentLarge}
+  ${({cardSize}) => cardSize === 'large' && CardContentLarge};
 `
 
-const Title = styled.h2`
+const Title = styled.p`
   font-size: 16px;
-  margin: 0 0 8px;
+  font-weight: bold;
+  margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 95%;
+  flex-grow: 1.2;
 
   ${media.mobile`
     white-space: nowrap;
-  `}
+  `};
 `
 
-const Description = styled.p`
-  font-size: 14px;
-  margin: 0;
-  line-height: 18px;
+const Description = styled(ClampLines)`
   text-overflow: ellipsis;
+  font-size: 14px;
+  flex-grow: 2;
+  margin: auto 0;
+  line-height: 18px;
   overflow: hidden;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 
-  ${({cardSize}) => cardSize !== 'large' && media.mobile`
+  ${({cardSize}) =>
+    cardSize !== 'large' &&
+    media.mobile`
     white-space: nowrap;
-  `}
-
-  ${media.desktop`
-    height: 54px;
-  `}
+  `};
 `
 
 const Url = styled.span`
   font-size: 12px;
-  margin-top: 10px;
+  margin: 0px;
   display: inline-block;
+  flex-grow: 0;
 `
 
-export default ({ title, description, url, cardSize, className }) => (
+export default ({title, description, url, cardSize, className}) => (
   <Content className={className} cardSize={cardSize}>
-    <Title className='microlink_card__content_title' title={title}>{title}</Title>
+    <Title className='microlink_card__content_title' title={title}>
+      {title}
+    </Title>
+
     <Description
+      lines={3}
+      tag='p'
       className='microlink_card__content_description'
+      text={description}
       cardSize={cardSize}
-    >{description}</Description>
+      buttons={false}
+     />
     <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>
   </Content>
 )
