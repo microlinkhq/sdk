@@ -1,6 +1,25 @@
 <a name=""></a>
-#  (2018-01-11)
+#  (2018-01-14)
 
+
+
+
+<a name="1.3.0"></a>
+# 1.3.0 (2018-01-14)
+
+* Add empty state responsive for mobile ([e1944b5](https://github.com/microlinkhq/react-microlink/commit/e1944b5))
+* Add react clamp dependency ([5ac192f](https://github.com/microlinkhq/react-microlink/commit/5ac192f))
+* Add responsive for large card ([c742056](https://github.com/microlinkhq/react-microlink/commit/c742056))
+* Add responsive for normal card ([9984079](https://github.com/microlinkhq/react-microlink/commit/9984079))
+* Add storybook viewport addon ([c207198](https://github.com/microlinkhq/react-microlink/commit/c207198))
+* Adjust empty state style ([6a9fb09](https://github.com/microlinkhq/react-microlink/commit/6a9fb09))
+* Reduce Card max width to 500 ([fb5697c](https://github.com/microlinkhq/react-microlink/commit/fb5697c))
+* Remove debug log ([2493def](https://github.com/microlinkhq/react-microlink/commit/2493def))
+* Remove unnecessary code ([018c509](https://github.com/microlinkhq/react-microlink/commit/018c509))
+* Update Changelog ([2285d80](https://github.com/microlinkhq/react-microlink/commit/2285d80))
+* Update README.md ([cfe8cc6](https://github.com/microlinkhq/react-microlink/commit/cfe8cc6))
+* Update README.md ([85ee7ed](https://github.com/microlinkhq/react-microlink/commit/85ee7ed))
+* v1.3.0 ([241d592](https://github.com/microlinkhq/react-microlink/commit/241d592))
 
 
 
