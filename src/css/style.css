@@ -659,7 +659,7 @@ section.cover a:hover {
   text-decoration: none;
 }
 
-section.cover p:not(.microlink_card__content_description) {
+section.cover p:not(.microlink_card__content_description):not(.microlink_card__content_title) {
   line-height: 24px;
   line-height: 1.5rem;
   font-size: 1.5rem;

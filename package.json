@@ -1,6 +1,7 @@
 {
   "name": "microlinkjs",
   "description": "Convert your links into beautiful previews",
+  "version": "",
   "devDependencies": {
     "browser-sync": "latest",
     "concurrently": "latest",
@@ -25,12 +26,13 @@
     "node": ">= 8"
   },
   "scripts": {
+    "browser-sync": "browser-sync start --server --files \"index.html, README.md, static/**/*.(css|js)\"",
     "build": "gulp build",
     "build:packages": "lerna run build",
     "changelog": "conventional-changelog --release-count=0 > CHANGELOG.md",
     "changelog:commit": "npm run changelog && git add CHANGELOG.md && git commit -m 'Update Changelog' && git push origin master",
     "clean": "rm -rf node_modules && cd packages && eachdir rm -rf node_modules",
-    "dev": "concurrently 'gulp' 'browser-sync start --server --files \"index.html, README.md, static/**/*.(css|js)\"'",
+    "dev": "concurrently 'gulp' 'npm run browser-sync'",
     "lint": "standard-markdown && standard src",
     "postinstall": "lerna bootstrap && lerna link --force-local",
     "precommit": "lint-staged",
