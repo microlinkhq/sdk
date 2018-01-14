@@ -72,7 +72,8 @@ $ npm install microlinkjs
 
 #### Usage
 
-```js
+```html
+<script>
 // Replace all `a` for microlink cards
 microlink('a')
 
@@ -83,6 +84,7 @@ microlink('a', { round: true })
 document.addEventListener('DOMContentLoaded', function (event) {
   microlink('a', { round: true })
 })
+</<script>
 ```
 
 Also, you can declare inline options in the HTML markup as `data` attributes:
