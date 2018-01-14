@@ -7,10 +7,11 @@ exports.Content = undefined;
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ', '\n'], ['\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ', '\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  font-size: 16px;\n  margin: 0 0 8px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 95%;\n'], ['\n  font-size: 16px;\n  margin: 0 0 8px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 95%;\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  font-size: 14px;\n  margin: 0;\n  line-height: 18px;\n  height: 54px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n'], ['\n  font-size: 14px;\n  margin: 0;\n  line-height: 18px;\n  height: 54px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  margin-top: 10px;\n  display: inline-block;\n'], ['\n  font-size: 12px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  margin-top: 10px;\n  display: inline-block;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  display: flex;\n  justify-content: space-around;\n  flex-direction: column;\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ', ';\n'], ['\n  display: flex;\n  justify-content: space-around;\n  flex-direction: column;\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ', ';\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  max-width: 95%;\n  flex-grow: 1.2;\n\n  ', ';\n'], ['\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  max-width: 95%;\n  flex-grow: 1.2;\n\n  ', ';\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    white-space: nowrap;\n  '], ['\n    white-space: nowrap;\n  ']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  text-overflow: ellipsis;\n  font-size: 14px;\n  flex-grow: 2;\n  margin: auto 0;\n  line-height: 18px;\n  overflow: hidden;\n\n  ', ';\n'], ['\n  text-overflow: ellipsis;\n  font-size: 14px;\n  flex-grow: 2;\n  margin: auto 0;\n  line-height: 18px;\n  overflow: hidden;\n\n  ', ';\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  margin: 0px;\n  display: inline-block;\n  flex-grow: 0;\n'], ['\n  font-size: 12px;\n  margin: 0px;\n  display: inline-block;\n  flex-grow: 0;\n']);
 
 var _react = require('react');
 
@@ -24,7 +25,13 @@ var _extractDomain = require('extract-domain');
 
 var _extractDomain2 = _interopRequireDefault(_extractDomain);
 
+var _reactClampLines = require('react-clamp-lines');
+
+var _reactClampLines2 = _interopRequireDefault(_reactClampLines);
+
 var _CardLarge = require('./CardLarge');
+
+var _utils = require('../../utils');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35,18 +42,21 @@ var Content = exports.Content = _styledComponents2.default.div(_templateObject, 
   return cardSize === 'large' && _CardLarge.CardContentLarge;
 });
 
-var Title = _styledComponents2.default.h2(_templateObject2);
+var Title = _styledComponents2.default.p(_templateObject2, _utils.media.mobile(_templateObject3));
 
-var Description = _styledComponents2.default.p(_templateObject3);
+var Description = (0, _styledComponents2.default)(_reactClampLines2.default)(_templateObject4, function (_ref2) {
+  var cardSize = _ref2.cardSize;
+  return cardSize !== 'large' && _utils.media.mobile(_templateObject3);
+});
 
-var Url = _styledComponents2.default.span(_templateObject4);
+var Url = _styledComponents2.default.span(_templateObject5);
 
-exports.default = function (_ref2) {
-  var title = _ref2.title,
-      description = _ref2.description,
-      url = _ref2.url,
-      cardSize = _ref2.cardSize,
-      className = _ref2.className;
+exports.default = function (_ref3) {
+  var title = _ref3.title,
+      description = _ref3.description,
+      url = _ref3.url,
+      cardSize = _ref3.cardSize,
+      className = _ref3.className;
   return _jsx(Content, {
     className: className,
     cardSize: cardSize
@@ -54,8 +64,13 @@ exports.default = function (_ref2) {
     className: 'microlink_card__content_title',
     title: title
   }, void 0, title), _jsx(Description, {
-    className: 'microlink_card__content_description'
-  }, void 0, description), _jsx(Url, {
+    lines: 3,
+    tag: 'p',
+    className: 'microlink_card__content_description',
+    text: description,
+    cardSize: cardSize,
+    buttons: false
+  }), _jsx(Url, {
     className: 'microlink_card__content_url'
   }, void 0, (0, _extractDomain2.default)(url)));
 };
