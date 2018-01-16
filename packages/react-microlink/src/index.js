@@ -36,7 +36,6 @@ class Microlink extends Component {
             image
           })
         })
-        .catch((err) => console.log('microlink', err))
     )
   }
 
