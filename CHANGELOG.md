@@ -1,6 +1,20 @@
 <a name=""></a>
-#  (2018-01-14)
+#  (2018-01-16)
 
+
+
+
+<a name="1.3.1"></a>
+## 1.3.1 (2018-01-16)
+
+* Avoid print errors ([3490e15](https://github.com/microlinkhq/react-microlink/commit/3490e15))
+* Improve examples ([41b0e6b](https://github.com/microlinkhq/react-microlink/commit/41b0e6b))
+* Remove unnecessary code ([04abf27](https://github.com/microlinkhq/react-microlink/commit/04abf27))
+* Rename commonjs → cjs ([0b04e73](https://github.com/microlinkhq/react-microlink/commit/0b04e73))
+* Update ([8beebd3](https://github.com/microlinkhq/react-microlink/commit/8beebd3))
+* Update Changelog ([8e5e80c](https://github.com/microlinkhq/react-microlink/commit/8e5e80c))
+* Use free endpoint ([1242582](https://github.com/microlinkhq/react-microlink/commit/1242582))
+* v1.3.1 ([b9ed59b](https://github.com/microlinkhq/react-microlink/commit/b9ed59b))
 
 
 
