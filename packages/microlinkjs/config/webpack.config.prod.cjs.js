@@ -10,7 +10,7 @@ const fs = require('fs')
 const appDirectory = fs.realpathSync(process.cwd())
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
 
-config.output.path = resolveApp('commonjs')
+config.output.path = resolveApp('cjs')
 config.output.libraryTarget = 'commonjs2'
 
 module.exports = config

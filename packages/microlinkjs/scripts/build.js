@@ -153,4 +153,4 @@ const createBundle = (config) => {
 
 createBundle(require('../config/webpack.config.prod.umd'))
 .then(() => createBundle(require('../config/webpack.config.prod.amd')))
-.then(() => createBundle(require('../config/webpack.config.prod.common')))
+.then(() => createBundle(require('../config/webpack.config.prod.cjs')))
