@@ -2,9 +2,7 @@ import React, {Fragment, Component} from 'react'
 import PropTypes from 'prop-types'
 
 import {CardWrap, CardImage, CardContent, CardEmptyState} from './components/Card'
-import {getUrlPath, uniqArray, someProp} from './utils'
-
-const IMAGE_PROPS = ['screenshot', 'image', 'logo']
+import {getUrlPath, someProp} from './utils'
 
 const createApiUrl = props => {
   const {url: targetUrl, screenshot, apiEndpoint, prerender, contrast} = props
@@ -18,7 +16,7 @@ const createApiUrl = props => {
 class Microlink extends Component {
   componentWillMount () {
     const {image, apiKey} = this.props
-    const imagesProps = uniqArray([].concat(image).concat(IMAGE_PROPS))
+    const imagesProps = [].concat(image)
     const url = createApiUrl(this.props)
 
     this.setState({loading: true}, () =>
@@ -85,7 +83,7 @@ Microlink.defaultProps = {
   apiEndpoint: 'https://api.microlink.io',
   apiKey: undefined,
   contrast: false,
-  image: 'image',
+  image: ['screenshot', 'image', 'logo'],
   prerender: false,
   screenshot: false,
   size: 'normal'
