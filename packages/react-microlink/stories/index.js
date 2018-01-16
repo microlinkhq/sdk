@@ -39,8 +39,6 @@ storiesOf('Normal', module)
     <div>
       {urls.map(url =>
         <MicrolinkCard
-          apiKey='QJ4Zrx7Vw69gk02v9PCa77ojA8xGsyVP5Fh04TXN'
-          apiEndpoint={'https://qn8rql9281.execute-api.us-east-1.amazonaws.com/production'}
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
