@@ -30,8 +30,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IMAGE_PROPS = ['screenshot', 'image', 'logo'];
-
 var createApiUrl = function createApiUrl(props) {
   var targetUrl = props.url,
       screenshot = props.screenshot,
@@ -64,7 +62,7 @@ var Microlink = function (_Component) {
           image = _props.image,
           apiKey = _props.apiKey;
 
-      var imagesProps = (0, _utils.uniqArray)([].concat(image).concat(IMAGE_PROPS));
+      var imagesProps = [].concat(image);
       var url = createApiUrl(this.props);
 
       this.setState({ loading: true }, function () {
@@ -92,8 +90,6 @@ var Microlink = function (_Component) {
             loading: false,
             image: image
           });
-        }).catch(function (err) {
-          return console.log('microlink', err);
         });
       });
     }
@@ -159,7 +155,7 @@ Microlink.defaultProps = {
   apiEndpoint: 'https://api.microlink.io',
   apiKey: undefined,
   contrast: false,
-  image: 'image',
+  image: ['screenshot', 'image', 'logo'],
   prerender: false,
   screenshot: false,
   size: 'normal'
