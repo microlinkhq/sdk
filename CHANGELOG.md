@@ -1,6 +1,15 @@
 <a name=""></a>
-#  (2018-01-16)
+#  (2018-01-18)
 
+
+
+
+<a name="1.3.2"></a>
+## 1.3.2 (2018-01-18)
+
+* Remove prop-types for production build ([1dabcb4](https://github.com/microlinkhq/react-microlink/commit/1dabcb4))
+* Update Changelog ([2806724](https://github.com/microlinkhq/react-microlink/commit/2806724))
+* v1.3.2 ([35d906b](https://github.com/microlinkhq/react-microlink/commit/35d906b))
 
 
 
