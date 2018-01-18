@@ -2,7 +2,7 @@
   "name": "microlinkjs",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "main": "src/index.js",
   "author": {
     "email": "hi@breadadams.com",
@@ -32,7 +32,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "react-microlink": "^1.3.1"
+    "react-microlink": "^1.3.2"
   },
   "devDependencies": {
     "babel-cli": "latest",
