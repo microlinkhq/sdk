@@ -45,19 +45,15 @@ var EmptyDescription = _styledComponents2.default.span(_templateObject3, _CardAn
 
 var EmptyLink = _styledComponents2.default.span(_templateObject5, _CardAnimations.emptyStateAnimation);
 
-var _ref3 = _jsx(EmptyTitle, {});
-
-var _ref4 = _jsx(EmptyLink, {});
-
 var CardEmptyState = function CardEmptyState(_ref2) {
   var cardSize = _ref2.cardSize;
   return _jsx(_react.Fragment, {}, void 0, _jsx(EmptyImage, {
     cardSize: cardSize
   }), _jsx(_CardContent.Content, {
     cardSize: cardSize
-  }, void 0, _ref3, _jsx(EmptyDescription, {
+  }, void 0, _jsx(EmptyTitle, {}), _jsx(EmptyDescription, {
     cardSize: cardSize
-  }), _ref4));
+  }), _jsx(EmptyLink, {})));
 };
 
 exports.default = CardEmptyState;
