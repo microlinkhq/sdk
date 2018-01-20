@@ -23,7 +23,8 @@ class Microlink extends Component {
       fetch(url, {headers: {'x-api-key': apiKey}})
         .then(res => res.json())
         .then(({status, data}) => {
-          const image = getUrlPath(someProp(data, imagesProps))
+          const image = someProp(data, imagesProps)
+          const imageUrl = getUrlPath(image)
           const {title, description, url} = data
           const {color, background_color: backgroundColor} = image || {}
           this.setState({
@@ -33,7 +34,7 @@ class Microlink extends Component {
             description,
             url,
             loading: false,
-            image
+            image: imageUrl
           })
         })
     )
