@@ -3064,7 +3064,8 @@ var Microlink = function (_Component) {
           var status = _ref.status,
               data = _ref.data;
 
-          var image = (0, _utils.getUrlPath)((0, _utils.someProp)(data, imagesProps));
+          var image = (0, _utils.someProp)(data, imagesProps);
+          var imageUrl = (0, _utils.getUrlPath)(image);
           var title = data.title,
               description = data.description,
               url = data.url;
@@ -3080,7 +3081,7 @@ var Microlink = function (_Component) {
             description: description,
             url: url,
             loading: false,
-            image: image
+            image: imageUrl
           });
         });
       });
