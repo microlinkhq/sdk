@@ -1,6 +1,17 @@
 <a name=""></a>
-#  (2018-01-18)
+#  (2018-01-20)
 
+
+
+
+<a name="1.3.3"></a>
+## 1.3.3 (2018-01-20)
+
+* Add large demo ([9ce33bc](https://github.com/microlinkhq/react-microlink/commit/9ce33bc))
+* Add logo example ([bff4d06](https://github.com/microlinkhq/react-microlink/commit/bff4d06))
+* Fix contrast prop ([ff9e863](https://github.com/microlinkhq/react-microlink/commit/ff9e863))
+* Update Changelog ([6ca81a8](https://github.com/microlinkhq/react-microlink/commit/6ca81a8))
+* v1.3.3 ([a60400c](https://github.com/microlinkhq/react-microlink/commit/a60400c))
 
 
 
