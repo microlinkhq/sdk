@@ -1,5 +1,7 @@
 # microlinkjs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/microlinkhq/microlinkjs.svg)](https://greenkeeper.io/)
+
 > Convert your links into beautiful previews.
 
 [Documentation](https://docs.microlink.io)
