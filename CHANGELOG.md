@@ -1,11 +1,24 @@
 <a name=""></a>
-#  (2018-01-20)
+##  (2018-01-30)
 
+
+
+
+<a name="1.3.4"></a>
+## <small>1.3.4 (2018-01-30)</small>
+
+* Fix Storybook link ([fb912ed](https://github.com/microlinkhq/react-microlink/commit/fb912ed))
+* Update Changelog ([e64677a](https://github.com/microlinkhq/react-microlink/commit/e64677a))
+* Update deps ([cfd8f85](https://github.com/microlinkhq/react-microlink/commit/cfd8f85))
+* Update doc ([58d04e6](https://github.com/microlinkhq/react-microlink/commit/58d04e6))
+* Update README.md ([4bc403e](https://github.com/microlinkhq/react-microlink/commit/4bc403e))
+* v1.3.4 ([69fdad5](https://github.com/microlinkhq/react-microlink/commit/69fdad5))
+* docs(readme): add Greenkeeper badge ([c1642c8](https://github.com/microlinkhq/react-microlink/commit/c1642c8))
 
 
 
 <a name="1.3.3"></a>
-## 1.3.3 (2018-01-20)
+## <small>1.3.3 (2018-01-20)</small>
 
 * Add large demo ([9ce33bc](https://github.com/microlinkhq/react-microlink/commit/9ce33bc))
 * Add logo example ([bff4d06](https://github.com/microlinkhq/react-microlink/commit/bff4d06))
@@ -16,7 +29,7 @@
 
 
 <a name="1.3.2"></a>
-## 1.3.2 (2018-01-18)
+## <small>1.3.2 (2018-01-18)</small>
 
 * Remove prop-types for production build ([1dabcb4](https://github.com/microlinkhq/react-microlink/commit/1dabcb4))
 * Update Changelog ([2806724](https://github.com/microlinkhq/react-microlink/commit/2806724))
@@ -25,7 +38,7 @@
 
 
 <a name="1.3.1"></a>
-## 1.3.1 (2018-01-16)
+## <small>1.3.1 (2018-01-16)</small>
 
 * Avoid print errors ([3490e15](https://github.com/microlinkhq/react-microlink/commit/3490e15))
 * Improve examples ([41b0e6b](https://github.com/microlinkhq/react-microlink/commit/41b0e6b))
@@ -39,7 +52,7 @@
 
 
 <a name="1.3.0"></a>
-# 1.3.0 (2018-01-14)
+## 1.3.0 (2018-01-14)
 
 * Add empty state responsive for mobile ([e1944b5](https://github.com/microlinkhq/react-microlink/commit/e1944b5))
 * Add react clamp dependency ([5ac192f](https://github.com/microlinkhq/react-microlink/commit/5ac192f))
@@ -58,7 +71,7 @@
 
 
 <a name="1.2.5"></a>
-## 1.2.5 (2018-01-11)
+## <small>1.2.5 (2018-01-11)</small>
 
 * Ship module build ([1b746ec](https://github.com/microlinkhq/react-microlink/commit/1b746ec))
 * Update Changelog ([22d507f](https://github.com/microlinkhq/react-microlink/commit/22d507f))
@@ -68,14 +81,14 @@
 
 
 <a name="1.2.4"></a>
-## 1.2.4 (2018-01-11)
+## <small>1.2.4 (2018-01-11)</small>
 
 * v1.2.4 ([68271fa](https://github.com/microlinkhq/react-microlink/commit/68271fa))
 
 
 
 <a name="1.2.3"></a>
-## 1.2.3 (2018-01-11)
+## <small>1.2.3 (2018-01-11)</small>
 
 * Setup publish script ([d8b7442](https://github.com/microlinkhq/react-microlink/commit/d8b7442))
 * v1.2.3 ([97534a4](https://github.com/microlinkhq/react-microlink/commit/97534a4))
@@ -83,7 +96,7 @@
 
 
 <a name="1.2.2"></a>
-## 1.2.2 (2018-01-09)
+## <small>1.2.2 (2018-01-09)</small>
 
 * Update pro plan props ([1ad681c](https://github.com/microlinkhq/react-microlink/commit/1ad681c))
 * Update README.md ([b06ccdc](https://github.com/microlinkhq/react-microlink/commit/b06ccdc))
@@ -92,7 +105,7 @@
 
 
 <a name="1.2.1"></a>
-## 1.2.1 (2018-01-05)
+## <small>1.2.1 (2018-01-05)</small>
 
 * Declare react as peer dependencies ([5cbf15f](https://github.com/microlinkhq/react-microlink/commit/5cbf15f))
 * Update changelog ([a0e2b88](https://github.com/microlinkhq/react-microlink/commit/a0e2b88))
@@ -103,7 +116,7 @@
 
 
 <a name="1.2.0"></a>
-# 1.2.0 (2017-12-19)
+## 1.2.0 (2017-12-19)
 
 * Add .npmrc ([f673518](https://github.com/microlinkhq/react-microlink/commit/f673518))
 * Add api key support ([085f3ce](https://github.com/microlinkhq/react-microlink/commit/085f3ce))
@@ -128,7 +141,7 @@
 
 
 <a name="1.1.3"></a>
-## 1.1.3 (2017-12-16)
+## <small>1.1.3 (2017-12-16)</small>
 
 * Update build process ([963c3ed](https://github.com/microlinkhq/react-microlink/commit/963c3ed))
 * v1.1.3 ([6fa6db8](https://github.com/microlinkhq/react-microlink/commit/6fa6db8))
@@ -136,7 +149,7 @@
 
 
 <a name="1.1.2"></a>
-## 1.1.2 (2017-12-16)
+## <small>1.1.2 (2017-12-16)</small>
 
 * Setup prepublish script ([6f745a9](https://github.com/microlinkhq/react-microlink/commit/6f745a9))
 * v1.1.2 ([d57fac9](https://github.com/microlinkhq/react-microlink/commit/d57fac9))
@@ -144,7 +157,7 @@
 
 
 <a name="1.1.2-0"></a>
-## 1.1.2-0 (2017-12-16)
+## <small>1.1.2-0 (2017-12-16)</small>
 
 * Delete dist from repository ([c4c5f3a](https://github.com/microlinkhq/react-microlink/commit/c4c5f3a))
 * v1.1.1 ([91f6d0b](https://github.com/microlinkhq/react-microlink/commit/91f6d0b))
@@ -153,7 +166,7 @@
 
 
 <a name="1.1.0"></a>
-# 1.1.0 (2017-12-16)
+## 1.1.0 (2017-12-16)
 
 * ¯\_(ツ)_/¯ ([e18114d](https://github.com/microlinkhq/react-microlink/commit/e18114d))
 * Add .prettierrc & prettier dependency ([0147e0c](https://github.com/microlinkhq/react-microlink/commit/0147e0c))
