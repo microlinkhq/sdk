@@ -100,7 +100,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with vide prop', () => (
+  .add('with video prop', () => (
     <div>
       {urlsVideo.map(url =>
         <MicrolinkCard
