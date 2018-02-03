@@ -18,6 +18,7 @@ class Microlink extends Component {
           const imageUrl = getUrlPath(image)
           const {title, description, url, video} = data
           const {color, background_color: backgroundColor} = image || {}
+
           this.setState({
             color,
             backgroundColor,

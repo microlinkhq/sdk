@@ -26,3 +26,5 @@ export const createApiUrl = props => {
   if (screenshot) url = `${url}&screenshot=${screenshot}`
   return url
 }
+
+export const isLarge = cardSize => cardSize === 'large'

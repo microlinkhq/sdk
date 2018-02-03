@@ -1,7 +1,18 @@
 import { createElement } from 'react'
 import styled, { css } from 'styled-components'
 
-import { CardWrapLarge } from './CardLarge'
+import { media, isLarge } from '../../utils'
+
+const HEIGHT = '382px'
+
+const largeStyle = css`
+  flex-direction: column;
+  height: ${HEIGHT};
+
+  ${media.mobile`
+    height: calc(${HEIGHT} * 7/9);
+  `}
+`
 
 const style = css`
   max-width: 500px;
@@ -33,7 +44,7 @@ const style = css`
     border-radius: ${typeof round === 'boolean' ? `.42857em` : round};
   `}
 
-  ${({cardSize}) => cardSize === 'large' && CardWrapLarge}
+  ${({cardSize}) => isLarge(cardSize) && largeStyle}
 
   ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && css`
     background-color: ${backgroundColor};
