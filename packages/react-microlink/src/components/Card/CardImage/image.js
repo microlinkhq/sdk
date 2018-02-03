@@ -1,6 +1,6 @@
 import styled, {css} from 'styled-components'
 
-import { media, isLarge } from '../../utils'
+import { media, isLarge } from '../../../utils'
 
 const largeStyle = css`
 flex: 1;

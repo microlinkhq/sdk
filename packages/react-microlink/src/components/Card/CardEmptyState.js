@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimations'
+import CardImage from './CardImage/image'
 import { Content } from './CardContent'
-import CardImage from './CardImage'
 import { media } from '../../utils'
 
 const EmptyImage = CardImage.extend`
