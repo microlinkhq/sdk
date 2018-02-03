@@ -2,16 +2,7 @@ import React, {Fragment, Component} from 'react'
 import PropTypes from 'prop-types'
 
 import {CardWrap, CardImage, CardContent, CardEmptyState} from './components/Card'
-import {getUrlPath, someProp} from './utils'
-
-const createApiUrl = props => {
-  const {url: targetUrl, screenshot, apiEndpoint, prerender, contrast} = props
-  let url = `${apiEndpoint}/?url=${targetUrl}`
-  if (contrast) url = `${url}&palette`
-  if (prerender) url = `${url}&prerender`
-  if (screenshot) url = `${url}&screenshot=${screenshot}`
-  return url
-}
+import {getUrlPath, someProp, createApiUrl} from './utils'
 
 class Microlink extends Component {
   componentWillMount () {
@@ -25,7 +16,7 @@ class Microlink extends Component {
         .then(({status, data}) => {
           const image = someProp(data, imagesProps)
           const imageUrl = getUrlPath(image)
-          const {title, description, url} = data
+          const {title, description, url, video} = data
           const {color, background_color: backgroundColor} = image || {}
           this.setState({
             color,
@@ -34,6 +25,7 @@ class Microlink extends Component {
             description,
             url,
             loading: false,
+            video,
             image: imageUrl
           })
         })
@@ -41,12 +33,12 @@ class Microlink extends Component {
   }
 
   renderContent () {
-    const {title, description, url, image} = this.state
+    const {title, description, url, image, video} = this.state
     const {size} = this.props
 
     return (
       <Fragment>
-        <CardImage className='microlink_card__image' image={image} cardSize={size} />
+        <CardImage className='microlink_card__image' image={image} video={video} cardSize={size} />
         <CardContent
           className='microlink_card__content'
           title={title}
