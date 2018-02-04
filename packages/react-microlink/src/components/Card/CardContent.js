@@ -1,10 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import extractDomain from 'extract-domain'
 import ClampLines from 'react-clamp-lines'
 
-import {CardContentLarge} from './CardLarge'
 import {media} from '../../utils'
+
+const isLarge = cardSize => cardSize === 'large'
+
+const largeStyle = css`
+  flex: 0 0 125px;
+`
 
 export const Content = styled.div`
   display: flex;
@@ -14,7 +19,7 @@ export const Content = styled.div`
   padding: 10px 15px;
   min-width: 0;
   box-sizing: border-box;
-  ${({cardSize}) => cardSize === 'large' && CardContentLarge};
+  ${({cardSize}) => isLarge(cardSize) && largeStyle};
 `
 
 const Title = styled.p`
@@ -40,9 +45,7 @@ const Description = styled(ClampLines)`
   line-height: 18px;
   overflow: hidden;
 
-  ${({cardSize}) =>
-    cardSize !== 'large' &&
-    media.mobile`
+  ${({cardSize}) => !isLarge(cardSize) && media.mobile`
     white-space: nowrap;
   `};
 `
