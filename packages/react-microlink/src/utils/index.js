@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-export const getUrlPath = data => typeof data === 'object' ? data.url : data
+export const getUrlPath = data => data && typeof data === 'object' ? data.url : data
 
 export const someProp = (data, props) =>
   data[props.find(prop => data[prop] !== null && data[prop] !== undefined)]
