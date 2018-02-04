@@ -1,9 +1,16 @@
 import { createElement } from 'react'
 
+import {getUrlPath} from '../../../utils'
+
 import Image from './image'
 import Video from './video'
 
-export default props => createElement(
-  props.video ? Video : Image,
-  props
-)
+const getVideoUrl = ({url, video} = {}) => getUrlPath(video)
+
+export default props => {
+  const video = getVideoUrl(props)
+
+  return video
+    ? createElement(Video, Object.assign({}, props, {video}))
+    : createElement(Image, props)
+}

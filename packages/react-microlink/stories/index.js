@@ -221,6 +221,18 @@ storiesOf('Large', module)
       )}
     </div>
   ))
+  .add('with video prop', () => (
+    <div>
+      {urlsVideo.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          round
+          />
+      )}
+    </div>
+  ))
   .add('with empty state', () => (
     <MicrolinkCard
       size='large'

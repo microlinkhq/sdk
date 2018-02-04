@@ -19,9 +19,11 @@ export const urls = [
 ]
 
 export const urlsVideo = [
-  // 'https://twitter.com/verge/status/957383241714970624'
-  // 'https://gfycat.com/gifs/detail/timelyhealthyarmadillo'
-  'https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit'
+  'https://gfycat.com/gifs/detail/timelyhealthyarmadillo',
+  'https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit',
+  'https://twitter.com/verge/status/957383241714970624',
+  'https://vimeo.com/188175573',
+  'https://www.youtube.com/watch?v=hwMkbaS_M_c'
 ]
 
 export const getRandomSize = (sizes) => {
