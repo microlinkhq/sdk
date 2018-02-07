@@ -112,7 +112,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with custom media size', () => (
+  .add('with mediaSize prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -246,7 +246,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with custom media size', () => (
+  .add('with mediaSize prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
