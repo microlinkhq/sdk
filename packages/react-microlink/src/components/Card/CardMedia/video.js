@@ -24,7 +24,9 @@ const VideoWrapper = styled.div`
     display: block;
   }
 
-  ${({cardSize}) => isLarge(cardSize) && largeStyle}
+  ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
+    flex: 0 0 92px;
+  `}
 `
 
 const Video = styled.video`
