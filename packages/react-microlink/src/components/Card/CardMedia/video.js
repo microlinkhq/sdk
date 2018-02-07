@@ -33,9 +33,6 @@ const Video = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  // aspect ratio 1x1
-  // http://tachyons.io/components/layout/aspect-ratio-1x1/index.html
   position: absolute;
   top: 0;
   right: 0;
