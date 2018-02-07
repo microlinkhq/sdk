@@ -50,6 +50,7 @@ const CardVideo = ({cardSize, video, image, muted, autoPlay, loop}) => {
         muted={muted}
         autoPlay={autoPlay}
         loop={loop}
+        playsinline
       />
     </VideoWrapper>
   )
