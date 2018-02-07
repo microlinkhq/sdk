@@ -40,7 +40,7 @@ const Video = styled.video`
   left: 0;
   z-index: 100;
 
-  ${({autoplay}) => autoplay && `
+  ${({autoPlay}) => autoPlay && `
     &::-webkit-media-controls-start-playback-button {
       display: none!important;
       -webkit-appearance: none;
@@ -48,14 +48,14 @@ const Video = styled.video`
   `}
 `
 
-const CardVideo = ({cardSize, video, image, muted, autoplay, loop}) => {
+const CardVideo = ({cardSize, video, image, muted, autoPlay, loop}) => {
   return (
     <VideoWrapper cardSize={cardSize}>
       <Video
         src={video}
         poster={image}
         muted={muted}
-        autoplay={autoplay}
+        autoPlay={autoPlay}
         loop={loop}
         playsinline
       />
@@ -67,6 +67,6 @@ CardVideo.defaultProps = {
   controls: true,
   muted: true,
   loop: true,
-  autoplay: true
+  autoPlay: true
 }
 export default CardVideo
