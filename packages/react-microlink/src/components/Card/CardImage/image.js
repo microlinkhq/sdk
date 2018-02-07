@@ -8,10 +8,6 @@ flex: 1;
 &::before {
   padding-bottom: 0;
 }
-
-${media.mobile`
-  flex: 0 0 92px;
-`}
 `
 
 export default styled.div`
@@ -24,6 +20,10 @@ export default styled.div`
     padding-bottom: 100%;
     display: block;
   }
+
   ${({image}) => image && `background-image: url(${image});`}
-  ${({cardSize}) => isLarge(cardSize) && largeStyle}
+
+  ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
+    flex: 0 0 92px;
+  `}
 `
