@@ -12,41 +12,39 @@ flex: 1;
 `
 
 const VideoWrapper = styled.div`
-display: block;
-flex: 0 0 125px;
-overflow: hidden;
-height: auto;
-position: relative;
-
-&::before {
-  content: '';
-  padding-bottom: 100%;
   display: block;
-}
+  flex: 0 0 125px;
+  overflow: hidden;
+  height: auto;
+  position: relative;
 
-${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
-  flex: 0 0 92px;
-`}
+  &::before {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+  }
+
+  ${({cardSize}) => isLarge(cardSize) && largeStyle}
 `
 
 const Video = styled.video`
-width: 100%;
-height: 100%;
-object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
-// aspect ratio 1x1
-// http://tachyons.io/components/layout/aspect-ratio-1x1/index.html
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 100;
+  // aspect ratio 1x1
+  // http://tachyons.io/components/layout/aspect-ratio-1x1/index.html
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
 `
 
-const CardVideo = ({video, image, muted, autoPlay, loop, ...props}) => {
+const CardVideo = ({cardSize, video, image, muted, autoPlay, loop}) => {
   return (
-    <VideoWrapper>
+    <VideoWrapper cardSize={cardSize}>
       <Video
         src={video}
         poster={image}
