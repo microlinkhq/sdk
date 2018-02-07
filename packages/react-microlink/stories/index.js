@@ -225,6 +225,7 @@ storiesOf('Large', module)
     <div>
       {urlsVideo.map(url =>
         <MicrolinkCard
+          size='large'
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
