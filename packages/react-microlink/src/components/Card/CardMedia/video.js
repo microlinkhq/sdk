@@ -1,14 +1,14 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 
-import { media, isLarge } from '../../../utils'
+import {media, isLarge} from '../../../utils'
 
 const largeStyle = css`
-flex: 1;
+  flex: 1;
 
-&::before {
-  padding-bottom: 0;
-}
+  &::before {
+    padding-bottom: 0;
+  }
 `
 
 const VideoWrapper = styled.div`
@@ -49,7 +49,15 @@ const Video = styled.video`
   `}
 `
 
-const CardVideo = ({cardSize, video, image, muted, autoPlay, loop, mediaSize}) => {
+const CardVideo = ({
+  cardSize,
+  video,
+  image,
+  videoMuted: muted,
+  videoAutoplay: autoPlay,
+  videoLoop: loop,
+  mediaSize
+}) => {
   return (
     <VideoWrapper cardSize={cardSize}>
       <Video
