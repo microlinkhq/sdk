@@ -13,7 +13,7 @@ storiesOf('Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px'}}
-          />
+        />
       )}
     </div>
   ))
@@ -25,7 +25,7 @@ storiesOf('Normal', module)
           url={url}
           style={{marginBottom: '20px'}}
           round
-          />
+        />
       )}
     </div>
   ))
@@ -37,7 +37,7 @@ storiesOf('Normal', module)
           url={url}
           style={{marginBottom: '20px'}}
           round={getRandomSize([6, 10, 20, 30, 50, 9999])}
-          />
+        />
       )}
     </div>
   ))
@@ -48,7 +48,7 @@ storiesOf('Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px', width: getRandomSize([300, 400, 500, 600, 700, 800])}}
-          />
+        />
       )}
     </div>
   ))
@@ -59,7 +59,7 @@ storiesOf('Normal', module)
           key={url}
           url={url}
           style={{marginBottom: '20px', height: getRandomSize([75, 125, 150, 175, 200, 250])}}
-          />
+        />
       )}
     </div>
   ))
@@ -71,7 +71,7 @@ storiesOf('Normal', module)
           url={url}
           style={{marginBottom: '20px'}}
           contrast
-          />
+        />
       )}
     </div>
   ))
@@ -83,7 +83,7 @@ storiesOf('Normal', module)
           url={url}
           style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
           round
-          />
+        />
       )}
     </div>
   ))
@@ -96,7 +96,7 @@ storiesOf('Normal', module)
           style={{marginBottom: '20px'}}
           image={'logo'}
           round
-          />
+        />
       )}
     </div>
   ))
@@ -127,7 +127,7 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           size='large'
-          />
+        />
       )}
     </div>
   ))
@@ -140,7 +140,7 @@ storiesOf('Large', module)
           style={{marginBottom: '20px'}}
           size='large'
           round
-          />
+        />
       )}
     </div>
   ))
@@ -153,7 +153,7 @@ storiesOf('Large', module)
           style={{marginBottom: '20px'}}
           size='large'
           round={getRandomSize([6, 10, 20, 30])}
-          />
+        />
       )}
     </div>
   ))
@@ -165,7 +165,7 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px', width: getRandomSize([300, 400, 500, 600, 700, 800])}}
           size='large'
-          />
+        />
       )}
     </div>
   ))
@@ -177,7 +177,7 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px', height: getRandomSize([300, 400, 500, 600, 700, 800])}}
           size='large'
-          />
+        />
       )}
     </div>
   ))
@@ -190,7 +190,7 @@ storiesOf('Large', module)
           style={{marginBottom: '20px'}}
           size='large'
           contrast
-          />
+        />
       )}
     </div>
   ))
@@ -203,7 +203,7 @@ storiesOf('Large', module)
           style={{marginBottom: '20px', fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'}}
           round
           size='large'
-          />
+        />
       )}
     </div>
   ))
@@ -217,7 +217,7 @@ storiesOf('Large', module)
           image={'logo'}
           round
           size='large'
-          />
+        />
       )}
     </div>
   ))
