@@ -41,14 +41,14 @@ const Video = styled.video`
   z-index: 100;
 `
 
-const CardVideo = ({cardSize, video, image, muted, autoPlay, loop}) => {
+const CardVideo = ({cardSize, video, image, muted, autoplay, loop}) => {
   return (
     <VideoWrapper cardSize={cardSize}>
       <Video
         src={video}
         poster={image}
         muted={muted}
-        autoPlay={autoPlay}
+        autoplay={autoplay}
         loop={loop}
         playsinline
       />
@@ -60,6 +60,6 @@ CardVideo.defaultProps = {
   controls: true,
   muted: true,
   loop: true,
-  autoPlay: true
+  autoplay: true
 }
 export default CardVideo
