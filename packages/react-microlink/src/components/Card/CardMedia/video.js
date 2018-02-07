@@ -9,22 +9,24 @@ flex: 1;
 &::before {
   padding-bottom: 0;
 }
-
-${media.mobile`
-  flex: 0 0 92px;
-`}
 `
 
 const VideoWrapper = styled.div`
 display: block;
 flex: 0 0 125px;
 overflow: hidden;
-
-// aspect ratio 1x1
-// http://tachyons.io/components/layout/aspect-ratio-1x1/index.html
-height: 0;
+height: auto;
 position: relative;
-padding-bottom: 125px;
+
+&::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
+  flex: 0 0 92px;
+`}
 `
 
 const Video = styled.video`
