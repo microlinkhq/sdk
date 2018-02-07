@@ -13,7 +13,8 @@ flex: 1;
 export default styled.div`
   display: block;
   flex: 0 0 125px;
-  background: #e1e8ed no-repeat center center / cover;
+  background: #e1e8ed no-repeat center center;
+  background-size: ${({mediaSize}) => mediaSize};
 
   &::before {
     content: '';
@@ -26,5 +27,4 @@ export default styled.div`
   ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
     flex: 0 0 92px;
   `}
-
 `

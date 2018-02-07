@@ -12,6 +12,7 @@ flex: 1;
 `
 
 const VideoWrapper = styled.div`
+  background-color: #e1e8ed;
   display: block;
   flex: 0 0 125px;
   overflow: hidden;
@@ -32,7 +33,7 @@ const VideoWrapper = styled.div`
 const Video = styled.video`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: ${({mediaSize}) => mediaSize};
   position: absolute;
   top: 0;
   right: 0;
@@ -48,7 +49,7 @@ const Video = styled.video`
   `}
 `
 
-const CardVideo = ({cardSize, video, image, muted, autoPlay, loop}) => {
+const CardVideo = ({cardSize, video, image, muted, autoPlay, loop, mediaSize}) => {
   return (
     <VideoWrapper cardSize={cardSize}>
       <Video
@@ -58,6 +59,7 @@ const CardVideo = ({cardSize, video, image, muted, autoPlay, loop}) => {
         autoPlay={autoPlay}
         loop={loop}
         playsinline
+        mediaSize={mediaSize}
       />
     </VideoWrapper>
   )

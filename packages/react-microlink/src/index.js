@@ -35,7 +35,7 @@ class Microlink extends Component {
 
   renderContent () {
     const {title, description, url, image, video} = this.state
-    const {size} = this.props
+    const {size, mediaSize} = this.props
 
     return (
       <Fragment>
@@ -45,6 +45,7 @@ class Microlink extends Component {
           video={video}
           url={url}
           cardSize={size}
+          mediaSize={mediaSize}
           />
         <CardContent
           className='microlink_card__content'
@@ -83,6 +84,7 @@ Microlink.defaultProps = {
   apiKey: undefined,
   contrast: false,
   image: ['screenshot', 'image', 'logo'],
+  mediaSize: 'cover',
   prerender: false,
   screenshot: false,
   size: 'normal'
@@ -93,6 +95,7 @@ Microlink.propTypes = {
   apiKey: PropTypes.string,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
+  mediaSize: PropTypes.string,
   prerender: PropTypes.bool,
   screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   size: PropTypes.string,

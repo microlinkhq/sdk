@@ -108,7 +108,19 @@ storiesOf('Normal', module)
           url={url}
           style={{marginBottom: '20px'}}
           round
-          />
+        />
+      )}
+    </div>
+  ))
+  .add('with custom media size', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          mediaSize='contain'
+        />
       )}
     </div>
   ))
@@ -230,7 +242,21 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           round
-          />
+        />
+      )}
+    </div>
+  ))
+  .add('with custom media size', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          size='large'
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          mediaSize='contain'
+          contrast
+        />
       )}
     </div>
   ))
