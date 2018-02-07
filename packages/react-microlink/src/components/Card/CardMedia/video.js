@@ -39,6 +39,13 @@ const Video = styled.video`
   bottom: 0;
   left: 0;
   z-index: 100;
+
+  ${({autoplay}) => autoplay && `
+    &::-webkit-media-controls-start-playback-button {
+      display: none!important;
+      -webkit-appearance: none;
+    }
+  `}
 `
 
 const CardVideo = ({cardSize, video, image, muted, autoplay, loop}) => {
