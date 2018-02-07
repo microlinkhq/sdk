@@ -1,7 +1,7 @@
 import React, {Fragment, Component} from 'react'
 import PropTypes from 'prop-types'
 
-import {CardWrap, CardImage, CardContent, CardEmptyState} from './components/Card'
+import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Card'
 import {getUrlPath, someProp, createApiUrl} from './utils'
 
 class Microlink extends Component {
@@ -39,7 +39,7 @@ class Microlink extends Component {
 
     return (
       <Fragment>
-        <CardImage
+        <CardMedia
           className='microlink_card__image'
           image={image}
           video={video}
