@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 
-import {media, isLarge} from '../../../utils'
+import {media, isLarge, getUrlPath} from '../../../utils'
 
 const largeStyle = css`
   flex: 1;
@@ -58,9 +58,12 @@ const CardVideo = ({
   loop
 }) => {
   return (
-    <VideoWrapper cardSize={cardSize}>
+    <VideoWrapper
+      className='microlink_card__media_video_wrapper'
+      cardSize={cardSize}>
       <Video
-        src={video}
+        className='microlink_card__media_video'
+        src={getUrlPath(video)}
         poster={image}
         muted={muted}
         autoPlay={autoPlay}

@@ -5,12 +5,15 @@ import {getUrlPath} from '../../../utils'
 import Image from './image'
 import Video from './video'
 
-const getVideoUrl = ({url, video} = {}) => getUrlPath(video)
+const isVideo = ({video}) => getUrlPath(video) !== null
 
 export default props => {
-  const video = getVideoUrl(props)
+  if (!isVideo(props)) {
+    return createElement(Image, {
+      className: 'microlink_card__media_image',
+      ...props
+    })
+  }
 
-  return video
-    ? createElement(Video, Object.assign({}, props, {video}))
-    : createElement(Image, props)
+  return createElement(Video, props)
 }

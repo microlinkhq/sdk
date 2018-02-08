@@ -40,7 +40,6 @@ class Microlink extends Component {
     return (
       <Fragment>
         <CardMedia
-          className='microlink_card__image'
           image={image}
           video={video}
           url={url}
