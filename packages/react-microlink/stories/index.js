@@ -255,7 +255,6 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           mediaSize='contain'
-          contrast
         />
       )}
     </div>

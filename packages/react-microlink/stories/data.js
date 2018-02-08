@@ -21,6 +21,7 @@ export const urls = [
 export const urlsVideo = [
   'https://gfycat.com/gifs/detail/timelyhealthyarmadillo',
   'https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit',
+  'https://streamable.com/46ont',
   'https://twitter.com/verge/status/957383241714970624',
   'https://vimeo.com/188175573',
   'https://www.youtube.com/watch?v=hwMkbaS_M_c'
