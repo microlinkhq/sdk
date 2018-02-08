@@ -35,7 +35,7 @@ class Microlink extends Component {
 
   renderContent () {
     const {title, description, url, image, video} = this.state
-    const {size, videoAutoplay, videoMuted, videoLoop} = this.props
+    const {size, autoPlay, muted, loop} = this.props
 
     return (
       <Fragment>
@@ -45,9 +45,9 @@ class Microlink extends Component {
           video={video}
           url={url}
           cardSize={size}
-          videoAutoplay={videoAutoplay}
-          videoMuted={videoMuted}
-          videoLoop={videoLoop}
+          autoPlay={autoPlay}
+          muted={muted}
+          loop={loop}
         />
         <CardContent
           className='microlink_card__content'
@@ -89,9 +89,9 @@ Microlink.defaultProps = {
   prerender: false,
   screenshot: false,
   size: 'normal',
-  videoAutoplay: true,
-  videoMuted: true,
-  videoLoop: true
+  autoPlay: true,
+  muted: true,
+  loop: true
 }
 
 Microlink.propTypes = {
@@ -103,9 +103,9 @@ Microlink.propTypes = {
   screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   size: PropTypes.oneOf(['normal', 'large']),
   url: PropTypes.string.isRequired,
-  videoAutoplay: PropTypes.bool,
-  videoMuted: PropTypes.bool,
-  videoLoop: PropTypes.bool
+  autoPlay: PropTypes.bool,
+  muted: PropTypes.bool,
+  loop: PropTypes.bool
 }
 
 export default Microlink

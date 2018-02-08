@@ -53,9 +53,9 @@ const CardVideo = ({
   cardSize,
   video,
   image,
-  videoMuted: muted,
-  videoAutoplay: autoPlay,
-  videoLoop: loop
+  muted,
+  autoPlay,
+  loop
 }) => {
   return (
     <VideoWrapper cardSize={cardSize}>
