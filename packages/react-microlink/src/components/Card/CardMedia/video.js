@@ -42,9 +42,9 @@ const Video = styled.video`
   z-index: 100;
 
   ${({autoPlay}) => autoPlay && `
-    &::-webkit-media-controls-start-playback-button {
-      display: none!important;
-      -webkit-appearance: none;
+    &::media-controls-start-playback-button {
+      display: none;
+      appearance: none;
     }
   `}
 `
