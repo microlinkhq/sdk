@@ -112,18 +112,6 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with mediaSize prop', () => (
-    <div>
-      {urls.map(url =>
-        <MicrolinkCard
-          key={url}
-          url={url}
-          style={{marginBottom: '20px'}}
-          mediaSize='contain'
-        />
-      )}
-    </div>
-  ))
   .add('with empty state', () => (
     <MicrolinkCard
       url='somesitethatwontresolve.com'
@@ -242,19 +230,6 @@ storiesOf('Large', module)
           url={url}
           style={{marginBottom: '20px'}}
           round
-        />
-      )}
-    </div>
-  ))
-  .add('with mediaSize prop', () => (
-    <div>
-      {urls.map(url =>
-        <MicrolinkCard
-          size='large'
-          key={url}
-          url={url}
-          style={{marginBottom: '20px'}}
-          mediaSize='contain'
         />
       )}
     </div>

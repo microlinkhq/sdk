@@ -33,7 +33,7 @@ const VideoWrapper = styled.div`
 const Video = styled.video`
   width: 100%;
   height: 100%;
-  object-fit: ${({mediaSize}) => mediaSize};
+  object-fit: cover;
   position: absolute;
   top: 0;
   right: 0;
@@ -55,8 +55,7 @@ const CardVideo = ({
   image,
   videoMuted: muted,
   videoAutoplay: autoPlay,
-  videoLoop: loop,
-  mediaSize
+  videoLoop: loop
 }) => {
   return (
     <VideoWrapper cardSize={cardSize}>
@@ -67,7 +66,6 @@ const CardVideo = ({
         autoPlay={autoPlay}
         loop={loop}
         playsinline
-        mediaSize={mediaSize}
       />
     </VideoWrapper>
   )
