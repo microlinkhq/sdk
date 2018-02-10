@@ -1,7 +1,14 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
-import { CardImageLarge } from './CardLarge'
-import { media } from '../../utils'
+import { media, isLarge } from '../../../utils'
+
+const largeStyle = css`
+flex: 1;
+
+&::before {
+  padding-bottom: 0;
+}
+`
 
 export default styled.div`
   display: block;
@@ -16,9 +23,7 @@ export default styled.div`
 
   ${({image}) => image && `background-image: url(${image});`}
 
-  ${({cardSize}) => cardSize === 'large' && CardImageLarge}
-
-  ${({cardSize}) => cardSize !== 'large' && media.mobile`
+  ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
     flex: 0 0 92px;
   `}
 `

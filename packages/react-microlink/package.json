@@ -61,7 +61,8 @@
     "size-limit": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
-    "unfetch": "latest"
+    "unfetch": "latest",
+    "unique-random-array": "latest"
   },
   "engines": {
     "node": ">= 8"
