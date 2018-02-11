@@ -3,7 +3,7 @@
 > Convert your links into beautiful previews.
 
 [Documentation](https://docs.microlink.io)
-([source code](https://github.com/microlinkhq/docs)) | [Storybook](https://microlinkjs.netlify.com/)
+([source code](https://github.com/microlinkhq/docs)) | [Storybook](https://storybook.microlink.io)
 
 ## License
 
