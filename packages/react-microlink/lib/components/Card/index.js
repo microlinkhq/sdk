@@ -22,12 +22,12 @@ Object.defineProperty(exports, 'CardEmptyState', {
   }
 });
 
-var _CardImage = require('./CardImage');
+var _CardMedia = require('./CardMedia');
 
-Object.defineProperty(exports, 'CardImage', {
+Object.defineProperty(exports, 'CardMedia', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_CardImage).default;
+    return _interopRequireDefault(_CardMedia).default;
   }
 });
 

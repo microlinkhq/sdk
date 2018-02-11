@@ -22,11 +22,11 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _CardAnimations = require('./CardAnimations');
 
+var _image = require('./CardMedia/image');
+
+var _image2 = _interopRequireDefault(_image);
+
 var _CardContent = require('./CardContent');
-
-var _CardImage = require('./CardImage');
-
-var _CardImage2 = _interopRequireDefault(_CardImage);
 
 var _utils = require('../../utils');
 
@@ -34,7 +34,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var EmptyImage = _CardImage2.default.extend(_templateObject, _CardAnimations.emptyStateImageAnimation);
+var EmptyImage = _image2.default.extend(_templateObject, _CardAnimations.emptyStateImageAnimation);
 
 var EmptyTitle = _styledComponents2.default.span(_templateObject2, _CardAnimations.emptyStateAnimation);
 

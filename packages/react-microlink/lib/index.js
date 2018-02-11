@@ -26,20 +26,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var createApiUrl = function createApiUrl(props) {
-  var targetUrl = props.url,
-      screenshot = props.screenshot,
-      apiEndpoint = props.apiEndpoint,
-      prerender = props.prerender,
-      contrast = props.contrast;
-
-  var url = apiEndpoint + '/?url=' + targetUrl;
-  if (contrast) url = url + '&palette';
-  if (prerender) url = url + '&prerender';
-  if (screenshot) url = url + '&screenshot=' + screenshot;
-  return url;
-};
-
 var Microlink = function (_Component) {
   _inherits(Microlink, _Component);
 
@@ -59,7 +45,7 @@ var Microlink = function (_Component) {
           apiKey = _props.apiKey;
 
       var imagesProps = [].concat(image);
-      var url = createApiUrl(this.props);
+      var url = (0, _utils.createApiUrl)(this.props);
 
       this.setState({ loading: true }, function () {
         return fetch(url, { headers: { 'x-api-key': apiKey } }).then(function (res) {
@@ -72,7 +58,8 @@ var Microlink = function (_Component) {
           var imageUrl = (0, _utils.getUrlPath)(image);
           var title = data.title,
               description = data.description,
-              url = data.url;
+              url = data.url,
+              video = data.video;
 
           var _ref2 = image || {},
               color = _ref2.color,
@@ -85,6 +72,7 @@ var Microlink = function (_Component) {
             description: description,
             url: url,
             loading: false,
+            video: video,
             image: imageUrl
           });
         });
@@ -97,14 +85,23 @@ var Microlink = function (_Component) {
           title = _state.title,
           description = _state.description,
           url = _state.url,
-          image = _state.image;
-      var size = this.props.size;
+          image = _state.image,
+          video = _state.video;
+      var _props2 = this.props,
+          size = _props2.size,
+          autoPlay = _props2.autoPlay,
+          muted = _props2.muted,
+          loop = _props2.loop;
 
 
-      return _jsx(_react.Fragment, {}, void 0, _jsx(_Card.CardImage, {
-        className: 'microlink_card__image',
+      return _jsx(_react.Fragment, {}, void 0, _jsx(_Card.CardMedia, {
         image: image,
-        cardSize: size
+        video: video,
+        url: url,
+        cardSize: size,
+        autoPlay: autoPlay,
+        muted: muted,
+        loop: loop
       }), _jsx(_Card.CardContent, {
         className: 'microlink_card__content',
         title: title,
@@ -122,9 +119,9 @@ var Microlink = function (_Component) {
           backgroundColor = _state2.backgroundColor,
           url = _state2.url,
           loading = _state2.loading;
-      var _props2 = this.props,
-          size = _props2.size,
-          className = _props2.className;
+      var _props3 = this.props,
+          size = _props3.size,
+          className = _props3.className;
 
 
       return _react2.default.createElement(
@@ -155,7 +152,10 @@ Microlink.defaultProps = {
   image: ['screenshot', 'image', 'logo'],
   prerender: false,
   screenshot: false,
-  size: 'normal'
+  size: 'normal',
+  autoPlay: true,
+  muted: true,
+  loop: true
 };
 
 exports.default = Microlink;
