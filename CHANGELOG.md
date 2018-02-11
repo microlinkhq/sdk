@@ -1,6 +1,46 @@
 <a name=""></a>
-##  (2018-01-30)
+##  (2018-02-11)
 
+
+
+
+<a name="1.4.0"></a>
+## 1.4.0 (2018-02-11)
+
+* Add `mediaSize` prop ([8ded621](https://github.com/microlinkhq/react-microlink/commit/8ded621))
+* Add `playsinline` attribute to CardMedia/video ([d68a5ee](https://github.com/microlinkhq/react-microlink/commit/d68a5ee))
+* Add missing prop ([3bc3cc4](https://github.com/microlinkhq/react-microlink/commit/3bc3cc4))
+* Add props to control video ([24d7302](https://github.com/microlinkhq/react-microlink/commit/24d7302))
+* Add specific video CSS classnames ([f1bde36](https://github.com/microlinkhq/react-microlink/commit/f1bde36))
+* Add Stremeable service url ([cacfe03](https://github.com/microlinkhq/react-microlink/commit/cacfe03))
+* Add vanilla video demo ([44ca95b](https://github.com/microlinkhq/react-microlink/commit/44ca95b))
+* Adjust mediaSize story labels (Storybook) ([1e868f6](https://github.com/microlinkhq/react-microlink/commit/1e868f6))
+* Auto content state into components files ([e872811](https://github.com/microlinkhq/react-microlink/commit/e872811))
+* Be possible load CardImage video component ([13889ee](https://github.com/microlinkhq/react-microlink/commit/13889ee))
+* Bring back missing responsive styles ([ae2d369](https://github.com/microlinkhq/react-microlink/commit/ae2d369))
+* CardImage → CardMedia ([26825ac](https://github.com/microlinkhq/react-microlink/commit/26825ac))
+* ensure don't return null ([ca66b56](https://github.com/microlinkhq/react-microlink/commit/ca66b56))
+* Extract helper ([d2eb784](https://github.com/microlinkhq/react-microlink/commit/d2eb784))
+* Fix CardImage import path (in CardEmptyState) ([73559de](https://github.com/microlinkhq/react-microlink/commit/73559de))
+* Fix CardMedia/video `autoplay` prop ([caa52fa](https://github.com/microlinkhq/react-microlink/commit/caa52fa))
+* Fix large video card ([5627c55](https://github.com/microlinkhq/react-microlink/commit/5627c55))
+* Fix mobile style ([3962f38](https://github.com/microlinkhq/react-microlink/commit/3962f38))
+* Fix readme twitter URL/handle ([5f604ae](https://github.com/microlinkhq/react-microlink/commit/5f604ae))
+* Fix typo ([668150c](https://github.com/microlinkhq/react-microlink/commit/668150c))
+* Hide webkit play button on inline videos ([46d5513](https://github.com/microlinkhq/react-microlink/commit/46d5513))
+* Improve `Microlink` propTypes ([7e082da](https://github.com/microlinkhq/react-microlink/commit/7e082da))
+* Misc. code formatting updates ([1a80585](https://github.com/microlinkhq/react-microlink/commit/1a80585))
+* Remove comment ([6792779](https://github.com/microlinkhq/react-microlink/commit/6792779))
+* Remove mediaSize ([76f2731](https://github.com/microlinkhq/react-microlink/commit/76f2731))
+* Remove prefix rules ([0117741](https://github.com/microlinkhq/react-microlink/commit/0117741))
+* Rename specifiv video props into generic ([cd8879f](https://github.com/microlinkhq/react-microlink/commit/cd8879f))
+* Revert `autoplay` video attr. to camelCase ([1d43097](https://github.com/microlinkhq/react-microlink/commit/1d43097))
+* Update Changelog ([5fb18ea](https://github.com/microlinkhq/react-microlink/commit/5fb18ea))
+* Update links ([f6e01a2](https://github.com/microlinkhq/react-microlink/commit/f6e01a2))
+* Use 2 lines of description ([66eb903](https://github.com/microlinkhq/react-microlink/commit/66eb903))
+* v1.4.0 ([974581b](https://github.com/microlinkhq/react-microlink/commit/974581b))
+* Video card CSS based on Image ([8b6cf8a](https://github.com/microlinkhq/react-microlink/commit/8b6cf8a))
+* WIP ([0d3c37a](https://github.com/microlinkhq/react-microlink/commit/0d3c37a))
 
 
 
