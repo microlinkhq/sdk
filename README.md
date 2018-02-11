@@ -1,5 +1,3 @@
-# microlinkjs
-
 <h1 align="center">
   <img src="https://microlink.io/logo-large.png" alt="microlink logo">
 </h1>
