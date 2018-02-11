@@ -1,9 +1,11 @@
 # microlinkjs
 
-> Convert your links into beautiful previews.
+<h1 align="center">
+  <img src="https://microlink.io/logo-large.png" alt="microlink logo">
+</h1>
 
-[Documentation](https://docs.microlink.io)
-([source code](https://github.com/microlinkhq/docs)) | [Storybook](https://storybook.microlink.io)
+###### [Documentation](https://docs.microlink.io) ([source code](https://github.com/microlinkhq/docs)) | [Storybook](https://storybook.microlink.io)
+
 
 ## License
 
