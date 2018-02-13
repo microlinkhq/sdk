@@ -1,6 +1,19 @@
 <a name=""></a>
-##  (2018-02-11)
+##  (2018-02-13)
 
+
+
+
+<a name="1.4.1"></a>
+## <small>1.4.1 (2018-02-13)</small>
+
+* Add video demo ([5a15901](https://github.com/microlinkhq/react-microlink/commit/5a15901))
+* Determinate API endpoint based on apiKey ([50df4af](https://github.com/microlinkhq/react-microlink/commit/50df4af))
+* Update Changelog ([4138254](https://github.com/microlinkhq/react-microlink/commit/4138254))
+* Update README.md ([487b5ab](https://github.com/microlinkhq/react-microlink/commit/487b5ab))
+* Update README.md ([7d57373](https://github.com/microlinkhq/react-microlink/commit/7d57373))
+* Update README.md ([df43185](https://github.com/microlinkhq/react-microlink/commit/df43185))
+* v1.4.1 ([072cf4a](https://github.com/microlinkhq/react-microlink/commit/072cf4a))
 
 
 
