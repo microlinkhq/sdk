@@ -2180,16 +2180,19 @@ var media = exports.media = {
 };
 
 var createApiUrl = exports.createApiUrl = function createApiUrl(props) {
-  var targetUrl = props.url,
+  var apiKey = props.apiKey,
+      targetUrl = props.url,
       screenshot = props.screenshot,
-      apiEndpoint = props.apiEndpoint,
       prerender = props.prerender,
       contrast = props.contrast;
 
-  var url = apiEndpoint + '/?url=' + targetUrl;
+  var alias = apiKey ? 'pro' : 'api';
+
+  var url = 'https://' + alias + '.microlink.io/?url=' + targetUrl;
   if (contrast) url = url + '&palette';
   if (prerender) url = url + '&prerender';
   if (screenshot) url = url + '&screenshot=' + screenshot;
+
   return url;
 };
 
@@ -3444,7 +3447,6 @@ var Microlink = function (_Component) {
 }(_react.Component);
 
 Microlink.defaultProps = {
-  apiEndpoint: 'https://api.microlink.io',
   apiKey: undefined,
   contrast: false,
   image: ['screenshot', 'image', 'logo'],

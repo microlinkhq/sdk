@@ -146,7 +146,6 @@ var Microlink = function (_Component) {
 }(_react.Component);
 
 Microlink.defaultProps = {
-  apiEndpoint: 'https://api.microlink.io',
   apiKey: undefined,
   contrast: false,
   image: ['screenshot', 'image', 'logo'],
