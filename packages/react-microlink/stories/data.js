@@ -11,7 +11,6 @@ export const urls = [
   'http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos',
   'https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html',
   'https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328',
-  'https://www.amazon.com/dp/B06XCM9LJ4',
   'https://www.bbc.com/news/technology-40762328'
 ]
 
@@ -20,7 +19,7 @@ export const urlsVideo = [
   'https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit',
   'https://streamable.com/46ont',
   'https://www.instagram.com/p/BXHj-DllyYU/',
-  'https://www.amazon.es/aspirador-Excellence-Programable-limpieza-Silencioso/dp/B01MUGXRT9',
+  'https://www.amazon.com/dp/B06XCM9LJ4',
   'https://twitter.com/verge/status/957383241714970624',
   'https://vimeo.com/188175573',
   'https://www.youtube.com/watch?v=hwMkbaS_M_c'
