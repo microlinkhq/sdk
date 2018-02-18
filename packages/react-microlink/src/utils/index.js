@@ -24,7 +24,7 @@ export const createApiUrl = props => {
 
   let url = `https://${alias}.microlink.io/?url=${targetUrl}`
   if (contrast) url = `${url}&palette`
-  if (prerender) url = `${url}&prerender`
+  if (prerender !== 'auto') url = `${url}&prerender=${prerender}`
   if (screenshot) url = `${url}&screenshot=${screenshot}`
 
   return url

@@ -84,7 +84,7 @@ Microlink.defaultProps = {
   apiKey: undefined,
   contrast: false,
   image: ['screenshot', 'image', 'logo'],
-  prerender: false,
+  prerender: 'auto',
   screenshot: false,
   size: 'normal',
   autoPlay: true,
