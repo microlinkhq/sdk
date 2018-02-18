@@ -1,6 +1,18 @@
 <a name=""></a>
-##  (2018-02-13)
+##  (2018-02-18)
 
+
+
+
+<a name="1.4.2"></a>
+## <small>1.4.2 (2018-02-18)</small>
+
+* Update amazon link ([f3b03ba](https://github.com/microlinkhq/react-microlink/commit/f3b03ba))
+* Update Amazon link ([520f2c4](https://github.com/microlinkhq/react-microlink/commit/520f2c4))
+* Update Changelog ([ba40a6b](https://github.com/microlinkhq/react-microlink/commit/ba40a6b))
+* Update README.md ([3e4ee38](https://github.com/microlinkhq/react-microlink/commit/3e4ee38))
+* Use prerender auto by default ([b05306a](https://github.com/microlinkhq/react-microlink/commit/b05306a))
+* v1.4.2 ([55e68d8](https://github.com/microlinkhq/react-microlink/commit/55e68d8))
 
 
 
