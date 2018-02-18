@@ -2191,7 +2191,7 @@ var createApiUrl = exports.createApiUrl = function createApiUrl(props) {
 
   var url = 'https://' + alias + '.microlink.io/?url=' + targetUrl;
   if (contrast) url = url + '&palette';
-  if (prerender) url = url + '&prerender';
+  if (prerender !== 'auto') url = url + '&prerender=' + prerender;
   if (screenshot) url = url + '&screenshot=' + screenshot;
 
   return url;
@@ -3451,7 +3451,7 @@ Microlink.defaultProps = {
   apiKey: undefined,
   contrast: false,
   image: ['screenshot', 'image', 'logo'],
-  prerender: false,
+  prerender: 'auto',
   screenshot: false,
   size: 'normal',
   autoPlay: true,
