@@ -20,22 +20,63 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>microlink.js</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+    <style>
+      body {
+        max-width: 828px;
+        margin: auto;
+        line-height: 1.8em;
+      }
+
+      a {
+        display: block;
+        margin: auto;
+      }
+      .max-width-blog {
+        max-width: 828px;
+      }
+      .link {
+        max-width: 500px;
+      }
+    </style>
   </head>
   <body>
-    <p>link without selector</p>
-    <a href="http://txti.es">txti</a>
-    <p>Basic link</p>
-    <a class="link" data-contrast="true" href="http://txti.es">txti</a>
-    <p>Using screenshot image</p>
-    <a class="link" data-screenshot="true" href="https://kikobeats.com">txti</a>
-    <p>Large card size</p>
-    <a class="link" data-size="large" href="https://kikobeats.com">txti</a>
-    <p>Using logo image</p>
-    <a class="link" data-image="logo" href="https://kikobeats.com">txti</a>
-    <p>video support</p>
-    <a class="link" href="https://www.instagram.com/p/Be4DFu_jQmN"></a>
-    <p>large video support</p>
-    <a class="link" data-size="large" href="https://www.instagram.com/p/Be4DFu_jQmN"></a>
+    <article class="ph3 helvetica">
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">link without selector</h1>
+        <div><a href="http://txti.es">txti</a></div>
+      </section>
+
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">Basic link</h1>
+        <div><a class="link" data-contrast="true" href="http://txti.es">txti</a></div>
+      </section>
+
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">Using screenshot image</h1>
+        <div><a class="link" data-screenshot="true" href="https://kikobeats.com">txti</a></div>
+      </section>
+
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">Large card size</h1>
+        <div><a class="link" data-size="large" href="https://kikobeats.com">txti</a></div>
+      </section>
+
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">Using logo image</h1>
+        <div><a class="link" data-image="logo" href="https://kikobeats.com">txti</a></div>
+      </section>
+
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">video support</h1>
+        <div><a class="link" href="https://www.instagram.com/p/Be4DFu_jQmN"></a></div>
+      </section>
+
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">large video support</h1>
+        <div><a class="link" data-size="large" href="https://www.instagram.com/p/Be4DFu_jQmN"></a></div>
+      </section>
+    </article>
   </body>
   <script>
     document.addEventListener('DOMContentLoaded', function (event) {
