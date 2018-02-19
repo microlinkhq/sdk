@@ -5,32 +5,39 @@ import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Car
 import {getUrlPath, someProp, createApiUrl} from './utils'
 
 class Microlink extends Component {
+  constructor (props) {
+    super(props)
+    this.setData = this.setData.bind(this)
+  }
+
   componentWillMount () {
-    const {image, apiKey} = this.props
-    const imagesProps = [].concat(image)
+    if (this.props.data) return this.setData({data: this.props.data})
+
     const url = createApiUrl(this.props)
+    this.setState({loading: true})
 
-    this.setState({loading: true}, () =>
-      fetch(url, {headers: {'x-api-key': apiKey}})
-        .then(res => res.json())
-        .then(({status, data}) => {
-          const image = someProp(data, imagesProps)
-          const imageUrl = getUrlPath(image)
-          const {title, description, url, video} = data
-          const {color, background_color: backgroundColor} = image || {}
+    return fetch(url, {headers: {'x-api-key': this.props.apiKey}})
+      .then(res => res.json())
+      .then(this.setData)
+  }
 
-          this.setState({
-            color,
-            backgroundColor,
-            title,
-            description,
-            url,
-            loading: false,
-            video,
-            image: imageUrl
-          })
-        })
-    )
+  setData ({data}) {
+    const imagesProps = [].concat(this.props.image)
+    const image = someProp(data, imagesProps)
+    const imageUrl = getUrlPath(image)
+    const {title, description, url, video} = data
+    const {color, background_color: backgroundColor} = image || {}
+
+    this.setState({
+      color,
+      backgroundColor,
+      title,
+      description,
+      url,
+      loading: false,
+      video,
+      image: imageUrl
+    })
   }
 
   renderContent () {
