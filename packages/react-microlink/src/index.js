@@ -5,23 +5,19 @@ import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Car
 import {getUrlPath, someProp, createApiUrl} from './utils'
 
 class Microlink extends Component {
-  constructor (props) {
-    super(props)
-    this.setData = this.setData.bind(this)
-  }
-
   componentWillMount () {
     if (this.props.data) return this.setData({data: this.props.data})
-
-    const url = createApiUrl(this.props)
-    this.setState({loading: true})
-
-    return fetch(url, {headers: {'x-api-key': this.props.apiKey}})
-      .then(res => res.json())
-      .then(this.setData)
+    const promise = this.fetchData()
+    return this.setState({loading: true}, () => promise.then(this.setData))
   }
 
-  setData ({data}) {
+  fetchData = () => {
+    const url = createApiUrl(this.props)
+    const promise = fetch(url, {headers: {'x-api-key': this.props.apiKey}})
+    return promise.then(res => res.json())
+  }
+
+  setData = ({data}) => {
     const imagesProps = [].concat(this.props.image)
     const image = someProp(data, imagesProps)
     const imageUrl = getUrlPath(image)
