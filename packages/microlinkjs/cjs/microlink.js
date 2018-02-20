@@ -3332,9 +3332,48 @@ var Microlink = function (_Component) {
   _inherits(Microlink, _Component);
 
   function Microlink() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, Microlink);
 
-    return _possibleConstructorReturn(this, (Microlink.__proto__ || Object.getPrototypeOf(Microlink)).apply(this, arguments));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Microlink.__proto__ || Object.getPrototypeOf(Microlink)).call.apply(_ref, [this].concat(args))), _this), _this.fetchData = function () {
+      var url = (0, _utils.createApiUrl)(_this.props);
+      var promise = fetch(url, { headers: { 'x-api-key': _this.props.apiKey } });
+      return promise.then(function (res) {
+        return res.json();
+      });
+    }, _this.setData = function (_ref2) {
+      var data = _ref2.data;
+
+      var imagesProps = [].concat(_this.props.image);
+      var image = (0, _utils.someProp)(data, imagesProps);
+      var imageUrl = (0, _utils.getUrlPath)(image);
+      var title = data.title,
+          description = data.description,
+          url = data.url,
+          video = data.video;
+
+      var _ref3 = image || {},
+          color = _ref3.color,
+          backgroundColor = _ref3.background_color;
+
+      _this.setState({
+        color: color,
+        backgroundColor: backgroundColor,
+        title: title,
+        description: description,
+        url: url,
+        loading: false,
+        video: video,
+        image: imageUrl
+      });
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Microlink, [{
@@ -3342,42 +3381,10 @@ var Microlink = function (_Component) {
     value: function componentWillMount() {
       var _this2 = this;
 
-      var _props = this.props,
-          image = _props.image,
-          apiKey = _props.apiKey;
-
-      var imagesProps = [].concat(image);
-      var url = (0, _utils.createApiUrl)(this.props);
-
-      this.setState({ loading: true }, function () {
-        return fetch(url, { headers: { 'x-api-key': apiKey } }).then(function (res) {
-          return res.json();
-        }).then(function (_ref) {
-          var status = _ref.status,
-              data = _ref.data;
-
-          var image = (0, _utils.someProp)(data, imagesProps);
-          var imageUrl = (0, _utils.getUrlPath)(image);
-          var title = data.title,
-              description = data.description,
-              url = data.url,
-              video = data.video;
-
-          var _ref2 = image || {},
-              color = _ref2.color,
-              backgroundColor = _ref2.background_color;
-
-          _this2.setState({
-            color: color,
-            backgroundColor: backgroundColor,
-            title: title,
-            description: description,
-            url: url,
-            loading: false,
-            video: video,
-            image: imageUrl
-          });
-        });
+      if (this.props.data) return this.setData({ data: this.props.data });
+      var promise = this.fetchData();
+      return this.setState({ loading: true }, function () {
+        return promise.then(_this2.setData);
       });
     }
   }, {
@@ -3389,11 +3396,11 @@ var Microlink = function (_Component) {
           url = _state.url,
           image = _state.image,
           video = _state.video;
-      var _props2 = this.props,
-          size = _props2.size,
-          autoPlay = _props2.autoPlay,
-          muted = _props2.muted,
-          loop = _props2.loop;
+      var _props = this.props,
+          size = _props.size,
+          autoPlay = _props.autoPlay,
+          muted = _props.muted,
+          loop = _props.loop;
 
 
       return _jsx(_react.Fragment, {}, void 0, _jsx(_Card.CardMedia, {
@@ -3421,9 +3428,9 @@ var Microlink = function (_Component) {
           backgroundColor = _state2.backgroundColor,
           url = _state2.url,
           loading = _state2.loading;
-      var _props3 = this.props,
-          size = _props3.size,
-          className = _props3.className;
+      var _props2 = this.props,
+          size = _props2.size,
+          className = _props2.className;
 
 
       return _react2.default.createElement(
