@@ -104,7 +104,7 @@ Microlink.propTypes = {
   apiKey: PropTypes.string,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
-  prerender: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  prerender: PropTypes.oneOf(['auto', true, false]),
   screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   size: PropTypes.oneOf(['normal', 'large']),
   url: PropTypes.string.isRequired,
