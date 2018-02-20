@@ -112,6 +112,17 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
+  .add('with custom data', () => (
+    <MicrolinkCard
+      url='https://microlink.io'
+      data={{
+        'title': 'My Custom Title',
+        'image': 'https://microlink.io/logo-trim.png',
+        'description': 'My Custom Description',
+        'url': 'https://microlink.io'
+      }}
+    />
+  ))
   .add('with empty state', () => (
     <MicrolinkCard
       url='somesitethatwontresolve.com'
@@ -233,6 +244,18 @@ storiesOf('Large', module)
         />
       )}
     </div>
+  ))
+  .add('with custom data', () => (
+    <MicrolinkCard
+      url='https://microlink.io'
+      size='large'
+      data={{
+        'title': 'My Custom Title',
+        'image': 'https://microlink.io/logo-trim.png',
+        'description': 'My Custom Description',
+        'url': 'https://microlink.io'
+      }}
+    />
   ))
   .add('with empty state', () => (
     <MicrolinkCard
