@@ -108,6 +108,9 @@
     "parser": "babel-eslint",
     "plugins": [
       "jsx-a11y"
+    ],
+    "ignore": [
+      "/lib/"
     ]
   }
 }
