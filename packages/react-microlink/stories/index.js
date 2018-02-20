@@ -9,7 +9,7 @@ import MicrolinkCard from '../src'
 import { urls, urlsVideo, getRandomSize } from './data'
 
 setOptions({
-  name: 'microlinkjsg',
+  name: 'microlinkjs',
   url: 'https://github.com/microlinkhq/microlinkjs',
   goFullScreen: false,
   showLeftPanel: true,
