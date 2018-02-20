@@ -1,12 +1,28 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
 import 'unfetch/polyfill'
+
+import React from 'react'
+import { setAddon, storiesOf } from '@storybook/react'
+import { setOptions } from '@storybook/addon-options'
+import JSXAddon from 'storybook-addon-jsx'
 
 import MicrolinkCard from '../src'
 import { urls, urlsVideo, getRandomSize } from './data'
 
+setOptions({
+  name: 'microlinkjsg',
+  url: 'https://github.com/microlinkhq/microlinkjs',
+  goFullScreen: false,
+  showLeftPanel: true,
+  showDownPanel: true,
+  showSearchBox: false,
+  downPanelInRight: true,
+  sortStoriesByKind: false
+})
+
+setAddon(JSXAddon)
+
 storiesOf('Normal', module)
-  .add('default', () => (
+  .addWithJSX('default', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -17,7 +33,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with round prop', () => (
+  .addWithJSX('with round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -29,7 +45,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with custom round prop', () => (
+  .addWithJSX('with custom round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -41,7 +57,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with custom width', () => (
+  .addWithJSX('with custom width', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -52,7 +68,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with custom height', () => (
+  .addWithJSX('with custom height', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -63,7 +79,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with contrast prop', () => (
+  .addWithJSX('with contrast prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -75,7 +91,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with custom style', () => (
+  .addWithJSX('with custom style', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -87,7 +103,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with custom image', () => (
+  .addWithJSX('with custom image', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -100,7 +116,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with video prop', () => (
+  .addWithJSX('with video prop', () => (
     <div>
       {urlsVideo.map(url =>
         <MicrolinkCard
@@ -112,7 +128,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .add('with custom data', () => (
+  .addWithJSX('with custom data', () => (
     <MicrolinkCard
       url='https://microlink.io'
       data={{
@@ -123,14 +139,14 @@ storiesOf('Normal', module)
       }}
     />
   ))
-  .add('with empty state', () => (
+  .addWithJSX('with empty state', () => (
     <MicrolinkCard
       url='somesitethatwontresolve.com'
     />
   ))
 
 storiesOf('Large', module)
-  .add('default', () => (
+  .addWithJSX('default', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -142,7 +158,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with round prop', () => (
+  .addWithJSX('with round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -155,7 +171,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with custom round prop', () => (
+  .addWithJSX('with custom round prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -168,7 +184,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with custom width', () => (
+  .addWithJSX('with custom width', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -180,7 +196,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with custom height', () => (
+  .addWithJSX('with custom height', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -192,7 +208,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with contrast prop', () => (
+  .addWithJSX('with contrast prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -205,7 +221,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with custom style', () => (
+  .addWithJSX('with custom style', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -218,7 +234,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with custom image', () => (
+  .addWithJSX('with custom image', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -232,7 +248,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with video prop', () => (
+  .addWithJSX('with video prop', () => (
     <div>
       {urlsVideo.map(url =>
         <MicrolinkCard
@@ -245,7 +261,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .add('with custom data', () => (
+  .addWithJSX('with custom data', () => (
     <MicrolinkCard
       url='https://microlink.io'
       size='large'
@@ -257,7 +273,7 @@ storiesOf('Large', module)
       }}
     />
   ))
-  .add('with empty state', () => (
+  .addWithJSX('with empty state', () => (
     <MicrolinkCard
       size='large'
       url='somesitethatwontresolve.com'

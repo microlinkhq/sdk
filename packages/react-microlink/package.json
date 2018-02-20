@@ -61,6 +61,7 @@
     "size-limit": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
+    "storybook-addon-jsx": "latest",
     "unfetch": "latest",
     "unique-random-array": "latest"
   },
