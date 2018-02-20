@@ -1,6 +1,23 @@
 <a name=""></a>
-##  (2018-02-18)
+##  (2018-02-20)
 
+
+
+
+<a name="1.5.0"></a>
+## 1.5.0 (2018-02-20)
+
+* Add `auto` as enum ([a2523ba](https://github.com/microlinkhq/react-microlink/commit/a2523ba))
+* Add data prop demo ([7c91948](https://github.com/microlinkhq/react-microlink/commit/7c91948))
+* Extract setData method ([04a2048](https://github.com/microlinkhq/react-microlink/commit/04a2048))
+* Fix prop type ([261d9cb](https://github.com/microlinkhq/react-microlink/commit/261d9cb))
+* Ignore lib folder for lint ([7ced715](https://github.com/microlinkhq/react-microlink/commit/7ced715))
+* Improve storybook ([38cd23c](https://github.com/microlinkhq/react-microlink/commit/38cd23c))
+* Refactor ([aaa5ffc](https://github.com/microlinkhq/react-microlink/commit/aaa5ffc))
+* Remove unused addons ([486a0d6](https://github.com/microlinkhq/react-microlink/commit/486a0d6))
+* Update Changelog ([f195c52](https://github.com/microlinkhq/react-microlink/commit/f195c52))
+* Use fat arrow instead of bind ([ee77291](https://github.com/microlinkhq/react-microlink/commit/ee77291))
+* v1.5.0 ([6213f2b](https://github.com/microlinkhq/react-microlink/commit/6213f2b))
 
 
 
