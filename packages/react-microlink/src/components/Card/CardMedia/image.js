@@ -3,11 +3,11 @@ import styled, {css} from 'styled-components'
 import { media, isLarge } from '../../../utils'
 
 const largeStyle = css`
-flex: 1;
+  flex: 1;
 
-&::before {
-  padding-bottom: 0;
-}
+  &::before {
+    padding-bottom: 0;
+  }
 `
 
 export default styled.div`

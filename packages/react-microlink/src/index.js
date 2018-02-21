@@ -98,7 +98,6 @@ Microlink.defaultProps = {
 }
 
 Microlink.propTypes = {
-  apiEndpoint: PropTypes.string,
   apiKey: PropTypes.string,
   autoPlay: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
