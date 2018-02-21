@@ -96,7 +96,6 @@ Microlink.defaultProps = {
 }
 
 Microlink.propTypes = {
-  apiEndpoint: PropTypes.string,
   apiKey: PropTypes.string,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
