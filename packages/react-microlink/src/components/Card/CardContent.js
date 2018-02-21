@@ -11,6 +11,15 @@ const largeStyle = css`
   flex: 0 0 125px;
 `
 
+const StyledClamp = ({ className, lines, text }) => (
+  <ClampLines
+    buttons={false}
+    className={className}
+    lines={lines}
+    text={text}
+  />
+)
+
 export const Content = styled.div`
   display: flex;
   justify-content: space-around;
@@ -22,22 +31,14 @@ export const Content = styled.div`
   ${({cardSize}) => isLarge(cardSize) && largeStyle};
 `
 
-const Title = styled.p`
+const Title = styled(StyledClamp)`
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 95%;
   flex-grow: 1.2;
-
-  ${media.mobile`
-    white-space: nowrap;
-  `};
 `
 
-const Description = styled(ClampLines)`
+const Description = styled(StyledClamp)`
   font-size: 14px;
   flex-grow: 2;
   margin: auto 0;
@@ -52,26 +53,29 @@ const Description = styled(ClampLines)`
   `};
 `
 
-const Url = styled.span`
+const Url = styled(StyledClamp)`
   font-size: 12px;
-  margin: 0px;
-  display: inline-block;
+  margin: 0;
   flex-grow: 0;
 `
 
 export default ({title, description, url, cardSize, className}) => (
   <Content className={className} cardSize={cardSize}>
-    <Title className='microlink_card__content_title' title={title}>
-      {title}
-    </Title>
-
+    <Title
+      className='microlink_card__content_title'
+      lines={1}
+      text={title}
+    />
     <Description
       lines={2}
       className='microlink_card__content_description'
       text={description}
       cardSize={cardSize}
-      buttons={false}
      />
-    <Url className='microlink_card__content_url'>{extractDomain(url)}</Url>
+    <Url
+      lines={1}
+      className='microlink_card__content_url'
+      text={extractDomain(url)}
+    />
   </Content>
 )
