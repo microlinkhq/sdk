@@ -5,6 +5,17 @@ import { media, isLarge } from '../../utils'
 
 const HEIGHT = '382px'
 
+const contrastStyle = ({backgroundColor, color}) => css`
+  background-color: ${backgroundColor};
+  color: ${color};
+  border-color: ${color};
+  transition: filter .15s ease-in-out;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+`
+
 const largeStyle = css`
   flex-direction: column;
   height: ${HEIGHT};
@@ -12,6 +23,18 @@ const largeStyle = css`
   ${media.mobile`
     height: calc(${HEIGHT} * 7/9);
   `}
+`
+
+const loadingStyle = css`
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+  &:hover {
+    background: #F5F8FA;
+    border-color: rgba(136,153,166,.5);
+  }
+`
+
+const roundStyle = ({round}) => css`
+  border-radius: ${typeof round === 'boolean' ? `.42857em` : round};
 `
 
 const style = css`
@@ -32,30 +55,13 @@ const style = css`
     outline: 0;
   }
 
-  ${({loading, contrast}) => !loading && !contrast && css`
-    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
-    &:hover {
-      background: #F5F8FA;
-      border-color: rgba(136,153,166,.5);
-    }
-  `}
+  ${({loading, contrast}) => !loading && !contrast && loadingStyle}
 
-  ${({round}) => round && css`
-    border-radius: ${typeof round === 'boolean' ? `.42857em` : round};
-  `}
+  ${({round}) => round && roundStyle}
 
   ${({cardSize}) => isLarge(cardSize) && largeStyle}
 
-  ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && css`
-    background-color: ${backgroundColor};
-    color: ${color};
-    border-color: ${color};
-    transition: filter .15s ease-in-out;
-
-    &:hover {
-      filter: brightness(90%);
-    }
-  `}
+  ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && contrastStyle}
 `
 
 const CardWrap = ({ is, rel, href, target, ...props }) => {
