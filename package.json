@@ -43,8 +43,5 @@
       "finepack",
       "git add"
     ]
-  },
-  "dependencies": {
-    "react-aria-tooltip": "~1.2.0"
   }
 }
