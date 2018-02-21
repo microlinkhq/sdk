@@ -43,13 +43,10 @@ const Description = styled(ClampLines)`
   margin: auto 0;
   line-height: 18px;
 
-  > div {
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   ${({cardSize}) => !isLarge(cardSize) && media.mobile`
     > div {
+      overflow: hidden;
+      text-overflow: ellipsis;
       white-space: nowrap;
     }
   `};
