@@ -1,6 +1,16 @@
 <a name=""></a>
-##  (2018-02-20)
+##  (2018-02-21)
 
+
+
+
+<a name="1.5.1"></a>
+## <small>1.5.1 (2018-02-21)</small>
+
+* Fix typo ([8e0672a](https://github.com/microlinkhq/react-microlink/commit/8e0672a))
+* Regenerate build ([d8baa3f](https://github.com/microlinkhq/react-microlink/commit/d8baa3f))
+* Update Changelog ([ab0962e](https://github.com/microlinkhq/react-microlink/commit/ab0962e))
+* v1.5.1 ([376f18e](https://github.com/microlinkhq/react-microlink/commit/376f18e))
 
 
 
