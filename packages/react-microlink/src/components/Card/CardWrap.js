@@ -33,6 +33,10 @@ const loadingStyle = css`
   }
 `
 
+const reverseStyle = ({cardSize}) => css`
+  flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'}
+`
+
 const roundStyle = ({round}) => css`
   border-radius: ${typeof round === 'boolean' ? `.42857em` : round};
 `
@@ -60,6 +64,8 @@ const style = css`
   ${({round}) => round && roundStyle}
 
   ${({cardSize}) => isLarge(cardSize) && largeStyle}
+
+  ${({reverse}) => reverse && reverseStyle}
 
   ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && contrastStyle}
 `

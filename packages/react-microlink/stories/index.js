@@ -139,6 +139,18 @@ storiesOf('Normal', module)
       }}
     />
   ))
+  .addWithJSX('with reverse prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          reverse
+        />
+      )}
+    </div>
+  ))
   .addWithJSX('with empty state', () => (
     <MicrolinkCard
       url='somesitethatwontresolve.com'
@@ -272,6 +284,19 @@ storiesOf('Large', module)
         'url': 'https://microlink.io'
       }}
     />
+  ))
+  .addWithJSX('with reverse prop', () => (
+    <div>
+      {urls.map(url =>
+        <MicrolinkCard
+          size='large'
+          key={url}
+          url={url}
+          style={{marginBottom: '20px'}}
+          reverse
+        />
+      )}
+    </div>
   ))
   .addWithJSX('with empty state', () => (
     <MicrolinkCard

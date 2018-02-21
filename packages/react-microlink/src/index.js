@@ -64,7 +64,7 @@ class Microlink extends Component {
 
   render () {
     const {title, color, backgroundColor, url, loading} = this.state
-    const {size, className} = this.props
+    const {className, reverse, size} = this.props
 
     return (
       <CardWrap
@@ -75,6 +75,7 @@ class Microlink extends Component {
         color={color}
         backgroundColor={backgroundColor}
         loading={loading}
+        reverse={reverse}
         {...this.props}
       >
         {!loading ? this.renderContent() : <CardEmptyState cardSize={size} />}
@@ -85,27 +86,29 @@ class Microlink extends Component {
 
 Microlink.defaultProps = {
   apiKey: undefined,
+  autoPlay: true,
   contrast: false,
   image: ['screenshot', 'image', 'logo'],
-  prerender: 'auto',
-  screenshot: false,
-  size: 'normal',
-  autoPlay: true,
+  loop: true,
   muted: true,
-  loop: true
+  prerender: 'auto',
+  reverse: false,
+  screenshot: false,
+  size: 'normal'
 }
 
 Microlink.propTypes = {
   apiKey: PropTypes.string,
+  autoPlay: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
+  loop: PropTypes.bool,
+  muted: PropTypes.bool,
+  reverse: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   size: PropTypes.oneOf(['normal', 'large']),
-  url: PropTypes.string.isRequired,
-  autoPlay: PropTypes.bool,
-  muted: PropTypes.bool,
-  loop: PropTypes.bool
+  url: PropTypes.string.isRequired
 }
 
 export default Microlink
