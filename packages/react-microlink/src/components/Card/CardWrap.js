@@ -14,6 +14,10 @@ const largeStyle = css`
   `}
 `
 
+const reverseStyle = ({cardSize}) => css`
+  flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'}
+`
+
 const style = css`
   max-width: 500px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -46,9 +50,7 @@ const style = css`
 
   ${({cardSize}) => isLarge(cardSize) && largeStyle}
 
-  ${({cardSize, reverse}) => reverse && css`
-    flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'}
-  `}
+  ${({reverse}) => reverse && reverseStyle}
 
   ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && css`
     background-color: ${backgroundColor};
