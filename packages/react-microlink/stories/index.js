@@ -103,7 +103,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .addWithJSX('with custom image', () => (
+  .addWithJSX('with image prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -116,7 +116,7 @@ storiesOf('Normal', module)
       )}
     </div>
   ))
-  .addWithJSX('with video prop', () => (
+  .addWithJSX('with video media', () => (
     <div>
       {urlsVideo.map(url =>
         <MicrolinkCard
@@ -234,7 +234,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .addWithJSX('with custom image', () => (
+  .addWithJSX('with image prop', () => (
     <div>
       {urls.map(url =>
         <MicrolinkCard
@@ -248,7 +248,7 @@ storiesOf('Large', module)
       )}
     </div>
   ))
-  .addWithJSX('with video prop', () => (
+  .addWithJSX('with video media', () => (
     <div>
       {urlsVideo.map(url =>
         <MicrolinkCard
