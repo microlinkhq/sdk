@@ -1,25 +1,10 @@
 import 'unfetch/polyfill'
 
 import React from 'react'
-import { setAddon, storiesOf } from '@storybook/react'
-import { setOptions } from '@storybook/addon-options'
-import JSXAddon from 'storybook-addon-jsx'
+import { storiesOf } from '@storybook/react'
 
 import MicrolinkCard from '../src'
 import { urls, urlsVideo, getRandomSize } from './data'
-
-setOptions({
-  name: 'microlinkjs',
-  url: 'https://github.com/microlinkhq/microlinkjs',
-  goFullScreen: false,
-  showLeftPanel: true,
-  showDownPanel: true,
-  showSearchBox: false,
-  downPanelInRight: true,
-  sortStoriesByKind: false
-})
-
-setAddon(JSXAddon)
 
 storiesOf('Normal', module)
   .addWithJSX('default', () => (
