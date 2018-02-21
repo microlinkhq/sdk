@@ -70,7 +70,6 @@ export default ({title, description, url, cardSize, className}) => (
 
     <Description
       lines={2}
-      tag='p'
       className='microlink_card__content_description'
       text={description}
       cardSize={cardSize}
