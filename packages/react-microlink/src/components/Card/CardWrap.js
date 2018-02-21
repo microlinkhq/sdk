@@ -46,6 +46,10 @@ const style = css`
 
   ${({cardSize}) => isLarge(cardSize) && largeStyle}
 
+  ${({cardSize, reverse}) => reverse && css`
+    flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'}
+  `}
+
   ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && css`
     background-color: ${backgroundColor};
     color: ${color};
