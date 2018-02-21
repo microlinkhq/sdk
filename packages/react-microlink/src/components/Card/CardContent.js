@@ -38,15 +38,20 @@ const Title = styled.p`
 `
 
 const Description = styled(ClampLines)`
-  text-overflow: ellipsis;
   font-size: 14px;
   flex-grow: 2;
   margin: auto 0;
   line-height: 18px;
-  overflow: hidden;
+
+  > div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   ${({cardSize}) => !isLarge(cardSize) && media.mobile`
-    white-space: nowrap;
+    > div {
+      white-space: nowrap;
+    }
   `};
 `
 
