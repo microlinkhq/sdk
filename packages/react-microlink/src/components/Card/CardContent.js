@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 import extractDomain from 'extract-domain'
-import ClampLines from 'react-clamp-lines'
+import NanoClamp from 'nanoclamp'
 
 import {media} from '../../utils'
 
@@ -11,14 +11,7 @@ const largeStyle = css`
   flex: 0 0 125px;
 `
 
-const StyledClamp = ({ className, lines, text }) => (
-  <ClampLines
-    buttons={false}
-    className={className}
-    lines={lines}
-    text={text}
-  />
-)
+const StyledClamp = ({...props}) => <NanoClamp {...props} />
 
 export const Content = styled.div`
   display: flex;
