@@ -9,10 +9,10 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 var _templateObject = _taggedTemplateLiteral(['\n  flex: 0 0 125px;\n'], ['\n  flex: 0 0 125px;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  display: flex;\n  justify-content: space-around;\n  flex-direction: column;\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ', ';\n'], ['\n  display: flex;\n  justify-content: space-around;\n  flex-direction: column;\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ', ';\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  max-width: 95%;\n  flex-grow: 1.2;\n\n  ', ';\n'], ['\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  max-width: 95%;\n  flex-grow: 1.2;\n\n  ', ';\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    white-space: nowrap;\n  '], ['\n    white-space: nowrap;\n  ']),
-    _templateObject5 = _taggedTemplateLiteral(['\n  text-overflow: ellipsis;\n  font-size: 14px;\n  flex-grow: 2;\n  margin: auto 0;\n  line-height: 18px;\n  overflow: hidden;\n\n  ', ';\n'], ['\n  text-overflow: ellipsis;\n  font-size: 14px;\n  flex-grow: 2;\n  margin: auto 0;\n  line-height: 18px;\n  overflow: hidden;\n\n  ', ';\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  margin: 0px;\n  display: inline-block;\n  flex-grow: 0;\n'], ['\n  font-size: 12px;\n  margin: 0px;\n  display: inline-block;\n  flex-grow: 0;\n']);
+    _templateObject3 = _taggedTemplateLiteral(['\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  flex-grow: 1.2;\n'], ['\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  flex-grow: 1.2;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  font-size: 14px;\n  flex-grow: 2;\n  margin: auto 0;\n  line-height: 18px;\n\n  ', ';\n'], ['\n  font-size: 14px;\n  flex-grow: 2;\n  margin: auto 0;\n  line-height: 18px;\n\n  ', ';\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n    > div {\n      overflow: hidden;\n      text-overflow: ellipsis;\n      white-space: nowrap;\n    }\n  '], ['\n    > div {\n      overflow: hidden;\n      text-overflow: ellipsis;\n      white-space: nowrap;\n    }\n  ']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  margin: 0;\n  flex-grow: 0;\n'], ['\n  font-size: 12px;\n  margin: 0;\n  flex-grow: 0;\n']);
 
 var _react = require('react');
 
@@ -26,13 +26,15 @@ var _extractDomain = require('extract-domain');
 
 var _extractDomain2 = _interopRequireDefault(_extractDomain);
 
-var _reactClampLines = require('react-clamp-lines');
+var _nanoclamp = require('nanoclamp');
 
-var _reactClampLines2 = _interopRequireDefault(_reactClampLines);
+var _nanoclamp2 = _interopRequireDefault(_nanoclamp);
 
 var _utils = require('../../utils');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -42,40 +44,47 @@ var isLarge = function isLarge(cardSize) {
 
 var largeStyle = (0, _styledComponents.css)(_templateObject);
 
-var Content = exports.Content = _styledComponents2.default.div(_templateObject2, function (_ref) {
-  var cardSize = _ref.cardSize;
+var StyledClamp = function StyledClamp(_ref) {
+  var props = _objectWithoutProperties(_ref, []);
+
+  return _react2.default.createElement(_nanoclamp2.default, props);
+};
+
+var Content = exports.Content = _styledComponents2.default.div(_templateObject2, function (_ref2) {
+  var cardSize = _ref2.cardSize;
   return isLarge(cardSize) && largeStyle;
 });
 
-var Title = _styledComponents2.default.p(_templateObject3, _utils.media.mobile(_templateObject4));
+var Title = (0, _styledComponents2.default)(StyledClamp)(_templateObject3);
 
-var Description = (0, _styledComponents2.default)(_reactClampLines2.default)(_templateObject5, function (_ref2) {
-  var cardSize = _ref2.cardSize;
-  return !isLarge(cardSize) && _utils.media.mobile(_templateObject4);
+var Description = (0, _styledComponents2.default)(StyledClamp)(_templateObject4, function (_ref3) {
+  var cardSize = _ref3.cardSize;
+  return !isLarge(cardSize) && _utils.media.mobile(_templateObject5);
 });
 
-var Url = _styledComponents2.default.span(_templateObject6);
+var Url = (0, _styledComponents2.default)(StyledClamp)(_templateObject6);
 
-exports.default = function (_ref3) {
-  var title = _ref3.title,
-      description = _ref3.description,
-      url = _ref3.url,
-      cardSize = _ref3.cardSize,
-      className = _ref3.className;
+exports.default = function (_ref4) {
+  var title = _ref4.title,
+      description = _ref4.description,
+      url = _ref4.url,
+      cardSize = _ref4.cardSize,
+      className = _ref4.className;
   return _jsx(Content, {
     className: className,
     cardSize: cardSize
   }, void 0, _jsx(Title, {
     className: 'microlink_card__content_title',
-    title: title
-  }, void 0, title), _jsx(Description, {
+    lines: 1,
+    text: title
+  }), _jsx(Description, {
     lines: 2,
-    tag: 'p',
     className: 'microlink_card__content_description',
     text: description,
-    cardSize: cardSize,
-    buttons: false
+    cardSize: cardSize
   }), _jsx(Url, {
-    className: 'microlink_card__content_url'
-  }, void 0, (0, _extractDomain2.default)(url)));
+    lines: 1,
+    className: 'microlink_card__content_url',
+    text: (0, _extractDomain2.default)(url)
+  }));
 };
