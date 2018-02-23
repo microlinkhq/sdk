@@ -1,14 +1,42 @@
 <a name=""></a>
-##  (2018-02-21)
+##  (2018-02-23)
 
+
+
+
+<a name="1.6.0"></a>
+## 1.6.0 (2018-02-23)
+
+* Adjust `reverse` styling definition ([f05456f](https://github.com/microlinkhq/react-microlink/commit/f05456f))
+* Build CardContent ([242be02](https://github.com/microlinkhq/react-microlink/commit/242be02))
+* Fix Description mobile styles ([c6fe512](https://github.com/microlinkhq/react-microlink/commit/c6fe512))
+* Little refactor ([38d970f](https://github.com/microlinkhq/react-microlink/commit/38d970f))
+* Misc. responsive update ([cfdcf19](https://github.com/microlinkhq/react-microlink/commit/cfdcf19))
+* Move prop-dependent styles to variables ([e7df3fc](https://github.com/microlinkhq/react-microlink/commit/e7df3fc))
+* Refactor ([7eb7238](https://github.com/microlinkhq/react-microlink/commit/7eb7238))
+* Refactor ([b881757](https://github.com/microlinkhq/react-microlink/commit/b881757))
+* Replace `react-clamp-lines` with `nanoclamp` ([943e822](https://github.com/microlinkhq/react-microlink/commit/943e822))
+* Update Changelog ([61e30f2](https://github.com/microlinkhq/react-microlink/commit/61e30f2))
+* Update deps ([511f370](https://github.com/microlinkhq/react-microlink/commit/511f370))
+* Update nanoclamp dependency ([e4f3b9f](https://github.com/microlinkhq/react-microlink/commit/e4f3b9f))
+* Update nanoclamp dependency ([2a1745b](https://github.com/microlinkhq/react-microlink/commit/2a1745b))
+* Update storybook setup ([c46b6e7](https://github.com/microlinkhq/react-microlink/commit/c46b6e7))
+* Update title/description clamping ([1d3c1a4](https://github.com/microlinkhq/react-microlink/commit/1d3c1a4))
+* v1.6.0 ([50a57de](https://github.com/microlinkhq/react-microlink/commit/50a57de))
 
 
 
 <a name="1.5.1"></a>
 ## <small>1.5.1 (2018-02-21)</small>
 
+* Add `reverse` examples to storybook ([ff9de53](https://github.com/microlinkhq/react-microlink/commit/ff9de53))
+* Add `reverse` prop to card ([46605b4](https://github.com/microlinkhq/react-microlink/commit/46605b4))
+* Fix card description responsive overflow ellipsis ([85c1611](https://github.com/microlinkhq/react-microlink/commit/85c1611))
 * Fix typo ([8e0672a](https://github.com/microlinkhq/react-microlink/commit/8e0672a))
 * Regenerate build ([d8baa3f](https://github.com/microlinkhq/react-microlink/commit/d8baa3f))
+* Remove `apiEndpoint` propType ([82f8aac](https://github.com/microlinkhq/react-microlink/commit/82f8aac))
+* Remove unused prop from `Description` ([9dcbceb](https://github.com/microlinkhq/react-microlink/commit/9dcbceb))
+* Rename image/video stories ([66cd8cc](https://github.com/microlinkhq/react-microlink/commit/66cd8cc))
 * Update Changelog ([ab0962e](https://github.com/microlinkhq/react-microlink/commit/ab0962e))
 * v1.5.1 ([376f18e](https://github.com/microlinkhq/react-microlink/commit/376f18e))
 
