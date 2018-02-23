@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 import extractDomain from 'extract-domain'
-import NanoClamp from 'nanoclamp'
+import CardText from './CardText'
 
 import {media} from '../../utils'
 
@@ -11,7 +11,13 @@ const largeStyle = css`
   flex: 0 0 125px;
 `
 
-const StyledClamp = ({...props}) => <NanoClamp {...props} />
+const mobileDescription = css`
+  > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+`
 
 export const Content = styled.div`
   display: flex;
@@ -24,29 +30,22 @@ export const Content = styled.div`
   ${({cardSize}) => isLarge(cardSize) && largeStyle};
 `
 
-const Title = styled(StyledClamp)`
+const Title = styled.header`
   font-size: 16px;
   font-weight: bold;
   margin: 0;
   flex-grow: 1.2;
 `
 
-const Description = styled(StyledClamp)`
+const Description = styled.div`
   font-size: 14px;
   flex-grow: 2;
   margin: auto 0;
   line-height: 18px;
-
-  ${({cardSize}) => !isLarge(cardSize) && media.mobile`
-    > div {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-  `};
+  ${({cardSize}) => !isLarge(cardSize) && media.mobile && mobileDescription};
 `
 
-const Url = styled(StyledClamp)`
+const Url = styled.footer`
   font-size: 12px;
   margin: 0;
   flex-grow: 0;
@@ -54,21 +53,14 @@ const Url = styled(StyledClamp)`
 
 export default ({title, description, url, cardSize, className}) => (
   <Content className={className} cardSize={cardSize}>
-    <Title
-      className='microlink_card__content_title'
-      lines={1}
-      text={title}
-    />
-    <Description
-      lines={2}
-      className='microlink_card__content_description'
-      text={description}
-      cardSize={cardSize}
-     />
-    <Url
-      lines={1}
-      className='microlink_card__content_url'
-      text={extractDomain(url)}
-    />
+    <Title className="microlink_card__content_title">
+      <CardText lines={1}>{title}</CardText>
+    </Title>
+    <Description className="microlink_card__content_description" cardSize={cardSize}>
+      <CardText lines={2}>{description}</CardText>
+    </Description>
+    <Url className="microlink_card__content_url">
+      <CardText lines={1}>{extractDomain(url)}</CardText>
+    </Url>
   </Content>
 )

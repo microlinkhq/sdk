@@ -16,9 +16,7 @@ const largeStyle = css`
 
 const style = css`
   max-width: 500px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #fff;
-  color: #181919;
   border-width: 1px;
   border-style: solid;
   border-color: #E1E8ED;
