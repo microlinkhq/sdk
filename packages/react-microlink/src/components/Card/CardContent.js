@@ -42,7 +42,9 @@ const Description = styled.div`
   flex-grow: 2;
   margin: auto 0;
   line-height: 18px;
-  ${({cardSize}) => !isLarge(cardSize) && media.mobile && mobileDescription};
+  ${({cardSize}) => !isLarge(cardSize) && media.mobile`
+    ${mobileDescription}
+  `};
 `
 
 const Url = styled.footer`
