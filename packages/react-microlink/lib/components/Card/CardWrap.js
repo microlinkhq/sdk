@@ -6,13 +6,14 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _templateObject = _taggedTemplateLiteral(['\n  flex-direction: column;\n  height: ', ';\n\n  ', '\n'], ['\n  flex-direction: column;\n  height: ', ';\n\n  ', '\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    height: calc(', ' * 7/9);\n  '], ['\n    height: calc(', ' * 7/9);\n  ']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  background-color: #fff;\n  color: #181919;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  max-width: 500px;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  background-color: #fff;\n  color: #181919;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n    &:hover {\n      background: #F5F8FA;\n      border-color: rgba(136,153,166,.5);\n    }\n  '], ['\n    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n    &:hover {\n      background: #F5F8FA;\n      border-color: rgba(136,153,166,.5);\n    }\n  ']),
-    _templateObject5 = _taggedTemplateLiteral(['\n    border-radius: ', ';\n  '], ['\n    border-radius: ', ';\n  ']),
-    _templateObject6 = _taggedTemplateLiteral(['\n    background-color: ', ';\n    color: ', ';\n    border-color: ', ';\n    transition: filter .15s ease-in-out;\n\n    &:hover {\n      filter: brightness(90%);\n    }\n  '], ['\n    background-color: ', ';\n    color: ', ';\n    border-color: ', ';\n    transition: filter .15s ease-in-out;\n\n    &:hover {\n      filter: brightness(90%);\n    }\n  ']),
-    _templateObject7 = _taggedTemplateLiteral(['', ''], ['', '']);
+var _templateObject = _taggedTemplateLiteral(['\n  background-color: ', ';\n  color: ', ';\n  border-color: ', ';\n  transition: filter .15s ease-in-out;\n\n  &:hover {\n    filter: brightness(90%);\n  }\n'], ['\n  background-color: ', ';\n  color: ', ';\n  border-color: ', ';\n  transition: filter .15s ease-in-out;\n\n  &:hover {\n    filter: brightness(90%);\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  flex-direction: column;\n  height: ', ';\n\n  ', '\n'], ['\n  flex-direction: column;\n  height: ', ';\n\n  ', '\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    height: calc(', ' * 7/9);\n  '], ['\n    height: calc(', ' * 7/9);\n  ']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n'], ['\n  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  flex-direction: ', '\n'], ['\n  flex-direction: ', '\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  border-radius: ', ';\n'], ['\n  border-radius: ', ';\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
+    _templateObject8 = _taggedTemplateLiteral(['', ''], ['', '']);
 
 var _react = require('react');
 
@@ -30,33 +31,54 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var HEIGHT = '382px';
 
-var largeStyle = (0, _styledComponents.css)(_templateObject, HEIGHT, _utils.media.mobile(_templateObject2, HEIGHT));
+var contrastStyle = function contrastStyle(_ref) {
+  var backgroundColor = _ref.backgroundColor,
+      color = _ref.color;
+  return (0, _styledComponents.css)(_templateObject, backgroundColor, color, color);
+};
 
-var style = (0, _styledComponents.css)(_templateObject3, function (_ref) {
-  var loading = _ref.loading,
-      contrast = _ref.contrast;
-  return !loading && !contrast && (0, _styledComponents.css)(_templateObject4);
-}, function (_ref2) {
-  var round = _ref2.round;
-  return round && (0, _styledComponents.css)(_templateObject5, typeof round === 'boolean' ? '.42857em' : round);
-}, function (_ref3) {
-  var cardSize = _ref3.cardSize;
-  return (0, _utils.isLarge)(cardSize) && largeStyle;
-}, function (_ref4) {
-  var backgroundColor = _ref4.backgroundColor,
-      color = _ref4.color,
+var largeStyle = (0, _styledComponents.css)(_templateObject2, HEIGHT, _utils.media.mobile(_templateObject3, HEIGHT));
+
+var loadingStyle = (0, _styledComponents.css)(_templateObject4);
+
+var reverseStyle = function reverseStyle(_ref2) {
+  var cardSize = _ref2.cardSize;
+  return (0, _styledComponents.css)(_templateObject5, (0, _utils.isLarge)(cardSize) ? 'column-reverse' : 'row-reverse');
+};
+
+var roundStyle = function roundStyle(_ref3) {
+  var round = _ref3.round;
+  return (0, _styledComponents.css)(_templateObject6, typeof round === 'boolean' ? '.42857em' : round);
+};
+
+var style = (0, _styledComponents.css)(_templateObject7, function (_ref4) {
+  var loading = _ref4.loading,
       contrast = _ref4.contrast;
-  return contrast && color && backgroundColor && (0, _styledComponents.css)(_templateObject6, backgroundColor, color, color);
+  return !loading && !contrast && loadingStyle;
+}, function (_ref5) {
+  var round = _ref5.round;
+  return round && roundStyle;
+}, function (_ref6) {
+  var cardSize = _ref6.cardSize;
+  return (0, _utils.isLarge)(cardSize) && largeStyle;
+}, function (_ref7) {
+  var reverse = _ref7.reverse;
+  return reverse && reverseStyle;
+}, function (_ref8) {
+  var backgroundColor = _ref8.backgroundColor,
+      color = _ref8.color,
+      contrast = _ref8.contrast;
+  return contrast && color && backgroundColor && contrastStyle;
 });
 
-var CardWrap = function CardWrap(_ref5) {
-  var is = _ref5.is,
-      rel = _ref5.rel,
-      href = _ref5.href,
-      target = _ref5.target,
-      props = _objectWithoutProperties(_ref5, ['is', 'rel', 'href', 'target']);
+var CardWrap = function CardWrap(_ref9) {
+  var is = _ref9.is,
+      rel = _ref9.rel,
+      href = _ref9.href,
+      target = _ref9.target,
+      props = _objectWithoutProperties(_ref9, ['is', 'rel', 'href', 'target']);
 
-  var el = _styledComponents2.default[is](_templateObject7, style);
+  var el = _styledComponents2.default[is](_templateObject8, style);
   var opts = is === 'a' ? _extends({}, props, { href: href, rel: rel, target: target }) : props;
   return (0, _react.createElement)(el, opts);
 };

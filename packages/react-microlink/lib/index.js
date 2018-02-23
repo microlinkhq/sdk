@@ -127,8 +127,9 @@ var Microlink = function (_Component) {
           url = _state2.url,
           loading = _state2.loading;
       var _props2 = this.props,
-          size = _props2.size,
-          className = _props2.className;
+          className = _props2.className,
+          reverse = _props2.reverse,
+          size = _props2.size;
 
 
       return _react2.default.createElement(
@@ -140,7 +141,8 @@ var Microlink = function (_Component) {
           cardSize: size,
           color: color,
           backgroundColor: backgroundColor,
-          loading: loading
+          loading: loading,
+          reverse: reverse
         }, this.props),
         !loading ? this.renderContent() : _jsx(_Card.CardEmptyState, {
           cardSize: size
@@ -154,14 +156,15 @@ var Microlink = function (_Component) {
 
 Microlink.defaultProps = {
   apiKey: undefined,
+  autoPlay: true,
   contrast: false,
   image: ['screenshot', 'image', 'logo'],
-  prerender: 'auto',
-  screenshot: false,
-  size: 'normal',
-  autoPlay: true,
+  loop: true,
   muted: true,
-  loop: true
+  prerender: 'auto',
+  reverse: false,
+  screenshot: false,
+  size: 'normal'
 };
 
 exports.default = Microlink;
