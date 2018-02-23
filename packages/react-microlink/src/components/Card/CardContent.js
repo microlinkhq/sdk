@@ -7,16 +7,18 @@ import {media} from '../../utils'
 
 const isLarge = cardSize => cardSize === 'large'
 
-const largeStyle = css`
+const largeContentStyle = css`
   flex: 0 0 125px;
 `
 
-const mobileDescription = css`
-  > p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+const mobileDescriptionStyle = css`
+  ${media.mobile`
+    > p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  `}
 `
 
 export const Content = styled.div`
@@ -27,7 +29,7 @@ export const Content = styled.div`
   padding: 10px 15px;
   min-width: 0;
   box-sizing: border-box;
-  ${({cardSize}) => isLarge(cardSize) && largeStyle};
+  ${({cardSize}) => isLarge(cardSize) && largeContentStyle};
 `
 
 const Title = styled.header`
@@ -42,9 +44,7 @@ const Description = styled.div`
   flex-grow: 2;
   margin: auto 0;
   line-height: 18px;
-  ${({cardSize}) => !isLarge(cardSize) && media.mobile`
-    ${mobileDescription}
-  `};
+  ${({cardSize}) => !isLarge(cardSize) && mobileDescriptionStyle};
 `
 
 const Url = styled.footer`
@@ -55,13 +55,13 @@ const Url = styled.footer`
 
 export default ({title, description, url, cardSize, className}) => (
   <Content className={className} cardSize={cardSize}>
-    <Title className="microlink_card__content_title">
+    <Title className='microlink_card__content_title'>
       <CardText lines={1}>{title}</CardText>
     </Title>
-    <Description className="microlink_card__content_description" cardSize={cardSize}>
+    <Description className='microlink_card__content_description' cardSize={cardSize}>
       <CardText lines={2}>{description}</CardText>
     </Description>
-    <Url className="microlink_card__content_url">
+    <Url className='microlink_card__content_url'>
       <CardText lines={1}>{extractDomain(url)}</CardText>
     </Url>
   </Content>
