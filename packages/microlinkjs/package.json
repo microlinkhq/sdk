@@ -43,7 +43,6 @@
     "babel-preset-react-app": "latest",
     "case-sensitive-paths-webpack-plugin": "latest",
     "chalk": "latest",
-    "docsify": "latest",
     "dom101": "latest",
     "dotenv": "latest",
     "extract-text-webpack-plugin": "latest",
@@ -73,9 +72,11 @@
     "umd"
   ],
   "scripts": {
-    "build": "node scripts/build",
-    "dev": "node scripts/start.js",
-    "docs": "docsify serve docs",
+    "build": "npm run build:umd && npm run build:amd && npm run build:cjs",
+    "build:umd": "./scripts/build umd",
+    "build:amd": "./scripts/build amd",
+    "build:cjs": "./scripts/build cjs",
+    "dev": "./scripts/start",
     "lint": "standard-markdown && standard src",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint && npm run update",
