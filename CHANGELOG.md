@@ -1,6 +1,17 @@
 <a name=""></a>
-##  (2018-02-23)
+##  (2018-02-24)
 
+
+
+
+<a name="1.6.1"></a>
+## <small>1.6.1 (2018-02-24)</small>
+
+* Add ES bundle ([217a9e4](https://github.com/microlinkhq/react-microlink/commit/217a9e4))
+* Remove unnecessary React reference ([b1b8378](https://github.com/microlinkhq/react-microlink/commit/b1b8378))
+* Update Changelog ([cb2a684](https://github.com/microlinkhq/react-microlink/commit/cb2a684))
+* Update deps ([b928762](https://github.com/microlinkhq/react-microlink/commit/b928762))
+* v1.6.1 ([311fe0a](https://github.com/microlinkhq/react-microlink/commit/311fe0a))
 
 
 
