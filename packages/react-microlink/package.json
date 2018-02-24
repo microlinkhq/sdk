@@ -4,6 +4,7 @@
   "homepage": "https://microlink.js.org",
   "version": "1.6.0",
   "main": "lib/index.js",
+  "module": "lib/index.m.js",
   "author": {
     "email": "hi@breadadams.com",
     "name": "Brad Adams",
@@ -63,7 +64,8 @@
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
     "unfetch": "latest",
-    "unique-random-array": "latest"
+    "unique-random-array": "latest",
+    "microbundle": "latest"
   },
   "engines": {
     "node": ">= 8"
@@ -72,7 +74,9 @@
     "lib"
   ],
   "scripts": {
-    "build": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
+    "build": "npm run build:babel && npm run build:microbundle",
+    "build:babel": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
+    "build:microbundle": "NODE_ENV=production microbundle build --target browser --entry lib/index.js --format es,cjs",
     "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
     "lint": "standard-markdown && standard src stories",
@@ -103,7 +107,6 @@
   ],
   "standard": {
     "globals": [
-      "React",
       "fetch"
     ],
     "parser": "babel-eslint",
