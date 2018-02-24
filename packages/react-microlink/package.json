@@ -2,7 +2,7 @@
   "name": "react-microlink",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "main": "lib/index.js",
   "module": "lib/index.m.js",
   "author": {
@@ -54,6 +54,7 @@
     "eslint-plugin-jsx-a11y": "latest",
     "husky": "latest",
     "lint-staged": "latest",
+    "microbundle": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
@@ -64,8 +65,7 @@
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
     "unfetch": "latest",
-    "unique-random-array": "latest",
-    "microbundle": "latest"
+    "unique-random-array": "latest"
   },
   "engines": {
     "node": ">= 8"
