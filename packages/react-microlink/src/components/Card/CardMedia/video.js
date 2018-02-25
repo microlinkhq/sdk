@@ -1,41 +1,14 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 
-import {media, isLarge, getUrlPath} from '../../../utils'
-import {loadingOverlay} from './loader'
+import {getUrlPath} from '../../../utils'
 
-const largeStyle = css`
-  flex: 1;
+import MediaWrap from './wrap'
 
-  &::before {
-    padding-bottom: 0;
-  }
-`
-
-const VideoWrapper = styled.div`
-  background-color: #e1e8ed;
-  display: block;
-  flex: 0 0 125px;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  transition: flex-basis .25s ease-in-out;
-
-  &:before {
-    content: '';
-    padding-bottom: 100%;
-    display: block;
-  }
-
-  &:after {
+const VideoWrapper = MediaWrap.extend`
+  &::after {
     z-index: 101;
   }
-
-  ${loadingOverlay}
-
-  ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
-    flex: 0 0 92px;
-  `}
 `
 
 const Video = styled.video`

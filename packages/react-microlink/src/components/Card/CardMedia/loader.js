@@ -9,7 +9,7 @@ export const ImageLoadCatcher = styled.img`
 `
 
 export const loadingOverlay = ({loading}) => css`
-  &:after {
+  &::after {
     content: '';
     position: absolute;
     left: 0;
