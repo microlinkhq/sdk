@@ -2,7 +2,7 @@
   "name": "react-microlink",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "main": "lib/index.js",
   "module": "lib/index.m.js",
   "author": {
@@ -101,7 +101,10 @@
   },
   "size-limit": [
     {
-      "path": "./lib",
+      "path": [
+        "./lib/index.js",
+        "./lib/index.m.js"
+      ],
       "limit": "50 kB"
     }
   ],
