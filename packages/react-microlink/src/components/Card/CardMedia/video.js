@@ -20,10 +20,25 @@ const VideoWrapper = styled.div`
   position: relative;
   transition: flex-basis .25s ease-in-out;
 
-  &::before {
+  &:before, &:after {
     content: '';
+  }
+
+  &:before {
     padding-bottom: 100%;
     display: block;
+  }
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #e1e8ed;
+    transition: opacity .3s ease-out;
+    z-index: 101;
+    ${({loading}) => loading ? `opacity: 1;` : `opacity: 0;`}
   }
 
   ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
@@ -56,12 +71,14 @@ const CardVideo = ({
   image,
   muted,
   autoPlay,
+  loading,
   loop
 }) => {
   return (
     <VideoWrapper
       className='microlink_card__media_video_wrapper'
-      cardSize={cardSize}>
+      cardSize={cardSize}
+      loading={loading}>
       <Video
         className='microlink_card__media_video'
         src={getUrlPath(video)}

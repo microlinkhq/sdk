@@ -52,6 +52,7 @@ const style = css`
   display: flex;
   text-decoration: none;
   opacity:1;
+  position: relative;
 
   &:active,
   &:hover {
