@@ -11,9 +11,7 @@ const contrastStyle = ({backgroundColor, color}) => css`
   transition: filter .15s ease-in-out;
 
   &&& {
-    .microlink_card__text {
-      color: ${color};
-    }
+    color: ${color};
   }
 
   &:hover {
@@ -53,6 +51,7 @@ const style = css`
   border-style: solid;
   border-color: #E1E8ED;
   overflow: hidden;
+  color: #181919;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
   text-decoration: none;
