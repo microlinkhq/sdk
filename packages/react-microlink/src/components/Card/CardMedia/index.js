@@ -1,21 +1,14 @@
-import React, {Fragment} from 'react'
-import styled from 'styled-components'
+import React, {Component, Fragment} from 'react'
 
 import {getUrlPath} from '../../../utils'
 
 import Image from './image'
 import Video from './video'
+import {ImageLoadCatcher} from './loader'
 
 const isVideo = ({video}) => getUrlPath(video) !== null
 
-const ImageLoadCatcher = styled.img`
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  z-index: -1;
-`
-
-export default class CardMedia extends React.Component {
+export default class CardMedia extends Component {
   constructor(props) {
     super(props)
     this.state = {

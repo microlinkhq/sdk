@@ -2,6 +2,7 @@ import React from 'react'
 import styled, {css} from 'styled-components'
 
 import {media, isLarge, getUrlPath} from '../../../utils'
+import {loadingOverlay} from './loader'
 
 const largeStyle = css`
   flex: 1;
@@ -20,26 +21,17 @@ const VideoWrapper = styled.div`
   position: relative;
   transition: flex-basis .25s ease-in-out;
 
-  &:before, &:after {
-    content: '';
-  }
-
   &:before {
+    content: '';
     padding-bottom: 100%;
     display: block;
   }
 
   &:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #e1e8ed;
-    transition: opacity .3s ease-out;
     z-index: 101;
-    ${({loading}) => loading ? `opacity: 1;` : `opacity: 0;`}
   }
+
+  ${loadingOverlay}
 
   ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
     flex: 0 0 92px;

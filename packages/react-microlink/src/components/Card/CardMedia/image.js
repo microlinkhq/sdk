@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components'
 
 import { media, isLarge } from '../../../utils'
+import {loadingOverlay} from './loader'
 
 const largeStyle = css`
   flex: 1;
@@ -21,25 +22,13 @@ export default styled.div`
   transition: flex-basis .25s ease-in-out;
   position: relative;
 
-  &:before, &:after {
-    content: '';
-  }
-
   &:before {
+    content: '';
     padding-bottom: 100%;
     display: block;
   }
 
-  &:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #e1e8ed;
-    transition: opacity .3s ease-out;
-    ${({loading}) => loading ? `opacity: 1;` : `opacity: 0;`}
-  }
+  ${loadingOverlay}
 
   ${({image}) => image && `background-image: url(${image});`}
 
