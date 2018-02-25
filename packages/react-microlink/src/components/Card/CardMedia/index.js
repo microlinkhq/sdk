@@ -1,4 +1,4 @@
-import React, {Fragment, createElement} from 'react'
+import React, {Fragment} from 'react'
 import styled from 'styled-components'
 
 import {getUrlPath} from '../../../utils'
