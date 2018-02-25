@@ -18,6 +18,7 @@ const VideoWrapper = styled.div`
   overflow: hidden;
   height: auto;
   position: relative;
+  transition: flex-basis .25s ease-in-out;
 
   &::before {
     content: '';

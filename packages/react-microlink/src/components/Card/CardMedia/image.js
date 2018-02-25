@@ -10,10 +10,15 @@ const largeStyle = css`
   }
 `
 
+const mobileStyle = media.mobile`
+  flex: 0 0 92px;
+`
+
 export default styled.div`
   display: block;
   flex: 0 0 125px;
   background: #e1e8ed no-repeat center center / cover;
+  transition: flex-basis .25s ease-in-out;
 
   &::before {
     content: '';
@@ -23,7 +28,5 @@ export default styled.div`
 
   ${({image}) => image && `background-image: url(${image});`}
 
-  ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
-    flex: 0 0 92px;
-  `}
+  ${({cardSize}) => isLarge(cardSize) ? largeStyle : mobileStyle}
 `
