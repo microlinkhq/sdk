@@ -7,9 +7,11 @@ const Clamp = ({children, className, lines}) => (
 )
 
 const CardText = styled(Clamp)`
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #181919;
-  margin: 0;
+  &&& {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #181919;
+    margin: 0;
+  }
 `
 
 export default CardText
