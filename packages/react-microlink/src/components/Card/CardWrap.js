@@ -11,6 +11,12 @@ const contrastStyle = ({backgroundColor, color}) => css`
   border-color: ${color};
   transition: filter .15s ease-in-out;
 
+  &&& {
+    .microlink_card__text {
+      color: ${color};
+    }
+  }
+
   &:hover {
     filter: brightness(90%);
   }
