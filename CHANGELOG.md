@@ -1,6 +1,15 @@
 <a name=""></a>
-##  (2018-02-24)
+##  (2018-02-25)
 
+
+
+
+<a name="1.6.2"></a>
+## <small>1.6.2 (2018-02-25)</small>
+
+* Revert "Remove unnecessary React reference" ([d1748bf](https://github.com/microlinkhq/react-microlink/commit/d1748bf))
+* Update Changelog ([495b4c5](https://github.com/microlinkhq/react-microlink/commit/495b4c5))
+* v1.6.2 ([f12b129](https://github.com/microlinkhq/react-microlink/commit/f12b129))
 
 
 
