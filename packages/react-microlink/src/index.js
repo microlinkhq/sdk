@@ -5,10 +5,16 @@ import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Car
 import {getUrlPath, someProp, createApiUrl} from './utils'
 
 class Microlink extends Component {
-  componentWillMount () {
+  constructor (props) {
+    super(props)
+    this.state = {
+      loading: true
+    }
+  }
+
+  componentDidMount () {
     if (this.props.data) return this.setData({data: this.props.data})
-    const promise = this.fetchData()
-    return this.setState({loading: true}, () => promise.then(this.setData))
+    return this.fetchData().then(this.setData)
   }
 
   fetchData = () => {
