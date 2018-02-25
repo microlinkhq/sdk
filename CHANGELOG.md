@@ -4,6 +4,17 @@
 
 
 
+<a name="1.6.3"></a>
+## <small>1.6.3 (2018-02-25)</small>
+
+* Fix server side support ([511d5a3](https://github.com/microlinkhq/react-microlink/commit/511d5a3))
+* Remove `props` from constructor ([3c6c585](https://github.com/microlinkhq/react-microlink/commit/3c6c585))
+* Update Changelog ([f6c97fc](https://github.com/microlinkhq/react-microlink/commit/f6c97fc))
+* Update size command ([30c997a](https://github.com/microlinkhq/react-microlink/commit/30c997a))
+* v1.6.3 ([64c8a24](https://github.com/microlinkhq/react-microlink/commit/64c8a24))
+
+
+
 <a name="1.6.2"></a>
 ## <small>1.6.2 (2018-02-25)</small>
 
