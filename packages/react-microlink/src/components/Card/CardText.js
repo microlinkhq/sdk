@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import NanoClamp from 'nanoclamp'
 
 const Clamp = ({children, className, lines}) => (
-  <NanoClamp className={className} lines={lines} text={children} is="p" />
+  <NanoClamp className={className} lines={lines} text={children} is='p' />
 )
 
 const CardText = styled(Clamp)`
