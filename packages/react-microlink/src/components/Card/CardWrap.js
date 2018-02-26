@@ -19,6 +19,7 @@ const contrastStyle = ({backgroundColor, color}) => css`
 const largeStyle = css`
   flex-direction: column;
   height: ${HEIGHT};
+  transition: height .25s ease-in-out;
 
   ${media.mobile`
     height: calc(${HEIGHT} * 7/9);
@@ -51,6 +52,7 @@ const style = css`
   display: flex;
   text-decoration: none;
   opacity:1;
+  position: relative;
 
   &:active,
   &:hover {
