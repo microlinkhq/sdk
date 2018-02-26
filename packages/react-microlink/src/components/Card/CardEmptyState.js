@@ -32,7 +32,7 @@ const EmptyDescription = styled.span`
 
   height: 33px;
 
-  &:before {
+  &::before {
     content: '';
     position: absolute;
     left: -1px;
@@ -41,11 +41,11 @@ const EmptyDescription = styled.span`
     background: #fff;
   }
 
-  &:before {
+  &::before {
     top: 14px;
   }
 
-  &:after {
+  &::after {
     bottom: 14px;
   }
 
