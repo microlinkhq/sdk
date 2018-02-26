@@ -74,7 +74,7 @@ class CardVideo extends Component {
           onTimeUpdate={this.videoPlaying}
         />
         <PlayButton visible={controls && !playing} />
-        {controls && <ProgressBar progress={progress} />}
+        {controls && <ProgressBar progress={progress} playing={playing} />}
       </MediaWrap>
     )
   }

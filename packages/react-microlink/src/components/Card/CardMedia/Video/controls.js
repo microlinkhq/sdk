@@ -34,8 +34,9 @@ export const PlayButton = styled.div`
 `
 
 export const ProgressBar = styled.div.attrs({
-  style: ({progress}) => ({
-    width: `${progress}%` || 0
+  style: ({playing, progress}) => ({
+    width: `${progress}%` || 0,
+    opacity: playing ? 0.7 : 0
   })
 })`
   position: absolute;
@@ -43,5 +44,6 @@ export const ProgressBar = styled.div.attrs({
   bottom: 0;
   background: #e1e8ed;
   height: 2px;
-  opacity: .75;
+  border-top-right-radius: 2px;
+  transition: opacity .3s ease;
 `
