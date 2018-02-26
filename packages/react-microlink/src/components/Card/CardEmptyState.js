@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimations'
-import CardImage from './CardMedia/image'
+import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
 import { media } from '../../utils'
 
