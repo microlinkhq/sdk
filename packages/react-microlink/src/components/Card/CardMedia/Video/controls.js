@@ -32,3 +32,16 @@ export const PlayButton = styled.div`
   	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
   }
 `
+
+export const ProgressBar = styled.div.attrs({
+  style: ({progress}) => ({
+    width: `${progress}%` || 0
+  })
+})`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  height: 2px;
+  opacity: .75;
+`

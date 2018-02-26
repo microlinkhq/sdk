@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import {getUrlPath} from '../../../../utils'
 
-import {PlayButton} from './controls'
+import {PlayButton, ProgressBar} from './controls'
 import MediaWrap from '../wrap'
 
 const Video = styled.video`
@@ -30,7 +30,8 @@ class CardVideo extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      playing: props.autoPlay
+      playing: props.autoPlay,
+      progress: 0
     }
   }
 
@@ -42,9 +43,14 @@ class CardVideo extends Component {
     }
   }
 
+  videoPlaying() {
+    const progress = (this.videoEl.currentTime / this.videoEl.duration) * 100
+    this.setState({progress})
+  }
+
   render() {
     const {cardSize, controls, video, image, muted, autoPlay, loading, loop} = this.props
-    const {playing} = this.state
+    const {playing, progress} = this.state
 
     return (
       <MediaWrap
@@ -69,8 +75,10 @@ class CardVideo extends Component {
           innerRef={video => {
             this.videoEl = video
           }}
+          onTimeUpdate={() => this.videoPlaying()}
         />
         <PlayButton visible={controls && !playing} />
+        {controls && <ProgressBar progress={progress} />}
       </MediaWrap>
     )
   }
