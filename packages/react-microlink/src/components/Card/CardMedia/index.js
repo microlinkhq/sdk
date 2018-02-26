@@ -6,13 +6,14 @@ import Image from './image'
 import Video from './video'
 import {ImageLoadCatcher} from './loader'
 
+const hasImage = ({image}) => getUrlPath(image) !== null
 const isVideo = ({video}) => getUrlPath(video) !== null
 
 export default class CardMedia extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      loadingImage: props.image ? true : false
+      loadingImage: hasImage(props)
     }
   }
 
