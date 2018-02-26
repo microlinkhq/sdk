@@ -5,8 +5,8 @@ import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Car
 import {getUrlPath, someProp, createApiUrl} from './utils'
 
 class Microlink extends Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
       loading: true
     }
