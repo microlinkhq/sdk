@@ -35,16 +35,19 @@ class CardVideo extends Component {
     }
   }
 
-  toggleVideoPlayback() {
-    if (!this.state.playing) {
-      this.videoEl.play()
-    } else {
-      this.videoEl.pause()
+  togglePlayback = event => {
+    if (this.props.controls) {
+      event.preventDefault()
+      this.setState(({playing}) => {
+        const action = !playing ? 'play' : 'pause'
+        this.videoEl[action]()
+        return {playing: !playing}
+      })
     }
   }
 
-  videoPlaying() {
-    const progress = (this.videoEl.currentTime / this.videoEl.duration) * 100
+  videoPlaying = () => {
+    const progress = this.videoEl.currentTime / this.videoEl.duration * 100
     this.setState({progress})
   }
 
@@ -57,12 +60,7 @@ class CardVideo extends Component {
         className="microlink_card__media_video_wrapper"
         cardSize={cardSize}
         loading={loading}
-        onClick={e => {
-          if (this.props.controls) {
-            e.preventDefault()
-            this.setState(prevState => ({playing: !prevState.playing}), this.toggleVideoPlayback())
-          }
-        }}
+        onClick={this.togglePlayback}
       >
         <Video
           className="microlink_card__media_video"
@@ -72,10 +70,8 @@ class CardVideo extends Component {
           autoPlay={autoPlay}
           loop={loop}
           playsinline
-          innerRef={video => {
-            this.videoEl = video
-          }}
-          onTimeUpdate={() => this.videoPlaying()}
+          innerRef={video => (this.videoEl = video)}
+          onTimeUpdate={this.videoPlaying}
         />
         <PlayButton visible={controls && !playing} />
         {controls && <ProgressBar progress={progress} />}
