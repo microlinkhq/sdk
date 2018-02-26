@@ -25,7 +25,7 @@ export const urlsVideo = [
   'https://www.youtube.com/watch?v=hwMkbaS_M_c'
 ]
 
-export const getRandomSize = (sizes) => {
+export const getRandomSize = sizes => {
   const rand = uniqueRandomArray(sizes)
   return `${rand()}px`
 }
