@@ -3,7 +3,7 @@ import React, {Component, Fragment} from 'react'
 import {getUrlPath} from '../../../utils'
 
 import Image from './image'
-import Video from './video'
+import Video from './Video'
 import {ImageLoadCatcher} from './loader'
 
 const isVideo = ({video}) => getUrlPath(video) !== null
