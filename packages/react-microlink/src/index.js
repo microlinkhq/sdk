@@ -70,7 +70,7 @@ class Microlink extends Component {
 
   render () {
     const {title, color, backgroundColor, url, loading} = this.state
-    const {className, reverse, size} = this.props
+    const {className, size, ...props} = this.props
 
     return (
       <CardWrap
@@ -81,8 +81,7 @@ class Microlink extends Component {
         color={color}
         backgroundColor={backgroundColor}
         loading={loading}
-        reverse={reverse}
-        {...this.props}
+        {...props}
       >
         {!loading ? this.renderContent() : <CardEmptyState cardSize={size} />}
       </CardWrap>
