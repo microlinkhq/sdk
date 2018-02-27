@@ -13,8 +13,8 @@ class Microlink extends Component {
   }
 
   componentDidMount () {
-    if (this.props.data) return this.setData(this.props.data)
-    return this.fetchData().then(({data}) => this.setData(data))
+    const {data} = this.props
+    return !data ? this.fetchData().then(this.setData) : this.setData({data})
   }
 
   fetchData () {
@@ -23,7 +23,7 @@ class Microlink extends Component {
     return promise.then(res => res.json())
   }
 
-  setData (data) {
+  setData = ({data}) => {
     const imagesProps = [].concat(this.props.image)
     const image = someProp(data, imagesProps)
     const imageUrl = getUrlPath(image)
