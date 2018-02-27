@@ -13,17 +13,17 @@ class Microlink extends Component {
   }
 
   componentDidMount () {
-    if (this.props.data) return this.setData({data: this.props.data})
-    return this.fetchData().then(this.setData)
+    if (this.props.data) return this.setData(this.props.data)
+    return this.fetchData().then(({data}) => this.setData(data))
   }
 
-  fetchData = () => {
+  fetchData () {
     const url = createApiUrl(this.props)
     const promise = fetch(url, {headers: {'x-api-key': this.props.apiKey}})
     return promise.then(res => res.json())
   }
 
-  setData = ({data}) => {
+  setData (data) {
     const imagesProps = [].concat(this.props.image)
     const image = someProp(data, imagesProps)
     const imageUrl = getUrlPath(image)

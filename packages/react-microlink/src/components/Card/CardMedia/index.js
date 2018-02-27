@@ -9,18 +9,18 @@ import {ImageLoadCatcher} from './loader'
 const isUrl = url => getUrlPath(url) !== null
 
 export default class CardMedia extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       loadingImage: isUrl(props.image)
     }
   }
 
-  imageLoaded() {
+  imageLoaded () {
     this.setState({loadingImage: false})
   }
 
-  renderMedia() {
+  renderMedia () {
     const {loadingImage} = this.state
     const el = !isUrl(this.props.video) ? Image : Video
     return createElement(el, {
@@ -30,7 +30,7 @@ export default class CardMedia extends Component {
     })
   }
 
-  renderLoadCatcher() {
+  renderLoadCatcher () {
     const {image} = this.props
     const {loadingImage: loading} = this.state
     return loading && isUrl(image) && createElement(ImageLoadCatcher, {
@@ -40,7 +40,7 @@ export default class CardMedia extends Component {
     })
   }
 
-  render() {
+  render () {
     return [this.renderMedia(), this.renderLoadCatcher()]
   }
 }
