@@ -65,6 +65,7 @@
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
     "unfetch": "latest",
+    "finepack": "latest",
     "unique-random-array": "latest"
   },
   "engines": {
@@ -75,15 +76,15 @@
   ],
   "scripts": {
     "build": "npm run build:babel && npm run build:microbundle",
+    "build-storybook": "build-storybook",
     "build:babel": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
     "build:microbundle": "NODE_ENV=production microbundle build --target browser --entry lib/index.js --format es,cjs",
-    "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
-    "lint": "standard-markdown && standard src stories",
+    "lint": "standard-markdown && standard",
     "posttest": "npm run size",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint && npm run update",
-    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "size": "size-limit",
     "start": "node scripts/start.js",
     "test": "exit 0",
@@ -91,6 +92,10 @@
   },
   "license": "MIT",
   "lint-staged": {
+    "package.json": [
+      "finepack",
+      "git add"
+    ],
     "*.js": [
       "prettier-standard",
       "git add"
@@ -112,12 +117,12 @@
     "globals": [
       "fetch"
     ],
+    "ignore": [
+      "/lib/"
+    ],
     "parser": "babel-eslint",
     "plugins": [
       "jsx-a11y"
-    ],
-    "ignore": [
-      "/lib/"
     ]
   }
 }
