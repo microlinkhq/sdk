@@ -22,7 +22,8 @@ export default class CardMedia extends Component {
 
   renderMedia () {
     const {loadingImage} = this.state
-    const el = !isUrl(this.props.video) ? Image : Video
+    const {image, video} = this.props
+    const el = !isUrl(video) && isUrl(image) ? Image : Video
     return createElement(el, {
       ...this.props,
       key: 'media',
