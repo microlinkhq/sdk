@@ -6,14 +6,13 @@ import Image from './image'
 import Video from './video'
 import {ImageLoadCatcher} from './loader'
 
-const hasImage = ({image}) => getUrlPath(image) !== null
-const isVideo = ({video}) => getUrlPath(video) !== null
+const isUrl = url => getUrlPath(url) !== null
 
 export default class CardMedia extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      loadingImage: hasImage(props)
+      loadingImage: isUrl(props.image)
     }
   }
 
@@ -23,7 +22,7 @@ export default class CardMedia extends Component {
 
   renderMedia() {
     const {loadingImage} = this.state
-    const el = !isVideo(this.props) ? Image : Video
+    const el = !isUrl(this.props.video) ? Image : Video
     return createElement(el, {
       ...this.props,
       key: 'media',
