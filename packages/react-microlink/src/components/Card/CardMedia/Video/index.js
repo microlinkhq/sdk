@@ -28,7 +28,7 @@ const Video = styled.video`
 
 class CardVideo extends Component {
   constructor (props) {
-    super (props)
+    super(props)
     this.state = {
       playing: props.autoPlay,
       progress: 0
@@ -61,19 +61,19 @@ class CardVideo extends Component {
       loop,
       muted,
       playsInline,
-      video,
+      video
     } = this.props
     const {playing, progress} = this.state
 
     return (
       <MediaWrap
-        className="microlink_card__media_video_wrapper"
+        className='microlink_card__media_video_wrapper'
         cardSize={cardSize}
         loading={loading}
         onClick={this.togglePlayback}
       >
         <Video
-          className="microlink_card__media_video"
+          className='microlink_card__media_video'
           src={getUrlPath(video)}
           poster={image}
           muted={muted}
