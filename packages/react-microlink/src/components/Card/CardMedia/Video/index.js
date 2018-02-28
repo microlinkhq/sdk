@@ -90,12 +90,4 @@ class CardVideo extends Component {
   }
 }
 
-CardVideo.defaultProps = {
-  autoPlay: true,
-  controls: true,
-  loop: true,
-  playsInline: true,
-  muted: true
-}
-
 export default CardVideo
