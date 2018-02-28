@@ -73,6 +73,6 @@ const CardEmptyState = ({cardSize}) => (
       <EmptyLink />
     </Content>
   </Fragment>
-  )
+)
 
 export default CardEmptyState
