@@ -27,8 +27,8 @@ const Video = styled.video`
 `
 
 class CardVideo extends Component {
-  constructor(props) {
-    super(props)
+  constructor (props) {
+    super (props)
     this.state = {
       playing: props.autoPlay,
       progress: 0
@@ -51,8 +51,18 @@ class CardVideo extends Component {
     this.setState({progress})
   }
 
-  render() {
-    const {cardSize, controls, video, image, muted, autoPlay, loading, loop} = this.props
+  render () {
+    const {
+      autoPlay,
+      cardSize,
+      controls,
+      image,
+      loading,
+      loop,
+      muted,
+      playsInline,
+      video,
+    } = this.props
     const {playing, progress} = this.state
 
     return (
@@ -69,7 +79,7 @@ class CardVideo extends Component {
           muted={muted}
           autoPlay={autoPlay}
           loop={loop}
-          playsinline
+          playsInline={playsInline}
           innerRef={video => (this.videoEl = video)}
           onTimeUpdate={this.videoPlaying}
         />
@@ -81,10 +91,11 @@ class CardVideo extends Component {
 }
 
 CardVideo.defaultProps = {
+  autoPlay: true,
   controls: true,
-  muted: true,
   loop: true,
-  autoPlay: true
+  playsInline: true,
+  muted: true
 }
 
 export default CardVideo
