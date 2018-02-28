@@ -1,19 +1,47 @@
-import { createElement } from 'react'
+import {createElement, Component} from 'react'
 
 import {getUrlPath} from '../../../utils'
 
 import Image from './image'
 import Video from './video'
+import {ImageLoadCatcher} from './loader'
 
-const isVideo = ({video}) => getUrlPath(video) !== null
+const isUrl = url => getUrlPath(url) !== null
 
-export default props => {
-  if (!isVideo(props)) {
-    return createElement(Image, {
-      className: 'microlink_card__media_image',
-      ...props
+export default class CardMedia extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      loadingImage: isUrl(props.image)
+    }
+  }
+
+  imageLoaded () {
+    this.setState({loadingImage: false})
+  }
+
+  renderMedia () {
+    const {loadingImage} = this.state
+    const {image, video} = this.props
+    const el = !isUrl(video) && isUrl(image) ? Image : Video
+    return createElement(el, {
+      ...this.props,
+      key: 'media',
+      loading: loadingImage
     })
   }
 
-  return createElement(Video, props)
+  renderLoadCatcher () {
+    const {image} = this.props
+    const {loadingImage: loading} = this.state
+    return loading && isUrl(image) && createElement(ImageLoadCatcher, {
+      key: 'imageLoader',
+      src: image,
+      onLoad: () => this.imageLoaded()
+    })
+  }
+
+  render () {
+    return [this.renderMedia(), this.renderLoadCatcher()]
+  }
 }
