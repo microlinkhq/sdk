@@ -46,4 +46,8 @@ export const ProgressBar = styled.div.attrs({
   height: 2px;
   border-top-right-radius: 2px;
   transition: opacity .3s ease;
+
+  .microlink_card:not(:hover) & {
+    opacity: 0 !important;
+  }
 `
