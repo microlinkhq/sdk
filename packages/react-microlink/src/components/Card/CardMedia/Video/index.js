@@ -81,7 +81,7 @@ class CardVideo extends Component {
           loop={loop}
           playsInline={playsInline}
           innerRef={video => (this.videoEl = video)}
-          onTimeUpdate={this.videoPlaying}
+          {...(controls ? {onTimeUpdate: this.videoPlaying} : {})}
         />
         <PlayButton visible={controls && !playing} />
         {controls && <ProgressBar progress={progress} playing={playing} />}
