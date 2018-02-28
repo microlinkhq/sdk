@@ -7,9 +7,12 @@ const HEIGHT = '382px'
 
 const contrastStyle = ({backgroundColor, color}) => css`
   background-color: ${backgroundColor};
-  color: ${color};
   border-color: ${color};
   transition: filter .15s ease-in-out;
+
+  &&& {
+    color: ${color};
+  }
 
   &:hover {
     filter: brightness(90%);
@@ -48,6 +51,8 @@ const style = css`
   border-style: solid;
   border-color: #E1E8ED;
   overflow: hidden;
+  color: #181919;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
   text-decoration: none;
   opacity:1;
