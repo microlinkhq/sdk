@@ -1,4 +1,3 @@
-import React from 'react'
 import styled, {css} from 'styled-components'
 
 import {media, isLarge} from '../../../utils'
@@ -17,7 +16,7 @@ const mobileStyle = media.mobile`
 `
 
 export default styled.div`
-  background-color: #e1e8ed;
+  background: #e1e8ed no-repeat center center / cover;
   display: block;
   flex: 0 0 125px;
   overflow: hidden;

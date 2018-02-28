@@ -52,6 +52,7 @@
     "babel-preset-env": "latest",
     "babel-preset-react": "latest",
     "eslint-plugin-jsx-a11y": "latest",
+    "finepack": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "microbundle": "latest",
@@ -65,7 +66,6 @@
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
     "unfetch": "latest",
-    "finepack": "latest",
     "unique-random-array": "latest"
   },
   "engines": {
