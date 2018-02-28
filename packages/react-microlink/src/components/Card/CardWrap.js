@@ -8,7 +8,7 @@ const HEIGHT = '382px'
 const contrastStyle = ({backgroundColor, color}) => css`
   background-color: ${backgroundColor};
   border-color: ${color};
-  transition: filter .15s ease-in-out;
+  transition-property: filter;
 
   &&& {
     color: ${color};
@@ -22,15 +22,15 @@ const contrastStyle = ({backgroundColor, color}) => css`
 const largeStyle = css`
   flex-direction: column;
   height: ${HEIGHT};
-  transition: height .25s ease-in-out;
+  transition-property: background, border-color, height;
 
   ${media.mobile`
     height: calc(${HEIGHT} * 7/9);
   `}
 `
 
-const loadingStyle = css`
-  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+const normalStyle = css`
+  transition-property: background, border-color;
   &:hover {
     background: #F5F8FA;
     border-color: rgba(136,153,166,.5);
@@ -42,7 +42,7 @@ const reverseStyle = ({cardSize}) => css`
 `
 
 const roundStyle = ({round}) => css`
-  border-radius: ${typeof round === 'boolean' ? `.42857em` : round};
+  border-radius: ${round === true ? `.42857em` : round};
 `
 
 const style = css`
@@ -59,12 +59,15 @@ const style = css`
   opacity:1;
   position: relative;
 
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+
   &:active,
   &:hover {
     outline: 0;
   }
 
-  ${({loading, contrast}) => !loading && !contrast && loadingStyle}
+  ${({loading, contrast}) => normalStyle}
 
   ${({round}) => round && roundStyle}
 
