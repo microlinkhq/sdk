@@ -4,6 +4,7 @@ import extractDomain from 'extract-domain'
 import CardText from './CardText'
 
 import {media} from '../../utils'
+import { fadeInAnimation } from './CardAnimation'
 
 const isLarge = cardSize => cardSize === 'large'
 
@@ -22,6 +23,7 @@ const mobileDescriptionStyle = css`
 `
 
 export const Content = styled.div`
+  ${fadeInAnimation}
   display: flex;
   justify-content: space-around;
   flex-direction: column;
