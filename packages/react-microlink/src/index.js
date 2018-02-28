@@ -13,11 +13,11 @@ class Microlink extends Component {
   }
 
   componentDidMount () {
-    if (this.props.data) return this.setData({data: this.props.data})
-    return this.fetchData().then(this.setData)
+    const {data} = this.props
+    return !data ? this.fetchData().then(this.setData) : this.setData({data})
   }
 
-  fetchData = () => {
+  fetchData () {
     const url = createApiUrl(this.props)
     const promise = fetch(url, {headers: {'x-api-key': this.props.apiKey}})
     return promise.then(res => res.json())
@@ -72,7 +72,7 @@ class Microlink extends Component {
 
   render () {
     const {title, color, backgroundColor, url, loading} = this.state
-    const {className, reverse, size} = this.props
+    const {className, size, ...props} = this.props
 
     return (
       <CardWrap
@@ -83,8 +83,7 @@ class Microlink extends Component {
         color={color}
         backgroundColor={backgroundColor}
         loading={loading}
-        reverse={reverse}
-        {...this.props}
+        {...props}
       >
         {!loading ? this.renderContent() : <CardEmptyState cardSize={size} />}
       </CardWrap>

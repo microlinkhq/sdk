@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react'
+import {createElement, Component} from 'react'
 
 import {getUrlPath} from '../../../utils'
 
@@ -6,32 +6,42 @@ import Image from './Image'
 import Video from './Video'
 import {ImageLoadCatcher} from './loader'
 
-const isVideo = ({video}) => getUrlPath(video) !== null
+const isUrl = url => getUrlPath(url) !== null
 
 export default class CardMedia extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
-      loadingImage: this.props.image ? true : false
+      loadingImage: isUrl(props.image)
     }
   }
 
-  render() {
+  imageLoaded () {
+    this.setState({loadingImage: false})
+  }
+
+  renderMedia () {
     const {loadingImage} = this.state
-    return (
-      <Fragment>
-        {!isVideo(this.props) ? (
-          <Image className="microlink_card__media_image" loading={loadingImage} {...this.props} />
-        ) : (
-          <Video {...this.props} loading={loadingImage} />
-        )}
-        {this.props.image && (
-          <ImageLoadCatcher
-            src={this.props.image}
-            onLoad={() => this.setState({loadingImage: false})}
-          />
-        )}
-      </Fragment>
-    )
+    const {image, video} = this.props
+    const el = !isUrl(video) && isUrl(image) ? Image : Video
+    return createElement(el, {
+      ...this.props,
+      key: 'media',
+      loading: loadingImage
+    })
+  }
+
+  renderLoadCatcher () {
+    const {image} = this.props
+    const {loadingImage: loading} = this.state
+    return loading && isUrl(image) && createElement(ImageLoadCatcher, {
+      key: 'imageLoader',
+      src: image,
+      onLoad: () => this.imageLoaded()
+    })
+  }
+
+  render () {
+    return [this.renderMedia(), this.renderLoadCatcher()]
   }
 }

@@ -1,6 +1,6 @@
 import MediaWrap from './wrap'
 
-export default MediaWrap.extend`
-  background: no-repeat center center / cover;
-  ${({image}) => image && `background-image: url(${image});`}
+const defaultProps = {className: 'microlink_card__media_image'}
+export default MediaWrap.extend.attrs(defaultProps)`
+  background-image: ${({image}) => (image ? `url('${image}')` : '')};
 `
