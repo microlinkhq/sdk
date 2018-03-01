@@ -28,12 +28,12 @@ export default class CardMedia extends Component {
   }
 
   renderLoadCatcher () {
-    const {image, onLoad} = this.props
+    const {image} = this.props
     const {loading} = this.state
     return loading && isUrl(image) && createElement(ImageLoadCatcher, {
       key: 'imageLoader',
       src: image,
-      onLoad: () => this.setState({loading: false}) && onLoad()
+      onLoad: () => this.setState({loading: false})
     })
   }
 
