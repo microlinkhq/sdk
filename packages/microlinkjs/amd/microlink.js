@@ -4402,7 +4402,7 @@ var _templateObject = _taggedTemplateLiteral(['\n  background-color: ', ';\n  bo
     _templateObject4 = _taggedTemplateLiteral(['\n  transition-property: background, border-color;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n'], ['\n  transition-property: background, border-color;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n  flex-direction: ', '\n'], ['\n  flex-direction: ', '\n']),
     _templateObject6 = _taggedTemplateLiteral(['\n  border-radius: ', ';\n'], ['\n  border-radius: ', ';\n']),
-    _templateObject7 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
     _templateObject8 = _taggedTemplateLiteral(['', ''], ['', '']);
 
 var _react = __webpack_require__(0);
@@ -4444,7 +4444,7 @@ var roundStyle = function roundStyle(_ref3) {
 var style = (0, _styledComponents.css)(_templateObject7, function (_ref4) {
   var loading = _ref4.loading,
       contrast = _ref4.contrast;
-  return !loading && hoverStyle;
+  return !loading && !contrast && hoverStyle;
 }, function (_ref5) {
   var round = _ref5.round;
   return round && roundStyle;
@@ -4459,14 +4459,19 @@ var style = (0, _styledComponents.css)(_templateObject7, function (_ref4) {
       color = _ref8.color,
       contrast = _ref8.contrast;
   return contrast && color && backgroundColor && contrastStyle;
+}, function (_ref9) {
+  var backgroundColor = _ref9.backgroundColor,
+      color = _ref9.color,
+      contrast = _ref9.contrast;
+  return contrast && (!color || !backgroundColor) && hoverStyle;
 });
 
-var CardWrap = function CardWrap(_ref9) {
-  var is = _ref9.is,
-      rel = _ref9.rel,
-      href = _ref9.href,
-      target = _ref9.target,
-      props = _objectWithoutProperties(_ref9, ['is', 'rel', 'href', 'target']);
+var CardWrap = function CardWrap(_ref10) {
+  var is = _ref10.is,
+      rel = _ref10.rel,
+      href = _ref10.href,
+      target = _ref10.target,
+      props = _objectWithoutProperties(_ref10, ['is', 'rel', 'href', 'target']);
 
   var el = _styledComponents2.default[is](_templateObject8, style);
   var opts = is === 'a' ? _extends({}, props, { href: href, rel: rel, target: target }) : props;
