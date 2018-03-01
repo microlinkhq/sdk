@@ -23,23 +23,10 @@ const emptyStateImagePulse = keyframes`
   }
 `
 
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`
-
 export const emptyStateAnimation = css`
   animation: ${emptyStatePulse} .75s linear infinite;
 `
 
 export const emptyStateImageAnimation = css`
   animation: ${emptyStateImagePulse} 1.25s linear infinite;
-`
-
-export const fadeInAnimation = css`
-  animation: ${fadeIn} .3s ease-out;
 `
