@@ -8,8 +8,7 @@ class Microlink extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      loading: true,
-      fetching: true
+      loading: true
     }
   }
 
@@ -37,7 +36,7 @@ class Microlink extends Component {
       title,
       description,
       url,
-      fetching: false,
+      loading: false,
       video,
       image: imageUrl
     })
@@ -57,7 +56,6 @@ class Microlink extends Component {
           autoPlay={autoPlay}
           muted={muted}
           loop={loop}
-          onLoad={() => this.setState({loading: false})}
         />
         <CardContent
           className='microlink_card__content'
@@ -71,7 +69,7 @@ class Microlink extends Component {
   }
 
   render () {
-    const {title, color, backgroundColor, url, loading, fetching} = this.state
+    const {title, color, backgroundColor, url, loading} = this.state
     const {className, size, ...props} = this.props
 
     return (
@@ -85,7 +83,7 @@ class Microlink extends Component {
         loading={loading}
         {...props}
       >
-        {!fetching ? this.renderContent() : <CardEmptyState cardSize={size} />}
+        {!loading ? this.renderContent() : <CardEmptyState cardSize={size} />}
       </CardWrap>
     )
   }
