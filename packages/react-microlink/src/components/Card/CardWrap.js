@@ -67,7 +67,7 @@ const style = css`
     outline: 0;
   }
 
-  ${({loading, contrast}) => hoverStyle}
+  ${({loading, contrast}) => !loading && hoverStyle}
 
   ${({round}) => round && roundStyle}
 
