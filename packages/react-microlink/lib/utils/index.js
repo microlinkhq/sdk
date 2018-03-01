@@ -7,8 +7,8 @@ exports.isLarge = exports.createApiUrl = exports.media = exports.someProp = expo
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _templateObject = _taggedTemplateLiteral(['\n    @media (max-width: 48em) {\n      ', '\n    }\n  '], ['\n    @media (max-width: 48em) {\n      ', '\n    }\n  ']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    @media (min-width: 48em) {\n      ', '\n    }\n  '], ['\n    @media (min-width: 48em) {\n      ', '\n    }\n  ']);
+var _templateObject = _taggedTemplateLiteral(['\n    @media (max-width: 48em) {\n      ', ';\n    }\n  '], ['\n    @media (max-width: 48em) {\n      ', ';\n    }\n  ']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    @media (min-width: 48em) {\n      ', ';\n    }\n  '], ['\n    @media (min-width: 48em) {\n      ', ';\n    }\n  ']);
 
 var _styledComponents = require('styled-components');
 

@@ -6,13 +6,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _templateObject = _taggedTemplateLiteral(['\n  background-color: ', ';\n  color: ', ';\n  border-color: ', ';\n  transition: filter .15s ease-in-out;\n\n  &:hover {\n    filter: brightness(90%);\n  }\n'], ['\n  background-color: ', ';\n  color: ', ';\n  border-color: ', ';\n  transition: filter .15s ease-in-out;\n\n  &:hover {\n    filter: brightness(90%);\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  flex-direction: column;\n  height: ', ';\n\n  ', '\n'], ['\n  flex-direction: column;\n  height: ', ';\n\n  ', '\n']),
+var _templateObject = _taggedTemplateLiteral(['\n  background-color: ', ';\n  border-color: ', ';\n  transition-property: filter;\n\n  &&& {\n    color: ', ';\n  }\n\n  &:hover {\n    filter: brightness(90%);\n  }\n'], ['\n  background-color: ', ';\n  border-color: ', ';\n  transition-property: filter;\n\n  &&& {\n    color: ', ';\n  }\n\n  &:hover {\n    filter: brightness(90%);\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  flex-direction: column;\n  height: ', ';\n  transition-property: background, border-color, height;\n\n  ', '\n'], ['\n  flex-direction: column;\n  height: ', ';\n  transition-property: background, border-color, height;\n\n  ', '\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    height: calc(', ' * 7/9);\n  '], ['\n    height: calc(', ' * 7/9);\n  ']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n'], ['\n  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  transition-property: background, border-color;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n'], ['\n  transition-property: background, border-color;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n  flex-direction: ', '\n'], ['\n  flex-direction: ', '\n']),
     _templateObject6 = _taggedTemplateLiteral(['\n  border-radius: ', ';\n'], ['\n  border-radius: ', ';\n']),
-    _templateObject7 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
     _templateObject8 = _taggedTemplateLiteral(['', ''], ['', '']);
 
 var _react = require('react');
@@ -39,7 +39,7 @@ var contrastStyle = function contrastStyle(_ref) {
 
 var largeStyle = (0, _styledComponents.css)(_templateObject2, HEIGHT, _utils.media.mobile(_templateObject3, HEIGHT));
 
-var loadingStyle = (0, _styledComponents.css)(_templateObject4);
+var hoverStyle = (0, _styledComponents.css)(_templateObject4);
 
 var reverseStyle = function reverseStyle(_ref2) {
   var cardSize = _ref2.cardSize;
@@ -48,13 +48,13 @@ var reverseStyle = function reverseStyle(_ref2) {
 
 var roundStyle = function roundStyle(_ref3) {
   var round = _ref3.round;
-  return (0, _styledComponents.css)(_templateObject6, typeof round === 'boolean' ? '.42857em' : round);
+  return (0, _styledComponents.css)(_templateObject6, round === true ? '.42857em' : round);
 };
 
 var style = (0, _styledComponents.css)(_templateObject7, function (_ref4) {
   var loading = _ref4.loading,
       contrast = _ref4.contrast;
-  return !loading && !contrast && loadingStyle;
+  return !loading && hoverStyle;
 }, function (_ref5) {
   var round = _ref5.round;
   return round && roundStyle;

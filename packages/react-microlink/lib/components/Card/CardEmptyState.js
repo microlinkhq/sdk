@@ -8,7 +8,7 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 var _templateObject = _taggedTemplateLiteral(['\n  ', '\n'], ['\n  ', '\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  height: 16px;\n  width: 60%;\n  display: block;\n  background: #e1e8ed;\n  margin: 2px 0 8px;\n  opacity: 0.8;\n  ', '\n'], ['\n  height: 16px;\n  width: 60%;\n  display: block;\n  background: #e1e8ed;\n  margin: 2px 0 8px;\n  opacity: 0.8;\n  ', '\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  width: 95%;\n  display: block;\n  background: #e1e8ed;\n  margin-bottom: 12px;\n  opacity: 0.8;\n  position: relative;\n  ', '\n  animation-delay: .125s;\n\n  height: 33px;\n\n  &:before {\n    content: \'\';\n    position: absolute;\n    left: -1px;\n    right: -1px;\n    height: 6px;\n    background: #fff;\n  }\n\n  &:before {\n    top: 14px;\n  }\n\n  &:after {\n    bottom: 14px;\n  }\n\n  ', '\n'], ['\n  width: 95%;\n  display: block;\n  background: #e1e8ed;\n  margin-bottom: 12px;\n  opacity: 0.8;\n  position: relative;\n  ', '\n  animation-delay: .125s;\n\n  height: 33px;\n\n  &:before {\n    content: \'\';\n    position: absolute;\n    left: -1px;\n    right: -1px;\n    height: 6px;\n    background: #fff;\n  }\n\n  &:before {\n    top: 14px;\n  }\n\n  &:after {\n    bottom: 14px;\n  }\n\n  ', '\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  width: 95%;\n  display: block;\n  background: #e1e8ed;\n  margin-bottom: 12px;\n  opacity: 0.8;\n  position: relative;\n  ', '\n  animation-delay: .125s;\n\n  height: 33px;\n\n  &::before {\n    content: \'\';\n    position: absolute;\n    left: -1px;\n    right: -1px;\n    height: 6px;\n    background: #fff;\n  }\n\n  &::before {\n    top: 14px;\n  }\n\n  &::after {\n    bottom: 14px;\n  }\n\n  ', '\n'], ['\n  width: 95%;\n  display: block;\n  background: #e1e8ed;\n  margin-bottom: 12px;\n  opacity: 0.8;\n  position: relative;\n  ', '\n  animation-delay: .125s;\n\n  height: 33px;\n\n  &::before {\n    content: \'\';\n    position: absolute;\n    left: -1px;\n    right: -1px;\n    height: 6px;\n    background: #fff;\n  }\n\n  &::before {\n    top: 14px;\n  }\n\n  &::after {\n    bottom: 14px;\n  }\n\n  ', '\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n    height: 14px;\n  '], ['\n    height: 14px;\n  ']),
     _templateObject5 = _taggedTemplateLiteral(['\n  height: 10px;\n  width: 30%;\n  display: block;\n  background: #e1e8ed;\n  opacity: 0.8;\n  ', '\n  animation-delay: .25s;\n'], ['\n  height: 10px;\n  width: 30%;\n  display: block;\n  background: #e1e8ed;\n  opacity: 0.8;\n  ', '\n  animation-delay: .25s;\n']);
 
@@ -20,7 +20,7 @@ var _styledComponents = require('styled-components');
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _CardAnimations = require('./CardAnimations');
+var _CardAnimation = require('./CardAnimation');
 
 var _image = require('./CardMedia/image');
 
@@ -34,16 +34,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var EmptyImage = _image2.default.extend(_templateObject, _CardAnimations.emptyStateImageAnimation);
+var EmptyImage = _image2.default.extend(_templateObject, _CardAnimation.emptyStateImageAnimation);
 
-var EmptyTitle = _styledComponents2.default.span(_templateObject2, _CardAnimations.emptyStateAnimation);
+var EmptyTitle = _styledComponents2.default.span(_templateObject2, _CardAnimation.emptyStateAnimation);
 
-var EmptyDescription = _styledComponents2.default.span(_templateObject3, _CardAnimations.emptyStateAnimation, function (_ref) {
+var EmptyDescription = _styledComponents2.default.span(_templateObject3, _CardAnimation.emptyStateAnimation, function (_ref) {
   var cardSize = _ref.cardSize;
   return cardSize !== 'large' && _utils.media.mobile(_templateObject4);
 });
 
-var EmptyLink = _styledComponents2.default.span(_templateObject5, _CardAnimations.emptyStateAnimation);
+var EmptyLink = _styledComponents2.default.span(_templateObject5, _CardAnimation.emptyStateAnimation);
 
 var CardEmptyState = function CardEmptyState(_ref2) {
   var cardSize = _ref2.cardSize;
