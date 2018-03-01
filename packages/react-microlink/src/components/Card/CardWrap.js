@@ -67,7 +67,7 @@ const style = css`
     outline: 0;
   }
 
-  ${({loading, contrast}) => !loading && hoverStyle}
+  ${({loading, contrast}) => !loading && !contrast && hoverStyle}
 
   ${({round}) => round && roundStyle}
 
@@ -76,6 +76,8 @@ const style = css`
   ${({reverse}) => reverse && reverseStyle}
 
   ${({backgroundColor, color, contrast}) => contrast && color && backgroundColor && contrastStyle}
+
+  ${({backgroundColor, color, contrast}) => contrast && (!color || !backgroundColor) && hoverStyle}
 `
 
 const CardWrap = ({ is, rel, href, target, ...props }) => {
