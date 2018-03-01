@@ -1,33 +1,14 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 
-import {media, isLarge, getUrlPath} from '../../../utils'
+import {getUrlPath} from '../../../utils'
 
-const largeStyle = css`
-  flex: 1;
+import MediaWrap from './wrap'
 
-  &::before {
-    padding-bottom: 0;
+const VideoWrapper = MediaWrap.extend`
+  &::after {
+    z-index: 101;
   }
-`
-
-const VideoWrapper = styled.div`
-  background-color: #e1e8ed;
-  display: block;
-  flex: 0 0 125px;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-
-  &::before {
-    content: '';
-    padding-bottom: 100%;
-    display: block;
-  }
-
-  ${({cardSize}) => isLarge(cardSize) ? largeStyle : media.mobile`
-    flex: 0 0 92px;
-  `}
 `
 
 const Video = styled.video`
@@ -55,12 +36,14 @@ const CardVideo = ({
   image,
   muted,
   autoPlay,
+  loading,
   loop
 }) => {
   return (
     <VideoWrapper
       className='microlink_card__media_video_wrapper'
-      cardSize={cardSize}>
+      cardSize={cardSize}
+      loading={loading}>
       <Video
         className='microlink_card__media_video'
         src={getUrlPath(video)}
