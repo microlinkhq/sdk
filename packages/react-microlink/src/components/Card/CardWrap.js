@@ -29,7 +29,7 @@ const largeStyle = css`
   `}
 `
 
-const normalStyle = css`
+const hoverStyle = css`
   transition-property: background, border-color;
   &:hover {
     background: #F5F8FA;
@@ -67,7 +67,7 @@ const style = css`
     outline: 0;
   }
 
-  ${({loading, contrast}) => normalStyle}
+  ${({loading, contrast}) => hoverStyle}
 
   ${({round}) => round && roundStyle}
 
