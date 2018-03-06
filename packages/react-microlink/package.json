@@ -34,8 +34,7 @@
   ],
   "dependencies": {
     "extract-domain": "~2.0.0",
-    "nanoclamp": "~1.2.4",
-    "styled-components": "~3.1.6"
+    "nanoclamp": "~1.2.4"
   },
   "devDependencies": {
     "@storybook/addon-options": "latest",
@@ -67,6 +66,9 @@
     "storybook-addon-jsx": "latest",
     "unfetch": "latest",
     "unique-random-array": "latest"
+  },
+  "peerDependencies": {
+    "styled-components": "~3.1.6"
   },
   "engines": {
     "node": ">= 8"
