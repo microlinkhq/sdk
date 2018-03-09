@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import styled, {css} from 'styled-components/primitives'
 
 import {media, isLarge} from '../../../utils'
 import {loadingOverlay} from './loader'
@@ -15,7 +15,7 @@ const mobileStyle = media.mobile`
   flex: 0 0 92px;
 `
 
-export default styled.div`
+export default styled.View`
   background: #e1e8ed no-repeat center center / cover;
   display: block;
   flex: 0 0 125px;

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
+import styled, {css} from 'styled-components/primitives'
 import extractDomain from 'extract-domain'
 import CardText from './CardText'
 
@@ -21,7 +21,7 @@ const mobileDescriptionStyle = css`
   `}
 `
 
-export const Content = styled.div`
+export const Content = styled.View`
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -32,22 +32,22 @@ export const Content = styled.div`
   ${({cardSize}) => isLarge(cardSize) && largeContentStyle};
 `
 
-const Title = styled.header`
+const Title = styled.Text`
   font-size: 16px;
   font-weight: bold;
   margin: 0;
   flex-grow: 1.2;
 `
 
-const Description = styled.div`
+const Description = styled.Text`
   font-size: 14px;
   flex-grow: 2;
-  margin: auto 0;
+  margin: 0;
   line-height: 18px;
   ${({cardSize}) => !isLarge(cardSize) && mobileDescriptionStyle};
 `
 
-const Url = styled.footer`
+const Url = styled.Text`
   font-size: 12px;
   margin: 0;
   flex-grow: 0;

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/primitives'
 
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
 import CardImage from './CardMedia/image'
@@ -10,7 +10,7 @@ const EmptyImage = CardImage.extend`
   ${emptyStateImageAnimation}
 `
 
-const EmptyTitle = styled.span`
+const EmptyTitle = styled.View`
   height: 16px;
   width: 60%;
   display: block;
@@ -20,7 +20,7 @@ const EmptyTitle = styled.span`
   ${emptyStateAnimation}
 `
 
-const EmptyDescription = styled.span`
+const EmptyDescription = styled.View`
   width: 95%;
   display: block;
   background: #e1e8ed;
@@ -54,7 +54,7 @@ const EmptyDescription = styled.span`
   `}
 `
 
-const EmptyLink = styled.span`
+const EmptyLink = styled.View`
   height: 10px;
   width: 30%;
   display: block;
