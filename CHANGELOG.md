@@ -4,6 +4,15 @@
 
 
 
+<a name="1.7.3"></a>
+## <small>1.7.3 (2018-03-13)</small>
+
+* Bundle all dependencies ([a458d13](https://github.com/microlinkhq/react-microlink/commit/a458d13))
+* Update Changelog ([d10ae4e](https://github.com/microlinkhq/react-microlink/commit/d10ae4e))
+* v1.7.3 ([8f612e3](https://github.com/microlinkhq/react-microlink/commit/8f612e3))
+
+
+
 <a name="1.7.2"></a>
 ## <small>1.7.2 (2018-03-13)</small>
 
