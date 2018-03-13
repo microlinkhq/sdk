@@ -60,15 +60,13 @@
     "prop-types": "latest",
     "react": "^16",
     "react-dom": "^16",
+    "styled-components": "~3.1.6",
     "size-limit": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
     "unfetch": "latest",
     "unique-random-array": "latest"
-  },
-  "peerDependencies": {
-    "styled-components": "~3.1.6"
   },
   "engines": {
     "node": ">= 8"
@@ -104,7 +102,8 @@
     ]
   },
   "peerDependencies": {
-    "react": ">= 16 < 17"
+    "react": ">= 16 < 17",
+    "styled-components": "3"
   },
   "size-limit": [
     {
