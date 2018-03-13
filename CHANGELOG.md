@@ -1,6 +1,19 @@
 <a name=""></a>
-##  (2018-03-01)
+##  (2018-03-13)
 
+
+
+
+<a name="1.7.2"></a>
+## <small>1.7.2 (2018-03-13)</small>
+
+* Add `styled-components` to webpack prod config’s `externals` ([f35f83a](https://github.com/microlinkhq/react-microlink/commit/f35f83a))
+* Fix local build ([6caf760](https://github.com/microlinkhq/react-microlink/commit/6caf760))
+* Move `styled-components` to `peerDependencies` ([2e0aa3e](https://github.com/microlinkhq/react-microlink/commit/2e0aa3e))
+* Update Changelog ([28ac055](https://github.com/microlinkhq/react-microlink/commit/28ac055))
+* Update dependencies ([cc054dc](https://github.com/microlinkhq/react-microlink/commit/cc054dc))
+* Update package.json ([c87e38c](https://github.com/microlinkhq/react-microlink/commit/c87e38c))
+* v1.7.2 ([27a7ea5](https://github.com/microlinkhq/react-microlink/commit/27a7ea5))
 
 
 
