@@ -33,9 +33,8 @@
     "previsualization"
   ],
   "dependencies": {
-    "extract-domain": "~2.0.0",
-    "nanoclamp": "~1.2.4",
-    "styled-components": "~3.1.6"
+    "extract-domain": "~2.0.3",
+    "nanoclamp": "~1.2.5"
   },
   "devDependencies": {
     "@storybook/addon-options": "latest",
@@ -61,6 +60,7 @@
     "prop-types": "latest",
     "react": "^16",
     "react-dom": "^16",
+    "styled-components": "~3.2.1",
     "size-limit": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
@@ -102,7 +102,8 @@
     ]
   },
   "peerDependencies": {
-    "react": ">= 16 < 17"
+    "react": ">= 16 < 17",
+    "styled-components": "3"
   },
   "size-limit": [
     {

@@ -45,6 +45,7 @@
     "dotenv": "latest",
     "extract-text-webpack-plugin": "latest",
     "fs-extra": "latest",
+    "html-webpack-plugin": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
