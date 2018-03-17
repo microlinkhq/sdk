@@ -2,7 +2,7 @@
   "name": "microlinkjs",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "1.6.3",
+  "version": "1.7.3",
   "main": "src/index.js",
   "author": {
     "email": "hi@breadadams.com",
@@ -32,15 +32,13 @@
     "previsualization"
   ],
   "dependencies": {
-    "react-microlink": "^1.6.3"
+    "react-microlink": "^1.7.2"
   },
   "devDependencies": {
-    "babel-cli": "latest",
+    "babel-core": "latest",
     "babel-loader": "latest",
     "babel-plugin-transform-object-rest-spread": "latest",
     "babel-preset-env": "latest",
-    "babel-preset-react": "latest",
-    "babel-preset-react-app": "latest",
     "case-sensitive-paths-webpack-plugin": "latest",
     "chalk": "latest",
     "dom101": "latest",
@@ -59,8 +57,7 @@
     "standard-markdown": "latest",
     "unminified-webpack-plugin": "latest",
     "webpack": "latest",
-    "webpack-dev-server": "latest",
-    "webpack-manifest-plugin": "latest"
+    "webpack-dev-server": "latest"
   },
   "engines": {
     "node": ">= 8"
@@ -73,9 +70,9 @@
   ],
   "scripts": {
     "build": "npm run build:umd && npm run build:amd && npm run build:cjs",
-    "build:umd": "./scripts/build umd",
     "build:amd": "./scripts/build amd",
     "build:cjs": "./scripts/build cjs",
+    "build:umd": "./scripts/build umd",
     "dev": "./scripts/start",
     "lint": "standard-markdown && standard src",
     "prepublishOnly": "npm run build",

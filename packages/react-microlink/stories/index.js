@@ -86,7 +86,8 @@ storiesOf('Normal', module)
           url={url}
           style={{
             marginBottom: '20px',
-            fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'
+            fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace',
+            boxShadow: '0 1px 4px 0 hsla(0, 0%, 0%, 0.2)'
           }}
           round
         />
@@ -235,7 +236,8 @@ storiesOf('Large', module)
           url={url}
           style={{
             marginBottom: '20px',
-            fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace'
+            fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace',
+            boxShadow: '0 1px 4px 0 hsla(0, 0%, 0%, 0.2)'
           }}
           round
           size='large'

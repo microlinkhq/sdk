@@ -1,14 +1,88 @@
 <a name=""></a>
-##  (2018-02-25)
+##  (2018-03-13)
 
+
+
+
+<a name="1.7.3"></a>
+## <small>1.7.3 (2018-03-13)</small>
+
+* Bundle all dependencies ([a458d13](https://github.com/microlinkhq/react-microlink/commit/a458d13))
+* Update Changelog ([d10ae4e](https://github.com/microlinkhq/react-microlink/commit/d10ae4e))
+* v1.7.3 ([8f612e3](https://github.com/microlinkhq/react-microlink/commit/8f612e3))
+
+
+
+<a name="1.7.2"></a>
+## <small>1.7.2 (2018-03-13)</small>
+
+* Add `styled-components` to webpack prod config’s `externals` ([f35f83a](https://github.com/microlinkhq/react-microlink/commit/f35f83a))
+* Fix local build ([6caf760](https://github.com/microlinkhq/react-microlink/commit/6caf760))
+* Move `styled-components` to `peerDependencies` ([2e0aa3e](https://github.com/microlinkhq/react-microlink/commit/2e0aa3e))
+* Update Changelog ([28ac055](https://github.com/microlinkhq/react-microlink/commit/28ac055))
+* Update dependencies ([cc054dc](https://github.com/microlinkhq/react-microlink/commit/cc054dc))
+* Update package.json ([c87e38c](https://github.com/microlinkhq/react-microlink/commit/c87e38c))
+* v1.7.2 ([27a7ea5](https://github.com/microlinkhq/react-microlink/commit/27a7ea5))
+
+
+
+<a name="1.7.1"></a>
+## <small>1.7.1 (2018-03-01)</small>
+
+* Fix hover for contrast style ([cddb784](https://github.com/microlinkhq/react-microlink/commit/cddb784))
+* Update Changelog ([0c0f313](https://github.com/microlinkhq/react-microlink/commit/0c0f313))
+* v1.7.1 ([0e1cf8a](https://github.com/microlinkhq/react-microlink/commit/0e1cf8a))
+
+
+
+<a name="1.7.0"></a>
+## 1.7.0 (2018-03-01)
+
+* Add `hasImage` check to CardMedia ([5e83711](https://github.com/microlinkhq/react-microlink/commit/5e83711))
+* Add custom box shadow style ([461e8fa](https://github.com/microlinkhq/react-microlink/commit/461e8fa))
+* Add custom box shadow style ([f76bc75](https://github.com/microlinkhq/react-microlink/commit/f76bc75))
+* Avoid hover style on empty state ([6ed41ef](https://github.com/microlinkhq/react-microlink/commit/6ed41ef))
+* CardAnimations → CardAnimation ([d9a6cf9](https://github.com/microlinkhq/react-microlink/commit/d9a6cf9))
+* Fix “undefined” being loaded for CardMedia/Image ([c516c79](https://github.com/microlinkhq/react-microlink/commit/c516c79))
+* Fix `clean` package script ([a5462f9](https://github.com/microlinkhq/react-microlink/commit/a5462f9))
+* Fix lint integration ([34f7d44](https://github.com/microlinkhq/react-microlink/commit/34f7d44))
+* Fix linter warnings ([7aa912d](https://github.com/microlinkhq/react-microlink/commit/7aa912d))
+* Fix motion related with large card size ([942ab30](https://github.com/microlinkhq/react-microlink/commit/942ab30))
+* Lint ([1a05b10](https://github.com/microlinkhq/react-microlink/commit/1a05b10))
+* More refactoring ([a0ac9aa](https://github.com/microlinkhq/react-microlink/commit/a0ac9aa))
+* More refactoring ([cd35b69](https://github.com/microlinkhq/react-microlink/commit/cd35b69))
+* Only render CardMedia image load catcher while loading ([a8a8be9](https://github.com/microlinkhq/react-microlink/commit/a8a8be9))
+* Passing props ([dccaa37](https://github.com/microlinkhq/react-microlink/commit/dccaa37))
+* Refactor CardMedia ([d61f0c1](https://github.com/microlinkhq/react-microlink/commit/d61f0c1))
+* Refactor CardMedia & CardMedia/image ([ce31965](https://github.com/microlinkhq/react-microlink/commit/ce31965))
+* Refactor main lifecycle method ([d38f9ae](https://github.com/microlinkhq/react-microlink/commit/d38f9ae))
+* Regenerate builds ([a7650e1](https://github.com/microlinkhq/react-microlink/commit/a7650e1))
+* Remove text fadein ([c477464](https://github.com/microlinkhq/react-microlink/commit/c477464))
+* Remove unnecessary event ([c3ece5c](https://github.com/microlinkhq/react-microlink/commit/c3ece5c))
+* Remove unnecessary prop from CardWrap ([b1c3e95](https://github.com/microlinkhq/react-microlink/commit/b1c3e95))
+* Rename ([75e25e7](https://github.com/microlinkhq/react-microlink/commit/75e25e7))
+* Unify loading state ([4016eec](https://github.com/microlinkhq/react-microlink/commit/4016eec))
+* Update build process ([cd4d9e9](https://github.com/microlinkhq/react-microlink/commit/cd4d9e9))
+* Update CardMedia’s `renderLoadCatcher` conditional ([b0ec8cb](https://github.com/microlinkhq/react-microlink/commit/b0ec8cb))
+* Update Changelog ([0dc40b9](https://github.com/microlinkhq/react-microlink/commit/0dc40b9))
+* v1.7.0 ([90023fb](https://github.com/microlinkhq/react-microlink/commit/90023fb))
+* WIP ([d2caf56](https://github.com/microlinkhq/react-microlink/commit/d2caf56))
 
 
 
 <a name="1.6.3"></a>
 ## <small>1.6.3 (2018-02-25)</small>
 
+* Add fade effect to CardMedia on load ([41e43d5](https://github.com/microlinkhq/react-microlink/commit/41e43d5))
 * Fix server side support ([511d5a3](https://github.com/microlinkhq/react-microlink/commit/511d5a3))
+* Misc. style tweaks ([84b0752](https://github.com/microlinkhq/react-microlink/commit/84b0752))
+* Move CardText font-family back to CardWrap ([b13cd69](https://github.com/microlinkhq/react-microlink/commit/b13cd69))
+* Move CardText styles to `inherit` too 💡 ([6ef3533](https://github.com/microlinkhq/react-microlink/commit/6ef3533))
+* Refactor ([cc96666](https://github.com/microlinkhq/react-microlink/commit/cc96666))
 * Remove `props` from constructor ([3c6c585](https://github.com/microlinkhq/react-microlink/commit/3c6c585))
+* Remove unncessary `createElement` React import ([41af8ce](https://github.com/microlinkhq/react-microlink/commit/41af8ce))
+* Strengthen `contrast` text styles ([642617e](https://github.com/microlinkhq/react-microlink/commit/642617e))
+* Strengthen CardText styles ([1b0d830](https://github.com/microlinkhq/react-microlink/commit/1b0d830))
 * Update Changelog ([f6c97fc](https://github.com/microlinkhq/react-microlink/commit/f6c97fc))
 * Update size command ([30c997a](https://github.com/microlinkhq/react-microlink/commit/30c997a))
 * v1.6.3 ([64c8a24](https://github.com/microlinkhq/react-microlink/commit/64c8a24))
