@@ -75,6 +75,7 @@
     "build:umd": "./scripts/build umd",
     "dev": "./scripts/start",
     "lint": "standard-markdown && standard src",
+    "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint && npm run update",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
@@ -83,6 +84,10 @@
   },
   "license": "MIT",
   "lint-staged": {
+    "package.json": [
+      "finepack",
+      "git add"
+    ],
     "*.js": [
       "prettier-standard",
       "git add"
