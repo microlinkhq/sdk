@@ -6,12 +6,6 @@ import {PlayButton, ProgressBar} from './controls'
 import MediaWrap from '../wrap'
 import {getUrlPath} from '../../../../utils'
 
-const CustomMotion = styled(Motion)`
-div.microlink_card:not(:hover) & {
-  opacity: 0 !important;
-}
-`
-
 const Video = styled.video`
   width: 100%;
   height: 100%;
@@ -66,7 +60,7 @@ class CardVideo extends Component {
       : {stiffness: 60, damping: 40}
 
     return (
-      <CustomMotion
+      <Motion
         style={{ smoothWidth: spring(progress, config) }}
       >
         {values => (
@@ -76,7 +70,7 @@ class CardVideo extends Component {
             playing={playing}
           />
         )}
-      </CustomMotion>
+      </Motion>
     )
   }
 
