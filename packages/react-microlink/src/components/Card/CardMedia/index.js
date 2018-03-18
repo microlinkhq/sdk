@@ -2,8 +2,8 @@ import {createElement, Component} from 'react'
 
 import {getUrlPath} from '../../../utils'
 
-import Image from './image'
-import Video from './video'
+import Image from './Image'
+import Video from './Video'
 import {ImageLoadCatcher} from './loader'
 
 const isUrl = url => getUrlPath(url) !== null

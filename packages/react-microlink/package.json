@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "extract-domain": "~2.0.3",
-    "nanoclamp": "~1.2.5"
+    "nanoclamp": "~1.2.6"
   },
   "devDependencies": {
     "@storybook/addon-options": "latest",
@@ -64,7 +64,7 @@
     "standard": "latest",
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
-    "styled-components": "~3.2.1",
+    "styled-components": "~3.2.3",
     "unfetch": "latest",
     "unique-random-array": "latest"
   },
@@ -76,15 +76,16 @@
   ],
   "scripts": {
     "build": "npm run build:babel && npm run build:microbundle",
-    "build-storybook": "build-storybook",
+    "build-storybook": "NODE_ENV=production build-storybook",
     "build:babel": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
     "build:microbundle": "NODE_ENV=production microbundle build --target browser --entry lib/index.js --format es,cjs",
     "dev": "start-storybook -p 6006",
+    "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard-markdown && standard",
     "posttest": "npm run size",
+    "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint && npm run update",
-    "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "size": "size-limit",
     "start": "node scripts/start.js",
     "test": "exit 0",
