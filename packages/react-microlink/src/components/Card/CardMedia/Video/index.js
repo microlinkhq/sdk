@@ -1,10 +1,16 @@
+import {Motion, spring} from 'react-motion'
 import React, {Component} from 'react'
 import styled from 'styled-components'
 
-import {getUrlPath} from '../../../../utils'
-
 import {PlayButton, ProgressBar} from './controls'
 import MediaWrap from '../wrap'
+import {getUrlPath} from '../../../../utils'
+
+const CustomMotion = styled(Motion)`
+div.microlink_card:not(:hover) & {
+  opacity: 0 !important;
+}
+`
 
 const Video = styled.video`
   width: 100%;
@@ -51,6 +57,29 @@ class CardVideo extends Component {
     this.setState({progress})
   }
 
+  renderProgressBar () {
+    const { playing, progress } = this.state
+    const { cardSize } = this.props
+
+    const config = progress < 1
+      ? {stiffness: 390, damping: 20}
+      : {stiffness: 60, damping: 40}
+
+    return (
+      <CustomMotion
+        style={{ smoothWidth: spring(progress, config) }}
+      >
+        {values => (
+          <ProgressBar
+            cardSize={cardSize}
+            progress={progress < 2 ? progress : values.smoothWidth}
+            playing={playing}
+          />
+        )}
+      </CustomMotion>
+    )
+  }
+
   render () {
     const {
       autoPlay,
@@ -63,7 +92,7 @@ class CardVideo extends Component {
       playsInline,
       video
     } = this.props
-    const {playing, progress} = this.state
+    const {playing} = this.state
 
     return (
       <MediaWrap
@@ -84,7 +113,7 @@ class CardVideo extends Component {
           {...(controls ? {onTimeUpdate: this.updateProgress} : {})}
         />
         <PlayButton cardSize={cardSize} visible={controls && !playing} />
-        {controls && <ProgressBar cardSize={cardSize} progress={progress} playing={playing} />}
+        {controls && this.renderProgressBar()}
       </MediaWrap>
     )
   }

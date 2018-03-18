@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const PLAY_BUTTON_SIZE = 22
 const PROGRESS_BAR_HEIGHT = 2
 
-const getSize = (base, size) => base * (size === 'normal' ? 1 : 1.6)
+const getSize = (base, size) => base * (size === 'normal' ? 1 : 1.75)
 
 export const PlayButton = styled.div`
   position: absolute;
@@ -15,25 +15,25 @@ export const PlayButton = styled.div`
   opacity: ${({visible}) => (visible ? 1 : 0)};
   transition: opacity 0.15s ease-in-out;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
     position: absolute;
     background: inherit;
   }
 
   &,
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     width: ${({cardSize}) => getSize(PLAY_BUTTON_SIZE, cardSize)}px;
     height: ${({cardSize}) => getSize(PLAY_BUTTON_SIZE, cardSize)}px;
     border-top-right-radius: 30%;
   }
 
-  &:before {
+  &::before {
     transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
   }
-  &:after {
+  &::after {
     transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
   }
 `
@@ -49,9 +49,9 @@ export const ProgressBar = styled.div.attrs({
   bottom: 0;
   background: #e1e8ed;
   height: ${({cardSize}) => getSize(PROGRESS_BAR_HEIGHT, cardSize)}px;
-  transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 
-  div.microlink_card:not(:hover) & {
+  .microlink_card:not(:hover) & {
     opacity: 0 !important;
   }
 `
