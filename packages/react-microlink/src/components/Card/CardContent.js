@@ -56,13 +56,13 @@ const Url = styled.footer`
 export default ({title, description, url, cardSize, className}) => (
   <Content className={className} cardSize={cardSize}>
     <Title className='microlink_card__content_title'>
-      <CardText lines={1}>{title}</CardText>
+      {title && <CardText lines={1}>{title}</CardText>}
     </Title>
     <Description className='microlink_card__content_description' cardSize={cardSize}>
-      <CardText lines={2}>{description}</CardText>
+      {description && <CardText lines={2}>{description}</CardText>}
     </Description>
     <Url className='microlink_card__content_url'>
-      <CardText lines={1}>{extractDomain(url)}</CardText>
+      {url && <CardText lines={1}>{extractDomain(url)}</CardText>}
     </Url>
   </Content>
 )
