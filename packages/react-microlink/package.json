@@ -34,8 +34,7 @@
   ],
   "dependencies": {
     "extract-domain": "~2.0.3",
-    "nanoclamp": "~1.2.5",
-    "react-motion": "~0.5.2"
+    "nanoclamp": "~1.2.5"
   },
   "devDependencies": {
     "@storybook/addon-options": "latest",

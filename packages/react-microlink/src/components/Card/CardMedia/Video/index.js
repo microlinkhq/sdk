@@ -1,4 +1,3 @@
-import {Motion, spring} from 'react-motion'
 import React, {Component} from 'react'
 import styled from 'styled-components'
 
@@ -51,29 +50,6 @@ class CardVideo extends Component {
     this.setState({progress})
   }
 
-  renderProgressBar () {
-    const { playing, progress } = this.state
-    const { cardSize } = this.props
-
-    const config = progress < 1
-      ? {stiffness: 390, damping: 20}
-      : {stiffness: 60, damping: 40}
-
-    return (
-      <Motion
-        style={{ smoothWidth: spring(progress, config) }}
-      >
-        {values => (
-          <ProgressBar
-            cardSize={cardSize}
-            progress={progress < 2 ? progress : values.smoothWidth}
-            playing={playing}
-          />
-        )}
-      </Motion>
-    )
-  }
-
   render () {
     const {
       autoPlay,
@@ -86,7 +62,7 @@ class CardVideo extends Component {
       playsInline,
       video
     } = this.props
-    const {playing} = this.state
+    const {playing, progress} = this.state
 
     return (
       <MediaWrap
@@ -107,7 +83,11 @@ class CardVideo extends Component {
           {...(controls ? {onTimeUpdate: this.updateProgress} : {})}
         />
         <PlayButton cardSize={cardSize} visible={controls && !playing} />
-        {controls && this.renderProgressBar()}
+        {controls && <ProgressBar
+          cardSize={cardSize}
+          progress={progress}
+          playing={playing}
+        />}
       </MediaWrap>
     )
   }
