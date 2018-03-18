@@ -40,14 +40,14 @@ class CardVideo extends Component {
       event.preventDefault()
       this.setState(({playing}) => {
         const action = !playing ? 'play' : 'pause'
-        this.videoEl[action]()
+        this.video[action]()
         return {playing: !playing}
       })
     }
   }
 
-  videoPlaying = () => {
-    const progress = this.videoEl.currentTime / this.videoEl.duration * 100
+  updateProgress = () => {
+    const progress = this.video.currentTime / this.video.duration * 100
     this.setState({progress})
   }
 
@@ -80,11 +80,11 @@ class CardVideo extends Component {
           autoPlay={autoPlay}
           loop={loop}
           playsInline={playsInline}
-          innerRef={video => (this.videoEl = video)}
-          {...(controls ? {onTimeUpdate: this.videoPlaying} : {})}
+          innerRef={node => (this.video = node)}
+          {...(controls ? {onTimeUpdate: this.updateProgress} : {})}
         />
-        <PlayButton visible={controls && !playing} />
-        {controls && <ProgressBar progress={progress} playing={playing} />}
+        <PlayButton cardSize={cardSize} visible={controls && !playing} />
+        {controls && <ProgressBar cardSize={cardSize} progress={progress} playing={playing} />}
       </MediaWrap>
     )
   }
