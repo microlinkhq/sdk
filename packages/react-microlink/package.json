@@ -86,7 +86,7 @@
     "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint && npm run update",
-    "size": "size-limit",
+    "size": "npm run build && size-limit",
     "start": "node scripts/start.js",
     "test": "exit 0",
     "update": "ncu --error-level 2"
