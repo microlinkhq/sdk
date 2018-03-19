@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import {PlayButton, ProgressBar} from './controls'
+import { PlayButton, ProgressBar } from './controls'
 import MediaWrap from '../wrap'
-import {getUrlPath} from '../../../../utils'
+import { getUrlPath } from '../../../../utils'
 
 const Video = styled.video`
   width: 100%;
@@ -15,7 +15,7 @@ const Video = styled.video`
   bottom: 0;
   left: 0;
 
-  ${({autoPlay}) =>
+  ${({ autoPlay }) =>
     autoPlay &&
     `
     &::media-controls-start-playback-button {
@@ -37,17 +37,17 @@ class CardVideo extends Component {
   togglePlayback = event => {
     if (this.props.controls) {
       event.preventDefault()
-      this.setState(({playing}) => {
+      this.setState(({ playing }) => {
         const action = !playing ? 'play' : 'pause'
         this.video[action]()
-        return {playing: !playing}
+        return { playing: !playing }
       })
     }
   }
 
   updateProgress = () => {
     const progress = this.video.currentTime / this.video.duration * 100
-    this.setState({progress})
+    this.setState({ progress })
   }
 
   render () {
@@ -60,9 +60,10 @@ class CardVideo extends Component {
       loop,
       muted,
       playsInline,
-      video
+      video,
+      ...props
     } = this.props
-    const {playing, progress} = this.state
+    const { playing, progress } = this.state
 
     return (
       <MediaWrap
@@ -70,6 +71,7 @@ class CardVideo extends Component {
         cardSize={cardSize}
         loading={loading}
         onClick={this.togglePlayback}
+        {...props}
       >
         <Video
           className='microlink_card__media_video'
@@ -80,14 +82,16 @@ class CardVideo extends Component {
           loop={loop}
           playsInline={playsInline}
           innerRef={node => (this.video = node)}
-          {...(controls ? {onTimeUpdate: this.updateProgress} : {})}
+          {...(controls ? { onTimeUpdate: this.updateProgress } : {})}
         />
         <PlayButton cardSize={cardSize} visible={controls && !playing} />
-        {controls && <ProgressBar
-          cardSize={cardSize}
-          progress={progress}
-          playing={playing}
-        />}
+        {controls && (
+          <ProgressBar
+            cardSize={cardSize}
+            progress={progress}
+            playing={playing}
+          />
+        )}
       </MediaWrap>
     )
   }
