@@ -1,6 +1,15 @@
 <a name=""></a>
-##  (2018-03-18)
+##  (2018-03-19)
 
+
+
+
+<a name="1.8.1"></a>
+## <small>1.8.1 (2018-03-19)</small>
+
+* Fix pass key prop ([f828882](https://github.com/microlinkhq/react-microlink/commit/f828882))
+* Update Changelog ([8e9898c](https://github.com/microlinkhq/react-microlink/commit/8e9898c))
+* v1.8.1 ([4fe44f0](https://github.com/microlinkhq/react-microlink/commit/4fe44f0))
 
 
 
