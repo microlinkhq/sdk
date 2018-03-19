@@ -4753,9 +4753,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -4778,6 +4778,8 @@ var _wrap2 = _interopRequireDefault(_wrap);
 var _utils = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -4839,36 +4841,44 @@ var CardVideo = function (_Component) {
           loop = _props.loop,
           muted = _props.muted,
           playsInline = _props.playsInline,
-          video = _props.video;
+          video = _props.video,
+          props = _objectWithoutProperties(_props, ['autoPlay', 'cardSize', 'controls', 'image', 'loading', 'loop', 'muted', 'playsInline', 'video']);
+
       var _state = this.state,
           playing = _state.playing,
           progress = _state.progress;
 
 
-      return _jsx(_wrap2.default, {
-        className: 'microlink_card__media_video_wrapper',
-        cardSize: cardSize,
-        loading: loading,
-        onClick: this.togglePlayback
-      }, void 0, _react2.default.createElement(Video, _extends({
-        className: 'microlink_card__media_video',
-        src: (0, _utils.getUrlPath)(video),
-        poster: image,
-        muted: muted,
-        autoPlay: autoPlay,
-        loop: loop,
-        playsInline: playsInline,
-        innerRef: function innerRef(node) {
-          return _this2.video = node;
-        }
-      }, controls ? { onTimeUpdate: this.updateProgress } : {})), _jsx(_controls.PlayButton, {
-        cardSize: cardSize,
-        visible: controls && !playing
-      }), controls && _jsx(_controls.ProgressBar, {
-        cardSize: cardSize,
-        progress: progress,
-        playing: playing
-      }));
+      return _react2.default.createElement(
+        _wrap2.default,
+        _extends({
+          className: 'microlink_card__media_video_wrapper',
+          cardSize: cardSize,
+          loading: loading,
+          onClick: this.togglePlayback
+        }, props),
+        _react2.default.createElement(Video, _extends({
+          className: 'microlink_card__media_video',
+          src: (0, _utils.getUrlPath)(video),
+          poster: image,
+          muted: muted,
+          autoPlay: autoPlay,
+          loop: loop,
+          playsInline: playsInline,
+          innerRef: function innerRef(node) {
+            return _this2.video = node;
+          }
+        }, controls ? { onTimeUpdate: this.updateProgress } : {})),
+        _jsx(_controls.PlayButton, {
+          cardSize: cardSize,
+          visible: controls && !playing
+        }),
+        controls && _jsx(_controls.ProgressBar, {
+          cardSize: cardSize,
+          progress: progress,
+          playing: playing
+        })
+      );
     }
   }]);
 
