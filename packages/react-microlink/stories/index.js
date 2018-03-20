@@ -72,14 +72,36 @@ storiesOf('custom', module)
       })
     )
   )
-  .addWithJSX('style', () =>
+
+storiesOf('custom/style', module)
+  .addWithJSX('width', () =>
     urls.map(url =>
       createMicrolink({
         url,
         style: {
           marginBottom: '20px',
-          height: getRandomSize([150, 175, 200, 250, 300, 350]),
-          width: getRandomSize([300, 400, 500, 600, 700, 800]),
+          width: getRandomSize([300, 400, 500, 600, 700, 800])
+        }
+      })
+    )
+  )
+  .addWithJSX('height', () =>
+    urls.map(url =>
+      createMicrolink({
+        url,
+        style: {
+          marginBottom: '20px',
+          height: getRandomSize([150, 175, 200, 250, 300, 350])
+        }
+      })
+    )
+  )
+  .addWithJSX('misc', () =>
+    urls.map(url =>
+      createMicrolink({
+        url,
+        style: {
+          marginBottom: '20px',
           fontFamily: 'Nitti, "Microsoft YaHei", 微软雅黑, monospace',
           boxShadow: '0 1px 4px 0 hsla(0, 0%, 0%, 0.2)'
         }
