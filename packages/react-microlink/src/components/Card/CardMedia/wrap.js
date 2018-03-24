@@ -1,7 +1,8 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 
-import {media, isLarge} from '../../../utils'
-import {loadingOverlay} from './loader'
+import { media, isLarge } from '../../../utils'
+import { sizeReset } from '../../../utils/styleResets'
+import { loadingOverlay } from './loader'
 
 const largeStyle = css`
   flex: 1;
@@ -23,6 +24,7 @@ export default styled.div`
   height: auto;
   position: relative;
   transition: flex-basis 0.25s ease-in-out;
+  ${sizeReset};
 
   &::before {
     content: '';
@@ -30,7 +32,6 @@ export default styled.div`
     display: block;
   }
 
-  ${loadingOverlay}
-
-  ${({cardSize}) => (isLarge(cardSize) ? largeStyle : mobileStyle)}
+  ${loadingOverlay} ${({ cardSize }) =>
+  isLarge(cardSize) ? largeStyle : mobileStyle};
 `

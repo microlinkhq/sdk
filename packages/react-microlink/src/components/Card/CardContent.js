@@ -1,9 +1,10 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 import extractDomain from 'extract-domain'
 import CardText from './CardText'
 
-import {media} from '../../utils'
+import { media } from '../../utils'
+import { backgroundColorReset, sizeReset } from '../../utils/styleResets'
 
 const isLarge = cardSize => cardSize === 'large'
 
@@ -18,7 +19,7 @@ const mobileDescriptionStyle = css`
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-  `}
+  `};
 `
 
 export const Content = styled.div`
@@ -29,7 +30,9 @@ export const Content = styled.div`
   padding: 10px 15px;
   min-width: 0;
   box-sizing: border-box;
-  ${({cardSize}) => isLarge(cardSize) && largeContentStyle};
+  ${({ cardSize }) => isLarge(cardSize) && largeContentStyle};
+  ${backgroundColorReset};
+  ${sizeReset};
 `
 
 const Title = styled.header`
@@ -37,6 +40,8 @@ const Title = styled.header`
   font-weight: bold;
   margin: 0;
   flex-grow: 1.2;
+  ${backgroundColorReset};
+  ${sizeReset};
 `
 
 const Description = styled.div`
@@ -44,21 +49,28 @@ const Description = styled.div`
   flex-grow: 2;
   margin: auto 0;
   line-height: 18px;
-  ${({cardSize}) => !isLarge(cardSize) && mobileDescriptionStyle};
+  ${({ cardSize }) => !isLarge(cardSize) && mobileDescriptionStyle};
+  ${backgroundColorReset};
+  ${sizeReset};
 `
 
 const Url = styled.footer`
   font-size: 12px;
   margin: 0;
   flex-grow: 0;
+  ${backgroundColorReset};
+  ${sizeReset};
 `
 
-export default ({title, description, url, cardSize, className}) => (
+export default ({ title, description, url, cardSize, className }) => (
   <Content className={className} cardSize={cardSize}>
     <Title className='microlink_card__content_title'>
       <CardText lines={1}>{title}</CardText>
     </Title>
-    <Description className='microlink_card__content_description' cardSize={cardSize}>
+    <Description
+      className='microlink_card__content_description'
+      cardSize={cardSize}
+    >
       <CardText lines={2}>{description}</CardText>
     </Description>
     <Url className='microlink_card__content_url'>

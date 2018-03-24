@@ -7,7 +7,7 @@ import { Content } from './CardContent'
 import { media } from '../../utils'
 
 const EmptyImage = CardImage.extend`
-  ${emptyStateImageAnimation}
+  ${emptyStateImageAnimation};
 `
 
 const EmptyTitle = styled.span`
@@ -17,20 +17,18 @@ const EmptyTitle = styled.span`
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  ${emptyStateAnimation}
+  ${emptyStateAnimation};
 `
 
 const EmptyDescription = styled.span`
   width: 95%;
+  height: 33px;
   display: block;
   background: #e1e8ed;
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  ${emptyStateAnimation}
-  animation-delay: .125s;
-
-  height: 33px;
+  ${emptyStateAnimation} animation-delay: .125s;
 
   &::before {
     content: '';
@@ -49,9 +47,11 @@ const EmptyDescription = styled.span`
     bottom: 14px;
   }
 
-  ${({cardSize}) => cardSize !== 'large' && media.mobile`
+  ${({ cardSize }) =>
+    cardSize !== 'large' &&
+    media.mobile`
     height: 14px;
-  `}
+  `};
 `
 
 const EmptyLink = styled.span`
@@ -60,11 +60,10 @@ const EmptyLink = styled.span`
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  ${emptyStateAnimation}
-  animation-delay: .25s;
+  ${emptyStateAnimation} animation-delay: .25s;
 `
 
-const CardEmptyState = ({cardSize}) => (
+const CardEmptyState = ({ cardSize }) => (
   <Fragment>
     <EmptyImage cardSize={cardSize} />
     <Content cardSize={cardSize}>
