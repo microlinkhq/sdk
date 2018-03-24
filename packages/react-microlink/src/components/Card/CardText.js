@@ -18,6 +18,8 @@ const CardText = styled(Clamp)`
     padding: 0;
     border: 0;
     text-decoration: none;
+    text-align: inherit;
+    direction: inherit;
     ${backgroundColorReset};
     ${sizeReset};
   }

@@ -59,6 +59,8 @@ const style = css`
   text-decoration: none;
   opacity: 1;
   position: relative;
+  text-align: left;
+  direction: ltr;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
   box-sizing: border-box;
