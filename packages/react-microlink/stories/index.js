@@ -4,7 +4,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Microlink from '../src'
-import { urls, urlsVideo, getRandomSize } from './data'
+import { urls, urlsVideo } from './data'
 
 const createMicrolink = props => (
   <div
@@ -52,46 +52,49 @@ storiesOf('media', module)
     )
   )
 
-storiesOf('custom', module)
-  .addWithJSX('data', () =>
-    createMicrolink({
-      url: 'https://microlink.io',
-      data: {
-        title: 'My Custom Title',
-        image: 'https://microlink.io/logo-trim.png',
-        description: 'My Custom Description',
-        url: 'https://microlink.io'
-      }
-    })
-  )
-  .addWithJSX('round', () =>
-    urls.map(url =>
-      createMicrolink({
-        url,
-        round: getRandomSize([6, 10, 20, 30, 50, 9999])
-      })
-    )
-  )
+storiesOf('custom', module).addWithJSX('data', () =>
+  createMicrolink({
+    url: 'https://microlink.io',
+    data: {
+      title: 'My Custom Title',
+      image: 'https://microlink.io/logo-trim.png',
+      description: 'My Custom Description',
+      url: 'https://microlink.io'
+    }
+  })
+)
 
 storiesOf('custom/style', module)
   .addWithJSX('width', () =>
-    urls.map(url =>
+    ['300px', '400px', '500px', '600px', '700px', '800px'].map((width, index) =>
       createMicrolink({
-        url,
+        url: urls[index],
         style: {
           marginBottom: '20px',
-          width: getRandomSize([300, 400, 500, 600, 700, 800])
+          width
         }
       })
     )
   )
   .addWithJSX('height', () =>
-    urls.map(url =>
+    ['150px', '175px', '200px', '250px', '300px', '350px'].map(
+      (height, index) =>
+        createMicrolink({
+          url: urls[index],
+          style: {
+            marginBottom: '20px',
+            height
+          }
+        })
+    )
+  )
+  .addWithJSX('border radius', () =>
+    ['.42857em', '6px', '10px'].map((borderRadius, index) =>
       createMicrolink({
-        url,
+        url: urls[index],
         style: {
           marginBottom: '20px',
-          height: getRandomSize([150, 175, 200, 250, 300, 350])
+          borderRadius
         }
       })
     )

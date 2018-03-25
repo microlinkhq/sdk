@@ -1,7 +1,5 @@
 'use strict'
 
-import uniqueRandomArray from 'unique-random-array'
-
 export const urls = [
   'https://twitter.com/stripe/status/750230305399681024',
   'https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091',
@@ -24,8 +22,3 @@ export const urlsVideo = [
   'https://vimeo.com/188175573',
   'https://www.youtube.com/watch?v=hwMkbaS_M_c'
 ]
-
-export const getRandomSize = sizes => {
-  const rand = uniqueRandomArray(sizes)
-  return `${rand()}px`
-}
