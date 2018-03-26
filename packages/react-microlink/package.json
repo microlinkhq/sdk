@@ -65,8 +65,7 @@
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
     "styled-components": "~3.2.3",
-    "unfetch": "latest",
-    "unique-random-array": "latest"
+    "unfetch": "latest"
   },
   "engines": {
     "node": ">= 8"
