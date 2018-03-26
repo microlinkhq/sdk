@@ -4,15 +4,19 @@
 
 
 
-<a name="2.0.0-0"></a>
-## 2.0.0-0 (2018-03-26)
+<a name="2.0.1-0"></a>
+## <small>2.0.1-0 (2018-03-26)</small>
 
 * Fix size command ([2d2373c](https://github.com/microlinkhq/react-microlink/commit/2d2373c))
 * Improve HTML generation ([7e31b7b](https://github.com/microlinkhq/react-microlink/commit/7e31b7b))
 * Remove `round` prop (#96) ([6024e24](https://github.com/microlinkhq/react-microlink/commit/6024e24)), closes [#96](https://github.com/microlinkhq/react-microlink/issues/96)
 * Update `style` story (#91) ([583e9b4](https://github.com/microlinkhq/react-microlink/commit/583e9b4)), closes [#91](https://github.com/microlinkhq/react-microlink/issues/91)
+* Update Changelog ([8d622eb](https://github.com/microlinkhq/react-microlink/commit/8d622eb))
 * Update Changelog ([b7e8d98](https://github.com/microlinkhq/react-microlink/commit/b7e8d98))
-* v2.0.0-0 ([6d04090](https://github.com/microlinkhq/react-microlink/commit/6d04090))
+* Update index.html ([a128c10](https://github.com/microlinkhq/react-microlink/commit/a128c10))
+* Update README.md ([feab1ca](https://github.com/microlinkhq/react-microlink/commit/feab1ca))
+* v2.0.0-0 ([c5e8dc7](https://github.com/microlinkhq/react-microlink/commit/c5e8dc7))
+* v2.0.1-0 ([2c60104](https://github.com/microlinkhq/react-microlink/commit/2c60104))
 
 
 
