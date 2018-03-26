@@ -43,6 +43,7 @@
     "chalk": "latest",
     "dom101": "latest",
     "dotenv": "latest",
+    "escape-string-regexp": "latest",
     "extract-text-webpack-plugin": "latest",
     "fs-extra": "latest",
     "html-webpack-plugin": "latest",
