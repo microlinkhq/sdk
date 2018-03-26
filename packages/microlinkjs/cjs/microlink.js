@@ -4589,13 +4589,12 @@ Object.defineProperty(exports, "__esModule", {
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _templateObject = _taggedTemplateLiteral(['\n  background-color: ', ';\n  border-color: ', ';\n  transition-property: filter;\n\n  &&& {\n    color: ', ';\n  }\n\n  &:hover {\n    filter: brightness(90%);\n  }\n'], ['\n  background-color: ', ';\n  border-color: ', ';\n  transition-property: filter;\n\n  &&& {\n    color: ', ';\n  }\n\n  &:hover {\n    filter: brightness(90%);\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  flex-direction: column;\n  height: ', ';\n  transition-property: background, border-color, height;\n\n  ', '\n'], ['\n  flex-direction: column;\n  height: ', ';\n  transition-property: background, border-color, height;\n\n  ', '\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  flex-direction: column;\n  height: ', ';\n  transition-property: background, border-color, height;\n\n  ', ';\n'], ['\n  flex-direction: column;\n  height: ', ';\n  transition-property: background, border-color, height;\n\n  ', ';\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    height: calc(', ' * 7/9);\n  '], ['\n    height: calc(', ' * 7/9);\n  ']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  transition-property: background, border-color;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n'], ['\n  transition-property: background, border-color;\n  &:hover {\n    background: #F5F8FA;\n    border-color: rgba(136,153,166,.5);\n  }\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n  flex-direction: ', '\n'], ['\n  flex-direction: ', '\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n  border-radius: ', ';\n'], ['\n  border-radius: ', ';\n']),
-    _templateObject7 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n'], ['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #E1E8ED;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity:1;\n  position: relative;\n\n  transition-duration: .15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n\n  ', '\n']),
-    _templateObject8 = _taggedTemplateLiteral(['', ''], ['', '']);
+    _templateObject4 = _taggedTemplateLiteral(['\n  transition-property: background, border-color;\n  &:hover {\n    background: #f5f8fa;\n    border-color: rgba(136, 153, 166, 0.5);\n  }\n'], ['\n  transition-property: background, border-color;\n  &:hover {\n    background: #f5f8fa;\n    border-color: rgba(136, 153, 166, 0.5);\n  }\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  flex-direction: ', ';\n'], ['\n  flex-direction: ', ';\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #e1e8ed;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity: 1;\n  position: relative;\n\n  transition-duration: 0.15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', ' ', ' ', ' ', ' ', ';\n'], ['\n  max-width: 500px;\n  background-color: #fff;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #e1e8ed;\n  overflow: hidden;\n  color: #181919;\n  font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;\n  display: flex;\n  text-decoration: none;\n  opacity: 1;\n  position: relative;\n\n  transition-duration: 0.15s;\n  transition-timing-function: ease-in-out;\n\n  &:active,\n  &:hover {\n    outline: 0;\n  }\n\n  ', ' ', ' ', ' ', ' ', ';\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n    ', ';\n  '], ['\n    ', ';\n  ']);
 
 var _react = __webpack_require__(0);
 
@@ -4628,44 +4627,36 @@ var reverseStyle = function reverseStyle(_ref2) {
   return (0, _styledComponents.css)(_templateObject5, (0, _utils.isLarge)(cardSize) ? 'column-reverse' : 'row-reverse');
 };
 
-var roundStyle = function roundStyle(_ref3) {
-  var round = _ref3.round;
-  return (0, _styledComponents.css)(_templateObject6, round === true ? '.42857em' : round);
-};
-
-var style = (0, _styledComponents.css)(_templateObject7, function (_ref4) {
-  var loading = _ref4.loading,
-      contrast = _ref4.contrast;
+var style = (0, _styledComponents.css)(_templateObject6, function (_ref3) {
+  var loading = _ref3.loading,
+      contrast = _ref3.contrast;
   return !loading && !contrast && hoverStyle;
-}, function (_ref5) {
-  var round = _ref5.round;
-  return round && roundStyle;
-}, function (_ref6) {
-  var cardSize = _ref6.cardSize;
+}, function (_ref4) {
+  var cardSize = _ref4.cardSize;
   return (0, _utils.isLarge)(cardSize) && largeStyle;
-}, function (_ref7) {
-  var reverse = _ref7.reverse;
+}, function (_ref5) {
+  var reverse = _ref5.reverse;
   return reverse && reverseStyle;
-}, function (_ref8) {
-  var backgroundColor = _ref8.backgroundColor,
-      color = _ref8.color,
-      contrast = _ref8.contrast;
+}, function (_ref6) {
+  var backgroundColor = _ref6.backgroundColor,
+      color = _ref6.color,
+      contrast = _ref6.contrast;
   return contrast && color && backgroundColor && contrastStyle;
-}, function (_ref9) {
-  var backgroundColor = _ref9.backgroundColor,
-      color = _ref9.color,
-      contrast = _ref9.contrast;
+}, function (_ref7) {
+  var backgroundColor = _ref7.backgroundColor,
+      color = _ref7.color,
+      contrast = _ref7.contrast;
   return contrast && (!color || !backgroundColor) && hoverStyle;
 });
 
-var CardWrap = function CardWrap(_ref10) {
-  var is = _ref10.is,
-      rel = _ref10.rel,
-      href = _ref10.href,
-      target = _ref10.target,
-      props = _objectWithoutProperties(_ref10, ['is', 'rel', 'href', 'target']);
+var CardWrap = function CardWrap(_ref8) {
+  var is = _ref8.is,
+      rel = _ref8.rel,
+      href = _ref8.href,
+      target = _ref8.target,
+      props = _objectWithoutProperties(_ref8, ['is', 'rel', 'href', 'target']);
 
-  var el = _styledComponents2.default[is](_templateObject8, style);
+  var el = _styledComponents2.default[is](_templateObject7, style);
   var opts = is === 'a' ? _extends({}, props, { href: href, rel: rel, target: target }) : props;
   return (0, _react.createElement)(el, opts);
 };
@@ -5089,7 +5080,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  &&& {\n    font-family: inherit;\n    color: inherit;\n    margin: 0;\n  }\n'], ['\n  &&& {\n    font-family: inherit;\n    color: inherit;\n    margin: 0;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  &&& {\n    font-weight: inherit;\n    font-family: inherit;\n    color: inherit;\n    margin: 0;\n  }\n'], ['\n  &&& {\n    font-weight: inherit;\n    font-family: inherit;\n    color: inherit;\n    margin: 0;\n  }\n']);
 
 var _react = __webpack_require__(0);
 

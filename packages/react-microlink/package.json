@@ -2,7 +2,7 @@
   "name": "react-microlink",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "1.8.1",
+  "version": "2.0.0-0",
   "main": "lib/index.js",
   "module": "lib/index.m.js",
   "author": {
