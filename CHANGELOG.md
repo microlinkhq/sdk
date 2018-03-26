@@ -1,6 +1,18 @@
 <a name=""></a>
-##  (2018-03-19)
+##  (2018-03-26)
 
+
+
+
+<a name="2.0.0-0"></a>
+## 2.0.0-0 (2018-03-26)
+
+* Fix size command ([2d2373c](https://github.com/microlinkhq/react-microlink/commit/2d2373c))
+* Improve HTML generation ([7e31b7b](https://github.com/microlinkhq/react-microlink/commit/7e31b7b))
+* Remove `round` prop (#96) ([6024e24](https://github.com/microlinkhq/react-microlink/commit/6024e24)), closes [#96](https://github.com/microlinkhq/react-microlink/issues/96)
+* Update `style` story (#91) ([583e9b4](https://github.com/microlinkhq/react-microlink/commit/583e9b4)), closes [#91](https://github.com/microlinkhq/react-microlink/issues/91)
+* Update Changelog ([b7e8d98](https://github.com/microlinkhq/react-microlink/commit/b7e8d98))
+* v2.0.0-0 ([6d04090](https://github.com/microlinkhq/react-microlink/commit/6d04090))
 
 
 
