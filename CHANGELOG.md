@@ -1,6 +1,14 @@
 <a name=""></a>
-##  (2018-03-26)
+##  (2018-03-29)
 
+
+
+
+<a name="2.0.0"></a>
+## 2.0.0 (2018-03-29)
+
+* Update Changelog ([efc59e8](https://github.com/microlinkhq/react-microlink/commit/efc59e8))
+* v2.0.0 ([bccb714](https://github.com/microlinkhq/react-microlink/commit/bccb714))
 
 
 
