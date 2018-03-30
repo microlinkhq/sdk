@@ -8,6 +8,7 @@ const Clamp = ({ children, className, lines }) => (
 
 const CardText = styled(Clamp)`
   &&& {
+    text-align: inherit;
     font-weight: inherit;
     font-family: inherit;
     color: inherit;
