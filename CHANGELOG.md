@@ -1,6 +1,15 @@
 <a name=""></a>
-##  (2018-03-29)
+##  (2018-03-30)
 
+
+
+
+<a name="2.0.1"></a>
+## <small>2.0.1 (2018-03-30)</small>
+
+* Add text-align content reset ([99c583b](https://github.com/microlinkhq/react-microlink/commit/99c583b))
+* Update Changelog ([3a612ee](https://github.com/microlinkhq/react-microlink/commit/3a612ee))
+* v2.0.1 ([268af2e](https://github.com/microlinkhq/react-microlink/commit/268af2e))
 
 
 
