@@ -13,6 +13,7 @@ export const urls = [
 ]
 
 export const urlsVideo = [
+  'https://www.facebook.com/afcajax/videos/1686831701364171',
   'https://gfycat.com/gifs/detail/timelyhealthyarmadillo',
   'https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit',
   'https://streamable.com/46ont',
