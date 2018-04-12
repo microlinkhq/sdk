@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import ExpandIcon from './ExpandIcon'
 
 const PLAY_BUTTON_SIZE = 22
 const PROGRESS_BAR_HEIGHT = 2
