@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 
-import { PlayButton, ProgressBar } from './controls'
+import { PlayButton, ProgressBar, ExpandButton } from './controls'
+import ExpandIcon from './ExpandIcon'
 import MediaWrap from '../wrap'
 import { getUrlPath } from '../../../../utils'
 
@@ -55,9 +56,11 @@ class CardVideo extends Component {
       autoPlay,
       cardSize,
       controls,
+      expandClick,
       image,
       loading,
       loop,
+      mediaExpanded,
       muted,
       playsInline,
       video,
@@ -71,6 +74,7 @@ class CardVideo extends Component {
         cardSize={cardSize}
         loading={loading}
         onClick={this.togglePlayback}
+        expanded={mediaExpanded}
         {...props}
       >
         <Video
@@ -86,11 +90,16 @@ class CardVideo extends Component {
         />
         <PlayButton cardSize={cardSize} visible={controls && !playing} />
         {controls && (
-          <ProgressBar
-            cardSize={cardSize}
-            progress={progress}
-            playing={playing}
-          />
+          <Fragment>
+            <ExpandButton cardSize={cardSize} onClick={expandClick}>
+              <ExpandIcon />
+            </ExpandButton>
+            <ProgressBar
+              cardSize={cardSize}
+              progress={progress}
+              playing={playing}
+            />
+          </Fragment>
         )}
       </MediaWrap>
     )

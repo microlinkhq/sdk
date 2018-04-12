@@ -1,7 +1,7 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 
-import {media, isLarge} from '../../../utils'
-import {loadingOverlay} from './loader'
+import { media, isLarge } from '../../../utils'
+import { loadingOverlay } from './loader'
 
 const largeStyle = css`
   flex: 1;
@@ -13,6 +13,15 @@ const largeStyle = css`
 
 const mobileStyle = media.mobile`
   flex: 0 0 92px;
+`
+
+const expandedStyle = css`
+  background: red;
+  flex: 0 0 100%;
+
+  &::before {
+    padding-bottom: 50%;
+  }
 `
 
 export default styled.div`
@@ -30,7 +39,8 @@ export default styled.div`
     display: block;
   }
 
-  ${loadingOverlay}
-
-  ${({cardSize}) => (isLarge(cardSize) ? largeStyle : mobileStyle)}
+  ${loadingOverlay} ${({ cardSize, expanded }) =>
+  isLarge(cardSize) ? largeStyle : !expanded && mobileStyle} ${({
+  expanded
+}) => expanded && expandedStyle};
 `

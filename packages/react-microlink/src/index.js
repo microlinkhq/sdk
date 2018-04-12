@@ -1,34 +1,40 @@
-import React, {Fragment, Component} from 'react'
+import React, { Fragment, Component } from 'react'
 import PropTypes from 'prop-types'
 
-import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Card'
-import {getUrlPath, someProp, createApiUrl} from './utils'
+import {
+  CardWrap,
+  CardMedia,
+  CardContent,
+  CardEmptyState
+} from './components/Card'
+import { getUrlPath, someProp, createApiUrl } from './utils'
 
 class Microlink extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      loading: true
+      loading: true,
+      mediaExpanded: false
     }
   }
 
   componentDidMount () {
-    const {data} = this.props
-    return !data ? this.fetchData().then(this.setData) : this.setData({data})
+    const { data } = this.props
+    return !data ? this.fetchData().then(this.setData) : this.setData({ data })
   }
 
   fetchData () {
     const url = createApiUrl(this.props)
-    const promise = fetch(url, {headers: {'x-api-key': this.props.apiKey}})
+    const promise = fetch(url, { headers: { 'x-api-key': this.props.apiKey } })
     return promise.then(res => res.json())
   }
 
-  setData = ({data}) => {
+  setData = ({ data }) => {
     const imagesProps = [].concat(this.props.image)
     const image = someProp(data, imagesProps)
     const imageUrl = getUrlPath(image)
-    const {title, description, url, video} = data
-    const {color, background_color: backgroundColor} = image || {}
+    const { title, description, url, video } = data
+    const { color, background_color: backgroundColor } = image || {}
 
     this.setState({
       color,
@@ -42,9 +48,15 @@ class Microlink extends Component {
     })
   }
 
+  clickExpand = e => {
+    e.preventDefault()
+    e.stopPropagation()
+    this.setState(({ mediaExpanded }) => ({ mediaExpanded: !mediaExpanded }))
+  }
+
   renderContent () {
-    const {title, description, url, image, video} = this.state
-    const {autoPlay, controls, loop, muted, playsInline, size} = this.props
+    const { title, description, url, image, video, mediaExpanded } = this.state
+    const { autoPlay, controls, loop, muted, playsInline, size } = this.props
 
     return (
       <Fragment>
@@ -58,21 +70,25 @@ class Microlink extends Component {
           muted={muted}
           loop={loop}
           playsInline={playsInline}
+          expandClick={this.clickExpand}
+          mediaExpanded={mediaExpanded}
         />
-        <CardContent
-          className='microlink_card__content'
-          title={title}
-          description={description}
-          url={url}
-          cardSize={size}
-        />
+        {!mediaExpanded && (
+          <CardContent
+            className='microlink_card__content'
+            title={title}
+            description={description}
+            url={url}
+            cardSize={size}
+          />
+        )}
       </Fragment>
     )
   }
 
   render () {
-    const {title, color, backgroundColor, url, loading} = this.state
-    const {className, size, ...props} = this.props
+    const { title, color, backgroundColor, url, loading } = this.state
+    const { className, size, ...props } = this.props
 
     return (
       <CardWrap
@@ -111,7 +127,10 @@ Microlink.propTypes = {
   autoPlay: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
-  image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
+  image: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string)
+  ]),
   loop: PropTypes.bool,
   muted: PropTypes.bool,
   reverse: PropTypes.bool,
