@@ -1,6 +1,16 @@
 <a name=""></a>
-##  (2018-03-30)
+##  (2018-04-26)
 
+
+
+
+<a name="2.0.2"></a>
+## <small>2.0.2 (2018-04-26)</small>
+
+* Update browser targets ([9ccfce0](https://github.com/microlinkhq/react-microlink/commit/9ccfce0))
+* Update Changelog ([1338c82](https://github.com/microlinkhq/react-microlink/commit/1338c82))
+* Update data.js ([6051f43](https://github.com/microlinkhq/react-microlink/commit/6051f43))
+* v2.0.2 ([95441a0](https://github.com/microlinkhq/react-microlink/commit/95441a0))
 
 
 
