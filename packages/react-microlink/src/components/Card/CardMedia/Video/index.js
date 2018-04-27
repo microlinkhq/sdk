@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 
 import { PlayButton, ProgressBar, ExpandButton } from './controls'
+import { getUrlPath } from '../../../../utils'
 import ExpandIcon from './ExpandIcon'
 import MediaWrap from '../wrap'
-import { getUrlPath } from '../../../../utils'
 
 const Video = styled.video`
   width: 100%;
@@ -60,7 +60,7 @@ class CardVideo extends Component {
       image,
       loading,
       loop,
-      mediaExpanded,
+      isExpanded,
       muted,
       playsInline,
       video,
@@ -74,7 +74,7 @@ class CardVideo extends Component {
         cardSize={cardSize}
         loading={loading}
         onClick={this.togglePlayback}
-        expanded={mediaExpanded}
+        isExpanded={isExpanded}
         {...props}
       >
         <Video
@@ -92,7 +92,7 @@ class CardVideo extends Component {
         {controls && (
           <Fragment>
             <ExpandButton cardSize={cardSize} onClick={expandClick}>
-              <ExpandIcon />
+              <ExpandIcon isExpanded={isExpanded} className='microlink_card__media_video__expand_icon' />
             </ExpandButton>
             <ProgressBar
               cardSize={cardSize}

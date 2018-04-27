@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 const PLAY_BUTTON_SIZE = 22
 const PROGRESS_BAR_HEIGHT = 2
-const EXPAND_ICON_BOTTOM_SPACE = 3
-const EXPAND_ICON_RIGHT_SPACE = 2
-const EXPAND_ICON_SIZE = 20
+
+const EXPAND_ICON_LARGE = '16px'
+const EXPAND_ICON_NORMAL = '14px'
 
 const getSize = (base, size) => base * (size === 'normal' ? 1 : 1.75)
+const getExpandIconSize = size => size === 'normal' ? EXPAND_ICON_NORMAL : EXPAND_ICON_LARGE
 
 export const PlayButton = styled.div`
   position: absolute;
@@ -70,32 +71,25 @@ export const ExpandButton = styled.button`
   outline: none;
   z-index: 3;
   cursor: pointer;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  color: white;
+
+  transition: opacity 0.15s ease-in-out;
+
+  .microlink_card:not(:hover) & {
+    opacity: 0 !important;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
 
   ${({ cardSize }) => `
-    right: ${getSize(EXPAND_ICON_RIGHT_SPACE, cardSize)}px;
-    bottom: ${getSize(EXPAND_ICON_BOTTOM_SPACE, cardSize)}px;
-    width: ${getSize(EXPAND_ICON_SIZE, cardSize)}px;
-    height: ${getSize(EXPAND_ICON_SIZE, cardSize)}px;
-  `} .microlink_card__media_video__expand_icon {
-    width: 100%;
-
-    path {
-      fill: #e1e8ed;
-      fill-rule: evenodd;
-      opacity: 0.75;
-      transition: opacity 0.25s ease-in-out;
-    }
-
-    .microlink_card:not(:hover) & {
-      path {
-        opacity: 0;
-      }
-    }
-
-    &:hover {
-      path {
-        opacity: 1;
-      }
-    }
-  }
+    width: ${getExpandIconSize(cardSize)};
+    height: ${getExpandIconSize(cardSize)};
+    margin-right: ${getSize(0.35, cardSize)}rem;
+    margin-bottom: ${getSize(0.35, cardSize)}rem;
+  `};
 `

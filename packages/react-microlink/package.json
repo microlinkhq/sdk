@@ -34,7 +34,8 @@
   ],
   "dependencies": {
     "extract-domain": "~2.0.3",
-    "nanoclamp": "~1.2.6"
+    "nanoclamp": "~1.2.6",
+    "react-feather": "~1.1.0"
   },
   "devDependencies": {
     "@storybook/addon-options": "latest",

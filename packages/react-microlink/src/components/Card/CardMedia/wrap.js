@@ -39,8 +39,7 @@ export default styled.div`
     display: block;
   }
 
-  ${loadingOverlay} ${({ cardSize, expanded }) =>
-  isLarge(cardSize) ? largeStyle : !expanded && mobileStyle} ${({
-  expanded
-}) => expanded && expandedStyle};
+  ${loadingOverlay};
+  ${({ cardSize, isExpanded }) => isLarge(cardSize) ? largeStyle : !isExpanded && mobileStyle};
+  ${({ isExpanded }) => isExpanded && expandedStyle};
 `

@@ -14,7 +14,7 @@ class Microlink extends Component {
     super(props)
     this.state = {
       loading: true,
-      mediaExpanded: false
+      isExpanded: false
     }
   }
 
@@ -51,11 +51,11 @@ class Microlink extends Component {
   clickExpand = e => {
     e.preventDefault()
     e.stopPropagation()
-    this.setState(({ mediaExpanded }) => ({ mediaExpanded: !mediaExpanded }))
+    this.setState(({ isExpanded }) => ({ isExpanded: !isExpanded }))
   }
 
   renderContent () {
-    const { title, description, url, image, video, mediaExpanded } = this.state
+    const { title, description, url, image, video, isExpanded } = this.state
     const { autoPlay, controls, loop, muted, playsInline, size } = this.props
 
     return (
@@ -71,9 +71,9 @@ class Microlink extends Component {
           loop={loop}
           playsInline={playsInline}
           expandClick={this.clickExpand}
-          mediaExpanded={mediaExpanded}
+          isExpanded={isExpanded}
         />
-        {!mediaExpanded && (
+      {!isExpanded && (
           <CardContent
             className='microlink_card__content'
             title={title}
