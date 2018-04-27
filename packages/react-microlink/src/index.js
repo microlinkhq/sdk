@@ -1,12 +1,7 @@
 import React, { Fragment, Component } from 'react'
 import PropTypes from 'prop-types'
 
-import {
-  CardWrap,
-  CardMedia,
-  CardContent,
-  CardEmptyState
-} from './components/Card'
+import { CardWrap, CardMedia, CardContent, CardEmptyState } from './components/Card'
 import { getUrlPath, someProp, createApiUrl } from './utils'
 
 class Microlink extends Component {
@@ -73,7 +68,7 @@ class Microlink extends Component {
           expandClick={this.clickExpand}
           isExpanded={isExpanded}
         />
-      {!isExpanded && (
+        {!isExpanded && (
           <CardContent
             className='microlink_card__content'
             title={title}
@@ -127,10 +122,7 @@ Microlink.propTypes = {
   autoPlay: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
-  image: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string)
-  ]),
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
   loop: PropTypes.bool,
   muted: PropTypes.bool,
   reverse: PropTypes.bool,
