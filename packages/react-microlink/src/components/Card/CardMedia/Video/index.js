@@ -7,9 +7,10 @@ import ExpandIcon from './ExpandIcon'
 import MediaWrap from '../wrap'
 
 const Video = styled.video`
+  background: #111111;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: ${({ isExpanded }) => (!isExpanded ? 'cover' : 'contain')};
   position: absolute;
   top: 0;
   right: 0;
@@ -86,13 +87,17 @@ class CardVideo extends Component {
           loop={loop}
           playsInline={playsInline}
           innerRef={node => (this.video = node)}
+          isExpanded={isExpanded}
           {...(controls ? { onTimeUpdate: this.updateProgress } : {})}
         />
         <PlayButton cardSize={cardSize} visible={controls && !playing} />
         {controls && (
           <Fragment>
             <ExpandButton cardSize={cardSize} onClick={expandClick}>
-              <ExpandIcon isExpanded={isExpanded} className='microlink_card__media_video__expand_icon' />
+              <ExpandIcon
+                isExpanded={isExpanded}
+                className='microlink_card__media_video__expand_icon'
+              />
             </ExpandButton>
             <ProgressBar
               cardSize={cardSize}

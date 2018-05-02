@@ -22,7 +22,7 @@ const mobileDescriptionStyle = css`
 `
 
 export const Content = styled.div`
-  display: flex;
+  display: ${({ hideContent }) => (!hideContent ? 'flex' : 'none')};
   justify-content: space-around;
   flex-direction: column;
   flex: 1;
@@ -56,8 +56,8 @@ const Url = styled.footer`
   flex-grow: 0;
 `
 
-export default ({ title, description, url, cardSize, className }) => (
-  <Content className={className} cardSize={cardSize}>
+export default ({ title, description, url, cardSize, className, hidden }) => (
+  <Content className={className} cardSize={cardSize} hideContent={hidden}>
     <Title className='microlink_card__content_title'>
       <CardText lines={1}>{title}</CardText>
     </Title>
