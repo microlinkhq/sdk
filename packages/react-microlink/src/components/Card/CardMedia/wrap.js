@@ -16,7 +16,6 @@ const mobileStyle = media.mobile`
 `
 
 const expandedStyle = css`
-  background: red;
   flex: 0 0 100%;
 
   &::before {
@@ -40,6 +39,7 @@ export default styled.div`
   }
 
   ${loadingOverlay};
-  ${({ cardSize, isExpanded }) => isLarge(cardSize) ? largeStyle : !isExpanded && mobileStyle};
+  ${({ cardSize, isExpanded }) =>
+    isLarge(cardSize) ? largeStyle : !isExpanded && mobileStyle};
   ${({ isExpanded }) => isExpanded && expandedStyle};
 `
