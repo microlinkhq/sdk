@@ -1,6 +1,15 @@
 <a name=""></a>
-##  (2018-04-26)
+##  (2018-05-04)
 
+
+
+
+<a name="2.0.3"></a>
+## <small>2.0.3 (2018-05-04)</small>
+
+* Fix video `PlayButton` styles (#104) ([ce616d2](https://github.com/microlinkhq/react-microlink/commit/ce616d2)), closes [#104](https://github.com/microlinkhq/react-microlink/issues/104)
+* Update Changelog ([60eb4ca](https://github.com/microlinkhq/react-microlink/commit/60eb4ca))
+* v2.0.3 ([c32894d](https://github.com/microlinkhq/react-microlink/commit/c32894d))
 
 
 
