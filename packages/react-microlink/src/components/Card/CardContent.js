@@ -1,9 +1,17 @@
+/* global URL */
+
 import React from 'react'
 import styled, { css } from 'styled-components'
-import extractDomain from 'extract-domain'
 import CardText from './CardText'
 
 import { media } from '../../utils'
+
+const REGEX_STRIP_WWW = /^www\./
+
+const getHostname = href => {
+  const { hostname } = new URL(href)
+  return hostname.replace(REGEX_STRIP_WWW, '')
+}
 
 const isLarge = cardSize => cardSize === 'large'
 
@@ -68,7 +76,7 @@ export default ({ title, description, url, cardSize, className }) => (
       <CardText lines={2}>{description}</CardText>
     </Description>
     <Url className='microlink_card__content_url'>
-      <CardText lines={1}>{extractDomain(url)}</CardText>
+      <CardText lines={1}>{getHostname(url)}</CardText>
     </Url>
   </Content>
 )

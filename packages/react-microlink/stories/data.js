@@ -9,7 +9,9 @@ export const urls = [
   'http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos',
   'https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html',
   'https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328',
-  'https://www.bbc.com/news/technology-40762328'
+  'https://www.bbc.com/news/technology-40762328',
+  'https://browserless.js.org',
+  'https://xn--vi8hl0c.ws/'
 ]
 
 export const urlsVideo = [
