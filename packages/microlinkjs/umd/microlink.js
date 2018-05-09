@@ -76,7 +76,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 50);
+/******/ 	return __webpack_require__(__webpack_require__.s = 49);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -87,7 +87,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 if (true) {
-  module.exports = __webpack_require__(34);
+  module.exports = __webpack_require__(33);
 } else {}
 
 
@@ -105,7 +105,7 @@ if (true) {
 if (false) { var throwOnDirectAccess, isValidElement, REACT_ELEMENT_TYPE; } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(28)();
+  module.exports = __webpack_require__(27)();
 }
 
 
@@ -2334,7 +2334,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 /* harmony default export */ __webpack_exports__["default"] = (styled);
 //# sourceMappingURL=styled-components.browser.es.js.map
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(30)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(29)(module)))
 
 /***/ }),
 /* 3 */
@@ -2411,7 +2411,7 @@ var isLarge = exports.isLarge = function isLarge(cardSize) {
 
 
 
-var isObject = __webpack_require__(29);
+var isObject = __webpack_require__(28);
 
 function isObjectObject(o) {
   return isObject(o) === true
@@ -4241,10 +4241,6 @@ var _styledComponents = __webpack_require__(2);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _extractDomain = __webpack_require__(25);
-
-var _extractDomain2 = _interopRequireDefault(_extractDomain);
-
 var _CardText = __webpack_require__(24);
 
 var _CardText2 = _interopRequireDefault(_CardText);
@@ -4253,7 +4249,16 @@ var _utils = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* global URL */
+
+var REGEX_STRIP_WWW = /^www\./;
+
+var getHostname = function getHostname(href) {
+  var _ref = new URL(href),
+      hostname = _ref.hostname;
+
+  return hostname.replace(REGEX_STRIP_WWW, '');
+};
 
 var isLarge = function isLarge(cardSize) {
   return cardSize === 'large';
@@ -4263,26 +4268,26 @@ var largeContentStyle = (0, _styledComponents.css)(_templateObject);
 
 var mobileDescriptionStyle = (0, _styledComponents.css)(_templateObject2, _utils.media.mobile(_templateObject3));
 
-var Content = exports.Content = _styledComponents2.default.div(_templateObject4, function (_ref) {
-  var cardSize = _ref.cardSize;
+var Content = exports.Content = _styledComponents2.default.div(_templateObject4, function (_ref2) {
+  var cardSize = _ref2.cardSize;
   return isLarge(cardSize) && largeContentStyle;
 });
 
 var Title = _styledComponents2.default.header(_templateObject5);
 
-var Description = _styledComponents2.default.div(_templateObject6, function (_ref2) {
-  var cardSize = _ref2.cardSize;
+var Description = _styledComponents2.default.div(_templateObject6, function (_ref3) {
+  var cardSize = _ref3.cardSize;
   return !isLarge(cardSize) && mobileDescriptionStyle;
 });
 
 var Url = _styledComponents2.default.footer(_templateObject7);
 
-exports.default = function (_ref3) {
-  var title = _ref3.title,
-      description = _ref3.description,
-      url = _ref3.url,
-      cardSize = _ref3.cardSize,
-      className = _ref3.className;
+exports.default = function (_ref4) {
+  var title = _ref4.title,
+      description = _ref4.description,
+      url = _ref4.url,
+      cardSize = _ref4.cardSize,
+      className = _ref4.className;
   return _jsx(Content, {
     className: className,
     cardSize: cardSize
@@ -4299,7 +4304,7 @@ exports.default = function (_ref3) {
     className: 'microlink_card__content_url'
   }, void 0, _jsx(_CardText2.default, {
     lines: 1
-  }, void 0, (0, _extractDomain2.default)(url))));
+  }, void 0, getHostname(url))));
 };
 
 /***/ }),
@@ -4470,7 +4475,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 if (true) {
-  module.exports = __webpack_require__(45);
+  module.exports = __webpack_require__(44);
 } else {}
 
 
@@ -5127,14 +5132,6 @@ exports.default = CardText;
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function(d,a){ true?module.exports=a():undefined})(this,function(){return function(d){function a(b){if(e[b])return e[b].exports;var c=e[b]={i:b,l:!1,exports:{}};d[b].call(c.exports,c,c.exports,a);c.l=!0;return c.exports}var e={};a.m=d;a.c=e;a.i=function(b){return b};a.d=function(b,c,e){a.o(b,c)||Object.defineProperty(b,c,{configurable:!1,
-enumerable:!0,get:e})};a.n=function(b){var c=b&&b.__esModule?function(){return b["default"]}:function(){return b};a.d(c,"a",c);return c};a.o=function(b,a){return Object.prototype.hasOwnProperty.call(b,a)};a.p="";return a(a.s=0)}([function(d,a){function e(){throw new TypeError("The given URL is not a string. Please verify your string|array.");}function b(a){"string"!==typeof a&&e();for(var b=0,d=0,g=0,k=a.length,f=0;k--&&++f&&!(b&&-1<c.indexOf(a[f]));)"."===a[f]&&(++b,d=f);b=f;for(f=d;f--;)if(-1!==
-h.indexOf(a[f])){g=f+1;break}return 6>g?"":a.slice(g,b)}var c=["/",":","?","#"],h=[".","/","@"];d.exports=function(a){if("string"===typeof a)return b(a);if(Array.isArray(a)){var c=[],d,g=0;for(d=a.length;g<d;g++)c.push(b(a[g]));return c}e()}}])});
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -5151,7 +5148,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5204,7 +5201,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5218,8 +5215,8 @@ module.exports = invariant;
 
 
 var emptyFunction = __webpack_require__(11);
-var invariant = __webpack_require__(27);
-var ReactPropTypesSecret = __webpack_require__(26);
+var invariant = __webpack_require__(26);
+var ReactPropTypesSecret = __webpack_require__(25);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -5269,7 +5266,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5288,7 +5285,7 @@ module.exports = function isObject(val) {
 
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
@@ -5318,7 +5315,7 @@ module.exports = function(originalModule) {
 
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5367,7 +5364,7 @@ Object.defineProperty(exports, 'CardWrap', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5388,7 +5385,7 @@ if (false) {}
 module.exports = emptyObject;
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5485,7 +5482,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5498,7 +5495,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(33),n=__webpack_require__(32),p=__webpack_require__(11),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(32),n=__webpack_require__(31),p=__webpack_require__(11),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -5513,15 +5510,15 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var e,t;Object.defineProperty(exports,"__esModule",{value:!0});var r=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},o=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),u=0;u<l;u++)s[u]=a[u+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),n=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(31),c=__webpack_require__(3),s=function(e){function t(e){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);var r=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return r.setData=function(e){var t=e.data,o=[].concat(r.props.image),n=(0,c.someProp)(t,o),a=(0,c.getUrlPath)(n),i=n||{};r.setState({color:i.color,backgroundColor:i.background_color,title:t.title,description:t.description,url:t.url,loading:!1,video:t.video,image:a})},r.state={loading:!0},r}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),n(t,[{key:"componentDidMount",value:function(){var e=this.props.data;return e?this.setData({data:e}):this.fetchData().then(this.setData)}},{key:"fetchData",value:function(){var e=(0,c.createApiUrl)(this.props);return fetch(e,{headers:{"x-api-key":this.props.apiKey}}).then(function(e){return e.json()})}},{key:"renderContent",value:function(){var e=this.state,t=e.title,r=e.description,n=e.url,i=this.props,c=i.size;return o(a.Fragment,{},void 0,o(l.CardMedia,{image:e.image,video:e.video,url:n,cardSize:c,autoPlay:i.autoPlay,controls:i.controls,muted:i.muted,loop:i.loop,playsInline:i.playsInline}),o(l.CardContent,{className:"microlink_card__content",title:t,description:r,url:n,cardSize:c}))}},{key:"render",value:function(){var e=this.state,t=e.title,n=e.color,a=e.backgroundColor,c=e.url,s=e.loading,u=this.props,p=u.className,f=u.size,d=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(u,["className","size"]);return i.default.createElement(l.CardWrap,r({className:p?"microlink_card "+p:"microlink_card",href:c,title:t,cardSize:f,color:n,backgroundColor:a,loading:s},d),s?o(l.CardEmptyState,{cardSize:f}):this.renderContent())}}]),t}();s.defaultProps={apiKey:void 0,autoPlay:!0,contrast:!1,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,prerender:"auto",reverse:!1,screenshot:!1,size:"normal"},exports.default=s;
+var e,t;Object.defineProperty(exports,"__esModule",{value:!0});var r=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},o=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),u=0;u<l;u++)s[u]=a[u+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),n=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(30),c=__webpack_require__(3),s=function(e){function t(e){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);var r=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return r.setData=function(e){var t=e.data,o=[].concat(r.props.image),n=(0,c.someProp)(t,o),a=(0,c.getUrlPath)(n),i=n||{};r.setState({color:i.color,backgroundColor:i.background_color,title:t.title,description:t.description,url:t.url,loading:!1,video:t.video,image:a})},r.state={loading:!0},r}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),n(t,[{key:"componentDidMount",value:function(){var e=this.props.data;return e?this.setData({data:e}):this.fetchData().then(this.setData)}},{key:"fetchData",value:function(){var e=(0,c.createApiUrl)(this.props);return fetch(e,{headers:{"x-api-key":this.props.apiKey}}).then(function(e){return e.json()})}},{key:"renderContent",value:function(){var e=this.state,t=e.title,r=e.description,n=e.url,i=this.props,c=i.size;return o(a.Fragment,{},void 0,o(l.CardMedia,{image:e.image,video:e.video,url:n,cardSize:c,autoPlay:i.autoPlay,controls:i.controls,muted:i.muted,loop:i.loop,playsInline:i.playsInline}),o(l.CardContent,{className:"microlink_card__content",title:t,description:r,url:n,cardSize:c}))}},{key:"render",value:function(){var e=this.state,t=e.title,n=e.color,a=e.backgroundColor,c=e.url,s=e.loading,u=this.props,p=u.className,f=u.size,d=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(u,["className","size"]);return i.default.createElement(l.CardWrap,r({className:p?"microlink_card "+p:"microlink_card",href:c,title:t,cardSize:f,color:n,backgroundColor:a,loading:s},d),s?o(l.CardEmptyState,{cardSize:f}):this.renderContent())}}]),t}();s.defaultProps={apiKey:void 0,autoPlay:!0,contrast:!1,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,prerender:"auto",reverse:!1,screenshot:!1,size:"normal"},exports.default=s;
 //# sourceMappingURL=index.m.js.map
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports) {
 
 /**
@@ -5562,7 +5559,7 @@ module.exports = each
 
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5592,7 +5589,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5620,7 +5617,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5635,7 +5632,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(38);
+var isNode = __webpack_require__(37);
 
 /**
  * @param {*} object The object to check.
@@ -5648,7 +5645,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5663,7 +5660,7 @@ module.exports = isTextNode;
  * 
  */
 
-var isTextNode = __webpack_require__(39);
+var isTextNode = __webpack_require__(38);
 
 /*eslint-disable no-bitwise */
 
@@ -5691,7 +5688,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5762,7 +5759,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5804,7 +5801,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5882,7 +5879,7 @@ var EventListener = {
 module.exports = EventListener;
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5921,7 +5918,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5949,7 +5946,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5965,7 +5962,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(14),l=__webpack_require__(44),B=__webpack_require__(13),C=__webpack_require__(5),ba=__webpack_require__(43),da=__webpack_require__(42),ea=__webpack_require__(41),fa=__webpack_require__(40),ia=__webpack_require__(37),D=__webpack_require__(12);
+var aa=__webpack_require__(14),l=__webpack_require__(43),B=__webpack_require__(13),C=__webpack_require__(5),ba=__webpack_require__(42),da=__webpack_require__(41),ea=__webpack_require__(40),fa=__webpack_require__(39),ia=__webpack_require__(36),D=__webpack_require__(12);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -6185,7 +6182,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6214,12 +6211,12 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(46);
+  module.exports = __webpack_require__(45);
 } else {}
 
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports) {
 
 /**
@@ -6248,17 +6245,17 @@ module.exports = querySelectorAll
 
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var qa=__webpack_require__(48);var ReactDOM=__webpack_require__(47);var each=__webpack_require__(36);var React=__webpack_require__(14);var _require=__webpack_require__(35),MicrolinkCard=_require.default;var BOOLEAN_STRINGS=['true','false'];var DEFAULT_OPTS={is:'div'};var getBoolean=function getBoolean(str){return str==='true';};var isStringBoolean=function isStringBoolean(str){return BOOLEAN_STRINGS.includes(str);};var getDataAttributes=function getDataAttributes(el){return Object.keys(el.dataset).reduce(function(acc,key){var value=el.dataset[key];acc[key]=isStringBoolean(value)?getBoolean(value):value;return acc;},{});};module.exports=function(selector,opts){opts=Object.assign({},DEFAULT_OPTS,opts);return each(qa(selector),function(el){var url=el.getAttribute('href');var params=Object.assign({url:url},opts,getDataAttributes(el));var card=React.createElement(MicrolinkCard,params);ReactDOM.render(card,el);});};
+var qa=__webpack_require__(47);var ReactDOM=__webpack_require__(46);var each=__webpack_require__(35);var React=__webpack_require__(14);var _require=__webpack_require__(34),MicrolinkCard=_require.default;var BOOLEAN_STRINGS=['true','false'];var DEFAULT_OPTS={is:'div'};var getBoolean=function getBoolean(str){return str==='true';};var isStringBoolean=function isStringBoolean(str){return BOOLEAN_STRINGS.includes(str);};var getDataAttributes=function getDataAttributes(el){return Object.keys(el.dataset).reduce(function(acc,key){var value=el.dataset[key];acc[key]=isStringBoolean(value)?getBoolean(value):value;return acc;},{});};module.exports=function(selector,opts){opts=Object.assign({},DEFAULT_OPTS,opts);return each(qa(selector),function(el){var url=el.getAttribute('href');var params=Object.assign({url:url},opts,getDataAttributes(el));var card=React.createElement(MicrolinkCard,params);ReactDOM.render(card,el);});};
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(49);
+module.exports = __webpack_require__(48);
 
 
 /***/ })
