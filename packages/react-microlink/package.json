@@ -33,7 +33,6 @@
     "previsualization"
   ],
   "dependencies": {
-    "extract-domain": "~2.0.3",
     "nanoclamp": "~1.2.6"
   },
   "devDependencies": {
