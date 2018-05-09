@@ -1,6 +1,15 @@
 <a name=""></a>
-##  (2018-05-04)
+##  (2018-05-09)
 
+
+
+
+<a name="2.0.4"></a>
+## <small>2.0.4 (2018-05-09)</small>
+
+* Remove extract-domain dependency (#105) ([03a28a5](https://github.com/microlinkhq/react-microlink/commit/03a28a5)), closes [#105](https://github.com/microlinkhq/react-microlink/issues/105)
+* Update Changelog ([7e44352](https://github.com/microlinkhq/react-microlink/commit/7e44352))
+* v2.0.4 ([eefa452](https://github.com/microlinkhq/react-microlink/commit/eefa452))
 
 
 
