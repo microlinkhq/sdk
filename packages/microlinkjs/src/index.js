@@ -22,10 +22,12 @@ const getDataAttributes = el => Object.keys(el.dataset).reduce((acc, key) => {
   return acc
 }, {})
 
+const getDOMSelector = selector => typeof selector === 'string' ? qa(selector) : selector
+
 module.exports = (selector, opts) => {
   opts = Object.assign({}, DEFAULT_OPTS, opts)
 
-  return each(qa(selector), el => {
+  return each(getDOMSelector(selector), el => {
     const url = el.getAttribute('href')
     const params = Object.assign({url}, opts, getDataAttributes(el))
     const card = React.createElement(MicrolinkCard, params)
