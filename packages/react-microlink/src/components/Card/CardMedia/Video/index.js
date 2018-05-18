@@ -74,7 +74,7 @@ class CardVideo extends Component {
         {...props}
       >
         <Video
-          className='microlink_card__media_video'
+          className='microlink_card__media microlink_card__media_video'
           src={getUrlPath(video)}
           poster={image}
           muted={muted}
