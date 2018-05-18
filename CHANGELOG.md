@@ -1,6 +1,16 @@
 <a name=""></a>
-##  (2018-05-09)
+##  (2018-05-18)
 
+
+
+
+<a name="2.1.0"></a>
+## 2.1.0 (2018-05-18)
+
+* Ability to pass DOM selector (#112) ([830bf9f](https://github.com/microlinkhq/react-microlink/commit/830bf9f)), closes [#112](https://github.com/microlinkhq/react-microlink/issues/112)
+* Add microlink_card__media selector (#111) ([b2a778b](https://github.com/microlinkhq/react-microlink/commit/b2a778b)), closes [#111](https://github.com/microlinkhq/react-microlink/issues/111)
+* Update Changelog ([7c772f8](https://github.com/microlinkhq/react-microlink/commit/7c772f8))
+* v2.1.0 ([d6c9171](https://github.com/microlinkhq/react-microlink/commit/d6c9171))
 
 
 
