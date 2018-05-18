@@ -4203,7 +4203,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var defaultProps = {
-  className: 'microlink_card__media_image'
+  className: 'microlink_card__media microlink_card__media_image'
 };
 
 exports.default = _wrap2.default.extend.attrs(defaultProps)(_templateObject, function (_ref) {
@@ -4854,7 +4854,7 @@ var CardVideo = function (_Component) {
           onClick: this.togglePlayback
         }, props),
         _react2.default.createElement(Video, _extends({
-          className: 'microlink_card__media_video',
+          className: 'microlink_card__media microlink_card__media_video',
           src: (0, _utils.getUrlPath)(video),
           poster: image,
           muted: muted,
@@ -4959,6 +4959,7 @@ var CardMedia = function (_Component) {
 
       var image = this.props.image;
       var loading = this.state.loading;
+
 
       return loading && isUrl(image) && (0, _react.createElement)(_loader.ImageLoadCatcher, {
         key: 'imageLoader',
@@ -6249,7 +6250,7 @@ module.exports = querySelectorAll
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var qa=__webpack_require__(47);var ReactDOM=__webpack_require__(46);var each=__webpack_require__(35);var React=__webpack_require__(14);var _require=__webpack_require__(34),MicrolinkCard=_require.default;var BOOLEAN_STRINGS=['true','false'];var DEFAULT_OPTS={is:'div'};var getBoolean=function getBoolean(str){return str==='true';};var isStringBoolean=function isStringBoolean(str){return BOOLEAN_STRINGS.includes(str);};var getDataAttributes=function getDataAttributes(el){return Object.keys(el.dataset).reduce(function(acc,key){var value=el.dataset[key];acc[key]=isStringBoolean(value)?getBoolean(value):value;return acc;},{});};module.exports=function(selector,opts){opts=Object.assign({},DEFAULT_OPTS,opts);return each(qa(selector),function(el){var url=el.getAttribute('href');var params=Object.assign({url:url},opts,getDataAttributes(el));var card=React.createElement(MicrolinkCard,params);ReactDOM.render(card,el);});};
+var qa=__webpack_require__(47);var ReactDOM=__webpack_require__(46);var each=__webpack_require__(35);var React=__webpack_require__(14);var _require=__webpack_require__(34),MicrolinkCard=_require.default;var BOOLEAN_STRINGS=['true','false'];var DEFAULT_OPTS={is:'div'};var getBoolean=function getBoolean(str){return str==='true';};var isStringBoolean=function isStringBoolean(str){return BOOLEAN_STRINGS.includes(str);};var getDataAttributes=function getDataAttributes(el){return Object.keys(el.dataset).reduce(function(acc,key){var value=el.dataset[key];acc[key]=isStringBoolean(value)?getBoolean(value):value;return acc;},{});};var getDOMSelector=function getDOMSelector(selector){return typeof selector==='string'?qa(selector):selector;};module.exports=function(selector,opts){opts=Object.assign({},DEFAULT_OPTS,opts);return each(getDOMSelector(selector),function(el){var url=el.getAttribute('href');var params=Object.assign({url:url},opts,getDataAttributes(el));var card=React.createElement(MicrolinkCard,params);ReactDOM.render(card,el);});};
 
 /***/ }),
 /* 49 */
