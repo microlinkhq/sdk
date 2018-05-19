@@ -22,7 +22,7 @@ const getDataAttributes = el => Object.keys(el.dataset).reduce((acc, key) => {
   return acc
 }, {})
 
-const getDOMSelector = selector => typeof selector === 'string' ? qa(selector) : selector
+const getDOMSelector = selector => typeof selector === 'string' ? qa(selector) : [].concat(selector)
 
 module.exports = (selector, opts) => {
   opts = Object.assign({}, DEFAULT_OPTS, opts)
