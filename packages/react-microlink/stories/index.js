@@ -56,10 +56,7 @@ storiesOf('custom', module).addWithJSX('data', () =>
   createMicrolink({
     url: 'https://microlink.io',
     data: {
-      title: 'My Custom Title',
-      image: 'https://microlink.io/logo-trim.png',
-      description: 'My Custom Description',
-      url: 'https://microlink.io'
+      title: 'My Custom Title'
     }
   })
 )

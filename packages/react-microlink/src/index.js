@@ -13,8 +13,8 @@ class Microlink extends Component {
   }
 
   componentDidMount () {
-    const {data} = this.props
-    return !data ? this.fetchData().then(this.setData) : this.setData({data})
+    const { data: customData } = this.props
+    this.fetchData().then(({ data }) => this.setData({ ...data, customData }))
   }
 
   fetchData () {
