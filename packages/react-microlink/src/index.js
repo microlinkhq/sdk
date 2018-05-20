@@ -13,14 +13,8 @@ class Microlink extends Component {
   }
 
   componentDidMount () {
-    const {data} = this.props
-    if (data) {
-      this.fetchData().then((response) => {
-        this.setData({data: {...response.data, ...data}})
-      })
-    } else {
-      this.fetchData().then(this.setData)
-    }
+    const { data: customData } = this.props
+    this.fetchData().then(({ data }) => this.setData({ ...data, customData }))
   }
 
   fetchData () {
