@@ -1,6 +1,20 @@
 <a name=""></a>
-##  (2018-05-18)
+##  (2018-05-20)
 
+
+
+
+<a name="2.1.1"></a>
+## <small>2.1.1 (2018-05-20)</small>
+
+* Add querySelector example ([4d7374f](https://github.com/microlinkhq/react-microlink/commit/4d7374f))
+* Merged fetched data with provided overrides ([5b3540f](https://github.com/microlinkhq/react-microlink/commit/5b3540f))
+* Reflecs partial custom data in the example ([7c77cb4](https://github.com/microlinkhq/react-microlink/commit/7c77cb4))
+* Simplify ([e400545](https://github.com/microlinkhq/react-microlink/commit/e400545))
+* Support single node as argument to microlink() (#114) ([d59a253](https://github.com/microlinkhq/react-microlink/commit/d59a253)), closes [#114](https://github.com/microlinkhq/react-microlink/issues/114)
+* Update Changelog ([a461646](https://github.com/microlinkhq/react-microlink/commit/a461646))
+* Update example ([b7e485a](https://github.com/microlinkhq/react-microlink/commit/b7e485a))
+* v2.1.1 ([79c4b09](https://github.com/microlinkhq/react-microlink/commit/79c4b09))
 
 
 
