@@ -4,6 +4,15 @@
 
 
 
+<a name="2.1.2"></a>
+## <small>2.1.2 (2018-05-20)</small>
+
+* Fix passing data ([c271a76](https://github.com/microlinkhq/react-microlink/commit/c271a76))
+* Update Changelog ([e0ed333](https://github.com/microlinkhq/react-microlink/commit/e0ed333))
+* v2.1.2 ([2b75cc8](https://github.com/microlinkhq/react-microlink/commit/2b75cc8))
+
+
+
 <a name="2.1.1"></a>
 ## <small>2.1.1 (2018-05-20)</small>
 
