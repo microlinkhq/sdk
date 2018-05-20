@@ -38,11 +38,6 @@
       </section>
 
       <section class="pv4">
-        <h1 class="f3 pv2 black tc">getElementsByClassName selector</h1>
-        <div><a class="link-html-collection max-width-card" href="http://txti.es">txti</a></div>
-      </section>
-
-      <section class="pv4">
         <h1 class="f3 pv2 black tc">querySelector selector</h1>
         <div><a class="link-query-selector max-width-card" href="http://txti.es">txti</a></div>
       </section>
@@ -81,7 +76,6 @@
   <script>
     document.addEventListener('DOMContentLoaded', function (event) {
       microlink('.link', {round: true})
-      microlink(document.getElementsByClassName('link-html-collection'), {round: true})
       microlink(document.querySelector('.link-query-selector'), {round: true})
     })
   </script>
