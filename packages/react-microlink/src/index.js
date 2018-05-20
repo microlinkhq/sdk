@@ -23,7 +23,7 @@ class Microlink extends Component {
     return promise.then(res => res.json())
   }
 
-  setData = ({data}) => {
+  setData = data => {
     const imagesProps = [].concat(this.props.image)
     const image = someProp(data, imagesProps)
     const imageUrl = getUrlPath(image)
