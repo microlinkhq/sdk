@@ -15,6 +15,7 @@
       a {
         display: block;
         margin: auto;
+        text-decoration: none;
       }
       .max-width-blog {
         max-width: 828px;
@@ -37,8 +38,13 @@
       </section>
 
       <section class="pv4">
-        <h1 class="f3 pv2 black tc">DOM selector</h1>
-        <div><a class="link-dom max-width-card" href="http://txti.es">txti</a></div>
+        <h1 class="f3 pv2 black tc">getElementsByClassName selector</h1>
+        <div><a class="link-html-collection max-width-card" href="http://txti.es">txti</a></div>
+      </section>
+
+      <section class="pv4">
+        <h1 class="f3 pv2 black tc">querySelector selector</h1>
+        <div><a class="link-query-selector max-width-card" href="http://txti.es">txti</a></div>
       </section>
 
       <section class="pv4">
@@ -75,7 +81,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', function (event) {
       microlink('.link', {round: true})
-      microlink(document.getElementsByClassName('link-dom'), {round: true})
+      microlink(document.getElementsByClassName('link-html-collection'), {round: true})
+      microlink(document.querySelector('.link-query-selector'), {round: true})
     })
   </script>
 </html>
