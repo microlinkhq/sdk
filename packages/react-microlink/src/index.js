@@ -19,7 +19,9 @@ class Microlink extends Component {
 
   fetchData () {
     const url = createApiUrl(this.props)
-    const promise = fetch(url, {headers: {'x-api-key': this.props.apiKey}})
+    const { apiKey } = this.props
+    const headers = apiKey ? {'x-api-key': apiKey} : {}
+    const promise = fetch(url, {headers})
     return promise.then(res => res.json())
   }
 
