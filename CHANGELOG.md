@@ -1,6 +1,15 @@
 <a name=""></a>
-##  (2018-05-20)
+##  (2018-05-28)
 
+
+
+
+<a name="2.1.3"></a>
+## <small>2.1.3 (2018-05-28)</small>
+
+* Attach apiKey just for pro endpoint ([d67fd82](https://github.com/microlinkhq/react-microlink/commit/d67fd82))
+* Update Changelog ([3dd0bf3](https://github.com/microlinkhq/react-microlink/commit/3dd0bf3))
+* v2.1.3 ([6387a6b](https://github.com/microlinkhq/react-microlink/commit/6387a6b))
 
 
 
