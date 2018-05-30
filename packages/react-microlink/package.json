@@ -33,7 +33,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "nanoclamp": "~1.2.6"
+    "nanoclamp": "~1.2.7"
   },
   "devDependencies": {
     "@storybook/addon-options": "latest",
@@ -63,7 +63,7 @@
     "standard": "latest",
     "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
-    "styled-components": "~3.2.3",
+    "styled-components": "~3.3.0",
     "unfetch": "latest"
   },
   "engines": {
