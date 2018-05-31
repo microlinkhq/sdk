@@ -101,6 +101,7 @@ Microlink.defaultProps = {
   image: ['screenshot', 'image', 'logo'],
   loop: true,
   muted: true,
+  video: true,
   playsInline: true,
   prerender: 'auto',
   reverse: false,
@@ -111,6 +112,7 @@ Microlink.defaultProps = {
 Microlink.propTypes = {
   apiKey: PropTypes.string,
   autoPlay: PropTypes.bool,
+  video: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
