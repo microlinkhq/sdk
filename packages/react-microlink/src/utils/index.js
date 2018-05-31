@@ -20,10 +20,10 @@ export const media = {
 }
 
 export const createApiUrl = props => {
-  const { apiKey, url: targetUrl, screenshot, prerender, contrast } = props
+  const { apiKey, url: targetUrl, screenshot, prerender, contrast, video } = props
   const alias = apiKey ? 'pro' : 'api'
 
-  let url = `https://${alias}.microlink.io/?url=${targetUrl}`
+  let url = `https://${alias}.microlink.io/?url=${targetUrl}&video=${video}`
   if (contrast) url = `${url}&palette`
   if (prerender !== 'auto') url = `${url}&prerender=${prerender}`
   if (screenshot) url = `${url}&screenshot=${screenshot}`
