@@ -1,6 +1,16 @@
 <a name=""></a>
-##  (2018-05-28)
+##  (2018-06-02)
 
+
+
+
+<a name="2.1.4"></a>
+## <small>2.1.4 (2018-06-02)</small>
+
+* Add video API Parameter (#118) ([f6235c7](https://github.com/microlinkhq/react-microlink/commit/f6235c7)), closes [#118](https://github.com/microlinkhq/react-microlink/issues/118)
+* Ensure Card image is over HTTPS (#117) ([a330da3](https://github.com/microlinkhq/react-microlink/commit/a330da3)), closes [#117](https://github.com/microlinkhq/react-microlink/issues/117) [#116](https://github.com/microlinkhq/react-microlink/issues/116)
+* Update Changelog ([d688892](https://github.com/microlinkhq/react-microlink/commit/d688892))
+* v2.1.4 ([900c34f](https://github.com/microlinkhq/react-microlink/commit/900c34f))
 
 
 
