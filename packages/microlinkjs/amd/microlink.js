@@ -2371,11 +2371,12 @@ var createApiUrl = exports.createApiUrl = function createApiUrl(props) {
       targetUrl = props.url,
       screenshot = props.screenshot,
       prerender = props.prerender,
-      contrast = props.contrast;
+      contrast = props.contrast,
+      video = props.video;
 
   var alias = apiKey ? 'pro' : 'api';
 
-  var url = 'https://' + alias + '.microlink.io/?url=' + targetUrl;
+  var url = 'https://' + alias + '.microlink.io/?url=' + targetUrl + '&video=' + video;
   if (contrast) url = url + '&palette';
   if (prerender !== 'auto') url = url + '&prerender=' + prerender;
   if (screenshot) url = url + '&screenshot=' + screenshot;
@@ -4192,13 +4193,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+var proxyImage = function proxyImage(url) {
+  return 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
+};
+
 var defaultProps = {
   className: 'microlink_card__media microlink_card__media_image'
 };
 
 exports.default = _wrap2.default.extend.attrs(defaultProps)(_templateObject, function (_ref) {
   var image = _ref.image;
-  return image ? 'url(\'' + image + '\')' : '';
+  return image ? 'url(\'' + proxyImage(image) + '\')' : '';
 });
 
 /***/ }),
@@ -5504,7 +5509,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var e,t;Object.defineProperty(exports,"__esModule",{value:!0});var r=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),u=0;u<l;u++)s[u]=a[u+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),o=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},n=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(30),c=__webpack_require__(3),s=function(e){function t(e){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);var r=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return r.setData=function(e){var t=[].concat(r.props.image),o=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(o),a=o||{};r.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},r.state={loading:!0},r}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),n(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props.data;this.fetchData().then(function(r){return e.setData(o({},r.data,{customData:t}))})}},{key:"fetchData",value:function(){var e=(0,c.createApiUrl)(this.props),t=this.props.apiKey;return fetch(e,{headers:t?{"x-api-key":t}:{}}).then(function(e){return e.json()})}},{key:"renderContent",value:function(){var e=this.state,t=e.title,o=e.description,n=e.url,i=this.props,c=i.size;return r(a.Fragment,{},void 0,r(l.CardMedia,{image:e.image,video:e.video,url:n,cardSize:c,autoPlay:i.autoPlay,controls:i.controls,muted:i.muted,loop:i.loop,playsInline:i.playsInline}),r(l.CardContent,{className:"microlink_card__content",title:t,description:o,url:n,cardSize:c}))}},{key:"render",value:function(){var e=this.state,t=e.title,n=e.color,a=e.backgroundColor,c=e.url,s=e.loading,u=this.props,p=u.className,f=u.size,d=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(u,["className","size"]);return i.default.createElement(l.CardWrap,o({className:p?"microlink_card "+p:"microlink_card",href:c,title:t,cardSize:f,color:n,backgroundColor:a,loading:s},d),s?r(l.CardEmptyState,{cardSize:f}):this.renderContent())}}]),t}();s.defaultProps={apiKey:void 0,autoPlay:!0,contrast:!1,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,prerender:"auto",reverse:!1,screenshot:!1,size:"normal"},exports.default=s;
+var e,t;Object.defineProperty(exports,"__esModule",{value:!0});var r=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),u=0;u<l;u++)s[u]=a[u+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),o=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},n=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(30),c=__webpack_require__(3),s=function(e){function t(e){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);var r=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return r.setData=function(e){var t=[].concat(r.props.image),o=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(o),a=o||{};r.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},r.state={loading:!0},r}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),n(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props.data;this.fetchData().then(function(r){return e.setData(o({},r.data,{customData:t}))})}},{key:"fetchData",value:function(){var e=(0,c.createApiUrl)(this.props),t=this.props.apiKey;return fetch(e,{headers:t?{"x-api-key":t}:{}}).then(function(e){return e.json()})}},{key:"renderContent",value:function(){var e=this.state,t=e.title,o=e.description,n=e.url,i=this.props,c=i.size;return r(a.Fragment,{},void 0,r(l.CardMedia,{image:e.image,video:e.video,url:n,cardSize:c,autoPlay:i.autoPlay,controls:i.controls,muted:i.muted,loop:i.loop,playsInline:i.playsInline}),r(l.CardContent,{className:"microlink_card__content",title:t,description:o,url:n,cardSize:c}))}},{key:"render",value:function(){var e=this.state,t=e.title,n=e.color,a=e.backgroundColor,c=e.url,s=e.loading,u=this.props,p=u.className,f=u.size,d=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(u,["className","size"]);return i.default.createElement(l.CardWrap,o({className:p?"microlink_card "+p:"microlink_card",href:c,title:t,cardSize:f,color:n,backgroundColor:a,loading:s},d),s?r(l.CardEmptyState,{cardSize:f}):this.renderContent())}}]),t}();s.defaultProps={apiKey:void 0,autoPlay:!0,contrast:!1,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,video:!0,playsInline:!0,prerender:"auto",reverse:!1,screenshot:!1,size:"normal"},exports.default=s;
 //# sourceMappingURL=index.m.js.map
 
 
