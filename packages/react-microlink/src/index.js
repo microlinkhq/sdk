@@ -2,7 +2,7 @@ import React, {Fragment, Component} from 'react'
 import PropTypes from 'prop-types'
 
 import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Card'
-import {getUrlPath, someProp, createApiUrl} from './utils'
+import {createApiUrl, fetchFromApiUrl, fetchFromApi, getUrlPath, someProp} from './utils'
 
 class Microlink extends Component {
   constructor (props) {
@@ -14,15 +14,7 @@ class Microlink extends Component {
 
   componentDidMount () {
     const { data: customData } = this.props
-    this.fetchData().then(({ data }) => this.setData({ ...data, customData }))
-  }
-
-  fetchData () {
-    const url = createApiUrl(this.props)
-    const { apiKey } = this.props
-    const headers = apiKey ? {'x-api-key': apiKey} : {}
-    const promise = fetch(url, {headers})
-    return promise.then(res => res.json())
+    fetchFromApi(this.props).then(({ data }) => this.setData({ ...data, customData }))
   }
 
   setData = data => {
@@ -125,5 +117,7 @@ Microlink.propTypes = {
   size: PropTypes.oneOf(['normal', 'large']),
   url: PropTypes.string.isRequired
 }
+
+export { createApiUrl, fetchFromApiUrl, fetchFromApi }
 
 export default Microlink

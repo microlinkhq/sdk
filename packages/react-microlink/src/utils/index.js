@@ -31,4 +31,14 @@ export const createApiUrl = props => {
   return url
 }
 
+export const fetchFromApiUrl = ({apiKey, apiUrl}) => {
+  const headers = apiKey ? {'x-api-key': apiKey} : {}
+  return fetch(apiUrl, {headers}).then(res => res.json())
+}
+
+export const fetchFromApi = props => {
+  const apiUrl = createApiUrl(props)
+  return fetchFromApiUrl({apiUrl, ...props})
+}
+
 export const isLarge = cardSize => cardSize === 'large'
