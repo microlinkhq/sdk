@@ -5,16 +5,12 @@ import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Car
 import {createApiUrl, fetchFromApiUrl, fetchFromApi, getUrlPath, someProp} from './utils'
 
 class Microlink extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      loading: true
-    }
-  }
+  state = { loading: true }
 
   componentDidMount () {
-    const { data: customData } = this.props
-    fetchFromApi(this.props).then(({ data }) => this.setData({ ...data, customData }))
+    const { data: customData, noFetch, url } = this.props
+    const promise = noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
+    promise.then(({ data }) => this.setData({ ...data, ...customData }))
   }
 
   setData = data => {
@@ -65,8 +61,9 @@ class Microlink extends Component {
   }
 
   render () {
-    const {title, color, backgroundColor, url, loading} = this.state
-    const {className, size, ...props} = this.props
+    const {title, color, backgroundColor, url, loading: loadingState} = this.state
+    const {className, size, loading: loadingProp, ...props} = this.props
+    const loading = loadingProp == null ? loadingState : loadingProp
 
     return (
       <CardWrap
@@ -115,7 +112,7 @@ Microlink.propTypes = {
   prerender: PropTypes.oneOf(['auto', true, false]),
   screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   size: PropTypes.oneOf(['normal', 'large']),
-  url: PropTypes.string.isRequired
+  url: PropTypes.string
 }
 
 export { createApiUrl, fetchFromApiUrl, fetchFromApi }

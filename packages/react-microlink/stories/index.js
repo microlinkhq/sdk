@@ -31,7 +31,7 @@ storiesOf('props', module)
     urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
   )
   .addWithJSX('loading', () =>
-    createMicrolink({ url: 'somesitethatwontresolve.com' })
+    createMicrolink({ loading: true })
   )
 
 storiesOf('media', module)
@@ -52,14 +52,24 @@ storiesOf('media', module)
     )
   )
 
-storiesOf('custom', module).addWithJSX('data', () =>
-  createMicrolink({
-    url: 'https://microlink.io',
-    data: {
-      title: 'My Custom Title'
-    }
-  })
-)
+storiesOf('custom', module)
+  .addWithJSX('data', () =>
+    createMicrolink({
+      url: 'https://microlink.io',
+      data: {
+        title: 'My Custom Title'
+      }
+    })
+  )
+  .addWithJSX('data (no fetch)', () =>
+    createMicrolink({
+      url: 'https://microlink.io',
+      noFetch: true,
+      data: {
+        title: 'My Custom Title'
+      }
+    })
+  )
 
 storiesOf('custom/style', module)
   .addWithJSX('width', () =>

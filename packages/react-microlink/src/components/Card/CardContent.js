@@ -76,7 +76,7 @@ export default ({ title, description, url, cardSize, className }) => (
       <CardText lines={2}>{description}</CardText>
     </Description>
     <Url className='microlink_card__content_url'>
-      <CardText lines={1}>{getHostname(url)}</CardText>
+      <CardText lines={1}>{url && getHostname(url)}</CardText>
     </Url>
   </Content>
 )
