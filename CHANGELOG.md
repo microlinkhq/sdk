@@ -1,10 +1,22 @@
-<a name=""></a>
-##  (2018-06-02)
+##  (2018-08-16)
 
 
 
 
-<a name="2.1.4"></a>
+## 2.2.0 (2018-08-16)
+
+* Add loading prop ([5e8ac39](https://github.com/microlinkhq/react-microlink/commit/5e8ac39))
+* Expose createApiUrl, fetchFromApiUrl, fetchFromApi methods ([4dce80c](https://github.com/microlinkhq/react-microlink/commit/4dce80c))
+* Generate clean url ([dd6bfc4](https://github.com/microlinkhq/react-microlink/commit/dd6bfc4))
+* Meta tweaks ([15a3678](https://github.com/microlinkhq/react-microlink/commit/15a3678))
+* Setup update lifecycle ([872be39](https://github.com/microlinkhq/react-microlink/commit/872be39))
+* Update Changelog ([1f93614](https://github.com/microlinkhq/react-microlink/commit/1f93614))
+* Update dependencies ([07964eb](https://github.com/microlinkhq/react-microlink/commit/07964eb))
+* v2.2.0 ([b41dbda](https://github.com/microlinkhq/react-microlink/commit/b41dbda))
+* Video disable by default ([838c36d](https://github.com/microlinkhq/react-microlink/commit/838c36d))
+
+
+
 ## <small>2.1.4 (2018-06-02)</small>
 
 * Add video API Parameter (#118) ([f6235c7](https://github.com/microlinkhq/react-microlink/commit/f6235c7)), closes [#118](https://github.com/microlinkhq/react-microlink/issues/118)
@@ -14,7 +26,6 @@
 
 
 
-<a name="2.1.3"></a>
 ## <small>2.1.3 (2018-05-28)</small>
 
 * Attach apiKey just for pro endpoint ([d67fd82](https://github.com/microlinkhq/react-microlink/commit/d67fd82))
@@ -23,7 +34,6 @@
 
 
 
-<a name="2.1.2"></a>
 ## <small>2.1.2 (2018-05-20)</small>
 
 * Fix passing data ([c271a76](https://github.com/microlinkhq/react-microlink/commit/c271a76))
@@ -32,7 +42,6 @@
 
 
 
-<a name="2.1.1"></a>
 ## <small>2.1.1 (2018-05-20)</small>
 
 * Add querySelector example ([4d7374f](https://github.com/microlinkhq/react-microlink/commit/4d7374f))
@@ -46,7 +55,6 @@
 
 
 
-<a name="2.1.0"></a>
 ## 2.1.0 (2018-05-18)
 
 * Ability to pass DOM selector (#112) ([830bf9f](https://github.com/microlinkhq/react-microlink/commit/830bf9f)), closes [#112](https://github.com/microlinkhq/react-microlink/issues/112)
@@ -56,7 +64,6 @@
 
 
 
-<a name="2.0.4"></a>
 ## <small>2.0.4 (2018-05-09)</small>
 
 * Remove extract-domain dependency (#105) ([03a28a5](https://github.com/microlinkhq/react-microlink/commit/03a28a5)), closes [#105](https://github.com/microlinkhq/react-microlink/issues/105)
@@ -65,7 +72,6 @@
 
 
 
-<a name="2.0.3"></a>
 ## <small>2.0.3 (2018-05-04)</small>
 
 * Fix video `PlayButton` styles (#104) ([ce616d2](https://github.com/microlinkhq/react-microlink/commit/ce616d2)), closes [#104](https://github.com/microlinkhq/react-microlink/issues/104)
@@ -74,7 +80,6 @@
 
 
 
-<a name="2.0.2"></a>
 ## <small>2.0.2 (2018-04-26)</small>
 
 * Update browser targets ([9ccfce0](https://github.com/microlinkhq/react-microlink/commit/9ccfce0))
@@ -84,7 +89,6 @@
 
 
 
-<a name="2.0.1"></a>
 ## <small>2.0.1 (2018-03-30)</small>
 
 * Add text-align content reset ([99c583b](https://github.com/microlinkhq/react-microlink/commit/99c583b))
@@ -93,7 +97,6 @@
 
 
 
-<a name="2.0.0"></a>
 ## 2.0.0 (2018-03-29)
 
 * Update Changelog ([efc59e8](https://github.com/microlinkhq/react-microlink/commit/efc59e8))
@@ -101,7 +104,6 @@
 
 
 
-<a name="2.0.1-0"></a>
 ## <small>2.0.1-0 (2018-03-26)</small>
 
 * Fix size command ([2d2373c](https://github.com/microlinkhq/react-microlink/commit/2d2373c))
@@ -117,7 +119,6 @@
 
 
 
-<a name="1.8.1"></a>
 ## <small>1.8.1 (2018-03-19)</small>
 
 * Fix pass key prop ([f828882](https://github.com/microlinkhq/react-microlink/commit/f828882))
@@ -126,7 +127,6 @@
 
 
 
-<a name="1.8.0"></a>
 ## 1.8.0 (2018-03-18)
 
 * Adapt controls based on card size ([ebd8aba](https://github.com/microlinkhq/react-microlink/commit/ebd8aba))
@@ -141,7 +141,6 @@
 
 
 
-<a name="1.7.3"></a>
 ## <small>1.7.3 (2018-03-13)</small>
 
 * Bundle all dependencies ([a458d13](https://github.com/microlinkhq/react-microlink/commit/a458d13))
@@ -150,7 +149,6 @@
 
 
 
-<a name="1.7.2"></a>
 ## <small>1.7.2 (2018-03-13)</small>
 
 * Add `styled-components` to webpack prod config’s `externals` ([f35f83a](https://github.com/microlinkhq/react-microlink/commit/f35f83a))
@@ -163,7 +161,6 @@
 
 
 
-<a name="1.7.1"></a>
 ## <small>1.7.1 (2018-03-01)</small>
 
 * Fix hover for contrast style ([cddb784](https://github.com/microlinkhq/react-microlink/commit/cddb784))
@@ -172,7 +169,6 @@
 
 
 
-<a name="1.7.0"></a>
 ## 1.7.0 (2018-03-01)
 
 * Add `hasImage` check to CardMedia ([5e83711](https://github.com/microlinkhq/react-microlink/commit/5e83711))
@@ -220,7 +216,6 @@
 
 
 
-<a name="1.6.3"></a>
 ## <small>1.6.3 (2018-02-25)</small>
 
 * Add fade effect to CardMedia on load ([41e43d5](https://github.com/microlinkhq/react-microlink/commit/41e43d5))
@@ -239,7 +234,6 @@
 
 
 
-<a name="1.6.2"></a>
 ## <small>1.6.2 (2018-02-25)</small>
 
 * Revert "Remove unnecessary React reference" ([d1748bf](https://github.com/microlinkhq/react-microlink/commit/d1748bf))
@@ -248,7 +242,6 @@
 
 
 
-<a name="1.6.1"></a>
 ## <small>1.6.1 (2018-02-24)</small>
 
 * Add ES bundle ([217a9e4](https://github.com/microlinkhq/react-microlink/commit/217a9e4))
@@ -259,7 +252,6 @@
 
 
 
-<a name="1.6.0"></a>
 ## 1.6.0 (2018-02-23)
 
 * Adjust `reverse` styling definition ([f05456f](https://github.com/microlinkhq/react-microlink/commit/f05456f))
@@ -281,7 +273,6 @@
 
 
 
-<a name="1.5.1"></a>
 ## <small>1.5.1 (2018-02-21)</small>
 
 * Add `reverse` examples to storybook ([ff9de53](https://github.com/microlinkhq/react-microlink/commit/ff9de53))
@@ -297,7 +288,6 @@
 
 
 
-<a name="1.5.0"></a>
 ## 1.5.0 (2018-02-20)
 
 * Add `auto` as enum ([a2523ba](https://github.com/microlinkhq/react-microlink/commit/a2523ba))
@@ -314,7 +304,6 @@
 
 
 
-<a name="1.4.2"></a>
 ## <small>1.4.2 (2018-02-18)</small>
 
 * Update amazon link ([f3b03ba](https://github.com/microlinkhq/react-microlink/commit/f3b03ba))
@@ -326,7 +315,6 @@
 
 
 
-<a name="1.4.1"></a>
 ## <small>1.4.1 (2018-02-13)</small>
 
 * Add video demo ([5a15901](https://github.com/microlinkhq/react-microlink/commit/5a15901))
@@ -339,7 +327,6 @@
 
 
 
-<a name="1.4.0"></a>
 ## 1.4.0 (2018-02-11)
 
 * Add `mediaSize` prop ([8ded621](https://github.com/microlinkhq/react-microlink/commit/8ded621))
@@ -379,7 +366,6 @@
 
 
 
-<a name="1.3.4"></a>
 ## <small>1.3.4 (2018-01-30)</small>
 
 * Fix Storybook link ([fb912ed](https://github.com/microlinkhq/react-microlink/commit/fb912ed))
@@ -392,7 +378,6 @@
 
 
 
-<a name="1.3.3"></a>
 ## <small>1.3.3 (2018-01-20)</small>
 
 * Add large demo ([9ce33bc](https://github.com/microlinkhq/react-microlink/commit/9ce33bc))
@@ -403,7 +388,6 @@
 
 
 
-<a name="1.3.2"></a>
 ## <small>1.3.2 (2018-01-18)</small>
 
 * Remove prop-types for production build ([1dabcb4](https://github.com/microlinkhq/react-microlink/commit/1dabcb4))
@@ -412,7 +396,6 @@
 
 
 
-<a name="1.3.1"></a>
 ## <small>1.3.1 (2018-01-16)</small>
 
 * Avoid print errors ([3490e15](https://github.com/microlinkhq/react-microlink/commit/3490e15))
@@ -426,7 +409,6 @@
 
 
 
-<a name="1.3.0"></a>
 ## 1.3.0 (2018-01-14)
 
 * Add empty state responsive for mobile ([e1944b5](https://github.com/microlinkhq/react-microlink/commit/e1944b5))
@@ -445,7 +427,6 @@
 
 
 
-<a name="1.2.5"></a>
 ## <small>1.2.5 (2018-01-11)</small>
 
 * Ship module build ([1b746ec](https://github.com/microlinkhq/react-microlink/commit/1b746ec))
@@ -455,14 +436,12 @@
 
 
 
-<a name="1.2.4"></a>
 ## <small>1.2.4 (2018-01-11)</small>
 
 * v1.2.4 ([68271fa](https://github.com/microlinkhq/react-microlink/commit/68271fa))
 
 
 
-<a name="1.2.3"></a>
 ## <small>1.2.3 (2018-01-11)</small>
 
 * Setup publish script ([d8b7442](https://github.com/microlinkhq/react-microlink/commit/d8b7442))
@@ -470,7 +449,6 @@
 
 
 
-<a name="1.2.2"></a>
 ## <small>1.2.2 (2018-01-09)</small>
 
 * Update pro plan props ([1ad681c](https://github.com/microlinkhq/react-microlink/commit/1ad681c))
@@ -479,7 +457,6 @@
 
 
 
-<a name="1.2.1"></a>
 ## <small>1.2.1 (2018-01-05)</small>
 
 * Declare react as peer dependencies ([5cbf15f](https://github.com/microlinkhq/react-microlink/commit/5cbf15f))
@@ -490,7 +467,6 @@
 
 
 
-<a name="1.2.0"></a>
 ## 1.2.0 (2017-12-19)
 
 * Add .npmrc ([f673518](https://github.com/microlinkhq/react-microlink/commit/f673518))
@@ -515,7 +491,6 @@
 
 
 
-<a name="1.1.3"></a>
 ## <small>1.1.3 (2017-12-16)</small>
 
 * Update build process ([963c3ed](https://github.com/microlinkhq/react-microlink/commit/963c3ed))
@@ -523,7 +498,6 @@
 
 
 
-<a name="1.1.2"></a>
 ## <small>1.1.2 (2017-12-16)</small>
 
 * Setup prepublish script ([6f745a9](https://github.com/microlinkhq/react-microlink/commit/6f745a9))
@@ -531,7 +505,6 @@
 
 
 
-<a name="1.1.2-0"></a>
 ## <small>1.1.2-0 (2017-12-16)</small>
 
 * Delete dist from repository ([c4c5f3a](https://github.com/microlinkhq/react-microlink/commit/c4c5f3a))
@@ -540,7 +513,6 @@
 
 
 
-<a name="1.1.0"></a>
 ## 1.1.0 (2017-12-16)
 
 * ¯\_(ツ)_/¯ ([e18114d](https://github.com/microlinkhq/react-microlink/commit/e18114d))
