@@ -21,33 +21,41 @@ export const media = {
   `
 }
 
-const apiValue = (key, value) => value === true ? `${key}` : `${key}=${value}`
+const apiValue = (key, value) => (value === true ? `${key}` : `${key}=${value}`)
 
 export const defaultApiParameters = {
+  video: false,
   contrast: false,
   screenshot: false,
   prerender: 'auto'
 }
 
 export const createApiUrl = props => {
-  const { apiKey, url: targetUrl, screenshot, prerender, contrast, video } = props
+  const {
+    apiKey,
+    url: targetUrl,
+    screenshot,
+    prerender,
+    contrast,
+    video
+  } = props
   const alias = apiKey ? 'pro' : 'api'
   let url = `https://${alias}.microlink.io/?url=${targetUrl}`
   if (!isNil(video)) url = `${url}&${apiValue('video', video)}`
-  if (!isNil(contrast) && contrast !== defaultApiParameters.contrast) url = `${url}&${apiValue('palette', contrast)}`
-  if (!isNil(prerender) && prerender !== defaultApiParameters.prerender) url = `${url}&${apiValue('prerender', prerender)}`
-  if (!isNil(screenshot) && screenshot !== defaultApiParameters.screenshot) url = `${url}&${apiValue('screenshot', screenshot)}`
+  if (!isNil(contrast) && contrast !== defaultApiParameters.contrast) { url = `${url}&${apiValue('palette', contrast)}` }
+  if (!isNil(prerender) && prerender !== defaultApiParameters.prerender) { url = `${url}&${apiValue('prerender', prerender)}` }
+  if (!isNil(screenshot) && screenshot !== defaultApiParameters.screenshot) { url = `${url}&${apiValue('screenshot', screenshot)}` }
   return url
 }
 
-export const fetchFromApiUrl = ({apiKey, apiUrl}) => {
-  const headers = apiKey ? {'x-api-key': apiKey} : {}
-  return fetch(apiUrl, {headers}).then(res => res.json())
+export const fetchFromApiUrl = ({ apiKey, apiUrl }) => {
+  const headers = apiKey ? { 'x-api-key': apiKey } : {}
+  return fetch(apiUrl, { headers }).then(res => res.json())
 }
 
 export const fetchFromApi = props => {
   const apiUrl = createApiUrl(props)
-  return fetchFromApiUrl({apiUrl, ...props})
+  return fetchFromApiUrl({ apiUrl, ...props })
 }
 
 export const isLarge = cardSize => cardSize === 'large'

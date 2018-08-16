@@ -1,15 +1,29 @@
-import React, {Fragment, Component} from 'react'
+import React, { Fragment, Component } from 'react'
 import PropTypes from 'prop-types'
 
-import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Card'
-import {defaultApiParameters, isNil, createApiUrl, fetchFromApiUrl, fetchFromApi, getUrlPath, someProp} from './utils'
+import {
+  CardWrap,
+  CardMedia,
+  CardContent,
+  CardEmptyState
+} from './components/Card'
+import {
+  defaultApiParameters,
+  isNil,
+  createApiUrl,
+  fetchFromApiUrl,
+  fetchFromApi,
+  getUrlPath,
+  someProp
+} from './utils'
 
 class Microlink extends Component {
   state = { loading: true }
 
   componentDidMount () {
     const { data: customData, noFetch, url } = this.props
-    const promise = noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
+    const promise =
+      noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
     promise.then(({ data }) => this.setData({ ...data, ...customData }))
   }
 
@@ -21,8 +35,8 @@ class Microlink extends Component {
     const imagesProps = [].concat(this.props.image)
     const image = someProp(data, imagesProps)
     const imageUrl = getUrlPath(image)
-    const {title, description, url, video} = data
-    const {color, background_color: backgroundColor} = image || {}
+    const { title, description, url, video } = data
+    const { color, background_color: backgroundColor } = image || {}
 
     this.setState({
       color,
@@ -37,8 +51,8 @@ class Microlink extends Component {
   }
 
   renderContent () {
-    const {title, description, url, image, video} = this.state
-    const {autoPlay, controls, loop, muted, playsInline, size} = this.props
+    const { title, description, url, image, video } = this.state
+    const { autoPlay, controls, loop, muted, playsInline, size } = this.props
 
     return (
       <Fragment>
@@ -65,8 +79,14 @@ class Microlink extends Component {
   }
 
   render () {
-    const {title, color, backgroundColor, url, loading: loadingState} = this.state
-    const {className, size, loading: loadingProp, ...props} = this.props
+    const {
+      title,
+      color,
+      backgroundColor,
+      url,
+      loading: loadingState
+    } = this.state
+    const { className, size, loading: loadingProp, ...props } = this.props
     const loading = isNil(loadingProp) ? loadingState : loadingProp
 
     return (
@@ -93,7 +113,6 @@ Microlink.defaultProps = {
   image: ['screenshot', 'image', 'logo'],
   loop: true,
   muted: true,
-  video: true,
   playsInline: true,
   reverse: false,
   size: 'normal',
@@ -106,7 +125,10 @@ Microlink.propTypes = {
   video: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
-  image: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
+  image: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string)
+  ]),
   loop: PropTypes.bool,
   muted: PropTypes.bool,
   reverse: PropTypes.bool,
