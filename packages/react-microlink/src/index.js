@@ -2,7 +2,7 @@ import React, {Fragment, Component} from 'react'
 import PropTypes from 'prop-types'
 
 import {CardWrap, CardMedia, CardContent, CardEmptyState} from './components/Card'
-import {createApiUrl, fetchFromApiUrl, fetchFromApi, getUrlPath, someProp} from './utils'
+import {defaultApiParameters, isNil, createApiUrl, fetchFromApiUrl, fetchFromApi, getUrlPath, someProp} from './utils'
 
 class Microlink extends Component {
   state = { loading: true }
@@ -11,6 +11,10 @@ class Microlink extends Component {
     const { data: customData, noFetch, url } = this.props
     const promise = noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
     promise.then(({ data }) => this.setData({ ...data, ...customData }))
+  }
+
+  componentDidUpdate (prevProps) {
+    if (prevProps.data !== this.props.data) this.setData(this.props.data)
   }
 
   setData = data => {
