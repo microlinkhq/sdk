@@ -67,7 +67,7 @@ class Microlink extends Component {
   render () {
     const {title, color, backgroundColor, url, loading: loadingState} = this.state
     const {className, size, loading: loadingProp, ...props} = this.props
-    const loading = loadingProp == null ? loadingState : loadingProp
+    const loading = isNil(loadingProp) ? loadingState : loadingProp
 
     return (
       <CardWrap
@@ -89,17 +89,15 @@ class Microlink extends Component {
 Microlink.defaultProps = {
   apiKey: undefined,
   autoPlay: true,
-  contrast: false,
   controls: true,
   image: ['screenshot', 'image', 'logo'],
   loop: true,
   muted: true,
   video: true,
   playsInline: true,
-  prerender: 'auto',
   reverse: false,
-  screenshot: false,
-  size: 'normal'
+  size: 'normal',
+  ...defaultApiParameters
 }
 
 Microlink.propTypes = {

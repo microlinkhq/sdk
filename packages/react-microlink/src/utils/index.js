@@ -1,5 +1,7 @@
 import { css } from 'styled-components'
 
+export const isNil = value => value == null
+
 export const getUrlPath = data =>
   data && typeof data === 'object' ? data.url : data
 
@@ -19,15 +21,22 @@ export const media = {
   `
 }
 
+const apiValue = (key, value) => value === true ? `${key}` : `${key}=${value}`
+
+export const defaultApiParameters = {
+  contrast: false,
+  screenshot: false,
+  prerender: 'auto'
+}
+
 export const createApiUrl = props => {
   const { apiKey, url: targetUrl, screenshot, prerender, contrast, video } = props
   const alias = apiKey ? 'pro' : 'api'
-
-  let url = `https://${alias}.microlink.io/?url=${targetUrl}&video=${video}`
-  if (contrast) url = `${url}&palette`
-  if (prerender !== 'auto') url = `${url}&prerender=${prerender}`
-  if (screenshot) url = `${url}&screenshot=${screenshot}`
-
+  let url = `https://${alias}.microlink.io/?url=${targetUrl}`
+  if (!isNil(video)) url = `${url}&${apiValue('video', video)}`
+  if (!isNil(contrast) && contrast !== defaultApiParameters.contrast) url = `${url}&${apiValue('palette', contrast)}`
+  if (!isNil(prerender) && prerender !== defaultApiParameters.prerender) url = `${url}&${apiValue('prerender', prerender)}`
+  if (!isNil(screenshot) && screenshot !== defaultApiParameters.screenshot) url = `${url}&${apiValue('screenshot', screenshot)}`
   return url
 }
 
