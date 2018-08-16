@@ -54,14 +54,12 @@
     "husky": "latest",
     "lint-staged": "latest",
     "microbundle": "latest",
-    "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
     "react": "^16",
     "react-dom": "^16",
     "size-limit": "latest",
     "standard": "latest",
-    "standard-markdown": "latest",
     "storybook-addon-jsx": "latest",
     "styled-components": "~3.4.2",
     "unfetch": "latest"
@@ -79,15 +77,14 @@
     "build:microbundle": "NODE_ENV=production microbundle build --target browser --entry lib/index.js --format es,cjs",
     "dev": "start-storybook -p 6006",
     "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
-    "lint": "standard-markdown && standard",
+    "lint": "standard",
     "posttest": "npm run size",
     "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
-    "pretest": "npm run lint && npm run update",
+    "pretest": "npm run lint",
     "size": "npm run build && size-limit",
     "start": "node scripts/start.js",
-    "test": "exit 0",
-    "update": "ncu --error-level 2"
+    "test": "exit 0"
   },
   "license": "MIT",
   "lint-staged": {

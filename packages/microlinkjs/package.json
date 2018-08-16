@@ -49,13 +49,11 @@
     "html-webpack-plugin": "latest",
     "husky": "latest",
     "lint-staged": "latest",
-    "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "react": "latest",
     "react-dev-utils": "latest",
     "react-dom": "latest",
     "standard": "latest",
-    "standard-markdown": "latest",
     "unminified-webpack-plugin": "latest",
     "webpack": "latest",
     "webpack-dev-server": "latest"
@@ -75,13 +73,12 @@
     "build:cjs": "./scripts/build cjs",
     "build:umd": "./scripts/build umd",
     "dev": "./scripts/start",
-    "lint": "standard-markdown && standard src",
+    "lint": "standard src",
     "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
-    "pretest": "npm run lint && npm run update",
+    "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
-    "test": "exit 0",
-    "update": "ncu --error-level 2"
+    "test": "exit 0"
   },
   "license": "MIT",
   "lint-staged": {
