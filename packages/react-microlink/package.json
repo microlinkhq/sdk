@@ -52,7 +52,6 @@
     "eslint-plugin-jsx-a11y": "latest",
     "finepack": "latest",
     "husky": "latest",
-    "lint-staged": "latest",
     "microbundle": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
@@ -79,7 +78,6 @@
     "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard",
     "posttest": "npm run size",
-    "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint",
     "size": "npm run build && size-limit",
@@ -87,16 +85,6 @@
     "test": "exit 0"
   },
   "license": "MIT",
-  "lint-staged": {
-    "package.json": [
-      "finepack",
-      "git add"
-    ],
-    "*.js": [
-      "prettier-standard",
-      "git add"
-    ]
-  },
   "peerDependencies": {
     "react": ">= 16 < 17",
     "styled-components": "3"

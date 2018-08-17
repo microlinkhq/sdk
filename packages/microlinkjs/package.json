@@ -48,7 +48,6 @@
     "fs-extra": "latest",
     "html-webpack-plugin": "latest",
     "husky": "latest",
-    "lint-staged": "latest",
     "prettier-standard": "latest",
     "react": "latest",
     "react-dev-utils": "latest",
@@ -74,21 +73,10 @@
     "build:umd": "./scripts/build umd",
     "dev": "./scripts/start",
     "lint": "standard src",
-    "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "test": "exit 0"
   },
-  "license": "MIT",
-  "lint-staged": {
-    "package.json": [
-      "finepack",
-      "git add"
-    ],
-    "*.js": [
-      "prettier-standard",
-      "git add"
-    ]
-  }
+  "license": "MIT"
 }
