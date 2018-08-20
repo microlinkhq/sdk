@@ -2422,7 +2422,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isLarge = exports.fetchFromApi = exports.fetchFromApiUrl = exports.createApiUrl = exports.defaultApiParameters = exports.media = exports.someProp = exports.getUrlPath = exports.isNil = undefined;
+exports.imageProxy = exports.isLarge = exports.fetchFromApi = exports.fetchFromApiUrl = exports.createApiUrl = exports.defaultApiParameters = exports.media = exports.someProp = exports.getUrlPath = exports.isNil = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -2509,6 +2509,11 @@ var fetchFromApi = exports.fetchFromApi = function fetchFromApi(props) {
 
 var isLarge = exports.isLarge = function isLarge(cardSize) {
   return cardSize === 'large';
+};
+
+// https://developer.hootsuite.com/docs/https-image-proxy
+var imageProxy = exports.imageProxy = function imageProxy(url) {
+  return 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
 };
 
 /***/ }),
@@ -4646,13 +4651,11 @@ var _wrap = __webpack_require__(13);
 
 var _wrap2 = _interopRequireDefault(_wrap);
 
+var _utils = __webpack_require__(3);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var proxyImage = function proxyImage(url) {
-  return 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
-};
 
 var defaultProps = {
   className: 'microlink_card__media microlink_card__media_image'
@@ -4660,7 +4663,7 @@ var defaultProps = {
 
 exports.default = _wrap2.default.extend.attrs(defaultProps)(_templateObject, function (_ref) {
   var image = _ref.image;
-  return image ? 'url(\'' + proxyImage(image) + '\')' : '';
+  return image ? 'url(\'' + (0, _utils.imageProxy)(image) + '\')' : '';
 });
 
 /***/ }),
@@ -5488,7 +5491,7 @@ module.exports = each
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.fetchFromApi=exports.fetchFromApiUrl=exports.createApiUrl=void 0;var e,t,r=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),p=0;p<l;p++)s[p]=a[p+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),o=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},n=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(37),c=__webpack_require__(3);function s(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}var p=function(e){function t(){var e,r,o,n=arguments;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);for(var a=arguments.length,i=Array(a),l=0;l<a;l++)i[l]=n[l];return r=o=s(this,(e=t.__proto__||Object.getPrototypeOf(t)).call.apply(e,[this].concat(i))),o.state={loading:!0},o.setData=function(e){var t=[].concat(o.props.image),r=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(r),a=r||{};o.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},s(o,r)}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),n(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props,r=t.data;(t.noFetch||!t.url?Promise.resolve({}):(0,c.fetchFromApi)(this.props)).then(function(t){return e.setData(o({},t.data,r))})}},{key:"componentDidUpdate",value:function(e){e.data!==this.props.data&&this.setData(this.props.data)}},{key:"renderContent",value:function(){var e=this.state,t=e.title,o=e.description,n=e.url,i=this.props,c=i.size;return r(a.Fragment,{},void 0,r(l.CardMedia,{image:e.image,video:e.video,url:n,cardSize:c,autoPlay:i.autoPlay,controls:i.controls,muted:i.muted,loop:i.loop,playsInline:i.playsInline}),r(l.CardContent,{className:"microlink_card__content",title:t,description:o,url:n,cardSize:c}))}},{key:"render",value:function(){var e=this.state,t=e.title,n=e.color,a=e.backgroundColor,s=e.url,p=e.loading,u=this.props,f=u.className,d=u.size,m=u.loading,h=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(u,["className","size","loading"]),y=(0,c.isNil)(m)?p:m;return i.default.createElement(l.CardWrap,o({className:f?"microlink_card "+f:"microlink_card",href:s,title:t,cardSize:d,color:n,backgroundColor:a,loading:y},h),y?r(l.CardEmptyState,{cardSize:d}):this.renderContent())}}]),t}();p.defaultProps=o({apiKey:void 0,autoPlay:!0,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,reverse:!1,size:"normal"},c.defaultApiParameters),exports.createApiUrl=c.createApiUrl,exports.fetchFromApiUrl=c.fetchFromApiUrl,exports.fetchFromApi=c.fetchFromApi,exports.default=p;
+Object.defineProperty(exports,"__esModule",{value:!0}),exports.fetchFromApi=exports.fetchFromApiUrl=exports.createApiUrl=exports.imageProxy=void 0;var e,t,r=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),p=0;p<l;p++)s[p]=a[p+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),o=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},n=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(37),c=__webpack_require__(3);function s(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}var p=function(e){function t(){var e,r,o,n=arguments;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);for(var a=arguments.length,i=Array(a),l=0;l<a;l++)i[l]=n[l];return r=o=s(this,(e=t.__proto__||Object.getPrototypeOf(t)).call.apply(e,[this].concat(i))),o.state={loading:!0},o.setData=function(e){var t=[].concat(o.props.image),r=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(r),a=r||{};o.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},s(o,r)}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),n(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props,r=t.data;(t.noFetch||!t.url?Promise.resolve({}):(0,c.fetchFromApi)(this.props)).then(function(t){return e.setData(o({},t.data,r))})}},{key:"componentDidUpdate",value:function(e){e.data!==this.props.data&&this.setData(this.props.data)}},{key:"renderContent",value:function(){var e=this.state,t=e.title,o=e.description,n=e.url,i=this.props,c=i.size;return r(a.Fragment,{},void 0,r(l.CardMedia,{image:e.image,video:e.video,url:n,cardSize:c,autoPlay:i.autoPlay,controls:i.controls,muted:i.muted,loop:i.loop,playsInline:i.playsInline}),r(l.CardContent,{className:"microlink_card__content",title:t,description:o,url:n,cardSize:c}))}},{key:"render",value:function(){var e=this.state,t=e.title,n=e.color,a=e.backgroundColor,s=e.url,p=e.loading,u=this.props,f=u.className,d=u.size,m=u.loading,y=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(u,["className","size","loading"]),h=(0,c.isNil)(m)?p:m;return i.default.createElement(l.CardWrap,o({className:f?"microlink_card "+f:"microlink_card",href:s,title:t,cardSize:d,color:n,backgroundColor:a,loading:h},y),h?r(l.CardEmptyState,{cardSize:d}):this.renderContent())}}]),t}();p.defaultProps=o({apiKey:void 0,autoPlay:!0,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,reverse:!1,size:"normal"},c.defaultApiParameters),exports.imageProxy=c.imageProxy,exports.createApiUrl=c.createApiUrl,exports.fetchFromApiUrl=c.fetchFromApiUrl,exports.fetchFromApi=c.fetchFromApi,exports.default=p;
 //# sourceMappingURL=index.m.js.map
 
 
