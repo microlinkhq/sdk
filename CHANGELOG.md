@@ -1,5 +1,14 @@
-##  (2018-08-16)
+##  (2018-08-20)
 
+
+
+
+## <small>2.2.1 (2018-08-20)</small>
+
+* Expose imageProxy (#121) ([fae2282](https://github.com/microlinkhq/react-microlink/commit/fae2282)), closes [#121](https://github.com/microlinkhq/react-microlink/issues/121)
+* Unify lint-staged ([d3561dd](https://github.com/microlinkhq/react-microlink/commit/d3561dd))
+* Update Changelog ([e9bfc7b](https://github.com/microlinkhq/react-microlink/commit/e9bfc7b))
+* v2.2.1 ([42c0c9c](https://github.com/microlinkhq/react-microlink/commit/42c0c9c))
 
 
 
