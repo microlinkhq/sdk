@@ -3,6 +3,14 @@
 
 
 
+## <small>2.2.2 (2018-08-20)</small>
+
+* Securize video poster image ([701a5b4](https://github.com/microlinkhq/react-microlink/commit/701a5b4))
+* Update Changelog ([3bbad98](https://github.com/microlinkhq/react-microlink/commit/3bbad98))
+* v2.2.2 ([af2c041](https://github.com/microlinkhq/react-microlink/commit/af2c041))
+
+
+
 ## <small>2.2.1 (2018-08-20)</small>
 
 * Expose imageProxy (#121) ([fae2282](https://github.com/microlinkhq/react-microlink/commit/fae2282)), closes [#121](https://github.com/microlinkhq/react-microlink/issues/121)
