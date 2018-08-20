@@ -6511,7 +6511,7 @@ var CardVideo = function (_Component) {
         _react2.default.createElement(Video, _extends({
           className: 'microlink_card__media microlink_card__media_video',
           src: (0, _utils.getUrlPath)(video),
-          poster: image,
+          poster: (0, _utils.imageProxy)(image),
           muted: muted,
           autoPlay: autoPlay,
           loop: loop,
