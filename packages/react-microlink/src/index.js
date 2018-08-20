@@ -14,6 +14,7 @@ import {
   fetchFromApiUrl,
   fetchFromApi,
   getUrlPath,
+  imageProxy,
   someProp
 } from './utils'
 
@@ -139,6 +140,6 @@ Microlink.propTypes = {
   url: PropTypes.string
 }
 
-export { createApiUrl, fetchFromApiUrl, fetchFromApi }
+export { imageProxy, createApiUrl, fetchFromApiUrl, fetchFromApi }
 
 export default Microlink
