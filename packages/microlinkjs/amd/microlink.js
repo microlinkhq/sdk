@@ -2503,7 +2503,7 @@ var isLarge = exports.isLarge = function isLarge(cardSize) {
 
 // https://developer.hootsuite.com/docs/https-image-proxy
 var imageProxy = exports.imageProxy = function imageProxy(url) {
-  return 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
+  return url.startsWith('https') ? url : 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
 };
 
 /***/ }),
