@@ -1,5 +1,13 @@
-##  (2018-08-20)
+##  (2018-08-22)
 
+
+
+
+## <small>2.2.3 (2018-08-22)</small>
+
+* Only securize non https urls ([163d017](https://github.com/microlinkhq/react-microlink/commit/163d017))
+* Update Changelog ([6b5f61c](https://github.com/microlinkhq/react-microlink/commit/6b5f61c))
+* v2.2.3 ([cb56a08](https://github.com/microlinkhq/react-microlink/commit/cb56a08))
 
 
 
