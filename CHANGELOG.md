@@ -1,5 +1,13 @@
-##  (2018-08-22)
+##  (2018-08-27)
 
+
+
+
+## <small>2.2.4 (2018-08-27)</small>
+
+* Refactor (#122) ([b588ad2](https://github.com/microlinkhq/react-microlink/commit/b588ad2)), closes [#122](https://github.com/microlinkhq/react-microlink/issues/122)
+* Update Changelog ([2b84f2b](https://github.com/microlinkhq/react-microlink/commit/2b84f2b))
+* v2.2.4 ([f1d1c18](https://github.com/microlinkhq/react-microlink/commit/f1d1c18))
 
 
 
