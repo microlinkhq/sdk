@@ -5,7 +5,7 @@ import {
   CardWrap,
   CardMedia,
   CardContent,
-  CardEmptyState
+  CardEmpty
 } from './components/Card'
 import {
   defaultApiParameters,
@@ -17,6 +17,29 @@ import {
   imageProxy,
   someProp
 } from './utils'
+
+const Card = ({image, video, url, size, autoPlay, controls, muted, loop, playsInline, title, description}) => (
+  <Fragment>
+    <CardMedia
+      image={image}
+      video={video}
+      url={url}
+      cardSize={size}
+      autoPlay={autoPlay}
+      controls={controls}
+      muted={muted}
+      loop={loop}
+      playsInline={playsInline}
+    />
+    <CardContent
+      className='microlink_card__content'
+      title={title}
+      description={description}
+      url={url}
+      cardSize={size}
+    />
+  </Fragment>
+)
 
 class Microlink extends Component {
   state = { loading: true }
@@ -50,44 +73,18 @@ class Microlink extends Component {
       image: imageUrl
     })
   }
-
-  renderContent () {
-    const { title, description, url, image, video } = this.state
-    const { autoPlay, controls, loop, muted, playsInline, size } = this.props
-
-    return (
-      <Fragment>
-        <CardMedia
-          image={image}
-          video={video}
-          url={url}
-          cardSize={size}
-          autoPlay={autoPlay}
-          controls={controls}
-          muted={muted}
-          loop={loop}
-          playsInline={playsInline}
-        />
-        <CardContent
-          className='microlink_card__content'
-          title={title}
-          description={description}
-          url={url}
-          cardSize={size}
-        />
-      </Fragment>
-    )
-  }
-
   render () {
     const {
       title,
       color,
       backgroundColor,
       url,
-      loading: loadingState
+      loading: loadingState,
+      description,
+      image,
+      video
     } = this.state
-    const { className, size, loading: loadingProp, ...props } = this.props
+    const { autoPlay, controls, loop, muted, playsInline, className, size, loading: loadingProp, ...props } = this.props
     const loading = isNil(loadingProp) ? loadingState : loadingProp
 
     return (
@@ -101,7 +98,21 @@ class Microlink extends Component {
         loading={loading}
         {...props}
       >
-        {!loading ? this.renderContent() : <CardEmptyState cardSize={size} />}
+        { loading
+          ? <CardEmpty cardSize={size} />
+          : <Card
+            title={title}
+            description={description}
+            url={url}
+            image={image}
+            video={video}
+            autoPlay={autoPlay}
+            controls={controls}
+            loop={loop}
+            muted={muted}
+            playsInline={playsInline}
+            size={size}
+          />}
       </CardWrap>
     )
   }

@@ -9,12 +9,7 @@ import {ImageLoadCatcher} from './loader'
 const isUrl = url => getUrlPath(url) !== null
 
 export default class CardMedia extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      loading: isUrl(props.image)
-    }
-  }
+  state = { loading: isUrl(this.props.image) }
 
   renderMedia () {
     const {loading} = this.state

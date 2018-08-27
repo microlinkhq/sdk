@@ -6,11 +6,11 @@ import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
 import { media } from '../../utils'
 
-const EmptyImage = CardImage.extend`
+const MediaEmpty = CardImage.extend`
   ${emptyStateImageAnimation}
 `
 
-const EmptyTitle = styled.span`
+const HeaderEmpty = styled.header`
   height: 16px;
   width: 60%;
   display: block;
@@ -20,7 +20,7 @@ const EmptyTitle = styled.span`
   ${emptyStateAnimation}
 `
 
-const EmptyDescription = styled.span`
+const DescriptionEmpty = styled.span`
   width: 95%;
   display: block;
   background: #e1e8ed;
@@ -54,7 +54,7 @@ const EmptyDescription = styled.span`
   `}
 `
 
-const EmptyLink = styled.span`
+const FooterEmpty = styled.footer`
   height: 10px;
   width: 30%;
   display: block;
@@ -66,11 +66,11 @@ const EmptyLink = styled.span`
 
 const CardEmptyState = ({cardSize}) => (
   <Fragment>
-    <EmptyImage cardSize={cardSize} />
-    <Content cardSize={cardSize}>
-      <EmptyTitle />
-      <EmptyDescription cardSize={cardSize} />
-      <EmptyLink />
+    <MediaEmpty cardSize={cardSize} />
+    <Content cardSize={cardSize} className='microlink_card__content'>
+      <HeaderEmpty />
+      <DescriptionEmpty cardSize={cardSize} />
+      <FooterEmpty />
     </Content>
   </Fragment>
 )

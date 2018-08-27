@@ -40,7 +40,7 @@ export const Content = styled.div`
   ${({ cardSize }) => isLarge(cardSize) && largeContentStyle};
 `
 
-const Title = styled.header`
+const Header = styled.header`
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -57,7 +57,7 @@ const Description = styled.div`
   ${({ cardSize }) => !isLarge(cardSize) && mobileDescriptionStyle};
 `
 
-const Url = styled.footer`
+const Footer = styled.footer`
   text-align: left;
   font-size: 12px;
   margin: 0;
@@ -66,17 +66,17 @@ const Url = styled.footer`
 
 export default ({ title, description, url, cardSize, className }) => (
   <Content className={className} cardSize={cardSize}>
-    <Title className='microlink_card__content_title'>
+    <Header className='microlink_card__content_title'>
       <CardText lines={1}>{title}</CardText>
-    </Title>
+    </Header>
     <Description
       className='microlink_card__content_description'
       cardSize={cardSize}
     >
       <CardText lines={2}>{description}</CardText>
     </Description>
-    <Url className='microlink_card__content_url'>
+    <Footer className='microlink_card__content_url'>
       <CardText lines={1}>{url && getHostname(url)}</CardText>
-    </Url>
+    </Footer>
   </Content>
 )
