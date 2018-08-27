@@ -1,5 +1,7 @@
 import { css } from 'styled-components'
 
+const REGEX_HTTPS = /^https/
+
 export const isNil = value => value == null
 
 export const getUrlPath = data =>
@@ -61,6 +63,6 @@ export const fetchFromApi = props => {
 export const isLarge = cardSize => cardSize === 'large'
 
 // https://developer.hootsuite.com/docs/https-image-proxy
-export const imageProxy = url => url.startsWith('https')
+export const imageProxy = url => REGEX_HTTPS.test(url)
   ? url
   : `https://d1r1anxoiubeog.cloudfront.net/${encodeURIComponent(url)}`
