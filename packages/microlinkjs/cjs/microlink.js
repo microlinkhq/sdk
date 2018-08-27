@@ -2426,6 +2426,8 @@ var _styledComponents = __webpack_require__(2);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+var REGEX_HTTPS = /^https/;
+
 var isNil = exports.isNil = function isNil(value) {
   return value == null;
 };
@@ -2504,7 +2506,7 @@ var isLarge = exports.isLarge = function isLarge(cardSize) {
 
 // https://developer.hootsuite.com/docs/https-image-proxy
 var imageProxy = exports.imageProxy = function imageProxy(url) {
-  return url.startsWith('https') ? url : 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
+  return REGEX_HTTPS.test(url) ? url : 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
 };
 
 /***/ }),
@@ -4591,14 +4593,14 @@ var Content = exports.Content = _styledComponents2.default.div(_templateObject4,
   return isLarge(cardSize) && largeContentStyle;
 });
 
-var Title = _styledComponents2.default.header(_templateObject5);
+var Header = _styledComponents2.default.header(_templateObject5);
 
 var Description = _styledComponents2.default.div(_templateObject6, function (_ref3) {
   var cardSize = _ref3.cardSize;
   return !isLarge(cardSize) && mobileDescriptionStyle;
 });
 
-var Url = _styledComponents2.default.footer(_templateObject7);
+var Footer = _styledComponents2.default.footer(_templateObject7);
 
 exports.default = function (_ref4) {
   var title = _ref4.title,
@@ -4609,7 +4611,7 @@ exports.default = function (_ref4) {
   return _jsx(Content, {
     className: className,
     cardSize: cardSize
-  }, void 0, _jsx(Title, {
+  }, void 0, _jsx(Header, {
     className: 'microlink_card__content_title'
   }, void 0, _jsx(_CardText2.default, {
     lines: 1
@@ -4618,7 +4620,7 @@ exports.default = function (_ref4) {
     cardSize: cardSize
   }, void 0, _jsx(_CardText2.default, {
     lines: 2
-  }, void 0, description)), _jsx(Url, {
+  }, void 0, description)), _jsx(Footer, {
     className: 'microlink_card__content_url'
   }, void 0, _jsx(_CardText2.default, {
     lines: 1
@@ -5482,7 +5484,7 @@ module.exports = each
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.fetchFromApi=exports.fetchFromApiUrl=exports.createApiUrl=exports.imageProxy=void 0;var e,t,r=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),p=0;p<l;p++)s[p]=a[p+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),o=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},n=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(37),c=__webpack_require__(3);function s(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}var p=function(e){function t(){var e,r,o,n=arguments;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);for(var a=arguments.length,i=Array(a),l=0;l<a;l++)i[l]=n[l];return r=o=s(this,(e=t.__proto__||Object.getPrototypeOf(t)).call.apply(e,[this].concat(i))),o.state={loading:!0},o.setData=function(e){var t=[].concat(o.props.image),r=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(r),a=r||{};o.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},s(o,r)}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),n(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props,r=t.data;(t.noFetch||!t.url?Promise.resolve({}):(0,c.fetchFromApi)(this.props)).then(function(t){return e.setData(o({},t.data,r))})}},{key:"componentDidUpdate",value:function(e){e.data!==this.props.data&&this.setData(this.props.data)}},{key:"renderContent",value:function(){var e=this.state,t=e.title,o=e.description,n=e.url,i=this.props,c=i.size;return r(a.Fragment,{},void 0,r(l.CardMedia,{image:e.image,video:e.video,url:n,cardSize:c,autoPlay:i.autoPlay,controls:i.controls,muted:i.muted,loop:i.loop,playsInline:i.playsInline}),r(l.CardContent,{className:"microlink_card__content",title:t,description:o,url:n,cardSize:c}))}},{key:"render",value:function(){var e=this.state,t=e.title,n=e.color,a=e.backgroundColor,s=e.url,p=e.loading,u=this.props,f=u.className,d=u.size,m=u.loading,y=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(u,["className","size","loading"]),h=(0,c.isNil)(m)?p:m;return i.default.createElement(l.CardWrap,o({className:f?"microlink_card "+f:"microlink_card",href:s,title:t,cardSize:d,color:n,backgroundColor:a,loading:h},y),h?r(l.CardEmptyState,{cardSize:d}):this.renderContent())}}]),t}();p.defaultProps=o({apiKey:void 0,autoPlay:!0,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,reverse:!1,size:"normal"},c.defaultApiParameters),exports.imageProxy=c.imageProxy,exports.createApiUrl=c.createApiUrl,exports.fetchFromApiUrl=c.fetchFromApiUrl,exports.fetchFromApi=c.fetchFromApi,exports.default=p;
+Object.defineProperty(exports,"__esModule",{value:!0}),exports.fetchFromApi=exports.fetchFromApiUrl=exports.createApiUrl=exports.imageProxy=void 0;var e,t,r=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},o=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),n=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),p=0;p<l;p++)s[p]=a[p+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(37),c=__webpack_require__(3);function s(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}var p=function(e){var t=e.url,r=e.size,o=e.title,i=e.description;return n(a.Fragment,{},void 0,n(l.CardMedia,{image:e.image,video:e.video,url:t,cardSize:r,autoPlay:e.autoPlay,controls:e.controls,muted:e.muted,loop:e.loop,playsInline:e.playsInline}),n(l.CardContent,{className:"microlink_card__content",title:o,description:i,url:t,cardSize:r}))},u=function(e){function t(){var e,r,o,n=arguments;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);for(var a=arguments.length,i=Array(a),l=0;l<a;l++)i[l]=n[l];return r=o=s(this,(e=t.__proto__||Object.getPrototypeOf(t)).call.apply(e,[this].concat(i))),o.state={loading:!0},o.setData=function(e){var t=[].concat(o.props.image),r=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(r),a=r||{};o.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},s(o,r)}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),o(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props,o=t.data;(t.noFetch||!t.url?Promise.resolve({}):(0,c.fetchFromApi)(this.props)).then(function(t){return e.setData(r({},t.data,o))})}},{key:"componentDidUpdate",value:function(e){e.data!==this.props.data&&this.setData(this.props.data)}},{key:"render",value:function(){var e=this.state,t=e.title,o=e.color,a=e.backgroundColor,s=e.url,u=e.loading,d=e.description,f=e.image,m=e.video,y=this.props,h=y.autoPlay,v=y.controls,g=y.loop,b=y.muted,P=y.playsInline,_=y.className,x=y.size,O=y.loading,A=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(y,["autoPlay","controls","loop","muted","playsInline","className","size","loading"]),k=(0,c.isNil)(O)?u:O;return i.default.createElement(l.CardWrap,r({className:_?"microlink_card "+_:"microlink_card",href:s,title:t,cardSize:x,color:o,backgroundColor:a,loading:k},A),k?n(l.CardEmpty,{cardSize:x}):n(p,{title:t,description:d,url:s,image:f,video:m,autoPlay:h,controls:v,loop:g,muted:b,playsInline:P,size:x}))}}]),t}();u.defaultProps=r({apiKey:void 0,autoPlay:!0,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,reverse:!1,size:"normal"},c.defaultApiParameters),exports.imageProxy=c.imageProxy,exports.createApiUrl=c.createApiUrl,exports.fetchFromApiUrl=c.fetchFromApiUrl,exports.fetchFromApi=c.fetchFromApi,exports.default=u;
 //# sourceMappingURL=index.m.js.map
 
 
@@ -5748,12 +5750,12 @@ Object.defineProperty(exports, 'CardContent', {
   }
 });
 
-var _CardEmptyState = __webpack_require__(46);
+var _CardEmpty = __webpack_require__(46);
 
-Object.defineProperty(exports, 'CardEmptyState', {
+Object.defineProperty(exports, 'CardEmpty', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_CardEmptyState).default;
+    return _interopRequireDefault(_CardEmpty).default;
   }
 });
 
@@ -6234,26 +6236,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var EmptyImage = _Image2.default.extend(_templateObject, _CardAnimation.emptyStateImageAnimation);
+var MediaEmpty = _Image2.default.extend(_templateObject, _CardAnimation.emptyStateImageAnimation);
 
-var EmptyTitle = _styledComponents2.default.span(_templateObject2, _CardAnimation.emptyStateAnimation);
+var HeaderEmpty = _styledComponents2.default.header(_templateObject2, _CardAnimation.emptyStateAnimation);
 
-var EmptyDescription = _styledComponents2.default.span(_templateObject3, _CardAnimation.emptyStateAnimation, function (_ref) {
+var DescriptionEmpty = _styledComponents2.default.span(_templateObject3, _CardAnimation.emptyStateAnimation, function (_ref) {
   var cardSize = _ref.cardSize;
   return cardSize !== 'large' && _utils.media.mobile(_templateObject4);
 });
 
-var EmptyLink = _styledComponents2.default.span(_templateObject5, _CardAnimation.emptyStateAnimation);
+var FooterEmpty = _styledComponents2.default.footer(_templateObject5, _CardAnimation.emptyStateAnimation);
 
 var CardEmptyState = function CardEmptyState(_ref2) {
   var cardSize = _ref2.cardSize;
-  return _jsx(_react.Fragment, {}, void 0, _jsx(EmptyImage, {
+  return _jsx(_react.Fragment, {}, void 0, _jsx(MediaEmpty, {
     cardSize: cardSize
   }), _jsx(_CardContent.Content, {
+    cardSize: cardSize,
+    className: 'microlink_card__content'
+  }, void 0, _jsx(HeaderEmpty, {}), _jsx(DescriptionEmpty, {
     cardSize: cardSize
-  }, void 0, _jsx(EmptyTitle, {}), _jsx(EmptyDescription, {
-    cardSize: cardSize
-  }), _jsx(EmptyLink, {})));
+  }), _jsx(FooterEmpty, {})));
 };
 
 exports.default = CardEmptyState;
@@ -6330,15 +6333,18 @@ var isUrl = function isUrl(url) {
 var CardMedia = function (_Component) {
   _inherits(CardMedia, _Component);
 
-  function CardMedia(props) {
+  function CardMedia() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, CardMedia);
 
-    var _this = _possibleConstructorReturn(this, (CardMedia.__proto__ || Object.getPrototypeOf(CardMedia)).call(this, props));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-    _this.state = {
-      loading: isUrl(props.image)
-    };
-    return _this;
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CardMedia.__proto__ || Object.getPrototypeOf(CardMedia)).call.apply(_ref, [this].concat(args))), _this), _this.state = { loading: isUrl(_this.props.image) }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(CardMedia, [{
