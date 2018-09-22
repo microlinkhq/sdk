@@ -41,7 +41,7 @@ storiesOf('media', module)
   .addWithJSX('logo', () =>
     urls.map(url => createMicrolink({ url, image: 'logo' }))
   )
-  .addWithJSX('video', () => urlsVideo.map(url => createMicrolink({ url })))
+  .addWithJSX('video', () => urlsVideo.map(url => createMicrolink({ url, video: true })))
   .addWithJSX('screenshot', () =>
     urls.map(url =>
       createMicrolink({
