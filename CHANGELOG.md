@@ -1,5 +1,16 @@
-##  (2018-08-27)
+##  (2018-09-26)
 
+
+
+
+## <small>2.2.5 (2018-09-26)</small>
+
+* Add issues templates ([4428b69](https://github.com/microlinkhq/react-microlink/commit/4428b69))
+* Rename publish script into release ([1072a72](https://github.com/microlinkhq/react-microlink/commit/1072a72))
+* Update CDN ([91d6b68](https://github.com/microlinkhq/react-microlink/commit/91d6b68))
+* Update Changelog ([8e1c832](https://github.com/microlinkhq/react-microlink/commit/8e1c832))
+* Update storybook ([5e3d450](https://github.com/microlinkhq/react-microlink/commit/5e3d450))
+* v2.2.5 ([3f61440](https://github.com/microlinkhq/react-microlink/commit/3f61440))
 
 
 
