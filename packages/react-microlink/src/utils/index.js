@@ -62,7 +62,8 @@ export const fetchFromApi = props => {
 
 export const isLarge = cardSize => cardSize === 'large'
 
-// https://developer.hootsuite.com/docs/https-image-proxy
-export const imageProxy = url => REGEX_HTTPS.test(url)
-  ? url
-  : `https://d1r1anxoiubeog.cloudfront.net/${encodeURIComponent(url)}`
+export const imageProxy = url => {
+  return REGEX_HTTPS.test(url)
+    ? url
+    : `https://images.weserv.nl/?url=${encodeURIComponent(url).replace('http://', '')}`
+}
