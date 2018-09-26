@@ -2513,9 +2513,8 @@ var isLarge = exports.isLarge = function isLarge(cardSize) {
   return cardSize === 'large';
 };
 
-// https://developer.hootsuite.com/docs/https-image-proxy
 var imageProxy = exports.imageProxy = function imageProxy(url) {
-  return REGEX_HTTPS.test(url) ? url : 'https://d1r1anxoiubeog.cloudfront.net/' + encodeURIComponent(url);
+  return REGEX_HTTPS.test(url) ? url : 'https://images.weserv.nl/?url=' + encodeURIComponent(url).replace('http://', '');
 };
 
 /***/ }),
