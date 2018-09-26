@@ -30,7 +30,8 @@
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "pretty": "prettier-standard src/**/*.{js,css} --single-quote",
-    "publish": "npm run upgrade && npm run build:packages && git add . && lerna publish --sort && npm run changelog:commit",
+    "prerelease": "npm run upgrade",
+    "release": "npm run build:packages && git add . && lerna publish --sort && npm run changelog:commit",
     "test": "lerna exec npm run test",
     "upgrade": "lerna exec ncu --  --error-level 2"
   },
