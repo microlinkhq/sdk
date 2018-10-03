@@ -1,10 +1,10 @@
-import {createElement, Component} from 'react'
+import { createElement, Component } from 'react'
 
-import {getUrlPath} from '../../../utils'
+import { getUrlPath } from '../../../utils'
 
 import Image from './Image'
 import Video from './Video'
-import {ImageLoadCatcher} from './loader'
+import { ImageLoadCatcher } from './loader'
 
 const isUrl = url => getUrlPath(url) !== null
 
@@ -12,8 +12,8 @@ export default class CardMedia extends Component {
   state = { loading: isUrl(this.props.image) }
 
   renderMedia () {
-    const {loading} = this.state
-    const {image, video} = this.props
+    const { loading } = this.state
+    const { image, video } = this.props
     const el = !isUrl(video) && isUrl(image) ? Image : Video
     return createElement(el, {
       ...this.props,
@@ -23,13 +23,13 @@ export default class CardMedia extends Component {
   }
 
   renderLoadCatcher () {
-    const {image} = this.props
-    const {loading} = this.state
+    const { image } = this.props
+    const { loading } = this.state
 
     return loading && isUrl(image) && createElement(ImageLoadCatcher, {
       key: 'imageLoader',
       src: image,
-      onLoad: () => this.setState({loading: false})
+      onLoad: () => this.setState({ loading: false })
     })
   }
 

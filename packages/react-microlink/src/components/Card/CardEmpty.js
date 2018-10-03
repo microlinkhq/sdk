@@ -49,7 +49,7 @@ const DescriptionEmpty = styled.span`
     bottom: 14px;
   }
 
-  ${({cardSize}) => cardSize !== 'large' && media.mobile`
+  ${({ cardSize }) => cardSize !== 'large' && media.mobile`
     height: 14px;
   `}
 `
@@ -64,7 +64,7 @@ const FooterEmpty = styled.footer`
   animation-delay: .25s;
 `
 
-const CardEmptyState = ({cardSize}) => (
+const CardEmptyState = ({ cardSize }) => (
   <Fragment>
     <MediaEmpty cardSize={cardSize} />
     <Content cardSize={cardSize} className='microlink_card__content'>
