@@ -32,13 +32,14 @@
     "previsualization"
   ],
   "dependencies": {
-    "react-microlink": "^2.2.5"
+    "react-microlink": "^2",
+    "styled-components": "^3"
   },
   "devDependencies": {
-    "babel-core": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
     "babel-loader": "latest",
     "babel-plugin-transform-object-rest-spread": "latest",
-    "babel-preset-env": "latest",
     "case-sensitive-paths-webpack-plugin": "latest",
     "chalk": "latest",
     "dom101": "latest",
