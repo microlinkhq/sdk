@@ -1,5 +1,15 @@
-##  (2018-09-26)
+##  (2018-10-03)
 
+
+
+
+## <small>2.2.6 (2018-10-03)</small>
+
+* Migrate to Babel 8 (#124) ([6a6894e](https://github.com/microlinkhq/react-microlink/commit/6a6894e)), closes [#124](https://github.com/microlinkhq/react-microlink/issues/124)
+* Preparing build ([65bf937](https://github.com/microlinkhq/react-microlink/commit/65bf937))
+* Update Changelog ([ac18fbf](https://github.com/microlinkhq/react-microlink/commit/ac18fbf))
+* Update scripts ([c303571](https://github.com/microlinkhq/react-microlink/commit/c303571))
+* v2.2.6 ([6c9ba77](https://github.com/microlinkhq/react-microlink/commit/6c9ba77))
 
 
 
