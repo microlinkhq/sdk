@@ -18,7 +18,7 @@ import {
   someProp
 } from './utils'
 
-const Card = ({image, video, url, size, autoPlay, controls, muted, loop, playsInline, title, description}) => (
+const Card = ({ image, video, url, size, autoPlay, controls, muted, loop, playsInline, title, description }) => (
   <Fragment>
     <CardMedia
       image={image}

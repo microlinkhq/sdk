@@ -6,5 +6,5 @@ const defaultProps = {
 }
 
 export default MediaWrap.extend.attrs(defaultProps)`
-  background-image: ${({image}) => (image ? `url('${imageProxy(image)}')` : '')};
+  background-image: ${({ image }) => (image ? `url('${imageProxy(image)}')` : '')};
 `

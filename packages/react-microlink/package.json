@@ -60,7 +60,7 @@
     "size-limit": "latest",
     "standard": "latest",
     "storybook-addon-jsx": "latest",
-    "styled-components": "~3.4.2",
+    "styled-components": "^3",
     "unfetch": "latest"
   },
   "engines": {
