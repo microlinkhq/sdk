@@ -1,5 +1,14 @@
-##  (2018-10-03)
+##  (2018-10-05)
 
+
+
+
+## <small>2.2.7 (2018-10-05)</small>
+
+* Attach package version ([e7146eb](https://github.com/microlinkhq/react-microlink/commit/e7146eb))
+* Preparing build ([5aadf87](https://github.com/microlinkhq/react-microlink/commit/5aadf87))
+* Update Changelog ([9528881](https://github.com/microlinkhq/react-microlink/commit/9528881))
+* v2.2.7 ([8ae78d8](https://github.com/microlinkhq/react-microlink/commit/8ae78d8))
 
 
 
