@@ -2,7 +2,7 @@
   "name": "microlinkjs",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "main": "src/index.js",
   "author": {
     "email": "hi@breadadams.com",
