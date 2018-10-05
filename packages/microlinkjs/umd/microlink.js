@@ -120,7 +120,7 @@ if (true) {
 if (false) { var throwOnDirectAccess, isValidElement, REACT_ELEMENT_TYPE; } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(28)();
+  module.exports = __webpack_require__(29)();
 }
 
 
@@ -2431,7 +2431,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 
 //# sourceMappingURL=styled-components.browser.esm.js.map
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(25), __webpack_require__(26)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(26), __webpack_require__(27)(module)))
 
 /***/ }),
 /* 3 */
@@ -4462,7 +4462,7 @@ var _styledComponents = __webpack_require__(2);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _CardText = __webpack_require__(31);
+var _CardText = __webpack_require__(32);
 
 var _CardText2 = _interopRequireDefault(_CardText);
 
@@ -4645,7 +4645,7 @@ var loadingOverlay = exports.loadingOverlay = function loadingOverlay(_ref) {
 
 
 
-var hyphenate = __webpack_require__(27);
+var hyphenate = __webpack_require__(28);
 
 var msPattern = /^ms-/;
 
@@ -4732,7 +4732,7 @@ module.exports = hyphenateStyleName;
 
 
 if (true) {
-  module.exports = __webpack_require__(30);
+  module.exports = __webpack_require__(31);
 } else {}
 
 
@@ -4748,7 +4748,7 @@ module.exports = __webpack_require__(15);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var qa=__webpack_require__(16);var ReactDOM=__webpack_require__(17);var each=__webpack_require__(22);var React=__webpack_require__(0);var _require=__webpack_require__(23),MicrolinkCard=_require.default;var BOOLEAN_STRINGS=['true','false'];var DEFAULT_OPTS={is:'div'};var getBoolean=function getBoolean(str){return str==='true';};var isStringBoolean=function isStringBoolean(str){return BOOLEAN_STRINGS.includes(str);};var getDataAttributes=function getDataAttributes(el){return Object.keys(el.dataset).reduce(function(acc,key){var value=el.dataset[key];acc[key]=isStringBoolean(value)?getBoolean(value):value;return acc;},{});};var getDOMSelector=function getDOMSelector(selector){return typeof selector==='string'?qa(selector):[].concat(selector);};module.exports=function(selector,opts){opts=Object.assign({},DEFAULT_OPTS,opts);return each(getDOMSelector(selector),function(el){var url=el.getAttribute('href');var params=Object.assign({url:url},opts,getDataAttributes(el));var card=React.createElement(MicrolinkCard,params);ReactDOM.render(card,el);});};
+var qa=__webpack_require__(16);var ReactDOM=__webpack_require__(17);var each=__webpack_require__(22);var React=__webpack_require__(0);var pkg=__webpack_require__(23);var _require=__webpack_require__(24),MicrolinkCard=_require.default;var BOOLEAN_STRINGS=['true','false'];var DEFAULT_OPTS={is:'div'};var getBoolean=function getBoolean(str){return str==='true';};var isStringBoolean=function isStringBoolean(str){return BOOLEAN_STRINGS.includes(str);};var getDataAttributes=function getDataAttributes(el){return Object.keys(el.dataset).reduce(function(acc,key){var value=el.dataset[key];acc[key]=isStringBoolean(value)?getBoolean(value):value;return acc;},{});};var getDOMSelector=function getDOMSelector(selector){return typeof selector==='string'?qa(selector):[].concat(selector);};module.exports=function(selector,opts){opts=Object.assign({},DEFAULT_OPTS,opts);return each(getDOMSelector(selector),function(el){var url=el.getAttribute('href');var params=Object.assign({url:url},opts,getDataAttributes(el));var card=React.createElement(MicrolinkCard,params);ReactDOM.render(card,el);});};module.exports.version=pkg.version;
 
 /***/ }),
 /* 16 */
@@ -5164,14 +5164,20 @@ module.exports = each
 
 /***/ }),
 /* 23 */
+/***/ (function(module) {
+
+module.exports = {"name":"microlinkjs","description":"Convert your links into beautiful previews","homepage":"https://microlink.js.org","version":"2.2.6","main":"src/index.js","author":{"email":"hi@breadadams.com","name":"Brad Adams","url":"https://breadadams.com"},"contributors":[{"name":"Kiko Beats","email":"josefrancisco.verdu@gmail.com","url":"https://github.com/Kikobeats"}],"repository":{"type":"git","url":"git+https://github.com/microlinkhq/microlinkjs.git"},"bugs":{"url":"https://github.com/microlinkhq/microlinkjs/issues"},"keywords":["data","extraction","link","microlink","preview","previsualization"],"dependencies":{"react-microlink":"^2.2.6","styled-components":"^3"},"devDependencies":{"@babel/core":"latest","@babel/preset-env":"latest","babel-loader":"latest","babel-plugin-transform-object-rest-spread":"latest","case-sensitive-paths-webpack-plugin":"latest","chalk":"latest","dom101":"latest","dotenv":"latest","escape-string-regexp":"latest","extract-text-webpack-plugin":"latest","fs-extra":"latest","html-webpack-plugin":"latest","husky":"latest","prettier-standard":"latest","react":"latest","react-dev-utils":"latest","react-dom":"latest","standard":"latest","unminified-webpack-plugin":"latest","webpack":"latest","webpack-dev-server":"latest"},"engines":{"node":">= 8"},"files":["amd","commonjs","src","umd"],"scripts":{"build":"npm run build:umd && npm run build:amd && npm run build:cjs","build:amd":"./scripts/build amd","build:cjs":"./scripts/build cjs","build:umd":"./scripts/build umd","dev":"./scripts/start","lint":"standard src","prepublishOnly":"npm run build","pretest":"npm run lint","pretty":"prettier-standard index.js {core,test,bin}/**/*.js --single-quote","test":"exit 0"},"license":"MIT"};
+
+/***/ }),
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.fetchFromApi=exports.fetchFromApiUrl=exports.createApiUrl=exports.imageProxy=void 0;var e,t,r=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},o=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),n=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),p=0;p<l;p++)s[p]=a[p+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(24),c=__webpack_require__(3);function s(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}var p=function(e){var t=e.url,r=e.size,o=e.title,i=e.description;return n(a.Fragment,{},void 0,n(l.CardMedia,{image:e.image,video:e.video,url:t,cardSize:r,autoPlay:e.autoPlay,controls:e.controls,muted:e.muted,loop:e.loop,playsInline:e.playsInline}),n(l.CardContent,{className:"microlink_card__content",title:o,description:i,url:t,cardSize:r}))},u=function(e){function t(){var e,r,o,n=arguments;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);for(var a=arguments.length,i=Array(a),l=0;l<a;l++)i[l]=n[l];return r=o=s(this,(e=t.__proto__||Object.getPrototypeOf(t)).call.apply(e,[this].concat(i))),o.state={loading:!0},o.setData=function(e){var t=[].concat(o.props.image),r=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(r),a=r||{};o.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},s(o,r)}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),o(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props,o=t.data;(t.noFetch||!t.url?Promise.resolve({}):(0,c.fetchFromApi)(this.props)).then(function(t){return e.setData(r({},t.data,o))})}},{key:"componentDidUpdate",value:function(e){e.data!==this.props.data&&this.setData(this.props.data)}},{key:"render",value:function(){var e=this.state,t=e.title,o=e.color,a=e.backgroundColor,s=e.url,u=e.loading,d=e.description,f=e.image,m=e.video,y=this.props,h=y.autoPlay,v=y.controls,g=y.loop,b=y.muted,P=y.playsInline,_=y.className,x=y.size,O=y.loading,A=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(y,["autoPlay","controls","loop","muted","playsInline","className","size","loading"]),k=(0,c.isNil)(O)?u:O;return i.default.createElement(l.CardWrap,r({className:_?"microlink_card "+_:"microlink_card",href:s,title:t,cardSize:x,color:o,backgroundColor:a,loading:k},A),k?n(l.CardEmpty,{cardSize:x}):n(p,{title:t,description:d,url:s,image:f,video:m,autoPlay:h,controls:v,loop:g,muted:b,playsInline:P,size:x}))}}]),t}();u.defaultProps=r({apiKey:void 0,autoPlay:!0,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,reverse:!1,size:"normal"},c.defaultApiParameters),exports.imageProxy=c.imageProxy,exports.createApiUrl=c.createApiUrl,exports.fetchFromApiUrl=c.fetchFromApiUrl,exports.fetchFromApi=c.fetchFromApi,exports.default=u;
+Object.defineProperty(exports,"__esModule",{value:!0}),exports.fetchFromApi=exports.fetchFromApiUrl=exports.createApiUrl=exports.imageProxy=void 0;var e,t,r=Object.assign||function(e){for(var t=arguments,r=1;r<arguments.length;r++){var o=t[r];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(e[n]=o[n])}return e},o=function(){function e(e,t){for(var r=0;r<t.length;r++){var o=t[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}(),n=(e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,function(t,r,o,n){var a=arguments,i=t&&t.defaultProps,l=arguments.length-3;if(r||0===l||(r={}),r&&i)for(var c in i)void 0===r[c]&&(r[c]=i[c]);else r||(r=i||{});if(1===l)r.children=n;else if(l>1){for(var s=Array(l),p=0;p<l;p++)s[p]=a[p+3];r.children=s}return{$$typeof:e,type:t,key:void 0===o?null:""+o,ref:null,props:r,_owner:null}}),a=__webpack_require__(0),i=(t=a)&&t.__esModule?t:{default:t},l=__webpack_require__(25),c=__webpack_require__(3);function s(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}var p=function(e){var t=e.url,r=e.size,o=e.title,i=e.description;return n(a.Fragment,{},void 0,n(l.CardMedia,{image:e.image,video:e.video,url:t,cardSize:r,autoPlay:e.autoPlay,controls:e.controls,muted:e.muted,loop:e.loop,playsInline:e.playsInline}),n(l.CardContent,{className:"microlink_card__content",title:o,description:i,url:t,cardSize:r}))},u=function(e){function t(){var e,r,o,n=arguments;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t);for(var a=arguments.length,i=Array(a),l=0;l<a;l++)i[l]=n[l];return r=o=s(this,(e=t.__proto__||Object.getPrototypeOf(t)).call.apply(e,[this].concat(i))),o.state={loading:!0},o.setData=function(e){var t=[].concat(o.props.image),r=(0,c.someProp)(e,t),n=(0,c.getUrlPath)(r),a=r||{};o.setState({color:a.color,backgroundColor:a.background_color,title:e.title,description:e.description,url:e.url,loading:!1,video:e.video,image:n})},s(o,r)}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(t,a.Component),o(t,[{key:"componentDidMount",value:function(){var e=this,t=this.props,o=t.data;(t.noFetch||!t.url?Promise.resolve({}):(0,c.fetchFromApi)(this.props)).then(function(t){return e.setData(r({},t.data,o))})}},{key:"componentDidUpdate",value:function(e){e.data!==this.props.data&&this.setData(this.props.data)}},{key:"render",value:function(){var e=this.state,t=e.title,o=e.color,a=e.backgroundColor,s=e.url,u=e.loading,d=e.description,f=e.image,m=e.video,y=this.props,h=y.autoPlay,v=y.controls,g=y.loop,b=y.muted,P=y.playsInline,_=y.className,x=y.size,O=y.loading,A=function(e,t){var r={};for(var o in e)t.indexOf(o)>=0||Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r}(y,["autoPlay","controls","loop","muted","playsInline","className","size","loading"]),k=(0,c.isNil)(O)?u:O;return i.default.createElement(l.CardWrap,r({className:_?"microlink_card "+_:"microlink_card",href:s,title:t,cardSize:x,color:o,backgroundColor:a,loading:k},A),k?n(l.CardEmpty,{cardSize:x}):n(p,{title:t,description:d,url:s,image:f,video:m,autoPlay:h,controls:v,loop:g,muted:b,playsInline:P,size:x}))}}]),t}();u.defaultProps=r({apiKey:void 0,autoPlay:!0,controls:!0,image:["screenshot","image","logo"],loop:!0,muted:!0,playsInline:!0,reverse:!1,size:"normal"},c.defaultApiParameters),exports.imageProxy=c.imageProxy,exports.createApiUrl=c.createApiUrl,exports.fetchFromApiUrl=c.fetchFromApiUrl,exports.fetchFromApi=c.fetchFromApi,exports.default=u;
 //# sourceMappingURL=index.m.js.map
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5190,7 +5196,7 @@ Object.defineProperty(exports, 'CardContent', {
   }
 });
 
-var _CardEmpty = __webpack_require__(33);
+var _CardEmpty = __webpack_require__(34);
 
 Object.defineProperty(exports, 'CardEmpty', {
   enumerable: true,
@@ -5199,7 +5205,7 @@ Object.defineProperty(exports, 'CardEmpty', {
   }
 });
 
-var _CardMedia = __webpack_require__(35);
+var _CardMedia = __webpack_require__(36);
 
 Object.defineProperty(exports, 'CardMedia', {
   enumerable: true,
@@ -5208,7 +5214,7 @@ Object.defineProperty(exports, 'CardMedia', {
   }
 });
 
-var _CardWrap = __webpack_require__(38);
+var _CardWrap = __webpack_require__(39);
 
 Object.defineProperty(exports, 'CardWrap', {
   enumerable: true,
@@ -5220,7 +5226,7 @@ Object.defineProperty(exports, 'CardWrap', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -5410,7 +5416,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
@@ -5440,7 +5446,7 @@ module.exports = function(originalModule) {
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5476,7 +5482,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5489,7 +5495,7 @@ module.exports = hyphenate;
 
 
 
-var ReactPropTypesSecret = __webpack_require__(29);
+var ReactPropTypesSecret = __webpack_require__(30);
 
 function emptyFunction() {}
 
@@ -5542,7 +5548,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5561,7 +5567,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5582,7 +5588,7 @@ exports.isForwardRef=function(a){return q(a)===m};exports.isFragment=function(a)
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5604,7 +5610,7 @@ var _styledComponents = __webpack_require__(2);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _nanoclamp = __webpack_require__(32);
+var _nanoclamp = __webpack_require__(33);
 
 var _nanoclamp2 = _interopRequireDefault(_nanoclamp);
 
@@ -5629,7 +5635,7 @@ var CardText = (0, _styledComponents2.default)(Clamp)(_templateObject);
 exports.default = CardText;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 Object.defineProperty(exports,"__esModule",{value:!0});var e=Object.assign||function(e){for(var t=arguments,i=1;i<arguments.length;i++){var n=t[i];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},t=function(){function e(e,t){for(var i=0;i<t.length;i++){var n=t[i];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,i,n){return i&&e(t.prototype,i),n&&e(t,n),t}}(),i=__webpack_require__(0),n=function(n){function r(e){!function(e,t){if(!(e instanceof r))throw new TypeError("Cannot call a class as a function")}(this);var t=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}(this,(r.__proto__||Object.getPrototypeOf(r)).call(this,e));return t.state={noClamp:!1,text:"."},t.element=null,t.original=e.text,t.lineHeight=0,t.start=0,t.middle=0,t.end=0,t.debounced=t.debounce(t.action),t}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(r,i.Component),t(r,[{key:"componentDidMount",value:function(){window.addEventListener("resize",this.debounced),this.props.text&&(this.lineHeight=this.element.clientHeight+1,this.clampLines())}},{key:"componentWillUnmount",value:function(){window.removeEventListener("resize",this.debounced)}},{key:"debounce",value:function(e){var t=this,i=void 0,n=function(){i=null,e.apply(t)};return function(){var r=!i;clearTimeout(i),i=setTimeout(n,t.props.debounce),r&&e.apply(t)}}},{key:"action",value:function(){this.original&&this.setState({noClamp:!1},this.clampLines)}},{key:"clampLines",value:function(){var e=this,t=this.props,i=t.ellipsis,n=this.lineHeight*t.lines+1,o=i===r.defaultProps.ellipsis?5:1.2*i.length;for(this.start=0,this.middle=0,this.end=this.original.length;this.start<=this.end;){if(this.middle=Math.floor((this.start+this.end)/2),this.element.innerText=this.original.slice(0,this.middle),this.middle===this.original.length)return void this.setState({text:this.original,noClamp:!0});this.moveMarkers(n)}var s=this.original.slice(0,Math.max(this.middle-o,0)).trim()+i;this.setState({text:s},function(){e.element.innerText=e.state.text})}},{key:"moveMarkers",value:function(e){this.element.clientHeight<=e?this.start=this.middle+1:this.end=this.middle-1}},{key:"render",value:function(){var t=this,n=this.state.text,r=this.props,o=r.accessibility,s=r.is,l=r.text,a=function(e,t){var i={};for(var n in e)t.indexOf(n)>=0||Object.prototype.hasOwnProperty.call(e,n)&&(i[n]=e[n]);return i}(r,["accessibility","is","text","lines","debounce","ellipsis"]),u=e({ref:function(e){return t.element=e}},o?{title:l}:{},a);return l?(0,i.createElement)(s,u,n):null}}]),r}();n.defaultProps={accessibility:!0,is:"div",lines:3,ellipsis:"…",debounce:300},exports.default=n;
@@ -5637,7 +5643,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var e=Object.assign||func
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5663,7 +5669,7 @@ var _styledComponents = __webpack_require__(2);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _CardAnimation = __webpack_require__(34);
+var _CardAnimation = __webpack_require__(35);
 
 var _Image = __webpack_require__(8);
 
@@ -5703,7 +5709,7 @@ var CardEmptyState = function CardEmptyState(_ref2) {
 exports.default = CardEmptyState;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5731,7 +5737,7 @@ var emptyStateAnimation = exports.emptyStateAnimation = (0, _styledComponents.cs
 var emptyStateImageAnimation = exports.emptyStateImageAnimation = (0, _styledComponents.css)(_templateObject4, emptyStateImagePulse);
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5753,7 +5759,7 @@ var _Image = __webpack_require__(8);
 
 var _Image2 = _interopRequireDefault(_Image);
 
-var _Video = __webpack_require__(36);
+var _Video = __webpack_require__(37);
 
 var _Video2 = _interopRequireDefault(_Video);
 
@@ -5832,7 +5838,7 @@ var CardMedia = function (_Component) {
 exports.default = CardMedia;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5858,7 +5864,7 @@ var _styledComponents = __webpack_require__(2);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _controls = __webpack_require__(37);
+var _controls = __webpack_require__(38);
 
 var _wrap = __webpack_require__(9);
 
@@ -5977,7 +5983,7 @@ var CardVideo = function (_Component) {
 exports.default = CardVideo;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6032,7 +6038,7 @@ var ProgressBar = exports.ProgressBar = _styledComponents2.default.div.attrs({
 });
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
