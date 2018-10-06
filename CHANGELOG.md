@@ -1,5 +1,14 @@
-##  (2018-10-05)
+##  (2018-10-06)
 
+
+
+
+## <small>2.2.8 (2018-10-06)</small>
+
+* Ignore local urls ([66f1697](https://github.com/microlinkhq/react-microlink/commit/66f1697))
+* Preparing build ([c060dd6](https://github.com/microlinkhq/react-microlink/commit/c060dd6))
+* Update Changelog ([1d9d386](https://github.com/microlinkhq/react-microlink/commit/1d9d386))
+* v2.2.8 ([2459d47](https://github.com/microlinkhq/react-microlink/commit/2459d47))
 
 
 
