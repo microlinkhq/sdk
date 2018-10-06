@@ -1,11 +1,11 @@
 import { css } from 'styled-components'
 
 const REGEX_HTTPS = /^https/
+const REGEX_LOCALHOST = /http:\/\/localhost/
 
 export const isNil = value => value == null
 
-export const getUrlPath = data =>
-  data && typeof data === 'object' ? data.url : data
+export const getUrlPath = data => (data && typeof data === 'object' ? data.url : data)
 
 export const someProp = (data, props) =>
   data[props.find(prop => data[prop] !== null && data[prop] !== undefined)]
@@ -33,20 +33,19 @@ export const defaultApiParameters = {
 }
 
 export const createApiUrl = props => {
-  const {
-    apiKey,
-    url: targetUrl,
-    screenshot,
-    prerender,
-    contrast,
-    video
-  } = props
+  const { apiKey, url: targetUrl, screenshot, prerender, contrast, video } = props
   const alias = apiKey ? 'pro' : 'api'
   let url = `https://${alias}.microlink.io/?url=${targetUrl}`
   if (!isNil(video)) url = `${url}&${apiValue('video', video)}`
-  if (!isNil(contrast) && contrast !== defaultApiParameters.contrast) { url = `${url}&${apiValue('palette', contrast)}` }
-  if (!isNil(prerender) && prerender !== defaultApiParameters.prerender) { url = `${url}&${apiValue('prerender', prerender)}` }
-  if (!isNil(screenshot) && screenshot !== defaultApiParameters.screenshot) { url = `${url}&${apiValue('screenshot', screenshot)}` }
+  if (!isNil(contrast) && contrast !== defaultApiParameters.contrast) {
+    url = `${url}&${apiValue('palette', contrast)}`
+  }
+  if (!isNil(prerender) && prerender !== defaultApiParameters.prerender) {
+    url = `${url}&${apiValue('prerender', prerender)}`
+  }
+  if (!isNil(screenshot) && screenshot !== defaultApiParameters.screenshot) {
+    url = `${url}&${apiValue('screenshot', screenshot)}`
+  }
   return url
 }
 
@@ -63,7 +62,7 @@ export const fetchFromApi = props => {
 export const isLarge = cardSize => cardSize === 'large'
 
 export const imageProxy = url => {
-  return REGEX_HTTPS.test(url)
+  return REGEX_LOCALHOST.test(url) || REGEX_HTTPS.test(url)
     ? url
     : `https://images.weserv.nl/?url=${encodeURIComponent(url).replace('http://', '')}`
 }
