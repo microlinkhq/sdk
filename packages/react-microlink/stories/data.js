@@ -20,7 +20,7 @@ export const urlsVideo = [
   'https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit',
   'https://streamable.com/46ont',
   'https://www.instagram.com/p/BXHj-DllyYU/',
-  'https://www.amazon.com/dp/B06XCM9LJ4',
+  'https://www.amazon.com/All-new-Echo-Plus-Bundle-Philips/dp/B07H1QBW2L',
   'https://twitter.com/verge/status/957383241714970624',
   'https://vimeo.com/188175573',
   'https://www.youtube.com/watch?v=hwMkbaS_M_c'
