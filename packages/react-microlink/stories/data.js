@@ -23,5 +23,6 @@ export const urlsVideo = [
   'https://www.amazon.com/All-new-Echo-Plus-Bundle-Philips/dp/B07H1QBW2L',
   'https://twitter.com/verge/status/957383241714970624',
   'https://vimeo.com/188175573',
+  'https://9gag.com/gag/aMZ1WbW',
   'https://www.youtube.com/watch?v=hwMkbaS_M_c'
 ]
