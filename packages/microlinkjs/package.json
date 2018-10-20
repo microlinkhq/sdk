@@ -33,7 +33,7 @@
   ],
   "dependencies": {
     "react-microlink": "^2.2.8",
-    "styled-components": "^3"
+    "styled-components": "^4"
   },
   "devDependencies": {
     "@babel/core": "latest",
