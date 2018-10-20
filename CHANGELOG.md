@@ -1,5 +1,18 @@
-##  (2018-10-06)
+##  (2018-10-20)
 
+
+
+
+## 2.3.0 (2018-10-20)
+
+* Add 9gag demo link ([948a57e](https://github.com/microlinkhq/react-microlink/commit/948a57e))
+* Preparing build ([c6eaf0c](https://github.com/microlinkhq/react-microlink/commit/c6eaf0c))
+* Update Changelog ([25168f2](https://github.com/microlinkhq/react-microlink/commit/25168f2))
+* Update demo link ([4992d8b](https://github.com/microlinkhq/react-microlink/commit/4992d8b))
+* Update repo URL references (#128) ([b3b6b6e](https://github.com/microlinkhq/react-microlink/commit/b3b6b6e)), closes [#128](https://github.com/microlinkhq/react-microlink/issues/128)
+* Update styled-components dependency ([88e81ba](https://github.com/microlinkhq/react-microlink/commit/88e81ba))
+* Upgrade styled-components (v4) (#127) ([6b9f061](https://github.com/microlinkhq/react-microlink/commit/6b9f061)), closes [#127](https://github.com/microlinkhq/react-microlink/issues/127)
+* v2.3.0 ([c223c38](https://github.com/microlinkhq/react-microlink/commit/c223c38))
 
 
 
