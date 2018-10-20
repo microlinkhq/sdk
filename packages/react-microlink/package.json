@@ -55,12 +55,12 @@
     "microbundle": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
-    "react": "^16",
-    "react-dom": "^16",
+    "react": "^16.3",
+    "react-dom": "^16.3",
     "size-limit": "latest",
     "standard": "latest",
     "storybook-addon-jsx": "latest",
-    "styled-components": "^3",
+    "styled-components": "^4",
     "unfetch": "latest"
   },
   "engines": {
@@ -86,8 +86,8 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "react": ">= 16 < 17",
-    "styled-components": "3"
+    "react": ">= 16.3 < 17",
+    "styled-components": "4"
   },
   "size-limit": [
     {

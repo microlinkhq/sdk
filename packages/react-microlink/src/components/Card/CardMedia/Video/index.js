@@ -81,7 +81,7 @@ class CardVideo extends Component {
           autoPlay={autoPlay}
           loop={loop}
           playsInline={playsInline}
-          innerRef={node => (this.video = node)}
+          ref={node => (this.video = node)}
           {...(controls ? { onTimeUpdate: this.updateProgress } : {})}
         />
         <PlayButton cardSize={cardSize} visible={controls && !playing} />
