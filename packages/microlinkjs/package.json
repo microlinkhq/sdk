@@ -18,10 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microlinkhq/microlinkjs.git"
+    "url": "git+https://github.com/microlinkhq/sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/microlinkhq/microlinkjs/issues"
+    "url": "https://github.com/microlinkhq/sdk/issues"
   },
   "keywords": [
     "data",
