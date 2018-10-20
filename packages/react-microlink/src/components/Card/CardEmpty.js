@@ -6,7 +6,7 @@ import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
 import { media } from '../../utils'
 
-const MediaEmpty = CardImage.extend`
+const MediaEmpty = styled(CardImage)`
   ${emptyStateImageAnimation}
 `
 

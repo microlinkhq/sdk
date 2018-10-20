@@ -73,6 +73,7 @@ class Microlink extends Component {
       image: imageUrl
     })
   }
+
   render () {
     const {
       title,
