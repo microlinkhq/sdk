@@ -1,5 +1,5 @@
 {
-  "name": "microlinkjs",
+  "name": "@microlink/root",
   "description": "Convert your links into beautiful previews",
   "version": "",
   "devDependencies": {

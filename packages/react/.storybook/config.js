@@ -7,7 +7,7 @@ function loadStories() {
 }
 
 setOptions({
-  name: 'microlinkjs',
+  name: 'Microlink SDK',
   url: 'https://github.com/microlinkhq/sdk',
   goFullScreen: false,
   showStoriesPanel: true,

@@ -7,7 +7,7 @@ const React = require('react')
 
 const pkg = require('../package.json')
 
-const { default: MicrolinkCard } = require('react-microlink')
+const { default: MicrolinkCard } = require('@microlink/react')
 
 const BOOLEAN_STRINGS = ['true', 'false']
 
