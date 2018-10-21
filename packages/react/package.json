@@ -1,5 +1,5 @@
 {
-  "name": "react-microlink",
+  "name": "@microlink/react",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
   "version": "2.3.0",
