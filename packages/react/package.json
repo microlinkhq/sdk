@@ -5,21 +5,9 @@
   "version": "2.3.0",
   "main": "lib/index.js",
   "module": "lib/index.m.js",
-  "author": {
-    "email": "hi@breadadams.com",
-    "name": "Brad Adams",
-    "url": "https://breadadams.com"
-  },
-  "contributors": [
-    {
-      "name": "Kiko Beats",
-      "email": "josefrancisco.verdu@gmail.com",
-      "url": "https://github.com/Kikobeats"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microlinkhq/sdk.git"
+    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/react"
   },
   "bugs": {
     "url": "https://github.com/microlinkhq/sdk/issues"
