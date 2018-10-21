@@ -4,21 +4,9 @@
   "homepage": "https://microlink.js.org",
   "version": "2.3.0",
   "main": "src/index.js",
-  "author": {
-    "email": "hi@breadadams.com",
-    "name": "Brad Adams",
-    "url": "https://breadadams.com"
-  },
-  "contributors": [
-    {
-      "name": "Kiko Beats",
-      "email": "josefrancisco.verdu@gmail.com",
-      "url": "https://github.com/Kikobeats"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microlinkhq/sdk.git"
+    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/vanilla"
   },
   "bugs": {
     "url": "https://github.com/microlinkhq/sdk/issues"

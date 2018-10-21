@@ -1,44 +1,79 @@
 {
   "name": "@microlink/root",
   "description": "Convert your links into beautiful previews",
-  "version": "",
+  "homepage": "https://github.com/microlinkhq/sdk#readme",
+  "version": "2.3.0",
+  "author": {
+    "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
+    "url": "https://github.com/Kikobeats"
+  },
+  "contributors": [
+    {
+      "name": "Brad Adams",
+      "email": "hi@breadadams.com"
+    },
+    {
+      "name": "Pierre Lebrun",
+      "email": "anthonylebrun@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlinkhq/sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/microlinkhq/sdk/issues"
+  },
   "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
     "conventional-changelog-cli": "latest",
+    "conventional-github-releaser": "latest",
     "eachdir": "latest",
     "finepack": "latest",
+    "git-authors-cli": "latest",
     "husky": "latest",
     "lerna": "latest",
-    "npm-check-updates": "latest",
     "lint-staged": "latest",
+    "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "standard": "latest",
-    "standard-markdown": "latest"
+    "standard-markdown": "latest",
+    "standard-version": "latest"
   },
   "engines": {
     "node": ">= 8"
   },
   "scripts": {
-    "browser-sync": "browser-sync start --server --files \"index.html, README.md, static/**/*.(css|js)\"",
-    "build": "gulp build",
-    "build:packages": "lerna run build",
-    "build:commit": "lerna run build && git add . && git commit -m 'Preparing build'",
+    "build": "lerna run build",
     "changelog": "conventional-changelog --release-count=0 > CHANGELOG.md",
     "changelog:commit": "npm run changelog && git add CHANGELOG.md && git commit -m 'Update Changelog' && git push origin master",
     "clean": "cd packages && eachdir rm -rf node_modules && cd .. && rm -rf node_modules",
-    "dev": "concurrently 'gulp' 'npm run browser-sync'",
     "lint": "standard-markdown README.md && standard src",
     "postinstall": "lerna bootstrap",
-    "precommit": "lint-staged",
+    "prepublishOnly": "lerna run build",
+    "prerelease": "npm run update:check",
     "pretest": "npm run lint",
-    "pretty": "prettier-standard src/**/*.{js,css} --single-quote",
-    "prerelease": "npm run upgrade && npm run build:commit",
+    "preversion": "git-authors-cli",
     "release": "lerna publish --sort",
-    "postrelease": "npm run changelog:commit",
     "test": "lerna exec npm run test",
-    "upgrade": "lerna exec ncu --  --error-level 2"
+    "update": "lerna exec ncu -a",
+    "update:check": "lerna exec ncu --  --error-level 2"
   },
   "private": true,
   "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "linters": {
       "*.js": [
