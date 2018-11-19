@@ -30,9 +30,7 @@ storiesOf('props', module)
   .addWithJSX('autoPlay', () =>
     urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
   )
-  .addWithJSX('loading', () =>
-    createMicrolink({ loading: true })
-  )
+  .addWithJSX('loading', () => createMicrolink({ loading: true }))
 
 storiesOf('media', module)
   .addWithJSX('image', () =>
@@ -41,7 +39,9 @@ storiesOf('media', module)
   .addWithJSX('logo', () =>
     urls.map(url => createMicrolink({ url, image: 'logo' }))
   )
-  .addWithJSX('video', () => urlsVideo.map(url => createMicrolink({ url, video: true })))
+  .addWithJSX('video', () =>
+    urlsVideo.map(url => createMicrolink({ url, video: true }))
+  )
   .addWithJSX('screenshot', () =>
     urls.map(url =>
       createMicrolink({
@@ -52,8 +52,8 @@ storiesOf('media', module)
     )
   )
 
-storiesOf('custom', module)
-  .addWithJSX('data', () =>
+storiesOf('setData', module)
+  .addWithJSX('object', () =>
     createMicrolink({
       url: 'https://microlink.io',
       data: {
@@ -61,13 +61,26 @@ storiesOf('custom', module)
       }
     })
   )
-  .addWithJSX('data (no fetch)', () =>
+  .addWithJSX('object noFetch', () =>
     createMicrolink({
       url: 'https://microlink.io',
       noFetch: true,
-      data: {
+      setData: {
         title: 'My Custom Title'
       }
+    })
+  )
+  .addWithJSX('function', () =>
+    createMicrolink({
+      url: 'https://microlink.io',
+      setData: data => ({ ...data, title: 'My Custom Title' })
+    })
+  )
+  .addWithJSX('function noFetch', () =>
+    createMicrolink({
+      url: 'https://microlink.io',
+      noFetch: true,
+      setData: data => ({ ...data, title: 'My Custom Title' })
     })
   )
 
