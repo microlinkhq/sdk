@@ -3,6 +3,8 @@ import 'unfetch/polyfill'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
+import { checkA11y } from '@storybook/addon-a11y'
+
 import Microlink from '../src'
 import { urls, urlsVideo } from './data'
 
@@ -20,6 +22,7 @@ const createMicrolink = props => (
 )
 
 storiesOf('props', module)
+  .addDecorator(checkA11y)
   .addWithJSX('default', () => urls.map(url => createMicrolink({ url })))
   .addWithJSX('contrast', () =>
     urls.map(url => createMicrolink({ url, contrast: true }))
@@ -33,6 +36,7 @@ storiesOf('props', module)
   .addWithJSX('loading', () => createMicrolink({ loading: true }))
 
 storiesOf('media', module)
+  .addDecorator(checkA11y)
   .addWithJSX('image', () =>
     urls.map(url => createMicrolink({ url, image: 'image' }))
   )
@@ -53,6 +57,7 @@ storiesOf('media', module)
   )
 
 storiesOf('setData', module)
+  .addDecorator(checkA11y)
   .addWithJSX('object', () =>
     createMicrolink({
       url: 'https://microlink.io',
@@ -85,6 +90,7 @@ storiesOf('setData', module)
   )
 
 storiesOf('custom/style', module)
+  .addDecorator(checkA11y)
   .addWithJSX('width', () =>
     ['300px', '400px', '500px', '600px', '700px', '800px'].map((width, index) =>
       createMicrolink({

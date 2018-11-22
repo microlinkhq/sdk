@@ -1,13 +1,18 @@
 {
   "presets": [
-    ["env", {
-      "targets": { "browsers": [
-        ">0.25%",
-        "not ie 11",
-        "not op_mini all"
-      ] }
-    }],
-    "react"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            ">0.25%",
+            "not ie 11",
+            "not op_mini all"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-react"
   ],
   "plugins": [
     "transform-class-properties",
@@ -17,7 +22,12 @@
     "production": {
       "plugins": [
         "transform-react-inline-elements",
-        ["transform-react-remove-prop-types", {"removeImport": true}],
+        [
+          "transform-react-remove-prop-types",
+          {
+            "removeImport": true
+          }
+        ],
         "transform-react-pure-class-to-function",
         "transform-react-constant-elements"
       ]

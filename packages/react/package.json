@@ -24,11 +24,14 @@
     "nanoclamp": "~1.2.7"
   },
   "devDependencies": {
+    "@babel/core": "latest",
+    "@storybook/addon-a11y": "latest",
     "@storybook/addon-options": "latest",
     "@storybook/addon-viewport": "latest",
     "@storybook/react": "latest",
     "babel-cli": "latest",
     "babel-eslint": "latest",
+    "babel-loader": "latest",
     "babel-plugin-transform-class-properties": "latest",
     "babel-plugin-transform-object-rest-spread": "latest",
     "babel-plugin-transform-react-constant-elements": "latest",
