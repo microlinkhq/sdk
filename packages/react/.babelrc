@@ -15,13 +15,13 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    "transform-class-properties",
-    "transform-object-rest-spread"
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread"
   ],
   "env": {
     "production": {
       "plugins": [
-        "transform-react-inline-elements",
+        "@babel/plugin-transform-react-inline-elements",
         [
           "transform-react-remove-prop-types",
           {
@@ -29,7 +29,7 @@
           }
         ],
         "transform-react-pure-class-to-function",
-        "transform-react-constant-elements"
+        "@babel/plugin-transform-react-constant-elements"
       ]
     }
   }

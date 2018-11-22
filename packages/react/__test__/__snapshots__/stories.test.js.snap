@@ -1,0 +1,8477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots custom/style border radius 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-iybRtq bIGpvD"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderRadius": ".42857em",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-iQtOjA dZUymY"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderRadius": ".42857em",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-fHxwqH ccvVXV"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderRadius": "6px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cEvuZC jXQGpJ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderRadius": "6px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-kXeGPI kfTpSb"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderRadius": "10px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-fyjhYU eeSYIC"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderRadius": "10px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots custom/style height 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-eKZiaR bPbeBN"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "150px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-drMfKT jwGtDw"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "150px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-fgfRvd gdBuxh"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "175px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hIVACf keyiFz"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "175px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-gpHHfC eHMMrd"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "200px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-gVyKpa bMKZOo"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "200px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-eXNvrr iMwodZ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "250px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cpmKsF ggxHFU"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "250px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-kQsIoO eLjjkT"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "300px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-gPzReC dNBSRR"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "300px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-jrIrqw jIDPCx"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "350px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hjRWVT UXYfO"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "height": "350px",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots custom/style misc 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-ugnQR jBWvVy"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-eIHaNI cBjuXv"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-eTpRJs binbjt"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dxZgTM dACRMi"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-iomxrj isZiSv"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dvCyap kRekJB"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-iFMziU jIKmDE"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-keVrkP kFHgQO"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-gVLVqr sglVB"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cBdUnI ctDTEQ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-exkUMo ckwpL"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kcDeIU hoAEdb"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html
+    </a>
+    <a
+      className="microlink_card sc-BngTV iSskNJ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-bFADNz bXpoTs"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328
+    </a>
+    <a
+      className="microlink_card sc-cqpYsc ijSDJl"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hBbWxd dlXxkg"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.bbc.com/news/technology-40762328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.bbc.com/news/technology-40762328
+    </a>
+    <a
+      className="microlink_card sc-dyGzUR ljMxAj"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-drKuOJ hFgYTe"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://browserless.js.org"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://browserless.js.org
+    </a>
+    <a
+      className="microlink_card sc-gRnDUn lanJrB"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cmjSyW fTnoVe"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://xn--vi8hl0c.ws/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://xn--vi8hl0c.ws/
+    </a>
+    <a
+      className="microlink_card sc-sdtwF hqGPoI"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-iYUSvU bofPzz"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "boxShadow": "0 1px 4px 0 hsla(0, 0%, 0%, 0.2)",
+          "fontFamily": "Nitti, \\"Microsoft YaHei\\", 微软雅黑, monospace",
+          "marginBottom": "20px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots custom/style width 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-kasBVs gDrUbF"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "300px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hgHYgh jWMRRy"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "300px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-eInJlc ktKKaF"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "400px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-gtfDJT fSpKUl"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "400px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-fOICqy dmqroX"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "500px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hzDEsm dIsggT"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "500px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-jeCdPy dmlidu"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "600px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jtRlXQ cMEBYf"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "600px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-bGbJRg ermmlF"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "700px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-bEjcJn emepNS"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "700px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-ePZHVD ewhirT"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "800px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-likbZx cudTDH"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "width": "800px",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots media image 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-hrWEMg kjxvnR"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-eTuwsz gjMeZp"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-gwVKww ljDrSb"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hXRMBi dCmvMa"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-epnACN ldRHJC"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-iQNlJl dRwKpL"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-bsbRJL ixTEwV"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hZSUBg bmMpEp"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-cMhqgX bPEuEH"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-iuJeZd iPwRfm"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-esOvli hdgYyj"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cmthru dCLGhj"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html
+    </a>
+    <a
+      className="microlink_card sc-hMFtBS bxwJLj"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cLQEGU gVcpH"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328
+    </a>
+    <a
+      className="microlink_card sc-gqPbQI kApEkY"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hORach WIoQW"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.bbc.com/news/technology-40762328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.bbc.com/news/technology-40762328
+    </a>
+    <a
+      className="microlink_card sc-bMVAic djoYYI"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-bAeIUo hHPQLS"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://browserless.js.org"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://browserless.js.org
+    </a>
+    <a
+      className="microlink_card sc-iujRgT YftSe"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-GMQeP hlcFQh"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://xn--vi8hl0c.ws/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://xn--vi8hl0c.ws/
+    </a>
+    <a
+      className="microlink_card sc-exAgwC bUAfAZ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cQFLBn kftcJA"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots media logo 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-gojNiO fbJwte"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-daURTG dMWFNh"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-bXGyLb ixQhQH"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-lkqHmb jkbtiV"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-eLExRp eQBDRV"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cbkKFq cbCmMT"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-krvtoX kpiXGQ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-fYiAbW fvWdkQ"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-fOKMvo hQrDpV"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dUjcNx hxAUjc"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-gHboQg gvMTmT"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-eilVRo iuORfH"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html
+    </a>
+    <a
+      className="microlink_card sc-eerKOB ivYHhr"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-emmjRN dTsolX"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328
+    </a>
+    <a
+      className="microlink_card sc-cpmLhU iGfchP"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dymIpo RClXn"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.bbc.com/news/technology-40762328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.bbc.com/news/technology-40762328
+    </a>
+    <a
+      className="microlink_card sc-bnXvFD jEMceQ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-gFaPwZ bWermn"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://browserless.js.org"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://browserless.js.org
+    </a>
+    <a
+      className="microlink_card sc-fhYwyz cXvQpi"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jzgbtB hWgfNK"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://xn--vi8hl0c.ws/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://xn--vi8hl0c.ws/
+    </a>
+    <a
+      className="microlink_card sc-gJWqzi dUuWJy"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-rBLzX fKHWGU"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots media screenshot 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-cqCuEk hPhXVU"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dliRfk fywrKm"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-kLIISr bAOGYh"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-qrIAp WIyrZ"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-iqzUVk hFgCCI"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-ipZHIp kKmYUy"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-iGrrsa jDLzzR"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-bmyXtO ielMvv"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-dEoRIm cOLLQV"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jtggT bOzONe"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-ebFjAB cggKju"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jKVCRD bfnWuq"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html
+    </a>
+    <a
+      className="microlink_card sc-kaNhvL lkbrS"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-LKuAh jiLiPK"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328
+    </a>
+    <a
+      className="microlink_card sc-iBEsjs cueYiv"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hzNEM ebiiW"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.bbc.com/news/technology-40762328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.bbc.com/news/technology-40762328
+    </a>
+    <a
+      className="microlink_card sc-chbbiW kxfoVE"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kxynE ehxlIi"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://browserless.js.org"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://browserless.js.org
+    </a>
+    <a
+      className="microlink_card sc-cooIXK kdZDcf"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-fcdeBU keAxAf"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://xn--vi8hl0c.ws/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://xn--vi8hl0c.ws/
+    </a>
+    <a
+      className="microlink_card sc-gmeYpB xPtnZ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kZmsYB jWqFqP"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots media video 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.facebook.com/afcajax/videos/1686831701364171"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.facebook.com/afcajax/videos/1686831701364171
+    </a>
+    <a
+      className="microlink_card sc-bMvGRv gXWACE"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-CtfFt Qmbsr"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gfycat.com/gifs/detail/timelyhealthyarmadillo"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gfycat.com/gifs/detail/timelyhealthyarmadillo
+    </a>
+    <a
+      className="microlink_card sc-laTMn ffUxro"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hGoxap iTfMdK"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit
+    </a>
+    <a
+      className="microlink_card sc-fjmCvl gBWMQW"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-TFwJa gfzoOw"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://streamable.com/46ont"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://streamable.com/46ont
+    </a>
+    <a
+      className="microlink_card sc-bHwgHz gjSeNm"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-krDsej hyFLiW"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.instagram.com/p/BXHj-DllyYU/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.instagram.com/p/BXHj-DllyYU/
+    </a>
+    <a
+      className="microlink_card sc-dTdPqK cBUoUD"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-itybZL ilZXzk"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.amazon.com/All-new-Echo-Plus-Bundle-Philips/dp/B07H1QBW2L"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.amazon.com/All-new-Echo-Plus-Bundle-Philips/dp/B07H1QBW2L
+    </a>
+    <a
+      className="microlink_card sc-eMigcr fnenML"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-fzsDOv bqYHHf"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/verge/status/957383241714970624"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/verge/status/957383241714970624
+    </a>
+    <a
+      className="microlink_card sc-gPWkxV dRQlZS"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jVODtj gzqCxZ"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://vimeo.com/188175573"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://vimeo.com/188175573
+    </a>
+    <a
+      className="microlink_card sc-kUaPvJ xEpSo"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-giadOv pPmHo"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://9gag.com/gag/aMZ1WbW"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://9gag.com/gag/aMZ1WbW
+    </a>
+    <a
+      className="microlink_card sc-fONwsr dUlWEv"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-VJcYb bGeAcV"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.youtube.com/watch?v=hwMkbaS_M_c"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.youtube.com/watch?v=hwMkbaS_M_c
+    </a>
+    <a
+      className="microlink_card sc-ipXKqB cqhcPg"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hmXxxW kmVnWB"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots props autoPlay 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.facebook.com/afcajax/videos/1686831701364171"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.facebook.com/afcajax/videos/1686831701364171
+    </a>
+    <a
+      className="microlink_card sc-jwKygS xRxtF"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-btzYZH TJGBS"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gfycat.com/gifs/detail/timelyhealthyarmadillo"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gfycat.com/gifs/detail/timelyhealthyarmadillo
+    </a>
+    <a
+      className="microlink_card sc-lhVmIH kojDlp"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-bYSBpT jdnfqV"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit
+    </a>
+    <a
+      className="microlink_card sc-elJkPf erIVTf"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jtRfpW JWaJy"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://streamable.com/46ont"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://streamable.com/46ont
+    </a>
+    <a
+      className="microlink_card sc-kTUwUJ bywurS"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dqBHgY jqwTZj"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.instagram.com/p/BXHj-DllyYU/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.instagram.com/p/BXHj-DllyYU/
+    </a>
+    <a
+      className="microlink_card sc-gxMtzJ bqTsZA"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dfVpRl mxPld"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.amazon.com/All-new-Echo-Plus-Bundle-Philips/dp/B07H1QBW2L"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.amazon.com/All-new-Echo-Plus-Bundle-Philips/dp/B07H1QBW2L
+    </a>
+    <a
+      className="microlink_card sc-gzOgki bgshle"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-iyvyFf UJmDN"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/verge/status/957383241714970624"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/verge/status/957383241714970624
+    </a>
+    <a
+      className="microlink_card sc-hwwEjo sTUXN"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kPVwWT cqjgQD"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://vimeo.com/188175573"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://vimeo.com/188175573
+    </a>
+    <a
+      className="microlink_card sc-kfGgVZ cNUObK"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-esjQYD ELXSs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://9gag.com/gag/aMZ1WbW"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://9gag.com/gag/aMZ1WbW
+    </a>
+    <a
+      className="microlink_card sc-kIPQKe LrECi"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-eXEjpC dEBhSM"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.youtube.com/watch?v=hwMkbaS_M_c"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.youtube.com/watch?v=hwMkbaS_M_c
+    </a>
+    <a
+      className="microlink_card sc-ibxdXY fSEiLR"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-RefOD gVsYHv"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots props contrast 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-jAaTju fXtgMa"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jDwBTQ gcerp"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-gPEVay jjdqVp"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-iRbamj dMSvtb"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-jlyJG TfpHP"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-gipzik iOZnza"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-csuQGl hvPceL"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-Rmtcm hXYsFc"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-bRBYWo eHJQns"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hzDkRC hAweKU"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-jhAzac cLxjuS"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-fBuWsC fouvpM"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html
+    </a>
+    <a
+      className="microlink_card sc-fMiknA foYQvv"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dVhcbM fKUIe"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328
+    </a>
+    <a
+      className="microlink_card sc-eqIVtm gyswSD"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-fAjcbJ jxIROn"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.bbc.com/news/technology-40762328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.bbc.com/news/technology-40762328
+    </a>
+    <a
+      className="microlink_card sc-caSCKo ggWjpb"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-gisBJw fMrjVn"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://browserless.js.org"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://browserless.js.org
+    </a>
+    <a
+      className="microlink_card sc-kjoXOD hgxcJx"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cHGsZl dqtDWO"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://xn--vi8hl0c.ws/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://xn--vi8hl0c.ws/
+    </a>
+    <a
+      className="microlink_card sc-TOsTZ hwtWpD"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kgAjT fxtPRL"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots props default 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-fjdhpX ksiWOb"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jzJRlG hDgWtr"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-cSHVUG ihkpGL"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kAzzGY dgpUuY"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-chPdSV fyYxDh"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kgoBCf iGehEz"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-kGXeez AUveX"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kpOJdX cXHQWZ"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-dxgOiQ iTTLhe"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-ckVGcZ hQjhNK"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-jKJlTe ifMJEi"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-eNQAEJ iUCKdt"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html
+    </a>
+    <a
+      className="microlink_card sc-hMqMXs ipAvBU"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-kEYyzF lcQbrC"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328
+    </a>
+    <a
+      className="microlink_card sc-kkGfuU kqmzvu"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-iAyFgw eAKVQC"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.bbc.com/news/technology-40762328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.bbc.com/news/technology-40762328
+    </a>
+    <a
+      className="microlink_card sc-hSdWYo iQGVIS"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-eHgmQL hNRApL"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://browserless.js.org"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://browserless.js.org
+    </a>
+    <a
+      className="microlink_card sc-cvbbAY kNfeHz"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-jWBwVP hBNRNQ"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://xn--vi8hl0c.ws/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://xn--vi8hl0c.ws/
+    </a>
+    <a
+      className="microlink_card sc-brqgnP cTylnD"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cMljjf iUXTXy"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots props loading 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "paddingBottom": "64px",
+    }
+  }
+>
+  <a
+    style={
+      Object {
+        "color": "#0366d6",
+        "marginBottom": "2rem",
+      }
+    }
+  />
+  <a
+    className="microlink_card sc-iQKALj bJuWws"
+    rel="noopener noreferrer"
+    style={
+      Object {
+        "marginBottom": "2rem",
+      }
+    }
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH hEHCaG"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI gfPBoV"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+  <a
+    className="microlink_card sc-bwCtUz bpXMIs"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH ctGTXH"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI kKSvfe"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Storyshots props reverse 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://twitter.com/stripe/status/750230305399681024"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://twitter.com/stripe/status/750230305399681024
+    </a>
+    <a
+      className="microlink_card sc-cJSrbW cvojVR"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-ksYbfQ ckWjGw"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://medium.com/@the_economist/apple-should-shrink-its-finance-arm-before-it-goes-bananas-f7fcdc754091
+    </a>
+    <a
+      className="microlink_card sc-hmzhuo jvEDrd"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-frDJqD kunziI"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central
+    </a>
+    <a
+      className="microlink_card sc-kvZOFW eMQKAz"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hqyNC wKGZv"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/
+    </a>
+    <a
+      className="microlink_card sc-jbKcbu gQaBDu"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-dNLxif kkjmwM"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://mashable.com/2017/10/19/cybersecurity-hacker-online-course"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://mashable.com/2017/10/19/cybersecurity-hacker-online-course
+    </a>
+    <a
+      className="microlink_card sc-jqCOkK iOqQbi"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-uJMKN ejCaMn"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos
+    </a>
+    <a
+      className="microlink_card sc-bbmXgH gyupFn"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-gGBfsJ cSgxkd"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html
+    </a>
+    <a
+      className="microlink_card sc-jnlKLf hzLfdc"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-fYxtnH jcGRPO"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328
+    </a>
+    <a
+      className="microlink_card sc-tilXH irxVEg"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-hEsumM lgOeHx"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://www.bbc.com/news/technology-40762328"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://www.bbc.com/news/technology-40762328
+    </a>
+    <a
+      className="microlink_card sc-ktHwxA bgRenX"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cIShpX jCjnzZ"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://browserless.js.org"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://browserless.js.org
+    </a>
+    <a
+      className="microlink_card sc-kafWEX bBjDVX"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-feJyhm gLKWbW"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingBottom": "64px",
+      }
+    }
+  >
+    <a
+      href="https://xn--vi8hl0c.ws/"
+      style={
+        Object {
+          "color": "#0366d6",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      https://xn--vi8hl0c.ws/
+    </a>
+    <a
+      className="microlink_card sc-iELTvK khuPeZ"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH hEHCaG"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI gfPBoV"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+    <a
+      className="microlink_card sc-cmTdod fdBZqV"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+      />
+      <div
+        className="microlink_card__content sc-bwzfXH ctGTXH"
+      >
+        <header
+          className="sc-dnqmqq lfYESy"
+        />
+        <span
+          className="sc-iwsKbI kKSvfe"
+        />
+        <footer
+          className="sc-gZMcBi bGfmiP"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots setData function 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "paddingBottom": "64px",
+    }
+  }
+>
+  <a
+    href="https://microlink.io"
+    style={
+      Object {
+        "color": "#0366d6",
+        "marginBottom": "2rem",
+      }
+    }
+  >
+    https://microlink.io
+  </a>
+  <a
+    className="microlink_card sc-clNaTc kRCOix"
+    rel="noopener noreferrer"
+    style={
+      Object {
+        "marginBottom": "2rem",
+      }
+    }
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH hEHCaG"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI gfPBoV"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+  <a
+    className="microlink_card sc-etwtAo jPRoHe"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH ctGTXH"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI kKSvfe"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Storyshots setData function noFetch 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "paddingBottom": "64px",
+    }
+  }
+>
+  <a
+    href="https://microlink.io"
+    style={
+      Object {
+        "color": "#0366d6",
+        "marginBottom": "2rem",
+      }
+    }
+  >
+    https://microlink.io
+  </a>
+  <a
+    className="microlink_card sc-jXQZqI hayZkF"
+    rel="noopener noreferrer"
+    style={
+      Object {
+        "marginBottom": "2rem",
+      }
+    }
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH hEHCaG"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI gfPBoV"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+  <a
+    className="microlink_card sc-iGPElx dpxUiR"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH ctGTXH"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI kKSvfe"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Storyshots setData object 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "paddingBottom": "64px",
+    }
+  }
+>
+  <a
+    href="https://microlink.io"
+    style={
+      Object {
+        "color": "#0366d6",
+        "marginBottom": "2rem",
+      }
+    }
+  >
+    https://microlink.io
+  </a>
+  <a
+    className="microlink_card sc-RcBXQ clLqnk"
+    data={
+      Object {
+        "title": "My Custom Title",
+      }
+    }
+    rel="noopener noreferrer"
+    style={
+      Object {
+        "marginBottom": "2rem",
+      }
+    }
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH hEHCaG"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI gfPBoV"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+  <a
+    className="microlink_card sc-iSDuPN epNdxU"
+    data={
+      Object {
+        "title": "My Custom Title",
+      }
+    }
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH ctGTXH"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI kKSvfe"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Storyshots setData object noFetch 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "paddingBottom": "64px",
+    }
+  }
+>
+  <a
+    href="https://microlink.io"
+    style={
+      Object {
+        "color": "#0366d6",
+        "marginBottom": "2rem",
+      }
+    }
+  >
+    https://microlink.io
+  </a>
+  <a
+    className="microlink_card sc-fZwumE hKtrcc"
+    rel="noopener noreferrer"
+    style={
+      Object {
+        "marginBottom": "2rem",
+      }
+    }
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image bnUnbz"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH hEHCaG"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI gfPBoV"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+  <a
+    className="microlink_card sc-fQejPQ fIRnow"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="sc-htoDjs microlink_card__media microlink_card__media_image USNXY"
+    />
+    <div
+      className="microlink_card__content sc-bwzfXH ctGTXH"
+    >
+      <header
+        className="sc-dnqmqq lfYESy"
+      />
+      <span
+        className="sc-iwsKbI kKSvfe"
+      />
+      <footer
+        className="sc-gZMcBi bGfmiP"
+      />
+    </div>
+  </a>
+</div>
+`;

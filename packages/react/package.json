@@ -24,25 +24,31 @@
     "nanoclamp": "~1.2.7"
   },
   "devDependencies": {
+    "@babel/cli": "latest",
     "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/plugin-transform-react-constant-elements": "latest",
+    "@babel/plugin-transform-react-inline-elements": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
     "@storybook/addon-a11y": "latest",
     "@storybook/addon-options": "latest",
+    "@storybook/addon-storyshots": "latest",
     "@storybook/addon-viewport": "latest",
     "@storybook/react": "latest",
-    "babel-cli": "latest",
     "babel-eslint": "latest",
     "babel-loader": "latest",
-    "babel-plugin-transform-class-properties": "latest",
-    "babel-plugin-transform-object-rest-spread": "latest",
-    "babel-plugin-transform-react-constant-elements": "latest",
-    "babel-plugin-transform-react-inline-elements": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
-    "babel-preset-env": "latest",
-    "babel-preset-react": "latest",
+    "enzyme": "latest",
+    "enzyme-adapter-react-16": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "finepack": "latest",
     "husky": "latest",
+    "jest": "~21.3.0-beta.15",
+    "jest-environment-enzyme": "latest",
+    "jest-enzyme": "latest",
     "microbundle": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
@@ -73,9 +79,13 @@
     "pretest": "npm run lint",
     "size": "npm run build && size-limit",
     "start": "node scripts/start.js",
-    "test": "exit 0"
+    "test": "jest"
   },
   "license": "MIT",
+  "jest": {
+    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "testEnvironment": "enzyme"
+  },
   "peerDependencies": {
     "react": ">= 16 < 17",
     "styled-components": "4"
