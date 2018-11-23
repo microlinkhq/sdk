@@ -61,7 +61,7 @@
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
     "preversion": "git-authors-cli",
-    "release": "lerna publish --sort",
+    "release": "lerna publish --sort --conventional-commit",
     "test": "lerna exec npm run test",
     "update": "lerna exec ncu -a",
     "update:check": "lerna exec ncu --  --error-level 2"
