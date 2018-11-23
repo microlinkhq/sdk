@@ -2,7 +2,7 @@
   "name": "@microlink/react",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "main": "lib/index.js",
   "module": "lib/index.m.js",
   "repository": {
@@ -61,9 +61,6 @@
     "styled-components": "^4",
     "unfetch": "latest"
   },
-  "resolutions": {
-    "babel-core": "7.0.0-bridge.0"
-  },
   "engines": {
     "node": ">= 8"
   },
@@ -95,6 +92,9 @@
   "peerDependencies": {
     "react": ">= 16 < 17",
     "styled-components": "4"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
   },
   "size-limit": [
     {
