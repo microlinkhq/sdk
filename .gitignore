@@ -7,6 +7,9 @@ node_modules
 /coverage
 
 # production
+packages/vanilla/*/microlink.js
+packages/vanilla/*/microlink.min.js
+packages/vanilla/*/microlink.min.js.map
 /build
 storybook-static
 lib
