@@ -45,6 +45,11 @@
   "engines": {
     "node": ">= 8"
   },
+  "standard-version": {
+    "scripts": {
+      "prechangelog": "git-authors-cli"
+    }
+  },
   "scripts": {
     "build": "lerna run build",
     "changelog": "conventional-changelog --release-count=0 > CHANGELOG.md",
