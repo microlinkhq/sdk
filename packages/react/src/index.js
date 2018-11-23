@@ -1,12 +1,7 @@
 import React, { Fragment, Component } from 'react'
 import PropTypes from 'prop-types'
 
-import {
-  CardWrap,
-  CardMedia,
-  CardContent,
-  CardEmpty
-} from './components/Card'
+import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
 import {
   defaultApiParameters,
   isNil,
@@ -18,7 +13,19 @@ import {
   someProp
 } from './utils'
 
-const Card = ({ image, video, url, size, autoPlay, controls, muted, loop, playsInline, title, description }) => (
+const Card = ({
+  image,
+  video,
+  url,
+  size,
+  autoPlay,
+  controls,
+  muted,
+  loop,
+  playsInline,
+  title,
+  description
+}) => (
   <Fragment>
     <CardMedia
       image={image}
@@ -45,10 +52,17 @@ class Microlink extends Component {
   state = { loading: true }
 
   componentDidMount () {
-    const { data: customData, noFetch, url } = this.props
-    const promise =
+    const { setData, noFetch, url } = this.props
+    const fetch =
       noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
-    promise.then(({ data }) => this.setData({ ...data, ...customData }))
+
+    fetch.then(({ data }) => {
+      console.log('this.props', this.props)
+      const payload =
+        typeof setData === 'function' ? setData(data) : { ...data, ...setData }
+      console.log('payload', payload)
+      this.setData(payload)
+    })
   }
 
   componentDidUpdate (prevProps) {
@@ -85,7 +99,18 @@ class Microlink extends Component {
       image,
       video
     } = this.state
-    const { autoPlay, controls, loop, muted, playsInline, className, size, loading: loadingProp, ...props } = this.props
+
+    const {
+      autoPlay,
+      controls,
+      loop,
+      muted,
+      playsInline,
+      className,
+      size,
+      loading: loadingProp,
+      ...props
+    } = this.props
     const loading = isNil(loadingProp) ? loadingState : loadingProp
 
     return (
@@ -99,9 +124,10 @@ class Microlink extends Component {
         loading={loading}
         {...props}
       >
-        { loading
-          ? <CardEmpty cardSize={size} />
-          : <Card
+        {loading ? (
+          <CardEmpty cardSize={size} />
+        ) : (
+          <Card
             title={title}
             description={description}
             url={url}
@@ -113,7 +139,8 @@ class Microlink extends Component {
             muted={muted}
             playsInline={playsInline}
             size={size}
-          />}
+          />
+        )}
       </CardWrap>
     )
   }

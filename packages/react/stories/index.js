@@ -3,6 +3,8 @@ import 'unfetch/polyfill'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
+import { checkA11y } from '@storybook/addon-a11y'
+
 import Microlink from '../src'
 import { urls, urlsVideo } from './data'
 
@@ -20,6 +22,7 @@ const createMicrolink = props => (
 )
 
 storiesOf('props', module)
+  .addDecorator(checkA11y)
   .addWithJSX('default', () => urls.map(url => createMicrolink({ url })))
   .addWithJSX('contrast', () =>
     urls.map(url => createMicrolink({ url, contrast: true }))
@@ -30,18 +33,19 @@ storiesOf('props', module)
   .addWithJSX('autoPlay', () =>
     urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
   )
-  .addWithJSX('loading', () =>
-    createMicrolink({ loading: true })
-  )
+  .addWithJSX('loading', () => createMicrolink({ loading: true }))
 
 storiesOf('media', module)
+  .addDecorator(checkA11y)
   .addWithJSX('image', () =>
     urls.map(url => createMicrolink({ url, image: 'image' }))
   )
   .addWithJSX('logo', () =>
     urls.map(url => createMicrolink({ url, image: 'logo' }))
   )
-  .addWithJSX('video', () => urlsVideo.map(url => createMicrolink({ url, video: true })))
+  .addWithJSX('video', () =>
+    urlsVideo.map(url => createMicrolink({ url, video: true }))
+  )
   .addWithJSX('screenshot', () =>
     urls.map(url =>
       createMicrolink({
@@ -52,8 +56,9 @@ storiesOf('media', module)
     )
   )
 
-storiesOf('custom', module)
-  .addWithJSX('data', () =>
+storiesOf('setData', module)
+  .addDecorator(checkA11y)
+  .addWithJSX('object', () =>
     createMicrolink({
       url: 'https://microlink.io',
       data: {
@@ -61,17 +66,31 @@ storiesOf('custom', module)
       }
     })
   )
-  .addWithJSX('data (no fetch)', () =>
+  .addWithJSX('object noFetch', () =>
     createMicrolink({
       url: 'https://microlink.io',
       noFetch: true,
-      data: {
+      setData: {
         title: 'My Custom Title'
       }
+    })
+  )
+  .addWithJSX('function', () =>
+    createMicrolink({
+      url: 'https://microlink.io',
+      setData: data => ({ ...data, title: 'My Custom Title' })
+    })
+  )
+  .addWithJSX('function noFetch', () =>
+    createMicrolink({
+      url: 'https://microlink.io',
+      noFetch: true,
+      setData: data => ({ ...data, title: 'My Custom Title' })
     })
   )
 
 storiesOf('custom/style', module)
+  .addDecorator(checkA11y)
   .addWithJSX('width', () =>
     ['300px', '400px', '500px', '600px', '700px', '800px'].map((width, index) =>
       createMicrolink({

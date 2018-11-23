@@ -42,6 +42,7 @@
     "react-dev-utils": "latest",
     "react-dom": "latest",
     "standard": "latest",
+    "terser-webpack-plugin": "latest",
     "unminified-webpack-plugin": "latest",
     "webpack": "latest",
     "webpack-dev-server": "latest"
