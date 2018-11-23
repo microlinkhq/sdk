@@ -17,6 +17,7 @@ lib
 .env.development.local
 .env.test.local
 .env.production.local
+.envrc
 
 # dependency locks
 yarn.lock
