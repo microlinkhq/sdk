@@ -23,6 +23,9 @@
     "@microlink/react": "^3.0.0",
     "styled-components": "^4"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",

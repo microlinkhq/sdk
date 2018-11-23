@@ -93,6 +93,9 @@
     "react": ">= 16 < 17",
     "styled-components": "4"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
   },
