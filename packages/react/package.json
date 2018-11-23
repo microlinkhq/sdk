@@ -113,7 +113,8 @@
       "fetch"
     ],
     "ignore": [
-      "/lib/"
+      "/lib/",
+      "/storybook-static/"
     ],
     "parser": "babel-eslint",
     "plugins": [

@@ -57,10 +57,8 @@ class Microlink extends Component {
       noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
 
     fetch.then(({ data }) => {
-      console.log('this.props', this.props)
       const payload =
         typeof setData === 'function' ? setData(data) : { ...data, ...setData }
-      console.log('payload', payload)
       this.setData(payload)
     })
   }
