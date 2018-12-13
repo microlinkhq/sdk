@@ -50,11 +50,13 @@
     "jest": "latest",
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
+    "jest-styled-components": "~6.3.1",
     "microbundle": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
-    "react": "^16",
-    "react-dom": "^16",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-test-renderer": "~16.7.0-alpha.2",
     "size-limit": "latest",
     "standard": "latest",
     "storybook-addon-jsx": "latest",
@@ -90,7 +92,7 @@
     "verbose": true
   },
   "peerDependencies": {
-    "react": ">= 16 < 17",
+    "react": ">= 16.7.0-alpha.2",
     "styled-components": "4"
   },
   "publishConfig": {

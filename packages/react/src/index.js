@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
@@ -48,100 +48,100 @@ const Card = ({
   </Fragment>
 )
 
-class Microlink extends Component {
-  state = { loading: true }
-
-  componentDidMount () {
-    const { setData, noFetch, url } = this.props
-    const fetch =
-      noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
-
-    fetch.then(({ data }) => {
-      const payload =
-        typeof setData === 'function' ? setData(data) : { ...data, ...setData }
-      this.setData(payload)
-    })
+function parseData (data, props) {
+  const imagesProps = [].concat(props.image)
+  const image = someProp(data, imagesProps)
+  const imageUrl = getUrlPath(image)
+  const { title, description, url, video } = data
+  const { color, background_color: backgroundColor } = image || {}
+  return {
+    color,
+    backgroundColor,
+    title,
+    description,
+    url,
+    video,
+    image: imageUrl
   }
+}
 
-  componentDidUpdate (prevProps) {
-    if (prevProps.data !== this.props.data) this.setData(this.props.data)
-  }
+function Microlink (props) {
+  const [loading, setLoading] = React.useState(true)
+  const [data, setData] = React.useState({})
 
-  setData = data => {
-    const imagesProps = [].concat(this.props.image)
-    const image = someProp(data, imagesProps)
-    const imageUrl = getUrlPath(image)
-    const { title, description, url, video } = data
-    const { color, background_color: backgroundColor } = image || {}
+  React.useEffect(() => {
+    const { noFetch, url } = props
+    if (!noFetch && url) {
+      fetchFromApi(props).then(({ data }) => {
+        const payload =
+          typeof props.setData === 'function'
+            ? props.setData(data)
+            : { ...data, ...props.setData }
+        setData(parseData(payload, props))
+        setLoading(false)
+      })
+    }
+  }, [])
 
-    this.setState({
-      color,
-      backgroundColor,
-      title,
-      description,
-      url,
-      loading: false,
-      video,
-      image: imageUrl
-    })
-  }
+  React.useEffect(
+    () => {
+      if (props.setData) {
+        const payload =
+          typeof props.setData === 'function'
+            ? props.setData()
+            : { ...props.setData }
+        setData(parseData(payload, props))
+        setLoading(false)
+      }
+    },
+    [props.setData]
+  )
 
-  render () {
-    const {
-      title,
-      color,
-      backgroundColor,
-      url,
-      loading: loadingState,
-      description,
-      image,
-      video
-    } = this.state
+  const { title, color, backgroundColor, url, description, image, video } = data
 
-    const {
-      autoPlay,
-      controls,
-      loop,
-      muted,
-      playsInline,
-      className,
-      size,
-      loading: loadingProp,
-      ...props
-    } = this.props
-    const loading = isNil(loadingProp) ? loadingState : loadingProp
+  const {
+    autoPlay,
+    controls,
+    loop,
+    muted,
+    playsInline,
+    className,
+    size,
+    loading: loadingProp,
+    ...restProps
+  } = props
+  const computedLoading = isNil(loadingProp) ? loading : loadingProp
 
-    return (
-      <CardWrap
-        className={className ? `microlink_card ${className}` : 'microlink_card'}
-        href={url}
-        title={title}
-        cardSize={size}
-        color={color}
-        backgroundColor={backgroundColor}
-        loading={loading}
-        {...props}
-      >
-        {loading ? (
-          <CardEmpty cardSize={size} />
-        ) : (
-          <Card
-            title={title}
-            description={description}
-            url={url}
-            image={image}
-            video={video}
-            autoPlay={autoPlay}
-            controls={controls}
-            loop={loop}
-            muted={muted}
-            playsInline={playsInline}
-            size={size}
-          />
-        )}
-      </CardWrap>
-    )
-  }
+  return (
+    <CardWrap
+      className={className ? `microlink_card ${className}` : 'microlink_card'}
+      href={url}
+      title={title}
+      cardSize={size}
+      color={color}
+      backgroundColor={backgroundColor}
+      loading={computedLoading}
+      {...restProps}
+    >
+      {computedLoading ? (
+        <CardEmpty cardSize={size} />
+      ) : (
+        <Card
+          title={title}
+          description={description}
+          url={url}
+          image={image}
+          video={video}
+          autoPlay={autoPlay}
+          controls={controls}
+          loop={loop}
+          muted={muted}
+          playsInline={playsInline}
+          size={size}
+        />
+      )}
+    </CardWrap>
+  )
 }
 
 Microlink.defaultProps = {

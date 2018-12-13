@@ -31,3 +31,6 @@ npm-shrinkwrap.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IntelliJ
+.idea

@@ -1,5 +1,4 @@
-import { createElement, Component } from 'react'
-
+import React, { Fragment } from 'react'
 import { getUrlPath } from '../../../utils'
 
 import Image from './Image'
@@ -8,32 +7,17 @@ import { ImageLoadCatcher } from './loader'
 
 const isUrl = url => getUrlPath(url) !== null
 
-export default class CardMedia extends Component {
-  state = { loading: isUrl(this.props.image) }
-
-  renderMedia () {
-    const { loading } = this.state
-    const { image, video } = this.props
-    const el = !isUrl(video) && isUrl(image) ? Image : Video
-    return createElement(el, {
-      ...this.props,
-      key: 'media',
-      loading
-    })
-  }
-
-  renderLoadCatcher () {
-    const { image } = this.props
-    const { loading } = this.state
-
-    return loading && isUrl(image) && createElement(ImageLoadCatcher, {
-      key: 'imageLoader',
-      src: image,
-      onLoad: () => this.setState({ loading: false })
-    })
-  }
-
-  render () {
-    return [this.renderMedia(), this.renderLoadCatcher()]
-  }
+export default function CardMedia (props) {
+  const [loading, setLoading] = React.useState(() => isUrl(props.image))
+  const { image, video } = props
+  const Element = !isUrl(video) && isUrl(image) ? Image : Video
+  return (
+    <Fragment>
+      <Element {...props} loading={loading} />
+      {loading &&
+        isUrl(image) && (
+        <ImageLoadCatcher src={image} onLoad={() => setLoading(false)} />
+      )}
+    </Fragment>
+  )
 }
