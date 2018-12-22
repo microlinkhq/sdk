@@ -35,7 +35,7 @@ export const defaultApiParameters = {
 export const createApiUrl = props => {
   const { apiKey, url: targetUrl, screenshot, prerender, contrast, video } = props
   const alias = apiKey ? 'pro' : 'api'
-  let url = `https://${alias}.microlink.io/?url=${targetUrl}`
+  let url = `https://${alias}.microlink.io/?url=${encodeURIComponent(targetUrl)}`
   if (!isNil(video)) url = `${url}&${apiValue('video', video)}`
   if (!isNil(contrast) && contrast !== defaultApiParameters.contrast) {
     url = `${url}&${apiValue('palette', contrast)}`
