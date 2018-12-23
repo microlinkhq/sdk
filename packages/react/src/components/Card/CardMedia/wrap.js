@@ -15,7 +15,7 @@ const mobileStyle = media.mobile`
   flex: 0 0 92px;
 `
 
-export default styled.div`
+export default styled('div')`
   background: #e1e8ed no-repeat center center / cover;
   display: block;
   flex: 0 0 125px;
@@ -30,7 +30,6 @@ export default styled.div`
     display: block;
   }
 
-  ${loadingOverlay}
-
-  ${({ cardSize }) => (isLarge(cardSize) ? largeStyle : mobileStyle)}
+  ${loadingOverlay} ${({ cardSize }) =>
+  isLarge(cardSize) ? largeStyle : mobileStyle};
 `

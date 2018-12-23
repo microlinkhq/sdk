@@ -7,28 +7,27 @@ import { Content } from './CardContent'
 import { media } from '../../utils'
 
 const MediaEmpty = styled(CardImage)`
-  ${emptyStateImageAnimation}
+  ${emptyStateImageAnimation};
 `
 
-const HeaderEmpty = styled.header`
+const HeaderEmpty = styled('header')`
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  ${emptyStateAnimation}
+  ${emptyStateAnimation};
 `
 
-const DescriptionEmpty = styled.span`
+const DescriptionEmpty = styled('span')`
   width: 95%;
   display: block;
   background: #e1e8ed;
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  ${emptyStateAnimation}
-  animation-delay: .125s;
+  ${emptyStateAnimation} animation-delay: .125s;
 
   height: 33px;
 
@@ -49,19 +48,20 @@ const DescriptionEmpty = styled.span`
     bottom: 14px;
   }
 
-  ${({ cardSize }) => cardSize !== 'large' && media.mobile`
+  ${({ cardSize }) =>
+    cardSize !== 'large' &&
+    media.mobile`
     height: 14px;
-  `}
+  `};
 `
 
-const FooterEmpty = styled.footer`
+const FooterEmpty = styled('footer')`
   height: 10px;
   width: 30%;
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  ${emptyStateAnimation}
-  animation-delay: .25s;
+  ${emptyStateAnimation} animation-delay: .25s;
 `
 
 const CardEmptyState = ({ cardSize }) => (

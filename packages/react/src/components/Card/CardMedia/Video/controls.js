@@ -5,7 +5,7 @@ const PROGRESS_BAR_HEIGHT = 2
 
 const getSize = (base, size) => base * (size === 'normal' ? 1 : 1.75)
 
-export const PlayButton = styled.div`
+export const PlayButton = styled('div')`
   position: absolute;
   background: #fff;
   transform: rotate(30deg) skewX(-30deg) scale(1, 0.866);
@@ -42,7 +42,7 @@ export const PlayButton = styled.div`
   }
 `
 
-export const ProgressBar = styled.div.attrs(({ playing, progress }) => ({
+export const ProgressBar = styled('div').attrs(({ playing, progress }) => ({
   style: {
     width: `${progress}%` || 0,
     opacity: playing ? 0.8 : 0

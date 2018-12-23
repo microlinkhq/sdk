@@ -29,7 +29,7 @@ const mobileDescriptionStyle = css`
   `};
 `
 
-export const Content = styled.div`
+export const Content = styled('div')`
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -40,7 +40,7 @@ export const Content = styled.div`
   ${({ cardSize }) => isLarge(cardSize) && largeContentStyle};
 `
 
-const Header = styled.header`
+const Header = styled('header')`
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -48,7 +48,7 @@ const Header = styled.header`
   flex-grow: 1.2;
 `
 
-const Description = styled.div`
+const Description = styled('div')`
   text-align: left;
   font-size: 14px;
   flex-grow: 2;
@@ -57,7 +57,7 @@ const Description = styled.div`
   ${({ cardSize }) => !isLarge(cardSize) && mobileDescriptionStyle};
 `
 
-const Footer = styled.footer`
+const Footer = styled('footer')`
   text-align: left;
   font-size: 12px;
   margin: 0;
