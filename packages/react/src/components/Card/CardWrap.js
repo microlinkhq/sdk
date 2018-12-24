@@ -64,18 +64,32 @@ const baseStyle = css`
   }
 `
 
-const CardWrap = styled('a').attrs(props => ({
-  rel: props.as === 'a' ? 'noopener noreferrer' : undefined,
-  target: props.as === 'a' ? '_blank' : undefined
-}))(
-  baseStyle,
-  ({ loading, contrast }) => !loading && !contrast && hoverStyle,
-  ({ cardSize }) => isLarge(cardSize) && largeStyle,
-  ({ reverse }) => reverse && reverseStyle,
-  ({ backgroundColor, color, contrast }) =>
-    contrast && color && backgroundColor && contrastStyle,
-  ({ backgroundColor, color, contrast }) =>
-    contrast && (!color || !backgroundColor) && hoverStyle
-)
+const createEl = ({ as }) =>
+  styled(as)(
+    baseStyle,
+    ({ loading, contrast }) => !loading && !contrast && hoverStyle,
+    ({ cardSize }) => isLarge(cardSize) && largeStyle,
+    ({ reverse }) => reverse && reverseStyle,
+    ({ backgroundColor, color, contrast }) =>
+      contrast && color && backgroundColor && contrastStyle,
+    ({ backgroundColor, color, contrast }) =>
+      contrast && (!color || !backgroundColor) && hoverStyle
+  )
+
+const CACHE = {}
+
+const CardWrap = ({ rel, href, target, ...props }) => {
+  const key = JSON.stringify(props)
+  return createElement(
+    CACHE[key] || (CACHE[key] = createEl(props)),
+    props.as === 'a' ? { ...props, href, rel, target } : props
+  )
+}
+
+CardWrap.defaultProps = {
+  as: 'a',
+  rel: 'noopener noreferrer',
+  target: '_blank'
+}
 
 export default CardWrap
