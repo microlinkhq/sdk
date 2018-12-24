@@ -79,7 +79,7 @@ const createEl = ({ as }) =>
 const CACHE = {}
 
 const CardWrap = ({ rel, href, target, ...props }) => {
-  const key = JSON.stringify(props)
+  const key = JSON.stringify({ ...props, children: undefined })
   return createElement(
     CACHE[key] || (CACHE[key] = createEl(props)),
     props.as === 'a' ? { href, rel, target, ...props } : props
