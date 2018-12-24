@@ -64,7 +64,9 @@ class Microlink extends Component {
   }
 
   componentDidUpdate (prevProps) {
-    if (prevProps.data !== this.props.data) this.setData(this.props.data)
+    if (prevProps.setData !== this.props.setData) {
+      this.setData(this.props.setData)
+    }
   }
 
   setData = data => {
