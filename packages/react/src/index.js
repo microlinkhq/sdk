@@ -53,24 +53,24 @@ class Microlink extends Component {
   state = { loading: true }
 
   componentDidMount () {
-    const { noFetch, url } = this.props
-    const fetch =
-      noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
-
-    fetch.then(({ data: fetchData }) => {
-      this.setState({ fetchData })
-      this.mergeData()
-    })
+    this.fetchData()
   }
 
   componentDidUpdate (prevProps) {
-    if (prevProps.setData !== this.props.setData) this.mergeData()
+    if (prevProps.url !== this.props.url) this.fetchData()
   }
 
-  mergeData = () => {
+  fetchData = () => {
+    const { noFetch, url } = this.props
+    const fetch =
+      noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
+    fetch.then(({ data }) => this.mergeData(data))
+  }
+
+  mergeData = fetchData => {
     const { setData } = this.props
-    const { fetchData } = this.state
     const imagesProps = [].concat(this.props.image)
+
     const payload = isFunction(setData)
       ? setData(fetchData)
       : { ...fetchData, ...setData }
