@@ -12,7 +12,7 @@ const { default: MicrolinkCard } = require('@microlink/react')
 const BOOLEAN_STRINGS = ['true', 'false']
 
 const DEFAULT_OPTS = {
-  is: 'div'
+  as: 'div'
 }
 
 const getBoolean = str => str === 'true'
