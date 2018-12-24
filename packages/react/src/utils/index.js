@@ -3,10 +3,13 @@ import { css } from 'styled-components'
 const REGEX_HTTPS = /^https/
 const REGEX_LOCALHOST = /http:\/\/localhost/
 
+export const isFunction = fn => typeof fn === 'function'
+
+export const isObject = obj => typeof obj === 'object'
+
 export const isNil = value => value == null
 
-export const getUrlPath = data =>
-  data && typeof data === 'object' ? data.url : data
+export const getUrlPath = data => (data && isObject(data) ? data.url : data)
 
 export const someProp = (data, props) =>
   data[props.find(prop => data[prop] !== null && data[prop] !== undefined)]

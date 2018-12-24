@@ -10,7 +10,8 @@ import {
   fetchFromApi,
   getUrlPath,
   imageProxy,
-  someProp
+  someProp,
+  isFunction
 } from './utils'
 
 const Card = ({
@@ -52,28 +53,31 @@ class Microlink extends Component {
   state = { loading: true }
 
   componentDidMount () {
-    const { setData, noFetch, url } = this.props
+    const { noFetch, url } = this.props
     const fetch =
       noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
 
-    fetch.then(({ data }) => {
-      const payload =
-        typeof setData === 'function' ? setData(data) : { ...data, ...setData }
-      this.setData(payload)
+    fetch.then(({ data: fetchData }) => {
+      this.setState({ fetchData })
+      this.mergeData()
     })
   }
 
   componentDidUpdate (prevProps) {
-    if (prevProps.setData !== this.props.setData) {
-      this.setData(this.props.setData)
-    }
+    if (prevProps.setData !== this.props.setData) this.mergeData()
   }
 
-  setData = data => {
+  mergeData = () => {
+    const { setData } = this.props
+    const { fetchData } = this.state
     const imagesProps = [].concat(this.props.image)
-    const image = someProp(data, imagesProps)
+    const payload = isFunction(setData)
+      ? setData(fetchData)
+      : { ...fetchData, ...setData }
+
+    const image = someProp(payload, imagesProps)
     const imageUrl = getUrlPath(image)
-    const { title, description, url, video } = data
+    const { title, description, url, video } = payload
     const { color, background_color: backgroundColor } = image || {}
 
     this.setState({
