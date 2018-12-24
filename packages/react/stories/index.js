@@ -30,6 +30,9 @@ storiesOf('props', module)
   .addWithJSX('reverse', () =>
     urls.map(url => createMicrolink({ url, reverse: true }))
   )
+  .addWithJSX('reverse contrast', () =>
+    urls.map(url => createMicrolink({ url, contrast: true, reverse: true }))
+  )
   .addWithJSX('autoPlay', () =>
     urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
   )

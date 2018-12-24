@@ -41,7 +41,7 @@ const reverseStyle = ({ cardSize }) => css`
   flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'};
 `
 
-const style = css`
+const baseStyle = css`
   max-width: 500px;
   background-color: #fff;
   border-width: 1px;
@@ -62,30 +62,20 @@ const style = css`
   &:hover {
     outline: 0;
   }
-
-  ${({ loading, contrast }) => !loading && !contrast && hoverStyle} ${({
-  cardSize
-}) => isLarge(cardSize) && largeStyle} ${({ reverse }) =>
-  reverse && reverseStyle} ${({ backgroundColor, color, contrast }) =>
-  contrast && color && backgroundColor && contrastStyle} ${({
-  backgroundColor,
-  color,
-  contrast
-}) => contrast && (!color || !backgroundColor) && hoverStyle};
 `
 
-const CardWrap = ({ is, rel, href, target, ...props }) => {
-  const el = styled[is]`
-    ${style};
-  `
-  const opts = is === 'a' ? { ...props, href, rel, target } : props
-  return createElement(el, opts)
-}
-
-CardWrap.defaultProps = {
-  is: 'a',
-  rel: 'noopener noreferrer',
-  target: '_blank'
-}
+const CardWrap = styled('a').attrs(props => ({
+  rel: props.as === 'a' ? 'noopener noreferrer' : undefined,
+  target: props.as === 'a' ? '_blank' : undefined
+}))(
+  baseStyle,
+  ({ loading, contrast }) => !loading && !contrast && hoverStyle,
+  ({ cardSize }) => isLarge(cardSize) && largeStyle,
+  ({ reverse }) => reverse && reverseStyle,
+  ({ backgroundColor, color, contrast }) =>
+    contrast && color && backgroundColor && contrastStyle,
+  ({ backgroundColor, color, contrast }) =>
+    contrast && (!color || !backgroundColor) && hoverStyle
+)
 
 export default CardWrap
