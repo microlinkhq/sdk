@@ -24,16 +24,16 @@ const createMicrolink = props => (
 storiesOf('props', module)
   .addDecorator(checkA11y)
   .addWithJSX('default', () => urls.map(url => createMicrolink({ url })))
-  .addWithJSX('contrast', () =>
-    urls.map(url => createMicrolink({ url, contrast: true }))
-  )
   .addWithJSX('reverse', () =>
     urls.map(url => createMicrolink({ url, reverse: true }))
   )
-  .addWithJSX('reverse contrast', () =>
+  .addWithJSX('contrast', () =>
+    urls.map(url => createMicrolink({ url, contrast: true }))
+  )
+  .addWithJSX('reverse + contrast', () =>
     urls.map(url => createMicrolink({ url, contrast: true, reverse: true }))
   )
-  .addWithJSX('autoPlay', () =>
+  .addWithJSX('autoPlay (disabled)', () =>
     urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
   )
   .addWithJSX('loading', () => createMicrolink({ loading: true }))
@@ -69,7 +69,7 @@ storiesOf('setData', module)
       }
     })
   )
-  .addWithJSX('object noFetch', () =>
+  .addWithJSX('object + noFetch', () =>
     createMicrolink({
       url: 'https://microlink.io',
       noFetch: true,
@@ -84,7 +84,7 @@ storiesOf('setData', module)
       setData: data => ({ ...data, title: 'My Custom Title' })
     })
   )
-  .addWithJSX('function noFetch', () =>
+  .addWithJSX('function + noFetch', () =>
     createMicrolink({
       url: 'https://microlink.io',
       noFetch: true,
