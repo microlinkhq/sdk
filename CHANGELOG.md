@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.5](https://github.com/microlinkhq/sdk/compare/v3.0.4...v3.0.5) (2018-12-24)
+
+
+### Bug Fixes
+
+* add empty url case ([e8d2d94](https://github.com/microlinkhq/sdk/commit/e8d2d94))
+* data → setData ([48a4d12](https://github.com/microlinkhq/sdk/commit/48a4d12))
+* rename is → as ([88c8ecd](https://github.com/microlinkhq/sdk/commit/88c8ecd))
+* serialize properly ([1e48307](https://github.com/microlinkhq/sdk/commit/1e48307))
+
+
+### Performance Improvements
+
+* cached compiled templates ([e76b0c6](https://github.com/microlinkhq/sdk/commit/e76b0c6))
+
+
+
+
+
 ## [3.0.4](https://github.com/microlinkhq/sdk/compare/v3.0.3...v3.0.4) (2018-12-23)
 
 
