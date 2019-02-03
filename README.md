@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://microlink.io/logo-banner.png" alt="microlink logo">
+  <img src="https://microlink.io/banner_sdk.png" alt="microlink logo">
 </h1>
 
 ###### [Documentation](https://docs.microlink.io) | [Storybook](https://storybook.microlink.io) | [Demos](https://microlinkjs.netlify.com/)
