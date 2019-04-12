@@ -64,30 +64,17 @@ storiesOf('setData', module)
   .addWithJSX('object', () =>
     createMicrolink({
       url: 'https://microlink.io',
-      data: {
-        title: 'My Custom Title'
-      }
-    })
-  )
-  .addWithJSX('object + noFetch', () =>
-    createMicrolink({
-      url: 'https://microlink.io',
-      noFetch: true,
       setData: {
-        title: 'My Custom Title'
+        image: { url: 'https://microlink.io/banner_mql.png' },
+        title: 'Microlink Query Language',
+        description: 'Turns any web into data',
+        url: 'https://docs.microlink.io'
       }
     })
   )
   .addWithJSX('function', () =>
     createMicrolink({
       url: 'https://microlink.io',
-      setData: data => ({ ...data, title: 'My Custom Title' })
-    })
-  )
-  .addWithJSX('function + noFetch', () =>
-    createMicrolink({
-      url: 'https://microlink.io',
-      noFetch: true,
       setData: data => ({ ...data, title: 'My Custom Title' })
     })
   )

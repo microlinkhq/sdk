@@ -61,9 +61,10 @@ class Microlink extends Component {
   }
 
   fetchData = () => {
-    const { noFetch, url } = this.props
-    const fetch =
-      noFetch || !url ? Promise.resolve({}) : fetchFromApi(this.props)
+    const { setData } = this.props
+    const fetch = isFunction(setData)
+      ? Promise.resolve({})
+      : fetchFromApi(this.props)
     fetch.then(({ data }) => this.mergeData(data))
   }
 
