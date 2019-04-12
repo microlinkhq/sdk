@@ -24,14 +24,14 @@ const createMicrolink = props => (
 storiesOf('props', module)
   .addDecorator(checkA11y)
   .addWithJSX('default', () => urls.map(url => createMicrolink({ url })))
-  .addWithJSX('reverse', () =>
-    urls.map(url => createMicrolink({ url, reverse: true }))
+  .addWithJSX('direction', () =>
+    urls.map(url => createMicrolink({ url, direction: 'rtl' }))
   )
   .addWithJSX('contrast', () =>
     urls.map(url => createMicrolink({ url, contrast: true }))
   )
-  .addWithJSX('reverse + contrast', () =>
-    urls.map(url => createMicrolink({ url, contrast: true, reverse: true }))
+  .addWithJSX('direction + contrast', () =>
+    urls.map(url => createMicrolink({ url, contrast: true, direction: 'rtl' }))
   )
   .addWithJSX('autoPlay (disabled)', () =>
     urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))

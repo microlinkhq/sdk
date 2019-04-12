@@ -159,7 +159,7 @@ Microlink.defaultProps = {
   loop: true,
   muted: true,
   playsInline: true,
-  reverse: false,
+  direction: 'ltr',
   size: 'normal',
   ...defaultApiParameters
 }
@@ -175,8 +175,8 @@ Microlink.propTypes = {
     PropTypes.arrayOf(PropTypes.string)
   ]),
   loop: PropTypes.bool,
-  muted: PropTypes.bool,
-  reverse: PropTypes.bool,
+  muted: PropTypes.string,
+  direction: PropTypes.string,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
