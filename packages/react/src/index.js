@@ -15,8 +15,9 @@ import {
 } from './utils'
 
 const Card = ({
-  image,
-  video,
+  imageUrl,
+  videoUrl,
+  isVideo,
   url,
   size,
   autoPlay,
@@ -29,8 +30,9 @@ const Card = ({
 }) => (
   <Fragment>
     <CardMedia
-      image={image}
-      video={video}
+      isVideo={isVideo}
+      imageUrl={imageUrl}
+      videoUrl={videoUrl}
       url={url}
       cardSize={size}
       autoPlay={autoPlay}
@@ -75,20 +77,35 @@ class Microlink extends Component {
       ? setData(fetchData)
       : { ...fetchData, ...setData }
 
-    const image = someProp(payload, [].concat(this.props.image))
-    const imageUrl = getUrlPath(image)
-    const { title, description, url, video } = payload
-    const { color, background_color: backgroundColor } = image || {}
+    const { title, description, url, video, image, logo } = payload
+
+    let imageUrl
+    let videoUrl
+    let media = {}
+    let isVideo = false
+
+    if (isNil(video)) {
+      media = someProp(payload, [].concat(this.props.image))
+      imageUrl = getUrlPath(media)
+    } else {
+      media = image || logo
+      videoUrl = getUrlPath(video)
+      imageUrl = getUrlPath(media)
+      isVideo = true
+    }
+
+    const { color, background_color: backgroundColor } = media
 
     this.setState({
+      url,
       color,
-      backgroundColor,
       title,
       description,
-      url,
       loading: false,
-      video,
-      image: imageUrl
+      imageUrl,
+      videoUrl,
+      isVideo,
+      backgroundColor
     })
   }
 
@@ -100,8 +117,9 @@ class Microlink extends Component {
       url,
       loading: loadingState,
       description,
-      image,
-      video
+      imageUrl,
+      videoUrl,
+      isVideo
     } = this.state
 
     const {
@@ -135,8 +153,9 @@ class Microlink extends Component {
             title={title}
             description={description}
             url={url}
-            image={image}
-            video={video}
+            isVideo={isVideo}
+            imageUrl={imageUrl}
+            videoUrl={videoUrl}
             autoPlay={autoPlay}
             controls={controls}
             loop={loop}
@@ -166,7 +185,6 @@ Microlink.defaultProps = {
 Microlink.propTypes = {
   apiKey: PropTypes.string,
   autoPlay: PropTypes.bool,
-  video: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
   image: PropTypes.oneOfType([

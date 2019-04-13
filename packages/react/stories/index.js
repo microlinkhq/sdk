@@ -36,7 +36,9 @@ storiesOf('props', module)
   .addWithJSX('autoPlay (disabled)', () =>
     urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
   )
-  .addWithJSX('loading', () => createMicrolink({ loading: true }))
+  .addWithJSX('loading', () =>
+    createMicrolink({ url: 'https://microlink.io', loading: true })
+  )
 
 storiesOf('media', module)
   .addDecorator(checkA11y)
@@ -47,7 +49,7 @@ storiesOf('media', module)
     urls.map(url => createMicrolink({ url, image: 'logo' }))
   )
   .addWithJSX('video', () =>
-    urlsVideo.map(url => createMicrolink({ url, video: true }))
+    urlsVideo.map(url => createMicrolink({ url, image: 'video' }))
   )
   .addWithJSX('screenshot', () => [
     createMicrolink({

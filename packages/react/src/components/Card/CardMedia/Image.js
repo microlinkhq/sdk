@@ -3,8 +3,8 @@ import MediaWrap from './wrap'
 import { imageProxy } from '../../../utils'
 
 const Image = styled(MediaWrap)`
-  background-image: ${({ image }) =>
-    image ? `url('${imageProxy(image)}')` : ''};
+  background-image: ${({ mediaUrl }) =>
+    mediaUrl ? `url('${imageProxy(mediaUrl)}')` : ''};
 `
 
 Image.defaultProps = {

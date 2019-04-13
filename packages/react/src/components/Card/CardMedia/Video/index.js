@@ -55,14 +55,15 @@ class CardVideo extends Component {
       autoPlay,
       cardSize,
       controls,
-      image,
+      imageUrl,
+      videoUrl,
       loading,
       loop,
       muted,
       playsInline,
-      video,
       ...props
     } = this.props
+
     const { playing, progress } = this.state
 
     return (
@@ -75,8 +76,8 @@ class CardVideo extends Component {
       >
         <Video
           className='microlink_card__media microlink_card__media_video'
-          src={getUrlPath(video)}
-          poster={imageProxy(image)}
+          src={videoUrl}
+          poster={imageProxy(imageUrl)}
           muted={muted}
           autoPlay={autoPlay}
           loop={loop}
