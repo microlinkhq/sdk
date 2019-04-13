@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { PlayButton, ProgressBar } from './controls'
 import MediaWrap from '../wrap'
-import { getUrlPath, imageProxy } from '../../../../utils'
+import { imageProxy } from '../../../../utils'
 
 const Video = styled('video')`
   width: 100%;
