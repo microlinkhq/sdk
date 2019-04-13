@@ -84,7 +84,9 @@
   },
   "license": "MIT",
   "jest": {
-    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "setupFilesAfterEnv": [
+      "jest-enzyme"
+    ],
     "testEnvironment": "enzyme",
     "testURL": "http://localhost/",
     "verbose": true
