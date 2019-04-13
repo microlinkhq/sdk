@@ -34,7 +34,9 @@ storiesOf('props', module)
     urls.map(url => createMicrolink({ url, contrast: true, direction: 'rtl' }))
   )
   .addWithJSX('autoPlay (disabled)', () =>
-    urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
+    urlsVideo.map(url =>
+      createMicrolink({ url, media: 'video', autoPlay: false })
+    )
   )
   .addWithJSX('loading', () =>
     createMicrolink({ url: 'https://microlink.io', loading: true })

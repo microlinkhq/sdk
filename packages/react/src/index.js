@@ -85,7 +85,7 @@ class Microlink extends Component {
     let isVideo = false
 
     if (isNil(video)) {
-      media = someProp(payload, [].concat(this.props.media))
+      media = someProp(payload, [].concat(this.props.media)) || image || logo
       imageUrl = getUrlPath(media)
     } else {
       media = image || logo
