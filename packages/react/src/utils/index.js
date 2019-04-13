@@ -37,28 +37,31 @@ export const defaultApiParameters = {
 }
 
 export const createApiUrl = props => {
-  const {
-    apiKey,
-    url: targetUrl,
-    screenshot,
-    prerender,
-    contrast,
-    video
-  } = props
+  const { apiKey, url: targetUrl, prerender, contrast, media } = props
+  const takeScreenshot = media.includes('screenshot')
+  const hasVideo = media.includes('video')
+
   const alias = apiKey ? 'pro' : 'api'
   let url = `https://${alias}.microlink.io/?url=${encodeURIComponent(
     targetUrl
   )}`
-  if (!isNil(video)) url = `${url}&${apiValue('video', video)}`
+
+  if (hasVideo) {
+    url = `${url}&${apiValue('video', hasVideo)}`
+  }
+
   if (!isNil(contrast) && contrast !== defaultApiParameters.contrast) {
     url = `${url}&${apiValue('palette', contrast)}`
   }
+
   if (!isNil(prerender) && prerender !== defaultApiParameters.prerender) {
     url = `${url}&${apiValue('prerender', prerender)}`
   }
-  if (!isNil(screenshot) && screenshot !== defaultApiParameters.screenshot) {
-    url = `${url}&${apiValue('screenshot', screenshot)}`
+
+  if (takeScreenshot) {
+    url = `${url}&${apiValue('screenshot', takeScreenshot)}`
   }
+
   return url
 }
 

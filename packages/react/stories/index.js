@@ -24,70 +24,62 @@ const createMicrolink = props => (
 storiesOf('props', module)
   .addDecorator(checkA11y)
   .addWithJSX('default', () => urls.map(url => createMicrolink({ url })))
-  .addWithJSX('reverse', () =>
-    urls.map(url => createMicrolink({ url, reverse: true }))
+  .addWithJSX('direction', () =>
+    urls.map(url => createMicrolink({ url, direction: 'rtl' }))
   )
   .addWithJSX('contrast', () =>
     urls.map(url => createMicrolink({ url, contrast: true }))
   )
-  .addWithJSX('reverse + contrast', () =>
-    urls.map(url => createMicrolink({ url, contrast: true, reverse: true }))
+  .addWithJSX('direction + contrast', () =>
+    urls.map(url => createMicrolink({ url, contrast: true, direction: 'rtl' }))
   )
   .addWithJSX('autoPlay (disabled)', () =>
-    urlsVideo.map(url => createMicrolink({ url, autoPlay: false }))
+    urlsVideo.map(url =>
+      createMicrolink({ url, media: 'video', autoPlay: false })
+    )
   )
-  .addWithJSX('loading', () => createMicrolink({ loading: true }))
+  .addWithJSX('loading', () =>
+    createMicrolink({ url: 'https://microlink.io', loading: true })
+  )
 
 storiesOf('media', module)
   .addDecorator(checkA11y)
-  .addWithJSX('image', () =>
-    urls.map(url => createMicrolink({ url, image: 'image' }))
+  .addWithJSX('media', () =>
+    urls.map(url => createMicrolink({ url, media: 'image' }))
   )
   .addWithJSX('logo', () =>
-    urls.map(url => createMicrolink({ url, image: 'logo' }))
+    urls.map(url => createMicrolink({ url, media: 'logo' }))
   )
   .addWithJSX('video', () =>
-    urlsVideo.map(url => createMicrolink({ url, video: true }))
+    urlsVideo.map(url => createMicrolink({ url, media: 'video' }))
   )
-  .addWithJSX('screenshot', () =>
-    urls.map(url =>
-      createMicrolink({
-        url,
-        image: 'screenshot',
-        screenshot: true
-      })
-    )
-  )
+  .addWithJSX('screenshot', () => [
+    createMicrolink({
+      url: urls[0],
+      media: 'screenshot'
+    }),
+    createMicrolink({
+      url: urls[0],
+      media: ['screenshot']
+    })
+  ])
 
 storiesOf('setData', module)
   .addDecorator(checkA11y)
   .addWithJSX('object', () =>
     createMicrolink({
       url: 'https://microlink.io',
-      data: {
-        title: 'My Custom Title'
-      }
-    })
-  )
-  .addWithJSX('object + noFetch', () =>
-    createMicrolink({
-      url: 'https://microlink.io',
-      noFetch: true,
       setData: {
-        title: 'My Custom Title'
+        image: { url: 'https://microlink.io/banner_mql.png' },
+        title: 'Microlink Query Language',
+        description: 'Turns any web into data',
+        url: 'https://docs.microlink.io'
       }
     })
   )
   .addWithJSX('function', () =>
     createMicrolink({
       url: 'https://microlink.io',
-      setData: data => ({ ...data, title: 'My Custom Title' })
-    })
-  )
-  .addWithJSX('function + noFetch', () =>
-    createMicrolink({
-      url: 'https://microlink.io',
-      noFetch: true,
       setData: data => ({ ...data, title: 'My Custom Title' })
     })
   )

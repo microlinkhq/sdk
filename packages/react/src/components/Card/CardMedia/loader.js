@@ -7,7 +7,7 @@ export const ImageLoadCatcher = styled.img`
   z-index: -1;
 `
 
-export const loadingOverlay = ({ loading }) => css`
+export const loadingOverlay = css`
   &::after {
     content: '';
     position: absolute;
@@ -16,8 +16,8 @@ export const loadingOverlay = ({ loading }) => css`
     right: 0;
     bottom: 0;
     background: #e1e8ed;
-    transition: opacity .3s ease-out;
-    opacity: ${({ loading }) => loading ? 1 : 0};
+    transition: opacity 0.3s ease-out;
+    opacity: ${({ loading }) => (loading ? 1 : 0)};
     z-index: 1;
   }
 `

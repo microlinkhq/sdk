@@ -47,15 +47,15 @@
     "build": "lerna run build",
     "clean": "cd packages && eachdir rm -rf node_modules && cd .. && rm -rf node_modules",
     "lint": "standard-markdown README.md && standard src",
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap --no-ci && lerna link --force-local",
     "prepublishOnly": "lerna run build",
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
     "preversion": "git-authors-cli",
     "release": "lerna publish --sort --conventional-commits",
     "test": "lerna exec npm run test",
-    "update": "lerna exec ncu -a",
-    "update:check": "lerna exec ncu --  --error-level 2"
+    "update": "lerna exec ncu -- -u",
+    "update:check": "lerna exec ncu -- --error-level 2"
   },
   "private": true,
   "license": "MIT",

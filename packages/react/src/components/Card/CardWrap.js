@@ -37,7 +37,7 @@ const hoverStyle = css`
   }
 `
 
-const reverseStyle = ({ cardSize }) => css`
+const rtlStyle = ({ cardSize }) => css`
   flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'};
 `
 
@@ -69,7 +69,7 @@ const createEl = ({ as }) =>
     baseStyle,
     ({ loading, contrast }) => !loading && !contrast && hoverStyle,
     ({ cardSize }) => isLarge(cardSize) && largeStyle,
-    ({ reverse }) => reverse && reverseStyle,
+    ({ direction }) => direction === 'rtl' && rtlStyle,
     ({ backgroundColor, color, contrast }) =>
       contrast && color && backgroundColor && contrastStyle,
     ({ backgroundColor, color, contrast }) =>

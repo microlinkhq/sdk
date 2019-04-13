@@ -30,6 +30,6 @@ export default styled('div')`
     display: block;
   }
 
-  ${loadingOverlay} ${({ cardSize }) =>
-  isLarge(cardSize) ? largeStyle : mobileStyle};
+  ${({ cardSize }) => (isLarge(cardSize) ? largeStyle : mobileStyle)};
+  ${loadingOverlay};
 `
