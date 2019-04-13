@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 
 import { PlayButton, ProgressBar } from './controls'
-import MediaWrap from '../wrap'
 import { imageProxy } from '../../../../utils'
+import MediaWrap from '../wrap'
 
 const Video = styled('video')`
   width: 100%;
@@ -25,77 +25,69 @@ const Video = styled('video')`
   `};
 `
 
-class CardVideo extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      playing: props.autoPlay,
-      progress: 0
-    }
+function CardVideo (props) {
+  const {
+    controls: hasControls,
+    autoPlay,
+    cardSize,
+    controls,
+    imageUrl,
+    videoUrl,
+    loading,
+    loop,
+    muted,
+    playsInline,
+    ...restProps
+  } = props
+
+  const [playing, setPlaying] = useState(autoPlay)
+  const [progress, setProgress] = useState(0)
+  const videoRef = useRef()
+
+  const togglePlayback = event => {
+    event.preventDefault()
+    setPlaying(playing => {
+      const nextValue = !playing
+      const action = nextValue ? 'play' : 'pause'
+      videoRef.current[action]()
+      return nextValue
+    })
   }
 
-  togglePlayback = event => {
-    if (this.props.controls) {
-      event.preventDefault()
-      this.setState(({ playing }) => {
-        const action = !playing ? 'play' : 'pause'
-        this.video[action]()
-        return { playing: !playing }
-      })
-    }
+  const onTimeUpdate = () => {
+    const progress = (videoRef.currentTime / videoRef.duration) * 100
+    setProgress(progress)
   }
 
-  updateProgress = () => {
-    const progress = this.video.currentTime / this.video.duration * 100
-    this.setState({ progress })
-  }
-
-  render () {
-    const {
-      autoPlay,
-      cardSize,
-      controls,
-      imageUrl,
-      videoUrl,
-      loading,
-      loop,
-      muted,
-      playsInline,
-      ...props
-    } = this.props
-
-    const { playing, progress } = this.state
-
-    return (
-      <MediaWrap
-        className='microlink_card__media_video_wrapper'
-        cardSize={cardSize}
-        loading={loading}
-        onClick={this.togglePlayback}
-        {...props}
-      >
-        <Video
-          className='microlink_card__media microlink_card__media_video'
-          src={videoUrl}
-          poster={imageProxy(imageUrl)}
-          muted={muted}
-          autoPlay={autoPlay}
-          loop={loop}
-          playsInline={playsInline}
-          ref={node => (this.video = node)}
-          {...(controls ? { onTimeUpdate: this.updateProgress } : {})}
+  return (
+    <MediaWrap
+      className='microlink_card__media_video_wrapper'
+      cardSize={cardSize}
+      loading={loading}
+      onClick={togglePlayback}
+      {...restProps}
+    >
+      <Video
+        className='microlink_card__media microlink_card__media_video'
+        src={videoUrl}
+        poster={imageProxy(imageUrl)}
+        muted={muted}
+        autoPlay={autoPlay}
+        loop={loop}
+        playsInline={playsInline}
+        ref={videoRef}
+        {...(controls ? { onTimeUpdate } : {})}
+      />
+      <PlayButton cardSize={cardSize} visible={controls && !playing} />
+      {controls && (
+        <ProgressBar
+          cardSize={cardSize}
+          progress={progress}
+          playing={playing}
         />
-        <PlayButton cardSize={cardSize} visible={controls && !playing} />
-        {controls && (
-          <ProgressBar
-            cardSize={cardSize}
-            progress={progress}
-            playing={playing}
-          />
-        )}
-      </MediaWrap>
-    )
-  }
+      )}
+    </MediaWrap>
+  )
 }
 
 export default CardVideo
