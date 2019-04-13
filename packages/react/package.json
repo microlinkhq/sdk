@@ -21,7 +21,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "nanoclamp": "~1.2.7"
+    "nanoclamp": "~1.2.9"
   },
   "devDependencies": {
     "@babel/cli": "latest",

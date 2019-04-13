@@ -47,7 +47,7 @@
     "build": "lerna run build",
     "clean": "cd packages && eachdir rm -rf node_modules && cd .. && rm -rf node_modules",
     "lint": "standard-markdown README.md && standard src",
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap --no-ci && lerna link --force-local",
     "prepublishOnly": "lerna run build",
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
