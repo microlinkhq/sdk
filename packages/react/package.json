@@ -1,7 +1,7 @@
 {
   "name": "@microlink/react",
   "description": "Convert your links into beautiful previews",
-  "homepage": "https://microlink.js.org",
+  "homepage": "https://docs.microlink.io",
   "version": "3.0.5",
   "main": "lib/index.js",
   "module": "lib/index.m.js",
@@ -48,6 +48,7 @@
     "jest": "latest",
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
+    "jest-styled-components": "latest",
     "microbundle": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
@@ -55,7 +56,7 @@
     "react-dom": "^16",
     "size-limit": "latest",
     "standard": "latest",
-    "styled-components": "^4",
+    "styled-components": "latest",
     "unfetch": "latest"
   },
   "engines": {
@@ -104,7 +105,7 @@
         "./lib/index.js",
         "./lib/index.m.js"
       ],
-      "limit": "50 kB"
+      "limit": "10 kB"
     }
   ],
   "standard": {

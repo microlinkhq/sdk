@@ -1,17 +1,17 @@
 import 'unfetch/polyfill'
 
-import React from 'react'
 import { storiesOf, addDecorator } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
+import React from 'react'
 
-import Microlink from '../src'
 import { urls, urlsVideo } from './data'
+import Microlink from '../src'
 
 addDecorator(withA11y)
 
 const createMicrolink = props => (
   <div
-    key={props.url}
+    key={JSON.stringify(props)}
     style={{ display: 'flex', flexDirection: 'column', paddingBottom: '64px' }}
   >
     <a href={props.url} style={{ color: '#0366d6', marginBottom: '2rem' }}>
@@ -43,7 +43,7 @@ storiesOf('props', module)
   )
 
 storiesOf('media', module)
-  .add('media', () => urls.map(url => createMicrolink({ url, media: 'image' })))
+  .add('image', () => urls.map(url => createMicrolink({ url, media: 'image' })))
   .add('logo', () => urls.map(url => createMicrolink({ url, media: 'logo' })))
   .add('video', () =>
     urlsVideo.map(url => createMicrolink({ url, media: 'video' }))
@@ -79,7 +79,7 @@ storiesOf('setData', module)
     })
   )
 
-storiesOf('custom/style', module)
+storiesOf('style', module)
   .addDecorator(withA11y)
   .add('width', () =>
     ['300px', '400px', '500px', '600px', '700px', '800px'].map((width, index) =>
