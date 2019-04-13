@@ -54,8 +54,8 @@
     "preversion": "git-authors-cli",
     "release": "lerna publish --sort --conventional-commits",
     "test": "lerna exec npm run test",
-    "update": "lerna exec ncu -u",
-    "update:check": "lerna exec ncu --  --error-level 2"
+    "update": "lerna exec ncu -- -u",
+    "update:check": "lerna exec ncu -- --error-level 2"
   },
   "private": true,
   "license": "MIT",
