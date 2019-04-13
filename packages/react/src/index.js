@@ -193,7 +193,7 @@ Microlink.propTypes = {
     PropTypes.arrayOf(PropTypes.string)
   ]),
   loop: PropTypes.bool,
-  muted: PropTypes.string,
+  muted: PropTypes.bool,
   direction: PropTypes.string,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
