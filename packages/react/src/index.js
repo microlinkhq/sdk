@@ -70,13 +70,12 @@ class Microlink extends Component {
 
   mergeData = fetchData => {
     const { setData } = this.props
-    const imagesProps = [].concat(this.props.image)
 
     const payload = isFunction(setData)
       ? setData(fetchData)
       : { ...fetchData, ...setData }
 
-    const image = someProp(payload, imagesProps)
+    const image = someProp(payload, [].concat(this.props.image))
     const imageUrl = getUrlPath(image)
     const { title, description, url, video } = payload
     const { color, background_color: backgroundColor } = image || {}
@@ -155,7 +154,7 @@ Microlink.defaultProps = {
   apiKey: undefined,
   autoPlay: true,
   controls: true,
-  image: ['screenshot', 'image', 'logo'],
+  image: ['image', 'logo'],
   loop: true,
   muted: true,
   playsInline: true,
@@ -179,7 +178,6 @@ Microlink.propTypes = {
   direction: PropTypes.string,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
-  screenshot: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   size: PropTypes.oneOf(['normal', 'large']),
   url: PropTypes.string
 }

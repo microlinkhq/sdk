@@ -49,15 +49,16 @@ storiesOf('media', module)
   .addWithJSX('video', () =>
     urlsVideo.map(url => createMicrolink({ url, video: true }))
   )
-  .addWithJSX('screenshot', () =>
-    urls.map(url =>
-      createMicrolink({
-        url,
-        image: 'screenshot',
-        screenshot: true
-      })
-    )
-  )
+  .addWithJSX('screenshot', () => [
+    createMicrolink({
+      url: urls[0],
+      image: 'screenshot'
+    }),
+    createMicrolink({
+      url: urls[0],
+      image: ['screenshot']
+    })
+  ])
 
 storiesOf('setData', module)
   .addDecorator(checkA11y)
