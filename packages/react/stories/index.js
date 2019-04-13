@@ -42,23 +42,23 @@ storiesOf('props', module)
 
 storiesOf('media', module)
   .addDecorator(checkA11y)
-  .addWithJSX('image', () =>
-    urls.map(url => createMicrolink({ url, image: 'image' }))
+  .addWithJSX('media', () =>
+    urls.map(url => createMicrolink({ url, media: 'image' }))
   )
   .addWithJSX('logo', () =>
-    urls.map(url => createMicrolink({ url, image: 'logo' }))
+    urls.map(url => createMicrolink({ url, media: 'logo' }))
   )
   .addWithJSX('video', () =>
-    urlsVideo.map(url => createMicrolink({ url, image: 'video' }))
+    urlsVideo.map(url => createMicrolink({ url, media: 'video' }))
   )
   .addWithJSX('screenshot', () => [
     createMicrolink({
       url: urls[0],
-      image: 'screenshot'
+      media: 'screenshot'
     }),
     createMicrolink({
       url: urls[0],
-      image: ['screenshot']
+      media: ['screenshot']
     })
   ])
 

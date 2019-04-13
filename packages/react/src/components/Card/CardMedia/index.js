@@ -45,6 +45,6 @@ export default class CardMedia extends Component {
   }
 
   render () {
-    return [this.renderMedia()]
+    return [this.renderMedia(), this.renderLoadCatcher()]
   }
 }

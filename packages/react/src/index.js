@@ -85,7 +85,7 @@ class Microlink extends Component {
     let isVideo = false
 
     if (isNil(video)) {
-      media = someProp(payload, [].concat(this.props.image))
+      media = someProp(payload, [].concat(this.props.media))
       imageUrl = getUrlPath(media)
     } else {
       media = image || logo
@@ -133,6 +133,7 @@ class Microlink extends Component {
       loading: loadingProp,
       ...props
     } = this.props
+
     const loading = isNil(loadingProp) ? loadingState : loadingProp
 
     return (
@@ -173,7 +174,7 @@ Microlink.defaultProps = {
   apiKey: undefined,
   autoPlay: true,
   controls: true,
-  image: ['image', 'logo'],
+  media: ['image', 'logo'],
   loop: true,
   muted: true,
   playsInline: true,
@@ -187,7 +188,7 @@ Microlink.propTypes = {
   autoPlay: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
-  image: PropTypes.oneOfType([
+  media: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
   ]),

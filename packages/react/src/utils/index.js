@@ -37,9 +37,9 @@ export const defaultApiParameters = {
 }
 
 export const createApiUrl = props => {
-  const { apiKey, url: targetUrl, prerender, contrast } = props
-  const takeScreenshot = props.image.includes('screenshot')
-  const hasVideo = props.image.includes('video')
+  const { apiKey, url: targetUrl, prerender, contrast, media } = props
+  const takeScreenshot = media.includes('screenshot')
+  const hasVideo = media.includes('video')
 
   const alias = apiKey ? 'pro' : 'api'
   let url = `https://${alias}.microlink.io/?url=${encodeURIComponent(
