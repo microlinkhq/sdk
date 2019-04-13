@@ -1,12 +1,13 @@
 import 'unfetch/polyfill'
 
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-
-import { checkA11y } from '@storybook/addon-a11y'
+import { storiesOf, addDecorator } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
 
 import Microlink from '../src'
 import { urls, urlsVideo } from './data'
+
+addDecorator(withA11y)
 
 const createMicrolink = props => (
   <div
@@ -22,38 +23,32 @@ const createMicrolink = props => (
 )
 
 storiesOf('props', module)
-  .addDecorator(checkA11y)
-  .addWithJSX('default', () => urls.map(url => createMicrolink({ url })))
-  .addWithJSX('direction', () =>
+  .add('default', () => urls.map(url => createMicrolink({ url })))
+  .add('direction', () =>
     urls.map(url => createMicrolink({ url, direction: 'rtl' }))
   )
-  .addWithJSX('contrast', () =>
+  .add('contrast', () =>
     urls.map(url => createMicrolink({ url, contrast: true }))
   )
-  .addWithJSX('direction + contrast', () =>
+  .add('direction + contrast', () =>
     urls.map(url => createMicrolink({ url, contrast: true, direction: 'rtl' }))
   )
-  .addWithJSX('autoPlay (disabled)', () =>
+  .add('autoPlay (disabled)', () =>
     urlsVideo.map(url =>
       createMicrolink({ url, media: 'video', autoPlay: false })
     )
   )
-  .addWithJSX('loading', () =>
+  .add('loading', () =>
     createMicrolink({ url: 'https://microlink.io', loading: true })
   )
 
 storiesOf('media', module)
-  .addDecorator(checkA11y)
-  .addWithJSX('media', () =>
-    urls.map(url => createMicrolink({ url, media: 'image' }))
-  )
-  .addWithJSX('logo', () =>
-    urls.map(url => createMicrolink({ url, media: 'logo' }))
-  )
-  .addWithJSX('video', () =>
+  .add('media', () => urls.map(url => createMicrolink({ url, media: 'image' })))
+  .add('logo', () => urls.map(url => createMicrolink({ url, media: 'logo' })))
+  .add('video', () =>
     urlsVideo.map(url => createMicrolink({ url, media: 'video' }))
   )
-  .addWithJSX('screenshot', () => [
+  .add('screenshot', () => [
     createMicrolink({
       url: urls[0],
       media: 'screenshot'
@@ -65,8 +60,8 @@ storiesOf('media', module)
   ])
 
 storiesOf('setData', module)
-  .addDecorator(checkA11y)
-  .addWithJSX('object', () =>
+  .addDecorator(withA11y)
+  .add('object', () =>
     createMicrolink({
       url: 'https://microlink.io',
       setData: {
@@ -77,7 +72,7 @@ storiesOf('setData', module)
       }
     })
   )
-  .addWithJSX('function', () =>
+  .add('function', () =>
     createMicrolink({
       url: 'https://microlink.io',
       setData: data => ({ ...data, title: 'My Custom Title' })
@@ -85,8 +80,8 @@ storiesOf('setData', module)
   )
 
 storiesOf('custom/style', module)
-  .addDecorator(checkA11y)
-  .addWithJSX('width', () =>
+  .addDecorator(withA11y)
+  .add('width', () =>
     ['300px', '400px', '500px', '600px', '700px', '800px'].map((width, index) =>
       createMicrolink({
         url: urls[index],
@@ -97,7 +92,7 @@ storiesOf('custom/style', module)
       })
     )
   )
-  .addWithJSX('height', () =>
+  .add('height', () =>
     ['150px', '175px', '200px', '250px', '300px', '350px'].map(
       (height, index) =>
         createMicrolink({
@@ -109,7 +104,7 @@ storiesOf('custom/style', module)
         })
     )
   )
-  .addWithJSX('border radius', () =>
+  .add('border radius', () =>
     ['.42857em', '6px', '10px'].map((borderRadius, index) =>
       createMicrolink({
         url: urls[index],
@@ -120,7 +115,7 @@ storiesOf('custom/style', module)
       })
     )
   )
-  .addWithJSX('misc', () =>
+  .add('misc', () =>
     urls.map(url =>
       createMicrolink({
         url,
