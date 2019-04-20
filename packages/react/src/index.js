@@ -8,7 +8,6 @@ import {
   isNil,
   createApiUrl,
   fetchFromApiUrl,
-  fetchFromApi,
   getUrlPath,
   imageProxy,
   someProp,
@@ -44,11 +43,12 @@ function Microlink (props) {
 
   const [loading, setLoading] = useState(loadingProp)
   const [state, setState] = useState({})
+  const apiUrl = createApiUrl(props)
 
   const fetchData = () => {
     const fetch = isFunction(setData)
       ? Promise.resolve({})
-      : fetchFromApi(props)
+      : fetchFromApiUrl(apiUrl, props)
     fetch.then(({ data }) => mergeData(data))
   }
 
@@ -169,6 +169,6 @@ Microlink.propTypes = {
   url: PropTypes.string
 }
 
-export { imageProxy, createApiUrl, fetchFromApiUrl, fetchFromApi }
+export { imageProxy, createApiUrl, fetchFromApiUrl }
 
 export default Microlink
