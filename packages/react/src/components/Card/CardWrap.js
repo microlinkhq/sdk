@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 import { media, isLarge } from '../../utils'
 
 const HEIGHT = '382px'
+const CACHE = {}
 
 const contrastStyle = ({ backgroundColor, color }) => css`
   background-color: ${backgroundColor};
@@ -75,8 +76,6 @@ const createEl = ({ as }) =>
     ({ backgroundColor, color, contrast }) =>
       contrast && (!color || !backgroundColor) && hoverStyle
   )
-
-const CACHE = {}
 
 const CardWrap = ({ rel, href, target, ...props }) => {
   const key = JSON.stringify({ ...props, children: undefined })
