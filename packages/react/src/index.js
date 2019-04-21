@@ -16,7 +16,7 @@ import {
 
 const Card = ({ url, size, title, description, ...props }) => (
   <Fragment>
-    <CardMedia url={url} cardSize={size} {...props} />
+    <CardMedia key={`${url}__${size}`} url={url} cardSize={size} {...props} />
     <CardContent
       className='microlink_card__content'
       title={title}
