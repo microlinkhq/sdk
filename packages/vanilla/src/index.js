@@ -9,6 +9,7 @@ const DEFAULT_OPTS = {
 }
 
 const getBoolean = str => str === 'true'
+
 const isStringBoolean = str => BOOLEAN_STRINGS.includes(str)
 
 const getDataAttributes = el =>
@@ -23,24 +24,20 @@ const getDOMSelector = selector =>
     ? document.querySelectorAll(selector)
     : [].concat(selector)
 
-const microlink = (selector, opts) => {
-  opts = { ...DEFAULT_OPTS, ...opts }
-  const selectors = getDOMSelector(selector)
-
-  for (let index = 0; index < selectors.length; index++) {
-    const el = selectors[index]
-    const url = el.getAttribute('href')
-
-    return ReactDOM.render(
-      React.createElement(Microlink, {
-        url,
-        ...opts,
-        ...getDataAttributes(el)
-      }),
-      el
-    )
-  }
+const forEach = (list, fn) => {
+  for (let i = 0; i < list.length; i++) fn(list[i])
 }
+
+const microlink = (selector, opts) => forEach(getDOMSelector(selector), el => (
+  ReactDOM.render(
+    React.createElement(Microlink, {
+      url: el.getAttribute('href'),
+      ...{ ...DEFAULT_OPTS, ...opts },
+      ...getDataAttributes(el)
+    }),
+    el
+  )
+))
 
 microlink.version = '__VERSION__'
 

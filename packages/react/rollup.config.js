@@ -36,10 +36,8 @@ const commonPlugins = [
 const configBase = {
   input: './src/index.js',
   // \0 is rollup convention for generated in memory modules
-  external: id => {
-    console.log(`id`, id)
-    return !id.startsWith('\0') && !id.startsWith('.') && !id.startsWith('/')
-  },
+  external: id =>
+    !id.startsWith('\0') && !id.startsWith('.') && !id.startsWith('/'),
   plugins: commonPlugins
 }
 
