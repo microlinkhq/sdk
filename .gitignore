@@ -7,12 +7,9 @@ node_modules
 /coverage
 
 # production
-packages/vanilla/*/microlink.js
-packages/vanilla/*/microlink.min.js
-packages/vanilla/*/microlink.min.js.map
+packages/react/dist/**
 /build
 storybook-static
-lib
 
 # misc
 .DS_Store

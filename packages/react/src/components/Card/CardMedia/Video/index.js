@@ -39,7 +39,6 @@ function CardVideo (props) {
     playsInline,
     ...restProps
   } = props
-
   const [playing, setPlaying] = useState(autoPlay)
   const [progress, setProgress] = useState(0)
   const videoRef = useRef()

@@ -1,10 +1,10 @@
 {
   "name": "@microlink/react",
   "description": "Convert your links into beautiful previews",
-  "homepage": "https://docs.microlink.io",
+  "homepage": "https://microlink.io/docs/sdk/integrations/react/",
   "version": "4.0.0-alpha.1",
-  "main": "lib/index.js",
-  "module": "lib/index.m.js",
+  "main": "dist/microlink.cjs.js",
+  "module": "dist/microlink.m.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/react"
@@ -21,11 +21,9 @@
     "previsualization"
   ],
   "dependencies": {
-    "nanoclamp": "~1.2.9"
+    "nanoclamp": "~1.2.10"
   },
   "devDependencies": {
-    "@babel/cli": "latest",
-    "@babel/core": "latest",
     "@babel/plugin-proposal-class-properties": "latest",
     "@babel/plugin-proposal-object-rest-spread": "latest",
     "@babel/plugin-transform-react-constant-elements": "latest",
@@ -35,9 +33,7 @@
     "@storybook/addon-a11y": "latest",
     "@storybook/addon-storyshots": "latest",
     "@storybook/react": "latest",
-    "babel-core": "latest",
     "babel-eslint": "latest",
-    "babel-loader": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
     "enzyme": "latest",
@@ -49,11 +45,17 @@
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
     "jest-styled-components": "latest",
-    "microbundle": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
     "react": "^16",
     "react-dom": "^16",
+    "rollup": "latest",
+    "rollup-plugin-babel": "latest",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-filesize": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-replace": "latest",
+    "rollup-plugin-terser": "latest",
     "size-limit": "latest",
     "standard": "latest",
     "styled-components": "latest",
@@ -66,10 +68,8 @@
     "lib"
   ],
   "scripts": {
-    "build": "npm run build:babel && npm run build:microbundle",
+    "build": "NODE_ENV=production rollup -c rollup.config.js",
     "build-storybook": "NODE_ENV=production build-storybook",
-    "build:babel": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
-    "build:microbundle": "NODE_ENV=production microbundle build --target browser --entry lib/index.js --format es,cjs",
     "dev": "start-storybook -p 6006",
     "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard",
@@ -91,20 +91,14 @@
   },
   "peerDependencies": {
     "react": ">= 16 < 17",
-    "styled-components": "4"
+    "styled-components": ">= 4 < 5"
   },
   "publishConfig": {
     "access": "public"
   },
-  "resolutions": {
-    "babel-core": "7.0.0-bridge.0"
-  },
   "size-limit": [
     {
-      "path": [
-        "./lib/index.js",
-        "./lib/index.m.js"
-      ],
+      "path": "./dist/microlink.min.js",
       "limit": "10 kB"
     }
   ],
