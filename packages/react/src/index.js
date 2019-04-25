@@ -40,8 +40,10 @@ function Microlink (props) {
     size,
     ...restProps
   } = props
-
-  const [loading, setLoading] = useState(loadingProp)
+  const isLoadingUndefined = loadingProp === undefined
+  const [loadingState, setLoading] = useState(
+    isLoadingUndefined ? true : loadingProp
+  )
   const [state, setState] = useState({})
   const apiUrl = createApiUrl(props)
 
@@ -103,7 +105,7 @@ function Microlink (props) {
     isVideo
   } = state
 
-  const isLoading = isNil(loadingProp) ? loading : loadingProp
+  const isLoading = isLoadingUndefined ? loadingState : loadingProp
 
   return (
     <CardWrap
