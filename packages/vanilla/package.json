@@ -2,7 +2,7 @@
   "name": "@microlink/vanilla",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.js.org",
-  "version": "4.0.0-alpha.0",
+  "version": "4.0.0-alpha.1",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/react": "^4.0.0-alpha.0",
+    "@microlink/react": "^4.0.0-alpha.1",
     "styled-components": "^4"
   },
   "publishConfig": {
