@@ -1,7 +1,7 @@
 {
   "name": "@microlink/vanilla",
   "description": "Convert your links into beautiful previews",
-  "homepage": "https://microlink.js.org",
+  "homepage": "https://microlink.io/docs/sdk/integrations/vanilla/",
   "version": "4.0.0-alpha.1",
   "main": "src/index.js",
   "repository": {
@@ -21,49 +21,27 @@
   ],
   "dependencies": {
     "@microlink/react": "^4.0.0-alpha.1",
-    "styled-components": "^4"
-  },
-  "publishConfig": {
-    "access": "public"
+    "dom101": "latest"
   },
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-env": "latest",
-    "babel-loader": "latest",
-    "babel-plugin-transform-object-rest-spread": "latest",
-    "case-sensitive-paths-webpack-plugin": "latest",
-    "chalk": "latest",
-    "dom101": "latest",
-    "dotenv": "latest",
-    "escape-string-regexp": "latest",
-    "extract-text-webpack-plugin": "latest",
-    "fs-extra": "latest",
-    "html-webpack-plugin": "latest",
     "husky": "latest",
     "prettier-standard": "latest",
-    "react": "latest",
-    "react-dev-utils": "latest",
-    "react-dom": "latest",
-    "standard": "latest",
-    "terser-webpack-plugin": "latest",
-    "unminified-webpack-plugin": "latest",
-    "webpack": "latest",
-    "webpack-dev-server": "latest"
+    "rollup": "~1.10.1",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-filesize": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-terser": "latest",
+    "rollup-plugin-visualizer": "latest",
+    "standard": "latest"
   },
   "engines": {
     "node": ">= 8"
   },
   "files": [
-    "amd",
-    "commonjs",
-    "src",
-    "umd"
+    "dist"
   ],
   "scripts": {
-    "build": "npm run build:umd && npm run build:amd && npm run build:cjs",
-    "build:amd": "./scripts/build amd",
-    "build:cjs": "./scripts/build cjs",
-    "build:umd": "./scripts/build umd",
+    "build": "rollup -c rollup.config.js",
     "dev": "./scripts/start",
     "lint": "standard src",
     "prepublishOnly": "npm run build",
@@ -71,5 +49,11 @@
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "test": "exit 0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
 }

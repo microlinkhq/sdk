@@ -8,6 +8,7 @@ node_modules
 
 # production
 packages/react/dist/**
+packages/vanilla/dist/**
 /build
 storybook-static
 

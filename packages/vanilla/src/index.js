@@ -1,13 +1,6 @@
-'use strict'
-
-const qa = require('dom101/query-selector-all')
-const ReactDOM = require('react-dom')
-const each = require('dom101/each')
-const React = require('react')
-
-const pkg = require('../package.json')
-
-const { default: MicrolinkCard } = require('@microlink/react')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Microlink from '@microlink/react'
 
 const BOOLEAN_STRINGS = ['true', 'false']
 
@@ -26,17 +19,29 @@ const getDataAttributes = el =>
   }, {})
 
 const getDOMSelector = selector =>
-  typeof selector === 'string' ? qa(selector) : [].concat(selector)
+  typeof selector === 'string'
+    ? document.querySelectorAll(selector)
+    : [].concat(selector)
 
-module.exports = (selector, opts) => {
-  opts = Object.assign({}, DEFAULT_OPTS, opts)
+const microlink = (selector, opts) => {
+  opts = { ...DEFAULT_OPTS, ...opts }
+  const selectors = getDOMSelector(selector)
 
-  return each(getDOMSelector(selector), el => {
+  for (let index = 0; index < selectors.length; index++) {
+    const el = selectors[index]
     const url = el.getAttribute('href')
-    const params = Object.assign({ url }, opts, getDataAttributes(el))
-    const card = React.createElement(MicrolinkCard, params)
-    ReactDOM.render(card, el)
-  })
+
+    return ReactDOM.render(
+      React.createElement(Microlink, {
+        url,
+        ...opts,
+        ...getDataAttributes(el)
+      }),
+      el
+    )
+  }
 }
 
-module.exports.version = pkg.version
+microlink.version = '__VERSION__'
+
+export default microlink
