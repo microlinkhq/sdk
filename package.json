@@ -1,8 +1,7 @@
 {
   "name": "@microlink/root",
   "description": "Convert your links into beautiful previews",
-  "homepage": "https://github.com/microlinkhq/sdk#readme",
-  "version": "2.3.0",
+  "homepage": "https://microlink.io/docs/sdk",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
