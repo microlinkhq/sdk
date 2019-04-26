@@ -65,7 +65,7 @@
     "node": ">= 8"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
     "build": "NODE_ENV=production rollup -c rollup.config.js",
