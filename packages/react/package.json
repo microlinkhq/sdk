@@ -21,7 +21,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "nanoclamp": "~1.2.10"
+    "nanoclamp": "~1.2.11"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "latest",
