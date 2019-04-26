@@ -6,7 +6,7 @@ about: If something isn't working as expected.
 
 ## Bug Report
 
-> You can use live code at Codesandbox: [React](https://codesandbox.io/s/qqr6knpvp6) | [Vanilla](https://codesandbox.io/s/264799kkj)
+> You can use live code at Codesandbox: [React](https://codesandbox.io/s/n5w839zm4m) | [Vanilla](https://codesandbox.io/s/o92r2y4q9z)
 
 **Current Behavior**
 
