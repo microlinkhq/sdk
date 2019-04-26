@@ -74,7 +74,6 @@
     "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard",
     "posttest": "npm run size",
-    "prepublishOnly": "npm run build",
     "pretest": "npm run lint",
     "size": "npm run build && size-limit",
     "start": "node scripts/start.js",

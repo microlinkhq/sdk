@@ -45,7 +45,6 @@
     "build": "rollup -c rollup.config.js",
     "dev": "./scripts/start",
     "lint": "standard src",
-    "prepublishOnly": "npm run build",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "test": "exit 0"
