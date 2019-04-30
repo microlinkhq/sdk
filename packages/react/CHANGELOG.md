@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.0.0-alpha.3...v4.0.0) (2019-04-30)
+
+**Note:** Version bump only for package @microlink/react
+
+
+
+
+
 ## [3.0.5](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v3.0.4...v3.0.5) (2018-12-24)
 
 
