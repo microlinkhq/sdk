@@ -1,9 +1,8 @@
 <h1 align="center">
-  <img src="https://microlink.io/banner_sdk.png" alt="microlink logo">
+  <img src="https://cdn.microlink.io/banner/sdk.png" alt="microlink logo">
 </h1>
 
-###### [Documentation](https://docs.microlink.io) | [Storybook](https://storybook.microlink.io) | [Demos](https://microlinkjs.netlify.com/)
-
+###### [Documentation](https://microlink.io/docs/sdk) | [Storybook](https://storybook.microlink.io) | [Chat](https://microlink.io/chat)
 
 ## License
 
