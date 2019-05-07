@@ -16,7 +16,7 @@ const mobileStyle = media.mobile`
 `
 
 export default styled('div')`
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   flex: 0 0 125px;
   overflow: hidden;
