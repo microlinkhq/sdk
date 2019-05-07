@@ -6,12 +6,13 @@ export const urls = [
   'https://www.theverge.com/2017/10/27/16145498/insecure-broad-city-high-maintenance-web-series-hbo-comedy-central',
   'https://techcrunch.com/2017/10/26/super-mario-odyssey-review-a-masterpiece-of-twists-and-turns/',
   'http://mashable.com/2017/10/19/cybersecurity-hacker-online-course',
-  'http://es.engadget.com/2017/10/23/meizu-m6-note-analisis-review-fotos',
+  'https://www.engadget.com/es/2017/10/23/meizu-m6-note-analisis-review-fotos/',
   'https://www.nytimes.com/2017/09/19/learning/whats-going-on-in-this-graph-sept-19-2017.html',
   'https://gizmodo.com/drone-video-of-border-wall-prototypes-accidentally-show-1819710328',
   'https://www.bbc.com/news/technology-40762328',
   'https://browserless.js.org',
-  'https://xn--vi8hl0c.ws/'
+  'https://xn--vi8hl0c.ws/',
+  'https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif'
 ]
 
 export const urlsVideo = [
