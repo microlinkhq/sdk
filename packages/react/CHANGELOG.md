@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.0.0...v4.0.1) (2019-05-07)
+
+
+### Bug Fixes
+
+* use transparent background for png images ([#145](http://github.com/microlinkhq/sdk/tree/master/packages/react/issues/145)) ([b877967](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/b877967))
+
+
+
+
+
 # [4.0.0](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.0.0-alpha.3...v4.0.0) (2019-04-30)
 
 **Note:** Version bump only for package @microlink/react

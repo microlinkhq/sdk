@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/microlinkhq/sdk/compare/v4.0.0...v4.0.1) (2019-05-07)
+
+
+### Bug Fixes
+
+* use transparent background for png images ([#145](https://github.com/microlinkhq/sdk/issues/145)) ([b877967](https://github.com/microlinkhq/sdk/commit/b877967))
+
+
+
+
+
 # [4.0.0](https://github.com/microlinkhq/sdk/compare/v4.0.0-alpha.3...v4.0.0) (2019-04-30)
 
 **Note:** Version bump only for package @microlink/root
