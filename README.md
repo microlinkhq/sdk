@@ -1,6 +1,6 @@
-<h1 align="center">
+<div align="center">
   <img src="https://cdn.microlink.io/banner/sdk.png" alt="microlink logo">
-</h1>
+</div>
 
 ###### [Documentation](https://microlink.io/docs/sdk) | [Storybook](https://storybook.microlink.io) | [Chat](https://microlink.io/chat)
 
