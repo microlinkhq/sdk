@@ -70,12 +70,16 @@
     }
   },
   "lint-staged": {
+    "package.json": [
+      "finepack",
+      "git add"
+    ],
     "*.js": [
       "prettier-standard",
       "git add"
     ],
-    "package.json": [
-      "finepack",
+    "*.md": [
+      "standard-markdown",
       "git add"
     ]
   }
