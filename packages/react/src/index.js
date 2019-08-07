@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect, Fragment, useRef } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
@@ -38,20 +38,25 @@ function Microlink (props) {
     playsInline,
     className,
     size,
+    useIntersection,
     ...restProps
   } = props
   const isLoadingUndefined = loadingProp === undefined
+  const [hasComeIntoView, setHasComeIntoView] = useState(!useIntersection)
   const [loadingState, setLoading] = useState(
     isLoadingUndefined ? true : loadingProp
   )
   const [state, setState] = useState({})
   const apiUrl = createApiUrl(props)
+  const cardRef = useRef(null)
 
   const fetchData = () => {
-    const fetch = isFunction(setData)
-      ? Promise.resolve({})
-      : fetchFromApiUrl(apiUrl, props)
-    fetch.then(({ data }) => mergeData(data))
+    if (hasComeIntoView) {
+      const fetch = isFunction(setData)
+        ? Promise.resolve({})
+        : fetchFromApiUrl(apiUrl, props)
+      fetch.then(({ data }) => mergeData(data))
+    }
   }
 
   const mergeData = fetchData => {
@@ -92,7 +97,7 @@ function Microlink (props) {
     setLoading(false)
   }
 
-  useEffect(fetchData, [props.url, setData])
+  useEffect(fetchData, [props.url, setData, hasComeIntoView])
 
   const {
     title,
@@ -107,36 +112,57 @@ function Microlink (props) {
 
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
 
+  if (useIntersection) {
+    const onObserverChange = ([element]) => {
+      if (!hasComeIntoView && element.isIntersecting) {
+        setHasComeIntoView(true)
+      }
+    }
+
+    const observer = new IntersectionObserver(onObserverChange)
+
+    useEffect(
+      () => {
+        if (cardRef && cardRef.current) {
+          observer.observe(cardRef.current)
+        }
+      },
+      [cardRef]
+    )
+  }
+
   return (
-    <CardWrap
-      className={className ? `microlink_card ${className}` : 'microlink_card'}
-      href={url}
-      title={title}
-      cardSize={size}
-      color={color}
-      backgroundColor={backgroundColor}
-      isLoading={isLoading}
-      {...restProps}
-    >
-      {isLoading ? (
-        <CardEmpty cardSize={size} />
-      ) : (
-        <Card
-          title={title}
-          description={description}
-          url={url}
-          isVideo={isVideo}
-          imageUrl={imageUrl}
-          videoUrl={videoUrl}
-          autoPlay={autoPlay}
-          controls={controls}
-          loop={loop}
-          muted={muted}
-          playsInline={playsInline}
-          size={size}
-        />
-      )}
-    </CardWrap>
+    <div ref={cardRef}>
+      <CardWrap
+        className={className ? `microlink_card ${className}` : 'microlink_card'}
+        href={url}
+        title={title}
+        cardSize={size}
+        color={color}
+        backgroundColor={backgroundColor}
+        loading={isLoading}
+        {...restProps}
+      >
+        {isLoading ? (
+          <CardEmpty cardSize={size} />
+        ) : (
+          <Card
+            title={title}
+            description={description}
+            url={url}
+            isVideo={isVideo}
+            imageUrl={imageUrl}
+            videoUrl={videoUrl}
+            autoPlay={autoPlay}
+            controls={controls}
+            loop={loop}
+            muted={muted}
+            playsInline={playsInline}
+            size={size}
+          />
+        )}
+      </CardWrap>
+    </div>
   )
 }
 
@@ -150,6 +176,7 @@ Microlink.defaultProps = {
   playsInline: true,
   direction: 'ltr',
   size: 'normal',
+  useIntersection: false,
   ...defaultApiParameters
 }
 
@@ -168,7 +195,8 @@ Microlink.propTypes = {
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   size: PropTypes.oneOf(['normal', 'large']),
-  url: PropTypes.string
+  url: PropTypes.string,
+  useIntersection: PropTypes.bool
 }
 
 export { imageProxy, createApiUrl, fetchFromApiUrl }
