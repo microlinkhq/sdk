@@ -34,6 +34,7 @@
     "@storybook/addon-storyshots": "latest",
     "@storybook/react": "latest",
     "babel-eslint": "latest",
+    "babel-loader": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
     "enzyme": "latest",

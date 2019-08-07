@@ -6,13 +6,11 @@ function loadStories () {
 
 addParameters({
   options: {
-    name: 'Microlink SDK',
-    url: 'https://github.com/microlinkhq/sdk',
-    goFullScreen: false,
-    showStoriesPanel: true,
-    showAddonPanel: true,
-    showSearchBox: false,
-    sortStoriesByKind: false
+    theme: {
+      brandTitle: 'Microlink SDK',
+      brandUrl: 'https://github.com/microlinkhq/sdk'
+    },
+    enableShortcuts: false
   }
 })
 
