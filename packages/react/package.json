@@ -106,6 +106,7 @@
       "fetch"
     ],
     "ignore": [
+      "/dist/",
       "/lib/",
       "/storybook-static/"
     ],
