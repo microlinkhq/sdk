@@ -70,15 +70,13 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "*.js": [
-        "prettier-standard",
-        "git add"
-      ],
-      "package.json": [
-        "finepack",
-        "git add"
-      ]
-    }
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ],
+    "package.json": [
+      "finepack",
+      "git add"
+    ]
   }
 }
