@@ -34,6 +34,7 @@
     "@storybook/addon-storyshots": "latest",
     "@storybook/react": "latest",
     "babel-eslint": "latest",
+    "babel-loader": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
     "enzyme": "latest",
@@ -59,7 +60,8 @@
     "size-limit": "latest",
     "standard": "latest",
     "styled-components": "latest",
-    "unfetch": "latest"
+    "unfetch": "latest",
+    "@babel/core": "latest"
   },
   "engines": {
     "node": ">= 8"
@@ -106,6 +108,7 @@
       "fetch"
     ],
     "ignore": [
+      "/dist/",
       "/lib/",
       "/storybook-static/"
     ],
