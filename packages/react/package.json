@@ -60,7 +60,8 @@
     "size-limit": "latest",
     "standard": "latest",
     "styled-components": "latest",
-    "unfetch": "latest"
+    "unfetch": "latest",
+    "@babel/core": "latest"
   },
   "engines": {
     "node": ">= 8"
