@@ -9,12 +9,12 @@ export const isFunction = fn => typeof fn === 'function'
 
 export const isObject = obj => typeof obj === 'object'
 
-export const isNil = value => value == null
+export const isNil = value => value === undefined || value === null
 
-export const getUrlPath = data => (data && isObject(data) ? data.url : data)
+export const getUrlPath = data => (isObject(data) ? data.url : data)
 
 export const someProp = (data, props) =>
-  data[props.find(prop => data[prop] !== null && data[prop] !== undefined)]
+  data[props.find(prop => !isNil(data[prop]))]
 
 export const media = {
   mobile: (...args) => css`
