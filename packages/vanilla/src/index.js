@@ -2,22 +2,23 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Microlink from '@microlink/react'
 
-const BOOLEAN_STRINGS = ['true', 'false']
-
 const DEFAULT_OPTS = {
   as: 'div'
 }
 
-const getBoolean = str => str === 'true'
+const parse = value => {
+  try {
+    return JSON.parse(value)
+  } catch (err) {
+    return value
+  }
+}
 
-const isStringBoolean = str => BOOLEAN_STRINGS.includes(str)
-
-const getDataAttributes = el =>
-  Object.keys(el.dataset).reduce((acc, key) => {
-    const value = el.dataset[key]
-    acc[key] = isStringBoolean(value) ? getBoolean(value) : value
-    return acc
-  }, {})
+const parseObj = obj =>
+  Object.keys(obj).reduce(
+    (acc, key) => ({ ...acc, [key]: parse(obj[key]) }),
+    {}
+  )
 
 const getDOMSelector = selector =>
   typeof selector === 'string'
@@ -34,7 +35,7 @@ const microlink = (selector, opts) =>
       React.createElement(Microlink, {
         url: el.getAttribute('href'),
         ...{ ...DEFAULT_OPTS, ...opts },
-        ...getDataAttributes(el)
+        ...parseObj(el.dataset)
       }),
       el
     )
