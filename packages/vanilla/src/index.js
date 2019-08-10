@@ -22,22 +22,23 @@ const getDataAttributes = el =>
 const getDOMSelector = selector =>
   typeof selector === 'string'
     ? document.querySelectorAll(selector)
-    : [].concat(selector)
+    : [].concat(selector).filter(Boolean)
 
 const forEach = (list, fn) => {
   for (let i = 0; i < list.length; i++) fn(list[i])
 }
 
-const microlink = (selector, opts) => forEach(getDOMSelector(selector), el => (
-  ReactDOM.render(
-    React.createElement(Microlink, {
-      url: el.getAttribute('href'),
-      ...{ ...DEFAULT_OPTS, ...opts },
-      ...getDataAttributes(el)
-    }),
-    el
+const microlink = (selector, opts) =>
+  forEach(getDOMSelector(selector), el =>
+    ReactDOM.render(
+      React.createElement(Microlink, {
+        url: el.getAttribute('href'),
+        ...{ ...DEFAULT_OPTS, ...opts },
+        ...getDataAttributes(el)
+      }),
+      el
+    )
   )
-))
 
 microlink.version = '__VERSION__'
 

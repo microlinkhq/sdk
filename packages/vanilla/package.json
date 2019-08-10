@@ -43,7 +43,7 @@
   ],
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "dev": "./scripts/start",
+    "dev": "npm run build -- -w",
     "lint": "standard src",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
