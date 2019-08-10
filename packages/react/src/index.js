@@ -78,8 +78,6 @@ function Microlink (props) {
 
     const { color, background_color: backgroundColor } = media
 
-    setLoading(false)
-
     setState({
       url,
       color,
@@ -90,6 +88,8 @@ function Microlink (props) {
       isVideo,
       backgroundColor
     })
+
+    setLoading(false)
   }
 
   useEffect(fetchData, [props.url, setData])
