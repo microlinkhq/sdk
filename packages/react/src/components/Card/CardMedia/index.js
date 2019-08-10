@@ -15,16 +15,16 @@ const MEDIA_COMPONENT = {
 function CardMedia (props) {
   const { videoUrl, imageUrl, isVideo } = props
   const mediaUrl = isVideo ? videoUrl : imageUrl
-  const [loading, setLoading] = useState(!isUrl(mediaUrl))
+  const [isLoading, setIsLoading] = useState(!isUrl(mediaUrl))
   const mediaType = isVideo ? 'video' : 'image'
   const MediaComponent = MEDIA_COMPONENT[mediaType]
   const key = `${mediaType}__${mediaUrl}`
 
   return (
     <Fragment>
-      <MediaComponent {...props} loading={loading} key={key} />
-      {loading && (
-        <ImageLoadCatcher src={mediaUrl} onLoad={() => setLoading(false)} />
+      <MediaComponent {...props} isLoading={isLoading} key={key} />
+      {isLoading && (
+        <ImageLoadCatcher src={mediaUrl} onLoad={() => setIsLoading(false)} />
       )}
     </Fragment>
   )

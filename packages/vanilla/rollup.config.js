@@ -13,7 +13,7 @@ const globals = {
 const prodPlugins = [
   replace({
     'process.env.NODE_ENV': JSON.stringify('production'),
-    '__VERSION__': require('./package.json').version
+    __VERSION__: require('./package.json').version
   }),
   terser({
     sourcemap: true
@@ -30,11 +30,7 @@ const standaloneBaseConfig = {
     sourcemap: true
   },
   external: Object.keys(globals),
-  plugins: [
-    nodeResolve(),
-    commonjs(),
-    filesize()
-  ]
+  plugins: [nodeResolve(), commonjs(), filesize()]
 }
 
 const standaloneProdConfig = {
@@ -46,6 +42,4 @@ const standaloneProdConfig = {
   plugins: standaloneBaseConfig.plugins.concat(prodPlugins)
 }
 
-export default [
-  standaloneProdConfig
-]
+export default [standaloneProdConfig]

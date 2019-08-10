@@ -1,10 +1,9 @@
-import { createElement } from 'react'
 import styled, { css } from 'styled-components'
+import { createElement } from 'react'
 
 import { media, isLarge } from '../../utils'
 
 const HEIGHT = '382px'
-const CACHE = {}
 
 const contrastStyle = ({ backgroundColor, color }) => css`
   background-color: ${backgroundColor};
@@ -65,10 +64,10 @@ const baseStyle = css`
   }
 `
 
-const createEl = ({ as }) =>
-  styled(as)(
+const createEl = el =>
+  styled(el)(
     baseStyle,
-    ({ loading, contrast }) => !loading && !contrast && hoverStyle,
+    ({ isLoading, contrast }) => !isLoading && !contrast && hoverStyle,
     ({ cardSize }) => isLarge(cardSize) && largeStyle,
     ({ direction }) => direction === 'rtl' && rtlStyle,
     ({ backgroundColor, color, contrast }) =>
@@ -78,9 +77,8 @@ const createEl = ({ as }) =>
   )
 
 const CardWrap = ({ rel, href, target, ...props }) => {
-  const key = JSON.stringify({ ...props, children: undefined })
   return createElement(
-    CACHE[key] || (CACHE[key] = createEl(props)),
+    createEl(props.as),
     props.as === 'a' ? { href, rel, target, ...props } : props
   )
 }
