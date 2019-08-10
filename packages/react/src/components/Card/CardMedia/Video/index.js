@@ -33,7 +33,7 @@ function CardVideo (props) {
     controls,
     imageUrl,
     videoUrl,
-    loading,
+    isLoading,
     loop,
     muted,
     playsInline,
@@ -62,7 +62,7 @@ function CardVideo (props) {
     <MediaWrap
       className='microlink_card__media_video_wrapper'
       cardSize={cardSize}
-      loading={loading}
+      isLoading={isLoading}
       onClick={togglePlayback}
       {...restProps}
     >

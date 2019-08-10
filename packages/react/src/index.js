@@ -115,7 +115,7 @@ function Microlink (props) {
       cardSize={size}
       color={color}
       backgroundColor={backgroundColor}
-      loading={isLoading}
+      isLoading={isLoading}
       {...restProps}
     >
       {isLoading ? (
