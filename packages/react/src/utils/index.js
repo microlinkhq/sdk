@@ -9,7 +9,7 @@ export const isFunction = fn => typeof fn === 'function'
 
 export const isObject = obj => typeof obj === 'object'
 
-export const isNil = value => value === undefined || value === null
+export const isNil = value => value == null
 
 export const getUrlPath = data => (isObject(data) ? data.url : data)
 
