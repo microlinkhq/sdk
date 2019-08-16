@@ -1,13 +1,10 @@
 import 'unfetch/polyfill'
 
-import { storiesOf, addDecorator } from '@storybook/react'
-import { withA11y } from '@storybook/addon-a11y'
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 
 import { urls, urlsVideo } from './data'
 import Microlink from '../src'
-
-addDecorator(withA11y)
 
 const createMicrolink = props => (
   <div
@@ -61,7 +58,6 @@ storiesOf('media', module)
   ])
 
 storiesOf('setData', module)
-  .addDecorator(withA11y)
   .add('object', () =>
     createMicrolink({
       url: 'https://microlink.io',
@@ -81,7 +77,6 @@ storiesOf('setData', module)
   )
 
 storiesOf('style', module)
-  .addDecorator(withA11y)
   .add('width', () =>
     ['300px', '400px', '500px', '600px', '700px', '800px'].map((width, index) =>
       createMicrolink({
