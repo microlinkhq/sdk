@@ -1,4 +1,6 @@
-import React, { useState, useEffect, Fragment, useRef } from 'react'
+/* global IntersectionObserver */
+
+import React, { useState, useEffect, Fragment, useCallback } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
@@ -11,7 +13,8 @@ import {
   getUrlPath,
   imageProxy,
   someProp,
-  isFunction
+  isFunction,
+  isLazySupported
 } from './utils'
 
 const Card = ({ url, size, title, description, ...props }) => (
@@ -38,20 +41,37 @@ function Microlink (props) {
     playsInline,
     className,
     size,
-    useIntersection,
+    lazy,
     ...restProps
   } = props
   const isLoadingUndefined = loadingProp === undefined
-  const [hasComeIntoView, setHasComeIntoView] = useState(!useIntersection)
+  const [hasIntersected, setHasIntersected] = useState(false)
   const [loadingState, setLoading] = useState(
     isLoadingUndefined ? true : loadingProp
   )
   const [state, setState] = useState({})
   const apiUrl = createApiUrl(props)
-  const cardRef = useRef(null)
+
+  const cardRef = useCallback(node => {
+    if (isLazySupported && lazy && !hasIntersected) {
+      const onObserverChange = ([entry], self) => {
+        if (!hasIntersected && entry.isIntersecting) {
+          setHasIntersected(true)
+          self.unobserve(entry.target)
+        }
+      }
+      const observer = new IntersectionObserver(onObserverChange)
+
+      if (node !== null) {
+        observer.observe(node)
+      }
+    } else {
+      setHasIntersected(true)
+    }
+  }, [])
 
   const fetchData = () => {
-    if (hasComeIntoView) {
+    if (!lazy || (lazy && hasIntersected)) {
       const fetch = isFunction(setData)
         ? Promise.resolve({})
         : fetchFromApiUrl(apiUrl, props)
@@ -97,7 +117,7 @@ function Microlink (props) {
     setLoading(false)
   }
 
-  useEffect(fetchData, [props.url, setData, hasComeIntoView])
+  useEffect(fetchData, [props.url, setData, hasIntersected])
 
   const {
     title,
@@ -112,57 +132,37 @@ function Microlink (props) {
 
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
 
-  if (useIntersection) {
-    const onObserverChange = ([element]) => {
-      if (!hasComeIntoView && element.isIntersecting) {
-        setHasComeIntoView(true)
-      }
-    }
-
-    const observer = new IntersectionObserver(onObserverChange)
-
-    useEffect(
-      () => {
-        if (cardRef && cardRef.current) {
-          observer.observe(cardRef.current)
-        }
-      },
-      [cardRef]
-    )
-  }
-
   return (
-    <div ref={cardRef}>
-      <CardWrap
-        className={className ? `microlink_card ${className}` : 'microlink_card'}
-        href={url}
-        title={title}
-        cardSize={size}
-        color={color}
-        backgroundColor={backgroundColor}
-        loading={isLoading}
-        {...restProps}
-      >
-        {isLoading ? (
-          <CardEmpty cardSize={size} />
-        ) : (
-          <Card
-            title={title}
-            description={description}
-            url={url}
-            isVideo={isVideo}
-            imageUrl={imageUrl}
-            videoUrl={videoUrl}
-            autoPlay={autoPlay}
-            controls={controls}
-            loop={loop}
-            muted={muted}
-            playsInline={playsInline}
-            size={size}
-          />
-        )}
-      </CardWrap>
-    </div>
+    <CardWrap
+      className={className ? `microlink_card ${className}` : 'microlink_card'}
+      href={url}
+      title={title}
+      cardSize={size}
+      color={color}
+      backgroundColor={backgroundColor}
+      loading={isLoading}
+      ref={cardRef}
+      {...restProps}
+    >
+      {isLoading ? (
+        <CardEmpty cardSize={size} />
+      ) : (
+        <Card
+          title={title}
+          description={description}
+          url={url}
+          isVideo={isVideo}
+          imageUrl={imageUrl}
+          videoUrl={videoUrl}
+          autoPlay={autoPlay}
+          controls={controls}
+          loop={loop}
+          muted={muted}
+          playsInline={playsInline}
+          size={size}
+        />
+      )}
+    </CardWrap>
   )
 }
 

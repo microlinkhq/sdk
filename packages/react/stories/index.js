@@ -41,9 +41,7 @@ storiesOf('props', module)
   .add('loading', () =>
     createMicrolink({ url: 'https://microlink.io', loading: true })
   )
-  .add('useIntersection', () =>
-    urls.map(url => createMicrolink({ url, useIntersection: true }))
-  )
+  .add('lazy', () => urls.map(url => createMicrolink({ url, lazy: true })))
 
 storiesOf('media', module)
   .add('image', () => urls.map(url => createMicrolink({ url, media: 'image' })))
