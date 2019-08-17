@@ -1,6 +1,4 @@
-/* global IntersectionObserver */
-
-import React, { useState, useEffect, Fragment, useCallback } from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
@@ -16,6 +14,7 @@ import {
   isFunction,
   isLazySupported
 } from './utils'
+import { useIntersectionObserver } from './utils/hooks'
 
 const Card = ({ url, size, title, description, ...props }) => (
   <Fragment>
@@ -45,33 +44,18 @@ function Microlink (props) {
     ...restProps
   } = props
   const isLoadingUndefined = loadingProp === undefined
-  const [hasIntersected, setHasIntersected] = useState(false)
   const [loadingState, setLoading] = useState(
     isLoadingUndefined ? true : loadingProp
   )
   const [state, setState] = useState({})
   const apiUrl = createApiUrl(props)
 
-  const cardRef = useCallback(node => {
-    if (isLazySupported && lazy && !hasIntersected) {
-      const onObserverChange = ([entry], self) => {
-        if (!hasIntersected && entry.isIntersecting) {
-          setHasIntersected(true)
-          self.unobserve(entry.target)
-        }
-      }
-      const observer = new IntersectionObserver(onObserverChange)
+  const [hasIntersected, cardRef] = useIntersectionObserver(isLazySupported && lazy)
 
-      if (node !== null) {
-        observer.observe(node)
-      }
-    } else {
-      setHasIntersected(true)
-    }
-  }, [])
+  const canFetchData = !lazy || (lazy && hasIntersected)
 
   const fetchData = () => {
-    if (!lazy || (lazy && hasIntersected)) {
+    if (canFetchData) {
       const fetch = isFunction(setData)
         ? Promise.resolve({})
         : fetchFromApiUrl(apiUrl, props)
@@ -140,7 +124,7 @@ function Microlink (props) {
       cardSize={size}
       color={color}
       backgroundColor={backgroundColor}
-      loading={isLoading}
+      isLoading={isLoading}
       ref={cardRef}
       {...restProps}
     >
