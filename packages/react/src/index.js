@@ -170,13 +170,13 @@ Microlink.defaultProps = {
   apiKey: undefined,
   autoPlay: true,
   controls: true,
-  media: ['image', 'logo'],
+  direction: 'ltr',
+  lazy: false,
   loop: true,
+  media: ['image', 'logo'],
   muted: true,
   playsInline: true,
-  direction: 'ltr',
   size: 'normal',
-  useIntersection: false,
   ...defaultApiParameters
 }
 
@@ -185,18 +185,18 @@ Microlink.propTypes = {
   autoPlay: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
+  direction: PropTypes.string,
+  lazy: PropTypes.bool,
+  loop: PropTypes.bool,
   media: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
   ]),
-  loop: PropTypes.bool,
   muted: PropTypes.bool,
-  direction: PropTypes.string,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   size: PropTypes.oneOf(['normal', 'large']),
-  url: PropTypes.string,
-  useIntersection: PropTypes.bool
+  url: PropTypes.string
 }
 
 export { imageProxy, createApiUrl, fetchFromApiUrl }

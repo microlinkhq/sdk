@@ -32,10 +32,10 @@ export const media = {
 const apiValue = (key, value) => (value === true ? `${key}` : `${key}=${value}`)
 
 export const defaultApiParameters = {
-  video: false,
   contrast: false,
+  prerender: 'auto',
   screenshot: false,
-  prerender: 'auto'
+  video: false
 }
 
 export const createApiUrl = props => {
