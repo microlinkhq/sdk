@@ -48,7 +48,7 @@ function Microlink (props) {
   const [loadingState, setLoading] = useState(
     isLoadingUndefined ? true : loadingProp
   )
-  const [state, setState] = useState({})
+  const [cardData, setCardData] = useState({})
   const apiUrl = createApiUrl(props)
 
   const isLazyEnabled = isLazySupported && (lazy === true || isObject(lazy))
@@ -75,14 +75,14 @@ function Microlink (props) {
 
     let imageUrl
     let videoUrl
-    let media = {}
+    const mediaFallback = image || logo || {}
+    let media = mediaFallback
     let isVideo = false
 
     if (isNil(video)) {
-      media = someProp(payload, [].concat(props.media)) || image || logo
+      media = someProp(payload, [].concat(props.media)) || mediaFallback
       imageUrl = getUrlPath(media)
     } else {
-      media = image || logo
       videoUrl = getUrlPath(video)
       imageUrl = getUrlPath(media)
       isVideo = true
@@ -90,7 +90,7 @@ function Microlink (props) {
 
     const { color, background_color: backgroundColor } = media
 
-    setState({
+    setCardData({
       url,
       color,
       title,
@@ -115,7 +115,7 @@ function Microlink (props) {
     imageUrl,
     videoUrl,
     isVideo
-  } = state
+  } = cardData
 
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
 
