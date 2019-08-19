@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
@@ -18,7 +18,7 @@ import {
 import { useIntersectionObserver } from './utils/hooks'
 
 const Card = ({ url, size, title, description, ...props }) => (
-  <Fragment>
+  <>
     <CardMedia key={`${url}__${size}`} url={url} cardSize={size} {...props} />
     <CardContent
       className='microlink_card__content'
@@ -27,7 +27,7 @@ const Card = ({ url, size, title, description, ...props }) => (
       url={url}
       cardSize={size}
     />
-  </Fragment>
+  </>
 )
 
 function Microlink (props) {

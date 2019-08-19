@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
@@ -65,14 +65,14 @@ const FooterEmpty = styled('footer')`
 `
 
 const CardEmptyState = ({ cardSize }) => (
-  <Fragment>
+  <>
     <MediaEmpty cardSize={cardSize} />
     <Content cardSize={cardSize} className='microlink_card__content'>
       <HeaderEmpty />
       <DescriptionEmpty cardSize={cardSize} />
       <FooterEmpty />
     </Content>
-  </Fragment>
+  </>
 )
 
 export default CardEmptyState
