@@ -12,7 +12,8 @@ import {
   imageProxy,
   someProp,
   isFunction,
-  isLazySupported
+  isLazySupported,
+  isObject
 } from './utils'
 import { useIntersectionObserver } from './utils/hooks'
 
@@ -50,9 +51,11 @@ function Microlink (props) {
   const [state, setState] = useState({})
   const apiUrl = createApiUrl(props)
 
-  const [hasIntersected, cardRef] = useIntersectionObserver(isLazySupported && lazy)
+  const isLazyEnabled = isLazySupported && (lazy === true || isObject(lazy))
+  const lazyOptions = isObject(lazy) ? lazy : undefined
+  const [hasIntersected, cardRef] = useIntersectionObserver(isLazyEnabled, lazyOptions)
 
-  const canFetchData = !lazy || (lazy && hasIntersected)
+  const canFetchData = !isLazyEnabled || (isLazyEnabled && hasIntersected)
 
   const fetchData = () => {
     if (canFetchData) {
@@ -155,7 +158,7 @@ Microlink.defaultProps = {
   autoPlay: true,
   controls: true,
   direction: 'ltr',
-  lazy: false,
+  lazy: true,
   loop: true,
   media: ['image', 'logo'],
   muted: true,
@@ -170,7 +173,7 @@ Microlink.propTypes = {
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
   direction: PropTypes.string,
-  lazy: PropTypes.bool,
+  lazy: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
   loop: PropTypes.bool,
   media: PropTypes.oneOfType([
     PropTypes.string,

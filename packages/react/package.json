@@ -31,7 +31,7 @@
     "@babel/plugin-transform-react-inline-elements": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
-    "@size-limit/preset-small-lib": "^2.1.0",
+    "@size-limit/preset-small-lib": "latest",
     "@storybook/addon-a11y": "latest",
     "@storybook/addon-storyshots": "latest",
     "@storybook/react": "latest",

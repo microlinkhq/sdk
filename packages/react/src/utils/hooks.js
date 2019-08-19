@@ -2,18 +2,18 @@
 
 import { useCallback, useState } from 'react'
 
-export const useIntersectionObserver = (enabled = false) => {
+export const useIntersectionObserver = (enabled, options) => {
   const [hasIntersected, setHasIntersected] = useState(false)
 
-  const refCallback = useCallback((node) => {
+  const refCallback = useCallback(node => {
     if (enabled) {
-      const onIntersectionObserverChange = ([entry], self) => {
+      const onIntersect = ([entry], self) => {
         if (entry.isIntersecting) {
           setHasIntersected(true)
           self.unobserve(entry.target)
         }
       }
-      const observer = new IntersectionObserver(onIntersectionObserverChange)
+      const observer = new IntersectionObserver(onIntersect, options)
 
       if (node !== null) {
         observer.observe(node)
