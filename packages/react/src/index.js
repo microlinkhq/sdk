@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
@@ -11,11 +11,14 @@ import {
   getUrlPath,
   imageProxy,
   someProp,
-  isFunction
+  isFunction,
+  isLazySupported,
+  isObject
 } from './utils'
+import { useIntersectionObserver } from './utils/hooks'
 
 const Card = ({ url, size, title, description, ...props }) => (
-  <Fragment>
+  <>
     <CardMedia key={`${url}__${size}`} url={url} cardSize={size} {...props} />
     <CardContent
       className='microlink_card__content'
@@ -24,7 +27,7 @@ const Card = ({ url, size, title, description, ...props }) => (
       url={url}
       cardSize={size}
     />
-  </Fragment>
+  </>
 )
 
 function Microlink (props) {
@@ -38,20 +41,29 @@ function Microlink (props) {
     playsInline,
     className,
     size,
+    lazy,
     ...restProps
   } = props
   const isLoadingUndefined = loadingProp === undefined
   const [loadingState, setLoading] = useState(
     isLoadingUndefined ? true : loadingProp
   )
-  const [state, setState] = useState({})
+  const [cardData, setCardData] = useState({})
   const apiUrl = createApiUrl(props)
 
+  const isLazyEnabled = isLazySupported && (lazy === true || isObject(lazy))
+  const lazyOptions = isObject(lazy) ? lazy : undefined
+  const [hasIntersected, cardRef] = useIntersectionObserver(isLazyEnabled, lazyOptions)
+
+  const canFetchData = !isLazyEnabled || (isLazyEnabled && hasIntersected)
+
   const fetchData = () => {
-    const fetch = isFunction(setData)
-      ? Promise.resolve({})
-      : fetchFromApiUrl(apiUrl, props)
-    fetch.then(({ data }) => mergeData(data))
+    if (canFetchData) {
+      const fetch = isFunction(setData)
+        ? Promise.resolve({})
+        : fetchFromApiUrl(apiUrl, props)
+      fetch.then(({ data }) => mergeData(data))
+    }
   }
 
   const mergeData = fetchData => {
@@ -63,14 +75,14 @@ function Microlink (props) {
 
     let imageUrl
     let videoUrl
-    let media = {}
+    const mediaFallback = image || logo || {}
+    let media = mediaFallback
     let isVideo = false
 
     if (isNil(video)) {
-      media = someProp(payload, [].concat(props.media)) || image || logo
+      media = someProp(payload, [].concat(props.media)) || mediaFallback
       imageUrl = getUrlPath(media)
     } else {
-      media = image || logo
       videoUrl = getUrlPath(video)
       imageUrl = getUrlPath(media)
       isVideo = true
@@ -78,7 +90,7 @@ function Microlink (props) {
 
     const { color, background_color: backgroundColor } = media
 
-    setState({
+    setCardData({
       url,
       color,
       title,
@@ -92,7 +104,7 @@ function Microlink (props) {
     setLoading(false)
   }
 
-  useEffect(fetchData, [props.url, setData])
+  useEffect(fetchData, [props.url, setData, hasIntersected])
 
   const {
     title,
@@ -103,7 +115,7 @@ function Microlink (props) {
     imageUrl,
     videoUrl,
     isVideo
-  } = state
+  } = cardData
 
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
 
@@ -116,6 +128,7 @@ function Microlink (props) {
       color={color}
       backgroundColor={backgroundColor}
       isLoading={isLoading}
+      ref={cardRef}
       {...restProps}
     >
       {isLoading ? (
@@ -144,11 +157,12 @@ Microlink.defaultProps = {
   apiKey: undefined,
   autoPlay: true,
   controls: true,
-  media: ['image', 'logo'],
+  direction: 'ltr',
+  lazy: true,
   loop: true,
+  media: ['image', 'logo'],
   muted: true,
   playsInline: true,
-  direction: 'ltr',
   size: 'normal',
   ...defaultApiParameters
 }
@@ -158,13 +172,14 @@ Microlink.propTypes = {
   autoPlay: PropTypes.bool,
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
+  direction: PropTypes.string,
+  lazy: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  loop: PropTypes.bool,
   media: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
   ]),
-  loop: PropTypes.bool,
   muted: PropTypes.bool,
-  direction: PropTypes.string,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   size: PropTypes.oneOf(['normal', 'large']),

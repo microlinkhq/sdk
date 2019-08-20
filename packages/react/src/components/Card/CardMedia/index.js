@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react'
+import React, { useState } from 'react'
 
 import { getUrlPath } from '../../../utils'
 import { ImageLoadCatcher } from './loader'
@@ -21,12 +21,12 @@ function CardMedia (props) {
   const key = `${mediaType}__${mediaUrl}`
 
   return (
-    <Fragment>
+    <>
       <MediaComponent {...props} isLoading={isLoading} key={key} />
       {isLoading && (
         <ImageLoadCatcher src={mediaUrl} onLoad={() => setIsLoading(false)} />
       )}
-    </Fragment>
+    </>
   )
 }
 

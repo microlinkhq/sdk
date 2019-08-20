@@ -1,5 +1,5 @@
+import { createElement, forwardRef } from 'react'
 import styled, { css } from 'styled-components'
-import { createElement } from 'react'
 
 import { media, isLarge } from '../../utils'
 
@@ -76,12 +76,14 @@ const createEl = el =>
       contrast && (!color || !backgroundColor) && hoverStyle
   )
 
-const CardWrap = ({ rel, href, target, ...props }) => {
+const CardWrap = forwardRef(({ href, rel, target, ...restProps }, ref) => {
+  const props = { ...restProps, ref }
+
   return createElement(
     createEl(props.as),
     props.as === 'a' ? { href, rel, target, ...props } : props
   )
-}
+})
 
 CardWrap.defaultProps = {
   as: 'a',
