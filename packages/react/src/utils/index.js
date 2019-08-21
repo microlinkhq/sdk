@@ -81,5 +81,4 @@ export const imageProxy = url => {
   )}`
 }
 
-export const isLazySupported =
-  window && window.IntersectionObserver !== undefined
+export const isLazySupported = !isNil(window) && !isNil(window.IntersectionObserver)
