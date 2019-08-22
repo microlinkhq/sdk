@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/microlinkhq/sdk/compare/v4.1.1...v4.1.2) (2019-08-22)
+
+
+### Bug Fixes
+
+* fix server side detection ([b452aeb](https://github.com/microlinkhq/sdk/commit/b452aeb))
+
+
+
+
+
 ## [4.1.1](https://github.com/microlinkhq/sdk/compare/v4.1.0...v4.1.1) (2019-08-21)
 
 
