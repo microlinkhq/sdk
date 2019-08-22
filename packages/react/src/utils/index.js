@@ -5,6 +5,8 @@ import { css } from 'styled-components'
 const REGEX_HTTPS = /^https/
 const REGEX_LOCALHOST = /http:\/\/localhost/
 
+const isSSR = typeof window === 'undefined'
+
 export const isFunction = fn => typeof fn === 'function'
 
 export const isObject = obj => typeof obj === 'object'
@@ -81,4 +83,4 @@ export const imageProxy = url => {
   )}`
 }
 
-export const isLazySupported = !isNil(window) && !isNil(window.IntersectionObserver)
+export const isLazySupported = !isSSR && 'IntersectionObserver' in window
