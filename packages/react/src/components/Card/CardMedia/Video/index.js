@@ -55,7 +55,7 @@ function CardVideo (props) {
 
   const onTimeUpdate = () => {
     if (videoRef && videoRef.current) {
-      const { currentTime, duration } = videoRef.current;
+      const { currentTime, duration } = videoRef.current
 
       setProgress((currentTime / duration) * 100)
     }
