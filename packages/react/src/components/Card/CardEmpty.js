@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
 import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
-import { media } from '../../utils'
+import { media, isLarge, isMini } from '../../utils'
 
 const MediaEmpty = styled(CardImage)`
   ${emptyStateImageAnimation};
@@ -12,24 +12,24 @@ const MediaEmpty = styled(CardImage)`
 
 const HeaderEmpty = styled('header')`
   height: 16px;
-  width: 60%;
+  width: ${({ cardSize }) => !isMini(cardSize) ? '60%' : '75%'};
   display: block;
   background: #e1e8ed;
-  margin: 2px 0 8px;
+  margin: ${({ cardSize }) => !isMini(cardSize) ? '2px 0 8px' : '0 20px 0 0'};
   opacity: 0.8;
   ${emptyStateAnimation};
 `
 
 const DescriptionEmpty = styled('span')`
+  height: 33px;
   width: 95%;
   display: block;
   background: #e1e8ed;
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  ${emptyStateAnimation} animation-delay: .125s;
-
-  height: 33px;
+  ${emptyStateAnimation};
+  animation-delay: .125s;
 
   &::before {
     content: '';
@@ -44,14 +44,12 @@ const DescriptionEmpty = styled('span')`
     top: 14px;
   }
 
-  &::after {
-    bottom: 14px;
-  }
-
-  ${({ cardSize }) =>
-    cardSize !== 'large' &&
-    media.mobile`
+  ${({ cardSize }) => !isLarge(cardSize) && media.mobile`
     height: 14px;
+
+    &::before {
+      display: none;
+    }
   `};
 `
 
@@ -64,15 +62,19 @@ const FooterEmpty = styled('footer')`
   ${emptyStateAnimation} animation-delay: .25s;
 `
 
-const CardEmptyState = ({ cardSize }) => (
-  <>
-    <MediaEmpty cardSize={cardSize} />
-    <Content cardSize={cardSize} className='microlink_card__content'>
-      <HeaderEmpty />
-      <DescriptionEmpty cardSize={cardSize} />
-      <FooterEmpty />
-    </Content>
-  </>
-)
+const CardEmptyState = ({ cardSize }) => {
+  const isMiniCard = isMini(cardSize)
+
+  return (
+    <>
+      <MediaEmpty cardSize={cardSize} />
+      <Content cardSize={cardSize} className='microlink_card__content'>
+        <HeaderEmpty cardSize={cardSize} />
+        {!isMiniCard && <DescriptionEmpty cardSize={cardSize} />}
+        <FooterEmpty />
+      </Content>
+    </>
+  )
+}
 
 export default CardEmptyState
