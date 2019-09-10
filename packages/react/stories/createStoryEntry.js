@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Microlink from '../src'
 
-const StoryEntry = styled.div`
+const StoryEntry = styled('div')`
   display: flex;
   flex-direction: column;
   padding-bottom: 32px;
@@ -14,12 +14,12 @@ const StoryEntry = styled.div`
   }
 `
 
-const StoryLink = styled.a`
+const StoryLink = styled('a')`
   color: #0366d6;
   margin-bottom: 32px;
 `
 
-const CodeBlock = styled.pre`
+const CodeBlock = styled('pre')`
   display: inline-block;
   padding: 18px 14px;
   margin: 0 0 32px;
