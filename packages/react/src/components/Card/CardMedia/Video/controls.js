@@ -3,14 +3,19 @@ import styled from 'styled-components'
 const PLAY_BUTTON_SIZE = 22
 const PROGRESS_BAR_HEIGHT = 2
 
-const getSize = (base, size) => base * (size === 'normal' ? 1 : 1.75)
+const sizeScales = {
+  large: 1.75,
+  mini: 0.55
+}
+
+const getSize = (base, size) => base * (sizeScales[size] || 1)
 
 export const PlayButton = styled('div')`
   position: absolute;
   background: #fff;
   transform: rotate(30deg) skewX(-30deg) scale(1, 0.866);
-  top: calc(50% - 11px);
-  left: calc(50% - 11px);
+  top: ${({ cardSize }) => `calc(50% - ${getSize(PLAY_BUTTON_SIZE / 2, cardSize)}px)`};
+  left: ${({ cardSize }) => `calc(50% - ${getSize(PLAY_BUTTON_SIZE / 2, cardSize)}px)`};
   z-index: 2;
   opacity: ${({ visible }) => (visible ? 1 : 0)};
   transition: opacity 0.15s ease-in-out;
@@ -27,8 +32,8 @@ export const PlayButton = styled('div')`
   &,
   &::before,
   &::after {
-    width: ${({ cardSize }) => getSize(PLAY_BUTTON_SIZE, cardSize)}px;
-    height: ${({ cardSize }) => getSize(PLAY_BUTTON_SIZE, cardSize)}px;
+    width: ${({ cardSize }) => `${getSize(PLAY_BUTTON_SIZE, cardSize)}px`};
+    height: ${({ cardSize }) => `${getSize(PLAY_BUTTON_SIZE, cardSize)}px`};
     border-top-right-radius: 30%;
     backface-visibility: hidden;
   }

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const ImageLoadCatcher = styled.img`
+export const ImageLoadCatcher = styled('img')`
   height: 1px;
   width: 1px;
   position: absolute;

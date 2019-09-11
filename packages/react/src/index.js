@@ -182,7 +182,7 @@ Microlink.propTypes = {
   muted: PropTypes.bool,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
-  size: PropTypes.oneOf(['normal', 'large']),
+  size: PropTypes.oneOf(['normal', 'large', 'mini']),
   url: PropTypes.string
 }
 
