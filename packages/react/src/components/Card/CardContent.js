@@ -36,7 +36,7 @@ export const Content = styled('div')`
     flex: ${!isLarge(cardSize) ? 1 : '0 0 125px'};
     justify-content: ${!isMini(cardSize) ? 'space-around' : 'space-between'};
     flex-direction: ${!isMini(cardSize) ? 'column' : 'row'};
-    align-items: ${!isMini(cardSize) ? 'flex-start' : 'center'};
+    align-items: ${!isMini(cardSize) ? 'stretch' : 'center'};
   `};
 `
 
