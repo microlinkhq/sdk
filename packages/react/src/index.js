@@ -59,6 +59,7 @@ function Microlink (props) {
 
   const fetchData = () => {
     if (canFetchData) {
+      setLoading(loading)
       const fetch = isFunction(setData)
         ? Promise.resolve({})
         : fetchFromApiUrl(apiUrl, props)
