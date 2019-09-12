@@ -2,7 +2,7 @@
   "name": "@microlink/react",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.io/docs/sdk/integrations/react/",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "main": "dist/microlink.cjs.js",
   "module": "dist/microlink.m.js",
   "repository": {
