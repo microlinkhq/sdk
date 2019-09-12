@@ -215,8 +215,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -242,8 +242,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -702,8 +702,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -729,8 +729,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -1189,8 +1189,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -1216,8 +1216,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -1676,8 +1676,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -1703,8 +1703,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -2163,8 +2163,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -2190,8 +2190,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -2650,8 +2650,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -2677,8 +2677,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -3137,8 +3137,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -3164,8 +3164,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -3624,8 +3624,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -3651,8 +3651,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -4111,8 +4111,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -4138,8 +4138,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -4598,8 +4598,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -4625,8 +4625,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -5085,8 +5085,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -5112,8 +5112,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -5572,8 +5572,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -5599,8 +5599,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -6064,8 +6064,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -6091,8 +6091,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -6551,8 +6551,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -6578,8 +6578,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -7038,8 +7038,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -7065,8 +7065,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -7525,8 +7525,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -7552,8 +7552,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -8012,8 +8012,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -8039,8 +8039,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -8499,8 +8499,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -8526,8 +8526,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -8986,8 +8986,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -9013,8 +9013,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -9473,8 +9473,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -9500,8 +9500,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -9960,8 +9960,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -9987,8 +9987,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -10447,8 +10447,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -10474,8 +10474,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -10934,8 +10934,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -10961,8 +10961,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -11421,8 +11421,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -11448,8 +11448,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -11913,8 +11913,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -11940,8 +11940,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -12400,8 +12400,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -12427,8 +12427,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -12904,8 +12904,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -12931,8 +12931,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -13391,8 +13391,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -13418,8 +13418,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -13878,8 +13878,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -13905,8 +13905,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -14365,8 +14365,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -14392,8 +14392,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -14852,8 +14852,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -14879,8 +14879,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -15339,8 +15339,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -15366,8 +15366,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -15826,8 +15826,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -15853,8 +15853,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -16313,8 +16313,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -16340,8 +16340,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -16800,8 +16800,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -16827,8 +16827,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -17287,8 +17287,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -17314,8 +17314,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -17779,8 +17779,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -17806,8 +17806,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -18266,8 +18266,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -18293,8 +18293,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -18753,8 +18753,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -18780,8 +18780,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -19240,8 +19240,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -19267,8 +19267,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -19727,8 +19727,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -19754,8 +19754,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -20214,8 +20214,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -20241,8 +20241,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -20701,8 +20701,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -20728,8 +20728,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -21188,8 +21188,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -21215,8 +21215,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -21675,8 +21675,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -21702,8 +21702,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -22162,8 +22162,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -22189,8 +22189,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -22654,8 +22654,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -22681,8 +22681,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -23177,8 +23177,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -23204,8 +23204,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -23700,8 +23700,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -23727,8 +23727,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -24223,8 +24223,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -24250,8 +24250,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -24746,8 +24746,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -24773,8 +24773,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -25269,8 +25269,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -25296,8 +25296,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -25792,8 +25792,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -25819,8 +25819,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -26315,8 +26315,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -26342,8 +26342,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -26838,8 +26838,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -26865,8 +26865,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -27361,8 +27361,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -27388,8 +27388,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -27884,8 +27884,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -27911,8 +27911,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -28407,8 +28407,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -28434,8 +28434,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -28935,8 +28935,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -28962,8 +28962,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -29437,8 +29437,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -29464,8 +29464,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -29939,8 +29939,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -29966,8 +29966,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -30441,8 +30441,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -30468,8 +30468,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -30943,8 +30943,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -30970,8 +30970,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -31445,8 +31445,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -31472,8 +31472,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -31947,8 +31947,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -31974,8 +31974,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -32449,8 +32449,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -32476,8 +32476,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -32951,8 +32951,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -32978,8 +32978,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -33453,8 +33453,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -33480,8 +33480,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -33955,8 +33955,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -33982,8 +33982,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -34457,8 +34457,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -34484,8 +34484,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -34964,8 +34964,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -34991,8 +34991,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -35496,8 +35496,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -35523,8 +35523,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -36028,8 +36028,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -36055,8 +36055,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -36560,8 +36560,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -36587,8 +36587,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -37092,8 +37092,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -37119,8 +37119,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -37624,8 +37624,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -37651,8 +37651,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -38156,8 +38156,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -38183,8 +38183,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -38688,8 +38688,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -38715,8 +38715,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -39220,8 +39220,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -39247,8 +39247,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -39752,8 +39752,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -39779,8 +39779,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -40284,8 +40284,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -40311,8 +40311,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -40816,8 +40816,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -40843,8 +40843,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -41353,8 +41353,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -41380,8 +41380,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -41864,8 +41864,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -41891,8 +41891,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -42375,8 +42375,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -42402,8 +42402,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -42886,8 +42886,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -42913,8 +42913,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -43397,8 +43397,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -43424,8 +43424,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -43908,8 +43908,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -43935,8 +43935,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -44419,8 +44419,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -44446,8 +44446,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -44930,8 +44930,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -44957,8 +44957,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -45441,8 +45441,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -45468,8 +45468,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -45952,8 +45952,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -45979,8 +45979,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -46463,8 +46463,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -46490,8 +46490,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -46974,8 +46974,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -47001,8 +47001,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -47490,8 +47490,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c8::before {
@@ -47517,8 +47517,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c17::before {
@@ -48015,8 +48015,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c8::before {
@@ -48042,8 +48042,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c17::before {
@@ -48546,8 +48546,8 @@ exports[`Storyshots props loading 1`] = `
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -48573,8 +48573,8 @@ exports[`Storyshots props loading 1`] = `
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -49051,8 +49051,8 @@ exports[`Storyshots setData function 1`] = `
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -49078,8 +49078,8 @@ exports[`Storyshots setData function 1`] = `
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -49556,8 +49556,8 @@ exports[`Storyshots setData object 1`] = `
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -49583,8 +49583,8 @@ exports[`Storyshots setData object 1`] = `
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -50062,8 +50062,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -50089,8 +50089,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -50582,8 +50582,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -50609,8 +50609,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -51102,8 +51102,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -51129,8 +51129,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -51627,8 +51627,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -51654,8 +51654,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -52147,8 +52147,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -52174,8 +52174,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -52667,8 +52667,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -52694,8 +52694,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -53187,8 +53187,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -53214,8 +53214,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -53707,8 +53707,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -53734,8 +53734,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -54227,8 +54227,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -54254,8 +54254,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -54752,8 +54752,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -54779,8 +54779,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -55275,8 +55275,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -55302,8 +55302,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -55798,8 +55798,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -55825,8 +55825,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -56321,8 +56321,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -56348,8 +56348,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -56844,8 +56844,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -56871,8 +56871,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -57367,8 +57367,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -57394,8 +57394,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -57890,8 +57890,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -57917,8 +57917,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -58413,8 +58413,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -58440,8 +58440,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -58936,8 +58936,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -58963,8 +58963,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -59459,8 +59459,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -59486,8 +59486,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -59982,8 +59982,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -60009,8 +60009,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -60505,8 +60505,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -60532,8 +60532,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -61033,8 +61033,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -61060,8 +61060,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -61553,8 +61553,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -61580,8 +61580,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -62073,8 +62073,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -62100,8 +62100,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -62593,8 +62593,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -62620,8 +62620,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -63113,8 +63113,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -63140,8 +63140,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {
@@ -63633,8 +63633,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c7::before {
@@ -63660,8 +63660,8 @@ Array [
   position: relative;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .125s;
-  animation-delay: .125s;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 .c16::before {

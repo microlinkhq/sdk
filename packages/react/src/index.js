@@ -44,18 +44,29 @@ function Microlink (props) {
     lazy,
     ...restProps
   } = props
-  const isLoadingUndefined = useMemo(() => loadingProp === undefined, [loadingProp])
+  const isLoadingUndefined = useMemo(() => loadingProp === undefined, [
+    loadingProp
+  ])
   const [loadingState, setLoading] = useState(
     isLoadingUndefined ? true : loadingProp
   )
   const [cardData, setCardData] = useState({})
   const apiUrl = useMemo(() => createApiUrl(props), [props])
 
-  const isLazyEnabled = useMemo(() => isLazySupported && (lazy === true || isObject(lazy)), [lazy])
-  const lazyOptions = useMemo(() => isObject(lazy) ? lazy : undefined, [lazy])
-  const [hasIntersected, cardRef] = useIntersectionObserver(isLazyEnabled, lazyOptions)
+  const isLazyEnabled = useMemo(
+    () => isLazySupported && (lazy === true || isObject(lazy)),
+    [lazy]
+  )
+  const lazyOptions = useMemo(() => (isObject(lazy) ? lazy : undefined), [lazy])
+  const [hasIntersected, cardRef] = useIntersectionObserver(
+    isLazyEnabled,
+    lazyOptions
+  )
 
-  const canFetchData = useMemo(() => !isLazyEnabled || (isLazyEnabled && hasIntersected), [isLazyEnabled, hasIntersected])
+  const canFetchData = useMemo(
+    () => !isLazyEnabled || (isLazyEnabled && hasIntersected),
+    [isLazyEnabled, hasIntersected]
+  )
 
   const fetchData = useCallback(() => {
     if (canFetchData) {
@@ -68,43 +79,46 @@ function Microlink (props) {
     }
   }, [apiUrl, canFetchData, setData, props.apiKey])
 
-  const mergeData = useCallback(fetchData => {
-    const payload = isFunction(setData)
-      ? setData(fetchData)
-      : { ...fetchData, ...setData }
+  const mergeData = useCallback(
+    fetchData => {
+      const payload = isFunction(setData)
+        ? setData(fetchData)
+        : { ...fetchData, ...setData }
 
-    const { title, description, url, video, image, logo } = payload
+      const { title, description, url, video, image, logo } = payload
 
-    let imageUrl
-    let videoUrl
-    const mediaFallback = image || logo || {}
-    let media = mediaFallback
-    let isVideo = false
+      let imageUrl
+      let videoUrl
+      const mediaFallback = image || logo || {}
+      let media = mediaFallback
+      let isVideo = false
 
-    if (isNil(video)) {
-      media = someProp(payload, [].concat(props.media)) || mediaFallback
-      imageUrl = getUrlPath(media)
-    } else {
-      videoUrl = getUrlPath(video)
-      imageUrl = getUrlPath(media)
-      isVideo = true
-    }
+      if (isNil(video)) {
+        media = someProp(payload, [].concat(props.media)) || mediaFallback
+        imageUrl = getUrlPath(media)
+      } else {
+        videoUrl = getUrlPath(video)
+        imageUrl = getUrlPath(media)
+        isVideo = true
+      }
 
-    const { color, background_color: backgroundColor } = media
+      const { color, background_color: backgroundColor } = media
 
-    setCardData({
-      url,
-      color,
-      title,
-      description,
-      imageUrl,
-      videoUrl,
-      isVideo,
-      backgroundColor
-    })
+      setCardData({
+        url,
+        color,
+        title,
+        description,
+        imageUrl,
+        videoUrl,
+        isVideo,
+        backgroundColor
+      })
 
-    setLoading(false)
-  }, [setData])
+      setLoading(false)
+    },
+    [setData]
+  )
 
   useEffect(fetchData, [props.url, setData, hasIntersected])
 
@@ -184,7 +198,7 @@ Microlink.propTypes = {
   muted: PropTypes.bool,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
-  size: PropTypes.oneOf(['normal', 'large', 'mini']),
+  size: PropTypes.oneOf(['normal', 'large', 'small']),
   url: PropTypes.string
 }
 

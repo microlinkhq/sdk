@@ -76,7 +76,7 @@ export const fetchFromApiUrl = (apiUrl, apiKey) => {
 
 export const isLarge = cardSize => cardSize === 'large'
 
-export const isMini = cardSize => cardSize === 'mini'
+export const isSmall = cardSize => cardSize === 'small'
 
 export const imageProxy = url => {
   if (!url || REGEX_LOCALHOST.test(url) || REGEX_HTTPS.test(url)) return url

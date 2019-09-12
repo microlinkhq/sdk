@@ -4,7 +4,7 @@ import { media } from '../../../utils'
 import { loadingOverlay } from './loader'
 
 const mediaSizeStyles = {
-  mini: css`
+  small: css`
     flex: 0 0 48px;
   `,
   normal: css`

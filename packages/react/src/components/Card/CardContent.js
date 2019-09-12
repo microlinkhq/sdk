@@ -4,7 +4,7 @@ import React, { useCallback, useMemo } from 'react'
 import styled, { css } from 'styled-components'
 import CardText from './CardText'
 
-import { media, isLarge, isMini, isNil } from '../../utils'
+import { media, isLarge, isSmall, isNil } from '../../utils'
 
 const REGEX_STRIP_WWW = /^www\./
 
@@ -34,9 +34,9 @@ export const Content = styled('div')`
   box-sizing: border-box;
   ${({ cardSize }) => css`
     flex: ${!isLarge(cardSize) ? 1 : '0 0 125px'};
-    justify-content: ${!isMini(cardSize) ? 'space-around' : 'space-between'};
-    flex-direction: ${!isMini(cardSize) ? 'column' : 'row'};
-    align-items: ${!isMini(cardSize) ? 'stretch' : 'center'};
+    justify-content: ${!isSmall(cardSize) ? 'space-around' : 'space-between'};
+    flex-direction: ${!isSmall(cardSize) ? 'column' : 'row'};
+    align-items: ${!isSmall(cardSize) ? 'stretch' : 'center'};
   `};
 `
 
@@ -46,13 +46,14 @@ const Header = styled('header')`
   margin: 0;
   width: 100%;
   ${({ cardSize }) => css`
-    flex-grow: ${!isMini(cardSize) ? 1.2 : 0.8};
-    font-size: ${!isMini(cardSize) ? '16px' : '15px'};
+    flex-grow: ${!isSmall(cardSize) ? 1.2 : 0.8};
+    font-size: ${!isSmall(cardSize) ? '16px' : '15px'};
 
-    ${isMini(cardSize) && css`
-      min-width: 0;
-      padding-right: 14px;
-    `}
+    ${isSmall(cardSize) &&
+      css`
+        min-width: 0;
+        padding-right: 14px;
+      `}
   `}
 `
 
@@ -73,13 +74,14 @@ const Footer = styled('footer')`
   margin: 0;
   flex-grow: 0;
   ${({ cardSize }) => css`
-    font-size: ${!isMini(cardSize) ? '12px' : '10px'};
-    ${!isMini(cardSize) && 'width: 100%;'}
+    font-size: ${!isSmall(cardSize) ? '12px' : '10px'};
+    ${!isSmall(cardSize) && 'width: 100%;'}
   `};
 `
 
 const PoweredByBadge = styled('span').attrs({ title: 'microlink.io' })`
-  background: url("https://cdn.microlink.io/logo/logo.svg") no-repeat center center;
+  background: url('https://cdn.microlink.io/logo/logo.svg') no-repeat center
+    center;
   display: block;
   margin-left: 14px;
   transition: filter 0.15s ease, opacity 0.15s ease;
@@ -90,8 +92,8 @@ const PoweredByBadge = styled('span').attrs({ title: 'microlink.io' })`
   }
 
   ${({ cardSize }) => {
-    const badgeWidth = !isMini(cardSize) ? '22px' : '18px'
-    const badgeHeight = !isMini(cardSize) ? '16px' : '13px'
+    const badgeWidth = !isSmall(cardSize) ? '22px' : '18px'
+    const badgeHeight = !isSmall(cardSize) ? '16px' : '13px'
 
     return css`
       min-width: ${badgeWidth};
@@ -103,9 +105,9 @@ const PoweredByBadge = styled('span').attrs({ title: 'microlink.io' })`
 `
 
 export default ({ title, description, url, cardSize, className }) => {
-  const isMiniCard = isMini(cardSize)
+  const isSmallCard = isSmall(cardSize)
   const formattedUrl = useMemo(() => getHostname(url), [url])
-  const onPoweredByClick = useCallback((e) => {
+  const onPoweredByClick = useCallback(e => {
     e.preventDefault()
     window.open('https://www.microlink.io', '_blank')
   })
@@ -115,7 +117,7 @@ export default ({ title, description, url, cardSize, className }) => {
       <Header className='microlink_card__content_title' cardSize={cardSize}>
         <CardText useNanoClamp={false}>{title}</CardText>
       </Header>
-      {!isMiniCard && (
+      {!isSmallCard && (
         <Description
           className='microlink_card__content_description'
           cardSize={cardSize}

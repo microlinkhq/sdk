@@ -56,7 +56,7 @@ const createStoryEntry = (storyProps = {}, showProps = false) => {
         <VisualProps>{JSON.stringify(storyProps, null, 2)}</VisualProps>
       )}
       <StyledMicrolink url={url} size='normal' {...props} />
-      <StyledMicrolink url={url} size='mini' {...props} />
+      <StyledMicrolink url={url} size='small' {...props} />
       <StyledMicrolink url={url} size='large' {...props} />
     </StoryEntry>
   )
