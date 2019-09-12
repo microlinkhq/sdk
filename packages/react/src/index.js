@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback, useMemo } from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
@@ -44,29 +44,31 @@ function Microlink (props) {
     lazy,
     ...restProps
   } = props
-  const isLoadingUndefined = loadingProp === undefined
+  const isLoadingUndefined = useMemo(() => loadingProp === undefined, [loadingProp])
   const [loadingState, setLoading] = useState(
     isLoadingUndefined ? true : loadingProp
   )
   const [cardData, setCardData] = useState({})
-  const apiUrl = createApiUrl(props)
+  const apiUrl = useMemo(() => createApiUrl(props), [props])
 
-  const isLazyEnabled = isLazySupported && (lazy === true || isObject(lazy))
-  const lazyOptions = isObject(lazy) ? lazy : undefined
+  const isLazyEnabled = useMemo(() => isLazySupported && (lazy === true || isObject(lazy)), [lazy])
+  const lazyOptions = useMemo(() => isObject(lazy) ? lazy : undefined, [lazy])
   const [hasIntersected, cardRef] = useIntersectionObserver(isLazyEnabled, lazyOptions)
 
-  const canFetchData = !isLazyEnabled || (isLazyEnabled && hasIntersected)
+  const canFetchData = useMemo(() => !isLazyEnabled || (isLazyEnabled && hasIntersected), [isLazyEnabled, hasIntersected])
 
-  const fetchData = () => {
+  const fetchData = useCallback(() => {
     if (canFetchData) {
+      setLoading(true)
       const fetch = isFunction(setData)
         ? Promise.resolve({})
-        : fetchFromApiUrl(apiUrl, props)
+        : fetchFromApiUrl(apiUrl, props.apiKey)
+
       fetch.then(({ data }) => mergeData(data))
     }
-  }
+  }, [apiUrl, canFetchData, setData, props.apiKey])
 
-  const mergeData = fetchData => {
+  const mergeData = useCallback(fetchData => {
     const payload = isFunction(setData)
       ? setData(fetchData)
       : { ...fetchData, ...setData }
@@ -102,7 +104,7 @@ function Microlink (props) {
     })
 
     setLoading(false)
-  }
+  }, [setData])
 
   useEffect(fetchData, [props.url, setData, hasIntersected])
 

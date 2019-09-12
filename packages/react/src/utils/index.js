@@ -69,7 +69,7 @@ export const createApiUrl = props => {
   return url
 }
 
-export const fetchFromApiUrl = (apiUrl, { apiKey }) => {
+export const fetchFromApiUrl = (apiUrl, apiKey) => {
   const headers = apiKey ? { 'x-api-key': apiKey } : {}
   return fetch(apiUrl, { headers }).then(res => res.json())
 }
