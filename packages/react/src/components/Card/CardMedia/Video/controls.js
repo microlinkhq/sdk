@@ -5,7 +5,7 @@ const PROGRESS_BAR_HEIGHT = 2
 
 const sizeScales = {
   large: 1.75,
-  mini: 0.55
+  small: 0.55
 }
 
 const getSize = (base, size) => base * (sizeScales[size] || 1)
@@ -14,8 +14,10 @@ export const PlayButton = styled('div')`
   position: absolute;
   background: #fff;
   transform: rotate(30deg) skewX(-30deg) scale(1, 0.866);
-  top: ${({ cardSize }) => `calc(50% - ${getSize(PLAY_BUTTON_SIZE / 2, cardSize)}px)`};
-  left: ${({ cardSize }) => `calc(50% - ${getSize(PLAY_BUTTON_SIZE / 2, cardSize)}px)`};
+  top: ${({ cardSize }) =>
+    `calc(50% - ${getSize(PLAY_BUTTON_SIZE / 2, cardSize)}px)`};
+  left: ${({ cardSize }) =>
+    `calc(50% - ${getSize(PLAY_BUTTON_SIZE / 2, cardSize)}px)`};
   z-index: 2;
   opacity: ${({ visible }) => (visible ? 1 : 0)};
   transition: opacity 0.15s ease-in-out;

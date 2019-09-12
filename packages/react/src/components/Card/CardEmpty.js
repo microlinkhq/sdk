@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
 import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
-import { media, isLarge, isMini } from '../../utils'
+import { media, isLarge, isSmall } from '../../utils'
 
 const MediaEmpty = styled(CardImage)`
   ${emptyStateImageAnimation};
@@ -12,10 +12,11 @@ const MediaEmpty = styled(CardImage)`
 
 const HeaderEmpty = styled('header')`
   height: 16px;
-  width: ${({ cardSize }) => !isMini(cardSize) ? '60%' : '75%'};
+  width: ${({ cardSize }) => (!isSmall(cardSize) ? '60%' : '75%')};
   display: block;
   background: #e1e8ed;
-  margin: ${({ cardSize }) => !isMini(cardSize) ? '2px 0 8px' : '0 20px 0 0'};
+  margin: ${({ cardSize }) =>
+    !isSmall(cardSize) ? '2px 0 8px' : '0 20px 0 0'};
   opacity: 0.8;
   ${emptyStateAnimation};
 `
@@ -29,7 +30,7 @@ const DescriptionEmpty = styled('span')`
   opacity: 0.8;
   position: relative;
   ${emptyStateAnimation};
-  animation-delay: .125s;
+  animation-delay: 0.125s;
 
   &::before {
     content: '';
@@ -44,7 +45,9 @@ const DescriptionEmpty = styled('span')`
     top: 14px;
   }
 
-  ${({ cardSize }) => !isLarge(cardSize) && media.mobile`
+  ${({ cardSize }) =>
+    !isLarge(cardSize) &&
+    media.mobile`
     height: 14px;
 
     &::before {
@@ -63,14 +66,14 @@ const FooterEmpty = styled('footer')`
 `
 
 const CardEmptyState = ({ cardSize }) => {
-  const isMiniCard = isMini(cardSize)
+  const isSmallCard = isSmall(cardSize)
 
   return (
     <>
       <MediaEmpty cardSize={cardSize} />
       <Content cardSize={cardSize} className='microlink_card__content'>
         <HeaderEmpty cardSize={cardSize} />
-        {!isMiniCard && <DescriptionEmpty cardSize={cardSize} />}
+        {!isSmallCard && <DescriptionEmpty cardSize={cardSize} />}
         <FooterEmpty />
       </Content>
     </>
