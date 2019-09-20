@@ -27,3 +27,8 @@ export const urlsVideo = [
   'https://9gag.com/gag/aMZ1WbW',
   'https://www.youtube.com/watch?v=hwMkbaS_M_c'
 ]
+
+export const urlsAudio = [
+  'https://www.ivoox.com/aluvion-presentaciones-viene-audios-mp3_rf_41524123_1.html',
+  'https://syntax.fm/show/180/potluck-why-webpack-serverless-agencies-recruiters-css-grid-mq-in-styled-components'
+]

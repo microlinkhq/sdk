@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 
-import { PlayButton, ProgressBar } from './controls'
+import { PlayButton, ProgressBar } from '../controls'
 import { imageProxy } from '../../../../utils'
 import MediaWrap from '../wrap'
 
@@ -23,6 +23,12 @@ const Video = styled('video')`
       appearance: none;
     }
   `};
+`
+
+const VideoProgressBar = styled(ProgressBar)`
+  .microlink_card:not(:hover) & {
+    opacity: 0 !important;
+  }
 `
 
 function CardVideo (props) {
@@ -81,10 +87,10 @@ function CardVideo (props) {
       />
       <PlayButton cardSize={cardSize} visible={controls && !playing} />
       {controls && (
-        <ProgressBar
+        <VideoProgressBar
           cardSize={cardSize}
           progress={progress}
-          playing={playing}
+          visible={playing}
         />
       )}
     </MediaWrap>

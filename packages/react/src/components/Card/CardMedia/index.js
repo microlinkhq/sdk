@@ -4,27 +4,33 @@ import { getUrlPath } from '../../../utils'
 import { ImageLoadCatcher } from './loader'
 import Image from './Image'
 import Video from './Video'
+import Audio from './Audio'
 
 const isUrl = url => getUrlPath(url) !== null
 
 const MEDIA_COMPONENT = {
   video: Video,
-  image: Image
+  image: Image,
+  audio: Audio
+}
+
+const getMediaType = (isAudio, isVideo) => {
+  if (isAudio) return 'audio'
+  if (isVideo) return 'video'
+  return 'image'
 }
 
 function CardMedia (props) {
-  const { videoUrl, imageUrl, isVideo } = props
-  const mediaUrl = isVideo ? videoUrl : imageUrl
-  const [isLoading, setIsLoading] = useState(!isUrl(mediaUrl))
-  const mediaType = isVideo ? 'video' : 'image'
+  const { imageUrl, isAudio, isVideo } = props
+  const [isLoading, setIsLoading] = useState(!isUrl(imageUrl))
+  const mediaType = getMediaType(isAudio, isVideo)
   const MediaComponent = MEDIA_COMPONENT[mediaType]
-  const key = `${mediaType}__${mediaUrl}`
 
   return (
     <>
-      <MediaComponent {...props} isLoading={isLoading} key={key} />
+      <MediaComponent {...props} isLoading={isLoading} />
       {isLoading && (
-        <ImageLoadCatcher src={mediaUrl} onLoad={() => setIsLoading(false)} />
+        <ImageLoadCatcher src={imageUrl} onLoad={() => setIsLoading(false)} />
       )}
     </>
   )

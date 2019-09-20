@@ -2,7 +2,7 @@ import 'unfetch/polyfill'
 
 import { storiesOf } from '@storybook/react'
 
-import { urls, urlsVideo } from './data'
+import { urls, urlsVideo, urlsAudio } from './data'
 import createStoryEntry from './createStoryEntry'
 
 storiesOf('props', module)
@@ -34,6 +34,9 @@ storiesOf('media', module)
   .add('logo', () => urls.map(url => createStoryEntry({ url, media: 'logo' })))
   .add('video', () =>
     urlsVideo.map(url => createStoryEntry({ url, media: 'video' }))
+  )
+  .add('audio', () =>
+    urlsAudio.map(url => createStoryEntry({ url, media: 'audio' }))
   )
   .add('screenshot', () => [
     createStoryEntry({

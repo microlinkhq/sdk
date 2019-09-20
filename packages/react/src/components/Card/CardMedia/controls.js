@@ -50,10 +50,10 @@ export const PlayButton = styled('div')`
   }
 `
 
-export const ProgressBar = styled('div').attrs(({ playing, progress }) => ({
+export const ProgressBar = styled('div').attrs(({ progress, visible }) => ({
   style: {
     width: `${progress}%` || 0,
-    opacity: playing ? 0.8 : 0
+    opacity: visible ? 0.8 : 0
   }
 }))`
   position: absolute;
@@ -62,8 +62,4 @@ export const ProgressBar = styled('div').attrs(({ playing, progress }) => ({
   background: #e1e8ed;
   height: ${({ cardSize }) => getSize(PROGRESS_BAR_HEIGHT, cardSize)}px;
   transition: opacity 0.3s ease-in-out;
-
-  .microlink_card:not(:hover) & {
-    opacity: 0 !important;
-  }
 `
