@@ -82,5 +82,8 @@
       "standard-markdown",
       "git add"
     ]
+  },
+  "dependencies": {
+    "@microlink/mql": "~0.5.0"
   }
 }

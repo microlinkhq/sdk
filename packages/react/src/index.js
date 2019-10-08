@@ -6,8 +6,8 @@ import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
 import {
   defaultApiParameters,
   isNil,
-  createApiUrl,
-  fetchFromApiUrl,
+  getApiUrl,
+  fetchFromApi,
   getUrlPath,
   imageProxy,
   someProp,
@@ -51,7 +51,7 @@ function Microlink (props) {
     isLoadingUndefined ? true : loadingProp
   )
   const [cardData, setCardData] = useState({})
-  const apiUrl = useMemo(() => createApiUrl(props), [props])
+  const [apiUrl, apiUrlProps] = useMemo(() => getApiUrl(props), [props])
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -73,11 +73,11 @@ function Microlink (props) {
       setLoading(true)
       const fetch = isFunction(setData)
         ? Promise.resolve({})
-        : fetchFromApiUrl(apiUrl, props.apiKey)
+        : fetchFromApi(props.url, apiUrl, apiUrlProps)
 
       fetch.then(({ data }) => mergeData(data))
     }
-  }, [apiUrl, canFetchData, setData, props.apiKey])
+  }, [apiUrl, canFetchData, setData, apiUrlProps])
 
   const mergeData = useCallback(
     fetchData => {
@@ -202,6 +202,6 @@ Microlink.propTypes = {
   url: PropTypes.string
 }
 
-export { imageProxy, createApiUrl, fetchFromApiUrl }
+export { imageProxy, getApiUrl, fetchFromApi }
 
 export default Microlink
