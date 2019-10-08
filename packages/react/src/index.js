@@ -68,16 +68,19 @@ function Microlink (props) {
     [isLazyEnabled, hasIntersected]
   )
 
-  const fetchData = useCallback(() => {
-    if (canFetchData) {
-      setLoading(true)
-      const fetch = isFunction(setData)
-        ? Promise.resolve({})
-        : fetchFromApi(props.url, apiUrl, apiUrlProps)
+  const fetchData = useCallback(
+    () => {
+      if (canFetchData) {
+        setLoading(true)
+        const fetch = isFunction(setData)
+          ? Promise.resolve({})
+          : fetchFromApi(props.url, apiUrl, apiUrlProps)
 
-      fetch.then(({ data }) => mergeData(data))
-    }
-  }, [apiUrl, canFetchData, setData, apiUrlProps])
+        fetch.then(({ data }) => mergeData(data))
+      }
+    },
+    [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key']]
+  )
 
   const mergeData = useCallback(
     fetchData => {

@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import mql from '@microlink/mql'
+import { fetchFromApi, getApiUrl as createApiUrl } from '@microlink/mql'
 
 const REGEX_HTTPS = /^https/
 const REGEX_LOCALHOST = /http:\/\/localhost/
@@ -38,7 +38,7 @@ export const getApiUrl = ({
   media,
   ...opts
 }) =>
-  mql.getApiUrl(url, {
+  createApiUrl(url, {
     apiKey,
     video: media.includes('video'),
     screenshot: media.includes('screenshot'),
@@ -47,7 +47,7 @@ export const getApiUrl = ({
     ...opts
   })
 
-export const fetchFromApi = mql.fetchFromApi
+export { fetchFromApi }
 
 export const isLarge = cardSize => cardSize === 'large'
 
