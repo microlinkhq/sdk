@@ -32,7 +32,6 @@
     "@babel/plugin-transform-react-inline-elements": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
-    "@size-limit/preset-small-lib": "latest",
     "@storybook/addon-a11y": "latest",
     "@storybook/addon-storyshots": "latest",
     "@storybook/react": "latest",
@@ -77,9 +76,7 @@
     "dev": "start-storybook -p 6006",
     "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard",
-    "posttest": "npm run size",
     "pretest": "npm run lint",
-    "size": "npm run build && size-limit",
     "start": "node scripts/start.js",
     "test": "jest --detectOpenHandles"
   },
@@ -99,12 +96,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "size-limit": [
-    {
-      "path": "./dist/microlink.min.js",
-      "limit": "10 kB"
-    }
-  ],
   "standard": {
     "globals": [
       "fetch"

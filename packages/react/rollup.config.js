@@ -33,7 +33,8 @@ const commonPlugins = [
     ...babelRc
   }),
   commonjs(),
-  filesize()
+  filesize(),
+  visualizer({ template: 'treemap' })
 ]
 
 const configBase = {
@@ -70,8 +71,7 @@ const prodPlugins = [
   }),
   terser({
     sourcemap: true
-  }),
-  visualizer({ template: 'treemap' })
+  })
 ]
 
 const standaloneProdConfig = {
