@@ -1,4 +1,5 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
+import visualizer from 'rollup-plugin-visualizer'
 import { terser } from 'rollup-plugin-terser'
 import filesize from 'rollup-plugin-filesize'
 import commonjs from 'rollup-plugin-commonjs'
@@ -69,7 +70,8 @@ const prodPlugins = [
   }),
   terser({
     sourcemap: true
-  })
+  }),
+  visualizer({ template: 'treemap' })
 ]
 
 const standaloneProdConfig = {
