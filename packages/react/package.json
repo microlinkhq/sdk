@@ -59,6 +59,7 @@
     "rollup-plugin-node-resolve": "latest",
     "rollup-plugin-replace": "latest",
     "rollup-plugin-terser": "latest",
+    "rollup-plugin-visualizer": "latest",
     "standard": "latest",
     "styled-components": "latest",
     "unfetch": "latest"
