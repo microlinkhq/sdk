@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
 
 import {
-  defaultApiParameters,
   isNil,
   getApiUrl,
   fetchFromApi,
@@ -68,19 +67,16 @@ function Microlink (props) {
     [isLazyEnabled, hasIntersected]
   )
 
-  const fetchData = useCallback(
-    () => {
-      if (canFetchData) {
-        setLoading(true)
-        const fetch = isFunction(setData)
-          ? Promise.resolve({})
-          : fetchFromApi(props.url, apiUrl, apiUrlProps)
+  const fetchData = useCallback(() => {
+    if (canFetchData) {
+      setLoading(true)
+      const fetch = isFunction(setData)
+        ? Promise.resolve({})
+        : fetchFromApi(props.url, apiUrl, apiUrlProps)
 
-        fetch.then(({ data }) => mergeData(data))
-      }
-    },
-    [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key']]
-  )
+      fetch.then(({ data }) => mergeData(data))
+    }
+  }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key']])
 
   const mergeData = useCallback(
     fetchData => {
@@ -182,8 +178,7 @@ Microlink.defaultProps = {
   media: ['image', 'logo'],
   muted: true,
   playsInline: true,
-  size: 'normal',
-  ...defaultApiParameters
+  size: 'normal'
 }
 
 Microlink.propTypes = {
