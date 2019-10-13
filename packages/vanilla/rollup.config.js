@@ -1,8 +1,8 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
-import replace from 'rollup-plugin-replace'
 import { terser } from 'rollup-plugin-terser'
 import filesize from 'rollup-plugin-filesize'
+import replace from 'rollup-plugin-replace'
 
 const globals = {
   react: 'React',
@@ -30,7 +30,7 @@ const standaloneBaseConfig = {
     sourcemap: true
   },
   external: Object.keys(globals),
-  plugins: [nodeResolve(), commonjs(), filesize()]
+  plugins: [nodeResolve({ modulesOnly: true }), commonjs(), filesize()]
 }
 
 const standaloneProdConfig = {
