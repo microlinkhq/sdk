@@ -30,7 +30,7 @@ const standaloneBaseConfig = {
     sourcemap: true
   },
   external: Object.keys(globals),
-  plugins: [nodeResolve({ modulesOnly: true }), commonjs(), filesize()]
+  plugins: [nodeResolve(), commonjs(), filesize()]
 }
 
 const standaloneProdConfig = {

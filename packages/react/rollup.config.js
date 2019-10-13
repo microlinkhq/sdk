@@ -24,9 +24,7 @@ const getCJS = override => ({ ...cjs, ...override })
 const getESM = override => ({ ...esm, ...override })
 
 const commonPlugins = [
-  nodeResolve({
-    modulesOnly: true // Default: false
-  }),
+  nodeResolve(),
   babel({
     babelrc: false,
     externalHelpers: false,
