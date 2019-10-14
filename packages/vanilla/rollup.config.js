@@ -40,14 +40,12 @@ export default [
   build({
     format: 'umd',
     file: 'dist/microlink.js',
-    name: 'microlink',
-    exports: 'named'
+    name: 'microlink'
   }),
   build({
     format: 'umd',
     file: 'dist/microlink.min.js',
-    name: 'microlink',
-    exports: 'named'
+    name: 'microlink'
   }),
   build({
     format: 'esm',
