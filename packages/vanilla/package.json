@@ -20,8 +20,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/react": "^4.2.2",
-    "dom101": "latest"
+    "@microlink/react": "^4.2.2"
   },
   "devDependencies": {
     "husky": "latest",
@@ -31,7 +30,6 @@
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-node-resolve": "latest",
     "rollup-plugin-replace": "latest",
-    "rollup-plugin-terser": "latest",
     "rollup-plugin-visualizer": "latest",
     "standard": "latest"
   },

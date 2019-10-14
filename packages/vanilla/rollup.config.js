@@ -1,45 +1,54 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
-import { terser } from 'rollup-plugin-terser'
+import visualizer from 'rollup-plugin-visualizer'
 import filesize from 'rollup-plugin-filesize'
+import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
+
+const plugins = [
+  commonjs(),
+  nodeResolve(),
+  filesize(),
+  visualizer({ template: 'treemap' }),
+  replace({
+    'process.env.NODE_ENV': JSON.stringify('production')
+  })
+]
 
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
-  'styled-components': 'styled'
+  'styled-components': 'styled',
+  '@microlink/mql': 'mql'
 }
 
-const prodPlugins = [
-  replace({
-    'process.env.NODE_ENV': JSON.stringify('production'),
-    __VERSION__: require('./package.json').version
-  }),
-  terser({
-    sourcemap: true
-  })
-]
-
-const standaloneBaseConfig = {
+const build = ({ file, format, name, exports }) => ({
   input: './src/index.js',
   output: {
-    file: 'dist/microlink.js',
-    format: 'umd',
-    globals,
-    name: 'microlink',
-    sourcemap: true
+    file,
+    format,
+    exports,
+    name,
+    globals
   },
   external: Object.keys(globals),
-  plugins: [nodeResolve(), commonjs(), filesize()]
-}
+  plugins
+})
 
-const standaloneProdConfig = {
-  ...standaloneBaseConfig,
-  output: {
-    ...standaloneBaseConfig.output,
-    file: 'dist/microlink.min.js'
-  },
-  plugins: standaloneBaseConfig.plugins.concat(prodPlugins)
-}
-
-export default [standaloneProdConfig]
+export default [
+  build({
+    format: 'umd',
+    file: 'dist/microlink.min.js',
+    name: 'microlink',
+    exports: 'named'
+  }),
+  build({
+    format: 'esm',
+    file: 'dist/microlink.m.js',
+    exports: 'named'
+  }),
+  build({
+    format: 'cjs',
+    file: 'dist/microlink.cjs.js',
+    exports: 'named'
+  })
+]

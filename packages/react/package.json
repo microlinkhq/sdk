@@ -21,7 +21,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.5.1",
+    "@microlink/mql": "~0.5.5",
     "nanoclamp": "~1.2.11"
   },
   "devDependencies": {
@@ -58,7 +58,6 @@
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-node-resolve": "latest",
     "rollup-plugin-replace": "latest",
-    "rollup-plugin-terser": "latest",
     "rollup-plugin-visualizer": "latest",
     "standard": "latest",
     "styled-components": "latest",
@@ -109,5 +108,7 @@
     "plugins": [
       "jsx-a11y"
     ]
-  }
+  },
+  "umd:main": "dist/microlink.js",
+  "unpkg": "dist/microlink.js"
 }
