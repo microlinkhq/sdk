@@ -1,6 +1,7 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
 import visualizer from 'rollup-plugin-visualizer'
 import filesize from 'rollup-plugin-filesize'
+import { terser } from 'rollup-plugin-terser'
 import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
 
@@ -16,7 +17,7 @@ const globals = {
   '@microlink/mql': 'mql'
 }
 
-const plugins = [
+const plugins = ({ compress = false }) => [
   nodeResolve(),
   babel({
     babelrc: false,
@@ -24,6 +25,7 @@ const plugins = [
     ...babelRc
   }),
   commonjs(),
+  compress && terser({ sourcemap: true }),
   filesize(),
   visualizer({ template: 'treemap' }),
   replace({
@@ -41,7 +43,7 @@ const build = ({ file, format, name, exports }) => ({
     globals
   },
   external: Object.keys(globals),
-  plugins
+  plugins: plugins({ compress: file.includes('.min.') })
 })
 
 export default [
@@ -52,13 +54,29 @@ export default [
     exports: 'named'
   }),
   build({
+    format: 'umd',
+    file: 'dist/microlink.min.js',
+    name: 'microlink',
+    exports: 'named'
+  }),
+  build({
     format: 'esm',
     file: 'dist/microlink.m.js',
     exports: 'named'
   }),
   build({
+    format: 'esm',
+    file: 'dist/microlink.m.min.js',
+    exports: 'named'
+  }),
+  build({
     format: 'cjs',
     file: 'dist/microlink.cjs.js',
+    exports: 'named'
+  }),
+  build({
+    format: 'cjs',
+    file: 'dist/microlink.cjs.min.js',
     exports: 'named'
   })
 ]
