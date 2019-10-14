@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v4.2.2...v4.3.0) (2019-10-14)
+
+
+### Features
+
+* use mql as fetcher ([#162](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/issues/162)) ([b7eac46](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/commit/b7eac46312e0148d4a422bb671086cf21a6f4616))
+
+
+
+
+
 ## [4.2.2](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v4.2.1...v4.2.2) (2019-09-12)
 
 **Note:** Version bump only for package @microlink/vanilla
