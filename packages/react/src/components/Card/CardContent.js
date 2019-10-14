@@ -7,12 +7,11 @@ import CardText from './CardText'
 import { media, isLarge, isSmall, isNil } from '../../utils'
 
 const REGEX_STRIP_WWW = /^www\./
+const BADGE_WIDTH = '16px'
+const BADGE_HEIGHT = '12px'
 
 const getHostname = href => {
-  if (isNil(href)) {
-    return ''
-  }
-
+  if (isNil(href)) return ''
   const { hostname } = new URL(href)
   return hostname.replace(REGEX_STRIP_WWW, '')
 }
@@ -79,11 +78,11 @@ const Footer = styled('footer')`
   `};
 `
 
-const PoweredByBadge = styled('span').attrs({ title: 'microlink.io' })`
+const PoweredBy = styled('span').attrs({ title: 'microlink.io' })`
   background: url('https://cdn.microlink.io/logo/logo.svg') no-repeat center
     center;
   display: block;
-  margin-left: 14px;
+  margin-left: 15px;
   transition: filter 0.15s ease, opacity 0.15s ease;
 
   &:not(:hover) {
@@ -91,23 +90,16 @@ const PoweredByBadge = styled('span').attrs({ title: 'microlink.io' })`
     opacity: 0.75;
   }
 
-  ${({ cardSize }) => {
-    const badgeWidth = !isSmall(cardSize) ? '22px' : '18px'
-    const badgeHeight = !isSmall(cardSize) ? '16px' : '13px'
-
-    return css`
-      min-width: ${badgeWidth};
-      width: ${badgeWidth};
-      background-size: ${badgeWidth};
-      height: ${badgeHeight};
-    `
-  }}
+  min-width: ${BADGE_WIDTH};
+  width: ${BADGE_WIDTH};
+  background-size: ${BADGE_WIDTH};
+  height: ${BADGE_HEIGHT};
 `
 
 export default ({ title, description, url, cardSize, className }) => {
   const isSmallCard = isSmall(cardSize)
   const formattedUrl = useMemo(() => getHostname(url), [url])
-  const onPoweredByClick = useCallback(e => {
+  const handleOnClick = useCallback(e => {
     e.preventDefault()
     window.open('https://www.microlink.io', '_blank')
   })
@@ -127,7 +119,7 @@ export default ({ title, description, url, cardSize, className }) => {
       )}
       <Footer cardSize={cardSize} className='microlink_card__content_url'>
         <CardText useNanoClamp={false}>{formattedUrl}</CardText>
-        <PoweredByBadge cardSize={cardSize} onClick={onPoweredByClick} />
+        <PoweredBy onClick={handleOnClick} />
       </Footer>
     </Content>
   )

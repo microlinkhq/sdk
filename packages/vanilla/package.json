@@ -20,8 +20,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/react": "^4.2.2",
-    "dom101": "latest"
+    "@microlink/react": "^4.2.2"
   },
   "devDependencies": {
     "husky": "latest",
