@@ -32,19 +32,29 @@ export const media = {
 
 export const getApiUrl = ({
   apiKey,
-  url,
-  prerender = 'auto',
+  audio,
   contrast = false,
+  data,
+  force,
+  headers,
   media,
-  ...opts
+  prerender = 'auto',
+  proxy,
+  ttl,
+  url
 }) =>
   createApiUrl(url, {
     apiKey,
-    video: media.includes('video'),
-    screenshot: media.includes('screenshot'),
+    audio: media.includes('audio'),
+    data,
+    force,
+    headers,
     palette: contrast,
     prerender,
-    ...opts
+    proxy,
+    screenshot: media.includes('screenshot'),
+    ttl,
+    video: media.includes('video')
   })
 
 export { fetchFromApi }
