@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import { Rewind, FastForward } from 'react-feather'
 
 import MediaButton from './MediaButton'
-import { isLarge, isSmall, media } from '../../../../utils'
+import { isLarge, media } from '../../../../utils'
 
 const iconSizes = {
   large: '32px',

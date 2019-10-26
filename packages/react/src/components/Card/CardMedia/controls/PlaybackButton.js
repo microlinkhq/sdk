@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import { PauseCircle, PlayCircle } from 'react-feather'
 
 import MediaButton from './MediaButton'
-import { isLarge, isSmall, media } from '../../../../utils'
+import { isLarge, media } from '../../../../utils'
 
 const iconSizes = {
   large: '60px',
