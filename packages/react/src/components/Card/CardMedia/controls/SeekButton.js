@@ -11,26 +11,28 @@ const iconSizes = {
   small: '16px'
 }
 
-const SeekButtonWrap = styled(MediaButton)`
-  margin: 0 auto;
-`
-
 const SeekIcon = styled('svg')`
   stroke: #fff;
-
-  ${({ cardSize }) => css`
-    width: ${iconSizes[cardSize]};
-    height: ${iconSizes[cardSize]};
-
-    ${!isLarge(cardSize) &&
-      media.mobile`
-      width: ${iconSizes.small};
-      height: ${iconSizes.small};
-    `}
-  `}
 `
 
-const SeekButton = ({ cardSize, type = 'rewind', ...props }) => {
+const SeekButtonWrap = styled(MediaButton)`
+  margin: 0 auto;
+
+  ${SeekIcon} {
+    ${({ cardSize }) => css`
+      width: ${iconSizes[cardSize]};
+      height: ${iconSizes[cardSize]};
+
+      ${!isLarge(cardSize) &&
+        media.mobile`
+        width: ${iconSizes.small};
+        height: ${iconSizes.small};
+      `}
+    `}
+  }
+`
+
+const SeekButton = ({ type = 'rewind', ...props }) => {
   const IconComponent = useMemo(
     () => (type === 'rewind' ? Rewind : FastForward),
     [type]
@@ -38,7 +40,7 @@ const SeekButton = ({ cardSize, type = 'rewind', ...props }) => {
 
   return (
     <SeekButtonWrap {...props}>
-      <SeekIcon as={IconComponent} cardSize={cardSize} />
+      <SeekIcon as={IconComponent} />
     </SeekButtonWrap>
   )
 }

@@ -13,29 +13,33 @@ const iconSizes = {
 
 const PlaybackIcon = styled('svg')`
   stroke: #fff;
-
-  ${({ cardSize }) => css`
-    width: ${iconSizes[cardSize]};
-    height: ${iconSizes[cardSize]};
-
-    ${!isLarge(cardSize) &&
-      media.mobile`
-      width: ${iconSizes.small};
-      height: ${iconSizes.small};
-    `}
-  `}
 `
 
-const PlaybackButton = ({ cardSize, isPlaying, ...props }) => {
+const PlaybackButtonWrap = styled(MediaButton)`
+  ${PlaybackIcon} {
+    ${({ cardSize }) => css`
+      width: ${iconSizes[cardSize]};
+      height: ${iconSizes[cardSize]};
+
+      ${!isLarge(cardSize) &&
+        media.mobile`
+        width: ${iconSizes.small};
+        height: ${iconSizes.small};
+      `}
+    `}
+  }
+`
+
+const PlaybackButton = ({ isPlaying, ...props }) => {
   const PlaybackComponent = useMemo(
     () => (isPlaying ? PauseCircle : PlayCircle),
     [isPlaying]
   )
 
   return (
-    <MediaButton {...props}>
-      <PlaybackIcon as={PlaybackComponent} cardSize={cardSize} />
-    </MediaButton>
+    <PlaybackButtonWrap {...props}>
+      <PlaybackIcon as={PlaybackComponent} />
+    </PlaybackButtonWrap>
   )
 }
 

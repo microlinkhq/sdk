@@ -18,15 +18,20 @@ const BottomControls = styled('div')`
 
 const VolumeIcon = styled('svg')`
   stroke: #fff;
-  width: 20px;
-  height: 20px;
+`
 
-  ${({ cardSize }) =>
-    !isLarge(cardSize) &&
-    media.mobile`
-    width: 15px;
-    height: 15px;
-  `}
+const VolumeButton = styled(MediaButton)`
+  ${VolumeIcon} {
+    width: 20px;
+    height: 20px;
+
+    ${({ cardSize }) =>
+      !isLarge(cardSize) &&
+      media.mobile`
+      width: 15px;
+      height: 15px;
+    `}
+  }
 `
 
 const PlaybackRateButton = styled(MediaButton)`
@@ -75,9 +80,9 @@ const FooterControls = ({
     <BottomControls cardSize={cardSize}>
       {isLargeCard && <TimeLabel>{currentTime}</TimeLabel>}
 
-      <MediaButton onClick={onMuteClick}>
-        <VolumeIcon cardSize={cardSize} as={VolumeComponent} />
-      </MediaButton>
+      <VolumeButton cardSize={cardSize} onClick={onMuteClick}>
+        <VolumeIcon as={VolumeComponent} />
+      </VolumeButton>
 
       <PlaybackRateButton cardSize={cardSize} onClick={onPlaybackRateClick}>
         {playbackRate}x

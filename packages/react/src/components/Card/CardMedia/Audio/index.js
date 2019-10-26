@@ -66,6 +66,8 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
   const [isMuted, setIsMuted] = useState(false)
   const [playbackRate, setPlaybackRate] = useState(1)
 
+  const isNotSmall = useMemo(() => !isSmall(cardSize), [cardSize])
+
   const setInitialDuration = useCallback(() => {
     if (audioRef && audioRef.current) {
       setDuration(audioRef.current.duration || 0)
@@ -131,7 +133,11 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
   ])
 
   return (
-    <Image imageUrl={imageUrl} cardSize={cardSize}>
+    <Image
+      imageUrl={imageUrl}
+      cardSize={cardSize}
+      className='microlink_card__media microlink_card__media_audio'
+    >
       <audio
         ref={audioRef}
         src={audioUrl}
@@ -144,7 +150,7 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
 
       <OuterWrap>
         <InnerWrap>
-          {!isSmall(cardSize) && (
+          {isNotSmall && (
             <SeekButton
               type='rewind'
               cardSize={cardSize}
@@ -158,7 +164,7 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
             onClick={onPlaybackToggle}
           />
 
-          {!isSmall(cardSize) && (
+          {isNotSmall && (
             <SeekButton
               type='fastforward'
               cardSize={cardSize}
@@ -167,7 +173,7 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
           )}
         </InnerWrap>
 
-        {!isSmall(cardSize) && (
+        {isNotSmall && (
           <FooterControls
             cardSize={cardSize}
             currentTime={currentTime}
