@@ -1,9 +1,10 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 
-import { PlayButton, ProgressBar } from '../controls'
-import { imageProxy } from '../../../../utils'
-import MediaWrap from '../wrap'
+import PlaybackButton from './controls/PlaybackButton'
+import ProgressBar from './controls/ProgressBar'
+import Wrap from './Wrap'
+import { imageProxy } from '../../../utils'
 
 const Video = styled('video')`
   width: 100%;
@@ -23,6 +24,15 @@ const Video = styled('video')`
       appearance: none;
     }
   `};
+`
+
+const VideoPlaybackButton = styled(PlaybackButton)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: ${({ visible }) => visible ? 1 : 0};
+  transition: opacity .15s ease-in-out;
 `
 
 const VideoProgressBar = styled(ProgressBar)`
@@ -67,7 +77,7 @@ function CardVideo (props) {
   }
 
   return (
-    <MediaWrap
+    <Wrap
       className='microlink_card__media_video_wrapper'
       cardSize={cardSize}
       isLoading={isLoading}
@@ -85,7 +95,7 @@ function CardVideo (props) {
         ref={videoRef}
         {...(controls ? { onTimeUpdate } : {})}
       />
-      <PlayButton cardSize={cardSize} visible={controls && !playing} />
+      <VideoPlaybackButton cardSize={cardSize} visible={controls && !playing} />
       {controls && (
         <VideoProgressBar
           cardSize={cardSize}
@@ -93,7 +103,7 @@ function CardVideo (props) {
           visible={playing}
         />
       )}
-    </MediaWrap>
+    </Wrap>
   )
 }
 

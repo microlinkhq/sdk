@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import styled from 'styled-components'
 import { Volume, Volume2 } from 'react-feather'
 
-import { MediaButton } from './controls'
+import MediaButton from '../controls/MediaButton'
 import { isLarge, media } from '../../../../utils'
 
 const BottomControls = styled('div')`

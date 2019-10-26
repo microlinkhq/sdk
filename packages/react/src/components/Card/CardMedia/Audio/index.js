@@ -1,12 +1,12 @@
 import React, { useCallback, useRef, useMemo, useState } from 'react'
 import styled from 'styled-components'
 
-import Image from '../Image'
-import { ProgressBar } from '../controls'
-import { isSmall } from '../../../../utils'
-
-import { PlaybackButton, SeekButton } from './controls'
 import FooterControls from './FooterControls'
+import Image from '../Image'
+import PlaybackButton from '../controls/PlaybackButton'
+import ProgressBar from '../controls/ProgressBar'
+import SeekButton from '../controls/SeekButton'
+import { isSmall } from '../../../../utils'
 
 const OuterWrap = styled('div')`
   background: rgba(0, 0, 0, 0.2);
@@ -144,11 +144,13 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
 
       <OuterWrap>
         <InnerWrap>
-          <SeekButton
-            type='rewind'
-            cardSize={cardSize}
-            onClick={event => onSeekClick(event, 'rewind')}
-          />
+          {!isSmall(cardSize) && (
+            <SeekButton
+              type='rewind'
+              cardSize={cardSize}
+              onClick={event => onSeekClick(event, 'rewind')}
+            />
+          )}
 
           <PlaybackButton
             cardSize={cardSize}
@@ -156,11 +158,13 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
             onClick={onPlaybackToggle}
           />
 
-          <SeekButton
-            type='fastforward'
-            cardSize={cardSize}
-            onClick={event => onSeekClick(event, 'fastforward')}
-          />
+          {!isSmall(cardSize) && (
+            <SeekButton
+              type='fastforward'
+              cardSize={cardSize}
+              onClick={event => onSeekClick(event, 'fastforward')}
+            />
+          )}
         </InnerWrap>
 
         {!isSmall(cardSize) && (
