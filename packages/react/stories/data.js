@@ -1,7 +1,7 @@
 'use strict'
 
 import demoLinks from '@microlink/demo-links'
-import { chain } from 'lodash'
+import chain from 'lodash/chain'
 
 export const urls = chain(demoLinks)
   .filter(link => !link.audio && !link.video)
