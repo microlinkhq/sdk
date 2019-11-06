@@ -2,13 +2,14 @@ import { createElement, forwardRef } from 'react'
 import styled, { css } from 'styled-components'
 
 import { media, isLarge } from '../../utils'
+import { transition } from '../../theme'
 
 const HEIGHT = '382px'
 
 const contrastStyle = ({ backgroundColor, color }) => css`
   background-color: ${backgroundColor};
   border-color: ${color};
-  transition-property: filter;
+  transition: filter ${transition.medium};
 
   &&& {
     color: ${color};
@@ -22,7 +23,7 @@ const contrastStyle = ({ backgroundColor, color }) => css`
 const largeStyle = css`
   flex-direction: column;
   height: ${HEIGHT};
-  transition-property: background, border-color, height;
+  transition: background ${transition.medium}, border-color ${transition.medium}, height ${transition.medium};
 
   ${media.mobile`
     height: calc(${HEIGHT} * 7/9);
@@ -54,9 +55,6 @@ const baseStyle = css`
   text-decoration: none;
   opacity: 1;
   position: relative;
-
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
 
   &:active,
   &:hover {

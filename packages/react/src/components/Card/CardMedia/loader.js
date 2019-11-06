@@ -16,7 +16,6 @@ export const loadingOverlay = css`
     right: 0;
     bottom: 0;
     background: #e1e8ed;
-    transition: opacity 0.3s ease-out;
     opacity: ${({ loading }) => (loading ? 1 : 0)};
     z-index: 1;
   }

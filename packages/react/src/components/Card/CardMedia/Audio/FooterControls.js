@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import MediaButton from '../controls/MediaButton'
 import { isLarge, media } from '../../../../utils'
+import { font } from '../../../../theme'
 
 const VolumeMute = props => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' {...props}>
@@ -83,8 +84,7 @@ const PlaybackRateButton = styled(MediaButton)`
 
 const TimeLabel = styled('span')`
   margin: ${({ right }) => (!right ? '0 auto 0 0' : '0 0 0 auto')};
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
+  font-family: ${font.mono};
   font-size: 14px;
   padding: 0 10px;
   color: #fff;

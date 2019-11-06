@@ -5,6 +5,7 @@ import PlaybackButton from '../controls/PlaybackButton'
 import FooterControls from './FooterControls'
 import ProgressBar from '../controls/ProgressBar'
 import SeekButton from '../controls/SeekButton'
+import { transition } from '../../../../theme'
 import { isSmall } from '../../../../utils'
 import Image from '../Image'
 
@@ -15,11 +16,10 @@ const OuterWrap = styled('div')`
   top: 0;
   right: 0;
   bottom: 0;
-  transition: background 0.3s ease-out;
+  transition: background ${transition.medium};
 
-  &:hover {
+  .microlink_card:hover & {
     background: rgba(0, 0, 0, 0.3);
-    transition-timing-function: ease-in;
   }
 `
 
@@ -200,7 +200,7 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
           />
         )}
 
-        <ProgressBar visible cardSize={cardSize} progress={progressBarWidth} />
+        <ProgressBar cardSize={cardSize} progress={progressBarWidth} />
       </OuterWrap>
     </Image>
   )

@@ -4,6 +4,7 @@ import React, { useCallback, useMemo } from 'react'
 import styled, { css } from 'styled-components'
 import CardText from './CardText'
 
+import { transition } from '../../theme'
 import { media, isLarge, isSmall, isNil } from '../../utils'
 
 const REGEX_STRIP_WWW = /^www\./
@@ -79,12 +80,10 @@ const Footer = styled('footer')`
 `
 
 const PoweredBy = styled('span').attrs({ title: 'microlink.io' })`
-  background: url('https://cdn.microlink.io/logo/logo.svg') no-repeat center
-    center;
+  background: url('https://cdn.microlink.io/logo/logo.svg') no-repeat center center;
   display: block;
   margin-left: 15px;
-  transition: filter 0.15s ease, opacity 0.15s ease;
-
+  transition: filter ${transition.medium}, opacity ${transition.medium};
   &:not(:hover) {
     filter: grayscale(100%);
     opacity: 0.75;

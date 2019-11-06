@@ -24,12 +24,11 @@ const mediaSizeStyles = {
 }
 
 export default styled('div')`
-  background: transparent no-repeat center center / cover;
+  background: #e1e8ed no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
   position: relative;
-  transition: flex-basis 0.25s ease-in-out;
 
   &::before {
     content: '';

@@ -5,6 +5,7 @@ import PlaybackButton from './controls/PlaybackButton'
 import ProgressBar, { getProgressBarSize } from './controls/ProgressBar'
 import Wrap from './Wrap'
 import { imageProxy } from '../../../utils'
+import { transition } from '../../../theme'
 
 const Video = styled('video')`
   width: 100%;
@@ -31,8 +32,11 @@ const VideoPlaybackButton = styled(PlaybackButton)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: ${({ visible }) => (visible ? 1 : 0)};
-  transition: opacity 0.15s ease-in-out;
+  transition: opacity ${transition.long};
+  .microlink_card:not(:hover) & {
+    opacity: ${({ visible }) => (visible ? 1 : 0)};
+  }
+
 `
 
 const VideoProgressBar = styled(ProgressBar)(
@@ -57,14 +61,15 @@ function CardVideo (props) {
     playsInline,
     ...restProps
   } = props
-  const [playing, setPlaying] = useState(autoPlay)
+  const [isPlaying, setPlaying] = useState(autoPlay)
   const [progress, setProgress] = useState(0)
   const videoRef = useRef()
 
   const togglePlayback = event => {
     event.preventDefault()
-    setPlaying(playing => {
-      const nextValue = !playing
+
+    setPlaying(isPlaying => {
+      const nextValue = !isPlaying
       const action = nextValue ? 'play' : 'pause'
       videoRef.current[action]()
       return nextValue
@@ -97,9 +102,9 @@ function CardVideo (props) {
         ref={videoRef}
         {...(controls ? { onTimeUpdate } : {})}
       />
-      <VideoPlaybackButton cardSize={cardSize} visible={controls && !playing} />
+      <VideoPlaybackButton cardSize={cardSize} isPlaying={isPlaying} visible={controls && !isPlaying} />
       {controls && (
-        <VideoProgressBar cardSize={cardSize} progress={progress} visible />
+        <VideoProgressBar cardSize={cardSize} progress={progress} />
       )}
     </Wrap>
   )
