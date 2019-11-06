@@ -22,8 +22,7 @@
   ],
   "dependencies": {
     "@microlink/mql": "~0.5.10",
-    "nanoclamp": "~1.2.11",
-    "react-feather": "^2.0.3"
+    "nanoclamp": "~1.2.11"
   },
   "devDependencies": {
     "@babel/core": "latest",

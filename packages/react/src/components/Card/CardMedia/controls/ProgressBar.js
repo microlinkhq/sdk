@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const PROGRESS_BAR_HEIGHT = 2
+const PROGRESS_BAR_HEIGHT = 3
 
 const sizeScales = {
   large: 1.75,

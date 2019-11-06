@@ -1,12 +1,12 @@
 import React, { useCallback, useRef, useMemo, useState } from 'react'
 import styled from 'styled-components'
 
-import FooterControls from './FooterControls'
-import Image from '../Image'
 import PlaybackButton from '../controls/PlaybackButton'
+import FooterControls from './FooterControls'
 import ProgressBar from '../controls/ProgressBar'
 import SeekButton from '../controls/SeekButton'
 import { isSmall } from '../../../../utils'
+import Image from '../Image'
 
 const OuterWrap = styled('div')`
   background: rgba(0, 0, 0, 0.2);
@@ -74,55 +74,70 @@ const Audio = ({ audioUrl, autoplay, cardSize, imageUrl }) => {
     }
   }, [audioRef.current])
 
-  const onPlaybackToggle = useCallback(event => {
-    event.preventDefault()
+  const onPlaybackToggle = useCallback(
+    event => {
+      event.preventDefault()
 
-    if (audioRef && audioRef.current) {
-      if (audioRef.current.paused) {
-        audioRef.current.play()
-      } else {
-        audioRef.current.pause()
+      if (audioRef && audioRef.current) {
+        if (audioRef.current.paused) {
+          audioRef.current.play()
+        } else {
+          audioRef.current.pause()
+        }
       }
-    }
-  }, [audioRef.current])
+    },
+    [audioRef.current]
+  )
 
-  const onSeekClick = useCallback((event, type) => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onSeekClick = useCallback(
+    (event, type) => {
+      event.preventDefault()
+      event.stopPropagation()
 
-    if (type === 'rewind') {
-      audioRef.current.currentTime -= 10
-    } else {
-      audioRef.current.currentTime += 30
-    }
-  }, [audioRef.current])
+      if (type === 'rewind') {
+        audioRef.current.currentTime -= 10
+      } else {
+        audioRef.current.currentTime += 30
+      }
+    },
+    [audioRef.current]
+  )
 
-  const onTimeUpdate = useCallback(event => {
-    if (audioRef && audioRef.current) {
-      setProgress(audioRef.current.currentTime)
-    }
-  }, [audioRef.current])
+  const onTimeUpdate = useCallback(
+    event => {
+      if (audioRef && audioRef.current) {
+        setProgress(audioRef.current.currentTime)
+      }
+    },
+    [audioRef.current]
+  )
 
-  const onMuteClick = useCallback(event => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onMuteClick = useCallback(
+    event => {
+      event.preventDefault()
+      event.stopPropagation()
 
-    if (audioRef && audioRef.current) {
-      audioRef.current.muted = !isMuted
-      setIsMuted(prevState => !prevState)
-    }
-  }, [audioRef.current, isMuted])
+      if (audioRef && audioRef.current) {
+        audioRef.current.muted = !isMuted
+        setIsMuted(prevState => !prevState)
+      }
+    },
+    [audioRef.current, isMuted]
+  )
 
-  const onPlaybackRateClick = useCallback(event => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onPlaybackRateClick = useCallback(
+    event => {
+      event.preventDefault()
+      event.stopPropagation()
 
-    if (audioRef && audioRef.current) {
-      const nextRate = getNextPlaybackRate(playbackRate)
-      audioRef.current.playbackRate = nextRate
-      setPlaybackRate(nextRate)
-    }
-  }, [audioRef.current, playbackRate])
+      if (audioRef && audioRef.current) {
+        const nextRate = getNextPlaybackRate(playbackRate)
+        audioRef.current.playbackRate = nextRate
+        setPlaybackRate(nextRate)
+      }
+    },
+    [audioRef.current, playbackRate]
+  )
 
   const currentTime = useMemo(() => formatSeconds(progress || 0), [progress])
   const endTime = useMemo(() => formatSeconds(duration || 0), [duration])
