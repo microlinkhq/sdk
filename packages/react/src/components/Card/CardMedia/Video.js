@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 
 import PlaybackButton from './controls/PlaybackButton'
-import ProgressBar from './controls/ProgressBar'
+import ProgressBar, { getProgressBarSize } from './controls/ProgressBar'
 import Wrap from './Wrap'
 import { imageProxy } from '../../../utils'
 
@@ -31,15 +31,17 @@ const VideoPlaybackButton = styled(PlaybackButton)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: ${({ visible }) => visible ? 1 : 0};
-  transition: opacity .15s ease-in-out;
+  opacity: ${({ visible }) => (visible ? 1 : 0)};
+  transition: opacity 0.15s ease-in-out;
 `
 
-const VideoProgressBar = styled(ProgressBar)`
-  .microlink_card:not(:hover) & {
-    opacity: 0 !important;
+const VideoProgressBar = styled(ProgressBar)(
+  props => `
+  .microlink_card:hover & {
+    height: ${getProgressBarSize(props)}px;
   }
 `
+)
 
 function CardVideo (props) {
   const {
@@ -97,11 +99,7 @@ function CardVideo (props) {
       />
       <VideoPlaybackButton cardSize={cardSize} visible={controls && !playing} />
       {controls && (
-        <VideoProgressBar
-          cardSize={cardSize}
-          progress={progress}
-          visible={playing}
-        />
+        <VideoProgressBar cardSize={cardSize} progress={progress} visible />
       )}
     </Wrap>
   )
