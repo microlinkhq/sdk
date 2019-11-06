@@ -79,6 +79,15 @@ const Footer = styled('footer')`
   `};
 `
 
+const Author = styled(CardText)`
+opacity: 0.75;
+transition: opacity ${transition.medium};
+
+.microlink_card:hover & {
+  opacity: 1;
+}
+`
+
 const PoweredBy = styled('span').attrs({ title: 'microlink.io' })`
   background: url('https://cdn.microlink.io/logo/logo.svg') no-repeat center center;
   display: block;
@@ -117,7 +126,7 @@ export default ({ title, description, url, cardSize, className }) => {
         </Description>
       )}
       <Footer cardSize={cardSize} className='microlink_card__content_url'>
-        <CardText useNanoClamp={false}>{formattedUrl}</CardText>
+        <Author useNanoClamp={false} css='opacity:0.75;'>{formattedUrl}</Author>
         <PoweredBy onClick={handleOnClick} />
       </Footer>
     </Content>
