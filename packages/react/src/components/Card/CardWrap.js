@@ -2,14 +2,14 @@ import { createElement, forwardRef } from 'react'
 import styled, { css } from 'styled-components'
 
 import { media, isLarge } from '../../utils'
-import { transition } from '../../theme'
+import { font, animation, speed } from '../../theme'
 
 const HEIGHT = '382px'
 
 const contrastStyle = ({ backgroundColor, color }) => css`
   background-color: ${backgroundColor};
   border-color: ${color};
-  transition: filter ${transition.medium};
+  transition-property: filter;
 
   &&& {
     color: ${color};
@@ -23,7 +23,7 @@ const contrastStyle = ({ backgroundColor, color }) => css`
 const largeStyle = css`
   flex-direction: column;
   height: ${HEIGHT};
-  transition: background ${transition.medium}, border-color ${transition.medium}, height ${transition.medium};
+  transition-property: background, border-color, height;
 
   ${media.mobile`
     height: calc(${HEIGHT} * 7/9);
@@ -42,7 +42,7 @@ const rtlStyle = ({ cardSize }) => css`
   flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'};
 `
 
-const baseStyle = css`
+const baseStyle = css(() => `
   max-width: 500px;
   background-color: #fff;
   border-width: 1px;
@@ -50,17 +50,21 @@ const baseStyle = css`
   border-color: #e1e8ed;
   overflow: hidden;
   color: #181919;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: ${font.sans};
   display: flex;
   text-decoration: none;
   opacity: 1;
   position: relative;
 
+  transition-duration: ${speed.medium};
+  transition-timing-function: ${animation.medium};
+
+
   &:active,
   &:hover {
     outline: 0;
   }
-`
+`)
 
 const createEl = el =>
   styled(el)(

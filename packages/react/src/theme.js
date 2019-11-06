@@ -1,7 +1,7 @@
 export const speed = {
-  short: '0.1s',
-  medium: '0.15s',
-  long: '0.3s'
+  short: '100ms',
+  medium: '150ms',
+  long: '300ms'
 }
 
 export const animation = {
@@ -18,5 +18,6 @@ export const transition = {
 
 // https://primer.style/design/foundations/typography
 export const font = {
-  mono: '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace'
+  sans: "InterUI, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif",
+  mono: "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace"
 }
