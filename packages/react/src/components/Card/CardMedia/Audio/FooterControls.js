@@ -114,7 +114,7 @@ const FooterControls = ({
       </VolumeButton>
 
       <PlaybackRateButton cardSize={cardSize} onClick={onPlaybackRateClick}>
-        {playbackRate}x
+        <span>{playbackRate}x</span>
       </PlaybackRateButton>
 
       {isLargeCard && <TimeLabel right>{endTime}</TimeLabel>}

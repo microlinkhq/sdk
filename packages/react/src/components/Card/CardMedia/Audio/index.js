@@ -38,6 +38,8 @@ const InnerWrap = styled('div')`
 const getNextPlaybackRate = rate => {
   switch (rate) {
     case 1:
+      return 1.25
+    case 1.25:
       return 1.5
     case 1.5:
       return 2
