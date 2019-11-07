@@ -1,13 +1,11 @@
-import React, { useRef, useState } from 'react'
+import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
-import PlaybackButton from './controls/PlaybackButton'
-import ProgressBar, { getProgressBarSize } from './controls/ProgressBar'
 import Wrap from './Wrap'
+import Controls from './Controls'
 import { imageProxy } from '../../../utils'
-import { transition } from '../../../theme'
 
-const Video = styled('video')`
+const VideoDOM = styled('video')`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -17,97 +15,52 @@ const Video = styled('video')`
   bottom: 0;
   left: 0;
 
-  ${({ autoPlay }) =>
-    autoPlay &&
-    `
-    &::media-controls-start-playback-button {
-      display: none;
-      appearance: none;
-    }
-  `};
-`
-
-const VideoPlaybackButton = styled(PlaybackButton)`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity ${transition.long};
-  .microlink_card:not(:hover) & {
-    opacity: ${({ visible }) => (visible ? 1 : 0)};
-  }
-
-`
-
-const VideoProgressBar = styled(ProgressBar)(
-  props => `
-  .microlink_card:hover & {
-    height: ${getProgressBarSize(props)}px;
+  &::media-controls-start-playback-button {
+    display: none;
+    appearance: none;
   }
 `
-)
 
-function CardVideo (props) {
-  const {
-    controls: hasControls,
-    autoPlay,
-    cardSize,
-    controls,
-    imageUrl,
-    videoUrl,
-    isLoading,
-    loop,
-    muted,
-    playsInline,
-    ...restProps
-  } = props
-  const [isPlaying, setPlaying] = useState(autoPlay)
-  const [progress, setProgress] = useState(0)
-  const videoRef = useRef()
-
-  const togglePlayback = event => {
-    event.preventDefault()
-
-    setPlaying(isPlaying => {
-      const nextValue = !isPlaying
-      const action = nextValue ? 'play' : 'pause'
-      videoRef.current[action]()
-      return nextValue
-    })
-  }
-
-  const onTimeUpdate = () => {
-    if (videoRef && videoRef.current) {
-      const { currentTime, duration } = videoRef.current
-      setProgress((currentTime / duration) * 100)
-    }
-  }
+const Video = ({
+  autoPlay,
+  controls: hasControls,
+  cardSize,
+  isLoading,
+  loop,
+  imageUrl,
+  muted,
+  playsInline,
+  videoUrl,
+  ...props
+}) => {
+  const mediaProps = useMemo(
+    () => ({
+      className: 'microlink_card__media microlink_card__media_video',
+      src: videoUrl,
+      poster: imageProxy(imageUrl),
+      playsInline
+    }),
+    [imageUrl, loop, muted, playsInline, videoUrl]
+  )
 
   return (
     <Wrap
-      className='microlink_card__media_video_wrapper'
+      className='microlink_card__media_wrapper microlink_card__media_video_wrapper'
       cardSize={cardSize}
       isLoading={isLoading}
-      onClick={togglePlayback}
-      {...restProps}
+      {...props}
     >
-      <Video
-        className='microlink_card__media microlink_card__media_video'
-        src={videoUrl}
-        poster={imageProxy(imageUrl)}
-        muted={muted}
+      <Controls
         autoPlay={autoPlay}
+        cardSize={cardSize}
         loop={loop}
-        playsInline={playsInline}
-        ref={videoRef}
-        {...(controls ? { onTimeUpdate } : {})}
+        MediaComponent={VideoDOM}
+        mediaProps={mediaProps}
+        muted={muted}
+        showControls={hasControls}
       />
-      <VideoPlaybackButton cardSize={cardSize} isPlaying={isPlaying} visible={controls && !isPlaying} />
-      {controls && (
-        <VideoProgressBar cardSize={cardSize} progress={progress} />
-      )}
     </Wrap>
   )
 }
 
-export default CardVideo
+export default Video

@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
-import MediaButton from '../controls/MediaButton'
+import MediaButton from './MediaButton'
 import { isLarge, media } from '../../../../utils'
-import { font } from '../../../../theme'
+import { font, transition } from '../../../../theme'
 
 const VolumeMute = props => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' {...props}>
@@ -40,6 +40,11 @@ const BottomControls = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity ${transition.medium};
+
+  .microlink_card__media_wrapper:not(:hover) & {
+    opacity: 0;
+  }
 `
 
 const VolumeIcon = styled('svg')`
