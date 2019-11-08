@@ -1,10 +1,7 @@
 import React, { useMemo } from 'react'
-import styled from 'styled-components'
 
 import Image from './Image'
 import Controls from './Controls'
-
-const AudioDOM = styled('audio')``
 
 const Audio = ({
   audioUrl,
@@ -33,7 +30,7 @@ const Audio = ({
         autoPlay={autoPlay}
         cardSize={cardSize}
         loop={loop}
-        MediaComponent={AudioDOM}
+        MediaComponent='audio'
         mediaProps={mediaProps}
         muted={muted}
         showControls={hasControls}
