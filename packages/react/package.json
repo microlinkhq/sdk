@@ -33,7 +33,6 @@
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
     "@microlink/demo-links": "latest",
-    "@storybook/addon-a11y": "latest",
     "@storybook/addon-storyshots": "latest",
     "@storybook/react": "latest",
     "babel-eslint": "latest",
