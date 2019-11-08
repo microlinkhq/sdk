@@ -88,74 +88,59 @@ const Controls = ({
     }
   }, [mediaRef.current])
 
-  const onPlaybackToggle = useCallback(
-    event => {
-      event.preventDefault()
+  const onPlaybackToggle = useCallback(event => {
+    event.preventDefault()
 
-      if (mediaRef && mediaRef.current) {
-        if (mediaRef.current.paused) {
-          if (!hasInteracted) {
-            setHasInteracted(true)
-          }
-
-          mediaRef.current.play()
-        } else {
-          mediaRef.current.pause()
+    if (mediaRef && mediaRef.current) {
+      if (mediaRef.current.paused) {
+        if (!hasInteracted) {
+          setHasInteracted(true)
         }
-      }
-    },
-    [mediaRef.current]
-  )
 
-  const onSeekClick = useCallback(
-    (event, type) => {
-      event.preventDefault()
-      event.stopPropagation()
-
-      if (type === 'rewind') {
-        mediaRef.current.currentTime -= 10
+        mediaRef.current.play()
       } else {
-        mediaRef.current.currentTime += 30
+        mediaRef.current.pause()
       }
-    },
-    [mediaRef.current]
-  )
+    }
+  }, [mediaRef.current])
 
-  const onTimeUpdate = useCallback(
-    event => {
-      if (mediaRef && mediaRef.current) {
-        setProgress(mediaRef.current.currentTime)
-      }
-    },
-    [mediaRef.current]
-  )
+  const onSeekClick = useCallback((event, type) => {
+    event.preventDefault()
+    event.stopPropagation()
 
-  const onMuteClick = useCallback(
-    event => {
-      event.preventDefault()
-      event.stopPropagation()
+    if (type === 'rewind') {
+      mediaRef.current.currentTime -= 10
+    } else {
+      mediaRef.current.currentTime += 30
+    }
+  }, [mediaRef.current])
 
-      if (mediaRef && mediaRef.current) {
-        mediaRef.current.muted = !isMuted
-        setIsMuted(prevState => !prevState)
-      }
-    },
-    [mediaRef.current, isMuted]
-  )
+  const onTimeUpdate = useCallback(event => {
+    if (mediaRef && mediaRef.current) {
+      setProgress(mediaRef.current.currentTime)
+    }
+  }, [mediaRef.current])
 
-  const onPlaybackRateClick = useCallback(
-    event => {
-      event.preventDefault()
-      event.stopPropagation()
+  const onMuteClick = useCallback(event => {
+    event.preventDefault()
+    event.stopPropagation()
 
-      if (mediaRef && mediaRef.current) {
-        const nextRate = getNextPlaybackRate(playbackRate)
-        mediaRef.current.playbackRate = nextRate
-        setPlaybackRate(nextRate)
-      }
-    },
-    [mediaRef.current, playbackRate]
-  )
+    if (mediaRef && mediaRef.current) {
+      mediaRef.current.muted = !isMuted
+      setIsMuted(prevState => !prevState)
+    }
+  }, [mediaRef.current, isMuted])
+
+  const onPlaybackRateClick = useCallback(event => {
+    event.preventDefault()
+    event.stopPropagation()
+
+    if (mediaRef && mediaRef.current) {
+      const nextRate = getNextPlaybackRate(playbackRate)
+      mediaRef.current.playbackRate = nextRate
+      setPlaybackRate(nextRate)
+    }
+  }, [mediaRef.current, playbackRate])
 
   const currentTime = useMemo(() => formatSeconds(progress || 0), [progress])
   const endTime = useMemo(() => formatSeconds(duration || 0), [duration])
@@ -179,53 +164,55 @@ const Controls = ({
         muted={muted}
       />
 
-      <OuterWrap>
-        {!hasInteracted ? (
-          <InnerWrap opacity={1}>
-            <PlaybackButton cardSize={cardSize} onClick={onPlaybackToggle} />
-          </InnerWrap>
-        ) : (
-          <>
-            <InnerWrap>
-              {isNotSmall && (
-                <SeekButton
-                  type='rewind'
-                  cardSize={cardSize}
-                  onClick={event => onSeekClick(event, 'rewind')}
-                />
-              )}
-
-              <PlaybackButton
-                cardSize={cardSize}
-                isPlaying={isPlaying}
-                onClick={onPlaybackToggle}
-              />
-
-              {isNotSmall && (
-                <SeekButton
-                  type='fastforward'
-                  cardSize={cardSize}
-                  onClick={event => onSeekClick(event, 'fastforward')}
-                />
-              )}
+      {showControls && (
+        <OuterWrap>
+          {!hasInteracted ? (
+            <InnerWrap opacity={1}>
+              <PlaybackButton cardSize={cardSize} onClick={onPlaybackToggle} />
             </InnerWrap>
+          ) : (
+            <>
+              <InnerWrap>
+                {isNotSmall && (
+                  <SeekButton
+                    type='rewind'
+                    cardSize={cardSize}
+                    onClick={event => onSeekClick(event, 'rewind')}
+                  />
+                )}
 
-            {isNotSmall && (
-              <FooterControls
-                cardSize={cardSize}
-                currentTime={currentTime}
-                endTime={endTime}
-                isMuted={isMuted}
-                onMuteClick={onMuteClick}
-                onPlaybackRateClick={onPlaybackRateClick}
-                playbackRate={playbackRate}
-              />
-            )}
-          </>
-        )}
+                <PlaybackButton
+                  cardSize={cardSize}
+                  isPlaying={isPlaying}
+                  onClick={onPlaybackToggle}
+                />
 
-        <ProgressBar cardSize={cardSize} progress={progressBarWidth} />
-      </OuterWrap>
+                {isNotSmall && (
+                  <SeekButton
+                    type='fastforward'
+                    cardSize={cardSize}
+                    onClick={event => onSeekClick(event, 'fastforward')}
+                  />
+                )}
+              </InnerWrap>
+
+              {isNotSmall && (
+                <FooterControls
+                  cardSize={cardSize}
+                  currentTime={currentTime}
+                  endTime={endTime}
+                  isMuted={isMuted}
+                  onMuteClick={onMuteClick}
+                  onPlaybackRateClick={onPlaybackRateClick}
+                  playbackRate={playbackRate}
+                />
+              )}
+            </>
+          )}
+
+          <ProgressBar cardSize={cardSize} progress={progressBarWidth} />
+        </OuterWrap>
+      )}
     </>
   )
 }

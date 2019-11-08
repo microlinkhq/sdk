@@ -57,7 +57,7 @@ const VolumeButton = styled(MediaButton)`
     height: 16px;
 
     ${({ cardSize }) =>
-      !isLarge(cardSize) &&
+    !isLarge(cardSize) &&
       media.mobile`
       width: 12px;
       height: 12px;
@@ -72,7 +72,7 @@ const PlaybackRateButton = styled(MediaButton)`
   border: 1.5px solid #fff;
   border-radius: 9999px;
   padding: 1px 5px;
-  min-width: 26px;
+  min-width: 33px;
   text-align: center;
   color: #fff;
   margin-left: 10px;

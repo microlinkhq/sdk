@@ -21,6 +21,11 @@ storiesOf('props', module)
       createStoryEntry({ url, media: 'video', autoPlay: false })
     )
   )
+  .add('controls (disabled)', () =>
+    urlsVideo.map(url =>
+      createStoryEntry({ url, media: 'video', controls: false })
+    )
+  )
   .add('loading', () => createStoryEntry({ loading: true }))
   .add('lazy', () => [
     createStoryEntry({ lazy: false }, true),

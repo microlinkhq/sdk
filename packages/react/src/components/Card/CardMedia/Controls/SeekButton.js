@@ -1,15 +1,11 @@
 import React, { useMemo } from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import MediaButton from './MediaButton'
 import { isLarge } from '../../../../utils'
 
 const Backward = props => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    viewBox='0 0 24 29'
-    {...props}
-  >
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 29' {...props}>
     <path
       fill='#FFF'
       fillRule='evenodd'
