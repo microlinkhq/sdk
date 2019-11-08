@@ -42,10 +42,6 @@ storiesOf('media', module)
     createStoryEntry({
       url: urls[0],
       media: 'screenshot'
-    }),
-    createStoryEntry({
-      url: urls[0],
-      media: ['screenshot']
     })
   ])
 
