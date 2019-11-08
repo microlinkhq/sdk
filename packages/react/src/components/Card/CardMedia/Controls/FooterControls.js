@@ -90,7 +90,7 @@ const PlaybackRateButton = styled(MediaButton)`
 const TimeLabel = styled('span')`
   margin: ${({ right }) => (!right ? '0 auto 0 0' : '0 0 0 auto')};
   font-family: ${font.mono};
-  font-size: 14px;
+  font-size: 12px;
   padding: 0 10px;
   color: #fff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
