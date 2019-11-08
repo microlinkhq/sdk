@@ -34,7 +34,7 @@ const VolumeUp = props => (
 const BottomControls = styled('div')`
   z-index: 2;
   position: absolute;
-  bottom: 12px;
+  bottom: 16px;
   left: 0;
   right: 0;
   display: flex;
@@ -76,22 +76,13 @@ const PlaybackRateButton = styled(MediaButton)`
   text-align: center;
   color: #fff;
   margin-left: 10px;
-
-  ${({ cardSize }) =>
-    !isLarge(cardSize) &&
-    media.mobile`
-    font-size: 10px;
-    min-width: 22px;
-    margin-left: 6px;
-    padding: 1 3px;
-  `}
 `
 
 const TimeLabel = styled('span')`
   margin: ${({ right }) => (!right ? '0 auto 0 0' : '0 0 0 auto')};
   font-family: ${font.mono};
   font-size: 12px;
-  padding: 0 10px;
+  padding: 0 16px;
   color: #fff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 `
@@ -110,9 +101,11 @@ const FooterControls = ({
   ])
   const isLargeCard = useMemo(() => isLarge(cardSize), [cardSize])
 
+  if (!isLargeCard) return null
+
   return (
     <BottomControls cardSize={cardSize}>
-      {isLargeCard && <TimeLabel>{currentTime}</TimeLabel>}
+      <TimeLabel>{currentTime}</TimeLabel>
 
       <VolumeButton cardSize={cardSize} onClick={onMuteClick}>
         <VolumeIcon as={VolumeComponent} />
@@ -122,7 +115,7 @@ const FooterControls = ({
         <span>{playbackRate}x</span>
       </PlaybackRateButton>
 
-      {isLargeCard && <TimeLabel right>{endTime}</TimeLabel>}
+      <TimeLabel right>{endTime}</TimeLabel>
     </BottomControls>
   )
 }

@@ -32,8 +32,8 @@ const Play = props => (
 
 const iconSizes = {
   large: '60px',
-  normal: '48px',
-  small: '34px'
+  normal: '45px',
+  small: '20px'
 }
 
 const PlaybackIcon = styled('svg')`
