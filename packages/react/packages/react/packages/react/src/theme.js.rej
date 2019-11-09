@@ -1,0 +1,8 @@
+diff a/packages/react/packages/react/src/theme.js b/packages/react/packages/react/src/theme.js	(rejected hunks)
+@@ -21,2 +21,4 @@ export const font = {
+-  sans: "InterUI, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif",
+-  mono: "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace"
++  sans:
++    "InterUI, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif",
++  mono:
++    "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace"

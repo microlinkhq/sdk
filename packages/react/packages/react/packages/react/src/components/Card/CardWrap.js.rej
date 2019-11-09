@@ -1,0 +1,9 @@
+diff a/packages/react/packages/react/src/components/Card/CardWrap.js b/packages/react/packages/react/src/components/Card/CardWrap.js	(rejected hunks)
+@@ -45 +45,2 @@ const rtlStyle = ({ cardSize }) => css`
+-const baseStyle = css(() => `
++const baseStyle = css(
++  () => `
+@@ -67 +68,2 @@ const baseStyle = css(() => `
+-`)
++`
++)

@@ -1,0 +1,4 @@
+diff a/packages/react/packages/react/src/components/Card/CardAnimation.js b/packages/react/packages/react/src/components/Card/CardAnimation.js	(rejected hunks)
+@@ -27 +27 @@ export const emptyStateAnimation = css`
+-  animation: ${emptyStatePulse} .75s linear infinite;
++  animation: ${emptyStatePulse} 0.75s linear infinite;

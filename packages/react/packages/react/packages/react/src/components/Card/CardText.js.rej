@@ -1,0 +1,24 @@
+diff a/packages/react/packages/react/src/components/Card/CardText.js b/packages/react/packages/react/src/components/Card/CardText.js	(rejected hunks)
+@@ -20,5 +20,7 @@ const StyledClamp = styled(Clamp)`
+-    ${({ useNanoClamp }) => !useNanoClamp && css`
+-      overflow: hidden;
+-      white-space: nowrap;
+-      text-overflow: ellipsis;
+-    `}
++    ${({ useNanoClamp }) =>
++      !useNanoClamp &&
++      css`
++        overflow: hidden;
++        white-space: nowrap;
++        text-overflow: ellipsis;
++      `}
+@@ -29 +31,3 @@ const CardText = ({ useNanoClamp = true, children, ...props }) => {
+-  const textProps = useNanoClamp ? props : { ...props, as: 'p', title: children }
++  const textProps = useNanoClamp
++    ? props
++    : { ...props, as: 'p', title: children }
+@@ -32 +36,3 @@ const CardText = ({ useNanoClamp = true, children, ...props }) => {
+-    <StyledClamp useNanoClamp={useNanoClamp} {...textProps}>{children}</StyledClamp>
++    <StyledClamp useNanoClamp={useNanoClamp} {...textProps}>
++      {children}
++    </StyledClamp>

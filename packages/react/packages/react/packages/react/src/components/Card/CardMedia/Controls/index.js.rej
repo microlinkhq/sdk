@@ -1,0 +1,119 @@
+diff a/packages/react/packages/react/src/components/Card/CardMedia/Controls/index.js b/packages/react/packages/react/src/components/Card/CardMedia/Controls/index.js	(rejected hunks)
+@@ -91,7 +91,13 @@ const Controls = ({
+-  const onPlaybackToggle = useCallback(event => {
+-    event.preventDefault()
+-
+-    if (mediaRef && mediaRef.current) {
+-      if (mediaRef.current.paused) {
+-        if (!hasInteracted) {
+-          setHasInteracted(true)
++  const onPlaybackToggle = useCallback(
++    event => {
++      event.preventDefault()
++
++      if (mediaRef && mediaRef.current) {
++        if (mediaRef.current.paused) {
++          if (!hasInteracted) {
++            setHasInteracted(true)
++          }
++
++          mediaRef.current.play()
++        } else {
++          mediaRef.current.pause()
+@@ -99,4 +104,0 @@ const Controls = ({
+-
+-        mediaRef.current.play()
+-      } else {
+-        mediaRef.current.pause()
+@@ -104,6 +106,3 @@ const Controls = ({
+-    }
+-  }, [mediaRef.current])
+-
+-  const onSeekClick = useCallback((event, type) => {
+-    event.preventDefault()
+-    event.stopPropagation()
++    },
++    [mediaRef.current]
++  )
+@@ -111,12 +110,4 @@ const Controls = ({
+-    if (type === 'rewind') {
+-      mediaRef.current.currentTime -= 10
+-    } else {
+-      mediaRef.current.currentTime += 30
+-    }
+-  }, [mediaRef.current])
+-
+-  const onTimeUpdate = useCallback(event => {
+-    if (mediaRef && mediaRef.current) {
+-      setProgress(mediaRef.current.currentTime)
+-    }
+-  }, [mediaRef.current])
++  const onSeekClick = useCallback(
++    (event, type) => {
++      event.preventDefault()
++      event.stopPropagation()
+@@ -124,20 +115,44 @@ const Controls = ({
+-  const onMuteClick = useCallback(event => {
+-    event.preventDefault()
+-    event.stopPropagation()
+-
+-    if (mediaRef && mediaRef.current) {
+-      mediaRef.current.muted = !isMuted
+-      setIsMuted(prevState => !prevState)
+-    }
+-  }, [mediaRef.current, isMuted])
+-
+-  const onPlaybackRateClick = useCallback(event => {
+-    event.preventDefault()
+-    event.stopPropagation()
+-
+-    if (mediaRef && mediaRef.current) {
+-      const nextRate = getNextPlaybackRate(playbackRate)
+-      mediaRef.current.playbackRate = nextRate
+-      setPlaybackRate(nextRate)
+-    }
+-  }, [mediaRef.current, playbackRate])
++      if (type === 'rewind') {
++        mediaRef.current.currentTime -= 10
++      } else {
++        mediaRef.current.currentTime += 30
++      }
++    },
++    [mediaRef.current]
++  )
++
++  const onTimeUpdate = useCallback(
++    event => {
++      if (mediaRef && mediaRef.current) {
++        setProgress(mediaRef.current.currentTime)
++      }
++    },
++    [mediaRef.current]
++  )
++
++  const onMuteClick = useCallback(
++    event => {
++      event.preventDefault()
++      event.stopPropagation()
++
++      if (mediaRef && mediaRef.current) {
++        mediaRef.current.muted = !isMuted
++        setIsMuted(prevState => !prevState)
++      }
++    },
++    [mediaRef.current, isMuted]
++  )
++
++  const onPlaybackRateClick = useCallback(
++    event => {
++      event.preventDefault()
++      event.stopPropagation()
++
++      if (mediaRef && mediaRef.current) {
++        const nextRate = getNextPlaybackRate(playbackRate)
++        mediaRef.current.playbackRate = nextRate
++        setPlaybackRate(nextRate)
++      }
++    },
++    [mediaRef.current, playbackRate]
++  )

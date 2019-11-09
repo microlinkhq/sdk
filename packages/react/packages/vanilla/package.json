@@ -1,0 +1,58 @@
+{
+  "name": "@microlink/vanilla",
+  "description": "Convert your links into beautiful previews",
+  "homepage": "https://microlink.io/docs/sdk/integrations/vanilla/",
+  "version": "4.3.2",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/vanilla"
+  },
+  "bugs": {
+    "url": "https://github.com/microlinkhq/sdk/issues"
+  },
+  "keywords": [
+    "data",
+    "extraction",
+    "link",
+    "microlink",
+    "preview",
+    "previsualization"
+  ],
+  "dependencies": {
+    "@microlink/react": "^4.3.2"
+  },
+  "devDependencies": {
+    "husky": "latest",
+    "prettier-standard": "latest",
+    "rollup": "latest",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-filesize": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-replace": "latest",
+    "rollup-plugin-terser": "latest",
+    "rollup-plugin-visualizer": "latest",
+    "standard": "latest"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "dev": "npm run build -- -w",
+    "lint": "standard src",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "test": "exit 0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}

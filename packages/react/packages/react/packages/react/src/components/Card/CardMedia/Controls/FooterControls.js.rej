@@ -1,0 +1,4 @@
+diff a/packages/react/packages/react/src/components/Card/CardMedia/Controls/FooterControls.js b/packages/react/packages/react/src/components/Card/CardMedia/Controls/FooterControls.js	(rejected hunks)
+@@ -60 +60 @@ const VolumeButton = styled(MediaButton)`
+-    !isLarge(cardSize) &&
++      !isLarge(cardSize) &&

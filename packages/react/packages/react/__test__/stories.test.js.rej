@@ -1,0 +1,6 @@
+diff a/packages/react/__test__/stories.test.js b/packages/react/__test__/stories.test.js	(rejected hunks)
+@@ -6 +6,3 @@ import 'jest-styled-components'
+-jest.mock('@microlink/mql', () => require('@microlink/mql/' + require('@microlink/mql/package.json').module))
++jest.mock('@microlink/mql', () =>
++  require('@microlink/mql/' + require('@microlink/mql/package.json').module)
++)

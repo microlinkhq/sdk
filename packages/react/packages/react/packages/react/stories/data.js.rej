@@ -1,0 +1,23 @@
+diff a/packages/react/stories/data.js b/packages/react/stories/data.js	(rejected hunks)
+@@ -7,9 +7,12 @@ import take from 'lodash/take'
+-export const urls = take(filter(demoLinks, link => !link.audio && !link.video).map(
+-  link => link.url
+-), 3)
+-export const urlsVideo = take(filter(demoLinks, link => link.video).map(
+-  link => link.url
+-), 3)
+-export const urlsAudio = take(filter(demoLinks, link => link.audio).map(
+-  link => link.url
+-), 3)
++export const urls = take(
++  filter(demoLinks, link => !link.audio && !link.video).map(link => link.url),
++  3
++)
++export const urlsVideo = take(
++  filter(demoLinks, link => link.video).map(link => link.url),
++  3
++)
++export const urlsAudio = take(
++  filter(demoLinks, link => link.audio).map(link => link.url),
++  3
++)
