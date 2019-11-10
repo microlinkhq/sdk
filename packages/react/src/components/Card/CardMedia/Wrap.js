@@ -24,7 +24,7 @@ const mediaSizeStyles = {
 }
 
 export default styled('div')`
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;

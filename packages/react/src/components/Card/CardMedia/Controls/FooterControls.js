@@ -34,7 +34,7 @@ const VolumeUp = props => (
 const BottomControls = styled('div')`
   z-index: 2;
   position: absolute;
-  bottom: ${({ cardSize }) => isLarge(cardSize) ? 12 : 8}px;
+  bottom: ${({ cardSize }) => (isLarge(cardSize) ? 12 : 10)}px;
   left: 0;
   right: 0;
   display: flex;
@@ -53,10 +53,11 @@ const VolumeIcon = styled('svg')`
 
 const VolumeButton = styled(MediaButton)`
   ${VolumeIcon} {
-    width: ${({ cardSize }) => isLarge(cardSize) ? 16 : 14}px;
-    height: ${({ cardSize }) => isLarge(cardSize) ? 16 : 14}px;
+    width: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
+    height: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
 
-    ${({ cardSize }) => !isLarge(cardSize) &&
+    ${({ cardSize }) =>
+      !isLarge(cardSize) &&
       media.mobile`
       width: 12px;
       height: 12px;
@@ -65,8 +66,8 @@ const VolumeButton = styled(MediaButton)`
 `
 
 const PlaybackRateButton = styled(MediaButton)`
-  font-size: ${({ cardSize }) => isLarge(cardSize) ? 12 : 10}px;
-  min-width: ${({ cardSize }) => isLarge(cardSize) ? 28 : 26}px;
+  font-size: ${({ cardSize }) => (isLarge(cardSize) ? 12 : 10)}px;
+  min-width: ${({ cardSize }) => (isLarge(cardSize) ? 28 : 26)}px;
   line-height: 1;
   font-weight: bold;
   border: 1.5px solid #fff;
@@ -76,7 +77,9 @@ const PlaybackRateButton = styled(MediaButton)`
   color: #fff;
   margin-left: 10px;
 
-  ${({ cardSize }) => !isLarge(cardSize) && media.mobile`
+  ${({ cardSize }) =>
+    !isLarge(cardSize) &&
+    media.mobile`
     font-size: 8px;
     margin-left: 8px;
     min-width: 18px;
