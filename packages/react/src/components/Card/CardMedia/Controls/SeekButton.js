@@ -54,7 +54,11 @@ const SeekButton = ({ type = 'rewind', cardSize, ...props }) => {
   )
 
   return (
-    <SeekButtonWrap cardSize={cardSize} {...props}>
+    <SeekButtonWrap
+      title={type === 'rewind' ? 'Rewind' : 'Forward'}
+      cardSize={cardSize}
+      {...props}
+    >
       <SeekIcon as={IconComponent} cardSize={cardSize} />
     </SeekButtonWrap>
   )

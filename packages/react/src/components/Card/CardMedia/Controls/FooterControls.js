@@ -113,11 +113,19 @@ const FooterControls = ({
     <BottomControls cardSize={cardSize}>
       {isLargeCard && <TimeLabel>{currentTime}</TimeLabel>}
 
-      <VolumeButton cardSize={cardSize} onClick={onMuteClick}>
+      <VolumeButton
+        title={isMuted ? 'Unmute' : 'Mute'}
+        cardSize={cardSize}
+        onClick={onMuteClick}
+      >
         <VolumeIcon as={VolumeComponent} />
       </VolumeButton>
 
-      <PlaybackRateButton cardSize={cardSize} onClick={onPlaybackRateClick}>
+      <PlaybackRateButton
+        title='Playback Rate'
+        cardSize={cardSize}
+        onClick={onPlaybackRateClick}
+      >
         <span>{playbackRate}x</span>
       </PlaybackRateButton>
 

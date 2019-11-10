@@ -46,7 +46,8 @@ const PlaybackButtonWrap = styled(MediaButton)`
       width: ${iconSizes[cardSize]};
       height: ${iconSizes[cardSize]};
       padding: ${isLarge(cardSize) ? 0 : 0.5}rem;
-      ${!isLarge(cardSize) && !isSmall(cardSize) &&
+      ${!isLarge(cardSize) &&
+        !isSmall(cardSize) &&
         media.mobile`
         width: calc(${iconSizes.small} * 1.2);
         height: calc(${iconSizes.small} * 1.2);
@@ -61,7 +62,7 @@ const PlaybackButton = ({ isPlaying, ...props }) => {
   ])
 
   return (
-    <PlaybackButtonWrap {...props}>
+    <PlaybackButtonWrap title={isPlaying ? 'Pause' : 'Play'} {...props}>
       <PlaybackIcon as={PlaybackComponent} />
     </PlaybackButtonWrap>
   )
