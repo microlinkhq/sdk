@@ -6,7 +6,7 @@ import PlaybackButton from './PlaybackButton'
 import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
 import { transition } from '../../../../theme'
-import { isSmall } from '../../../../utils'
+import { isLarge, isSmall } from '../../../../utils'
 
 const OuterWrap = styled('div')`
   position: absolute;
@@ -32,6 +32,7 @@ const InnerWrap = styled('div')`
   justify-content: center;
   z-index: 2;
   transition: opacity ${transition.medium};
+  padding: 0 ${({ cardSize }) => (isLarge(cardSize) ? '8.5rem' : '.5rem')};
 
   .microlink_card__media_wrapper:not(:hover) & {
     opacity: ${({ opacity = 0 }) => opacity};
@@ -82,65 +83,83 @@ const Controls = ({
 
   const isNotSmall = useMemo(() => !isSmall(cardSize), [cardSize])
 
-  const setInitialDuration = useCallback(() => {
-    if (mediaRef && mediaRef.current) {
-      setDuration(mediaRef.current.duration || 0)
-    }
-  }, [mediaRef.current])
-
-  const onPlaybackToggle = useCallback(event => {
-    event.preventDefault()
-
-    if (mediaRef && mediaRef.current) {
-      if (mediaRef.current.paused) {
-        if (!hasInteracted) {
-          setHasInteracted(true)
-        }
-
-        mediaRef.current.play()
-      } else {
-        mediaRef.current.pause()
+  const setInitialDuration = useCallback(
+    () => {
+      if (mediaRef && mediaRef.current) {
+        setDuration(mediaRef.current.duration || 0)
       }
-    }
-  }, [mediaRef.current])
+    },
+    [mediaRef.current]
+  )
 
-  const onSeekClick = useCallback((event, type) => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onPlaybackToggle = useCallback(
+    event => {
+      event.preventDefault()
 
-    if (type === 'rewind') {
-      mediaRef.current.currentTime -= 10
-    } else {
-      mediaRef.current.currentTime += 30
-    }
-  }, [mediaRef.current])
+      if (mediaRef && mediaRef.current) {
+        if (mediaRef.current.paused) {
+          if (!hasInteracted) {
+            setHasInteracted(true)
+          }
 
-  const onTimeUpdate = useCallback(event => {
-    if (mediaRef && mediaRef.current) {
-      setProgress(mediaRef.current.currentTime)
-    }
-  }, [mediaRef.current])
+          mediaRef.current.play()
+        } else {
+          mediaRef.current.pause()
+        }
+      }
+    },
+    [mediaRef.current]
+  )
 
-  const onMuteClick = useCallback(event => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onSeekClick = useCallback(
+    (event, type) => {
+      event.preventDefault()
+      event.stopPropagation()
 
-    if (mediaRef && mediaRef.current) {
-      mediaRef.current.muted = !isMuted
-      setIsMuted(prevState => !prevState)
-    }
-  }, [mediaRef.current, isMuted])
+      if (type === 'rewind') {
+        mediaRef.current.currentTime -= 10
+      } else {
+        mediaRef.current.currentTime += 30
+      }
+    },
+    [mediaRef.current]
+  )
 
-  const onPlaybackRateClick = useCallback(event => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onTimeUpdate = useCallback(
+    event => {
+      if (mediaRef && mediaRef.current) {
+        setProgress(mediaRef.current.currentTime)
+      }
+    },
+    [mediaRef.current]
+  )
 
-    if (mediaRef && mediaRef.current) {
-      const nextRate = getNextPlaybackRate(playbackRate)
-      mediaRef.current.playbackRate = nextRate
-      setPlaybackRate(nextRate)
-    }
-  }, [mediaRef.current, playbackRate])
+  const onMuteClick = useCallback(
+    event => {
+      event.preventDefault()
+      event.stopPropagation()
+
+      if (mediaRef && mediaRef.current) {
+        mediaRef.current.muted = !isMuted
+        setIsMuted(prevState => !prevState)
+      }
+    },
+    [mediaRef.current, isMuted]
+  )
+
+  const onPlaybackRateClick = useCallback(
+    event => {
+      event.preventDefault()
+      event.stopPropagation()
+
+      if (mediaRef && mediaRef.current) {
+        const nextRate = getNextPlaybackRate(playbackRate)
+        mediaRef.current.playbackRate = nextRate
+        setPlaybackRate(nextRate)
+      }
+    },
+    [mediaRef.current, playbackRate]
+  )
 
   const currentTime = useMemo(() => formatSeconds(progress || 0), [progress])
   const endTime = useMemo(() => formatSeconds(duration || 0), [duration])
@@ -167,12 +186,12 @@ const Controls = ({
       {showControls && (
         <OuterWrap>
           {!hasInteracted ? (
-            <InnerWrap opacity={1}>
+            <InnerWrap cardSize={cardSize} opacity={1}>
               <PlaybackButton cardSize={cardSize} onClick={onPlaybackToggle} />
             </InnerWrap>
           ) : (
             <>
-              <InnerWrap>
+              <InnerWrap cardSize={cardSize}>
                 {isNotSmall && (
                   <SeekButton
                     type='rewind'

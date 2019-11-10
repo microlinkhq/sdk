@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
 import MediaButton from './MediaButton'
-import { isLarge } from '../../../../utils'
+import { media, isLarge } from '../../../../utils'
 
 const Backward = props => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 29' {...props}>
@@ -32,8 +32,15 @@ const Forward = props => (
 
 const SeekIcon = styled('svg')`
   stroke: #fff;
-  width: 32px;
-  height: 32px;
+  width: ${({ cardSize }) => (isLarge(cardSize) ? 30 : 24)}px;
+  height: ${({ cardSize }) => (isLarge(cardSize) ? 30 : 24)}px;
+
+  ${({ cardSize }) =>
+    !isLarge(cardSize) &&
+    media.mobile`
+    width: 0;
+    height: 0;
+  `}
 `
 
 const SeekButtonWrap = styled(MediaButton)`
@@ -41,18 +48,14 @@ const SeekButtonWrap = styled(MediaButton)`
 `
 
 const SeekButton = ({ type = 'rewind', cardSize, ...props }) => {
-  const isLargeCard = useMemo(() => isLarge(cardSize), [cardSize])
-
   const IconComponent = useMemo(
     () => (type === 'rewind' ? Backward : Forward),
     [type]
   )
 
-  if (!isLargeCard) return null
-
   return (
-    <SeekButtonWrap {...props}>
-      <SeekIcon as={IconComponent} />
+    <SeekButtonWrap cardSize={cardSize} {...props}>
+      <SeekIcon as={IconComponent} cardSize={cardSize} />
     </SeekButtonWrap>
   )
 }

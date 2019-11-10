@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
 import MediaButton from './MediaButton'
-import { isLarge, media } from '../../../../utils'
+import { media, isLarge } from '../../../../utils'
 import { font, transition } from '../../../../theme'
 
 const VolumeMute = props => (
@@ -34,7 +34,7 @@ const VolumeUp = props => (
 const BottomControls = styled('div')`
   z-index: 2;
   position: absolute;
-  bottom: 16px;
+  bottom: ${({ cardSize }) => isLarge(cardSize) ? 12 : 8}px;
   left: 0;
   right: 0;
   display: flex;
@@ -53,11 +53,10 @@ const VolumeIcon = styled('svg')`
 
 const VolumeButton = styled(MediaButton)`
   ${VolumeIcon} {
-    width: 16px;
-    height: 16px;
+    width: ${({ cardSize }) => isLarge(cardSize) ? 16 : 14}px;
+    height: ${({ cardSize }) => isLarge(cardSize) ? 16 : 14}px;
 
-    ${({ cardSize }) =>
-    !isLarge(cardSize) &&
+    ${({ cardSize }) => !isLarge(cardSize) &&
       media.mobile`
       width: 12px;
       height: 12px;
@@ -66,16 +65,22 @@ const VolumeButton = styled(MediaButton)`
 `
 
 const PlaybackRateButton = styled(MediaButton)`
-  font-size: 12px;
+  font-size: ${({ cardSize }) => isLarge(cardSize) ? 12 : 10}px;
+  min-width: ${({ cardSize }) => isLarge(cardSize) ? 28 : 26}px;
   line-height: 1;
   font-weight: bold;
   border: 1.5px solid #fff;
   border-radius: 9999px;
   padding: 1px 5px;
-  min-width: 33px;
   text-align: center;
   color: #fff;
   margin-left: 10px;
+
+  ${({ cardSize }) => !isLarge(cardSize) && media.mobile`
+    font-size: 8px;
+    margin-left: 8px;
+    min-width: 18px;
+  `}
 `
 
 const TimeLabel = styled('span')`
@@ -101,11 +106,9 @@ const FooterControls = ({
   ])
   const isLargeCard = useMemo(() => isLarge(cardSize), [cardSize])
 
-  if (!isLargeCard) return null
-
   return (
     <BottomControls cardSize={cardSize}>
-      <TimeLabel>{currentTime}</TimeLabel>
+      {isLargeCard && <TimeLabel>{currentTime}</TimeLabel>}
 
       <VolumeButton cardSize={cardSize} onClick={onMuteClick}>
         <VolumeIcon as={VolumeComponent} />
@@ -115,7 +118,7 @@ const FooterControls = ({
         <span>{playbackRate}x</span>
       </PlaybackRateButton>
 
-      <TimeLabel right>{endTime}</TimeLabel>
+      {isLargeCard && <TimeLabel right>{endTime}</TimeLabel>}
     </BottomControls>
   )
 }
