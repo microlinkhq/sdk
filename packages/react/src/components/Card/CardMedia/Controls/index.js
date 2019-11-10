@@ -6,7 +6,7 @@ import PlaybackButton from './PlaybackButton'
 import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
 import { transition } from '../../../../theme'
-import { isLarge, isSmall } from '../../../../utils'
+import { isSmall } from '../../../../utils'
 
 const OuterWrap = styled('div')`
   position: absolute;
@@ -32,7 +32,6 @@ const InnerWrap = styled('div')`
   justify-content: center;
   z-index: 2;
   transition: opacity ${transition.medium};
-  padding: 0 ${({ cardSize }) => (isLarge(cardSize) ? '8.5rem' : '.5rem')};
 
   .microlink_card__media_wrapper:not(:hover) & {
     opacity: ${({ opacity = 0 }) => opacity};
@@ -186,12 +185,12 @@ const Controls = ({
       {showControls && (
         <OuterWrap>
           {!hasInteracted ? (
-            <InnerWrap cardSize={cardSize} opacity={1}>
+            <InnerWrap opacity={1}>
               <PlaybackButton cardSize={cardSize} onClick={onPlaybackToggle} />
             </InnerWrap>
           ) : (
             <>
-              <InnerWrap cardSize={cardSize}>
+              <InnerWrap>
                 {isNotSmall && (
                   <SeekButton
                     type='rewind'

@@ -44,7 +44,7 @@ const SeekIcon = styled('svg')`
 `
 
 const SeekButtonWrap = styled(MediaButton)`
-  margin: 0 auto;
+  margin: 0 ${({ cardSize }) => isLarge(cardSize) ? '28px' : '3px'};
 `
 
 const SeekButton = ({ type = 'rewind', cardSize, ...props }) => {

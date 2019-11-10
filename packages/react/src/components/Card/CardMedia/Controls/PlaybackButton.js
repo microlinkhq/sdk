@@ -45,7 +45,8 @@ const PlaybackButtonWrap = styled(MediaButton)`
     ${({ cardSize }) => css`
       width: ${iconSizes[cardSize]};
       height: ${iconSizes[cardSize]};
-      padding: ${isLarge(cardSize) ? 0 : 0.5}rem;
+      padding: ${isLarge(cardSize) ? 0 : '8px'};
+
       ${!isLarge(cardSize) &&
         !isSmall(cardSize) &&
         media.mobile`

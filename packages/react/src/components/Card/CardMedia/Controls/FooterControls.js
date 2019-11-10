@@ -57,7 +57,7 @@ const VolumeButton = styled(MediaButton)`
     height: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
 
     ${({ cardSize }) =>
-      !isLarge(cardSize) &&
+    !isLarge(cardSize) &&
       media.mobile`
       width: 12px;
       height: 12px;
@@ -67,7 +67,7 @@ const VolumeButton = styled(MediaButton)`
 
 const PlaybackRateButton = styled(MediaButton)`
   font-size: ${({ cardSize }) => (isLarge(cardSize) ? 12 : 10)}px;
-  min-width: ${({ cardSize }) => (isLarge(cardSize) ? 28 : 26)}px;
+  min-width: ${({ cardSize }) => (isLarge(cardSize) ? 33 : 28)}px;
   line-height: 1;
   font-weight: bold;
   border: 1.5px solid #fff;
@@ -82,7 +82,7 @@ const PlaybackRateButton = styled(MediaButton)`
     media.mobile`
     font-size: 8px;
     margin-left: 8px;
-    min-width: 18px;
+    min-width: 23px;
   `}
 `
 
