@@ -79,7 +79,7 @@
     "lint": "standard",
     "pretest": "npm run lint",
     "start": "node scripts/start.js",
-    "test": "jest --detectOpenHandles"
+    "test": "NODE_ENV=test jest --detectOpenHandles"
   },
   "license": "MIT",
   "jest": {
