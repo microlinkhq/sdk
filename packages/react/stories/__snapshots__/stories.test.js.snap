@@ -74,7 +74,7 @@ exports[`Storyshots media audio 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -105,7 +105,7 @@ exports[`Storyshots media audio 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -136,7 +136,7 @@ exports[`Storyshots media audio 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -552,7 +552,7 @@ exports[`Storyshots media image 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -583,7 +583,7 @@ exports[`Storyshots media image 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -614,7 +614,7 @@ exports[`Storyshots media image 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -1030,7 +1030,7 @@ exports[`Storyshots media logo 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -1061,7 +1061,7 @@ exports[`Storyshots media logo 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -1092,7 +1092,7 @@ exports[`Storyshots media logo 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -1508,7 +1508,7 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -1539,7 +1539,7 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -1570,7 +1570,7 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -1986,7 +1986,7 @@ exports[`Storyshots media video 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -2017,7 +2017,7 @@ exports[`Storyshots media video 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -2048,7 +2048,7 @@ exports[`Storyshots media video 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -2464,7 +2464,7 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -2495,7 +2495,7 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -2526,7 +2526,7 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -2942,7 +2942,7 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -2973,7 +2973,7 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -3004,7 +3004,7 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -3456,7 +3456,7 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -3487,7 +3487,7 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -3518,7 +3518,7 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -3934,7 +3934,7 @@ exports[`Storyshots props default 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -3965,7 +3965,7 @@ exports[`Storyshots props default 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -3996,7 +3996,7 @@ exports[`Storyshots props default 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -4427,7 +4427,7 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -4458,7 +4458,7 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -4489,7 +4489,7 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -4950,7 +4950,7 @@ exports[`Storyshots props direction 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -4981,7 +4981,7 @@ exports[`Storyshots props direction 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -5012,7 +5012,7 @@ exports[`Storyshots props direction 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -5453,7 +5453,7 @@ Array [
 }
 
 .c5 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -5484,7 +5484,7 @@ Array [
 }
 
 .c11 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -5515,7 +5515,7 @@ Array [
 }
 
 .c15 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -5966,7 +5966,7 @@ Array [
 }
 
 .c5 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -5997,7 +5997,7 @@ Array [
 }
 
 .c11 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -6028,7 +6028,7 @@ Array [
 }
 
 .c15 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -6485,7 +6485,7 @@ exports[`Storyshots props loading 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -6516,7 +6516,7 @@ exports[`Storyshots props loading 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -6547,7 +6547,7 @@ exports[`Storyshots props loading 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -6978,7 +6978,7 @@ exports[`Storyshots setData function 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -7009,7 +7009,7 @@ exports[`Storyshots setData function 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -7040,7 +7040,7 @@ exports[`Storyshots setData function 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -7471,7 +7471,7 @@ exports[`Storyshots setData object 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -7502,7 +7502,7 @@ exports[`Storyshots setData object 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -7533,7 +7533,7 @@ exports[`Storyshots setData object 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -7965,7 +7965,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -7996,7 +7996,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -8027,7 +8027,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -8473,7 +8473,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -8504,7 +8504,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -8535,7 +8535,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -8981,7 +8981,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -9012,7 +9012,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -9043,7 +9043,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -9494,7 +9494,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -9525,7 +9525,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -9556,7 +9556,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -10002,7 +10002,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -10033,7 +10033,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -10064,7 +10064,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -10510,7 +10510,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -10541,7 +10541,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -10572,7 +10572,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -11018,7 +11018,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -11049,7 +11049,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -11080,7 +11080,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -11526,7 +11526,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -11557,7 +11557,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -11588,7 +11588,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -12034,7 +12034,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -12065,7 +12065,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -12096,7 +12096,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -12546,7 +12546,7 @@ exports[`Storyshots style misc 1`] = `
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -12577,7 +12577,7 @@ exports[`Storyshots style misc 1`] = `
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -12608,7 +12608,7 @@ exports[`Storyshots style misc 1`] = `
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -13061,7 +13061,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -13092,7 +13092,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -13123,7 +13123,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -13569,7 +13569,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -13600,7 +13600,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -13631,7 +13631,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -14077,7 +14077,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -14108,7 +14108,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -14139,7 +14139,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -14585,7 +14585,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -14616,7 +14616,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -14647,7 +14647,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -15093,7 +15093,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -15124,7 +15124,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -15155,7 +15155,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -15601,7 +15601,7 @@ Array [
 }
 
 .c4 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -15632,7 +15632,7 @@ Array [
 }
 
 .c10 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
@@ -15663,7 +15663,7 @@ Array [
 }
 
 .c14 {
-  background: #e1e8ed no-repeat center center / cover;
+  background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
   height: auto;
