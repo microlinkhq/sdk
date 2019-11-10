@@ -1,18 +1,17 @@
 'use strict'
 
-import demoLinks from '@microlink/demo-links'
-import filter from 'lodash/filter'
-import take from 'lodash/take'
+const demoLinks = require('@microlink/demo-links')
+const { chain } = require('lodash')
 
-export const urls = take(
-  filter(demoLinks, link => !link.audio && !link.video).map(link => link.url),
-  3
-)
-export const urlsVideo = take(
-  filter(demoLinks, link => link.video).map(link => link.url),
-  3
-)
-export const urlsAudio = take(
-  filter(demoLinks, link => link.audio).map(link => link.url),
-  3
-)
+const getData = (fn) => chain(demoLinks)
+  .toPairs()
+  .filter(fn)
+  .sortBy(([name, link]) => name)
+  .take(3)
+  .fromPairs()
+  .map('url')
+  .value()
+
+exports.urls = getData(([name, link]) => !link.audio && !link.video)
+exports.urlsVideo = getData(([name, link]) => link.video)
+exports.urlsAudio = getData(([name, link]) => link.audio)

@@ -403,9 +403,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://www.facebook.com/natgeo/videos/10156364216738951/"
+      href="https://anchor.fm/sin-humo/episodes/Episodio-9-Los-mandamientos-e22pro"
     >
-      https://www.facebook.com/natgeo/videos/10156364216738951/
+      https://anchor.fm/sin-humo/episodes/Episodio-9-Los-mandamientos-e22pro
     </a>
     <a
       className="c2 microlink_card c3"
@@ -878,9 +878,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit"
+      href="https://castbox.fm/episode/Episodio-9-“Los-mandamientos”-(%3F)-id1368872-id89380408"
     >
-      https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit
+      https://castbox.fm/episode/Episodio-9-“Los-mandamientos”-(%3F)-id1368872-id89380408
     </a>
     <a
       className="c2 microlink_card c3"
@@ -1353,9 +1353,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://soundcloud.com/beautybrainsp/beauty-brain-swag-bandicoot"
+      href="https://cuonda.com/mixxio/satelites-goticos"
     >
-      https://soundcloud.com/beautybrainsp/beauty-brain-swag-bandicoot
+      https://cuonda.com/mixxio/satelites-goticos
     </a>
     <a
       className="c2 microlink_card c3"
@@ -2783,9 +2783,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -4213,9 +4213,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -5171,6 +5171,481 @@ Array [
   >
     <a
       className="c1"
+      href="https://9gag.com/gag/aMZ1WbW"
+    >
+      https://9gag.com/gag/aMZ1WbW
+    </a>
+    <a
+      className="c2 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c4 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c5 microlink_card__content"
+      >
+        <header
+          className="c6"
+        />
+        <span
+          className="c7"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+    <a
+      className="c9 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c10 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c11 microlink_card__content"
+      >
+        <header
+          className="c12"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+    <a
+      className="c13 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c14 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c15 microlink_card__content"
+      >
+        <header
+          className="c6"
+        />
+        <span
+          className="c16"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+  </div>,
+  .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c4 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c10 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 48px;
+  -ms-flex: 0 0 48px;
+  flex: 0 0 48px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c10::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c10::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c14 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c14::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c14::before {
+  padding-bottom: 0;
+}
+
+.c14::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c6 {
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c12 {
+  height: 16px;
+  width: 75%;
+  display: block;
+  background: #e1e8ed;
+  margin: 0 20px 0 0;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c7 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c7::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c7::before {
+  top: 14px;
+}
+
+.c16 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c16::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c16::before {
+  top: 14px;
+}
+
+.c8 {
+  height: 10px;
+  width: 30%;
+  display: block;
+  background: #e1e8ed;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+.c2 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+.c9 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c9:active,
+.c9:hover {
+  outline: 0;
+}
+
+.c13 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 382px;
+  -webkit-transition-property: background,border-color,height;
+  transition-property: background,border-color,height;
+}
+
+.c13:active,
+.c13:hover {
+  outline: 0;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+@media (max-width:48em) {
+  .c7 {
+    height: 14px;
+  }
+
+  .c7::before {
+    display: none;
+  }
+}
+
+@media (max-width:48em) {
+  .c13 {
+    height: calc(382px * 7/9);
+  }
+}
+
+<div
+    className="c0"
+  >
+    <a
+      className="c1"
       href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     >
       https://www.facebook.com/natgeo/videos/10156364216738951/
@@ -5649,481 +6124,6 @@ Array [
       href="https://gfycat.com/gifs/detail/timelyhealthyarmadillo"
     >
       https://gfycat.com/gifs/detail/timelyhealthyarmadillo
-    </a>
-    <a
-      className="c2 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c4 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c5 microlink_card__content"
-      >
-        <header
-          className="c6"
-        />
-        <span
-          className="c7"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-    <a
-      className="c9 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c10 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c11 microlink_card__content"
-      >
-        <header
-          className="c12"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-    <a
-      className="c13 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c14 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c15 microlink_card__content"
-      >
-        <header
-          className="c6"
-        />
-        <span
-          className="c16"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-  </div>,
-  .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 0 0 125px;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c4 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 0 0 125px;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c4::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c4::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c10 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 0 0 48px;
-  -ms-flex: 0 0 48px;
-  flex: 0 0 48px;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c10::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c10::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c14 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c14::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c14::before {
-  padding-bottom: 0;
-}
-
-.c14::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c6 {
-  height: 16px;
-  width: 60%;
-  display: block;
-  background: #e1e8ed;
-  margin: 2px 0 8px;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-}
-
-.c12 {
-  height: 16px;
-  width: 75%;
-  display: block;
-  background: #e1e8ed;
-  margin: 0 20px 0 0;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-}
-
-.c7 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c7::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c7::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
-}
-
-.c8 {
-  height: 10px;
-  width: 30%;
-  display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 32px;
-  margin-bottom: 32px;
-}
-
-.c0:not(:last-child):not(:only-child) {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.c1 {
-  color: #0366d6;
-  margin-bottom: 32px;
-}
-
-.c3:not(:last-child):not(:only-child) {
-  margin-bottom: 32px;
-}
-
-.c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-}
-
-.c2:active,
-.c2:hover {
-  outline: 0;
-}
-
-.c9 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-}
-
-.c9:active,
-.c9:hover {
-  outline: 0;
-}
-
-.c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 382px;
-  -webkit-transition-property: background,border-color,height;
-  transition-property: background,border-color,height;
-}
-
-.c13:active,
-.c13:hover {
-  outline: 0;
-}
-
-@media (max-width:48em) {
-  .c4 {
-    -webkit-flex: 0 0 92px;
-    -ms-flex: 0 0 92px;
-    flex: 0 0 92px;
-  }
-}
-
-@media (max-width:48em) {
-  .c7 {
-    height: 14px;
-  }
-
-  .c7::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
-  .c13 {
-    height: calc(382px * 7/9);
-  }
-}
-
-<div
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit"
-    >
-      https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit
     </a>
     <a
       className="c2 microlink_card c3"
@@ -6601,6 +6601,481 @@ Array [
   >
     <a
       className="c1"
+      href="https://9gag.com/gag/aMZ1WbW"
+    >
+      https://9gag.com/gag/aMZ1WbW
+    </a>
+    <a
+      className="c2 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c4 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c5 microlink_card__content"
+      >
+        <header
+          className="c6"
+        />
+        <span
+          className="c7"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+    <a
+      className="c9 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c10 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c11 microlink_card__content"
+      >
+        <header
+          className="c12"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+    <a
+      className="c13 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c14 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c15 microlink_card__content"
+      >
+        <header
+          className="c6"
+        />
+        <span
+          className="c16"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+  </div>,
+  .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c4 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c10 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 48px;
+  -ms-flex: 0 0 48px;
+  flex: 0 0 48px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c10::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c10::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c14 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c14::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c14::before {
+  padding-bottom: 0;
+}
+
+.c14::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c6 {
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c12 {
+  height: 16px;
+  width: 75%;
+  display: block;
+  background: #e1e8ed;
+  margin: 0 20px 0 0;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c7 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c7::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c7::before {
+  top: 14px;
+}
+
+.c16 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c16::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c16::before {
+  top: 14px;
+}
+
+.c8 {
+  height: 10px;
+  width: 30%;
+  display: block;
+  background: #e1e8ed;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+.c2 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+.c9 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c9:active,
+.c9:hover {
+  outline: 0;
+}
+
+.c13 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 382px;
+  -webkit-transition-property: background,border-color,height;
+  transition-property: background,border-color,height;
+}
+
+.c13:active,
+.c13:hover {
+  outline: 0;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+@media (max-width:48em) {
+  .c7 {
+    height: 14px;
+  }
+
+  .c7::before {
+    display: none;
+  }
+}
+
+@media (max-width:48em) {
+  .c13 {
+    height: calc(382px * 7/9);
+  }
+}
+
+<div
+    className="c0"
+  >
+    <a
+      className="c1"
       href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     >
       https://www.facebook.com/natgeo/videos/10156364216738951/
@@ -7079,481 +7554,6 @@ Array [
       href="https://gfycat.com/gifs/detail/timelyhealthyarmadillo"
     >
       https://gfycat.com/gifs/detail/timelyhealthyarmadillo
-    </a>
-    <a
-      className="c2 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c4 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c5 microlink_card__content"
-      >
-        <header
-          className="c6"
-        />
-        <span
-          className="c7"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-    <a
-      className="c9 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c10 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c11 microlink_card__content"
-      >
-        <header
-          className="c12"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-    <a
-      className="c13 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c14 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c15 microlink_card__content"
-      >
-        <header
-          className="c6"
-        />
-        <span
-          className="c16"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-  </div>,
-  .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 0 0 125px;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c4 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 0 0 125px;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c4::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c4::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c10 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 0 0 48px;
-  -ms-flex: 0 0 48px;
-  flex: 0 0 48px;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c10::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c10::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c14 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c14::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c14::before {
-  padding-bottom: 0;
-}
-
-.c14::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c6 {
-  height: 16px;
-  width: 60%;
-  display: block;
-  background: #e1e8ed;
-  margin: 2px 0 8px;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-}
-
-.c12 {
-  height: 16px;
-  width: 75%;
-  display: block;
-  background: #e1e8ed;
-  margin: 0 20px 0 0;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-}
-
-.c7 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c7::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c7::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
-}
-
-.c8 {
-  height: 10px;
-  width: 30%;
-  display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 32px;
-  margin-bottom: 32px;
-}
-
-.c0:not(:last-child):not(:only-child) {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.c1 {
-  color: #0366d6;
-  margin-bottom: 32px;
-}
-
-.c3:not(:last-child):not(:only-child) {
-  margin-bottom: 32px;
-}
-
-.c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-}
-
-.c2:active,
-.c2:hover {
-  outline: 0;
-}
-
-.c9 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-}
-
-.c9:active,
-.c9:hover {
-  outline: 0;
-}
-
-.c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 382px;
-  -webkit-transition-property: background,border-color,height;
-  transition-property: background,border-color,height;
-}
-
-.c13:active,
-.c13:hover {
-  outline: 0;
-}
-
-@media (max-width:48em) {
-  .c4 {
-    -webkit-flex: 0 0 92px;
-    -ms-flex: 0 0 92px;
-    flex: 0 0 92px;
-  }
-}
-
-@media (max-width:48em) {
-  .c7 {
-    height: 14px;
-  }
-
-  .c7::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
-  .c13 {
-    height: calc(382px * 7/9);
-  }
-}
-
-<div
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit"
-    >
-      https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit
     </a>
     <a
       className="c2 microlink_card c3"
@@ -9074,9 +9074,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -9168,6 +9168,481 @@ Array [
 
 exports[`Storyshots props controls (disabled) 1`] = `
 Array [
+  .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c4 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c10 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 48px;
+  -ms-flex: 0 0 48px;
+  flex: 0 0 48px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c10::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c10::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c14 {
+  background: #e1e8ed no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c14::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c14::before {
+  padding-bottom: 0;
+}
+
+.c14::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c6 {
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c12 {
+  height: 16px;
+  width: 75%;
+  display: block;
+  background: #e1e8ed;
+  margin: 0 20px 0 0;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c7 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c7::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c7::before {
+  top: 14px;
+}
+
+.c16 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c16::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c16::before {
+  top: 14px;
+}
+
+.c8 {
+  height: 10px;
+  width: 30%;
+  display: block;
+  background: #e1e8ed;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+.c2 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+.c9 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c9:active,
+.c9:hover {
+  outline: 0;
+}
+
+.c13 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 382px;
+  -webkit-transition-property: background,border-color,height;
+  transition-property: background,border-color,height;
+}
+
+.c13:active,
+.c13:hover {
+  outline: 0;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+@media (max-width:48em) {
+  .c7 {
+    height: 14px;
+  }
+
+  .c7::before {
+    display: none;
+  }
+}
+
+@media (max-width:48em) {
+  .c13 {
+    height: calc(382px * 7/9);
+  }
+}
+
+<div
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="https://9gag.com/gag/aMZ1WbW"
+    >
+      https://9gag.com/gag/aMZ1WbW
+    </a>
+    <a
+      className="c2 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c4 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c5 microlink_card__content"
+      >
+        <header
+          className="c6"
+        />
+        <span
+          className="c7"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+    <a
+      className="c9 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c10 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c11 microlink_card__content"
+      >
+        <header
+          className="c12"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+    <a
+      className="c13 microlink_card c3"
+      direction="ltr"
+      media="video"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c14 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c15 microlink_card__content"
+      >
+        <header
+          className="c6"
+        />
+        <span
+          className="c16"
+        />
+        <footer
+          className="c8"
+        />
+      </div>
+    </a>
+  </div>,
   .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10047,481 +10522,6 @@ Array [
       href="https://gfycat.com/gifs/detail/timelyhealthyarmadillo"
     >
       https://gfycat.com/gifs/detail/timelyhealthyarmadillo
-    </a>
-    <a
-      className="c2 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c4 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c5 microlink_card__content"
-      >
-        <header
-          className="c6"
-        />
-        <span
-          className="c7"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-    <a
-      className="c9 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c10 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c11 microlink_card__content"
-      >
-        <header
-          className="c12"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-    <a
-      className="c13 microlink_card c3"
-      direction="ltr"
-      media="video"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        className="c14 microlink_card__media microlink_card__media_image"
-      />
-      <div
-        className="c15 microlink_card__content"
-      >
-        <header
-          className="c6"
-        />
-        <span
-          className="c16"
-        />
-        <footer
-          className="c8"
-        />
-      </div>
-    </a>
-  </div>,
-  .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 0 0 125px;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c4 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 0 0 125px;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c4::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c4::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c10 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 0 0 48px;
-  -ms-flex: 0 0 48px;
-  flex: 0 0 48px;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c10::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c10::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c14 {
-  background: #e1e8ed no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c14::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c14::before {
-  padding-bottom: 0;
-}
-
-.c14::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c6 {
-  height: 16px;
-  width: 60%;
-  display: block;
-  background: #e1e8ed;
-  margin: 2px 0 8px;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-}
-
-.c12 {
-  height: 16px;
-  width: 75%;
-  display: block;
-  background: #e1e8ed;
-  margin: 0 20px 0 0;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-}
-
-.c7 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c7::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c7::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
-}
-
-.c8 {
-  height: 10px;
-  width: 30%;
-  display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 32px;
-  margin-bottom: 32px;
-}
-
-.c0:not(:last-child):not(:only-child) {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.c1 {
-  color: #0366d6;
-  margin-bottom: 32px;
-}
-
-.c3:not(:last-child):not(:only-child) {
-  margin-bottom: 32px;
-}
-
-.c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-}
-
-.c2:active,
-.c2:hover {
-  outline: 0;
-}
-
-.c9 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-}
-
-.c9:active,
-.c9:hover {
-  outline: 0;
-}
-
-.c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 382px;
-  -webkit-transition-property: background,border-color,height;
-  transition-property: background,border-color,height;
-}
-
-.c13:active,
-.c13:hover {
-  outline: 0;
-}
-
-@media (max-width:48em) {
-  .c4 {
-    -webkit-flex: 0 0 92px;
-    -ms-flex: 0 0 92px;
-    flex: 0 0 92px;
-  }
-}
-
-@media (max-width:48em) {
-  .c7 {
-    height: 14px;
-  }
-
-  .c7::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
-  .c13 {
-    height: calc(382px * 7/9);
-  }
-}
-
-<div
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit"
-    >
-      https://plays.tv/video/5a6f64b1bef69a7fa9/holy-shit
     </a>
     <a
       className="c2 microlink_card c3"
@@ -11979,9 +11979,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -13544,9 +13544,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -15046,9 +15046,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -19069,9 +19069,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -20598,9 +20598,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -23657,9 +23657,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
@@ -25189,9 +25189,9 @@ Array [
   >
     <a
       className="c1"
-      href="https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif"
+      href="https://www.bbc.com/news/technology-40762328"
     >
-      https://media.giphy.com/media/LqTSLCsIIkCTvQ8X9g/giphy.gif
+      https://www.bbc.com/news/technology-40762328
     </a>
     <a
       className="c2 microlink_card c3"
