@@ -15,3 +15,9 @@ const getData = (fn) => chain(demoLinks)
 exports.urls = getData(([name, link]) => !link.audio && !link.video)
 exports.urlsVideo = getData(([name, link]) => link.video)
 exports.urlsAudio = getData(([name, link]) => link.audio)
+
+console.log({
+  urls: exports.urls,
+  urlsVideo: exports.urlsVideo,
+  urlsAudio: exports.urlsAudio
+})
