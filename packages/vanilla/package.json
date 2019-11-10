@@ -2,7 +2,7 @@
   "name": "@microlink/vanilla",
   "description": "Convert your links into beautiful previews",
   "homepage": "https://microlink.io/docs/sdk/integrations/vanilla/",
-  "version": "4.3.2",
+  "version": "4.4.0",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/react": "^4.3.2"
+    "@microlink/react": "^4.4.0"
   },
   "devDependencies": {
     "husky": "latest",
