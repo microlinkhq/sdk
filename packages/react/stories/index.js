@@ -2,7 +2,7 @@ import 'unfetch/polyfill'
 
 import { storiesOf } from '@storybook/react'
 
-import { urls, urlsVideo } from './data'
+import { urls, urlsVideo, urlsAudio } from './data'
 import createStoryEntry from './createStoryEntry'
 
 storiesOf('props', module)
@@ -21,6 +21,11 @@ storiesOf('props', module)
       createStoryEntry({ url, media: 'video', autoPlay: false })
     )
   )
+  .add('controls (disabled)', () =>
+    urlsVideo.map(url =>
+      createStoryEntry({ url, media: 'video', controls: false })
+    )
+  )
   .add('loading', () => createStoryEntry({ loading: true }))
   .add('lazy', () => [
     createStoryEntry({ lazy: false }, true),
@@ -35,14 +40,13 @@ storiesOf('media', module)
   .add('video', () =>
     urlsVideo.map(url => createStoryEntry({ url, media: 'video' }))
   )
+  .add('audio', () =>
+    urlsAudio.map(url => createStoryEntry({ url, media: 'audio' }))
+  )
   .add('screenshot', () => [
     createStoryEntry({
       url: urls[0],
       media: 'screenshot'
-    }),
-    createStoryEntry({
-      url: urls[0],
-      media: ['screenshot']
     })
   ])
 

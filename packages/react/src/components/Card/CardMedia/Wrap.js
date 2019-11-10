@@ -29,7 +29,6 @@ export default styled('div')`
   overflow: hidden;
   height: auto;
   position: relative;
-  transition: flex-basis 0.25s ease-in-out;
 
   &::before {
     content: '';

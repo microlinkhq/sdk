@@ -21,7 +21,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.5.10",
+    "@microlink/mql": "~0.5.11",
     "nanoclamp": "~1.2.11"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "@babel/plugin-transform-react-inline-elements": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
-    "@storybook/addon-a11y": "latest",
+    "@microlink/demo-links": "latest",
     "@storybook/addon-storyshots": "latest",
     "@storybook/react": "latest",
     "babel-eslint": "latest",
@@ -48,6 +48,7 @@
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
     "jest-styled-components": "latest",
+    "lodash": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
     "react": "^16",
@@ -72,13 +73,13 @@
   ],
   "scripts": {
     "build": "NODE_ENV=production rollup -c rollup.config.js",
-    "build-storybook": "NODE_ENV=production build-storybook",
+    "build-storybook": "NODE_ENV=production build-storybook --quiet",
     "dev": "start-storybook -p 6006",
     "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard",
     "pretest": "npm run lint",
     "start": "node scripts/start.js",
-    "test": "jest --detectOpenHandles"
+    "test": "NODE_ENV=test jest --detectOpenHandles"
   },
   "license": "MIT",
   "jest": {

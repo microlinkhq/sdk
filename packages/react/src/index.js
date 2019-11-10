@@ -84,23 +84,26 @@ function Microlink (props) {
         ? setData(fetchData)
         : { ...fetchData, ...setData }
 
-      const { title, description, url, video, image, logo } = payload
+      const { title, description, url, video, audio, image, logo } = payload
 
-      let imageUrl
-      let videoUrl
       const mediaFallback = image || logo || {}
       let media = mediaFallback
+      let videoUrl
+      let audioUrl
       let isVideo = false
+      let isAudio = false
 
-      if (isNil(video)) {
-        media = someProp(payload, [].concat(props.media)) || mediaFallback
-        imageUrl = getUrlPath(media)
-      } else {
-        videoUrl = getUrlPath(video)
-        imageUrl = getUrlPath(media)
+      if (!isNil(audio)) {
+        isAudio = true
+        audioUrl = getUrlPath(audio)
+      } else if (!isNil(video)) {
         isVideo = true
+        videoUrl = getUrlPath(video)
+      } else {
+        media = someProp(payload, [].concat(props.media)) || mediaFallback
       }
 
+      const imageUrl = getUrlPath(media)
       const { color, background_color: backgroundColor } = media
 
       setCardData({
@@ -110,7 +113,9 @@ function Microlink (props) {
         description,
         imageUrl,
         videoUrl,
+        audioUrl,
         isVideo,
+        isAudio,
         backgroundColor
       })
 
@@ -129,7 +134,9 @@ function Microlink (props) {
     description,
     imageUrl,
     videoUrl,
-    isVideo
+    audioUrl,
+    isVideo,
+    isAudio
   } = cardData
 
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
@@ -154,8 +161,10 @@ function Microlink (props) {
           description={description}
           url={url}
           isVideo={isVideo}
+          isAudio={isAudio}
           imageUrl={imageUrl}
           videoUrl={videoUrl}
+          audioUrl={audioUrl}
           autoPlay={autoPlay}
           controls={controls}
           loop={loop}

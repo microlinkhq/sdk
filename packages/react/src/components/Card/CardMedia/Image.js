@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import MediaWrap from './wrap'
+import Wrap from './Wrap'
 import { imageProxy } from '../../../utils'
 
-const Image = styled(MediaWrap)`
+const Image = styled(Wrap)`
   background-image: ${({ imageUrl }) =>
     imageUrl ? `url('${imageProxy(imageUrl)}')` : ''};
 `
