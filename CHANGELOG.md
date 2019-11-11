@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.1](https://github.com/microlinkhq/sdk/compare/v4.4.0...v4.4.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* prevent pass cardSize as DOM property ([#166](https://github.com/microlinkhq/sdk/issues/166)) ([6b4848b](https://github.com/microlinkhq/sdk/commit/6b4848b23aef66bd4058e311657122a487030435))
+
+
+
+
+
 # [4.4.0](https://github.com/microlinkhq/sdk/compare/v4.3.2...v4.4.0) (2019-11-10)
 
 **Note:** Version bump only for package @microlink/root

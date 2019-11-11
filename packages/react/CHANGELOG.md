@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.1](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.0...v4.4.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* prevent pass cardSize as DOM property ([#166](http://github.com/microlinkhq/sdk/tree/master/packages/react/issues/166)) ([6b4848b](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/6b4848b23aef66bd4058e311657122a487030435))
+
+
+
+
+
 # [4.4.0](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.3.2...v4.4.0) (2019-11-10)
 
 **Note:** Version bump only for package @microlink/react
