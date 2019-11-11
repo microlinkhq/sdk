@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 
 import Image from './Image'
 import Controls from './Controls'
+import { classNames } from '../../../utils'
 
 const Audio = ({
   audioUrl,
@@ -14,7 +15,7 @@ const Audio = ({
 }) => {
   const mediaProps = useMemo(
     () => ({
-      className: 'microlink_card__media microlink_card__media_audio',
+      className: `${classNames.media} ${classNames.audio}`,
       src: audioUrl
     }),
     [audioUrl]
@@ -24,7 +25,7 @@ const Audio = ({
     <Image
       imageUrl={imageUrl}
       cardSize={cardSize}
-      className='microlink_card__media_wrapper microlink_card__media_audio_wrapper'
+      className={`${classNames.mediaWrapper} ${classNames.audioWrapper}`}
     >
       <Controls
         autoPlay={autoPlay}

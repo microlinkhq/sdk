@@ -71,7 +71,7 @@ const CardEmptyState = ({ cardSize }) => {
   return (
     <>
       <MediaEmpty cardSize={cardSize} />
-      <Content cardSize={cardSize} className='microlink_card__content'>
+      <Content cardSize={cardSize}>
         <HeaderEmpty cardSize={cardSize} />
         {!isSmallCard && <DescriptionEmpty cardSize={cardSize} />}
         <FooterEmpty />

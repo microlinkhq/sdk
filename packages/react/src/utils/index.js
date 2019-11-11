@@ -72,3 +72,31 @@ export const imageProxy = url => {
 }
 
 export const isLazySupported = !isSSR && 'IntersectionObserver' in window
+
+const BASE_CLASSNAME = 'microlink_card'
+const CONTENT_BASE_CLASSNAME = `${BASE_CLASSNAME}__content`
+const MEDIA_BASE_CLASSNAME = `${BASE_CLASSNAME}__media`
+const CONTROLS_BASE_CLASSNAME = `${MEDIA_BASE_CLASSNAME}__controls`
+
+export const classNames = {
+  main: BASE_CLASSNAME,
+  content: CONTENT_BASE_CLASSNAME,
+  title: `${CONTENT_BASE_CLASSNAME}_title`,
+  description: `${CONTENT_BASE_CLASSNAME}_description`,
+  url: `${CONTENT_BASE_CLASSNAME}_url`,
+  mediaWrapper: `${MEDIA_BASE_CLASSNAME}_wrapper`,
+  media: MEDIA_BASE_CLASSNAME,
+  image: `${MEDIA_BASE_CLASSNAME}_image`,
+  videoWrapper: `${MEDIA_BASE_CLASSNAME}_video_wrapper`,
+  video: `${MEDIA_BASE_CLASSNAME}_video`,
+  audioWrapper: `${MEDIA_BASE_CLASSNAME}_audio_wrapper`,
+  audio: `${MEDIA_BASE_CLASSNAME}_audio`,
+  mediaControls: CONTROLS_BASE_CLASSNAME,
+  playbackControl: `${CONTROLS_BASE_CLASSNAME}_playback`,
+  volumeControl: `${CONTROLS_BASE_CLASSNAME}_volume`,
+  rwControl: `${CONTROLS_BASE_CLASSNAME}_rewind`,
+  ffwControl: `${CONTROLS_BASE_CLASSNAME}_fast_forward`,
+  rateControl: `${CONTROLS_BASE_CLASSNAME}_rate`,
+  progressBar: `${CONTROLS_BASE_CLASSNAME}_progress`,
+  progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`
+}
