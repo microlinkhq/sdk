@@ -10,7 +10,7 @@ const MediaEmpty = styled(CardImage)`
   ${emptyStateImageAnimation};
 `
 
-const HeaderEmpty = styled('header')`
+const HeaderEmpty = styled('span')`
   height: 16px;
   width: ${({ cardSize }) => (!isSmall(cardSize) ? '60%' : '75%')};
   display: block;
@@ -56,7 +56,7 @@ const DescriptionEmpty = styled('span')`
   `};
 `
 
-const FooterEmpty = styled('footer')`
+const FooterEmpty = styled('span')`
   height: 10px;
   width: 30%;
   display: block;
