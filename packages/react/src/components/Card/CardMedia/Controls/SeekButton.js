@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import MediaButton from './MediaButton'
 import { media, isLarge } from '../../../../utils'
 
-const Backward = props => (
+const Backward = ({ cardSize, ...props }) => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 29' {...props}>
     <path
       fill='#FFF'
@@ -17,7 +17,7 @@ const Backward = props => (
   </svg>
 )
 
-const Forward = props => (
+const Forward = ({ cardSize, ...props }) => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 29' {...props}>
     <path
       fill='#FFF'
@@ -44,7 +44,7 @@ const SeekIcon = styled('svg')`
 `
 
 const SeekButtonWrap = styled(MediaButton)`
-  margin: 0 ${({ cardSize }) => isLarge(cardSize) ? '28px' : '3px'};
+  margin: 0 ${({ cardSize }) => (isLarge(cardSize) ? '28px' : '3px')};
 `
 
 const SeekButton = ({ type = 'rewind', cardSize, ...props }) => {
