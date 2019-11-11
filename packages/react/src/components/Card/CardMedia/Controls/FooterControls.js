@@ -59,7 +59,7 @@ const VolumeButton = styled(MediaButton).attrs({
     height: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
 
     ${({ cardSize }) =>
-      !isLarge(cardSize) &&
+    !isLarge(cardSize) &&
       media.mobile`
       width: 12px;
       height: 12px;
