@@ -10,7 +10,7 @@ const MediaEmpty = styled(CardImage)`
   ${emptyStateImageAnimation};
 `
 
-const HeaderEmpty = styled('header')`
+const HeaderEmpty = styled('span')`
   height: 16px;
   width: ${({ cardSize }) => (!isSmall(cardSize) ? '60%' : '75%')};
   display: block;
@@ -56,7 +56,7 @@ const DescriptionEmpty = styled('span')`
   `};
 `
 
-const FooterEmpty = styled('footer')`
+const FooterEmpty = styled('span')`
   height: 10px;
   width: 30%;
   display: block;
@@ -71,7 +71,7 @@ const CardEmptyState = ({ cardSize }) => {
   return (
     <>
       <MediaEmpty cardSize={cardSize} />
-      <Content cardSize={cardSize} className='microlink_card__content'>
+      <Content cardSize={cardSize}>
         <HeaderEmpty cardSize={cardSize} />
         {!isSmallCard && <DescriptionEmpty cardSize={cardSize} />}
         <FooterEmpty />

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Wrap from './Wrap'
 import Controls from './Controls'
-import { imageProxy } from '../../../utils'
+import { classNames, imageProxy } from '../../../utils'
 
 const VideoDOM = styled('video')`
   width: 100%;
@@ -35,7 +35,7 @@ const Video = ({
 }) => {
   const mediaProps = useMemo(
     () => ({
-      className: 'microlink_card__media microlink_card__media_video',
+      className: `${classNames.media} ${classNames.video}`,
       src: videoUrl,
       poster: imageProxy(imageUrl),
       playsInline
@@ -45,7 +45,7 @@ const Video = ({
 
   return (
     <Wrap
-      className='microlink_card__media_wrapper microlink_card__media_video_wrapper'
+      className={`${classNames.mediaWrapper} ${classNames.videoWrapper}`}
       cardSize={cardSize}
       isLoading={isLoading}
       {...props}

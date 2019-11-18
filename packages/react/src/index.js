@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
 
 import {
+  classNames,
   isNil,
   getApiUrl,
   fetchFromApi,
@@ -20,7 +21,6 @@ const Card = ({ url, size, title, description, ...props }) => (
   <>
     <CardMedia key={`${url}__${size}`} url={url} cardSize={size} {...props} />
     <CardContent
-      className='microlink_card__content'
       title={title}
       description={description}
       url={url}
@@ -38,7 +38,7 @@ function Microlink (props) {
     muted,
     loading: loadingProp,
     playsInline,
-    className,
+    className = '',
     size,
     lazy,
     ...restProps
@@ -78,51 +78,48 @@ function Microlink (props) {
     }
   }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key']])
 
-  const mergeData = useCallback(
-    fetchData => {
-      const payload = isFunction(setData)
-        ? setData(fetchData)
-        : { ...fetchData, ...setData }
+  const mergeData = useCallback(fetchData => {
+    const payload = isFunction(setData)
+      ? setData(fetchData)
+      : { ...fetchData, ...setData }
 
-      const { title, description, url, video, audio, image, logo } = payload
+    const { title, description, url, video, audio, image, logo } = payload
 
-      const mediaFallback = image || logo || {}
-      let media = mediaFallback
-      let videoUrl
-      let audioUrl
-      let isVideo = false
-      let isAudio = false
+    const mediaFallback = image || logo || {}
+    let media = mediaFallback
+    let videoUrl
+    let audioUrl
+    let isVideo = false
+    let isAudio = false
 
-      if (!isNil(audio)) {
-        isAudio = true
-        audioUrl = getUrlPath(audio)
-      } else if (!isNil(video)) {
-        isVideo = true
-        videoUrl = getUrlPath(video)
-      } else {
-        media = someProp(payload, [].concat(props.media)) || mediaFallback
-      }
+    if (!isNil(audio)) {
+      isAudio = true
+      audioUrl = getUrlPath(audio)
+    } else if (!isNil(video)) {
+      isVideo = true
+      videoUrl = getUrlPath(video)
+    } else {
+      media = someProp(payload, [].concat(props.media)) || mediaFallback
+    }
 
-      const imageUrl = getUrlPath(media)
-      const { color, background_color: backgroundColor } = media
+    const imageUrl = getUrlPath(media)
+    const { color, background_color: backgroundColor } = media
 
-      setCardData({
-        url,
-        color,
-        title,
-        description,
-        imageUrl,
-        videoUrl,
-        audioUrl,
-        isVideo,
-        isAudio,
-        backgroundColor
-      })
+    setCardData({
+      url,
+      color,
+      title,
+      description,
+      imageUrl,
+      videoUrl,
+      audioUrl,
+      isVideo,
+      isAudio,
+      backgroundColor
+    })
 
-      setLoading(false)
-    },
-    [setData]
-  )
+    setLoading(false)
+  }, [setData])
 
   useEffect(fetchData, [props.url, setData, hasIntersected])
 
@@ -143,7 +140,7 @@ function Microlink (props) {
 
   return (
     <CardWrap
-      className={className ? `microlink_card ${className}` : 'microlink_card'}
+      className={`${classNames.main} ${className}`}
       href={url}
       title={title}
       cardSize={size}

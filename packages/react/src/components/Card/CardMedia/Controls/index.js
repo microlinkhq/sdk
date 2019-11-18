@@ -6,9 +6,9 @@ import PlaybackButton from './PlaybackButton'
 import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
 import { transition } from '../../../../theme'
-import { isSmall } from '../../../../utils'
+import { classNames, isSmall } from '../../../../utils'
 
-const OuterWrap = styled('div')`
+const OuterWrap = styled('div').attrs({ className: classNames.mediaControls })`
   position: absolute;
   left: 0;
   top: 0;
@@ -16,7 +16,7 @@ const OuterWrap = styled('div')`
   bottom: 0;
   transition: background ${transition.long};
 
-  .microlink_card__media_wrapper:hover & {
+  .${classNames.main}:hover & {
     background: rgba(0, 0, 0, 0.35);
   }
 `
@@ -33,7 +33,7 @@ const InnerWrap = styled('div')`
   z-index: 2;
   transition: opacity ${transition.medium};
 
-  .microlink_card__media_wrapper:not(:hover) & {
+  .${classNames.main}:not(:hover) & {
     opacity: ${({ opacity = 0 }) => opacity};
   }
 `
@@ -82,83 +82,65 @@ const Controls = ({
 
   const isNotSmall = useMemo(() => !isSmall(cardSize), [cardSize])
 
-  const setInitialDuration = useCallback(
-    () => {
-      if (mediaRef && mediaRef.current) {
-        setDuration(mediaRef.current.duration || 0)
-      }
-    },
-    [mediaRef.current]
-  )
+  const setInitialDuration = useCallback(() => {
+    if (mediaRef && mediaRef.current) {
+      setDuration(mediaRef.current.duration || 0)
+    }
+  }, [mediaRef.current])
 
-  const onPlaybackToggle = useCallback(
-    event => {
-      event.preventDefault()
+  const onPlaybackToggle = useCallback(event => {
+    event.preventDefault()
 
-      if (mediaRef && mediaRef.current) {
-        if (mediaRef.current.paused) {
-          if (!hasInteracted) {
-            setHasInteracted(true)
-          }
-
-          mediaRef.current.play()
-        } else {
-          mediaRef.current.pause()
+    if (mediaRef && mediaRef.current) {
+      if (mediaRef.current.paused) {
+        if (!hasInteracted) {
+          setHasInteracted(true)
         }
-      }
-    },
-    [mediaRef.current]
-  )
 
-  const onSeekClick = useCallback(
-    (event, type) => {
-      event.preventDefault()
-      event.stopPropagation()
-
-      if (type === 'rewind') {
-        mediaRef.current.currentTime -= 10
+        mediaRef.current.play()
       } else {
-        mediaRef.current.currentTime += 30
+        mediaRef.current.pause()
       }
-    },
-    [mediaRef.current]
-  )
+    }
+  }, [mediaRef.current])
 
-  const onTimeUpdate = useCallback(
-    event => {
-      if (mediaRef && mediaRef.current) {
-        setProgress(mediaRef.current.currentTime)
-      }
-    },
-    [mediaRef.current]
-  )
+  const onSeekClick = useCallback((event, type) => {
+    event.preventDefault()
+    event.stopPropagation()
 
-  const onMuteClick = useCallback(
-    event => {
-      event.preventDefault()
-      event.stopPropagation()
+    if (type === 'rewind') {
+      mediaRef.current.currentTime -= 10
+    } else {
+      mediaRef.current.currentTime += 30
+    }
+  }, [mediaRef.current])
 
-      if (mediaRef && mediaRef.current) {
-        mediaRef.current.muted = !isMuted
-        setIsMuted(prevState => !prevState)
-      }
-    },
-    [mediaRef.current, isMuted]
-  )
+  const onTimeUpdate = useCallback(event => {
+    if (mediaRef && mediaRef.current) {
+      setProgress(mediaRef.current.currentTime)
+    }
+  }, [mediaRef.current])
 
-  const onPlaybackRateClick = useCallback(
-    event => {
-      event.preventDefault()
-      event.stopPropagation()
+  const onMuteClick = useCallback(event => {
+    event.preventDefault()
+    event.stopPropagation()
 
-      if (mediaRef && mediaRef.current) {
-        const nextRate = getNextPlaybackRate(playbackRate)
-        mediaRef.current.playbackRate = nextRate
-        setPlaybackRate(nextRate)
-      }
-    },
-    [mediaRef.current, playbackRate]
-  )
+    if (mediaRef && mediaRef.current) {
+      mediaRef.current.muted = !isMuted
+      setIsMuted(prevState => !prevState)
+    }
+  }, [mediaRef.current, isMuted])
+
+  const onPlaybackRateClick = useCallback(event => {
+    event.preventDefault()
+    event.stopPropagation()
+
+    if (mediaRef && mediaRef.current) {
+      const nextRate = getNextPlaybackRate(playbackRate)
+      mediaRef.current.playbackRate = nextRate
+      setPlaybackRate(nextRate)
+    }
+  }, [mediaRef.current, playbackRate])
 
   const currentTime = useMemo(() => formatSeconds(progress || 0), [progress])
   const endTime = useMemo(() => formatSeconds(duration || 0), [duration])
@@ -193,6 +175,7 @@ const Controls = ({
               <InnerWrap>
                 {isNotSmall && (
                   <SeekButton
+                    className={classNames.rwControl}
                     type='rewind'
                     cardSize={cardSize}
                     onClick={event => onSeekClick(event, 'rewind')}
@@ -207,6 +190,7 @@ const Controls = ({
 
                 {isNotSmall && (
                   <SeekButton
+                    className={classNames.ffwControl}
                     type='fastforward'
                     cardSize={cardSize}
                     onClick={event => onSeekClick(event, 'fastforward')}

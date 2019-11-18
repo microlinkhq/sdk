@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import styled, { css } from 'styled-components'
 
 import MediaButton from './MediaButton'
-import { isSmall, isLarge, media } from '../../../../utils'
+import { classNames, isSmall, isLarge, media } from '../../../../utils'
 
 const Pause = props => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 20' {...props}>
@@ -40,7 +40,9 @@ const PlaybackIcon = styled('svg')`
   stroke: #fff;
 `
 
-const PlaybackButtonWrap = styled(MediaButton)`
+const PlaybackButtonWrap = styled(MediaButton).attrs({
+  className: classNames.playbackControl
+})`
   ${PlaybackIcon} {
     ${({ cardSize }) => css`
       width: ${iconSizes[cardSize]};

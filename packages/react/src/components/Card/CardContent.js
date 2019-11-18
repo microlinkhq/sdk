@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components'
 import CardText from './CardText'
 
 import { transition } from '../../theme'
-import { media, isLarge, isSmall, isNil } from '../../utils'
+import { classNames, media, isLarge, isSmall, isNil } from '../../utils'
 
 const REGEX_STRIP_WWW = /^www\./
 const BADGE_WIDTH = '16px'
@@ -27,7 +27,7 @@ const mobileDescriptionStyle = css`
   `};
 `
 
-export const Content = styled('div')`
+export const Content = styled('div').attrs({ className: classNames.content })`
   display: flex;
   padding: 10px 15px;
   min-width: 0;
@@ -40,7 +40,7 @@ export const Content = styled('div')`
   `};
 `
 
-const Header = styled('header')`
+const Header = styled('header').attrs({ className: classNames.title })`
   text-align: left;
   font-weight: bold;
   margin: 0;
@@ -57,7 +57,7 @@ const Header = styled('header')`
   `}
 `
 
-const Description = styled('div')`
+const Description = styled('div').attrs({ className: classNames.description })`
   text-align: left;
   font-size: 14px;
   flex-grow: 2;
@@ -66,7 +66,7 @@ const Description = styled('div')`
   ${({ cardSize }) => !isLarge(cardSize) && mobileDescriptionStyle};
 `
 
-const Footer = styled('footer')`
+const Footer = styled('footer').attrs({ className: classNames.url })`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,7 +83,7 @@ const Author = styled(CardText)`
   opacity: 0.75;
   transition: opacity ${transition.medium};
 
-  .microlink_card:hover & {
+  .${classNames.main}:hover & {
     opacity: 1;
   }
 `
@@ -105,7 +105,7 @@ const PoweredBy = styled('span').attrs({ title: 'microlink.io' })`
   height: ${BADGE_HEIGHT};
 `
 
-export default ({ title, description, url, cardSize, className }) => {
+export default ({ title, description, url, cardSize }) => {
   const isSmallCard = isSmall(cardSize)
   const formattedUrl = useMemo(() => getHostname(url), [url])
   const handleOnClick = useCallback(e => {
@@ -114,19 +114,16 @@ export default ({ title, description, url, cardSize, className }) => {
   })
 
   return (
-    <Content className={className} cardSize={cardSize}>
-      <Header className='microlink_card__content_title' cardSize={cardSize}>
+    <Content cardSize={cardSize}>
+      <Header cardSize={cardSize}>
         <CardText useNanoClamp={false}>{title}</CardText>
       </Header>
       {!isSmallCard && (
-        <Description
-          className='microlink_card__content_description'
-          cardSize={cardSize}
-        >
+        <Description cardSize={cardSize}>
           <CardText lines={2}>{description}</CardText>
         </Description>
       )}
-      <Footer cardSize={cardSize} className='microlink_card__content_url'>
+      <Footer cardSize={cardSize}>
         <Author useNanoClamp={false}>{formattedUrl}</Author>
         <PoweredBy onClick={handleOnClick} />
       </Footer>

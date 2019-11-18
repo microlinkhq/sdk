@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
 import MediaButton from './MediaButton'
-import { media, isLarge } from '../../../../utils'
+import { classNames, media, isLarge } from '../../../../utils'
 import { font, transition } from '../../../../theme'
 
 const VolumeMute = props => (
@@ -42,7 +42,7 @@ const BottomControls = styled('div')`
   align-items: center;
   transition: opacity ${transition.medium};
 
-  .microlink_card__media_wrapper:not(:hover) & {
+  .${classNames.main}:not(:hover) & {
     opacity: 0;
   }
 `
@@ -51,7 +51,9 @@ const VolumeIcon = styled('svg')`
   stroke: #fff;
 `
 
-const VolumeButton = styled(MediaButton)`
+const VolumeButton = styled(MediaButton).attrs({
+  className: classNames.volumeControl
+})`
   ${VolumeIcon} {
     width: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
     height: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
@@ -65,7 +67,9 @@ const VolumeButton = styled(MediaButton)`
   }
 `
 
-const PlaybackRateButton = styled(MediaButton)`
+const PlaybackRateButton = styled(MediaButton).attrs({
+  className: classNames.rateControl
+})`
   font-size: ${({ cardSize }) => (isLarge(cardSize) ? 12 : 10)}px;
   min-width: ${({ cardSize }) => (isLarge(cardSize) ? 33 : 28)}px;
   line-height: 1;
@@ -86,7 +90,7 @@ const PlaybackRateButton = styled(MediaButton)`
   `}
 `
 
-const TimeLabel = styled('span')`
+const TimeLabel = styled('span').attrs({ className: classNames.progressTime })`
   margin: ${({ right }) => (!right ? '0 auto 0 0' : '0 0 0 auto')};
   font-family: ${font.mono};
   font-size: 12px;
