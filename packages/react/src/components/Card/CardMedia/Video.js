@@ -34,12 +34,15 @@ const Video = ({
   ...props
 }) => {
   const mediaProps = useMemo(
-    () => ({
-      className: `${classNames.media} ${classNames.video}`,
-      src: videoUrl,
-      poster: imageProxy(imageUrl),
-      playsInline
-    }),
+    () => {
+      const mediaProps = {
+        className: `${classNames.media} ${classNames.video}`,
+        src: videoUrl,
+        playsInline
+      }
+      if (imageUrl) mediaProps.poster = imageProxy(imageUrl)
+      return mediaProps
+    },
     [imageUrl, loop, muted, playsInline, videoUrl]
   )
 
