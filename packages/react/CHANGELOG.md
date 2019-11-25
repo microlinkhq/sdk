@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.5](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.4...v4.4.5) (2019-11-25)
+
+
+### Bug Fixes
+
+* prevent to proxify local urls ([060d38a](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/060d38a9e877d9d28d610a8fb928063d1536d4f7))
+
+
+
+
+
 ## [4.4.4](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.3...v4.4.4) (2019-11-21)
 
 **Note:** Version bump only for package @microlink/react
