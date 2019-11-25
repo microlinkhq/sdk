@@ -1,6 +1,8 @@
 import { css } from 'styled-components'
 import { fetchFromApi, getApiUrl as createApiUrl } from '@microlink/mql'
 
+const REGEX_LOCALHOST = /http:\/\/localhost/
+
 const isSSR = typeof window === 'undefined'
 
 export const isFunction = fn => typeof fn === 'function'
@@ -60,7 +62,10 @@ export const isLarge = cardSize => cardSize === 'large'
 
 export const isSmall = cardSize => cardSize === 'small'
 
-export const imageProxy = url => `https://images.weserv.nl/?url=${encodeURI(url)}&l=9&af&il`
+export const imageProxy = url =>
+  REGEX_LOCALHOST.test(url)
+    ? url
+    : `https://images.weserv.nl/?url=${encodeURI(url)}&l=9&af&il`
 
 export const isLazySupported = !isSSR && 'IntersectionObserver' in window
 
