@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.6](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.5...v4.4.6) (2019-11-26)
+
+
+### Bug Fixes
+
+* use encodeURIComponent instead of encodeURI ([03fb267](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/03fb2675ab2b6066f83d000f4a8ca3c789b019a7))
+
+
+
+
+
 ## [4.4.5](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.4...v4.4.5) (2019-11-25)
 
 
