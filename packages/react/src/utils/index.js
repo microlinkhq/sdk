@@ -65,7 +65,7 @@ export const isSmall = cardSize => cardSize === 'small'
 export const imageProxy = url =>
   REGEX_LOCALHOST.test(url)
     ? url
-    : `https://images.weserv.nl/?url=${encodeURI(url)}&l=9&af&il`
+    : `https://images.weserv.nl/?url=${encodeURIComponent(url)}&l=9&af&il`
 
 export const isLazySupported = !isSSR && 'IntersectionObserver' in window
 

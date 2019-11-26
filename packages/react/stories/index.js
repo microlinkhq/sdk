@@ -54,7 +54,7 @@ storiesOf('setData', module)
   .add('object', () =>
     createStoryEntry({
       setData: {
-        image: { url: 'https://microlink.io/banner_mql.png' },
+        image: { url: 'https://cdn.microlink.io/logo/banner.png' },
         title: 'Microlink Query Language',
         description: 'Turns any web into data',
         url: 'https://docs.microlink.io'
