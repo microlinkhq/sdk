@@ -54,7 +54,10 @@ storiesOf('setData', module)
   .add('object', () =>
     createStoryEntry({
       setData: {
-        image: { url: 'https://cdn.microlink.io/logo/banner.png' },
+        image: {
+          url:
+            'https://media.tenor.com/images/5d4791abbfa98823cdbcd82b7ece2ced/tenor.gif'
+        },
         title: 'Microlink Query Language',
         description: 'Turns any web into data',
         url: 'https://docs.microlink.io'
