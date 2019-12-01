@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.7](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.6...v4.4.7) (2019-12-01)
+
+
+### Bug Fixes
+
+* optimize gif properly ([3b31ed5](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/3b31ed5a9a699f3b2964bc8f66b9032db7c237a2))
+
+
+
+
+
 ## [4.4.6](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.5...v4.4.6) (2019-11-26)
 
 
