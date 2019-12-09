@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
+import { GlobalContext } from '../../../context/GlobalState'
 import { getUrlPath } from '../../../utils'
 import { ImageLoadCatcher } from './loader'
 import Image from './Image'
@@ -20,15 +21,17 @@ const getMediaType = (isAudio, isVideo) => {
   return 'image'
 }
 
-function CardMedia (props) {
-  const { imageUrl, isAudio, isVideo } = props
+const CardMedia = () => {
+  const {
+    state: { imageUrl, isAudio, isVideo }
+  } = useContext(GlobalContext)
   const [isLoading, setIsLoading] = useState(!isUrl(imageUrl))
   const mediaType = getMediaType(isAudio, isVideo)
   const MediaComponent = MEDIA_COMPONENT[mediaType]
 
   return (
     <>
-      <MediaComponent {...props} isLoading={isLoading} />
+      <MediaComponent isLoading={isLoading} />
       {isLoading && (
         <ImageLoadCatcher src={imageUrl} onLoad={() => setIsLoading(false)} />
       )}

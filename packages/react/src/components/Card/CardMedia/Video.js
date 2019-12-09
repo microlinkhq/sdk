@@ -1,8 +1,9 @@
-import React, { useMemo } from 'react'
+import React, { useContext, useMemo } from 'react'
 import styled from 'styled-components'
 
 import Wrap from './Wrap'
 import Controls from './Controls'
+import { GlobalContext } from '../../../context/GlobalState'
 import { classNames, imageProxy } from '../../../utils'
 
 const VideoDOM = styled('video')`
@@ -21,47 +22,27 @@ const VideoDOM = styled('video')`
   }
 `
 
-const Video = ({
-  autoPlay,
-  controls: hasControls,
-  cardSize,
-  isLoading,
-  loop,
-  imageUrl,
-  muted,
-  playsInline,
-  videoUrl,
-  ...props
-}) => {
-  const mediaProps = useMemo(
-    () => {
-      const mediaProps = {
-        className: `${classNames.media} ${classNames.video}`,
-        src: videoUrl,
-        playsInline
-      }
-      if (imageUrl) mediaProps.poster = imageProxy(imageUrl)
-      return mediaProps
-    },
-    [imageUrl, loop, muted, playsInline, videoUrl]
-  )
+const Video = props => {
+  const {
+    state: { imageUrl, playsInline, videoUrl }
+  } = useContext(GlobalContext)
+
+  const mediaProps = useMemo(() => {
+    const mediaProps = {
+      className: `${classNames.media} ${classNames.video}`,
+      src: videoUrl,
+      playsInline
+    }
+    if (imageUrl) mediaProps.poster = imageProxy(imageUrl)
+    return mediaProps
+  }, [imageUrl, playsInline, videoUrl])
 
   return (
     <Wrap
       className={`${classNames.mediaWrapper} ${classNames.videoWrapper}`}
-      cardSize={cardSize}
-      isLoading={isLoading}
       {...props}
     >
-      <Controls
-        autoPlay={autoPlay}
-        cardSize={cardSize}
-        loop={loop}
-        MediaComponent={VideoDOM}
-        mediaProps={mediaProps}
-        muted={muted}
-        showControls={hasControls}
-      />
+      <Controls MediaComponent={VideoDOM} mediaProps={mediaProps} />
     </Wrap>
   )
 }
