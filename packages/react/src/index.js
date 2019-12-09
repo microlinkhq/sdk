@@ -72,10 +72,10 @@ const Card = props => {
   }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key'], url])
 
   const mergeData = useCallback(
-    fetchData => {
+    fetchedData => {
       const payload = isFunction(setData)
-        ? setData(fetchData)
-        : { ...fetchData, ...setData }
+        ? setData()
+        : { ...fetchedData, ...setData }
 
       const { title, description, url, video, audio, image, logo } = payload
 
