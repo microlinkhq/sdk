@@ -1,8 +1,9 @@
-import { createElement, forwardRef } from 'react'
+import { createElement, forwardRef, useContext } from 'react'
 import styled, { css } from 'styled-components'
 
 import { media, isLarge } from '../../utils'
 import { font, animation, speed } from '../../theme'
+import { GlobalContext } from '../../context/GlobalState'
 
 const HEIGHT = '382px'
 
@@ -42,7 +43,8 @@ const rtlStyle = ({ cardSize }) => css`
   flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'};
 `
 
-const baseStyle = css(() => `
+const baseStyle = css(
+  () => `
   max-width: 500px;
   background-color: #fff;
   border-width: 1px;
@@ -64,7 +66,8 @@ const baseStyle = css(() => `
   &:hover {
     outline: 0;
   }
-`)
+`
+)
 
 const createEl = el =>
   styled(el)(
@@ -79,7 +82,11 @@ const createEl = el =>
   )
 
 const CardWrap = forwardRef(({ href, rel, target, ...restProps }, ref) => {
-  const props = { ...restProps, ref }
+  const {
+    state: { backgroundColor, color, title },
+    props: { size: cardSize }
+  } = useContext(GlobalContext)
+  const props = { ...restProps, backgroundColor, cardSize, color, ref, title }
 
   return createElement(
     createEl(props.as),

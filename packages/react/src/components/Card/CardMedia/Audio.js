@@ -1,18 +1,15 @@
-import React, { useMemo } from 'react'
+import React, { useContext, useMemo } from 'react'
 
 import Image from './Image'
 import Controls from './Controls'
+import { GlobalContext } from '../../../context/GlobalState'
 import { classNames } from '../../../utils'
 
-const Audio = ({
-  audioUrl,
-  autoPlay,
-  cardSize,
-  controls: hasControls,
-  imageUrl,
-  loop,
-  muted
-}) => {
+const Audio = props => {
+  const {
+    state: { audioUrl }
+  } = useContext(GlobalContext)
+
   const mediaProps = useMemo(
     () => ({
       className: `${classNames.media} ${classNames.audio}`,
@@ -23,19 +20,10 @@ const Audio = ({
 
   return (
     <Image
-      imageUrl={imageUrl}
-      cardSize={cardSize}
       className={`${classNames.mediaWrapper} ${classNames.audioWrapper}`}
+      {...props}
     >
-      <Controls
-        autoPlay={autoPlay}
-        cardSize={cardSize}
-        loop={loop}
-        MediaComponent='audio'
-        mediaProps={mediaProps}
-        muted={muted}
-        showControls={hasControls}
-      />
+      <Controls MediaComponent='audio' mediaProps={mediaProps} />
     </Image>
   )
 }

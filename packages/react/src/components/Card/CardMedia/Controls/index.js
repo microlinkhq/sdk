@@ -1,4 +1,10 @@
-import React, { useCallback, useRef, useMemo, useState } from 'react'
+import React, {
+  useCallback,
+  useRef,
+  useMemo,
+  useState,
+  useContext
+} from 'react'
 import styled from 'styled-components'
 
 import FooterControls from './FooterControls'
@@ -7,6 +13,7 @@ import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
 import { transition } from '../../../../theme'
 import { classNames, isSmall } from '../../../../utils'
+import { GlobalContext } from '../../../../context/GlobalState'
 
 const OuterWrap = styled('div').attrs({ className: classNames.mediaControls })`
   position: absolute;
@@ -63,15 +70,10 @@ const formatSeconds = secs => {
     .join(':')
 }
 
-const Controls = ({
-  autoPlay,
-  cardSize,
-  loop,
-  MediaComponent,
-  mediaProps,
-  muted = false,
-  showControls
-}) => {
+const Controls = ({ MediaComponent, mediaProps }) => {
+  const {
+    props: { autoPlay, controls, muted, loop, size }
+  } = useContext(GlobalContext)
   const mediaRef = useRef()
   const [duration, setDuration] = useState(0)
   const [progress, setProgress] = useState(0)
@@ -80,7 +82,7 @@ const Controls = ({
   const [playbackRate, setPlaybackRate] = useState(1)
   const [hasInteracted, setHasInteracted] = useState(autoPlay)
 
-  const isNotSmall = useMemo(() => !isSmall(cardSize), [cardSize])
+  const isNotSmall = useMemo(() => !isSmall(size), [size])
 
   const setInitialDuration = useCallback(() => {
     if (mediaRef && mediaRef.current) {
@@ -88,59 +90,74 @@ const Controls = ({
     }
   }, [mediaRef.current])
 
-  const onPlaybackToggle = useCallback(event => {
-    event.preventDefault()
+  const onPlaybackToggle = useCallback(
+    event => {
+      event.preventDefault()
 
-    if (mediaRef && mediaRef.current) {
-      if (mediaRef.current.paused) {
-        if (!hasInteracted) {
-          setHasInteracted(true)
+      if (mediaRef && mediaRef.current) {
+        if (mediaRef.current.paused) {
+          if (!hasInteracted) {
+            setHasInteracted(true)
+          }
+
+          mediaRef.current.play()
+        } else {
+          mediaRef.current.pause()
         }
-
-        mediaRef.current.play()
-      } else {
-        mediaRef.current.pause()
       }
-    }
-  }, [mediaRef.current])
+    },
+    [mediaRef.current]
+  )
 
-  const onSeekClick = useCallback((event, type) => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onSeekClick = useCallback(
+    (event, type) => {
+      event.preventDefault()
+      event.stopPropagation()
 
-    if (type === 'rewind') {
-      mediaRef.current.currentTime -= 10
-    } else {
-      mediaRef.current.currentTime += 30
-    }
-  }, [mediaRef.current])
+      if (type === 'rewind') {
+        mediaRef.current.currentTime -= 10
+      } else {
+        mediaRef.current.currentTime += 30
+      }
+    },
+    [mediaRef.current]
+  )
 
-  const onTimeUpdate = useCallback(event => {
-    if (mediaRef && mediaRef.current) {
-      setProgress(mediaRef.current.currentTime)
-    }
-  }, [mediaRef.current])
+  const onTimeUpdate = useCallback(
+    event => {
+      if (mediaRef && mediaRef.current) {
+        setProgress(mediaRef.current.currentTime)
+      }
+    },
+    [mediaRef.current]
+  )
 
-  const onMuteClick = useCallback(event => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onMuteClick = useCallback(
+    event => {
+      event.preventDefault()
+      event.stopPropagation()
 
-    if (mediaRef && mediaRef.current) {
-      mediaRef.current.muted = !isMuted
-      setIsMuted(prevState => !prevState)
-    }
-  }, [mediaRef.current, isMuted])
+      if (mediaRef && mediaRef.current) {
+        mediaRef.current.muted = !isMuted
+        setIsMuted(prevState => !prevState)
+      }
+    },
+    [mediaRef.current, isMuted]
+  )
 
-  const onPlaybackRateClick = useCallback(event => {
-    event.preventDefault()
-    event.stopPropagation()
+  const onPlaybackRateClick = useCallback(
+    event => {
+      event.preventDefault()
+      event.stopPropagation()
 
-    if (mediaRef && mediaRef.current) {
-      const nextRate = getNextPlaybackRate(playbackRate)
-      mediaRef.current.playbackRate = nextRate
-      setPlaybackRate(nextRate)
-    }
-  }, [mediaRef.current, playbackRate])
+      if (mediaRef && mediaRef.current) {
+        const nextRate = getNextPlaybackRate(playbackRate)
+        mediaRef.current.playbackRate = nextRate
+        setPlaybackRate(nextRate)
+      }
+    },
+    [mediaRef.current, playbackRate]
+  )
 
   const currentTime = useMemo(() => formatSeconds(progress || 0), [progress])
   const endTime = useMemo(() => formatSeconds(duration || 0), [duration])
@@ -164,11 +181,11 @@ const Controls = ({
         muted={muted}
       />
 
-      {showControls && (
+      {controls && (
         <OuterWrap>
           {!hasInteracted ? (
             <InnerWrap opacity={1}>
-              <PlaybackButton cardSize={cardSize} onClick={onPlaybackToggle} />
+              <PlaybackButton cardSize={size} onClick={onPlaybackToggle} />
             </InnerWrap>
           ) : (
             <>
@@ -177,13 +194,13 @@ const Controls = ({
                   <SeekButton
                     className={classNames.rwControl}
                     type='rewind'
-                    cardSize={cardSize}
+                    cardSize={size}
                     onClick={event => onSeekClick(event, 'rewind')}
                   />
                 )}
 
                 <PlaybackButton
-                  cardSize={cardSize}
+                  cardSize={size}
                   isPlaying={isPlaying}
                   onClick={onPlaybackToggle}
                 />
@@ -192,7 +209,7 @@ const Controls = ({
                   <SeekButton
                     className={classNames.ffwControl}
                     type='fastforward'
-                    cardSize={cardSize}
+                    cardSize={size}
                     onClick={event => onSeekClick(event, 'fastforward')}
                   />
                 )}
@@ -200,7 +217,7 @@ const Controls = ({
 
               {isNotSmall && (
                 <FooterControls
-                  cardSize={cardSize}
+                  cardSize={size}
                   currentTime={currentTime}
                   endTime={endTime}
                   isMuted={isMuted}
@@ -212,7 +229,7 @@ const Controls = ({
             </>
           )}
 
-          <ProgressBar cardSize={cardSize} progress={progressBarWidth} />
+          <ProgressBar cardSize={size} progress={progressBarWidth} />
         </OuterWrap>
       )}
     </>

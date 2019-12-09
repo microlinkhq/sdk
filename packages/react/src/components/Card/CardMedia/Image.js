@@ -1,13 +1,22 @@
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 
 import Wrap from './Wrap'
+import { GlobalContext } from '../../../context/GlobalState'
 import { classNames, imageProxy } from '../../../utils'
 
-const Image = styled(Wrap).attrs({
+const ImageWrap = styled(Wrap).attrs({
   className: `${classNames.media} ${classNames.image}`
 })`
-  background-image: ${({ imageUrl }) =>
-    imageUrl ? `url('${imageProxy(imageUrl)}')` : ''};
+  background-image: ${({ url }) => (url ? `url('${imageProxy(url)}')` : '')};
 `
 
-export default Image
+const ImageComponent = props => {
+  const {
+    state: { imageUrl }
+  } = useContext(GlobalContext)
+
+  return <ImageWrap url={imageUrl} {...props} />
+}
+
+export default ImageComponent
