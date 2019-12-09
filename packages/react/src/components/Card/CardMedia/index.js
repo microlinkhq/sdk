@@ -25,7 +25,7 @@ const CardMedia = () => {
   const {
     state: { imageUrl, isAudio, isVideo }
   } = useContext(GlobalContext)
-  const [isLoading, setIsLoading] = useState(!isUrl(imageUrl))
+  const [isLoading, setIsLoading] = useState(isUrl(imageUrl))
   const mediaType = getMediaType(isAudio, isVideo)
   const MediaComponent = MEDIA_COMPONENT[mediaType]
 
