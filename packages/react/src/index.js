@@ -137,7 +137,11 @@ const Card = props => {
   const isLoading = isLoadingUndefined ? loadingState : loading
 
   if (isError) {
-    return null
+    return (
+      <a href={url} {...restProps}>
+        {url}
+      </a>
+    )
   }
 
   if (iframeMedia) {
