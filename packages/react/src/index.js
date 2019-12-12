@@ -5,16 +5,18 @@ import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
 
 import {
   classNames,
-  isNil,
-  getApiUrl,
   fetchFromApi,
+  getApiUrl,
   getUrlPath,
   imageProxy,
-  someProp,
   isFunction,
   isLazySupported,
-  isObject
+  isNil,
+  isObject,
+  preferMedia,
+  someProp
 } from './utils'
+
 import { useIntersectionObserver } from './utils/hooks'
 
 const Card = ({ url, size, title, description, ...props }) => (
@@ -78,48 +80,51 @@ function Microlink (props) {
     }
   }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key']])
 
-  const mergeData = useCallback(fetchData => {
-    const payload = isFunction(setData)
-      ? setData(fetchData)
-      : { ...fetchData, ...setData }
+  const mergeData = useCallback(
+    fetchData => {
+      const payload = isFunction(setData)
+        ? setData(fetchData)
+        : { ...fetchData, ...setData }
 
-    const { title, description, url, video, audio, image, logo } = payload
+      const { title, description, url, video, audio, image, logo } = payload
 
-    const mediaFallback = image || logo || {}
-    let media = mediaFallback
-    let videoUrl
-    let audioUrl
-    let isVideo = false
-    let isAudio = false
+      const mediaFallback = image || logo || {}
+      let media = mediaFallback
+      let videoUrl
+      let audioUrl
+      let isVideo = false
+      let isAudio = false
 
-    if (!isNil(audio)) {
-      isAudio = true
-      audioUrl = getUrlPath(audio)
-    } else if (!isNil(video)) {
-      isVideo = true
-      videoUrl = getUrlPath(video)
-    } else {
-      media = someProp(payload, [].concat(props.media)) || mediaFallback
-    }
+      if (!isNil(audio) && preferMedia(props.media) === 'audio') {
+        isAudio = true
+        audioUrl = getUrlPath(audio)
+      } else if (!isNil(video)) {
+        isVideo = true
+        videoUrl = getUrlPath(video)
+      } else {
+        media = someProp(payload, props.media) || mediaFallback
+      }
 
-    const imageUrl = getUrlPath(media)
-    const { color, background_color: backgroundColor } = media
+      const imageUrl = getUrlPath(media)
+      const { color, background_color: backgroundColor } = media
 
-    setCardData({
-      url,
-      color,
-      title,
-      description,
-      imageUrl,
-      videoUrl,
-      audioUrl,
-      isVideo,
-      isAudio,
-      backgroundColor
-    })
+      setCardData({
+        url,
+        color,
+        title,
+        description,
+        imageUrl,
+        videoUrl,
+        audioUrl,
+        isVideo,
+        isAudio,
+        backgroundColor
+      })
 
-    setLoading(false)
-  }, [setData])
+      setLoading(false)
+    },
+    [setData]
+  )
 
   useEffect(fetchData, [props.url, setData, hasIntersected])
 
