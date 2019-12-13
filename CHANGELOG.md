@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.8](https://github.com/microlinkhq/sdk/compare/v4.4.7...v4.4.8) (2019-12-13)
+
+
+### Bug Fixes
+
+* respect media priorities ([#170](https://github.com/microlinkhq/sdk/issues/170)) ([5de299c](https://github.com/microlinkhq/sdk/commit/5de299c160031ac1383fb8127cd40a612122f0b8))
+
+
+
+
+
 ## [4.4.7](https://github.com/microlinkhq/sdk/compare/v4.4.6...v4.4.7) (2019-12-01)
 
 

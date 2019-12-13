@@ -11,15 +11,16 @@ import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
 import GlobalState, { GlobalContext } from './context/GlobalState'
 import {
   classNames,
-  isNil,
-  getApiUrl,
   fetchFromApi,
+  getApiUrl,
   getUrlPath,
   imageProxy,
-  someProp,
   isFunction,
   isLazySupported,
-  isObject
+  isNil,
+  isObject,
+  preferMedia,
+  someProp
 } from './utils'
 import { useIntersectionObserver } from './utils/hooks'
 
@@ -86,7 +87,7 @@ const Card = props => {
       let isVideo = false
       let isAudio = false
 
-      if (!isNil(audio)) {
+      if (!isNil(audio) && preferMedia(props.media) === 'audio') {
         isAudio = true
         audioUrl = getUrlPath(audio)
       } else if (!isNil(video)) {

@@ -69,6 +69,32 @@ storiesOf('setData', module)
       setData: () => ({ title: 'My Custom Title' })
     })
   )
+  .add('prefer video over audio', () =>
+    createStoryEntry({
+      media: ['video', 'audio'],
+      setData: data => ({
+        audio: {
+          url: 'https://invalidurl.lol',
+          type: 'mp4',
+          duration: 552.054422,
+          size: 8935291,
+          duration_pretty: '9m',
+          size_pretty: '8.94 MB'
+        },
+        video: {
+          url:
+            'https://cdn.microlink.io/data/assets/youtube.com!watch!v=9P6rdqiybaw/r3---sn-ab5l6nzl.googlevideo.com!videoplayback!c=WEB&dur=552.054&ei=-fbwXa7LFq2Khwaf6JnoDg&expire=15.mp4',
+          type: 'mp4',
+          duration: 552.007943,
+          size: 54633895,
+          height: 720,
+          width: 1280,
+          duration_pretty: '9m',
+          size_pretty: '54.6 MB'
+        }
+      })
+    })
+  )
 
 storiesOf('style', module)
   .add('width', () =>
