@@ -5,6 +5,12 @@ const REGEX_LOCALHOST = /http:\/\/localhost/
 
 const isSSR = typeof window === 'undefined'
 
+export const preferMedia = props => {
+  const audioIndex = props.findIndex(propName => propName === 'audio')
+  const videoIndex = props.findIndex(propName => propName === 'video')
+  return audioIndex < videoIndex ? 'audio' : 'video'
+}
+
 export const isFunction = fn => typeof fn === 'function'
 
 export const isObject = obj => typeof obj === 'object'
