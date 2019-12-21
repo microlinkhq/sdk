@@ -49,6 +49,18 @@ storiesOf('media', module)
       media: 'screenshot'
     })
   ])
+  .add('iframe', () =>
+    urlsVideo.map(url => createStoryEntry({ url, media: 'iframe' }))
+  )
+  .add('iframe (customized)', () =>
+    urlsVideo.map(url =>
+      createStoryEntry({
+        url,
+        media: 'iframe',
+        iframe: { width: 480, height: 270 }
+      })
+    )
+  )
 
 storiesOf('setData', module)
   .add('object', () =>

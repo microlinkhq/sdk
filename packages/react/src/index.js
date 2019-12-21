@@ -39,6 +39,7 @@ const Card = props => {
   const [isError, setIsError] = useState(false)
   const isLoadingUndefined = useMemo(() => loading === undefined, [loading])
   const [apiUrl, apiUrlProps] = useMemo(() => getApiUrl(props), [props])
+  const [iframeMedia, setIframeMedia] = useState(null)
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -78,7 +79,16 @@ const Card = props => {
         ? setData()
         : { ...fetchedData, ...setData }
 
-      const { title, description, url, video, audio, image, logo } = payload
+      const {
+        title,
+        description,
+        url,
+        video,
+        audio,
+        image,
+        logo,
+        iframe
+      } = payload
 
       const mediaFallback = image || logo || {}
       let media = mediaFallback
@@ -93,6 +103,8 @@ const Card = props => {
       } else if (!isNil(video)) {
         isVideo = true
         videoUrl = getUrlPath(video)
+      } else if (!isNil(iframe)) {
+        setIframeMedia(iframe)
       } else {
         media = someProp(payload, [].concat(mediaProp)) || mediaFallback
       }
@@ -127,6 +139,15 @@ const Card = props => {
       <a href={url} {...restProps}>
         {url}
       </a>
+    )
+  }
+
+  if (iframeMedia) {
+    return (
+      <div
+        className={classNames.iframe}
+        dangerouslySetInnerHTML={{ __html: iframeMedia }}
+      />
     )
   }
 
@@ -173,6 +194,7 @@ Microlink.propTypes = {
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
   direction: PropTypes.string,
+  iframe: PropTypes.object,
   lazy: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
   loop: PropTypes.bool,
   media: PropTypes.oneOfType([

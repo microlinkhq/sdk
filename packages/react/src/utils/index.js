@@ -42,6 +42,7 @@ export const getApiUrl = ({
   data,
   force,
   headers,
+  iframe,
   media,
   prerender = 'auto',
   proxy,
@@ -54,6 +55,7 @@ export const getApiUrl = ({
     data,
     force,
     headers,
+    iframe: (isObject(iframe) && iframe) || media.includes('iframe'),
     palette: contrast,
     prerender,
     proxy,
@@ -100,5 +102,6 @@ export const classNames = {
   ffwControl: `${CONTROLS_BASE_CLASSNAME}_fast_forward`,
   rateControl: `${CONTROLS_BASE_CLASSNAME}_rate`,
   progressBar: `${CONTROLS_BASE_CLASSNAME}_progress`,
-  progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`
+  progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`,
+  iframe: `${BASE_CLASSNAME}__iframe`
 }
