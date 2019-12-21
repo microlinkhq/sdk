@@ -14,7 +14,8 @@ import {
   isNil,
   isObject,
   preferMedia,
-  someProp
+  someProp,
+  castArray
 } from './utils'
 
 import { useIntersectionObserver } from './utils/hooks'
@@ -43,8 +44,12 @@ function Microlink (props) {
     className = '',
     size,
     lazy,
+    media: mediaProp,
     ...restProps
   } = props
+
+  const mediaProps = castArray(mediaProp)
+
   const isLoadingUndefined = useMemo(() => loadingProp === undefined, [
     loadingProp
   ])
@@ -52,7 +57,10 @@ function Microlink (props) {
     isLoadingUndefined ? true : loadingProp
   )
   const [cardData, setCardData] = useState({})
-  const [apiUrl, apiUrlProps] = useMemo(() => getApiUrl(props), [props])
+  const [apiUrl, apiUrlProps] = useMemo(
+    () => getApiUrl({ ...props, media: mediaProps }),
+    [props]
+  )
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -95,14 +103,14 @@ function Microlink (props) {
       let isVideo = false
       let isAudio = false
 
-      if (!isNil(audio) && preferMedia(props.media) === 'audio') {
+      if (!isNil(audio) && preferMedia(mediaProps) === 'audio') {
         isAudio = true
         audioUrl = getUrlPath(audio)
       } else if (!isNil(video)) {
         isVideo = true
         videoUrl = getUrlPath(video)
       } else {
-        media = someProp(payload, props.media) || mediaFallback
+        media = someProp(payload, mediaProps) || mediaFallback
       }
 
       const imageUrl = getUrlPath(media)
