@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.9](https://github.com/microlinkhq/sdk/compare/v4.4.8...v4.4.9) (2019-12-21)
+
+
+### Bug Fixes
+
+* ensure props.media is an array ([435f570](https://github.com/microlinkhq/sdk/commit/435f570a722d740c91529c2026a4c0ddb106654d))
+
+
+
+
+
 ## [4.4.8](https://github.com/microlinkhq/sdk/compare/v4.4.7...v4.4.8) (2019-12-13)
 
 
