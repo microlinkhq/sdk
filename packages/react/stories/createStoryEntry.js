@@ -47,17 +47,21 @@ const VisualProps = ({ children }) => (
 )
 
 const createStoryEntry = (storyProps = {}, showProps = false) => {
-  const { url = 'https://microlink.io', ...props } = storyProps
+  const {
+    url = 'https://microlink.io',
+    sizes = ['normal', 'small', 'large'],
+    ...props
+  } = storyProps
 
   return (
-    <StoryEntry key={JSON.stringify(storyProps)}>
+    <StoryEntry key={JSON.stringify({ ...storyProps, url, sizes })}>
       <StoryLink href={url}>{url}</StoryLink>
       {showProps && (
         <VisualProps>{JSON.stringify(storyProps, null, 2)}</VisualProps>
       )}
-      <StyledMicrolink url={url} size='normal' {...props} />
-      <StyledMicrolink url={url} size='small' {...props} />
-      <StyledMicrolink url={url} size='large' {...props} />
+      {sizes.map(size => (
+        <StyledMicrolink key={url + size} url={url} size={size} {...props} />
+      ))}
     </StoryEntry>
   )
 }

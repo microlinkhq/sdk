@@ -11,9 +11,8 @@ import {
   imageProxy,
   isFunction,
   isLazySupported,
-  isNil,
   isObject,
-  preferMedia,
+  getPreferredMedia,
   someProp,
   castArray
 } from './utils'
@@ -61,6 +60,7 @@ function Microlink (props) {
     () => getApiUrl({ ...props, media: mediaProps }),
     [props]
   )
+  const [iframeMedia, setIframeMedia] = useState(null)
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -94,7 +94,16 @@ function Microlink (props) {
         ? setData(fetchData)
         : { ...fetchData, ...setData }
 
-      const { title, description, url, video, audio, image, logo } = payload
+      const {
+        title,
+        description,
+        url,
+        video,
+        audio,
+        image,
+        logo,
+        iframe
+      } = payload
 
       const mediaFallback = image || logo || {}
       let media = mediaFallback
@@ -103,14 +112,23 @@ function Microlink (props) {
       let isVideo = false
       let isAudio = false
 
-      if (!isNil(audio) && preferMedia(mediaProps) === 'audio') {
-        isAudio = true
-        audioUrl = getUrlPath(audio)
-      } else if (!isNil(video)) {
-        isVideo = true
-        videoUrl = getUrlPath(video)
-      } else {
-        media = someProp(payload, mediaProps) || mediaFallback
+      const preferredMedia = getPreferredMedia(payload, mediaProps)
+
+      switch (preferredMedia) {
+        case 'audio':
+          isAudio = true
+          audioUrl = getUrlPath(audio)
+          break
+        case 'video':
+          isVideo = true
+          videoUrl = getUrlPath(video)
+          break
+        case 'iframe':
+          setIframeMedia(iframe)
+          break
+        default:
+          media = someProp(payload, mediaProps) || mediaFallback
+          break
       }
 
       const imageUrl = getUrlPath(media)
@@ -150,6 +168,15 @@ function Microlink (props) {
   } = cardData
 
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
+
+  if (iframeMedia) {
+    return (
+      <div
+        className={classNames.iframe}
+        dangerouslySetInnerHTML={{ __html: iframeMedia }}
+      />
+    )
+  }
 
   return (
     <CardWrap
@@ -206,6 +233,7 @@ Microlink.propTypes = {
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
   direction: PropTypes.string,
+  iframe: PropTypes.string,
   lazy: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
   loop: PropTypes.bool,
   media: PropTypes.oneOfType([
