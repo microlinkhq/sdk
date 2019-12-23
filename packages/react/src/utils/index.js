@@ -52,8 +52,8 @@ export const getApiUrl = ({
   data,
   force,
   headers,
-  iframe,
   media,
+  prerender,
   proxy,
   ttl,
   url
@@ -66,6 +66,7 @@ export const getApiUrl = ({
     headers,
     iframe: media.includes('iframe'),
     palette: contrast,
+    prerender,
     proxy,
     screenshot: media.includes('screenshot'),
     ttl,
