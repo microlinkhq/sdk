@@ -233,7 +233,6 @@ Microlink.propTypes = {
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
   direction: PropTypes.string,
-  iframe: PropTypes.string,
   lazy: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
   loop: PropTypes.bool,
   media: PropTypes.oneOfType([
