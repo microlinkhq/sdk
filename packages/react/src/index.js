@@ -244,7 +244,7 @@ Microlink.propTypes = {
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   size: PropTypes.oneOf(['normal', 'large', 'small']),
-  url: PropTypes.string
+  url: PropTypes.string.isRequired
 }
 
 export { imageProxy, getApiUrl, fetchFromApi }
