@@ -14,7 +14,8 @@ import {
   isObject,
   getPreferredMedia,
   someProp,
-  castArray
+  castArray,
+  isSSR
 } from './utils'
 
 import { useIntersectionObserver } from './utils/hooks'
@@ -170,10 +171,21 @@ function Microlink (props) {
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
 
   if (iframeMedia) {
+    if (!isSSR) {
+      iframeMedia.scripts.forEach(attrs => {
+        const hasScript = document.querySelector(`script[src="${attrs.src}"]`)
+        if (!hasScript) {
+          const script = document.createElement('script')
+          Object.keys(attrs).forEach(key => (script[key] = attrs[key]))
+          document.body.appendChild(script)
+        }
+      })
+    }
+
     return (
       <div
         className={classNames.iframe}
-        dangerouslySetInnerHTML={{ __html: iframeMedia }}
+        dangerouslySetInnerHTML={{ __html: iframeMedia.html }}
       />
     )
   }
