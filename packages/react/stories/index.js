@@ -113,8 +113,11 @@ storiesOf('setData', module)
         sizes: ['normal'],
         media: ['iframe', 'video', 'audio'],
         setData: data => ({
-          iframe:
-            "<marquee>welcome to microlink.io! You're the visitor number 12242! CONGRATS!! You win an API key, just send 1$ to hello@microlink.io for receiving it into your inbox</marquee>",
+          iframe: {
+            html:
+              "<marquee>welcome to microlink.io! You're the visitor number 12242! CONGRATS!! You win an API key, just send 1$ to hello@microlink.io for receiving it into your inbox</marquee>",
+            scripts: []
+          },
           audio: {
             url: 'https://invalidurl.lol',
             type: 'mp4',
