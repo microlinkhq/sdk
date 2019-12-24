@@ -3,7 +3,7 @@ import { fetchFromApi, getApiUrl as createApiUrl } from '@microlink/mql'
 
 const REGEX_LOCALHOST = /http:\/\/localhost/
 
-const isSSR = typeof window === 'undefined'
+export const isSSR = typeof window === 'undefined'
 
 export const castArray = value => [].concat(value)
 
