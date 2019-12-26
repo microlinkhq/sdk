@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.9...v4.5.0) (2019-12-26)
+
+
+### Features
+
+* add iframe support ([#173](http://github.com/microlinkhq/sdk/tree/master/packages/react/issues/173)) ([e73ad1a](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/e73ad1a6ccfe2fb3d1603a069bcb008c9b0f38cb))
+
+
+
+
+
 ## [4.4.9](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.4.8...v4.4.9) (2019-12-21)
 
 

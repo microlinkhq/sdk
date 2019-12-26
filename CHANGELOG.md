@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](https://github.com/microlinkhq/sdk/compare/v4.4.9...v4.5.0) (2019-12-26)
+
+
+### Features
+
+* add iframe support ([#173](https://github.com/microlinkhq/sdk/issues/173)) ([e73ad1a](https://github.com/microlinkhq/sdk/commit/e73ad1a6ccfe2fb3d1603a069bcb008c9b0f38cb))
+
+
+
+
+
 ## [4.4.9](https://github.com/microlinkhq/sdk/compare/v4.4.8...v4.4.9) (2019-12-21)
 
 
