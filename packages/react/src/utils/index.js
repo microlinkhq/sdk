@@ -3,14 +3,23 @@ import { fetchFromApi, getApiUrl as createApiUrl } from '@microlink/mql'
 
 const REGEX_LOCALHOST = /http:\/\/localhost/
 
-const isSSR = typeof window === 'undefined'
+export const isSSR = typeof window === 'undefined'
 
 export const castArray = value => [].concat(value)
 
-export const preferMedia = props => {
-  const audioIndex = props.findIndex(propName => propName === 'audio')
-  const videoIndex = props.findIndex(propName => propName === 'video')
-  return audioIndex > videoIndex ? 'audio' : 'video'
+export const getPreferredMedia = (data, mediaProps) => {
+  let prefer
+
+  for (let index = 0; index < mediaProps.length; index++) {
+    const key = mediaProps[index]
+    const value = data[key]
+    if (!isNil(value)) {
+      prefer = key
+      break
+    }
+  }
+
+  return prefer
 }
 
 export const isFunction = fn => typeof fn === 'function'
@@ -44,7 +53,7 @@ export const getApiUrl = ({
   force,
   headers,
   media,
-  prerender = 'auto',
+  prerender,
   proxy,
   ttl,
   url
@@ -55,6 +64,7 @@ export const getApiUrl = ({
     data,
     force,
     headers,
+    iframe: media.includes('iframe'),
     palette: contrast,
     prerender,
     proxy,
@@ -101,5 +111,6 @@ export const classNames = {
   ffwControl: `${CONTROLS_BASE_CLASSNAME}_fast_forward`,
   rateControl: `${CONTROLS_BASE_CLASSNAME}_rate`,
   progressBar: `${CONTROLS_BASE_CLASSNAME}_progress`,
-  progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`
+  progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`,
+  iframe: `${BASE_CLASSNAME}__iframe`
 }

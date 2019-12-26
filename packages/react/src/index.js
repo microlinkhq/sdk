@@ -11,11 +11,11 @@ import {
   imageProxy,
   isFunction,
   isLazySupported,
-  isNil,
   isObject,
-  preferMedia,
+  getPreferredMedia,
   someProp,
-  castArray
+  castArray,
+  isSSR
 } from './utils'
 
 import { useIntersectionObserver } from './utils/hooks'
@@ -61,6 +61,7 @@ function Microlink (props) {
     () => getApiUrl({ ...props, media: mediaProps }),
     [props]
   )
+  const [iframeMedia, setIframeMedia] = useState(null)
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -94,7 +95,16 @@ function Microlink (props) {
         ? setData(fetchData)
         : { ...fetchData, ...setData }
 
-      const { title, description, url, video, audio, image, logo } = payload
+      const {
+        title,
+        description,
+        url,
+        video,
+        audio,
+        image,
+        logo,
+        iframe
+      } = payload
 
       const mediaFallback = image || logo || {}
       let media = mediaFallback
@@ -103,14 +113,23 @@ function Microlink (props) {
       let isVideo = false
       let isAudio = false
 
-      if (!isNil(audio) && preferMedia(mediaProps) === 'audio') {
-        isAudio = true
-        audioUrl = getUrlPath(audio)
-      } else if (!isNil(video)) {
-        isVideo = true
-        videoUrl = getUrlPath(video)
-      } else {
-        media = someProp(payload, mediaProps) || mediaFallback
+      const preferredMedia = getPreferredMedia(payload, mediaProps)
+
+      switch (preferredMedia) {
+        case 'audio':
+          isAudio = true
+          audioUrl = getUrlPath(audio)
+          break
+        case 'video':
+          isVideo = true
+          videoUrl = getUrlPath(video)
+          break
+        case 'iframe':
+          setIframeMedia(iframe)
+          break
+        default:
+          media = someProp(payload, mediaProps) || mediaFallback
+          break
       }
 
       const imageUrl = getUrlPath(media)
@@ -150,6 +169,26 @@ function Microlink (props) {
   } = cardData
 
   const isLoading = isLoadingUndefined ? loadingState : loadingProp
+
+  if (iframeMedia) {
+    if (!isSSR) {
+      iframeMedia.scripts.forEach(attrs => {
+        const hasScript = document.querySelector(`script[src="${attrs.src}"]`)
+        if (!hasScript) {
+          const script = document.createElement('script')
+          Object.keys(attrs).forEach(key => (script[key] = attrs[key]))
+          document.body.appendChild(script)
+        }
+      })
+    }
+
+    return (
+      <div
+        className={classNames.iframe}
+        dangerouslySetInnerHTML={{ __html: iframeMedia.html }}
+      />
+    )
+  }
 
   return (
     <CardWrap
@@ -216,7 +255,7 @@ Microlink.propTypes = {
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   size: PropTypes.oneOf(['normal', 'large', 'small']),
-  url: PropTypes.string
+  url: PropTypes.string.isRequired
 }
 
 export { imageProxy, getApiUrl, fetchFromApi }

@@ -409,7 +409,6 @@ exports[`Storyshots media audio 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media="audio"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -433,7 +432,6 @@ exports[`Storyshots media audio 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media="audio"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -454,7 +452,6 @@ exports[`Storyshots media audio 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media="audio"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -469,6 +466,218 @@ exports[`Storyshots media audio 1`] = `
       />
       <span
         className="c16"
+      />
+      <span
+        className="c8"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Storyshots media iframe 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c4 {
+  background: transparent no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c6 {
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c7 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c7::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c7::before {
+  top: 14px;
+}
+
+.c8 {
+  height: 10px;
+  width: 30%;
+  display: block;
+  background: #e1e8ed;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+.c2 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+@media (max-width:48em) {
+  .c7 {
+    height: 14px;
+  }
+
+  .c7::before {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  <a
+    className="c1"
+    href="https://twitter.com/futurism/status/882987478541533189"
+  >
+    https://twitter.com/futurism/status/882987478541533189
+  </a>
+  <a
+    className="c2 microlink_card c3"
+    direction="ltr"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="c4 microlink_card__media microlink_card__media_image"
+    />
+    <div
+      className="c5 microlink_card__content"
+    >
+      <span
+        className="c6"
+      />
+      <span
+        className="c7"
       />
       <span
         className="c8"
@@ -887,7 +1096,6 @@ exports[`Storyshots media image 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media="image"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -911,7 +1119,6 @@ exports[`Storyshots media image 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media="image"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -932,7 +1139,6 @@ exports[`Storyshots media image 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media="image"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -1365,7 +1571,6 @@ exports[`Storyshots media logo 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media="logo"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -1389,7 +1594,6 @@ exports[`Storyshots media logo 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media="logo"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -1410,7 +1614,6 @@ exports[`Storyshots media logo 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media="logo"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -1843,7 +2046,6 @@ exports[`Storyshots media screenshot 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media="screenshot"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -1867,7 +2069,6 @@ exports[`Storyshots media screenshot 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media="screenshot"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -1888,7 +2089,6 @@ exports[`Storyshots media screenshot 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media="screenshot"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -2321,7 +2521,6 @@ exports[`Storyshots media video 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -2345,7 +2544,6 @@ exports[`Storyshots media video 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -2366,7 +2564,6 @@ exports[`Storyshots media video 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -2799,7 +2996,6 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -2823,7 +3019,6 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -2844,7 +3039,6 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -3298,12 +3492,6 @@ exports[`Storyshots props contrast 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -3327,12 +3515,6 @@ exports[`Storyshots props contrast 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -3353,12 +3535,6 @@ exports[`Storyshots props contrast 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -3791,7 +3967,6 @@ exports[`Storyshots props controls (disabled) 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -3815,7 +3990,6 @@ exports[`Storyshots props controls (disabled) 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -3836,7 +4010,6 @@ exports[`Storyshots props controls (disabled) 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media="video"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -4269,12 +4442,6 @@ exports[`Storyshots props default 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -4298,12 +4465,6 @@ exports[`Storyshots props default 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -4324,12 +4485,6 @@ exports[`Storyshots props default 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -4792,12 +4947,6 @@ exports[`Storyshots props direction + contrast 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="rtl"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -4821,12 +4970,6 @@ exports[`Storyshots props direction + contrast 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="rtl"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -4847,12 +4990,6 @@ exports[`Storyshots props direction + contrast 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="rtl"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -5294,12 +5431,6 @@ exports[`Storyshots props direction 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="rtl"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -5323,12 +5454,6 @@ exports[`Storyshots props direction 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="rtl"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -5349,12 +5474,6 @@ exports[`Storyshots props direction 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="rtl"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -5811,12 +5930,6 @@ Array [
     <a
       className="c3 microlink_card c4"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -5840,12 +5953,6 @@ Array [
     <a
       className="c10 microlink_card c4"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -5866,12 +5973,6 @@ Array [
     <a
       className="c14 microlink_card c4"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -6326,12 +6427,6 @@ Array [
     <a
       className="c3 microlink_card c4"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -6355,12 +6450,6 @@ Array [
     <a
       className="c10 microlink_card c4"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -6381,12 +6470,6 @@ Array [
     <a
       className="c14 microlink_card c4"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -6820,12 +6903,6 @@ exports[`Storyshots props loading 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -6849,12 +6926,6 @@ exports[`Storyshots props loading 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -6875,12 +6946,6 @@ exports[`Storyshots props loading 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -7313,12 +7378,6 @@ exports[`Storyshots setData function 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -7342,12 +7401,6 @@ exports[`Storyshots setData function 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -7368,12 +7421,6 @@ exports[`Storyshots setData function 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -7806,12 +7853,6 @@ exports[`Storyshots setData object 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -7835,12 +7876,6 @@ exports[`Storyshots setData object 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -7861,12 +7896,6 @@ exports[`Storyshots setData object 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -7890,8 +7919,9 @@ exports[`Storyshots setData object 1`] = `
 </div>
 `;
 
-exports[`Storyshots setData prefer video over audio 1`] = `
-.c5 {
+exports[`Storyshots setData prefer media 1`] = `
+Array [
+  .c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7902,54 +7932,6 @@ exports[`Storyshots setData prefer video over audio 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-  min-width: 0;
-  box-sizing: border-box;
-  -webkit-flex: 0 0 125px;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
   -webkit-box-pack: space-around;
   -webkit-justify-content: space-around;
   -ms-flex-pack: space-around;
@@ -7994,89 +7976,12 @@ exports[`Storyshots setData prefer video over audio 1`] = `
   z-index: 1;
 }
 
-.c10 {
-  background: transparent no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 0 0 48px;
-  -ms-flex: 0 0 48px;
-  flex: 0 0 48px;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c10::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c10::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
-.c14 {
-  background: transparent no-repeat center center / cover;
-  display: block;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-animation: hKAHOv 1.25s linear infinite;
-  animation: hKAHOv 1.25s linear infinite;
-}
-
-.c14::before {
-  content: '';
-  padding-bottom: 100%;
-  display: block;
-}
-
-.c14::before {
-  padding-bottom: 0;
-}
-
-.c14::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #e1e8ed;
-  opacity: 0;
-  z-index: 1;
-}
-
 .c6 {
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-}
-
-.c12 {
-  height: 16px;
-  width: 75%;
-  display: block;
-  background: #e1e8ed;
-  margin: 0 20px 0 0;
   opacity: 0.8;
   -webkit-animation: kQScTh .75s linear infinite;
   animation: kQScTh .75s linear infinite;
@@ -8106,33 +8011,6 @@ exports[`Storyshots setData prefer video over audio 1`] = `
 }
 
 .c7::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: kQScTh .75s linear infinite;
-  animation: kQScTh .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
   top: 14px;
 }
 
@@ -8201,65 +8079,212 @@ exports[`Storyshots setData prefer video over audio 1`] = `
   outline: 0;
 }
 
-.c9 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+@media (max-width:48em) {
+  .c7 {
+    height: 14px;
+  }
+
+  .c7::before {
+    display: none;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="https://youtube.com"
+    >
+      https://youtube.com
+    </a>
+    <a
+      className="c2 microlink_card c3"
+      direction="ltr"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c4 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c5 microlink_card__content"
+      >
+        <span
+          className="c6"
+        />
+        <span
+          className="c7"
+        />
+        <span
+          className="c8"
+        />
+      </div>
+    </a>
+  </div>,
+  .c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
-}
-
-.c9:active,
-.c9:hover {
-  outline: 0;
-}
-
-.c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
-  overflow: hidden;
-  color: #181919;
-  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  opacity: 1;
-  position: relative;
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
-  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 382px;
-  -webkit-transition-property: background,border-color,height;
-  transition-property: background,border-color,height;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
-.c13:active,
-.c13:hover {
+.c4 {
+  background: transparent no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-animation: hKAHOv 1.25s linear infinite;
+  animation: hKAHOv 1.25s linear infinite;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  opacity: 0;
+  z-index: 1;
+}
+
+.c6 {
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+}
+
+.c7 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c7::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c7::before {
+  top: 14px;
+}
+
+.c8 {
+  height: 10px;
+  width: 30%;
+  display: block;
+  background: #e1e8ed;
+  opacity: 0.8;
+  -webkit-animation: kQScTh .75s linear infinite;
+  animation: kQScTh .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+.c2 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
   outline: 0;
 }
 
@@ -8281,106 +8306,40 @@ exports[`Storyshots setData prefer video over audio 1`] = `
   }
 }
 
-@media (max-width:48em) {
-  .c13 {
-    height: calc(382px * 7/9);
-  }
-}
-
 <div
-  className="c0"
->
-  <a
-    className="c1"
-    href="https://microlink.io"
+    className="c0"
   >
-    https://microlink.io
-  </a>
-  <a
-    className="c2 microlink_card c3"
-    direction="ltr"
-    media={
-      Array [
-        "video",
-        "audio",
-      ]
-    }
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <div
-      className="c4 microlink_card__media microlink_card__media_image"
-    />
-    <div
-      className="c5 microlink_card__content"
+    <a
+      className="c1"
+      href="https://example.com"
     >
-      <span
-        className="c6"
-      />
-      <span
-        className="c7"
-      />
-      <span
-        className="c8"
-      />
-    </div>
-  </a>
-  <a
-    className="c9 microlink_card c3"
-    direction="ltr"
-    media={
-      Array [
-        "video",
-        "audio",
-      ]
-    }
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <div
-      className="c10 microlink_card__media microlink_card__media_image"
-    />
-    <div
-      className="c11 microlink_card__content"
+      https://example.com
+    </a>
+    <a
+      className="c2 microlink_card c3"
+      direction="ltr"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      <span
-        className="c12"
+      <div
+        className="c4 microlink_card__media microlink_card__media_image"
       />
-      <span
-        className="c8"
-      />
-    </div>
-  </a>
-  <a
-    className="c13 microlink_card c3"
-    direction="ltr"
-    media={
-      Array [
-        "video",
-        "audio",
-      ]
-    }
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <div
-      className="c14 microlink_card__media microlink_card__media_image"
-    />
-    <div
-      className="c15 microlink_card__content"
-    >
-      <span
-        className="c6"
-      />
-      <span
-        className="c16"
-      />
-      <span
-        className="c8"
-      />
-    </div>
-  </a>
-</div>
+      <div
+        className="c5 microlink_card__content"
+      >
+        <span
+          className="c6"
+        />
+        <span
+          className="c7"
+        />
+        <span
+          className="c8"
+        />
+      </div>
+    </a>
+  </div>,
+]
 `;
 
 exports[`Storyshots style border radius 1`] = `
@@ -8793,12 +8752,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -8828,12 +8781,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -8860,12 +8807,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -9301,12 +9242,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -9336,12 +9271,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -9368,12 +9297,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -9809,12 +9732,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -9844,12 +9761,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -9876,12 +9787,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -10322,12 +10227,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -10357,12 +10256,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -10389,12 +10282,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -10830,12 +10717,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -10865,12 +10746,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -10897,12 +10772,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -11338,12 +11207,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -11373,12 +11236,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -11405,12 +11262,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -11846,12 +11697,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -11881,12 +11726,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -11913,12 +11752,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -12354,12 +12187,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -12389,12 +12216,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -12421,12 +12242,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -12862,12 +12677,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -12897,12 +12706,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -12929,12 +12732,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -13374,12 +13171,6 @@ exports[`Storyshots style misc 1`] = `
   <a
     className="c2 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     style={
       Object {
@@ -13410,12 +13201,6 @@ exports[`Storyshots style misc 1`] = `
   <a
     className="c9 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     style={
       Object {
@@ -13443,12 +13228,6 @@ exports[`Storyshots style misc 1`] = `
   <a
     className="c13 microlink_card c3"
     direction="ltr"
-    media={
-      Array [
-        "image",
-        "logo",
-      ]
-    }
     rel="noopener noreferrer"
     style={
       Object {
@@ -13889,12 +13668,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -13924,12 +13697,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -13956,12 +13723,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -14397,12 +14158,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -14432,12 +14187,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -14464,12 +14213,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -14905,12 +14648,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -14940,12 +14677,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -14972,12 +14703,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -15413,12 +15138,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -15448,12 +15167,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -15480,12 +15193,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -15921,12 +15628,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -15956,12 +15657,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -15988,12 +15683,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -16429,12 +16118,6 @@ Array [
     <a
       className="c2 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -16464,12 +16147,6 @@ Array [
     <a
       className="c9 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
@@ -16496,12 +16173,6 @@ Array [
     <a
       className="c13 microlink_card c3"
       direction="ltr"
-      media={
-        Array [
-          "image",
-          "logo",
-        ]
-      }
       rel="noopener noreferrer"
       style={
         Object {
