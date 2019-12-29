@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.1](https://github.com/microlinkhq/sdk/compare/v4.5.0...v4.5.1) (2019-12-29)
+
+
+### Bug Fixes
+
+* pass rest of props to iframe ([c4d87f3](https://github.com/microlinkhq/sdk/commit/c4d87f30fc8753ece38b64f69eeb18c0596091d6))
+
+
+
+
+
 # [4.5.0](https://github.com/microlinkhq/sdk/compare/v4.4.9...v4.5.0) (2019-12-26)
 
 
