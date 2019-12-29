@@ -186,6 +186,7 @@ function Microlink (props) {
       <div
         className={classNames.iframe}
         dangerouslySetInnerHTML={{ __html: iframeMedia.html }}
+        {...restProps}
       />
     )
   }
