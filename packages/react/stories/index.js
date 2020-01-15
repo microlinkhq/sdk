@@ -76,7 +76,7 @@ storiesOf('setData', module)
   )
   .add('function', () =>
     createStoryEntry({
-      setData: data => ({ ...data, title: 'My Custom Title' })
+      setData: () => ({ title: 'My Custom Title' })
     })
   )
   .add('prefer media', () => (

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { transition } from '../../../theme'
 
 export const ImageLoadCatcher = styled('img')`
   height: 1px;
@@ -16,7 +17,8 @@ export const loadingOverlay = css`
     right: 0;
     bottom: 0;
     background: #e1e8ed;
-    opacity: ${({ loading }) => (loading ? 1 : 0)};
+    opacity: ${({ isLoading }) => (isLoading ? 1 : 0)};
     z-index: 1;
+    transition: opacity ${transition.medium};
   }
 `

@@ -1,8 +1,14 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react'
+import React, {
+  useState,
+  useEffect,
+  useCallback,
+  useMemo,
+  useContext
+} from 'react'
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
-
+import GlobalState, { GlobalContext } from './context/GlobalState'
 import {
   classNames,
   fetchFromApi,
@@ -20,48 +26,24 @@ import {
 
 import { useIntersectionObserver } from './utils/hooks'
 
-const Card = ({ url, size, title, description, ...props }) => (
-  <>
-    <CardMedia key={`${url}__${size}`} url={url} cardSize={size} {...props} />
-    <CardContent
-      title={title}
-      description={description}
-      url={url}
-      cardSize={size}
-    />
-  </>
-)
-
-function Microlink (props) {
+const Card = props => {
   const {
-    autoPlay,
-    controls,
-    loop,
-    setData,
-    muted,
-    loading: loadingProp,
-    playsInline,
     className = '',
-    size,
     lazy,
+    loading,
     media: mediaProp,
+    setData,
+    url,
     ...restProps
   } = props
 
-  const mediaProps = castArray(mediaProp)
-
-  const isLoadingUndefined = useMemo(() => loadingProp === undefined, [
-    loadingProp
-  ])
-  const [loadingState, setLoading] = useState(
-    isLoadingUndefined ? true : loadingProp
-  )
-  const [cardData, setCardData] = useState({})
-  const [apiUrl, apiUrlProps] = useMemo(
-    () => getApiUrl({ ...props, media: mediaProps }),
-    [props]
-  )
+  const mediaProps = useMemo(() => castArray(mediaProp), [mediaProp])
+  const { updateState } = useContext(GlobalContext)
+  const [loadingState, setLoading] = useState(true)
   const [iframeMedia, setIframeMedia] = useState(null)
+  const [isError, setIsError] = useState(false)
+  const isLoadingUndefined = useMemo(() => loading === undefined, [loading])
+  const [apiUrl, apiUrlProps] = useMemo(() => getApiUrl({ ...props, media: mediaProps }), [mediaProps, props])
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -83,28 +65,25 @@ function Microlink (props) {
       setLoading(true)
       const fetch = isFunction(setData)
         ? Promise.resolve({})
-        : fetchFromApi(props.url, apiUrl, apiUrlProps)
+        : fetchFromApi(url, apiUrl, apiUrlProps)
 
-      fetch.then(({ data }) => mergeData(data))
+      fetch
+        .then(({ data }) => mergeData(data))
+        .catch(error => {
+          setLoading(false)
+          setIsError(true)
+          console.warn('[Microlink SDK]', error)
+        })
     }
-  }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key']])
+  }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key'], url])
 
   const mergeData = useCallback(
-    fetchData => {
+    fetchedData => {
       const payload = isFunction(setData)
-        ? setData(fetchData)
-        : { ...fetchData, ...setData }
+        ? setData()
+        : { ...fetchedData, ...setData }
 
-      const {
-        title,
-        description,
-        url,
-        video,
-        audio,
-        image,
-        logo,
-        iframe
-      } = payload
+      const { title, description, url, video, audio, image, logo, iframe } = payload
 
       const mediaFallback = image || logo || {}
       let media = mediaFallback
@@ -135,7 +114,7 @@ function Microlink (props) {
       const imageUrl = getUrlPath(media)
       const { color, background_color: backgroundColor } = media
 
-      setCardData({
+      updateState({
         url,
         color,
         title,
@@ -150,25 +129,20 @@ function Microlink (props) {
 
       setLoading(false)
     },
-    [setData]
+    [mediaProps, setData]
   )
 
-  useEffect(fetchData, [props.url, setData, hasIntersected])
+  useEffect(fetchData, [url, setData, hasIntersected])
 
-  const {
-    title,
-    color,
-    backgroundColor,
-    url,
-    description,
-    imageUrl,
-    videoUrl,
-    audioUrl,
-    isVideo,
-    isAudio
-  } = cardData
+  const isLoading = isLoadingUndefined ? loadingState : loading
 
-  const isLoading = isLoadingUndefined ? loadingState : loadingProp
+  if (isError) {
+    return (
+      <a href={url} {...restProps}>
+        {url}
+      </a>
+    )
+  }
 
   if (iframeMedia) {
     if (!isSSR) {
@@ -195,37 +169,25 @@ function Microlink (props) {
     <CardWrap
       className={`${classNames.main} ${className}`}
       href={url}
-      title={title}
-      cardSize={size}
-      color={color}
-      backgroundColor={backgroundColor}
       isLoading={isLoading}
       ref={cardRef}
       {...restProps}
     >
       {isLoading ? (
-        <CardEmpty cardSize={size} />
+        <CardEmpty />
       ) : (
-        <Card
-          title={title}
-          description={description}
-          url={url}
-          isVideo={isVideo}
-          isAudio={isAudio}
-          imageUrl={imageUrl}
-          videoUrl={videoUrl}
-          audioUrl={audioUrl}
-          autoPlay={autoPlay}
-          controls={controls}
-          loop={loop}
-          muted={muted}
-          playsInline={playsInline}
-          size={size}
-        />
+        <>
+          <CardMedia />
+          <CardContent />
+        </>
       )}
     </CardWrap>
   )
 }
+
+const Microlink = props => (
+  <GlobalState {...props}>{otherProps => <Card {...otherProps} />}</GlobalState>
+)
 
 Microlink.defaultProps = {
   apiKey: undefined,

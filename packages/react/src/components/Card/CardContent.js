@@ -1,11 +1,12 @@
 /* global URL */
 
-import React, { useCallback, useMemo } from 'react'
+import React, { useCallback, useMemo, useContext } from 'react'
 import styled, { css } from 'styled-components'
 import CardText from './CardText'
 
 import { transition } from '../../theme'
 import { classNames, media, isLarge, isSmall, isNil } from '../../utils'
+import { GlobalContext } from '../../context/GlobalState'
 
 const REGEX_STRIP_WWW = /^www\./
 const BADGE_WIDTH = '16px'
@@ -105,8 +106,12 @@ const PoweredBy = styled('span').attrs({ title: 'microlink.io' })`
   height: ${BADGE_HEIGHT};
 `
 
-export default ({ title, description, url, cardSize }) => {
-  const isSmallCard = isSmall(cardSize)
+const CardContent = () => {
+  const {
+    state: { description, title, url },
+    props: { size }
+  } = useContext(GlobalContext)
+  const isSmallCard = isSmall(size)
   const formattedUrl = useMemo(() => getHostname(url), [url])
   const handleOnClick = useCallback(e => {
     e.preventDefault()
@@ -114,19 +119,21 @@ export default ({ title, description, url, cardSize }) => {
   })
 
   return (
-    <Content cardSize={cardSize}>
-      <Header cardSize={cardSize}>
+    <Content cardSize={size}>
+      <Header cardSize={size}>
         <CardText useNanoClamp={false}>{title}</CardText>
       </Header>
       {!isSmallCard && (
-        <Description cardSize={cardSize}>
+        <Description cardSize={size}>
           <CardText lines={2}>{description}</CardText>
         </Description>
       )}
-      <Footer cardSize={cardSize}>
+      <Footer cardSize={size}>
         <Author useNanoClamp={false}>{formattedUrl}</Author>
         <PoweredBy onClick={handleOnClick} />
       </Footer>
     </Content>
   )
 }
+
+export default CardContent

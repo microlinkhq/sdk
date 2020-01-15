@@ -1,5 +1,7 @@
+import React, { useContext } from 'react'
 import styled, { css } from 'styled-components'
 
+import { GlobalContext } from '../../../context/GlobalState'
 import { media } from '../../../utils'
 import { loadingOverlay } from './loader'
 
@@ -23,7 +25,7 @@ const mediaSizeStyles = {
   `
 }
 
-export default styled('div')`
+const StyledWrap = styled('div')`
   background: transparent no-repeat center center / cover;
   display: block;
   overflow: hidden;
@@ -40,3 +42,13 @@ export default styled('div')`
 
   ${loadingOverlay};
 `
+
+const Wrap = props => {
+  const {
+    props: { size }
+  } = useContext(GlobalContext)
+
+  return <StyledWrap cardSize={size} {...props} />
+}
+
+export default Wrap

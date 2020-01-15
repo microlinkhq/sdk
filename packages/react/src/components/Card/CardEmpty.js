@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
 import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
+import { GlobalContext } from '../../context/GlobalState'
 import { media, isLarge, isSmall } from '../../utils'
 
 const MediaEmpty = styled(CardImage)`
@@ -65,15 +66,18 @@ const FooterEmpty = styled('span')`
   ${emptyStateAnimation} animation-delay: .25s;
 `
 
-const CardEmptyState = ({ cardSize }) => {
-  const isSmallCard = isSmall(cardSize)
+const CardEmptyState = () => {
+  const {
+    props: { size }
+  } = useContext(GlobalContext)
+  const isSmallCard = isSmall(size)
 
   return (
     <>
-      <MediaEmpty cardSize={cardSize} />
-      <Content cardSize={cardSize}>
-        <HeaderEmpty cardSize={cardSize} />
-        {!isSmallCard && <DescriptionEmpty cardSize={cardSize} />}
+      <MediaEmpty cardSize={size} />
+      <Content cardSize={size}>
+        <HeaderEmpty cardSize={size} />
+        {!isSmallCard && <DescriptionEmpty cardSize={size} />}
         <FooterEmpty />
       </Content>
     </>
