@@ -11,6 +11,7 @@ import FooterControls from './FooterControls'
 import PlaybackButton from './PlaybackButton'
 import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
+import Spinner from './Spinner'
 import { transition } from '../../../../theme'
 import { classNames, isSmall } from '../../../../utils'
 import { GlobalContext } from '../../../../context/GlobalState'
@@ -81,12 +82,13 @@ const Controls = ({ MediaComponent, mediaProps }) => {
   const [progress, setProgress] = useState(0)
   const [isPlaying, setIsPlaying] = useState(autoPlay)
   const [isMuted, setIsMuted] = useState(muted)
+  const [isBuffering, setIsBuffering] = useState(false)
   const [playbackRate, setPlaybackRate] = useState(1)
   const [hasInteracted, setHasInteracted] = useState(autoPlay)
 
   const isNotSmall = useMemo(() => !isSmall(size), [size])
 
-  const setInitialDuration = useCallback(() => {
+  const onLoadedMetadata = useCallback(() => {
     if (mediaRef && mediaRef.current) {
       setDuration(mediaRef.current.duration || 0)
     }
@@ -116,10 +118,12 @@ const Controls = ({ MediaComponent, mediaProps }) => {
       event.preventDefault()
       event.stopPropagation()
 
-      if (type === 'rewind') {
-        mediaRef.current.currentTime -= 10
-      } else {
-        mediaRef.current.currentTime += 30
+      if (mediaRef && mediaRef.current) {
+        if (type === 'rewind') {
+          mediaRef.current.currentTime -= 10
+        } else {
+          mediaRef.current.currentTime += 30
+        }
       }
     },
     [mediaRef.current]
@@ -161,30 +165,45 @@ const Controls = ({ MediaComponent, mediaProps }) => {
     [mediaRef.current, playbackRate]
   )
 
+  const onProgressBarClick = useCallback(
+    time => {
+      if (mediaRef && mediaRef.current) {
+        mediaRef.current.currentTime = time
+      }
+    },
+    [mediaRef]
+  )
+
   const currentTime = useMemo(() => formatSeconds(progress || 0), [progress])
   const endTime = useMemo(() => formatSeconds(duration || 0), [duration])
 
-  const progressBarWidth = useMemo(() => (progress / duration) * 100, [
-    progress,
-    duration
-  ])
+  const mediaEvents = useMemo(
+    () => ({
+      onLoadedMetadata,
+      onPause: () => setIsPlaying(false),
+      onPlay: () => setIsPlaying(true),
+      onPlaying: () => setIsBuffering(false),
+      onTimeUpdate,
+      onWaiting: () => setIsBuffering(true)
+    }),
+    [onLoadedMetadata, onTimeUpdate]
+  )
 
   return (
     <>
       <MediaComponent
         {...mediaProps}
+        {...mediaEvents}
         ref={mediaRef}
         autoPlay={autoPlay}
         loop={loop}
-        onTimeUpdate={onTimeUpdate}
-        onPlay={() => setIsPlaying(true)}
-        onPause={() => setIsPlaying(false)}
-        onLoadedMetadata={setInitialDuration}
         muted={muted}
       />
 
       {controls && (
         <OuterWrap>
+          <Spinner size={size} isVisible={isBuffering} />
+
           {!hasInteracted ? (
             <InnerWrap opacity={1}>
               <PlaybackButton cardSize={size} onClick={onPlaybackToggle} />
@@ -228,10 +247,14 @@ const Controls = ({ MediaComponent, mediaProps }) => {
                   playbackRate={playbackRate}
                 />
               )}
+
+              <ProgressBar
+                duration={duration}
+                progress={progress}
+                onClick={onProgressBarClick}
+              />
             </>
           )}
-
-          <ProgressBar cardSize={size} progress={progressBarWidth} />
         </OuterWrap>
       )}
     </>

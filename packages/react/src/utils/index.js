@@ -86,6 +86,18 @@ export const imageProxy = url =>
 
 export const isLazySupported = !isSSR && 'IntersectionObserver' in window
 
+export const formatSeconds = secs => {
+  const secsToNum = parseInt(secs, 10)
+  const hours = Math.floor(secsToNum / 3600)
+  const minutes = Math.floor(secsToNum / 60) % 60
+  const seconds = secsToNum % 60
+
+  return [hours, minutes, seconds]
+    .filter((v, i) => v > 0 || i > 0)
+    .map(v => (v >= 10 ? v : `0${v}`))
+    .join(':')
+}
+
 const BASE_CLASSNAME = 'microlink_card'
 const CONTENT_BASE_CLASSNAME = `${BASE_CLASSNAME}__content`
 const MEDIA_BASE_CLASSNAME = `${BASE_CLASSNAME}__media`
@@ -110,7 +122,12 @@ export const classNames = {
   rwControl: `${CONTROLS_BASE_CLASSNAME}_rewind`,
   ffwControl: `${CONTROLS_BASE_CLASSNAME}_fast_forward`,
   rateControl: `${CONTROLS_BASE_CLASSNAME}_rate`,
-  progressBar: `${CONTROLS_BASE_CLASSNAME}_progress`,
+  progress: `${CONTROLS_BASE_CLASSNAME}_progress`,
+  progressBar: `${CONTROLS_BASE_CLASSNAME}_progress_bar`,
+  progressBarDrag: `${CONTROLS_BASE_CLASSNAME}_progress_bar_drag`,
+  progressTooltip: `${CONTROLS_BASE_CLASSNAME}_progress_tooltip`,
+  progressHandle: `${CONTROLS_BASE_CLASSNAME}_progress_handle`,
   progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`,
+  spinner: `${CONTROLS_BASE_CLASSNAME}_spinner`,
   iframe: `${BASE_CLASSNAME}__iframe`
 }
