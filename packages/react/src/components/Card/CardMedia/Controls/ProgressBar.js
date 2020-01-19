@@ -22,7 +22,8 @@ const ProgressBar = styled('div').attrs(({ progress }) => ({
   bottom: 0;
   background: #e1e8ed;
   height: ${props => getProgressBarSize(props)}px;
-  transition: opacity ${transition.medium}, background ${transition.medium};
+  transition: background ${transition.medium};
+  will-change: background;
 
   .${classNames.main}:hover & {
     background: #fff;

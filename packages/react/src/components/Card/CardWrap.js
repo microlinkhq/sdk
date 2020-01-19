@@ -11,6 +11,7 @@ const contrastStyle = ({ backgroundColor, color }) => css`
   background-color: ${backgroundColor};
   border-color: ${color};
   transition-property: filter;
+  will-change: filter;
 
   &&& {
     color: ${color};
@@ -24,8 +25,6 @@ const contrastStyle = ({ backgroundColor, color }) => css`
 const largeStyle = css`
   flex-direction: column;
   height: ${HEIGHT};
-  transition-property: background, border-color, height;
-
   ${media.mobile`
     height: calc(${HEIGHT} * 7/9);
   `};
@@ -33,6 +32,7 @@ const largeStyle = css`
 
 const hoverStyle = css`
   transition-property: background, border-color;
+  will-change: background, border-color;
   &:hover {
     background: #f5f8fa;
     border-color: rgba(136, 153, 166, 0.5);

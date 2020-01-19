@@ -5,6 +5,7 @@ const MediaButton = styled('div')`
   backface-visibility: hidden;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   transition: transform ${transition.short};
+  will-change: transform;
 
   > svg {
     display: block;
