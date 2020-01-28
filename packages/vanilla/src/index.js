@@ -28,20 +28,24 @@ function forEach (list, fn) {
 
 function microlink (selector, opts) {
   return forEach(getDOMSelector(selector), function (el) {
-    return ReactDOM.render(
+    var wrap = document.createElement('div')
+    el.parentNode.insertBefore(wrap, el)
+
+    ReactDOM.render(
       React.createElement(
         Microlink,
         Object.assign(
           {
-            url: el.getAttribute('href'),
-            as: 'div'
+            url: el.getAttribute('href')
           },
           opts,
           parseObject(el.dataset)
         )
       ),
-      el
+      wrap
     )
+
+    el.remove()
   })
 }
 
