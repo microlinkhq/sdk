@@ -2,11 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Microlink from '@microlink/react'
 
-const DEFAULT_OPTS = {
-  as: 'div'
-}
-
-const parse = value => {
+function parseJSON (value) {
   try {
     return JSON.parse(value)
   } catch (err) {
@@ -14,32 +10,40 @@ const parse = value => {
   }
 }
 
-const parseObj = obj =>
-  Object.keys(obj).reduce(
-    (acc, key) => ({ ...acc, [key]: parse(obj[key]) }),
-    {}
-  )
+function parseObject (obj) {
+  return Object.keys(obj).reduce(function (acc, key) {
+    return Object.assign(acc, { [key]: parseJSON(obj[key]) })
+  }, {})
+}
 
-const getDOMSelector = selector =>
-  typeof selector === 'string'
+function getDOMSelector (selector) {
+  return typeof selector === 'string'
     ? document.querySelectorAll(selector)
     : [].concat(selector).filter(Boolean)
+}
 
-const forEach = (list, fn) => {
+function forEach (list, fn) {
   for (let i = 0; i < list.length; i++) fn(list[i])
 }
 
-const microlink = (selector, opts) =>
-  forEach(getDOMSelector(selector), el =>
-    ReactDOM.render(
-      React.createElement(Microlink, {
-        url: el.getAttribute('href'),
-        ...{ ...DEFAULT_OPTS, ...opts },
-        ...parseObj(el.dataset)
-      }),
+function microlink (selector, opts) {
+  return forEach(getDOMSelector(selector), function (el) {
+    return ReactDOM.render(
+      React.createElement(
+        Microlink,
+        Object.assign(
+          {
+            url: el.getAttribute('href'),
+            as: 'div'
+          },
+          opts,
+          parseObject(el.dataset)
+        )
+      ),
       el
     )
-  )
+  })
+}
 
 microlink.version = '__VERSION__'
 
