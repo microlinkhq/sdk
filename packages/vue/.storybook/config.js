@@ -1,8 +1,9 @@
-import { configure, addParameters } from '@storybook/react'
+import { addParameters } from '@storybook/vue'
+import Vue from 'vue'
 
-function loadStories () {
-  require('../stories')
-}
+import Microlink from '../src'
+
+Vue.use(Microlink)
 
 addParameters({
   options: {
@@ -14,5 +15,3 @@ addParameters({
     enableShortcuts: false
   }
 })
-
-configure(loadStories, module)

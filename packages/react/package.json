@@ -5,6 +5,8 @@
   "version": "5.0.1",
   "main": "dist/microlink.cjs.js",
   "module": "dist/microlink.m.js",
+  "umd:main": "dist/microlink.js",
+  "unpkg": "dist/microlink.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/react"
@@ -65,6 +67,10 @@
     "styled-components": "latest",
     "unfetch": "latest"
   },
+  "peerDependencies": {
+    "react": "^16",
+    "styled-components": "^5"
+  },
   "engines": {
     "node": ">= 10"
   },
@@ -90,10 +96,6 @@
     "testURL": "http://localhost/",
     "verbose": true
   },
-  "peerDependencies": {
-    "react": "^16",
-    "styled-components": "^5"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -110,7 +112,5 @@
     "plugins": [
       "jsx-a11y"
     ]
-  },
-  "umd:main": "dist/microlink.js",
-  "unpkg": "dist/microlink.js"
+  }
 }

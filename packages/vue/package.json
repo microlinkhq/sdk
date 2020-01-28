@@ -1,0 +1,64 @@
+{
+  "name": "@microlink/vue",
+  "description": "Convert your links into beautiful previews",
+  "homepage": "https://microlink.io/docs/sdk/integrations/vue/",
+  "version": "5.0.0",
+  "main": "dist/microlink.common.js",
+  "umd:main": "dist/microlink.umd.js",
+  "unpkg": "dist/microlink.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/microlinkhq/sdk/issues"
+  },
+  "keywords": [
+    "data",
+    "extraction",
+    "link",
+    "microlink",
+    "preview",
+    "previsualization"
+  ],
+  "dependencies": {
+    "@microlink/vanilla": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@microlink/demo-links": "latest",
+    "@storybook/vue": "latest",
+    "@vue/cli-plugin-babel": "latest",
+    "@vue/cli-plugin-eslint": "latest",
+    "@vue/cli-service": "latest",
+    "@vue/eslint-config-prettier": "latest",
+    "babel-eslint": "latest",
+    "babel-loader": "latest",
+    "babel-preset-vue": "latest",
+    "eslint": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-vue": "latest",
+    "prettier": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "latest",
+    "vue": "latest",
+    "vue-template-compiler": "latest"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "styled-components": "^5",
+    "vue": "^2.6"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "start-storybook -p 6006",
+    "build": "vue-cli-service build --target lib --formats commonjs,umd --name microlink ./src/index.js",
+    "lint": "vue-cli-service lint ./ --ext .js,.vue",
+    "build-storybook": "build-storybook"
+  },
+  "license": "MIT"
+}
