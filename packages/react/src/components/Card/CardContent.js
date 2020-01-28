@@ -83,6 +83,7 @@ const Footer = styled('footer').attrs({ className: classNames.url })`
 const Author = styled(CardText)`
   opacity: 0.75;
   transition: opacity ${transition.medium};
+  will-change: opacity;
 
   .${classNames.main}:hover & {
     opacity: 1;
@@ -95,6 +96,7 @@ const PoweredBy = styled('span').attrs({ title: 'microlink.io' })`
   display: block;
   margin-left: 15px;
   transition: filter ${transition.medium}, opacity ${transition.medium};
+  will-change: filter, opacity;
   &:not(:hover) {
     filter: grayscale(100%);
     opacity: 0.75;

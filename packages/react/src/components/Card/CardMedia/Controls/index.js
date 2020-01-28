@@ -22,6 +22,7 @@ const OuterWrap = styled('div').attrs({ className: classNames.mediaControls })`
   right: 0;
   bottom: 0;
   transition: background ${transition.long};
+  will-change: background;
 
   .${classNames.main}:hover & {
     background: rgba(0, 0, 0, 0.35);
@@ -39,6 +40,7 @@ const InnerWrap = styled('div')`
   justify-content: center;
   z-index: 2;
   transition: opacity ${transition.medium};
+  will-change: opacity;
 
   .${classNames.main}:not(:hover) & {
     opacity: ${({ opacity = 0 }) => opacity};

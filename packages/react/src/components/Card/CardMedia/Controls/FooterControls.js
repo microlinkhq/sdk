@@ -41,6 +41,7 @@ const BottomControls = styled('div')`
   justify-content: center;
   align-items: center;
   transition: opacity ${transition.medium};
+  will-change: opacity;
 
   .${classNames.main}:not(:hover) & {
     opacity: 0;
