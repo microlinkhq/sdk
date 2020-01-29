@@ -26,10 +26,10 @@
     "husky": "latest",
     "prettier-standard": "latest",
     "rollup": "latest",
-    "rollup-plugin-commonjs": "latest",
+    "@rollup/plugin-commonjs": "latest",
     "rollup-plugin-filesize": "latest",
-    "rollup-plugin-node-resolve": "latest",
-    "rollup-plugin-replace": "latest",
+    "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-replace": "latest",
     "rollup-plugin-terser": "latest",
     "rollup-plugin-visualizer": "latest",
     "standard": "latest"
