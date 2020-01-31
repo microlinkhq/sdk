@@ -26,10 +26,13 @@ function forEach (list, fn) {
   for (let i = 0; i < list.length; i++) fn(list[i])
 }
 
-function microlink (selector, opts) {
+function microlink (selector, opts, rootNode) {
   return forEach(getDOMSelector(selector), function (el) {
-    var wrap = document.createElement('div')
-    el.parentNode.insertBefore(wrap, el)
+    if (!rootNode) {
+      rootNode = document.createElement('div')
+      rootNode.className = 'microlink_vanilla_dom'
+      el.parentNode.insertBefore(rootNode, el)
+    }
 
     ReactDOM.render(
       React.createElement(
@@ -42,7 +45,7 @@ function microlink (selector, opts) {
           parseObject(el.dataset)
         )
       ),
-      wrap
+      rootNode
     )
 
     el.remove()
