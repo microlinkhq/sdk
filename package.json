@@ -1,6 +1,6 @@
 {
   "name": "@microlink/root",
-  "description": "Convert your links into beautiful previews",
+  "description": "Turns links into a beautiful previews",
   "homepage": "https://microlink.io/docs/sdk",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
@@ -71,16 +71,13 @@
   },
   "lint-staged": {
     "package.json": [
-      "finepack",
-      "git add"
+      "finepack"
     ],
     "*.js": [
-      "prettier-standard",
-      "git add"
+      "prettier-standard"
     ],
     "*.md": [
-      "standard-markdown",
-      "git add"
+      "standard-markdown"
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@microlink/react",
-  "description": "Convert your links into beautiful previews",
+  "description": "Turns links into a beautiful previews",
   "homepage": "https://microlink.io/docs/sdk/integrations/react/",
   "version": "5.0.1",
   "main": "dist/microlink.cjs.js",
@@ -44,7 +44,6 @@
     "enzyme": "latest",
     "enzyme-adapter-react-16": "latest",
     "eslint-plugin-jsx-a11y": "latest",
-    "finepack": "latest",
     "husky": "latest",
     "jest": "latest",
     "jest-environment-enzyme": "latest",
@@ -81,7 +80,6 @@
     "build": "NODE_ENV=production rollup -c rollup.config.js",
     "build-storybook": "NODE_ENV=production build-storybook --quiet",
     "dev": "start-storybook -p 6006",
-    "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard",
     "pretest": "npm run lint",
     "start": "node scripts/start.js",
