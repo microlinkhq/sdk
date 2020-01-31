@@ -18,6 +18,12 @@ npm install @microlink/react styled-components --save
 npm install @microlink/vanilla --save
 ```
 
+### Angular
+
+```
+npm install @microlink/angular --save
+```
+
 ## License
 
 **microlink** © [Microlink](https://microlink.io), Released under the [MIT](https://github.com/microlinkhq/sdk/blob/master/LICENSE.md) License.<br>

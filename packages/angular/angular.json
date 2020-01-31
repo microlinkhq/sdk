@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "projects": {
+    "microlink": {
+      "projectType": "library",
+      "root": "./",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "tsconfig.json",
+            "project": "ng-package.json"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "microlink"
+}

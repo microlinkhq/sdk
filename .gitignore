@@ -9,6 +9,7 @@ node_modules
 # production
 packages/react/dist/**
 packages/vanilla/dist/**
+packages/angular/dist/**
 /build
 storybook-static
 
