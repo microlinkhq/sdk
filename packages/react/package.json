@@ -1,10 +1,12 @@
 {
   "name": "@microlink/react",
-  "description": "Convert your links into beautiful previews",
+  "description": "Turns links into a beautiful previews",
   "homepage": "https://microlink.io/docs/sdk/integrations/react/",
   "version": "5.0.1",
   "main": "dist/microlink.cjs.js",
   "module": "dist/microlink.m.js",
+  "umd:main": "dist/microlink.js",
+  "unpkg": "dist/microlink.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/react"
@@ -42,7 +44,6 @@
     "enzyme": "latest",
     "enzyme-adapter-react-16": "latest",
     "eslint-plugin-jsx-a11y": "latest",
-    "finepack": "latest",
     "husky": "latest",
     "jest": "latest",
     "jest-environment-enzyme": "latest",
@@ -65,6 +66,10 @@
     "styled-components": "latest",
     "unfetch": "latest"
   },
+  "peerDependencies": {
+    "react": "^16",
+    "styled-components": "^5"
+  },
   "engines": {
     "node": ">= 10"
   },
@@ -75,7 +80,6 @@
     "build": "NODE_ENV=production rollup -c rollup.config.js",
     "build-storybook": "NODE_ENV=production build-storybook --quiet",
     "dev": "start-storybook -p 6006",
-    "format": "prettier-standard index.js {src,stories,.storybook}/**/*.js --single-quote",
     "lint": "standard",
     "pretest": "npm run lint",
     "start": "node scripts/start.js",
@@ -89,10 +93,6 @@
     "testEnvironment": "enzyme",
     "testURL": "http://localhost/",
     "verbose": true
-  },
-  "peerDependencies": {
-    "react": "^16",
-    "styled-components": "^5"
   },
   "publishConfig": {
     "access": "public"
@@ -110,7 +110,5 @@
     "plugins": [
       "jsx-a11y"
     ]
-  },
-  "umd:main": "dist/microlink.js",
-  "unpkg": "dist/microlink.js"
+  }
 }
