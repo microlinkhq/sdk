@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/microlinkhq/sdk/compare/v5.0.0...v5.0.1) (2020-01-31)
+
+
+### Performance Improvements
+
+* optimize animation with will-change ([#177](https://github.com/microlinkhq/sdk/issues/177)) ([dde1aff](https://github.com/microlinkhq/sdk/commit/dde1aff857f7e3a4790a2bd71f69b0f6d9976dbb))
+
+
+
+
+
 # [5.0.0](https://github.com/microlinkhq/sdk/compare/v4.5.1...v5.0.0) (2020-01-17)
 
 **Note:** Version bump only for package @microlink/root

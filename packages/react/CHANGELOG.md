@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.0.0...v5.0.1) (2020-01-31)
+
+
+### Performance Improvements
+
+* optimize animation with will-change ([#177](http://github.com/microlinkhq/sdk/tree/master/packages/react/issues/177)) ([dde1aff](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/dde1aff857f7e3a4790a2bd71f69b0f6d9976dbb))
+
+
+
+
+
 # [5.0.0](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v4.5.1...v5.0.0) (2020-01-17)
 
 **Note:** Version bump only for package @microlink/react
