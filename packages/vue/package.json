@@ -1,11 +1,9 @@
 {
   "name": "@microlink/vue",
-  "description": "Convert your links into beautiful previews",
+  "description": "Turns links into a beautiful previews",
   "homepage": "https://microlink.io/docs/sdk/integrations/vue/",
   "version": "5.0.0",
   "main": "dist/microlink.common.js",
-  "umd:main": "dist/microlink.umd.js",
-  "unpkg": "dist/microlink.umd.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/vue"
@@ -29,36 +27,35 @@
     "@microlink/demo-links": "latest",
     "@storybook/vue": "latest",
     "@vue/cli-plugin-babel": "latest",
-    "@vue/cli-plugin-eslint": "latest",
     "@vue/cli-service": "latest",
-    "@vue/eslint-config-prettier": "latest",
-    "babel-eslint": "latest",
     "babel-loader": "latest",
     "babel-preset-vue": "latest",
-    "eslint": "latest",
-    "eslint-plugin-prettier": "latest",
-    "eslint-plugin-vue": "latest",
-    "prettier": "latest",
+    "prettier-standard": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "standard": "latest",
     "styled-components": "latest",
     "vue": "latest",
     "vue-template-compiler": "latest"
   },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-cli-service build --target lib --formats commonjs,umd --name microlink ./src/index.js",
+    "build-storybook": "build-storybook",
+    "dev": "start-storybook -p 6006",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "exit 0"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
     "styled-components": "^5",
     "vue": "^2.6"
   },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "dev": "start-storybook -p 6006",
-    "build": "vue-cli-service build --target lib --formats commonjs,umd --name microlink ./src/index.js",
-    "lint": "vue-cli-service lint ./ --ext .js,.vue",
-    "build-storybook": "build-storybook"
-  },
-  "license": "MIT"
+  "umd:main": "dist/microlink.umd.js",
+  "unpkg": "dist/microlink.umd.js"
 }

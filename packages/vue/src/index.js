@@ -11,24 +11,23 @@ export const Microlink = Vue.component('Microlink', {
     }
   },
 
-  mounted() {
+  mounted () {
     this.renderCard()
   },
 
   methods: {
-    renderCard() {
+    renderCard () {
       const { cardSpace } = this.$refs
       const anchor = document.createElement('a')
-      anchor.href = url
-      anchor.innerHTML = url
-
+      anchor.href = this.url
+      anchor.innerHTML = this.url
       microlink(anchor, this.parameters, cardSpace)
     }
   },
 
   watch: {
     $attrs: {
-      handler() {
+      handler () {
         this.renderCard()
       },
       deep: true
@@ -36,25 +35,22 @@ export const Microlink = Vue.component('Microlink', {
   },
 
   computed: {
-    parameters() {
-      return Object.keys(this.$attrs).reduce((acc, value) => {
-        if (value.startsWith('data-')) {
-          return acc
-        }
-
-        return {
-          ...acc,
-          [camelCase(value)]: this.$attrs[value]
-        }
-      }, Vue.microlinkGlobalOptions || {})
+    parameters () {
+      return Object.keys(this.$attrs).reduce(
+        (acc, value) =>
+          value.startsWith('data-')
+            ? acc
+            : { ...acc, [camelCase(value)]: this.$attrs[value] },
+        Vue.microlinkGlobalOptions || {}
+      )
     }
   },
 
-  template: `<div class="microlink_vue_dom" ref="cardSpace" />`
+  template: '<div class="microlink_vue_dom" ref="cardSpace" />'
 })
 
 export default {
-  install(v, options = {}) {
+  install (v, options = {}) {
     v.microlinkGlobalOptions = options
     v.component(Microlink.name, Microlink)
   }
