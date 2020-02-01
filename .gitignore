@@ -10,6 +10,7 @@ node_modules
 packages/react/dist/**
 packages/vanilla/dist/**
 packages/angular/dist/**
+packages/vue/dist/**
 /build
 storybook-static
 

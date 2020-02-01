@@ -24,6 +24,12 @@ npm install @microlink/vanilla --save
 npm install @microlink/angular --save
 ```
 
+### Vue
+
+```
+npm install @microlink/vue --save
+```
+
 ## License
 
 **microlink** © [Microlink](https://microlink.io), Released under the [MIT](https://github.com/microlinkhq/sdk/blob/master/LICENSE.md) License.<br>

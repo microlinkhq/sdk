@@ -1,0 +1,61 @@
+{
+  "name": "@microlink/vue",
+  "description": "Turns links into a beautiful previews",
+  "homepage": "https://microlink.io/docs/sdk/integrations/vue/",
+  "version": "5.0.2",
+  "main": "dist/microlink.common.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/microlinkhq/sdk/issues"
+  },
+  "keywords": [
+    "data",
+    "extraction",
+    "link",
+    "microlink",
+    "preview",
+    "previsualization"
+  ],
+  "dependencies": {
+    "@microlink/vanilla": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@microlink/demo-links": "latest",
+    "@storybook/vue": "latest",
+    "@vue/cli-plugin-babel": "latest",
+    "@vue/cli-service": "latest",
+    "babel-loader": "latest",
+    "babel-preset-vue": "latest",
+    "prettier-standard": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "standard": "latest",
+    "styled-components": "latest",
+    "vue": "latest",
+    "vue-template-compiler": "latest"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-cli-service build --target lib --formats commonjs,umd --name microlink ./src/index.js",
+    "build-storybook": "build-storybook",
+    "dev": "start-storybook -p 6006",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "exit 0"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "styled-components": "^5",
+    "vue": "^2.6"
+  },
+  "umd:main": "dist/microlink.umd.js",
+  "unpkg": "dist/microlink.umd.js"
+}
