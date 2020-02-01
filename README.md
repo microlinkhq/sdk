@@ -18,6 +18,12 @@ npm install @microlink/react styled-components --save
 npm install @microlink/vanilla --save
 ```
 
+### Angular
+
+```
+npm install @microlink/angular --save
+```
+
 ### Vue
 
 ```
