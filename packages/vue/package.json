@@ -1,6 +1,6 @@
 {
   "name": "@microlink/vue",
-  "description": "Turns links into a beautiful previews",
+  "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/vue/",
   "version": "5.0.2",
   "main": "dist/microlink.common.js",

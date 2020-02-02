@@ -1,6 +1,6 @@
 {
   "name": "@microlink/react",
-  "description": "Turns links into a beautiful previews",
+  "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/react/",
   "version": "5.0.2",
   "main": "dist/microlink.cjs.js",
