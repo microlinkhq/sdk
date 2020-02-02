@@ -1,6 +1,6 @@
 {
   "name": "@microlink/angular",
-  "description": "Turns links into a beautiful previewsnpm ",
+  "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/angular/",
   "version": "5.0.3",
   "main": "dist/bundles/microlink-angular.umd.js",
