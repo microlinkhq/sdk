@@ -60,7 +60,7 @@
     "ts-node": "latest",
     "tsickle": "latest",
     "tslint": "latest",
-    "typescript": "latest",
+    "typescript": "3.5",
     "zone.js": "latest"
   },
   "peerDependencies": {
