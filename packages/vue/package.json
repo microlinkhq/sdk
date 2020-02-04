@@ -56,6 +56,9 @@
     "styled-components": "^5",
     "vue": "^2.6"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "umd:main": "dist/microlink.umd.js",
   "unpkg": "dist/microlink.umd.js"
 }

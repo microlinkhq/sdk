@@ -4,16 +4,7 @@
   "homepage": "https://microlink.io/docs/sdk/integrations/angular/",
   "version": "5.0.4",
   "main": "dist/bundles/microlink-angular.umd.js",
-  "umd:main": "dist/bundles/microlink-angular.umd.js",
-  "unpkg": "dist/bundles/microlink-angular.umd.min.js",
   "module": "dist/fesm5/microlink-angular.js",
-  "es2015": "dist/fesm2015/microlink-angular.js",
-  "esm5": "dist/esm5/microlink-angular.js",
-  "esm2015": "dist/esm2015/microlink-angular.js",
-  "fesm5": "dist/fesm5/microlink-angular.js",
-  "fesm2015": "dist/fesm2015/microlink-angular.js",
-  "typings": "dist/microlink-angular.d.ts",
-  "metadata": "dist/microlink-angular.metadata.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/angular"
@@ -63,20 +54,32 @@
     "typescript": "3.5",
     "zone.js": "latest"
   },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "ng build && rm ./dist/package.json",
+    "build-storybook": "build-storybook",
+    "dev": "start-storybook -p 6006",
+    "lint": "prettier-standard index.d.ts {src,stories,.storybook}/**/*.{ts,js}"
+  },
+  "license": "MIT",
+  "es2015": "dist/fesm2015/microlink-angular.js",
+  "esm2015": "dist/esm2015/microlink-angular.js",
+  "esm5": "dist/esm5/microlink-angular.js",
+  "fesm2015": "dist/fesm2015/microlink-angular.js",
+  "fesm5": "dist/fesm5/microlink-angular.js",
+  "metadata": "dist/microlink-angular.metadata.json",
   "peerDependencies": {
     "@angular/core": "^8",
     "react": "^16",
     "react-dom": "^16",
     "styled-components": "^5"
   },
-  "scripts": {
-    "dev": "start-storybook -p 6006",
-    "lint": "prettier-standard index.d.ts {src,stories,.storybook}/**/*.{ts,js}",
-    "build": "ng build && rm ./dist/package.json",
-    "build-storybook": "build-storybook"
+  "publishConfig": {
+    "access": "public"
   },
-  "license": "MIT",
-  "files": [
-    "dist"
-  ]
+  "typings": "dist/microlink-angular.d.ts",
+  "umd:main": "dist/bundles/microlink-angular.umd.js",
+  "unpkg": "dist/bundles/microlink-angular.umd.min.js"
 }
