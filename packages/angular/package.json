@@ -2,7 +2,7 @@
   "name": "@microlink/angular",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/angular/",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "main": "dist/bundles/microlink-angular.umd.js",
   "module": "dist/fesm5/microlink-angular.js",
   "repository": {
