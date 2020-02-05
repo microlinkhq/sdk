@@ -5,7 +5,7 @@ import Microlink from '../src'
 export default { title: 'Microlink' }
 
 export const defaultStory = () => ({
-  component: Microlink.MicrolinkComponent,
+  component: Microlink.Component,
   props: {
     url: demoLinks.Nasa.url
   }
@@ -13,7 +13,7 @@ export const defaultStory = () => ({
 defaultStory.story = { name: 'Default' }
 
 export const withOptions = () => ({
-  component: Microlink.MicrolinkComponent,
+  component: Microlink.Component,
   props: {
     url: demoLinks.Spotify.url,
     options: {
@@ -26,7 +26,7 @@ export const withOptions = () => ({
 
 export const configurableExample = () => ({
   moduleMetadata: {
-    imports: [Microlink.MicrolinkModule]
+    imports: [Microlink.Module]
   },
   props: {
     linkKeys: Object.keys(demoLinks),
