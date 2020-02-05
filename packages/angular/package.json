@@ -54,6 +54,12 @@
     "typescript": "3.5",
     "zone.js": "latest"
   },
+  "peerDependencies": {
+    "@angular/core": "^8",
+    "react": "^16",
+    "react-dom": "^16",
+    "styled-components": "^5"
+  },
   "files": [
     "dist"
   ],
@@ -64,22 +70,16 @@
     "lint": "prettier-standard index.d.ts {src,stories,.storybook}/**/*.{ts,js}"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "es2015": "dist/fesm2015/microlink-angular.js",
   "esm2015": "dist/esm2015/microlink-angular.js",
   "esm5": "dist/esm5/microlink-angular.js",
   "fesm2015": "dist/fesm2015/microlink-angular.js",
   "fesm5": "dist/fesm5/microlink-angular.js",
   "metadata": "dist/microlink-angular.metadata.json",
-  "peerDependencies": {
-    "@angular/core": "^8",
-    "react": "^16",
-    "react-dom": "^16",
-    "styled-components": "^5"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "typings": "dist/microlink-angular.d.ts",
+  "typings": "dist/index.d.ts",
   "umd:main": "dist/bundles/microlink-angular.umd.js",
   "unpkg": "dist/bundles/microlink-angular.umd.min.js"
 }
