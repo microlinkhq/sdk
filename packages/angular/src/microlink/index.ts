@@ -1,2 +1,2 @@
-export * from './microlink.component'
-export * from './microlink.module'
+export { MicrolinkComponent as Component } from './microlink.component'
+export { MicrolinkModule as Module } from './microlink.module'
