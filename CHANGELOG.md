@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.9](https://github.com/microlinkhq/sdk/compare/v5.0.8...v5.0.9) (2020-02-07)
+
+
+### Bug Fixes
+
+* avoid create element dynamically ([#190](https://github.com/microlinkhq/sdk/issues/190)) ([9849db7](https://github.com/microlinkhq/sdk/commit/9849db7c04eef1f2ec46c2c1870eb809993e3734))
+
+
+
+
+
 ## [5.0.8](https://github.com/microlinkhq/sdk/compare/v5.0.7...v5.0.8) (2020-02-07)
 
 **Note:** Version bump only for package @microlink/root
