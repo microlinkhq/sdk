@@ -1,9 +1,9 @@
 import { createElement, forwardRef, useContext } from 'react'
 import styled, { css } from 'styled-components'
 
-import { media, isLarge } from '../../utils'
-import { font, animation, speed } from '../../theme'
 import { GlobalContext } from '../../context/GlobalState'
+import { font, animation, speed } from '../../theme'
+import { media, isLarge } from '../../utils'
 
 const HEIGHT = '382px'
 
@@ -61,7 +61,6 @@ const baseStyle = css(
   transition-duration: ${speed.medium};
   transition-timing-function: ${animation.medium};
 
-
   &:active,
   &:hover {
     outline: 0;
@@ -69,29 +68,32 @@ const baseStyle = css(
 `
 )
 
-const createEl = el =>
-  styled(el)(
-    baseStyle,
-    ({ isLoading, contrast }) => !isLoading && !contrast && hoverStyle,
-    ({ cardSize }) => isLarge(cardSize) && largeStyle,
-    ({ direction }) => direction === 'rtl' && rtlStyle,
-    ({ backgroundColor, color, contrast }) =>
-      contrast && color && backgroundColor && contrastStyle,
-    ({ backgroundColor, color, contrast }) =>
-      contrast && (!color || !backgroundColor) && hoverStyle
-  )
+const Element = styled('a')(
+  baseStyle,
+  ({ isLoading, contrast }) => !isLoading && !contrast && hoverStyle,
+  ({ cardSize }) => isLarge(cardSize) && largeStyle,
+  ({ direction }) => direction === 'rtl' && rtlStyle,
+  ({ backgroundColor, color, contrast }) =>
+    contrast && color && backgroundColor && contrastStyle,
+  ({ backgroundColor, color, contrast }) =>
+    contrast && (!color || !backgroundColor) && hoverStyle
+)
 
 const CardWrap = forwardRef(({ href, rel, target, ...restProps }, ref) => {
   const {
     state: { backgroundColor, color, title },
     props: { size: cardSize }
   } = useContext(GlobalContext)
-  const props = { ...restProps, backgroundColor, cardSize, color, ref, title }
 
-  return createElement(
-    createEl(props.as),
-    props.as === 'a' ? { href, rel, target, ...props } : props
-  )
+  return createElement(Element, {
+    ...(restProps.as === 'a' ? { href, rel, target } : undefined),
+    ...restProps,
+    backgroundColor,
+    cardSize,
+    color,
+    ref,
+    title
+  })
 })
 
 CardWrap.defaultProps = {
