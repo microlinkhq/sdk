@@ -40,7 +40,7 @@ const BottomControls = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity ${transition.medium};
+  transition: ${transition.medium('opacity')};
   will-change: opacity;
 `
 

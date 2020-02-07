@@ -98,10 +98,12 @@ exports[`Storyshots media audio 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -129,10 +131,12 @@ exports[`Storyshots media audio 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -164,10 +168,12 @@ exports[`Storyshots media audio 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -535,10 +541,12 @@ exports[`Storyshots media iframe 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -801,10 +809,12 @@ exports[`Storyshots media image 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -832,10 +842,12 @@ exports[`Storyshots media image 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -867,10 +879,12 @@ exports[`Storyshots media image 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -1286,10 +1300,12 @@ exports[`Storyshots media logo 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -1317,10 +1333,12 @@ exports[`Storyshots media logo 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -1352,10 +1370,12 @@ exports[`Storyshots media logo 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -1771,10 +1791,12 @@ exports[`Storyshots media screenshot 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -1802,10 +1824,12 @@ exports[`Storyshots media screenshot 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -1837,10 +1861,12 @@ exports[`Storyshots media screenshot 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -2256,10 +2282,12 @@ exports[`Storyshots media video 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -2287,10 +2315,12 @@ exports[`Storyshots media video 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -2322,10 +2352,12 @@ exports[`Storyshots media video 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -2741,10 +2773,12 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -2772,10 +2806,12 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -2807,10 +2843,12 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -3226,10 +3264,12 @@ exports[`Storyshots props contrast 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -3257,10 +3297,12 @@ exports[`Storyshots props contrast 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -3292,10 +3334,12 @@ exports[`Storyshots props contrast 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -3735,10 +3779,12 @@ exports[`Storyshots props controls (disabled) 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -3766,10 +3812,12 @@ exports[`Storyshots props controls (disabled) 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -3801,10 +3849,12 @@ exports[`Storyshots props controls (disabled) 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -4220,10 +4270,12 @@ exports[`Storyshots props default 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -4251,10 +4303,12 @@ exports[`Storyshots props default 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -4286,10 +4340,12 @@ exports[`Storyshots props default 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -4705,10 +4761,12 @@ exports[`Storyshots props direction + contrast 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -4736,10 +4794,12 @@ exports[`Storyshots props direction + contrast 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -4771,10 +4831,12 @@ exports[`Storyshots props direction + contrast 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -5223,10 +5285,12 @@ exports[`Storyshots props direction 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -5254,10 +5318,12 @@ exports[`Storyshots props direction 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -5289,10 +5355,12 @@ exports[`Storyshots props direction 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -5718,10 +5786,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c12 {
@@ -5749,10 +5819,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c16 {
@@ -5784,10 +5856,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c6 {
@@ -6231,10 +6305,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c12 {
@@ -6262,10 +6338,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c16 {
@@ -6297,10 +6375,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c6 {
@@ -6750,10 +6830,12 @@ exports[`Storyshots props loading 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -6781,10 +6863,12 @@ exports[`Storyshots props loading 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -6816,10 +6900,12 @@ exports[`Storyshots props loading 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -7235,10 +7321,12 @@ exports[`Storyshots setData function 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -7266,10 +7354,12 @@ exports[`Storyshots setData function 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -7301,10 +7391,12 @@ exports[`Storyshots setData function 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -7720,10 +7812,12 @@ exports[`Storyshots setData object 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -7751,10 +7845,12 @@ exports[`Storyshots setData object 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -7786,10 +7882,12 @@ exports[`Storyshots setData object 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -8158,10 +8256,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -8373,10 +8473,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -8641,10 +8743,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -8672,10 +8776,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -8707,10 +8813,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -9157,10 +9265,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -9188,10 +9298,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -9223,10 +9335,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -9673,10 +9787,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -9704,10 +9820,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -9739,10 +9857,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -10194,10 +10314,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -10225,10 +10347,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -10260,10 +10384,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -10734,10 +10860,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -10765,10 +10893,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -10800,10 +10930,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -11274,10 +11406,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -11305,10 +11439,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -11340,10 +11476,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -11814,10 +11952,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -11845,10 +11985,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -11880,10 +12022,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -12354,10 +12498,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -12385,10 +12531,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -12420,10 +12568,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -12894,10 +13044,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -12925,10 +13077,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -12960,10 +13114,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -13438,10 +13594,12 @@ exports[`Storyshots style misc 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -13469,10 +13627,12 @@ exports[`Storyshots style misc 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -13504,10 +13664,12 @@ exports[`Storyshots style misc 1`] = `
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -13945,10 +14107,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -13976,10 +14140,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -14011,10 +14177,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -14485,10 +14653,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -14516,10 +14686,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -14551,10 +14723,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -15025,10 +15199,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -15056,10 +15232,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -15091,10 +15269,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -15565,10 +15745,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -15596,10 +15778,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -15631,10 +15815,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -16105,10 +16291,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -16136,10 +16324,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -16171,10 +16361,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {
@@ -16645,10 +16837,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c11 {
@@ -16676,10 +16870,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c15 {
@@ -16711,10 +16907,12 @@ Array [
   right: 0;
   bottom: 0;
   background: #e1e8ed;
-  opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
-  transition: opacity 150ms cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .c5 {

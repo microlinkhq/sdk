@@ -17,8 +17,13 @@ export const loadingOverlay = css`
     right: 0;
     bottom: 0;
     background: #e1e8ed;
-    opacity: ${({ isLoading }) => (isLoading ? 1 : 0)};
     z-index: 1;
-    transition: opacity ${transition.medium};
+    transition: ${transition.medium('opacity', 'visibility')};
+    will-change: opacity;
+
+    ${({ isLoading }) => css`
+      opacity: ${(isLoading ? 1 : 0)};
+      visibility: ${(isLoading ? 'visible' : 'hidden')};
+    `};
   }
 `

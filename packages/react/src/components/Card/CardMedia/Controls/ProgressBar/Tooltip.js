@@ -2,7 +2,6 @@ import React, { forwardRef } from 'react'
 import styled from 'styled-components'
 
 import { font, transition } from '../../../../../theme'
-import { classNames } from '../../../../../utils'
 
 const BASE_FONT_SIZE = 11
 
@@ -10,7 +9,6 @@ const sizeScales = { normal: 0.8 }
 const getMarkerFontSize = size => BASE_FONT_SIZE * (sizeScales[size] || 1)
 
 const Tooltip = styled('span').attrs(({ position, isDragging, visible }) => ({
-  className: classNames.progressTooltip,
   style: {
     left: `${position}px`,
     top: visible ? '-4px' : '0px',
@@ -28,8 +26,7 @@ const Tooltip = styled('span').attrs(({ position, isDragging, visible }) => ({
   font-family: ${font.mono};
   font-size: ${({ cardSize }) => getMarkerFontSize(cardSize)}px;
   line-height: 1;
-  transition: opacity ${transition.medium}, visibility ${transition.medium},
-    top ${transition.long}, transform ${transition.medium};
+  transition: ${transition.medium('opacity', 'visibility', 'transform')}, ${transition.long('top')};
   will-change: top, left, visibility, opacity, transform;
   backface-visibility: hidden;
 `

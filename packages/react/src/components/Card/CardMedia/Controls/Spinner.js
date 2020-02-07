@@ -38,17 +38,22 @@ const dash = keyframes`
   }
 `
 
-const Wrap = styled(MediaButton)(({ cardSize, isVisible }) => {
+const Wrap = styled(MediaButton).attrs(({ isVisible }) => ({
+  style: {
+    opacity: isVisible ? 1 : 0,
+    visibility: isVisible ? 'visible' : 'hidden'
+  }
+}))(({ cardSize }) => {
+  const size = `${getSpinnerSize(cardSize)}px`
   const offset = `${getSpinnerOffset(cardSize)}px`
 
   return css`
     position: absolute;
+    width: ${size};
     right: ${offset};
     top: ${offset};
-    width: ${getSpinnerSize(cardSize)}px;
-    opacity: ${isVisible ? 1 : 0};
-    visibility: ${isVisible ? 'visible' : 'hidden'};
-    transition: opacity ${transition.medium}, visibility ${transition.medium};
+    transition: ${transition.medium('opacity', 'visibility')};
+    will-change: opacity, visibility;
     pointer-events: none;
   `
 })

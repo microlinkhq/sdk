@@ -134,9 +134,6 @@ export const classNames = {
   ffwControl: `${CONTROLS_BASE_CLASSNAME}_fast_forward`,
   rateControl: `${CONTROLS_BASE_CLASSNAME}_rate`,
   progressBar: `${CONTROLS_BASE_CLASSNAME}_progress_bar`,
-  progressBarDrag: `${CONTROLS_BASE_CLASSNAME}_progress_bar_drag`,
-  progressTooltip: `${CONTROLS_BASE_CLASSNAME}_progress_tooltip`,
-  progressHandle: `${CONTROLS_BASE_CLASSNAME}_progress_handle`,
   progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`,
   spinner: `${CONTROLS_BASE_CLASSNAME}_spinner`,
   iframe: `${BASE_CLASSNAME}__iframe`

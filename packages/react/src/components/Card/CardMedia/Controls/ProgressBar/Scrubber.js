@@ -23,8 +23,7 @@ const Scrubber = styled('div').attrs(({ isVisible, positionX }) => ({
   border-radius: 50%;
   transform-origin: center center;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  transition: transform ${transition.short}, opacity ${transition.short},
-    visibility ${transition.short};
+  transition: ${transition.short('transform', 'opacity', 'visibility')};
   will-change: left, transform, opacity, visibility;
   backface-visibility: hidden;
   z-index: 3;

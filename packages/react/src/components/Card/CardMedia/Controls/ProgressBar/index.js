@@ -52,7 +52,7 @@ const BarsWrap = styled('div').attrs(({ cardSize, isDragging }) => {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.75);
   background: rgba(255, 255, 255, 0.15);
-  transition: height ${transition.short};
+  transition: ${transition.short('height')};
   will-change: height;
   pointer-events: none;
   position: relative;
@@ -109,8 +109,8 @@ const ProgressHover = styled('div').attrs(
   bottom: 0;
   background: rgba(255, 255, 255, 0.4);
   transform-origin: left center;
+  transition: ${transition.short('opacity', 'visibility')};
   will-change: left, transform, opacity, visible;
-  transition: opacity ${transition.short}, visibility ${transition.short};
 `
 
 const BufferedChunk = styled('div').attrs(({ start, end }) => ({

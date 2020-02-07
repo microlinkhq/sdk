@@ -4,7 +4,7 @@ import { transition } from '../../../../theme'
 const MediaButton = styled('div')`
   backface-visibility: hidden;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-  transition: transform ${transition.short};
+  transition: ${transition.short('transform')};
   will-change: transform;
 
   > svg {

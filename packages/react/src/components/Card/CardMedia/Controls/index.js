@@ -33,7 +33,7 @@ const OuterWrap = styled('div').attrs({ className: classNames.mediaControls })`
   top: 0;
   right: 0;
   bottom: 0;
-  transition: background ${transition.long}, opacity ${transition.medium};
+  transition: ${transition.long('background')}, ${transition.medium('opacity')};
   will-change: background;
   display: flex;
   flex-direction: column;
@@ -72,14 +72,11 @@ const InnerWrap = styled('div')`
 const ControlsTop = styled('div')`
   flex: 1;
 
-  *[class*="${classNames.mediaControls}"]:not(.${classNames.progressTime}) {
-    transition: opacity ${transition.medium}, visibility ${transition.medium}; 
-  }
-
   ${({ isVisible }) =>
     !isVisible &&
     css`
     *[class*="${classNames.mediaControls}"]:not(.${classNames.progressTime}) {
+      transition: ${transition.medium('opacity', 'visibility')}; 
       opacity: 0;
       visibility: hidden;
     }
