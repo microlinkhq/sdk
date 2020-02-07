@@ -23,7 +23,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.5.19",
+    "@microlink/mql": "~0.5.20",
     "nanoclamp": "~1.2.11"
   },
   "devDependencies": {
