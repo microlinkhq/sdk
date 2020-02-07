@@ -34,7 +34,7 @@ const VolumeUp = props => (
 const BottomControls = styled('div')`
   z-index: 2;
   position: absolute;
-  bottom: ${({ cardSize }) => (isLarge(cardSize) ? 12 : 10)}px;
+  bottom: ${({ cardSize }) => (isLarge(cardSize) ? 18 : 14)}px;
   left: 0;
   right: 0;
   display: flex;
@@ -42,10 +42,6 @@ const BottomControls = styled('div')`
   align-items: center;
   transition: opacity ${transition.medium};
   will-change: opacity;
-
-  .${classNames.main}:not(:hover) & {
-    opacity: 0;
-  }
 `
 
 const VolumeIcon = styled('svg')`

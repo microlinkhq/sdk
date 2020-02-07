@@ -98,6 +98,17 @@ export const formatSeconds = secs => {
     .join(':')
 }
 
+export const clampNumber = (num, min, max) => {
+  switch (true) {
+    case num <= min:
+      return min
+    case num >= max:
+      return max
+    default:
+      return num
+  }
+}
+
 const BASE_CLASSNAME = 'microlink_card'
 const CONTENT_BASE_CLASSNAME = `${BASE_CLASSNAME}__content`
 const MEDIA_BASE_CLASSNAME = `${BASE_CLASSNAME}__media`
@@ -122,7 +133,6 @@ export const classNames = {
   rwControl: `${CONTROLS_BASE_CLASSNAME}_rewind`,
   ffwControl: `${CONTROLS_BASE_CLASSNAME}_fast_forward`,
   rateControl: `${CONTROLS_BASE_CLASSNAME}_rate`,
-  progress: `${CONTROLS_BASE_CLASSNAME}_progress`,
   progressBar: `${CONTROLS_BASE_CLASSNAME}_progress_bar`,
   progressBarDrag: `${CONTROLS_BASE_CLASSNAME}_progress_bar_drag`,
   progressTooltip: `${CONTROLS_BASE_CLASSNAME}_progress_tooltip`,

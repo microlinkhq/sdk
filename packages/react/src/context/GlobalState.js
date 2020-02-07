@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 
 const initialState = {}
 
@@ -12,29 +12,39 @@ const GlobalState = ({
   muted,
   playsInline,
   size,
-  ...props
+  ...rest
 }) => {
   const [state, setState] = useState(initialState)
 
-  const updateState = newState =>
-    setState(currentState => ({ ...currentState, ...newState }))
+  const updateState = useCallback(
+    newState => setState(currentState => ({ ...currentState, ...newState })),
+    []
+  )
+
+  const props = useMemo(
+    () => ({
+      autoPlay,
+      controls,
+      loop,
+      muted,
+      playsInline,
+      size
+    }),
+    [autoPlay, controls, loop, muted, playsInline, size]
+  )
+
+  const values = useMemo(
+    () => ({
+      props,
+      state,
+      updateState
+    }),
+    [props, state, updateState]
+  )
 
   return (
-    <GlobalContext.Provider
-      value={{
-        state,
-        props: {
-          autoPlay,
-          controls,
-          loop,
-          muted,
-          playsInline,
-          size
-        },
-        updateState
-      }}
-    >
-      {children(props)}
+    <GlobalContext.Provider value={values}>
+      {children(rest)}
     </GlobalContext.Provider>
   )
 }

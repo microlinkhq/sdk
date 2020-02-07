@@ -10,18 +10,18 @@ import PropTypes from 'prop-types'
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'
 import GlobalState, { GlobalContext } from './context/GlobalState'
 import {
+  castArray,
   classNames,
   fetchFromApi,
   getApiUrl,
   getUrlPath,
+  getPreferredMedia,
   imageProxy,
   isFunction,
   isLazySupported,
   isObject,
-  getPreferredMedia,
-  someProp,
-  castArray,
-  isSSR
+  isSSR,
+  someProp
 } from './utils'
 
 import { useIntersectionObserver } from './utils/hooks'
