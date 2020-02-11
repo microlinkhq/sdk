@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>@microlink/vanilla</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.js"></script>
+  <style>
+    body {
+      max-width: 828px;
+      margin: auto;
+      line-height: 1.8em;
+    }
+
+    a {
+      display: block;
+      margin: auto;
+      text-decoration: none;
+    }
+
+    .max-width-blog {
+      max-width: 828px;
+    }
+
+    .max-width-card {
+      max-width: 500px;
+    }
+
+    .codecopy,
+    pre {
+      max-height: 58px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    pre {
+      line-height: 1.5rem;
+      overflow: auto;
+      position: relative;
+      word-wrap: normal;
+      font-family: monospace;
+      border: 1px solid #cfd3d5;
+      color: #3e3f3f;
+    }
+
+    code {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <article class="ph3 helvetica">
+    <section class="pv4">
+      <h1 class="f4 black tc">default</h1>
+      <pre
+        class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://microlink.io&quot;&gt;microlink.io&lt;/a&gt;</code></pre>
+      <div><a class="link max-width-card" href="https://microlink.io">microlink.io</a></div>
+    </section>
+
+    <section class="pv4">
+      <h1 class="f4 black tc">data-media='logo'</h1>
+      <pre
+        class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://microlink.io&quot;&gt;microlink.io data-media='logo'&lt;/a&gt;</code></pre>
+      <div><a class="link max-width-card" href="https://microlink.io" data-media='["logo", "image"]'>microlink.io</a>
+      </div>
+    </section>
+
+    <section class="pv4">
+      <h1 class="f4 black tc">data-media='video'</h1>
+      <pre
+        class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://www.facebook.com/natgeo/videos/10156364216738951&quot data-media=&quot;video&quot;&gt;facebook.com/natgeo/videos/10156364216738951&lt;/a&gt;</code></pre>
+      <div><a class="link max-width-card" href="https://www.facebook.com/natgeo/videos/10156364216738951/"
+          data-media='video'>facebook.com/natgeo/videos/10156364216738951</a></div>
+    </section>
+
+    <section class="pv4">
+      <h1 class="f4 black tc">data-media='audio'</h1>
+      <pre class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://open.spotify.com/track/1W2919zs8SBCLTrOB1ftQT?si=4PcqgjH5RlWCvB5q4ukdnw&quot; data-media='audio'&lt;/a&gt;</code>
+      </pre>
+      <div><a class="link max-width-card"
+          href="https://open.spotify.com/track/1W2919zs8SBCLTrOB1ftQT?si=4PcqgjH5RlWCvB5q4ukdnw"
+          data-media='audio'>microlink.io</a></div>
+    </section>
+
+    <section class="pv4">
+      <h1 class="f4 black tc">data-media='screenshot'</h1>
+      <pre
+        class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://example.com&quot;&gt;example.com data-media='screenshot'&lt;/a&gt;</code></pre>
+      <div><a class="link max-width-card" href="https://example.com" data-media='screenshot'>example.com</a></div>
+    </section>
+
+    <section class="pv4">
+      <h1 class="f4 black tc">data-contrast='true'</h1>
+      <pre
+        class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://microlink.io&quot;&gt;microlink.io data-contrast='true'&lt;/a&gt;</code></pre>
+      <div><a class="link max-width-card" href="https://microlink.io" data-contrast='true'>microlink.io</a></div>
+    </section>
+
+    <section class="pv4">
+      <h1 class="f4 black tc">data-size='large'</h1>
+      <pre
+        class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://microlink.io&quot;&gt;microlink.io data-size='large'&lt;/a&gt;</code></pre>
+      <div><a class="link max-width-card" href="https://microlink.io" data-size='large'>microlink.io</a></div>
+    </section>
+
+    <section class="pv4">
+      <h1 class="f4 black tc">custom</h1>
+      <pre
+        class="f7 ph3 pv3 mv3"><code>&lt;a class=&quot;link&quot; href=&quot;https://microlink.io&quot;&gt;microlink.io data-setData='{"title": "hello world"}'&lt;/a&gt;</code></pre>
+      <div><a class="link max-width-card" href="https://microlink.io"
+          data-set-data='{"title": "hello world"}'>microlink.io</a></div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/preact@10.3.1/dist/preact.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/preact@10.3.1/hooks/dist/hooks.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/preact@10.3.1/compat/dist/compat.umd.min.js"></script>
+<script>window.React = window.ReactDOM = window.preactCompat</script>
+<script src="https://cdn.jsdelivr.net/npm/react-is@latest/umd/react-is.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/styled-components@latest/dist/styled-components.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@microlink/mql@latest/dist/mql.min.js"></script>
+<script src="./dist/microlink.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function (event) {
+    codecopy('pre')
+    microlink('.link')
+    microlink(document.querySelector('.link-query-selector'))
+    microlink('pacopepe')
+  })
+</script>
+
+</html>
