@@ -33,6 +33,7 @@ function microlink (selector, opts, rootNode) {
         Microlink,
         Object.assign(
           {
+            as: 'div',
             url: el.getAttribute('href')
           },
           opts,
