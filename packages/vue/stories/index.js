@@ -3,9 +3,11 @@ import demoLinks from '@microlink/demo-links'
 export default { title: 'Microlink' }
 
 export const defaultStory = () => ({
-  data: () => ({ url: demoLinks.Nasa.url }),
-  template: '<Microlink :url="url" />'
+  data: () => ({ urls: [demoLinks.Nasa.url, demoLinks.Netflix.url] }),
+  template:
+    '<div><Microlink v-for="url in urls" :url="url" style="margin-top:20px"/></div>'
 })
+
 defaultStory.story = {
   name: 'Default'
 }
@@ -26,7 +28,7 @@ export const configurableExample = () => ({
   template: `
     <div class="story-wrap">
       <Microlink :url="url" :size="size" :media="media" />
-      
+
       <div style="margin-top: 20px">
         <div style="margin-bottom: 10px">
           <label>URL</label>

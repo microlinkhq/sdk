@@ -32,6 +32,7 @@
     "babel-preset-vue": "latest",
     "prettier-standard": "latest",
     "react": "latest",
+    "react-is": "latest",
     "react-dom": "latest",
     "standard": "latest",
     "styled-components": "latest",
