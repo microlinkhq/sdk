@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.12](https://github.com/microlinkhq/sdk/compare/v5.0.11...v5.0.12) (2020-02-12)
+
+
+### Bug Fixes
+
+* markup ([e7a6caa](https://github.com/microlinkhq/sdk/commit/e7a6caace102b41ea506a34797e274d3490a0a8e))
+
+
+
+
+
 ## [5.0.11](https://github.com/microlinkhq/sdk/compare/v5.0.10...v5.0.11) (2020-02-11)
 
 
