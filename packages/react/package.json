@@ -23,8 +23,8 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.5.20",
-    "nanoclamp": "~1.3.2"
+    "@microlink/mql": "~0.5.21",
+    "nanoclamp": "~1.3.3"
   },
   "devDependencies": {
     "@babel/core": "latest",
