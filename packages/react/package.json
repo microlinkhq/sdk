@@ -31,7 +31,6 @@
     "@babel/plugin-proposal-class-properties": "latest",
     "@babel/plugin-proposal-object-rest-spread": "latest",
     "@babel/plugin-transform-react-constant-elements": "latest",
-    "@babel/plugin-transform-react-inline-elements": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
     "@microlink/demo-links": "latest",
