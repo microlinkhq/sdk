@@ -50,7 +50,6 @@ const BarsWrap = styled('div').attrs(({ cardSize, isDragging }) => {
   background: transparent;
   border-radius: 9999px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.75);
   background: rgba(255, 255, 255, 0.15);
   transition: ${transition.short('height')};
   will-change: height;

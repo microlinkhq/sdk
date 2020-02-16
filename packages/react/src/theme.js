@@ -11,19 +11,14 @@ export const animation = {
 }
 
 const createTransition = (properties, s) => {
-  if (Array.isArray(properties)) {
-    const suffix = `${speed[s]} ${animation[s]}`
-
-    return properties.map(property => `${property} ${suffix}`).join(', ')
-  }
-
-  return ''
+  const suffix = `${speed[s]} ${animation[s]}`
+  return properties.map(property => `${property} ${suffix}`).join(', ')
 }
 
 export const transition = {
-  short: (...p) => createTransition(p, 'short'),
-  medium: (...p) => createTransition(p, 'medium'),
-  long: (...p) => createTransition(p, 'long')
+  short: (...properties) => createTransition(properties, 'short'),
+  medium: (...properties) => createTransition(properties, 'medium'),
+  long: (...properties) => createTransition(properties, 'long')
 }
 
 // https://primer.style/design/foundations/typography
