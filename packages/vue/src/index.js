@@ -27,7 +27,7 @@ export const Microlink = Vue.component('Microlink', {
       const anchor = document.createElement('a')
       anchor.href = this.url
       anchor.innerHTML = this.url
-      microlink(anchor, this.parameters, cardSpace)
+      microlink(anchor, this.options, cardSpace)
     }
   },
 
@@ -41,14 +41,19 @@ export const Microlink = Vue.component('Microlink', {
   },
 
   computed: {
-    parameters () {
-      return Object.keys(this.$attrs).reduce(
+    options () {
+      const opts = Object.keys(this.$attrs).reduce(
         (acc, value) =>
           value.startsWith('data-')
             ? acc
             : { ...acc, [camelCase(value)]: this.$attrs[value] },
         Vue.microlinkGlobalOptions || {}
       )
+
+      return {
+        ...opts,
+        as: 'a'
+      }
     }
   },
 

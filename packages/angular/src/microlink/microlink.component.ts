@@ -31,7 +31,12 @@ export class MicrolinkComponent implements AfterViewInit, OnChanges {
     anchor.href = this.url
     anchor.innerHTML = this.url
 
-    microlink(anchor, this.options, nativeElement)
+    const options = {
+      ...this.options,
+      as: 'a'
+    }
+
+    microlink(anchor, options, nativeElement)
   }
 
   ngAfterViewInit () {
