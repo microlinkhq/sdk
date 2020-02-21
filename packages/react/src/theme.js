@@ -10,10 +10,15 @@ export const animation = {
   long: 'cubic-bezier(.4, 0, .2, 1)'
 }
 
+const createTransition = (properties, s) => {
+  const suffix = `${speed[s]} ${animation[s]}`
+  return properties.map(property => `${property} ${suffix}`).join(', ')
+}
+
 export const transition = {
-  short: `${speed.short} ${animation.short}`,
-  medium: `${speed.medium} ${animation.medium}`,
-  long: `${speed.long} ${animation.long}`
+  short: (...properties) => createTransition(properties, 'short'),
+  medium: (...properties) => createTransition(properties, 'medium'),
+  long: (...properties) => createTransition(properties, 'long')
 }
 
 // https://primer.style/design/foundations/typography
