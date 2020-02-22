@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](http://github.com/microlinkhq/sdk/tree/master/packages/vue/compare/v5.0.12...v5.1.0) (2020-02-22)
+
+
+### Bug Fixes
+
+* add `as` prop to vue/angular integrations ([#200](http://github.com/microlinkhq/sdk/tree/master/packages/vue/issues/200)) ([873ad9a](http://github.com/microlinkhq/sdk/tree/master/packages/vue/commit/873ad9ac0cfbc670aa3e4b53d11ab2d1684ea1ca))
+
+
+
+
+
 ## [5.0.12](http://github.com/microlinkhq/sdk/tree/master/packages/vue/compare/v5.0.11...v5.0.12) (2020-02-12)
 
 **Note:** Version bump only for package @microlink/vue

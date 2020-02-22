@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/microlinkhq/sdk/compare/v5.0.12...v5.1.0) (2020-02-22)
+
+
+### Bug Fixes
+
+* add `as` prop to vue/angular integrations ([#200](https://github.com/microlinkhq/sdk/issues/200)) ([873ad9a](https://github.com/microlinkhq/sdk/commit/873ad9ac0cfbc670aa3e4b53d11ab2d1684ea1ca))
+
+
+
+
+
 ## [5.0.12](https://github.com/microlinkhq/sdk/compare/v5.0.11...v5.0.12) (2020-02-12)
 
 
