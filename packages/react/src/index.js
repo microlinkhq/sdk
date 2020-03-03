@@ -75,7 +75,21 @@ const Card = props => {
         .catch(error => {
           setLoading(false)
           setIsError(true)
-          console.warn('[Microlink SDK]', error)
+          console.error(`
+┌───────────────┐
+│ Microlink SDK │
+└───────────────┘
+
+${error.description}
+
+${JSON.stringify(error.data)}
+
+id   ${error.headers['x-request-id']}
+uri  ${error.url}
+code ${error.code} (${error.statusCode})
+
+microlink.io/${error.code.toLowerCase()}
+`)
         })
     }
   }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key'], url])
