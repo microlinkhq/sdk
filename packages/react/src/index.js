@@ -43,7 +43,10 @@ const Card = props => {
   const [iframeMedia, setIframeMedia] = useState(null)
   const [isError, setIsError] = useState(false)
   const isLoadingUndefined = useMemo(() => loading === undefined, [loading])
-  const [apiUrl, apiUrlProps] = useMemo(() => getApiUrl({ ...props, media: mediaProps }), [mediaProps, props])
+  const [apiUrl, apiUrlProps] = useMemo(
+    () => getApiUrl({ ...props, media: mediaProps }),
+    [mediaProps, props]
+  )
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -65,7 +68,7 @@ const Card = props => {
       setLoading(true)
       const fetch = isFunction(setData)
         ? Promise.resolve({})
-        : fetchFromApi(url, apiUrl, apiUrlProps)
+        : fetchFromApi(apiUrl, apiUrlProps)
 
       fetch
         .then(({ data }) => mergeData(data))
@@ -83,7 +86,16 @@ const Card = props => {
         ? setData()
         : { ...fetchedData, ...setData }
 
-      const { title, description, url, video, audio, image, logo, iframe } = payload
+      const {
+        title,
+        description,
+        url,
+        video,
+        audio,
+        image,
+        logo,
+        iframe
+      } = payload
 
       const mediaFallback = image || logo || {}
       let media = mediaFallback
