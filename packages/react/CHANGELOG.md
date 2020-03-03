@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.1.1...v5.1.2) (2020-03-03)
+
+
+### Bug Fixes
+
+* fetchFromApi interface ([c5f010e](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/c5f010e83c2ec0d29b1a1258ea3facf61a2e4ad7))
+
+
+
+
+
 ## [5.1.1](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.1.0...v5.1.1) (2020-03-03)
 
 **Note:** Version bump only for package @microlink/react

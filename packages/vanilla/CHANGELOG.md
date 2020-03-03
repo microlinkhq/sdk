@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v5.1.1...v5.1.2) (2020-03-03)
+
+**Note:** Version bump only for package @microlink/vanilla
+
+
+
+
+
 ## [5.1.1](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v5.1.0...v5.1.1) (2020-03-03)
 
 **Note:** Version bump only for package @microlink/vanilla
