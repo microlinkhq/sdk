@@ -24,7 +24,7 @@
     "@microlink/vanilla": "^5.1.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.23",
+    "@angular-devkit/build-angular": "~0.900.6",
     "@angular-devkit/build-ng-packagr": "~0.803.23",
     "@angular/cli": "~8.3.23",
     "@angular/common": "~8.2.14",
