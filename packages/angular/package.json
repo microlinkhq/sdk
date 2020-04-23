@@ -33,7 +33,7 @@
     "@angular/core": "~8.2.14",
     "@angular/forms": "^8.2.14",
     "@angular/language-service": "~8.2.14",
-    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser": "^9.1.3",
     "@angular/platform-browser-dynamic": "^8.2.14",
     "@babel/core": "^7.8.4",
     "@microlink/demo-links": "latest",
