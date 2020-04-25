@@ -2,7 +2,7 @@
   "name": "@microlink/vanilla",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/vanilla/",
-  "version": "5.1.4",
+  "version": "5.1.5",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/react": "^5.1.4"
+    "@microlink/react": "^5.1.5"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.5](http://github.com/microlinkhq/sdk/tree/master/packages/angular/compare/v5.1.4...v5.1.5) (2020-04-25)
+
+**Note:** Version bump only for package @microlink/angular
+
+
+
+
+
 ## [5.1.4](http://github.com/microlinkhq/sdk/tree/master/packages/angular/compare/v5.1.3...v5.1.4) (2020-04-03)
 
 **Note:** Version bump only for package @microlink/angular
