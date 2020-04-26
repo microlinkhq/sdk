@@ -24,6 +24,7 @@
   ],
   "dependencies": {
     "@microlink/mql": "~0.6.12",
+    "is-localhost-url": "~1.0.0",
     "nanoclamp": "~1.3.3"
   },
   "devDependencies": {

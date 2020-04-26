@@ -1,7 +1,6 @@
-import { css } from 'styled-components'
 import { fetchFromApi, getApiUrl as createApiUrl } from '@microlink/mql'
-
-const REGEX_LOCALHOST = /http:\/\/localhost/
+import isLocalhostUrl from 'is-localhost-url'
+import { css } from 'styled-components'
 
 export const isSSR = typeof window === 'undefined'
 
@@ -82,7 +81,7 @@ export const isLarge = cardSize => cardSize === 'large'
 export const isSmall = cardSize => cardSize === 'small'
 
 export const imageProxy = url =>
-  REGEX_LOCALHOST.test(url)
+  isLocalhostUrl(url)
     ? url
     : `https://images.weserv.nl/?url=${encodeURIComponent(url)}&l=9&af&il&n=-1`
 
