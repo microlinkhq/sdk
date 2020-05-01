@@ -52,7 +52,7 @@
     "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
-    "zone.js": "^0.9.1"
+    "zone.js": "^0.10.3"
   },
   "peerDependencies": {
     "@angular/core": "^8",
