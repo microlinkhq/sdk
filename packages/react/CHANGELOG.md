@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.1.5...v5.2.0) (2020-05-13)
+
+
+### Features
+
+* add fetchData parameter ([#223](http://github.com/microlinkhq/sdk/tree/master/packages/react/issues/223)) ([8dcdea4](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/8dcdea46397c630733a8c6a08857db8ddf952605))
+
+
+
+
+
 ## [5.1.5](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.1.4...v5.1.5) (2020-04-25)
 
 **Note:** Version bump only for package @microlink/react
