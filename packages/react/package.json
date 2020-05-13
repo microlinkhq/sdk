@@ -23,8 +23,8 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.6.12",
-    "is-localhost-url": "~1.0.0",
+    "@microlink/mql": "~0.6.13",
+    "is-localhost-url": "~1.0.3",
     "nanoclamp": "~1.3.3"
   },
   "devDependencies": {
@@ -45,7 +45,7 @@
     "enzyme-adapter-react-16": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "husky": "latest",
-    "jest": "latest",
+    "jest": "25",
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
     "jest-styled-components": "latest",

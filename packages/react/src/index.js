@@ -28,7 +28,8 @@ import { useIntersectionObserver } from './utils/hooks'
 
 const Card = props => {
   const {
-    className = '',
+    className,
+    fetchData,
     lazy,
     loading,
     media: mediaProp,
@@ -63,12 +64,13 @@ const Card = props => {
     [isLazyEnabled, hasIntersected]
   )
 
-  const fetchData = useCallback(() => {
+  const toFetchData = useCallback(() => {
     if (canFetchData) {
       setLoading(true)
-      const fetch = isFunction(setData)
-        ? Promise.resolve({})
-        : fetchFromApi(apiUrl, apiUrlProps)
+
+      const fetch = fetchData
+        ? fetchFromApi(apiUrl, apiUrlProps)
+        : Promise.resolve({})
 
       fetch
         .then(({ data }) => mergeData(data))
@@ -97,7 +99,7 @@ microlink.io/${error.code.toLowerCase()}
   const mergeData = useCallback(
     fetchedData => {
       const payload = isFunction(setData)
-        ? setData()
+        ? setData(fetchedData)
         : { ...fetchedData, ...setData }
 
       const {
@@ -158,7 +160,7 @@ microlink.io/${error.code.toLowerCase()}
     [mediaProps, setData]
   )
 
-  useEffect(fetchData, [url, setData, hasIntersected])
+  useEffect(toFetchData, [url, setData, hasIntersected])
 
   const isLoading = isLoadingUndefined ? loadingState : loading
 
@@ -216,6 +218,7 @@ const Microlink = props => (
 )
 
 Microlink.defaultProps = {
+  className: '',
   apiKey: undefined,
   autoPlay: true,
   controls: true,
@@ -223,6 +226,7 @@ Microlink.defaultProps = {
   lazy: true,
   loop: true,
   media: ['image', 'logo'],
+  fetchData: true,
   muted: true,
   playsInline: true,
   size: 'normal'
