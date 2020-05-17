@@ -2,7 +2,7 @@
   "name": "@microlink/vue",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/vue/",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "main": "dist/microlink.common.js",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/vanilla": "^5.2.0"
+    "@microlink/vanilla": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "latest",
