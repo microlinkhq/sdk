@@ -5,7 +5,7 @@ import Controls from './Controls'
 import { GlobalContext } from '../../../context/GlobalState'
 import { classNames } from '../../../utils'
 
-const Audio = props => {
+const Audio = ({ onTogglePlayback, ...restProps }) => {
   const {
     state: { audioUrl }
   } = useContext(GlobalContext)
@@ -21,9 +21,13 @@ const Audio = props => {
   return (
     <Image
       className={`${classNames.mediaWrapper} ${classNames.audioWrapper}`}
-      {...props}
+      {...restProps}
     >
-      <Controls MediaComponent='audio' mediaProps={mediaProps} />
+      <Controls
+        MediaComponent='audio'
+        mediaProps={mediaProps}
+        onTogglePlayback={onTogglePlayback}
+      />
     </Image>
   )
 }
