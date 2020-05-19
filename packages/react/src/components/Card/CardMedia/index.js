@@ -28,12 +28,13 @@ const CardMedia = ({ onTogglePlayback }) => {
   const [isLoading, setIsLoading] = useState(isUrl(imageUrl))
   const mediaType = getMediaType(isAudio, isVideo)
   const MediaComponent = MEDIA_COMPONENT[mediaType]
+  const additionalMediaProps = ['audio', 'video'].includes(mediaType) ? { onTogglePlayback } : {}
 
   return (
     <>
       <MediaComponent
         isLoading={isLoading}
-        onTogglePlayback={onTogglePlayback}
+        {...additionalMediaProps}
       />
       {isLoading && (
         <ImageLoadCatcher src={imageUrl} onLoad={() => setIsLoading(false)} />
