@@ -76,7 +76,7 @@ const ControlsTop = styled('div')`
     !isVisible &&
     css`
     *[class*="${classNames.mediaControls}"]:not(.${classNames.progressTime}) {
-      transition: ${transition.medium('opacity', 'visibility')}; 
+      transition: ${transition.medium('opacity', 'visibility')};
       opacity: 0;
       visibility: hidden;
     }
@@ -96,7 +96,7 @@ const getNextPlaybackRate = rate => {
   }
 }
 
-const Controls = ({ MediaComponent, mediaProps }) => {
+const Controls = ({ MediaComponent, mediaProps, onTogglePlayback }) => {
   const {
     props: { autoPlay, controls, muted, loop, size }
   } = useContext(GlobalContext)
@@ -156,8 +156,10 @@ const Controls = ({ MediaComponent, mediaProps }) => {
           setHasInteracted(true)
         }
 
+        onTogglePlayback('play')
         mediaRef.current.play()
       } else {
+        onTogglePlayback('pause')
         mediaRef.current.pause()
       }
     }

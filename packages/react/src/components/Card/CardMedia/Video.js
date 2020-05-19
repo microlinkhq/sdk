@@ -22,7 +22,7 @@ const VideoDOM = styled('video')`
   }
 `
 
-const Video = props => {
+const Video = ({ onTogglePlayback, ...restProps }) => {
   const {
     state: { imageUrl, playsInline, videoUrl }
   } = useContext(GlobalContext)
@@ -40,9 +40,13 @@ const Video = props => {
   return (
     <Wrap
       className={`${classNames.mediaWrapper} ${classNames.videoWrapper}`}
-      {...props}
+      {...restProps}
     >
-      <Controls MediaComponent={VideoDOM} mediaProps={mediaProps} />
+      <Controls
+        MediaComponent={VideoDOM}
+        mediaProps={mediaProps}
+        onTogglePlayback={onTogglePlayback}
+      />
     </Wrap>
   )
 }

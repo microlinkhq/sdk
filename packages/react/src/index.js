@@ -35,6 +35,7 @@ const Card = props => {
     media: mediaProp,
     setData,
     url,
+    onTogglePlayback,
     ...restProps
   } = props
 
@@ -205,7 +206,7 @@ microlink.io/${error.code.toLowerCase()}
         <CardEmpty />
       ) : (
         <>
-          <CardMedia />
+          <CardMedia onTogglePlayback={onTogglePlayback} />
           <CardContent />
         </>
       )}
@@ -229,7 +230,8 @@ Microlink.defaultProps = {
   fetchData: true,
   muted: true,
   playsInline: true,
-  size: 'normal'
+  size: 'normal',
+  onTogglePlayback: () => {}
 }
 
 Microlink.propTypes = {
@@ -248,7 +250,8 @@ Microlink.propTypes = {
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
   size: PropTypes.oneOf(['normal', 'large', 'small']),
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  onTogglePlayback: PropTypes.func
 }
 
 export { imageProxy, getApiUrl, fetchFromApi }
