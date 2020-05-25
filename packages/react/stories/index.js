@@ -4,26 +4,27 @@ import { storiesOf } from '@storybook/react'
 
 import { urls, urlsVideo, urlsAudio, urlsIframe } from './data'
 import createStoryEntry from './createStoryEntry'
-import React from 'react'
 
 storiesOf('props', module)
-  .add('default', () => urls.map(url => createStoryEntry({ url })))
+  .add('default', () => urls.map((url) => createStoryEntry({ url })))
   .add('direction', () =>
-    urls.map(url => createStoryEntry({ url, direction: 'rtl' }))
+    urls.map((url) => createStoryEntry({ url, direction: 'rtl' }))
   )
   .add('contrast', () =>
-    urls.map(url => createStoryEntry({ url, contrast: true }))
+    urls.map((url) => createStoryEntry({ url, contrast: true }))
   )
   .add('direction + contrast', () =>
-    urls.map(url => createStoryEntry({ url, contrast: true, direction: 'rtl' }))
+    urls.map((url) =>
+      createStoryEntry({ url, contrast: true, direction: 'rtl' })
+    )
   )
   .add('autoPlay (disabled)', () =>
-    urlsVideo.map(url =>
+    urlsVideo.map((url) =>
       createStoryEntry({ url, media: 'video', autoPlay: false })
     )
   )
   .add('controls (disabled)', () =>
-    urlsVideo.map(url =>
+    urlsVideo.map((url) =>
       createStoryEntry({ url, media: 'video', controls: false })
     )
   )
@@ -32,17 +33,35 @@ storiesOf('props', module)
     createStoryEntry({ lazy: false }, true),
     createStoryEntry({ lazy: { threshold: 1 } }, true)
   ])
+  .add('mediaRef', () =>
+    createStoryEntry({
+      url: urlsVideo[0],
+      media: 'video',
+      mediaRef: (node) => {
+        if (node) {
+          console.log(`
+┌───────────────┐
+│ Microlink SDK │
+└───────────────┘
+  Media Ref:
+`, node)
+        }
+      }
+    })
+  )
 
 storiesOf('media', module)
   .add('image', () =>
-    urls.map(url => createStoryEntry({ url, media: 'image' }))
+    urls.map((url) => createStoryEntry({ url, media: 'image' }))
   )
-  .add('logo', () => urls.map(url => createStoryEntry({ url, media: 'logo' })))
+  .add('logo', () =>
+    urls.map((url) => createStoryEntry({ url, media: 'logo' }))
+  )
   .add('video', () =>
-    urlsVideo.map(url => createStoryEntry({ url, media: 'video' }))
+    urlsVideo.map((url) => createStoryEntry({ url, media: 'video' }))
   )
   .add('audio', () =>
-    urlsAudio.map(url => createStoryEntry({ url, media: 'audio' }))
+    urlsAudio.map((url) => createStoryEntry({ url, media: 'audio' }))
   )
   .add('screenshot', () => [
     createStoryEntry({
@@ -51,7 +70,7 @@ storiesOf('media', module)
     })
   ])
   .add('iframe', () =>
-    urlsIframe.map(url =>
+    urlsIframe.map((url) =>
       createStoryEntry({
         url,
         sizes: ['normal'],
@@ -85,7 +104,7 @@ storiesOf('setData', module)
         url: 'https://youtube.com',
         sizes: ['normal'],
         media: ['iframe', 'video', 'audio'],
-        setData: data => ({
+        setData: (data) => ({
           iframe: null,
           audio: {
             url: 'https://invalidurl.lol',
@@ -112,7 +131,7 @@ storiesOf('setData', module)
         url: 'https://example.com',
         sizes: ['normal'],
         media: ['iframe', 'video', 'audio'],
-        setData: data => ({
+        setData: (data) => ({
           iframe: {
             html:
               "<marquee>welcome to microlink.io! You're the visitor number 12242! CONGRATS!! You win an API key, just send 1$ to hello@microlink.io for receiving it into your inbox</marquee>",
@@ -178,7 +197,7 @@ storiesOf('style', module)
     )
   )
   .add('misc', () =>
-    urls.map(url =>
+    urls.map((url) =>
       createStoryEntry({
         url,
         style: {

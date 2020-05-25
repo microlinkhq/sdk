@@ -98,9 +98,8 @@ const getNextPlaybackRate = rate => {
 
 const Controls = ({ MediaComponent, mediaProps }) => {
   const {
-    props: { autoPlay, controls, muted, loop, size }
+    props: { autoPlay, controls, mediaRef: propRef, muted, loop, size }
   } = useContext(GlobalContext)
-  const mediaRef = useRef()
   const [duration, setDuration] = useState(0)
   const [progress, setProgress] = useState(0)
   const [buffered, setBuffered] = useState([])
@@ -114,6 +113,19 @@ const Controls = ({ MediaComponent, mediaProps }) => {
   const [playbackRate, setPlaybackRate] = useState(1)
   const [hasInteracted, setHasInteracted] = useState(autoPlay)
   const [pausedByDrag, setPausedByDrag] = useState(false)
+
+  const mediaRef = useRef()
+  const setRefs = useCallback((node) => {
+    mediaRef.current = node
+
+    if (propRef) {
+      if (typeof propRef === 'function') {
+        propRef(node)
+      } else {
+        propRef.current = node
+      }
+    }
+  }, [propRef])
 
   const isNotSmall = useMemo(() => !isSmall(size), [size])
 
@@ -401,7 +413,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
       <MediaComponent
         {...mediaProps}
         {...mediaEvents}
-        ref={mediaRef}
+        ref={setRefs}
         autoPlay={autoPlay}
         loop={loop}
         muted={muted}

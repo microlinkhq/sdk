@@ -9,6 +9,7 @@ const GlobalState = ({
   children,
   controls,
   loop,
+  mediaRef,
   muted,
   playsInline,
   size,
@@ -26,11 +27,12 @@ const GlobalState = ({
       autoPlay,
       controls,
       loop,
+      mediaRef,
       muted,
       playsInline,
       size
     }),
-    [autoPlay, controls, loop, muted, playsInline, size]
+    [autoPlay, controls, loop, mediaRef, muted, playsInline, size]
   )
 
   const values = useMemo(

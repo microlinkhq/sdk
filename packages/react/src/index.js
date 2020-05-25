@@ -244,6 +244,10 @@ Microlink.propTypes = {
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
   ]),
+  mediaRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.elementType })
+  ]),
   muted: PropTypes.bool,
   playsInline: PropTypes.bool,
   prerender: PropTypes.oneOf(['auto', true, false]),
