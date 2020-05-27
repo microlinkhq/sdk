@@ -14,12 +14,15 @@ import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
 import Spinner from './Spinner'
 import { transition } from '../../../../theme'
+
 import {
   classNames,
   formatSeconds,
   isSmall,
+  isFunction,
   clampNumber
 } from '../../../../utils'
+
 import { GlobalContext } from '../../../../context/GlobalState'
 
 const SPACE_KEY = 32
@@ -76,7 +79,7 @@ const ControlsTop = styled('div')`
     !isVisible &&
     css`
     *[class*="${classNames.mediaControls}"]:not(.${classNames.progressTime}) {
-      transition: ${transition.medium('opacity', 'visibility')}; 
+      transition: ${transition.medium('opacity', 'visibility')};
       opacity: 0;
       visibility: hidden;
     }
@@ -115,17 +118,20 @@ const Controls = ({ MediaComponent, mediaProps }) => {
   const [pausedByDrag, setPausedByDrag] = useState(false)
 
   const mediaRef = useRef()
-  const setRefs = useCallback((node) => {
-    mediaRef.current = node
+  const setRefs = useCallback(
+    node => {
+      mediaRef.current = node
 
-    if (propRef) {
-      if (typeof propRef === 'function') {
-        propRef(node)
-      } else {
-        propRef.current = node
+      if (propRef) {
+        if (isFunction(propRef)) {
+          propRef(node)
+        } else {
+          propRef.current = node
+        }
       }
-    }
-  }, [propRef])
+    },
+    [propRef]
+  )
 
   const isNotSmall = useMemo(() => !isSmall(size), [size])
 
