@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react'
 
 import { urls, urlsVideo, urlsAudio, urlsIframe } from './data'
 import createStoryEntry from './createStoryEntry'
-import React from 'react'
 
 storiesOf('props', module)
   .add('default', () => urls.map(url => createStoryEntry({ url })))
@@ -32,6 +31,25 @@ storiesOf('props', module)
     createStoryEntry({ lazy: false }, true),
     createStoryEntry({ lazy: { threshold: 1 } }, true)
   ])
+  .add('mediaRef', () =>
+    createStoryEntry({
+      url: urlsVideo[0],
+      media: 'video',
+      mediaRef: node => {
+        if (node) {
+          console.log(
+            `
+┌───────────────┐
+│ Microlink SDK │
+└───────────────┘
+  Media Ref:
+`,
+            node
+          )
+        }
+      }
+    })
+  )
 
 storiesOf('media', module)
   .add('image', () =>

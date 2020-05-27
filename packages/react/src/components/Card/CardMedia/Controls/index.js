@@ -14,12 +14,15 @@ import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
 import Spinner from './Spinner'
 import { transition } from '../../../../theme'
+
 import {
   classNames,
   formatSeconds,
   isSmall,
+  isFunction,
   clampNumber
 } from '../../../../utils'
+
 import { GlobalContext } from '../../../../context/GlobalState'
 
 const SPACE_KEY = 32
@@ -76,7 +79,7 @@ const ControlsTop = styled('div')`
     !isVisible &&
     css`
     *[class*="${classNames.mediaControls}"]:not(.${classNames.progressTime}) {
-      transition: ${transition.medium('opacity', 'visibility')}; 
+      transition: ${transition.medium('opacity', 'visibility')};
       opacity: 0;
       visibility: hidden;
     }
@@ -98,9 +101,8 @@ const getNextPlaybackRate = rate => {
 
 const Controls = ({ MediaComponent, mediaProps }) => {
   const {
-    props: { autoPlay, controls, muted, loop, size }
+    props: { autoPlay, controls, mediaRef: propRef, muted, loop, size }
   } = useContext(GlobalContext)
-  const mediaRef = useRef()
   const [duration, setDuration] = useState(0)
   const [progress, setProgress] = useState(0)
   const [buffered, setBuffered] = useState([])
@@ -114,6 +116,22 @@ const Controls = ({ MediaComponent, mediaProps }) => {
   const [playbackRate, setPlaybackRate] = useState(1)
   const [hasInteracted, setHasInteracted] = useState(autoPlay)
   const [pausedByDrag, setPausedByDrag] = useState(false)
+
+  const mediaRef = useRef()
+  const setRefs = useCallback(
+    node => {
+      mediaRef.current = node
+
+      if (propRef) {
+        if (isFunction(propRef)) {
+          propRef(node)
+        } else {
+          propRef.current = node
+        }
+      }
+    },
+    [propRef]
+  )
 
   const isNotSmall = useMemo(() => !isSmall(size), [size])
 
@@ -401,7 +419,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
       <MediaComponent
         {...mediaProps}
         {...mediaEvents}
-        ref={mediaRef}
+        ref={setRefs}
         autoPlay={autoPlay}
         loop={loop}
         muted={muted}
