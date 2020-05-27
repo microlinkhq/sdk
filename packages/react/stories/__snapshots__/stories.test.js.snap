@@ -177,8 +177,8 @@ exports[`Storyshots media audio 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -188,8 +188,8 @@ exports[`Storyshots media audio 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -199,8 +199,8 @@ exports[`Storyshots media audio 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -211,8 +211,8 @@ exports[`Storyshots media audio 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -238,8 +238,8 @@ exports[`Storyshots media audio 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -263,8 +263,8 @@ exports[`Storyshots media audio 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -518,8 +518,8 @@ exports[`Storyshots media iframe 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -529,8 +529,8 @@ exports[`Storyshots media iframe 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -541,8 +541,8 @@ exports[`Storyshots media iframe 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -566,8 +566,8 @@ exports[`Storyshots media iframe 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -856,8 +856,8 @@ exports[`Storyshots media image 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -867,8 +867,8 @@ exports[`Storyshots media image 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -878,8 +878,8 @@ exports[`Storyshots media image 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -890,8 +890,8 @@ exports[`Storyshots media image 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -917,8 +917,8 @@ exports[`Storyshots media image 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -942,8 +942,8 @@ exports[`Storyshots media image 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -1315,8 +1315,8 @@ exports[`Storyshots media logo 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -1326,8 +1326,8 @@ exports[`Storyshots media logo 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -1337,8 +1337,8 @@ exports[`Storyshots media logo 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -1349,8 +1349,8 @@ exports[`Storyshots media logo 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -1376,8 +1376,8 @@ exports[`Storyshots media logo 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -1401,8 +1401,8 @@ exports[`Storyshots media logo 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -1774,8 +1774,8 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -1785,8 +1785,8 @@ exports[`Storyshots media screenshot 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -1796,8 +1796,8 @@ exports[`Storyshots media screenshot 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -1808,8 +1808,8 @@ exports[`Storyshots media screenshot 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -1835,8 +1835,8 @@ exports[`Storyshots media screenshot 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -1860,8 +1860,8 @@ exports[`Storyshots media screenshot 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -2233,8 +2233,8 @@ exports[`Storyshots media video 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -2244,8 +2244,8 @@ exports[`Storyshots media video 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -2255,8 +2255,8 @@ exports[`Storyshots media video 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -2267,8 +2267,8 @@ exports[`Storyshots media video 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -2294,8 +2294,8 @@ exports[`Storyshots media video 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -2319,8 +2319,8 @@ exports[`Storyshots media video 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -2692,8 +2692,8 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -2703,8 +2703,8 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -2714,8 +2714,8 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -2726,8 +2726,8 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -2753,8 +2753,8 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -2778,8 +2778,8 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -3151,8 +3151,8 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -3162,8 +3162,8 @@ exports[`Storyshots props contrast 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -3173,8 +3173,8 @@ exports[`Storyshots props contrast 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -3185,8 +3185,8 @@ exports[`Storyshots props contrast 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -3212,8 +3212,8 @@ exports[`Storyshots props contrast 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -3237,8 +3237,8 @@ exports[`Storyshots props contrast 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -3626,8 +3626,8 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -3637,8 +3637,8 @@ exports[`Storyshots props controls (disabled) 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -3648,8 +3648,8 @@ exports[`Storyshots props controls (disabled) 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -3660,8 +3660,8 @@ exports[`Storyshots props controls (disabled) 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -3687,8 +3687,8 @@ exports[`Storyshots props controls (disabled) 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -3712,8 +3712,8 @@ exports[`Storyshots props controls (disabled) 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -4085,8 +4085,8 @@ exports[`Storyshots props default 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -4096,8 +4096,8 @@ exports[`Storyshots props default 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -4107,8 +4107,8 @@ exports[`Storyshots props default 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -4119,8 +4119,8 @@ exports[`Storyshots props default 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -4146,8 +4146,8 @@ exports[`Storyshots props default 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -4171,8 +4171,8 @@ exports[`Storyshots props default 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -4544,8 +4544,8 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -4555,8 +4555,8 @@ exports[`Storyshots props direction + contrast 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -4566,8 +4566,8 @@ exports[`Storyshots props direction + contrast 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -4578,8 +4578,8 @@ exports[`Storyshots props direction + contrast 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -4605,8 +4605,8 @@ exports[`Storyshots props direction + contrast 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -4630,8 +4630,8 @@ exports[`Storyshots props direction + contrast 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -5025,8 +5025,8 @@ exports[`Storyshots props direction 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -5036,8 +5036,8 @@ exports[`Storyshots props direction 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -5047,8 +5047,8 @@ exports[`Storyshots props direction 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -5059,8 +5059,8 @@ exports[`Storyshots props direction 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -5086,8 +5086,8 @@ exports[`Storyshots props direction 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -5111,8 +5111,8 @@ exports[`Storyshots props direction 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -5491,8 +5491,8 @@ Array [
 }
 
 .c6 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c8 {
@@ -5502,8 +5502,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c13 {
@@ -5513,8 +5513,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c9 {
@@ -5525,8 +5525,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -5552,8 +5552,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -5577,8 +5577,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -5970,8 +5970,8 @@ Array [
 }
 
 .c6 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c8 {
@@ -5981,8 +5981,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c13 {
@@ -5992,8 +5992,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c9 {
@@ -6004,8 +6004,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -6031,8 +6031,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -6056,8 +6056,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -6455,8 +6455,8 @@ exports[`Storyshots props loading 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -6466,8 +6466,8 @@ exports[`Storyshots props loading 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -6477,8 +6477,8 @@ exports[`Storyshots props loading 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -6489,8 +6489,8 @@ exports[`Storyshots props loading 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -6516,8 +6516,8 @@ exports[`Storyshots props loading 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -6541,8 +6541,8 @@ exports[`Storyshots props loading 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -6914,8 +6914,8 @@ exports[`Storyshots props mediaRef 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -6925,8 +6925,8 @@ exports[`Storyshots props mediaRef 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -6936,8 +6936,8 @@ exports[`Storyshots props mediaRef 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -6948,8 +6948,8 @@ exports[`Storyshots props mediaRef 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -6975,8 +6975,8 @@ exports[`Storyshots props mediaRef 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -7000,8 +7000,8 @@ exports[`Storyshots props mediaRef 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -7373,8 +7373,8 @@ exports[`Storyshots setData function 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -7384,8 +7384,8 @@ exports[`Storyshots setData function 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -7395,8 +7395,8 @@ exports[`Storyshots setData function 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -7407,8 +7407,8 @@ exports[`Storyshots setData function 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -7434,8 +7434,8 @@ exports[`Storyshots setData function 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -7459,8 +7459,8 @@ exports[`Storyshots setData function 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -7832,8 +7832,8 @@ exports[`Storyshots setData object 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -7843,8 +7843,8 @@ exports[`Storyshots setData object 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -7854,8 +7854,8 @@ exports[`Storyshots setData object 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -7866,8 +7866,8 @@ exports[`Storyshots setData object 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -7893,8 +7893,8 @@ exports[`Storyshots setData object 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -7918,8 +7918,8 @@ exports[`Storyshots setData object 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -8174,8 +8174,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -8185,8 +8185,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -8197,8 +8197,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -8222,8 +8222,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -8391,8 +8391,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -8402,8 +8402,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -8414,8 +8414,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -8439,8 +8439,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -8731,8 +8731,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -8742,8 +8742,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -8753,8 +8753,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -8765,8 +8765,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -8792,8 +8792,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -8817,8 +8817,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -9205,8 +9205,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -9216,8 +9216,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -9227,8 +9227,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -9239,8 +9239,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -9266,8 +9266,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -9291,8 +9291,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -9679,8 +9679,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -9690,8 +9690,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -9701,8 +9701,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -9713,8 +9713,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -9740,8 +9740,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -9765,8 +9765,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -10158,8 +10158,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -10169,8 +10169,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -10180,8 +10180,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -10192,8 +10192,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -10219,8 +10219,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -10244,8 +10244,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -10632,8 +10632,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -10643,8 +10643,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -10654,8 +10654,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -10666,8 +10666,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -10693,8 +10693,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -10718,8 +10718,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -11106,8 +11106,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -11117,8 +11117,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -11128,8 +11128,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -11140,8 +11140,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -11167,8 +11167,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -11192,8 +11192,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -11580,8 +11580,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -11591,8 +11591,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -11602,8 +11602,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -11614,8 +11614,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -11641,8 +11641,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -11666,8 +11666,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -12054,8 +12054,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -12065,8 +12065,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -12076,8 +12076,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -12088,8 +12088,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -12115,8 +12115,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -12140,8 +12140,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -12528,8 +12528,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -12539,8 +12539,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -12550,8 +12550,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -12562,8 +12562,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -12589,8 +12589,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -12614,8 +12614,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -13006,8 +13006,8 @@ exports[`Storyshots style misc 1`] = `
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -13017,8 +13017,8 @@ exports[`Storyshots style misc 1`] = `
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -13028,8 +13028,8 @@ exports[`Storyshots style misc 1`] = `
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -13040,8 +13040,8 @@ exports[`Storyshots style misc 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -13067,8 +13067,8 @@ exports[`Storyshots style misc 1`] = `
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -13092,8 +13092,8 @@ exports[`Storyshots style misc 1`] = `
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -13487,8 +13487,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -13498,8 +13498,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -13509,8 +13509,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -13521,8 +13521,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -13548,8 +13548,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -13573,8 +13573,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -13961,8 +13961,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -13972,8 +13972,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -13983,8 +13983,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -13995,8 +13995,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -14022,8 +14022,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -14047,8 +14047,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -14435,8 +14435,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -14446,8 +14446,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -14457,8 +14457,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -14469,8 +14469,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -14496,8 +14496,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -14521,8 +14521,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -14909,8 +14909,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -14920,8 +14920,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -14931,8 +14931,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -14943,8 +14943,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -14970,8 +14970,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -14995,8 +14995,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -15383,8 +15383,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -15394,8 +15394,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -15405,8 +15405,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -15417,8 +15417,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -15444,8 +15444,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -15469,8 +15469,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
@@ -15857,8 +15857,8 @@ Array [
 }
 
 .c5 {
-  -webkit-animation: PfPAm 1.25s linear infinite;
-  animation: PfPAm 1.25s linear infinite;
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
 }
 
 .c7 {
@@ -15868,8 +15868,8 @@ Array [
   background: #e1e8ed;
   margin: 2px 0 8px;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c12 {
@@ -15879,8 +15879,8 @@ Array [
   background: #e1e8ed;
   margin: 0 20px 0 0;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
@@ -15891,8 +15891,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -15918,8 +15918,8 @@ Array [
   margin-bottom: 12px;
   opacity: 0.8;
   position: relative;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
 }
@@ -15943,8 +15943,8 @@ Array [
   display: block;
   background: #e1e8ed;
   opacity: 0.8;
-  -webkit-animation: bmjNQl .75s linear infinite;
-  animation: bmjNQl .75s linear infinite;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
 }
