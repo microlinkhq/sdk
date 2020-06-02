@@ -6737,6 +6737,465 @@ exports[`Storyshots props loading 1`] = `
 </div>
 `;
 
+exports[`Storyshots props mediaRef 1`] = `
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c4 {
+  background: transparent no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  z-index: 1;
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c10 {
+  background: transparent no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 48px;
+  -ms-flex: 0 0 48px;
+  flex: 0 0 48px;
+}
+
+.c10::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c10::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  z-index: 1;
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c14 {
+  background: transparent no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c14::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c14::before {
+  padding-bottom: 0;
+}
+
+.c14::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  z-index: 1;
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c5 {
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
+}
+
+.c7 {
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  opacity: 0.8;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+}
+
+.c12 {
+  height: 16px;
+  width: 75%;
+  display: block;
+  background: #e1e8ed;
+  margin: 0 20px 0 0;
+  opacity: 0.8;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+}
+
+.c8 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c8::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c8::before {
+  top: 14px;
+}
+
+.c16 {
+  height: 33px;
+  width: 95%;
+  display: block;
+  background: #e1e8ed;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  position: relative;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c16::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  background: #fff;
+}
+
+.c16::before {
+  top: 14px;
+}
+
+.c9 {
+  height: 10px;
+  width: 30%;
+  display: block;
+  background: #e1e8ed;
+  opacity: 0.8;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.c2 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+.c13 {
+  max-width: 500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  color: #181919;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 382px;
+}
+
+.c13:active,
+.c13:hover {
+  outline: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+@media (max-width:48em) {
+  .c8 {
+    height: 14px;
+  }
+
+  .c8::before {
+    display: none;
+  }
+}
+
+@media (max-width:48em) {
+  .c13 {
+    height: calc(382px * 7/9);
+  }
+}
+
+<div
+  className="c0"
+>
+  <a
+    className="c1"
+    href="https://www.facebook.com/natgeo/videos/10156364216738951/"
+  >
+    https://www.facebook.com/natgeo/videos/10156364216738951/
+  </a>
+  <a
+    className="c2 microlink_card c3"
+    direction="ltr"
+    href="https://www.facebook.com/natgeo/videos/10156364216738951/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="c4 c5 microlink_card__media microlink_card__media_image"
+    />
+    <div
+      className="c6 microlink_card__content"
+    >
+      <span
+        className="c7"
+      />
+      <span
+        className="c8"
+      />
+      <span
+        className="c9"
+      />
+    </div>
+  </a>
+  <a
+    className="c2 microlink_card c3"
+    direction="ltr"
+    href="https://www.facebook.com/natgeo/videos/10156364216738951/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="c10 c5 microlink_card__media microlink_card__media_image"
+    />
+    <div
+      className="c11 microlink_card__content"
+    >
+      <span
+        className="c12"
+      />
+      <span
+        className="c9"
+      />
+    </div>
+  </a>
+  <a
+    className="c13 microlink_card c3"
+    direction="ltr"
+    href="https://www.facebook.com/natgeo/videos/10156364216738951/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="c14 c5 microlink_card__media microlink_card__media_image"
+    />
+    <div
+      className="c15 microlink_card__content"
+    >
+      <span
+        className="c7"
+      />
+      <span
+        className="c16"
+      />
+      <span
+        className="c9"
+      />
+    </div>
+  </a>
+</div>
+`;
+
 exports[`Storyshots setData function 1`] = `
 .c6 {
   display: -webkit-box;

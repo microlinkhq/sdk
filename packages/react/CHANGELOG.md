@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.2.2...v5.3.0) (2020-05-27)
+
+**Note:** Version bump only for package @microlink/react
+
+
+
+
+
+## [5.2.2](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.2.1...v5.2.2) (2020-05-19)
+
+**Note:** Version bump only for package @microlink/react
+
+
+
+
+
 ## [5.2.1](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.2.0...v5.2.1) (2020-05-17)
 
 **Note:** Version bump only for package @microlink/react
