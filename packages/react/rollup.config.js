@@ -49,32 +49,32 @@ const build = ({ file, format, name, exports }) => ({
 export default [
   build({
     format: 'umd',
-    file: 'dist/microlink.js',
+    file: 'dist/microlink.umd.js',
     name: 'microlink'
   }),
   build({
     format: 'umd',
-    file: 'dist/microlink.min.js',
+    file: 'dist/microlink.umd.min.js',
     name: 'microlink'
   }),
   build({
     format: 'esm',
-    file: 'dist/microlink.m.js',
+    file: 'dist/microlink.mjs',
     exports: 'named'
   }),
   build({
     format: 'esm',
-    file: 'dist/microlink.m.min.js',
+    file: 'dist/microlink.min.mjs',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.cjs.js',
+    file: 'dist/microlink.js',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.cjs.min.js',
+    file: 'dist/microlink.min.js',
     exports: 'named'
   })
 ]

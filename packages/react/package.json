@@ -3,10 +3,11 @@
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/react/",
   "version": "5.3.0",
-  "main": "dist/microlink.cjs.js",
-  "module": "dist/microlink.m.js",
-  "umd:main": "dist/microlink.js",
-  "unpkg": "dist/microlink.js",
+  "main": "dist/microlink.js",
+  "module": "dist/microlink.mjs",
+  "jsnext:main": "dist/microlink.mjs",
+  "umd:main": "dist/microlink.umd.js",
+  "unpkg": "dist/microlink.umd.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/react"
