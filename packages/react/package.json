@@ -4,8 +4,8 @@
   "homepage": "https://microlink.io/docs/sdk/integrations/react/",
   "version": "5.3.0",
   "main": "dist/microlink.js",
-  "module": "dist/microlink.mjs",
-  "jsnext:main": "dist/microlink.mjs",
+  "module": "dist/microlink.module.js",
+  "jsnext:main": "dist/microlink.module.js",
   "umd:main": "dist/microlink.umd.js",
   "unpkg": "dist/microlink.umd.js",
   "repository": {
