@@ -5,10 +5,10 @@ import { terser } from 'rollup-plugin-terser'
 import commonjs from '@rollup/plugin-commonjs'
 import replace from '@rollup/plugin-replace'
 
-const plugins = ({ compress = false }) => [
+const plugins = ({ compress }) => [
   commonjs(),
   nodeResolve(),
-  compress && terser({ sourcemap: true }),
+  compress && terser(),
   filesize(),
   visualizer({ template: 'treemap' }),
   replace({
@@ -23,48 +23,52 @@ const globals = {
   '@microlink/mql': 'mql'
 }
 
-const build = ({ file, format, name, exports }) => ({
-  input: './src/index.js',
-  output: {
-    file,
-    format,
-    exports,
-    name,
-    globals
-  },
-  external: Object.keys(globals),
-  plugins: plugins({ compress: file.includes('.min.') })
-})
+const build = ({ file, format, name, exports }) => {
+  const compress = file.includes('.min.')
+  return {
+    input: './src/index.js',
+    output: {
+      sourcemap: compress,
+      file,
+      format,
+      exports,
+      name,
+      globals
+    },
+    external: Object.keys(globals),
+    plugins: plugins({ compress })
+  }
+}
 
 export default [
   build({
     format: 'umd',
-    file: 'dist/microlink.js',
+    file: 'dist/microlink.umd.js',
     name: 'microlink'
   }),
   build({
     format: 'umd',
-    file: 'dist/microlink.min.js',
+    file: 'dist/microlink.umd.min.js',
     name: 'microlink'
   }),
   build({
     format: 'esm',
-    file: 'dist/microlink.m.js',
+    file: 'dist/microlink.mjs',
     exports: 'named'
   }),
   build({
     format: 'esm',
-    file: 'dist/microlink.m.min.js',
+    file: 'dist/microlink.min.mjs',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.cjs.js',
+    file: 'dist/microlink.js',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.cjs.min.js',
+    file: 'dist/microlink.min.js',
     exports: 'named'
   })
 ]

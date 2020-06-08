@@ -17,7 +17,7 @@ const globals = {
   '@microlink/mql': 'mql'
 }
 
-const plugins = ({ compress = false }) => [
+const plugins = ({ compress }) => [
   nodeResolve(),
   babel({
     babelrc: false,
