@@ -25,7 +25,7 @@ const plugins = ({ compress = false }) => [
     ...babelRc
   }),
   commonjs(),
-  compress && terser({ sourcemap: true }),
+  compress && terser(),
   filesize(),
   visualizer({ template: 'treemap' }),
   replace({
@@ -33,18 +33,22 @@ const plugins = ({ compress = false }) => [
   })
 ]
 
-const build = ({ file, format, name, exports }) => ({
-  input: './src/index.js',
-  output: {
-    file,
-    format,
-    exports,
-    name,
-    globals
-  },
-  external: Object.keys(globals),
-  plugins: plugins({ compress: file.includes('.min.') })
-})
+const build = ({ file, format, name, exports }) => {
+  const compress = file.includes('.min.')
+  return {
+    input: './src/index.js',
+    output: {
+      sourcemap: compress,
+      file,
+      format,
+      exports,
+      name,
+      globals
+    },
+    external: Object.keys(globals),
+    plugins: plugins({ compress })
+  }
+}
 
 export default [
   build({
