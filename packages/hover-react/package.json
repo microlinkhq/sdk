@@ -1,0 +1,113 @@
+{
+  "name": "@microlink/hover-react",
+  "description": "Turn links into beautiful previews.",
+  "homepage": "https://microlink.io/docs/sdk/integrations/hover-react/",
+  "version": "5.3.0",
+  "main": "dist/microlink.js",
+  "module": "dist/microlink.module.js",
+  "jsnext:main": "dist/microlink.module.js",
+  "umd:main": "dist/microlink.umd.js",
+  "unpkg": "dist/microlink.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/hover-react"
+  },
+  "bugs": {
+    "url": "https://github.com/microlinkhq/sdk/issues"
+  },
+  "keywords": [
+    "data",
+    "extraction",
+    "link",
+    "microlink",
+    "preview",
+    "previsualization"
+  ],
+  "dependencies": {
+    "@microlink/react": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/plugin-transform-react-constant-elements": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "@microlink/demo-links": "latest",
+    "@storybook/addon-storyshots": "latest",
+    "@storybook/react": "latest",
+    "babel-eslint": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-transform-react-pure-class-to-function": "latest",
+    "babel-plugin-transform-react-remove-prop-types": "latest",
+    "enzyme": "latest",
+    "enzyme-adapter-react-16": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "husky": "latest",
+    "jest": "25",
+    "jest-environment-enzyme": "latest",
+    "jest-enzyme": "latest",
+    "jest-styled-components": "latest",
+    "lodash": "latest",
+    "prettier-standard": "latest",
+    "prop-types": "latest",
+    "react": "^16",
+    "react-dom": "^16",
+    "rollup": "latest",
+    "rollup-plugin-babel": "latest",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-filesize": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-replace": "latest",
+    "rollup-plugin-terser": "latest",
+    "rollup-plugin-visualizer": "latest",
+    "standard": "latest",
+    "styled-components": "latest",
+    "unfetch": "latest"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "styled-components": "^5"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c rollup.config.js",
+    "build-storybook": "NODE_ENV=production build-storybook --quiet",
+    "dev": "start-storybook -p 6006",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "start": "node scripts/start.js",
+    "test": "NODE_ENV=test jest --detectOpenHandles"
+  },
+  "license": "MIT",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-enzyme"
+    ],
+    "testEnvironment": "enzyme",
+    "testURL": "http://localhost/",
+    "verbose": true
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "standard": {
+    "globals": [
+      "fetch"
+    ],
+    "ignore": [
+      "/dist/",
+      "/lib/",
+      "/storybook-static/"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "jsx-a11y"
+    ]
+  }
+}
