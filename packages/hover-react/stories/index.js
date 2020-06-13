@@ -114,3 +114,33 @@ storiesOf('decorator', module)
       </Center>
     )
   })
+  .add('custom style', () => {
+    const MicrolinkHoverLink = withMicrolinkHover(Link)
+
+    const CustomCenter = styled(Center)`
+      color: white;
+      background: #1A1A1A;
+
+      .microlink_card {
+        border-color: #999;
+      }
+
+      .microlink_card:hover {
+        border-color: #666;
+      }
+    `
+
+    return (
+      <CustomCenter>
+        <Paraph>
+          Check my{' '}
+          <MicrolinkHoverLink
+            style={{ background: '#1A1A1A', color: 'white', fontWeight: 'bold' }}
+            href='https://microlink.io'
+            setData={setData}
+            children='link'
+          />
+        </Paraph>
+      </CustomCenter>
+    )
+  })

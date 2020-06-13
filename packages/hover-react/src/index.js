@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import React from 'react'
 
 const PopOver = styled.div`
-  background-color: white;
   position: absolute;
   overflow: hidden;
   visibility: hidden;
@@ -17,16 +16,17 @@ const PopOver = styled.div`
   padding: 0.5rem;
   border-radius: 4px;
 
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+  }
+
   .microlink_card {
-    border: 0;
+    border-color: transparent;
   }
 
   .microlink_card:hover {
-    background: white;
-  }
-
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+    background-color: inherit;
+    border-color: transparent;
   }
 `
 
@@ -45,7 +45,7 @@ export default (LinkComponent, microlinkProps) => ({ url, ...props }) => {
   return (
     <Wrapper>
       <LinkComponent {...props} />
-      <PopOver>
+      <PopOver className='microlink_hover'>
         <Microlink url={url || props.href} {...microlinkProps} {...props} />
       </PopOver>
     </Wrapper>
