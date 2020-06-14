@@ -1,69 +1,55 @@
 import React, { useContext } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
 import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
 import { GlobalContext } from '../../context/GlobalState'
-import { media, isLarge, isSmall } from '../../utils'
+import { isLarge, isSmall } from '../../utils'
 
 const MediaEmpty = styled(CardImage)`
   ${emptyStateImageAnimation};
 `
 
 const HeaderEmpty = styled('span')`
+  opacity: 0.8;
   height: 16px;
   width: ${({ cardSize }) => (!isSmall(cardSize) ? '60%' : '75%')};
   display: block;
   background: #e1e8ed;
   margin: ${({ cardSize }) =>
     !isSmall(cardSize) ? '2px 0 8px' : '0 20px 0 0'};
-  opacity: 0.8;
   ${emptyStateAnimation};
-`
-
-const DescriptionEmpty = styled('span')`
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  ${emptyStateAnimation};
-  animation-delay: 0.125s;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: -1px;
-    right: -1px;
-    height: 6px;
-    background: #fff;
-  }
-
-  &::before {
-    top: 14px;
-  }
 
   ${({ cardSize }) =>
     !isLarge(cardSize) &&
-    media.mobile`
-    height: 14px;
-
-    &::before {
-      display: none;
-    }
+    `
+    height: 15px;
   `};
 `
 
+const DescriptionEmpty = styled('span')`
+  opacity: 0.8;
+  height: 14px;
+  width: 95%;
+  display: block;
+  position: relative;
+  ${emptyStateAnimation};
+  animation-delay: 0.125s;
+`
+
 const FooterEmpty = styled('span')`
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   ${emptyStateAnimation} animation-delay: .25s;
+
+  ${({ cardSize }) =>
+    !isLarge(cardSize) &&
+    `
+    height: 10px;
+  `};
 `
 
 const CardEmptyState = () => {
@@ -77,7 +63,15 @@ const CardEmptyState = () => {
       <MediaEmpty cardSize={size} />
       <Content cardSize={size}>
         <HeaderEmpty cardSize={size} />
-        {!isSmallCard && <DescriptionEmpty cardSize={size} />}
+        {!isSmallCard ? (
+          <>
+            <DescriptionEmpty cardSize={size} />
+            <DescriptionEmpty
+              cardSize={size}
+              style={{ marginBottom: '12px' }}
+            />
+          </>
+        ) : null}
         <FooterEmpty />
       </Content>
     </>
