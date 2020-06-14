@@ -68,7 +68,7 @@ export default [
   }),
   build({
     format: 'esm',
-    file: 'dist/microlink.min.module.js',
+    file: 'dist/microlink.module.min.js',
     exports: 'named'
   }),
   build({
