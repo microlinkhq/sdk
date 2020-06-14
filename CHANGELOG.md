@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.2](https://github.com/microlinkhq/sdk/compare/v5.3.1...v5.3.2) (2020-06-14)
+
+
+### Bug Fixes
+
+* cjs bundle name ([c08cc2a](https://github.com/microlinkhq/sdk/commit/c08cc2a57d821abc8179301f86d55e55b0bd7b07))
+* filename ([00165c7](https://github.com/microlinkhq/sdk/commit/00165c72f087911e52c07c4f061abcb5149a58fa))
+* linter ([67f75ed](https://github.com/microlinkhq/sdk/commit/67f75ed5123856f0dd17e91b5c1d4b897994e1e1))
+
+
+
+
+
 ## [5.3.1](https://github.com/microlinkhq/sdk/compare/v5.3.0...v5.3.1) (2020-06-14)
 
 

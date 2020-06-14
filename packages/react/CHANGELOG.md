@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.2](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.3.1...v5.3.2) (2020-06-14)
+
+
+### Bug Fixes
+
+* linter ([67f75ed](http://github.com/microlinkhq/sdk/tree/master/packages/react/commit/67f75ed5123856f0dd17e91b5c1d4b897994e1e1))
+
+
+
+
+
 ## [5.3.1](http://github.com/microlinkhq/sdk/tree/master/packages/react/compare/v5.3.0...v5.3.1) (2020-06-14)
 
 

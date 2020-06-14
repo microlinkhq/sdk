@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.2](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v5.3.1...v5.3.2) (2020-06-14)
+
+
+### Bug Fixes
+
+* cjs bundle name ([c08cc2a](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/commit/c08cc2a57d821abc8179301f86d55e55b0bd7b07))
+
+
+
+
+
 ## [5.3.1](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v5.3.0...v5.3.1) (2020-06-14)
 
 **Note:** Version bump only for package @microlink/vanilla
