@@ -33,7 +33,7 @@ const setData = () => ({
   }
 })
 
-const Paraph = styled.p`
+const Paraph = styled.div`
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
