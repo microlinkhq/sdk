@@ -49,11 +49,11 @@ const Wrapper = styled.span`
   }
 `
 
-const withHover = ({ url, LinkComponent = styled('a')``, ...props }) => (
+const withHover = ({ LinkComponent = styled('a')``, ...props }) => (
   <Wrapper>
     <LinkComponent {...props} />
     <PopOver className='microlink_hover'>
-      <Microlink url={url || props.href} {...props} />
+      <Microlink {...props} />
     </PopOver>
   </Wrapper>
 )

@@ -26,16 +26,6 @@ function parseObject (obj) {
   }, {})
 }
 
-function getAttributes (el) {
-  const attrs = {}
-  forEach(el.attributes, function (attr) {
-    if (!attr.name.startsWith('data-')) {
-      attrs[attr.name] = attr.value
-    }
-  })
-  return attrs
-}
-
 function microlink (selector, opts, rootNode) {
   return forEach(getDOMSelector(selector), function (el) {
     ReactDOM.render(
@@ -44,10 +34,10 @@ function microlink (selector, opts, rootNode) {
         Object.assign(
           {
             as: 'div',
-            children: el.text
+            children: el.text,
+            url: el.getAttribute('href')
           },
           opts,
-          getAttributes(el),
           parseObject(el.dataset)
         )
       ),
