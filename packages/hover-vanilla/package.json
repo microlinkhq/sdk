@@ -27,7 +27,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/hover-react": "^5.3.0"
+    "@microlink/hover-react": "^5.3.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",
