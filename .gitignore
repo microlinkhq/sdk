@@ -7,9 +7,7 @@ node_modules
 /coverage
 
 # production
-packages/react/dist/**
-packages/vanilla/dist/**
-packages/vue/dist/**
+packages/*/dist/**
 /build
 storybook-static
 
