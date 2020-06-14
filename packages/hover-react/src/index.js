@@ -19,18 +19,10 @@ const PopOver = styled.div`
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
   }
-
-  .microlink_card {
-    border-color: transparent;
-  }
-
-  .microlink_card:hover {
-    background-color: inherit;
-    border-color: transparent;
-  }
 `
 
 const Wrapper = styled.span`
+  text-decoration: inherit;
   position: relative;
   display: inline-block;
 
