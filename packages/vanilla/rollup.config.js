@@ -63,12 +63,12 @@ export default [
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.js',
+    file: 'dist/microlink.cjs.js',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.min.js',
+    file: 'dist/microlink.cjs.min.js',
     exports: 'named'
   })
 ]
