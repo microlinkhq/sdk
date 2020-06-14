@@ -19,13 +19,6 @@ const PopOver = styled.div`
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
   }
-
-  .microlink_card {
-    border: none;
-  }
-  .microlink_card:hover {
-    background: transparent;
-  }
 `
 
 const Wrapper = styled.span`
@@ -38,9 +31,25 @@ const Wrapper = styled.span`
     opacity: 1;
     margin-bottom: 15px;
   }
+
+  .microlink_card {
+    border: none;
+  }
+
+  .microlink_card:hover {
+    background-color: inherit;
+  }
+
+  .microlink_hover {
+    border: 1px solid #e1e8ed;
+  }
+
+  .microlink_hover:hover {
+    border-color: #f5f8fa;
+  }
 `
 
-export const withHover = ({ url, LinkComponent = styled('a')``, ...props }) => (
+const withHover = ({ url, LinkComponent = styled('a')``, ...props }) => (
   <Wrapper>
     <LinkComponent {...props} />
     <PopOver className='microlink_hover'>
@@ -49,5 +58,9 @@ export const withHover = ({ url, LinkComponent = styled('a')``, ...props }) => (
   </Wrapper>
 )
 
-export default (LinkComponent, microlinkProps) => props =>
+const MicrolinkHover = (LinkComponent, microlinkProps) => props =>
   withHover({ LinkComponent, ...microlinkProps, ...props })
+
+MicrolinkHover.withHover = withHover
+
+export default MicrolinkHover

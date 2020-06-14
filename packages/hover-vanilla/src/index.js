@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { withHover } from '@microlink/hover-react'
+import MicrolinkHover from '@microlink/hover-react'
 
 function parseJSON (value) {
   try {
@@ -30,7 +30,7 @@ function microlink (selector, opts, rootNode) {
   return forEach(getDOMSelector(selector), function (el) {
     ReactDOM.render(
       React.createElement(
-        withHover,
+        MicrolinkHover.withHover,
         Object.assign(
           {
             as: 'div',
