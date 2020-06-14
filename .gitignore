@@ -30,5 +30,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # others
-packages/react/stats.html
-packages/vanilla/stats.html
+packages/*/stats.html
