@@ -33,13 +33,14 @@ const Wrapper = styled.span`
   }
 `
 
-export default (LinkComponent, microlinkProps) => ({ url, ...props }) => {
-  return (
-    <Wrapper>
-      <LinkComponent {...props} />
-      <PopOver className='microlink_hover'>
-        <Microlink url={url || props.href} {...microlinkProps} {...props} />
-      </PopOver>
-    </Wrapper>
-  )
-}
+export const withHover = ({ url, LinkComponent = styled('a')``, ...props }) => (
+  <Wrapper>
+    <LinkComponent {...props} />
+    <PopOver className='microlink_hover'>
+      <Microlink url={url || props.href} {...props} />
+    </PopOver>
+  </Wrapper>
+)
+
+export default (LinkComponent, microlinkProps) => props =>
+  withHover({ LinkComponent, ...microlinkProps, ...props })
