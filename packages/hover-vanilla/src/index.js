@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import MicrolinkHover from '@microlink/hover-react'
+import styled from 'styled-components'
 
 function getDOMSelector (selector) {
   return typeof selector === 'string'
@@ -33,6 +34,7 @@ function microlink (selector, opts, rootNode) {
         MicrolinkHover.withHover,
         Object.assign(
           {
+            LinkComponent: styled('a')``,
             as: 'div',
             children: el.text,
             url: el.getAttribute('href')
