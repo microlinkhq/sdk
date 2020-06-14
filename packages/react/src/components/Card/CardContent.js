@@ -64,6 +64,7 @@ const Description = styled('div').attrs({ className: classNames.description })`
   flex-grow: 2;
   margin: auto 0;
   line-height: 18px;
+  font-weight: normal;
   ${({ cardSize }) => !isLarge(cardSize) && mobileDescriptionStyle};
 `
 
@@ -74,6 +75,7 @@ const Footer = styled('footer').attrs({ className: classNames.url })`
   text-align: left;
   margin: 0;
   flex-grow: 0;
+  font-weight: normal;
   ${({ cardSize }) => css`
     font-size: ${!isSmall(cardSize) ? '12px' : '10px'};
     ${!isSmall(cardSize) && 'width: 100%;'}
