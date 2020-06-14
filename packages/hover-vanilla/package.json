@@ -2,7 +2,7 @@
   "name": "@microlink/hover-vanilla",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/docs/sdk/integrations/hover-vanilla/",
-  "version": "5.3.3",
+  "version": "5.3.4",
   "main": "dist/microlink.js",
   "module": "dist/microlink.module.js",
   "jsnext:main": "dist/microlink.module.js",
@@ -27,7 +27,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/hover-react": "^5.3.2"
+    "@microlink/hover-react": "^5.3.4"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",
