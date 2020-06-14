@@ -16,6 +16,9 @@
     "url": "https://github.com/microlinkhq/sdk/issues"
   },
   "keywords": [
+    "vanilla",
+    "javascript",
+    "hover",
     "data",
     "extraction",
     "link",
@@ -45,7 +48,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build": "NODE_ENV=production rollup -c rollup.config.js",
     "dev": "npm run build -- -w",
     "lint": "standard src",
     "pretest": "npm run lint",
