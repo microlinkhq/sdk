@@ -2,6 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import MicrolinkHover from '@microlink/hover-react'
 
+function getDOMSelector (selector) {
+  return typeof selector === 'string'
+    ? document.querySelectorAll(selector)
+    : [].concat(selector).filter(Boolean)
+}
+
+function forEach (list, fn) {
+  for (let i = 0; i < list.length; i++) fn(list[i])
+}
+
 function parseJSON (value) {
   try {
     return JSON.parse(value)
@@ -16,14 +26,14 @@ function parseObject (obj) {
   }, {})
 }
 
-function getDOMSelector (selector) {
-  return typeof selector === 'string'
-    ? document.querySelectorAll(selector)
-    : [].concat(selector).filter(Boolean)
-}
-
-function forEach (list, fn) {
-  for (let i = 0; i < list.length; i++) fn(list[i])
+function getAttributes (el) {
+  const attrs = {}
+  forEach(el.attributes, function (attr) {
+    if (!attr.name.startsWith('data-')) {
+      attrs[attr.name] = attr.value
+    }
+  })
+  return attrs
 }
 
 function microlink (selector, opts, rootNode) {
@@ -34,11 +44,10 @@ function microlink (selector, opts, rootNode) {
         Object.assign(
           {
             as: 'div',
-            url: el.getAttribute('href'),
-            className: el.className,
             children: el.text
           },
           opts,
+          getAttributes(el),
           parseObject(el.dataset)
         )
       ),
