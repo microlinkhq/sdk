@@ -182,91 +182,62 @@ exports[`Storyshots media audio 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -363,16 +334,6 @@ exports[`Storyshots media audio 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -405,6 +366,14 @@ exports[`Storyshots media audio 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -446,10 +415,18 @@ exports[`Storyshots media audio 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -523,23 +500,22 @@ exports[`Storyshots media iframe 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
@@ -547,29 +523,16 @@ exports[`Storyshots media iframe 1`] = `
   animation-delay: 0.125s;
 }
 
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -633,16 +596,6 @@ exports[`Storyshots media iframe 1`] = `
   }
 }
 
-@media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
 <div
   className="c0"
 >
@@ -670,6 +623,14 @@ exports[`Storyshots media iframe 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -861,91 +822,62 @@ exports[`Storyshots media image 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -1042,16 +974,6 @@ exports[`Storyshots media image 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -1084,6 +1006,14 @@ exports[`Storyshots media image 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -1125,10 +1055,18 @@ exports[`Storyshots media image 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -1320,91 +1258,62 @@ exports[`Storyshots media logo 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -1501,16 +1410,6 @@ exports[`Storyshots media logo 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -1543,6 +1442,14 @@ exports[`Storyshots media logo 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -1584,10 +1491,18 @@ exports[`Storyshots media logo 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -1779,91 +1694,62 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -1960,16 +1846,6 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -2002,6 +1878,14 @@ exports[`Storyshots media screenshot 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -2043,10 +1927,18 @@ exports[`Storyshots media screenshot 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -2238,91 +2130,62 @@ exports[`Storyshots media video 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -2419,16 +2282,6 @@ exports[`Storyshots media video 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -2461,6 +2314,14 @@ exports[`Storyshots media video 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -2502,10 +2363,18 @@ exports[`Storyshots media video 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -2697,91 +2566,62 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -2878,16 +2718,6 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -2920,6 +2750,14 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -2961,10 +2799,18 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -3156,91 +3002,62 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -3353,16 +3170,6 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -3395,6 +3202,14 @@ exports[`Storyshots props contrast 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -3436,10 +3251,18 @@ exports[`Storyshots props contrast 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -3631,91 +3454,62 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -3812,16 +3606,6 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -3854,6 +3638,14 @@ exports[`Storyshots props controls (disabled) 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -3895,10 +3687,18 @@ exports[`Storyshots props controls (disabled) 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -4090,91 +3890,62 @@ exports[`Storyshots props default 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -4271,16 +4042,6 @@ exports[`Storyshots props default 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -4313,6 +4074,14 @@ exports[`Storyshots props default 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -4354,10 +4123,18 @@ exports[`Storyshots props default 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -4549,91 +4326,62 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -4752,16 +4500,6 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -4794,6 +4532,14 @@ exports[`Storyshots props direction + contrast 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -4835,10 +4581,18 @@ exports[`Storyshots props direction + contrast 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -5030,91 +4784,62 @@ exports[`Storyshots props direction 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -5217,16 +4942,6 @@ exports[`Storyshots props direction 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -5259,6 +4974,14 @@ exports[`Storyshots props direction 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -5300,10 +5023,18 @@ exports[`Storyshots props direction 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -5496,91 +5227,62 @@ Array [
 }
 
 .c8 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c13 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c17 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c9 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c9::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c9::before {
-  top: 14px;
-}
-
-.c17 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c17::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c17::before {
-  top: 14px;
 }
 
 .c10 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c3 {
@@ -5691,16 +5393,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c9 {
-    height: 14px;
-  }
-
-  .c9::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c14 {
     height: calc(382px * 7/9);
   }
@@ -5744,6 +5436,14 @@ Array [
           className="c9"
         />
         <span
+          className="c9"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
+        />
+        <span
           className="c10"
         />
       </div>
@@ -5783,10 +5483,18 @@ Array [
         className="c16 microlink_card__content"
       >
         <span
-          className="c8"
+          className="c17"
         />
         <span
-          className="c17"
+          className="c9"
+        />
+        <span
+          className="c9"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c10"
@@ -5975,91 +5683,62 @@ Array [
 }
 
 .c8 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c13 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c17 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c9 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c9::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c9::before {
-  top: 14px;
-}
-
-.c17 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c17::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c17::before {
-  top: 14px;
 }
 
 .c10 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c3 {
@@ -6170,16 +5849,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c9 {
-    height: 14px;
-  }
-
-  .c9::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c14 {
     height: calc(382px * 7/9);
   }
@@ -6225,6 +5894,14 @@ Array [
           className="c9"
         />
         <span
+          className="c9"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
+        />
+        <span
           className="c10"
         />
       </div>
@@ -6264,10 +5941,18 @@ Array [
         className="c16 microlink_card__content"
       >
         <span
-          className="c8"
+          className="c17"
         />
         <span
-          className="c17"
+          className="c9"
+        />
+        <span
+          className="c9"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c10"
@@ -6460,91 +6145,62 @@ exports[`Storyshots props loading 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -6641,16 +6297,6 @@ exports[`Storyshots props loading 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -6683,6 +6329,14 @@ exports[`Storyshots props loading 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -6724,10 +6378,18 @@ exports[`Storyshots props loading 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -6919,91 +6581,62 @@ exports[`Storyshots props mediaRef 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -7100,16 +6733,6 @@ exports[`Storyshots props mediaRef 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -7142,6 +6765,14 @@ exports[`Storyshots props mediaRef 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -7183,10 +6814,18 @@ exports[`Storyshots props mediaRef 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -7378,91 +7017,62 @@ exports[`Storyshots setData function 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -7559,16 +7169,6 @@ exports[`Storyshots setData function 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -7601,6 +7201,14 @@ exports[`Storyshots setData function 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -7642,10 +7250,18 @@ exports[`Storyshots setData function 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -7837,91 +7453,62 @@ exports[`Storyshots setData object 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -8018,16 +7605,6 @@ exports[`Storyshots setData object 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -8060,6 +7637,14 @@ exports[`Storyshots setData object 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -8101,10 +7686,18 @@ exports[`Storyshots setData object 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -8179,23 +7772,22 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
@@ -8203,29 +7795,16 @@ Array [
   animation-delay: 0.125s;
 }
 
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -8289,16 +7868,6 @@ Array [
   }
 }
 
-@media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
 <div
     className="c0"
   >
@@ -8326,6 +7895,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -8396,23 +7973,22 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
@@ -8420,29 +7996,16 @@ Array [
   animation-delay: 0.125s;
 }
 
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -8506,16 +8069,6 @@ Array [
   }
 }
 
-@media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
 <div
     className="c0"
   >
@@ -8543,6 +8096,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -8736,91 +8297,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -8913,16 +8445,6 @@ Array [
     -webkit-flex: 0 0 92px;
     -ms-flex: 0 0 92px;
     flex: 0 0 92px;
-  }
-}
-
-@media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
   }
 }
 
@@ -8967,6 +8489,14 @@ Array [
           className="c8"
         />
         <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
+        />
+        <span
           className="c9"
         />
       </div>
@@ -9018,10 +8548,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -9210,91 +8748,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -9391,16 +8900,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -9439,6 +8938,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -9492,10 +8999,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -9684,91 +9199,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -9865,16 +9351,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -9913,6 +9389,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -9966,10 +9450,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -10163,91 +9655,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -10340,16 +9803,6 @@ Array [
     -webkit-flex: 0 0 92px;
     -ms-flex: 0 0 92px;
     flex: 0 0 92px;
-  }
-}
-
-@media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
   }
 }
 
@@ -10394,6 +9847,14 @@ Array [
           className="c8"
         />
         <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
+        />
+        <span
           className="c9"
         />
       </div>
@@ -10445,10 +9906,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -10637,91 +10106,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -10818,16 +10258,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -10866,6 +10296,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -10919,10 +10357,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -11111,91 +10557,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -11292,16 +10709,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -11340,6 +10747,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -11393,10 +10808,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -11585,91 +11008,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -11766,16 +11160,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -11814,6 +11198,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -11867,10 +11259,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -12059,91 +11459,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -12240,16 +11611,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -12288,6 +11649,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -12341,10 +11710,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -12533,91 +11910,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -12714,16 +12062,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -12762,6 +12100,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -12815,10 +12161,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -13011,91 +12365,62 @@ exports[`Storyshots style misc 1`] = `
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -13192,16 +12517,6 @@ exports[`Storyshots style misc 1`] = `
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -13241,6 +12556,14 @@ exports[`Storyshots style misc 1`] = `
       />
       <span
         className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -13296,10 +12619,18 @@ exports[`Storyshots style misc 1`] = `
       className="c15 microlink_card__content"
     >
       <span
-        className="c7"
+        className="c16"
       />
       <span
-        className="c16"
+        className="c8"
+      />
+      <span
+        className="c8"
+        style={
+          Object {
+            "marginBottom": "12px",
+          }
+        }
       />
       <span
         className="c9"
@@ -13492,91 +12823,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -13669,16 +12971,6 @@ Array [
     -webkit-flex: 0 0 92px;
     -ms-flex: 0 0 92px;
     flex: 0 0 92px;
-  }
-}
-
-@media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
   }
 }
 
@@ -13723,6 +13015,14 @@ Array [
           className="c8"
         />
         <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
+        />
+        <span
           className="c9"
         />
       </div>
@@ -13774,10 +13074,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -13966,91 +13274,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -14147,16 +13426,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -14195,6 +13464,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -14248,10 +13525,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -14440,91 +13725,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -14621,16 +13877,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -14669,6 +13915,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -14722,10 +13976,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -14914,91 +14176,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -15095,16 +14328,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -15143,6 +14366,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -15196,10 +14427,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -15388,91 +14627,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -15569,16 +14779,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -15617,6 +14817,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -15670,10 +14878,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -15862,91 +15078,62 @@ Array [
 }
 
 .c7 {
+  opacity: 0.8;
   height: 16px;
   width: 60%;
   display: block;
   background: #e1e8ed;
   margin: 2px 0 8px;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
+  height: 15px;
 }
 
 .c12 {
+  opacity: 0.8;
   height: 16px;
   width: 75%;
   display: block;
   background: #e1e8ed;
   margin: 0 20px 0 0;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c16 {
   opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
 }
 
 .c8 {
-  height: 33px;
+  opacity: 0.8;
+  height: 14px;
   width: 95%;
   display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
   position: relative;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: 0.125s;
   animation-delay: 0.125s;
-}
-
-.c8::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c8::before {
-  top: 14px;
-}
-
-.c16 {
-  height: 33px;
-  width: 95%;
-  display: block;
-  background: #e1e8ed;
-  margin-bottom: 12px;
-  opacity: 0.8;
-  position: relative;
-  -webkit-animation: ibPKPZ .75s linear infinite;
-  animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: 0.125s;
-  animation-delay: 0.125s;
-}
-
-.c16::before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  right: -1px;
-  height: 6px;
-  background: #fff;
-}
-
-.c16::before {
-  top: 14px;
 }
 
 .c9 {
-  height: 10px;
+  opacity: 0.8;
+  height: 12px;
   width: 30%;
   display: block;
-  background: #e1e8ed;
-  opacity: 0.8;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
   -webkit-animation-delay: .25s;
   animation-delay: .25s;
+  height: 10px;
 }
 
 .c2 {
@@ -16043,16 +15230,6 @@ Array [
 }
 
 @media (max-width:48em) {
-  .c8 {
-    height: 14px;
-  }
-
-  .c8::before {
-    display: none;
-  }
-}
-
-@media (max-width:48em) {
   .c13 {
     height: calc(382px * 7/9);
   }
@@ -16091,6 +15268,14 @@ Array [
         />
         <span
           className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"
@@ -16144,10 +15329,18 @@ Array [
         className="c15 microlink_card__content"
       >
         <span
-          className="c7"
+          className="c16"
         />
         <span
-          className="c16"
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
         />
         <span
           className="c9"

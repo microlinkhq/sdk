@@ -119,7 +119,7 @@ storiesOf('decorator', module)
 
     const CustomCenter = styled(Center)`
       color: white;
-      background: #1A1A1A;
+      background: #1a1a1a;
 
       .microlink_card {
         border-color: #999;
@@ -135,7 +135,11 @@ storiesOf('decorator', module)
         <Paraph>
           Check my{' '}
           <MicrolinkHoverLink
-            style={{ background: '#1A1A1A', color: 'white', fontWeight: 'bold' }}
+            style={{
+              background: '#1A1A1A',
+              color: 'white',
+              fontWeight: 'bold'
+            }}
             href='https://microlink.io'
             setData={setData}
             children='link'
