@@ -45,30 +45,30 @@ export default [
     format: 'umd',
     file: 'dist/microlink.js',
     name: 'microlinkHover'
+  }),
+  build({
+    format: 'umd',
+    file: 'dist/microlink.min.js',
+    name: 'microlinkHover'
+  }),
+  build({
+    format: 'esm',
+    file: 'dist/microlink.module.js',
+    exports: 'named'
+  }),
+  build({
+    format: 'esm',
+    file: 'dist/microlink.min.module.js',
+    exports: 'named'
+  }),
+  build({
+    format: 'cjs',
+    file: 'dist/microlink.cjs.js',
+    exports: 'named'
+  }),
+  build({
+    format: 'cjs',
+    file: 'dist/microlink.cjs.min.js',
+    exports: 'named'
   })
-  // build({
-  //   format: 'umd',
-  //   file: 'dist/microlink.min.js',
-  //   name: 'microlinkHover'
-  // }),
-  // build({
-  //   format: 'esm',
-  //   file: 'dist/microlink.module.js',
-  //   exports: 'named'
-  // }),
-  // build({
-  //   format: 'esm',
-  //   file: 'dist/microlink.min.module.js',
-  //   exports: 'named'
-  // }),
-  // build({
-  //   format: 'cjs',
-  //   file: 'dist/microlink.cjs.js',
-  //   exports: 'named'
-  // }),
-  // build({
-  //   format: 'cjs',
-  //   file: 'dist/microlink.cjs.min.js',
-  //   exports: 'named'
-  // })
 ]
