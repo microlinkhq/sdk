@@ -17,9 +17,11 @@ function parseObject (obj) {
 }
 
 function getDOMSelector (selector) {
-  return typeof selector === 'string'
-    ? document.querySelectorAll(selector)
-    : [].concat(selector).filter(Boolean)
+  return Array.prototype.slice.call(
+    typeof selector === 'string'
+      ? document.querySelectorAll(selector)
+      : selector
+  )
 }
 
 function forEach (list, fn) {
