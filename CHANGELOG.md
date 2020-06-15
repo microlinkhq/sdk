@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.5](https://github.com/microlinkhq/sdk/compare/v5.3.4...v5.3.5) (2020-06-15)
+
+
+### Bug Fixes
+
+* convert collection into an array ([771496c](https://github.com/microlinkhq/sdk/commit/771496c2455e77e57ac3e14937c74ca719b8468c))
+* convert relative to absolute urls ([ef8e221](https://github.com/microlinkhq/sdk/commit/ef8e221f0e1a9b74bc3d72e79d87a71d347f8e5b))
+
+
+
+
+
 ## [5.3.4](https://github.com/microlinkhq/sdk/compare/v5.3.3...v5.3.4) (2020-06-14)
 
 **Note:** Version bump only for package @microlink/root

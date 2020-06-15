@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.5](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v5.3.4...v5.3.5) (2020-06-15)
+
+
+### Bug Fixes
+
+* convert collection into an array ([771496c](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/commit/771496c2455e77e57ac3e14937c74ca719b8468c))
+
+
+
+
+
 ## [5.3.2](http://github.com/microlinkhq/sdk/tree/master/packages/vanilla/compare/v5.3.1...v5.3.2) (2020-06-14)
 
 

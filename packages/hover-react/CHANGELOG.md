@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.5](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/compare/v5.3.4...v5.3.5) (2020-06-15)
+
+**Note:** Version bump only for package @microlink/hover-react
+
+
+
+
+
 ## [5.3.4](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/compare/v5.3.3...v5.3.4) (2020-06-14)
 
 **Note:** Version bump only for package @microlink/hover-react
