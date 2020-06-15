@@ -41,6 +41,7 @@ const Wrapper = styled.span`
   }
 
   .microlink_hover {
+    background-color: white;
     border: 1px solid #e1e8ed;
   }
 
