@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/pattern.css@1.0.0/dist/pattern.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
@@ -78,24 +79,33 @@
     .sans-serif {
     font-family: 'Inter', sans-serif;
     }
+
+    .mauto {
+      margin: auto;
+    }
   </style>
 </head>
-<body class="pa3 w-100 sans-serif bg-white mw8" style="margin:auto;">
+<body class="pa3 w-100 sans-serif bg-white mw8 mauto">
   <header class="tc">
     <h1 class="fw6 f2 f1-l">@microlink/hover-vanilla</h1>
     <h3 class="fw4 f3 ph3">Turns any URL into instant hover preview ✨</h3>
-    <a rel="noopener noreferrer" target="_blank" href='https://hover-react.microlink.io' class="f5 ph2">React version</a>
+    <a rel="noopener noreferrer" target="_blank" href='https://hover-react.microlink.io' class="link blue f5 ph2">React version</a>
     <span> | </span>
-    <a rel="noopener noreferrer" target="_blank" href='https://github.com/microlinkhq/sdk' class="f5 ph2">See on GitHub</a>
+    <a rel="noopener noreferrer" target="_blank" href='https://github.com/microlinkhq/sdk' class="link blue f5 ph2">See on GitHub</a>
   </header>
 
   <section class="pt3 ph4 pt5-l ph6-l tc">
-    <video class="mw6" width="100%" src="/assets/video/demo.mp4" autoplay="" muted="" loop=""></video>
+    <div class="mauto mw6 pattern-dots-md gray-light">
+      <video style="transform:translate(30px, 30px);" class="mw6" width="100%" src="/assets/video/demo.mp4" controls="" autoplay="" muted="" loop=""></video>
+    </div>
   </section>
 
   <section class="pt3 ph4 pt5-l ph6-l">
     <h3 class="mt3 f3 fw6">Installation</h3>
-    <pre class="pv3 pink lh-copy mw7 ba">
+
+
+    <div class="pl3">
+      <pre class="pv3 pink lh-copy mw7 ba">
   &lt;script src=&quot;https://cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js,npm/@microlink/hover-vanilla@latest/dist/microlink.min.js&quot;&gt;&lt;/script&gt;
 
   &#x3C;script&#x3E;
@@ -105,12 +115,14 @@
         media: [&#x27;iframe&#x27;, &#x27;video&#x27;, &#x27;audio&#x27;, &#x27;image&#x27;, &#x27;logo&#x27;]
       })
     })
-  &#x3C;/script&#x3E;</pre>
+  &#x3C;/script&#x3E;
+      </pre>
+    </div>
   <figcaption class="f7 gray pt2 tc">Just add the above to your main markup before the closing &lt;/body&gt; tag.</figcaption>
   </section>
   <section class="pt3 ph4 pt5-l ph6-l">
     <h3 class="mt3 f3 fw6">Showcase</h3>
-    <p class="lh-copy mw7">
+    <p class="pl3 lh-copy mw7">
       <a class="f3 link light-blue b no-underline dib ph2 pv1" href="https://kikobeats.com/human-apis/">kikobeats.com</a>
       <a class="f3 link blue b no-underline dib ph2 pv1" href="/collectednotes">collectednotes.com</a>
       <a class="f3 link b dark-blue no-underline dib ph2 pv1" href="/joshwcomeau">joshwcomeau.com</a>
