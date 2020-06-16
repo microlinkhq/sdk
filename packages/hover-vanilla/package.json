@@ -36,6 +36,7 @@
     "husky": "latest",
     "prettier-standard": "latest",
     "rollup": "latest",
+    "rollup-plugin-copy": "latest",
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-terser": "latest",
     "rollup-plugin-visualizer": "latest",
@@ -48,8 +49,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "NODE_ENV=production rollup -c rollup.config.js",
-    "dev": "npm run build -- -w",
+    "rollup": "rollup -c rollup.config.js",
+    "build": "NODE_ENV=production npm run rollup",
+    "dev": "NODE_ENV=development npm run rollup -- -w",
     "lint": "standard src",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
