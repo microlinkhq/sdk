@@ -1,6 +1,6 @@
-import Microlink from '@microlink/react'
-import styled from 'styled-components'
-import React from 'react'
+import Microlink from "@microlink/react";
+import styled from "styled-components";
+import React from "react";
 
 const PopOver = styled.div`
   position: absolute;
@@ -19,17 +19,17 @@ const PopOver = styled.div`
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
   }
-`
+`;
 
 const Wrapper = styled.span`
   text-decoration: inherit;
   position: relative;
   display: inline-block;
+  padding-top: 15px;
 
   &:hover ${PopOver} {
     visibility: visible;
     opacity: 1;
-    margin-bottom: 15px;
   }
 
   .microlink_card {
@@ -48,20 +48,20 @@ const Wrapper = styled.span`
   .microlink_hover:hover {
     border-color: #f5f8fa;
   }
-`
+`;
 
 const withHover = ({ LinkComponent, ...props }) => (
   <Wrapper>
     <LinkComponent {...props} />
-    <PopOver className='microlink_hover'>
+    <PopOver className="microlink_hover">
       <Microlink {...props} />
     </PopOver>
   </Wrapper>
-)
+);
 
-const MicrolinkHover = (LinkComponent, microlinkProps) => props =>
-  withHover({ LinkComponent, ...microlinkProps, ...props })
+const MicrolinkHover = (LinkComponent, microlinkProps) => (props) =>
+  withHover({ LinkComponent, ...microlinkProps, ...props });
 
-MicrolinkHover.withHover = withHover
+MicrolinkHover.withHover = withHover;
 
-export default MicrolinkHover
+export default MicrolinkHover;
