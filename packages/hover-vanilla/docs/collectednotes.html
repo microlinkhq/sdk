@@ -325,22 +325,12 @@ Available options:
       </section>
    </body>
    <style>
-    .microlink_hover,
-    .microlink_card,
-    .microlink_hover:hover,
-    .microlink_card:hover {
-      background: #1A1A1A !important;
-      color: white;
+    :root {
+      --microlink-background-color: #1A1A1A;
+      --microlink-color: white;
+      --microlink-border-color: #666;
+      --microlink-hover-border-color: #999;
     }
-
-    .microlink_hover {
-      border-color: #666 !important;
-    }
-
-    .microlink_hover:hover {
-      border-color: #999 !important;
-    }
-
    </style>
    <script src="https://cdn.jsdelivr.net/combine/npm/react@16/umd/react.production.min.js,npm/react-dom@16/umd/react-dom.production.min.js,npm/react-is@16/umd/react-is.production.min.js,npm/styled-components@5/dist/styled-components.min.js,npm/@microlink/mql@latest/dist/mql.min.js"></script>
    <script src="./dist/microlink.js"></script>

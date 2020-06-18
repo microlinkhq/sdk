@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import React from 'react'
 
 const PopOver = styled.div`
+  --microlink-hover-background-color: var(--microlink-background-color, white);
+
   position: absolute;
   overflow: hidden;
   visibility: hidden;
@@ -16,8 +18,16 @@ const PopOver = styled.div`
   padding: 0.5rem;
   border-radius: 4px;
 
+  .microlink_card {
+    border: 0;
+  }
+
+  border: 1px solid var(--microlink-border-color, #e1e8ed);
+  background-color: var(--microlink-hover-background-color);
+
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+    border-color: var(--microlink-hover-border-color, #f5f8fa);
   }
 `
 
@@ -30,23 +40,6 @@ const Wrapper = styled.span`
     visibility: visible;
     opacity: 1;
     margin-bottom: 15px;
-  }
-
-  .microlink_card {
-    border: none;
-  }
-
-  .microlink_card:hover {
-    background-color: inherit;
-  }
-
-  .microlink_hover {
-    background-color: white;
-    border: 1px solid #e1e8ed;
-  }
-
-  .microlink_hover:hover {
-    border-color: #f5f8fa;
   }
 `
 
