@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.1](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/compare/v5.4.0...v5.4.1) (2020-06-18)
+
+
+### Bug Fixes
+
+* bug with transition ([a309e94](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/commit/a309e94e68721073adb903b5cf60ef67dd1cc030))
+* linter ([3b12e42](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/commit/3b12e426ab6a1a93f253d23c195998e4dd393872))
+
+
+
+
+
 # [5.4.0](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/compare/v5.3.5...v5.4.0) (2020-06-18)
 
 
