@@ -35,9 +35,9 @@ const Wrapper = styled.span`
   text-decoration: inherit;
   position: relative;
   display: inline-block;
-  padding-top: var(--microlink-gap, 15px);
 
   &:hover ${PopOver} {
+    margin-bottom: var(--microlink-gap, 15px);
     visibility: visible;
     opacity: 1;
   }
