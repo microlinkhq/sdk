@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.2](https://github.com/microlinkhq/sdk/compare/v5.4.0...v5.4.2) (2020-06-18)
+
+
+### Bug Fixes
+
+* bug with transition ([#236](https://github.com/microlinkhq/sdk/issues/236)) ([1f17041](https://github.com/microlinkhq/sdk/commit/1f170417c3af18bc227034d76da8213f3ece00eb))
+* rollback change ([ac6a5d1](https://github.com/microlinkhq/sdk/commit/ac6a5d1ee4e4432b3167ba346b5cccaa72421018))
+
+
+
+
+
 # [5.4.0](https://github.com/microlinkhq/sdk/compare/v5.3.5...v5.4.0) (2020-06-18)
 
 
