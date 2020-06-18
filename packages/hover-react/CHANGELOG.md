@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/compare/v5.3.5...v5.4.0) (2020-06-18)
+
+
+### Features
+
+* allow customization via CSS variables ([ca5e43d](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/commit/ca5e43dce9937804ad9096c2277c430ebaa60043)), closes [#235](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/issues/235)
+
+
+
+
+
 ## [5.3.5](http://github.com/microlinkhq/sdk/tree/master/packages/hover-react/compare/v5.3.4...v5.3.5) (2020-06-15)
 
 **Note:** Version bump only for package @microlink/hover-react

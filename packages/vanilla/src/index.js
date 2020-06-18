@@ -30,6 +30,8 @@ function forEach (list, fn) {
 
 function microlink (selector, opts, rootNode) {
   return forEach(getDOMSelector(selector), function (el) {
+    el.classList.add('microlink_vanilla')
+
     ReactDOM.render(
       React.createElement(
         Microlink,

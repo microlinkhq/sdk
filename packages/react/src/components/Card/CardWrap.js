@@ -34,8 +34,8 @@ const hoverStyle = css`
   transition-property: background, border-color;
   will-change: background, border-color;
   &:hover {
-    background: #f5f8fa;
-    border-color: rgba(136, 153, 166, 0.5);
+    background-color: var(--microlink-hover-background-color, #f5f8fa);
+    border-color: var(--microlink-hover-border-color, #8899A680);
   }
 `
 
@@ -45,19 +45,18 @@ const rtlStyle = ({ cardSize }) => css`
 
 const baseStyle = css(
   () => `
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width, 500px);
+  background-color: var(--microlink-background-color, #fff);
+  border-width: var(--microlink-border-width, 1px);
+  border-style: var(--microlink-border-style, solid);
+  border-color: var(--microlink-border-color, #e1e8ed);
+  color: var(--microlink-color, #181919);
   overflow: hidden;
-  color: #181919;
   font-family: ${font.sans};
   display: flex;
   text-decoration: none;
   opacity: 1;
   position: relative;
-
   transition-duration: ${speed.medium};
   transition-timing-function: ${animation.medium};
 

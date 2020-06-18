@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/microlinkhq/sdk/compare/v5.3.5...v5.4.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* build reference ([40f8a7d](https://github.com/microlinkhq/sdk/commit/40f8a7d2e9936b823ea1e2cfdabf0df7ee2fcb44))
+
+
+### Features
+
+* allow customization via CSS variables ([ca5e43d](https://github.com/microlinkhq/sdk/commit/ca5e43dce9937804ad9096c2277c430ebaa60043)), closes [#235](https://github.com/microlinkhq/sdk/issues/235)
+
+
+
+
+
 ## [5.3.5](https://github.com/microlinkhq/sdk/compare/v5.3.4...v5.3.5) (2020-06-15)
 
 

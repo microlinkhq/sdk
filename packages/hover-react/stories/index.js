@@ -118,16 +118,10 @@ storiesOf('decorator', module)
     const MicrolinkHoverLink = withMicrolinkHover(Link)
 
     const CustomCenter = styled(Center)`
+    --microlink-border-color: #666;
+    --microlink-hover-border-color: #999;
       color: white;
       background: #1a1a1a;
-
-      .microlink_card {
-        border-color: #999;
-      }
-
-      .microlink_card:hover {
-        border-color: #666;
-      }
     `
 
     return (
