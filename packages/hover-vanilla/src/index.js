@@ -1,14 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MicrolinkHover from '@microlink/hover-react'
 import styled from 'styled-components'
+import MicrolinkHover from '@microlink/hover-react'
+import isLocalhostUrl from 'is-localhost-url'
 
 function getDOMSelector (selector) {
-  return Array.prototype.slice.call(
-    typeof selector === 'string'
-      ? document.querySelectorAll(selector)
-      : selector
-  )
+  return Array.prototype.slice
+    .call(
+      typeof selector === 'string'
+        ? document.querySelectorAll(selector)
+        : selector
+    )
+    .map(el => {
+      el.href = new URL(el.href).toString()
+      return el
+    })
+    .filter(el => !isLocalhostUrl(el.href))
 }
 
 function forEach (list, fn) {
@@ -39,7 +46,8 @@ function microlink (selector, opts, rootNode) {
             LinkComponent: styled('a')``,
             as: 'div',
             children: el.text,
-            url: el.getAttribute('href')
+            url: el.getAttribute('href'),
+            media: ['iframe', 'video', 'audio', 'image', 'logo']
           },
           opts,
           parseObject(el.dataset)
