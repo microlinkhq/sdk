@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.3](http://github.com/microlinkhq/sdk/tree/master/packages/vue/compare/v5.4.2...v5.4.3) (2020-06-20)
+
+**Note:** Version bump only for package @microlink/vue
+
+
+
+
+
 ## [5.4.2](http://github.com/microlinkhq/sdk/tree/master/packages/vue/compare/v5.4.0...v5.4.2) (2020-06-18)
 
 **Note:** Version bump only for package @microlink/vue
