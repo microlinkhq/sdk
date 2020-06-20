@@ -156,14 +156,7 @@
 <script src="./dist/microlink.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function (event) {
-    const links = Array.prototype.slice.call(document.querySelectorAll('a'))
-      .map(el => {
-        el.href = new URL(el.href).toString()
-        return el
-      })
-      .filter(el => el.href.startsWith('http') && !el.href.includes('localhost'))
-
-    microlinkHover(links)
+    microlinkHover(document.querySelectorAll('a'))
   })
 </script>
 </html>
