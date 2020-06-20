@@ -15,7 +15,7 @@ function getDOMSelector (selector) {
       el.href = new URL(el.href).toString()
       return el
     })
-    .filter(el => !isLocalhostUrl(el.href))
+    .filter(el => el.href.startsWith('http') && !isLocalhostUrl(el.href))
 }
 
 function forEach (list, fn) {
