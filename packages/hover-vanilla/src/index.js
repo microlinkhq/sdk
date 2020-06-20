@@ -4,22 +4,19 @@ import styled from 'styled-components'
 import MicrolinkHover from '@microlink/hover-react'
 import isLocalhostUrl from 'is-localhost-url'
 
-function getDOMSelector (selector) {
-  return Array.prototype.slice
-    .call(
-      typeof selector === 'string'
-        ? document.querySelectorAll(selector)
-        : selector
-    )
+function toArray (selector) {
+  const collection = Array.from(
+    typeof selector === 'string'
+      ? document.querySelectorAll(selector)
+      : selector
+  )
+
+  return collection
     .map(el => {
       el.href = new URL(el.href).toString()
       return el
     })
     .filter(el => el.href.startsWith('http') && !isLocalhostUrl(el.href))
-}
-
-function forEach (list, fn) {
-  for (let i = 0; i < list.length; i++) fn(list[i])
 }
 
 function parseJSON (value) {
@@ -37,7 +34,7 @@ function parseObject (obj) {
 }
 
 function microlink (selector, opts, rootNode) {
-  return forEach(getDOMSelector(selector), function (el) {
+  return toArray(selector).forEach(function (el) {
     ReactDOM.render(
       React.createElement(
         MicrolinkHover.withHover,

@@ -16,20 +16,16 @@ function parseObject (obj) {
   }, {})
 }
 
-function getDOMSelector (selector) {
-  return Array.prototype.slice.call(
+function toArray (selector) {
+  return Array.from(
     typeof selector === 'string'
       ? document.querySelectorAll(selector)
       : selector
   )
 }
 
-function forEach (list, fn) {
-  for (let i = 0; i < list.length; i++) fn(list[i])
-}
-
 function microlink (selector, opts, rootNode) {
-  return forEach(getDOMSelector(selector), function (el) {
+  return toArray(selector).forEach(function (el) {
     el.classList.add('microlink_vanilla')
 
     ReactDOM.render(
