@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.4](https://github.com/microlinkhq/sdk/compare/v5.4.3...v5.4.4) (2020-06-20)
+
+**Note:** Version bump only for package @microlink/root
+
+
+
+
+
 ## [5.4.3](https://github.com/microlinkhq/sdk/compare/v5.4.2...v5.4.3) (2020-06-20)
 
 **Note:** Version bump only for package @microlink/root
