@@ -104,24 +104,22 @@
     <h3 class="fw4 f5 f4-l ph3 mt3">Turns any URL into instant hover preview ✨</h3>
   </header>
 
-  <section class="pv4 ph4 ph6-l tc">
-    <div class="mauto mw6 pattern-dots-md pink">
-      <video style="transform:translate(30px, 30px);" width="100%" src="/assets/video/demo.mp4" controls="" autoplay="" muted="" loop=""></video>
-    </div>
-  </section>
-
-  <section class="pt4 ph4 ph6-l tc">
+  <section class="ph4 ph6-l tc">
     <a rel="noopener noreferrer" target="_blank" href='https://hover-react.microlink.io' class="link blue f5 ph2">React version</a>
     <span> | </span>
     <a rel="noopener noreferrer" target="_blank" href='https://github.com/microlinkhq/sdk' class="link blue f5 ph2">See on GitHub</a>
   </section>
 
+  <section class="pv4 ph4 ph6-l tc">
+    <video  width="100%" src="/assets/video/demo.mp4" controls="" autoplay="" muted="" loop=""></video>
+  </section>
+
   <section class="pt3 ph4 pt4-l ph6-l">
-    <h3 class="mt3 f3 fw6">Installation</h3>
+    <h3 class="mt3 f3 fw6">Usage</h3>
 
     <div class="pl3">
       <pre class="dark-gray lh-copy f6 code pv3 b--pink lh-copy mw7 ba">
-  <span class="gray">&#x3C;!-- customize style --&#x3E;</span>
+  <span class="gray">&#x3C;!-- https://microlink.io/docs/sdk/getting-started/styling --&#x3E;</span>
   &#x3C;style&#x3E;
     :root {
       --microlink-background-color: #1A1A1A;
@@ -137,22 +135,19 @@
   <span class="gray">&#x3C;!-- intialize `microlinkHover` --&#x3E;</span>
   &#x3C;script&#x3E;
     document.addEventListener(&#x27;DOMContentLoaded&#x27;, function (event) {
-      microlinkHover(&#x27;.content a&#x27;, {
-        <span class="gray">// See https://microlink.io/docs/sdk/parameters/media/</span>
-        media: [&#x27;iframe&#x27;, &#x27;video&#x27;, &#x27;audio&#x27;, &#x27;image&#x27;, &#x27;logo&#x27;]
-      })
+      microlinkHover(&#x27;a&#x27;)
     })
   &#x3C;/script&#x3E;</pre>
     </div>
   <figcaption class="f7 gray pt2 tc">Just add the above to your main markup before the closing &lt;/body&gt; tag.</figcaption>
   </section>
   <section class="pt3 ph4 pt4-l ph6-l">
-    <h3 class="mt3 f3 fw6">Showcase</h3>
+    <h3 class="mt3 f3 fw6">See in action</h3>
     <p class="pl3 lh-copy mw7">
-      <a class="f3 link light-blue b no-underline dib ph2 pv1" href="https://kikobeats.com/human-apis/">kikobeats.com</a>
-      <a class="f3 link blue b no-underline dib ph2 pv1" href="/collectednotes">collectednotes.com</a>
-      <a class="f3 link b dark-blue no-underline dib ph2 pv1" href="/joshwcomeau">joshwcomeau.com</a>
-      <a class="f3 link b green no-underline dib ph2 pv1" href="/bootstrap">getbootstrap.com</a>
+      <a class="link blue f5 ph2" href="https://kikobeats.com/human-apis/">kikobeats.com</a>
+      <a class="link blue f5 ph2" href="/collectednotes">collectednotes.com</a>
+      <a class="link blue f5 ph2" href="/joshwcomeau">joshwcomeau.com</a>
+      <a class="link blue f5 ph2" href="/bootstrap">getbootstrap.com</a>
       <!-- <a class="f3 link b hover-light-blue no-underline black dib ph2 pv1" href="http://prnt.cc">print work</a>
       <a class="f3 link b hover-green no-underline black dib ph2 pv1" href="http://mrmrs.github.io">photography</a>
       <a class="f3 link b hover-light-green no-underline black dib ph2 pv1" href="http://mrmrs.github.io/writing">writing</a>
