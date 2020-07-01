@@ -1,6 +1,6 @@
-import Microlink from "@microlink/react";
-import styled from "styled-components";
-import React from "react";
+import Microlink from '@microlink/react'
+import styled from 'styled-components'
+import React from 'react'
 
 const PopOver = styled.div`
   --microlink-hover-background-color: var(--microlink-background-color, white);
@@ -29,7 +29,7 @@ const PopOver = styled.div`
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
     border-color: var(--microlink-hover-border-color, #f5f8fa);
   }
-`;
+`
 
 const Wrapper = styled.span`
   text-decoration: inherit;
@@ -42,20 +42,20 @@ const Wrapper = styled.span`
     visibility: visible;
     opacity: 1;
   }
-`;
+`
 
 const withHover = ({ LinkComponent, ...props }) => (
   <Wrapper>
     <LinkComponent {...props} />
-    <PopOver className="microlink_hover">
+    <PopOver className='microlink_hover'>
       <Microlink {...props} />
     </PopOver>
   </Wrapper>
-);
+)
 
-const MicrolinkHover = (LinkComponent, microlinkProps) => (props) =>
-  withHover({ LinkComponent, ...microlinkProps, ...props });
+const MicrolinkHover = (LinkComponent, microlinkProps) => props =>
+  withHover({ LinkComponent, ...microlinkProps, ...props })
 
-MicrolinkHover.withHover = withHover;
+MicrolinkHover.withHover = withHover
 
-export default MicrolinkHover;
+export default MicrolinkHover
