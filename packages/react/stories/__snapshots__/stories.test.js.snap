@@ -241,13 +241,13 @@ exports[`Storyshots media audio 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -269,13 +269,13 @@ exports[`Storyshots media audio 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -536,13 +536,13 @@ exports[`Storyshots media iframe 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -881,13 +881,13 @@ exports[`Storyshots media image 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -909,13 +909,13 @@ exports[`Storyshots media image 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1317,13 +1317,13 @@ exports[`Storyshots media logo 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1345,13 +1345,13 @@ exports[`Storyshots media logo 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1753,13 +1753,13 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1781,13 +1781,13 @@ exports[`Storyshots media screenshot 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2189,13 +2189,13 @@ exports[`Storyshots media video 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2217,13 +2217,13 @@ exports[`Storyshots media video 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2625,13 +2625,13 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2653,13 +2653,13 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3061,13 +3061,13 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3092,18 +3092,18 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c2:hover {
-  background: #f5f8fa;
-  border-color: rgba(136,153,166,0.5);
+  background-color: var(--microlink-hover-background-color,#f5f8fa);
+  border-color: var(--microlink-hover-border-color,#8899A680);
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3132,8 +3132,8 @@ exports[`Storyshots props contrast 1`] = `
 }
 
 .c13:hover {
-  background: #f5f8fa;
-  border-color: rgba(136,153,166,0.5);
+  background-color: var(--microlink-hover-background-color,#f5f8fa);
+  border-color: var(--microlink-hover-border-color,#8899A680);
 }
 
 .c0 {
@@ -3513,13 +3513,13 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3541,13 +3541,13 @@ exports[`Storyshots props controls (disabled) 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3949,13 +3949,13 @@ exports[`Storyshots props default 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3977,13 +3977,13 @@ exports[`Storyshots props default 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4385,13 +4385,13 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4419,18 +4419,18 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c2:hover {
-  background: #f5f8fa;
-  border-color: rgba(136,153,166,0.5);
+  background-color: var(--microlink-hover-background-color,#f5f8fa);
+  border-color: var(--microlink-hover-border-color,#8899A680);
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4462,8 +4462,8 @@ exports[`Storyshots props direction + contrast 1`] = `
 }
 
 .c13:hover {
-  background: #f5f8fa;
-  border-color: rgba(136,153,166,0.5);
+  background-color: var(--microlink-hover-background-color,#f5f8fa);
+  border-color: var(--microlink-hover-border-color,#8899A680);
 }
 
 .c0 {
@@ -4843,13 +4843,13 @@ exports[`Storyshots props direction 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4874,13 +4874,13 @@ exports[`Storyshots props direction 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5286,13 +5286,13 @@ Array [
 }
 
 .c3 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5314,13 +5314,13 @@ Array [
 }
 
 .c14 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5742,13 +5742,13 @@ Array [
 }
 
 .c3 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5770,13 +5770,13 @@ Array [
 }
 
 .c14 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6204,13 +6204,13 @@ exports[`Storyshots props loading 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6232,13 +6232,13 @@ exports[`Storyshots props loading 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6640,13 +6640,13 @@ exports[`Storyshots props mediaRef 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6668,13 +6668,13 @@ exports[`Storyshots props mediaRef 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7076,13 +7076,13 @@ exports[`Storyshots setData function 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7104,13 +7104,13 @@ exports[`Storyshots setData function 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7512,13 +7512,13 @@ exports[`Storyshots setData object 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7540,13 +7540,13 @@ exports[`Storyshots setData object 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7808,13 +7808,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8009,13 +8009,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8356,13 +8356,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8384,13 +8384,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8807,13 +8807,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8835,13 +8835,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -9258,13 +9258,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -9286,13 +9286,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -9714,13 +9714,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -9742,13 +9742,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10165,13 +10165,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10193,13 +10193,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10616,13 +10616,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -10644,13 +10644,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11067,13 +11067,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11095,13 +11095,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11518,13 +11518,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11546,13 +11546,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11969,13 +11969,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11997,13 +11997,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12424,13 +12424,13 @@ exports[`Storyshots style misc 1`] = `
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12452,13 +12452,13 @@ exports[`Storyshots style misc 1`] = `
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12882,13 +12882,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12910,13 +12910,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13333,13 +13333,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13361,13 +13361,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13784,13 +13784,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13812,13 +13812,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14235,13 +14235,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14263,13 +14263,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14686,13 +14686,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14714,13 +14714,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15137,13 +15137,13 @@ Array [
 }
 
 .c2 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15165,13 +15165,13 @@ Array [
 }
 
 .c13 {
-  max-width: 500px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e1e8ed;
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
   overflow: hidden;
-  color: #181919;
   font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
