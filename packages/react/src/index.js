@@ -225,7 +225,7 @@ Microlink.defaultProps = {
   direction: 'ltr',
   lazy: true,
   loop: true,
-  media: ['image', 'logo'],
+  media: ['iframe', 'video', 'audio', 'image', 'logo'],
   fetchData: true,
   muted: true,
   playsInline: true,

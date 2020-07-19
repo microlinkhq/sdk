@@ -44,7 +44,6 @@ function microlink (selector, opts, rootNode) {
             as: 'div',
             children: el.text,
             url: el.getAttribute('href'),
-            media: ['iframe', 'video', 'audio', 'image', 'logo']
           },
           opts,
           parseObject(el.dataset)
