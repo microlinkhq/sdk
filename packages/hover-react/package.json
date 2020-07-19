@@ -26,7 +26,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/react": "^5.4.1"
+    "@microlink/react": "^5.4.5"
   },
   "devDependencies": {
     "@babel/core": "latest",
