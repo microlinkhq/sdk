@@ -2,7 +2,7 @@
   <img src="https://cdn.microlink.io/banner/sdk.png" alt="microlink logo">
 </div>
 
-###### [Documentation](https://microlink.io/docs/sdk) | [Storybook](https://storybook.microlink.io) | [Chat](https://microlink.io/chat)
+###### [Documentation](https://microlink.io/sdk) | [Storybook](https://storybook.microlink.io) | [Chat](https://microlink.io/chat)
 
 ## Installation
 

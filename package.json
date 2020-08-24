@@ -1,7 +1,7 @@
 {
   "name": "@microlink/root",
   "description": "Turns links into a beautiful previews",
-  "homepage": "https://microlink.io/docs/sdk",
+  "homepage": "https://microlink.io/sdk",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
