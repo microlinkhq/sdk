@@ -6,8 +6,6 @@
   "main": "dist/microlink.js",
   "module": "dist/microlink.module.js",
   "jsnext:main": "dist/microlink.module.js",
-  "umd:main": "dist/microlink.umd.js",
-  "unpkg": "dist/microlink.umd.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/hover-react"
@@ -16,14 +14,14 @@
     "url": "https://github.com/microlinkhq/sdk/issues"
   },
   "keywords": [
-    "react",
-    "hover",
     "data",
     "extraction",
+    "hover",
     "link",
     "microlink",
     "preview",
-    "previsualization"
+    "previsualization",
+    "react"
   ],
   "dependencies": {
     "@microlink/react": "^5.4.6"
@@ -37,7 +35,9 @@
     "@babel/preset-react": "latest",
     "@microlink/demo-links": "latest",
     "@storybook/addon-storyshots": "latest",
+    "@storybook/addons": "latest",
     "@storybook/react": "latest",
+    "@storybook/theming": "latest",
     "babel-eslint": "latest",
     "babel-loader": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
@@ -67,10 +67,6 @@
     "styled-components": "latest",
     "unfetch": "latest"
   },
-  "peerDependencies": {
-    "react": "^16",
-    "styled-components": "^5"
-  },
   "engines": {
     "node": ">= 10"
   },
@@ -95,6 +91,10 @@
     "testURL": "http://localhost/",
     "verbose": true
   },
+  "peerDependencies": {
+    "react": "^16",
+    "styled-components": "^5"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -111,5 +111,7 @@
     "plugins": [
       "jsx-a11y"
     ]
-  }
+  },
+  "umd:main": "dist/microlink.umd.js",
+  "unpkg": "dist/microlink.umd.js"
 }
