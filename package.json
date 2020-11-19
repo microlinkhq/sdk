@@ -34,7 +34,6 @@
     "lint-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
-    "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest"
   },
@@ -44,7 +43,7 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean --yes && rm -rf node_modules",
-    "lint": "standard-markdown README.md && standard src",
+    "lint": "standard-markdown README.md && lerna exec npm run lint",
     "install": "lerna bootstrap --force-local --no-ci",
     "prepublishOnly": "lerna run build",
     "prerelease": "npm run update:check",

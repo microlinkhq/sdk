@@ -1,3 +1,5 @@
+/* eslint-disable multiline-ternary */
+
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 

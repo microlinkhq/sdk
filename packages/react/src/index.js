@@ -1,3 +1,5 @@
+/* eslint-disable multiline-ternary */
+
 import React, {
   useState,
   useEffect,
@@ -5,6 +7,7 @@ import React, {
   useMemo,
   useContext
 } from 'react'
+
 import PropTypes from 'prop-types'
 
 import { CardWrap, CardMedia, CardContent, CardEmpty } from './components/Card'

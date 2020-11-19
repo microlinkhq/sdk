@@ -47,7 +47,7 @@
     "build": "NODE_ENV=production vue-cli-service build --target lib --formats commonjs,umd --name microlink ./src/index.js",
     "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
-    "lint": "standard",
+    "lint": "standard src stories",
     "pretest": "npm run lint",
     "test": "exit 0"
   },

@@ -43,7 +43,7 @@ function microlink (selector, opts, rootNode) {
             LinkComponent: styled('a')``,
             as: 'div',
             children: el.text,
-            url: el.getAttribute('href'),
+            url: el.getAttribute('href')
           },
           opts,
           parseObject(el.dataset)
