@@ -18,7 +18,7 @@ const StyledClamp = styled(Clamp)`
     font-family: inherit;
     color: inherit;
     margin: 0;
-s
+
     ${({ useNanoClamp }) =>
       !useNanoClamp &&
       css`
