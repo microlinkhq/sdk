@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/microlinkhq/sdk/compare/v5.4.6...v5.5.0) (2020-11-20)
+
+
+### Bug Fixes
+
+* array from null ([2a105be](https://github.com/microlinkhq/sdk/commit/2a105be0e6e603b4d77a0297fc6118a238283d22))
+
+
+
+
+
 ## [5.4.6](https://github.com/microlinkhq/sdk/compare/v5.4.5...v5.4.6) (2020-07-19)
 
 **Note:** Version bump only for package @microlink/root
