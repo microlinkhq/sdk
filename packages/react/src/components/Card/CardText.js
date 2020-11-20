@@ -1,3 +1,5 @@
+/* eslint-disable multiline-ternary */
+
 import React from 'react'
 import styled, { css } from 'styled-components'
 import NanoClamp from 'nanoclamp'
@@ -16,20 +18,26 @@ const StyledClamp = styled(Clamp)`
     font-family: inherit;
     color: inherit;
     margin: 0;
-
-    ${({ useNanoClamp }) => !useNanoClamp && css`
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    `}
+s
+    ${({ useNanoClamp }) =>
+      !useNanoClamp &&
+      css`
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      `}
   }
 `
 
 const CardText = ({ useNanoClamp = true, children, ...props }) => {
-  const textProps = useNanoClamp ? props : { ...props, as: 'p', title: children }
+  const textProps = useNanoClamp
+    ? props
+    : { ...props, as: 'p', title: children }
 
   return (
-    <StyledClamp useNanoClamp={useNanoClamp} {...textProps}>{children}</StyledClamp>
+    <StyledClamp useNanoClamp={useNanoClamp} {...textProps}>
+      {children}
+    </StyledClamp>
   )
 }
 

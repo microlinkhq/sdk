@@ -69,11 +69,9 @@ storiesOf('decorator', module)
       <Center>
         <Paraph>
           Check my{' '}
-          <MicrolinkHoverLink
-            href='https://microlink.io'
-            setData={setData}
-            children='link'
-          />
+          <MicrolinkHoverLink href='https://microlink.io' setData={setData}>
+            link
+          </MicrolinkHoverLink>
         </Paraph>
       </Center>
     )
@@ -85,11 +83,9 @@ storiesOf('decorator', module)
       <Center>
         <Paraph>
           Check my{' '}
-          <MicrolinkHoverButton
-            href='https://microlink.io'
-            setData={setData}
-            children='button'
-          />
+          <MicrolinkHoverButton href='https://microlink.io' setData={setData}>
+            button
+          </MicrolinkHoverButton>
         </Paraph>
       </Center>
     )
@@ -105,11 +101,9 @@ storiesOf('decorator', module)
       <Center>
         <Paraph>
           Check my{' '}
-          <MicrolinkHoverText
-            url='https://microlink.io'
-            setData={setData}
-            children='word'
-          />
+          <MicrolinkHoverText url='https://microlink.io' setData={setData}>
+            word
+          </MicrolinkHoverText>
         </Paraph>
       </Center>
     )
@@ -118,8 +112,8 @@ storiesOf('decorator', module)
     const MicrolinkHoverLink = withMicrolinkHover(Link)
 
     const CustomCenter = styled(Center)`
-    --microlink-border-color: #666;
-    --microlink-hover-border-color: #999;
+      --microlink-border-color: #666;
+      --microlink-hover-border-color: #999;
       color: white;
       background: #1a1a1a;
     `
@@ -136,8 +130,9 @@ storiesOf('decorator', module)
             }}
             href='https://microlink.io'
             setData={setData}
-            children='link'
-          />
+          >
+            link
+          </MicrolinkHoverLink>
         </Paraph>
       </CustomCenter>
     )

@@ -1,3 +1,5 @@
+/* eslint-disable multiline-ternary */
+
 import React, {
   useCallback,
   useContext,
@@ -6,6 +8,7 @@ import React, {
   useRef,
   useState
 } from 'react'
+
 import styled, { css } from 'styled-components'
 
 import FooterControls from './FooterControls'

@@ -57,8 +57,5 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "standard": {
-    "parser": "babel-eslint"
   }
 }

@@ -53,8 +53,8 @@
     "lodash": "latest",
     "prettier-standard": "latest",
     "prop-types": "latest",
-    "react": "^16",
-    "react-dom": "^16",
+    "react": "^17",
+    "react-dom": "^17",
     "rollup": "latest",
     "rollup-plugin-babel": "latest",
     "rollup-plugin-commonjs": "latest",
@@ -92,7 +92,7 @@
     "verbose": true
   },
   "peerDependencies": {
-    "react": "^16",
+    "react": "^17",
     "styled-components": "^5"
   },
   "publishConfig": {
