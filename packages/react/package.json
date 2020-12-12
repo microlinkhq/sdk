@@ -25,9 +25,9 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.7.16",
+    "@microlink/mql": "~0.7.19",
     "is-localhost-url": "~1.0.3",
-    "nanoclamp": "~1.4.0"
+    "nanoclamp": "~1.4.1"
   },
   "devDependencies": {
     "@babel/core": "latest",
