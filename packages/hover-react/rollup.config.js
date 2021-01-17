@@ -4,8 +4,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
 import { terser } from 'rollup-plugin-terser'
 import replace from 'rollup-plugin-replace'
-
-import babel from 'rollup-plugin-babel'
+import babel from '@rollup/plugin-babel'
 import fs from 'fs'
 
 const babelRc = JSON.parse(fs.readFileSync('./.babelrc'))
@@ -19,11 +18,7 @@ const globals = {
 
 const plugins = ({ compress }) => [
   nodeResolve(),
-  babel({
-    babelrc: false,
-    externalHelpers: false,
-    ...babelRc
-  }),
+  babel({ babelrc: false, ...babelRc, babelHelpers: 'bundled' }),
   commonjs(),
   compress && terser(),
   filesize(),
