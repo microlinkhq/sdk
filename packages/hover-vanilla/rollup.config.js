@@ -1,28 +1,28 @@
 import nodeResolve from '@rollup/plugin-node-resolve'
 import visualizer from 'rollup-plugin-visualizer'
+import commonjs from '@rollup/plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
 import { terser } from 'rollup-plugin-terser'
-import commonjs from '@rollup/plugin-commonjs'
 import replace from '@rollup/plugin-replace'
 import copy from 'rollup-plugin-copy'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
-const plugins = ({ compress }) => [
-  commonjs(),
-  nodeResolve(),
-  compress && terser(),
-  filesize(),
-  visualizer({ template: 'treemap' }),
-  replace({
-    'process.env.NODE_ENV': JSON.stringify('production')
-  }),
-  !isProduction && copy({
-    targets: [
-      { src: 'dist', dest: 'docs' }
-    ]
-  })
-].filter(Boolean)
+const plugins = ({ compress }) =>
+  [
+    commonjs(),
+    nodeResolve(),
+    compress && terser(),
+    filesize(),
+    visualizer({ template: 'treemap' }),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    !isProduction &&
+      copy({
+        targets: [{ src: 'dist', dest: 'docs' }]
+      })
+  ].filter(Boolean)
 
 const globals = {
   react: 'React',
