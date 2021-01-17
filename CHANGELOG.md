@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.4](https://github.com/microlinkhq/sdk/compare/v5.5.3...v5.5.4) (2021-01-17)
+
+
+### Bug Fixes
+
+* add missing peer dependency ([034d469](https://github.com/microlinkhq/sdk/commit/034d46994b568963228e9a676ff0238c706c0fec))
+
+
+
+
+
 ## [5.5.3](https://github.com/microlinkhq/sdk/compare/v5.5.2...v5.5.3) (2020-12-20)
 
 **Note:** Version bump only for package @microlink/root

@@ -2,7 +2,7 @@
   "name": "@microlink/hover-react",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/sdk",
-  "version": "5.5.3",
+  "version": "5.5.4",
   "main": "dist/microlink.js",
   "module": "dist/microlink.module.js",
   "jsnext:main": "dist/microlink.module.js",
@@ -24,7 +24,7 @@
     "react"
   ],
   "dependencies": {
-    "@microlink/react": "^5.5.3"
+    "@microlink/react": "^5.5.4"
   },
   "devDependencies": {
     "@babel/core": "latest",
@@ -34,6 +34,9 @@
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
     "@microlink/demo-links": "latest",
+    "@rollup/plugin-babel": "latest",
+    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-node-resolve": "latest",
     "@storybook/addon-storyshots": "latest",
     "@storybook/addons": "latest",
     "@storybook/react": "latest",
@@ -56,9 +59,6 @@
     "react": "^17",
     "react-dom": "^17",
     "rollup": "latest",
-    "@rollup/plugin-babel": "latest",
-    "@rollup/plugin-commonjs": "latest",
-    "@rollup/plugin-node-resolve": "latest",
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-replace": "latest",
     "rollup-plugin-terser": "latest",
