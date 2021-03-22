@@ -2,6 +2,7 @@
   "name": "@microlink/root",
   "description": "Turns links into a beautiful previews",
   "homepage": "https://microlink.io/sdk",
+  "version": "",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -29,7 +30,7 @@
     "@commitlint/config-conventional": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
-    "husky": "latest",
+    "husky": "~5.2.0",
     "lerna": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
@@ -43,8 +44,9 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean --yes && rm -rf node_modules",
-    "lint": "standard-markdown README.md && lerna exec npm run lint",
     "install": "lerna bootstrap --force-local --no-ci",
+    "lint": "standard-markdown README.md && lerna exec npm run lint",
+    "postinstall": "husky install",
     "prepublishOnly": "lerna run build",
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
@@ -60,12 +62,6 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "package.json": [
