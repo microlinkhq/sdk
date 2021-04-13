@@ -30,11 +30,11 @@
     "@commitlint/config-conventional": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
-    "husky": "~5.2.0",
     "lerna": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
+    "simple-git-hooks": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest"
   },
@@ -67,11 +67,15 @@
     "package.json": [
       "finepack"
     ],
-    "*.js": [
+    "*.js,!*.min.js,": [
       "prettier-standard"
     ],
     "*.md": [
       "standard-markdown"
     ]
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "npx lint-staged"
   }
 }
