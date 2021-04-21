@@ -39,7 +39,7 @@
     "standard-version": "latest"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12"
   },
   "scripts": {
     "build": "lerna run build",
