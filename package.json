@@ -46,7 +46,6 @@
     "clean": "lerna clean --yes && rm -rf node_modules",
     "install": "lerna bootstrap --force-local --no-ci",
     "lint": "standard-markdown README.md && lerna exec npm run lint",
-    "postinstall": "husky install",
     "prepublishOnly": "lerna run build",
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
