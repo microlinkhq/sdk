@@ -7,6 +7,7 @@
   "module": "dist/microlink.module.js",
   "jsnext:main": "dist/microlink.module.js",
   "repository": {
+    "directory": "packages/hover-react",
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk.git#master"
   },

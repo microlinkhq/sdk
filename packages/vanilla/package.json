@@ -9,6 +9,7 @@
   "umd:main": "dist/microlink.umd.js",
   "unpkg": "dist/microlink.umd.js",
   "repository": {
+    "directory": "packages/vanilla",
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/vanilla"
   },

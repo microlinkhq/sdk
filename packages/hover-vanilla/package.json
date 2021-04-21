@@ -7,6 +7,7 @@
   "module": "dist/microlink.module.js",
   "jsnext:main": "dist/microlink.module.js",
   "repository": {
+    "directory": "packages/hover-vanilla",
     "type": "git",
     "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/hover-vanilla"
   },
