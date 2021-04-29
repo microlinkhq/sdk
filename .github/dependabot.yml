@@ -1,59 +1,11 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 99
-  ignore:
-  - dependency-name: "@angular/cli"
-    versions:
-    - "> 8.3.25"
-  - dependency-name: "@angular/common"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: "@angular/compiler"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: "@angular/compiler-cli"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: "@angular/core"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: "@angular-devkit/build-angular"
-    versions:
-    - "> 0.803.25"
-  - dependency-name: "@angular-devkit/build-ng-packagr"
-    versions:
-    - "> 0.803.26"
-  - dependency-name: "@angular/forms"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: "@angular/language-service"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: "@angular/platform-browser"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: "@angular/platform-browser-dynamic"
-    versions:
-    - "> 8.2.14"
-  - dependency-name: ng-packagr
-    versions:
-    - "> 5.7.1"
-  - dependency-name: protractor
-    versions:
-    - "> 5.4.4"
-  - dependency-name: tslint
-    versions:
-    - "> 5.15.0"
-  - dependency-name: ts-node
-    versions:
-    - "> 7.0.1"
-  - dependency-name: typescript
-    versions:
-    - "> 3.5.3"
-  - dependency-name: zone.js
-    versions:
-    - "> 0.9.1"
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Check for updates to GitHub Actions every weekday
+      interval: "daily"
