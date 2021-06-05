@@ -26,7 +26,7 @@
     "previsualization"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.9.3",
+    "@microlink/mql": "~0.9.5",
     "is-localhost-url": "~1.0.3",
     "nanoclamp": "~1.4.1"
   },
@@ -50,7 +50,6 @@
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
     "enzyme": "latest",
-    "enzyme-adapter-react-16": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "husky": "latest",
     "jest": "26",
