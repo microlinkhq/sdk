@@ -2,7 +2,7 @@
   "name": "@microlink/hover-react",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/sdk",
-  "version": "5.5.5",
+  "version": "5.5.6",
   "main": "dist/microlink.js",
   "module": "dist/microlink.module.js",
   "jsnext:main": "dist/microlink.module.js",
@@ -25,7 +25,7 @@
     "react"
   ],
   "dependencies": {
-    "@microlink/react": "^5.5.5"
+    "@microlink/react": "^5.5.6"
   },
   "devDependencies": {
     "@babel/core": "latest",
