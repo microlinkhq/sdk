@@ -9,7 +9,7 @@
   "repository": {
     "directory": "packages/hover-vanilla",
     "type": "git",
-    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/hover-vanilla"
+    "url": "git+https://github.com/microlinkhq/sdk.git#master"
   },
   "bugs": {
     "url": "https://github.com/microlinkhq/sdk/issues"

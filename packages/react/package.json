@@ -6,24 +6,22 @@
   "main": "dist/microlink.js",
   "module": "dist/microlink.module.js",
   "jsnext:main": "dist/microlink.module.js",
-  "umd:main": "dist/microlink.umd.js",
-  "unpkg": "dist/microlink.umd.js",
   "repository": {
     "directory": "packages/react",
     "type": "git",
-    "url": "git+https://github.com/microlinkhq/sdk/tree/master/packages/react"
+    "url": "git+https://github.com/microlinkhq/sdk.git#master"
   },
   "bugs": {
     "url": "https://github.com/microlinkhq/sdk/issues"
   },
   "keywords": [
-    "react",
     "data",
     "extraction",
     "link",
     "microlink",
     "preview",
-    "previsualization"
+    "previsualization",
+    "react"
   ],
   "dependencies": {
     "@microlink/mql": "~0.9.5",
@@ -70,11 +68,6 @@
     "styled-components": "latest",
     "unfetch": "latest"
   },
-  "peerDependencies": {
-    "react": "^17",
-    "react-dom": "^17",
-    "styled-components": "^5"
-  },
   "engines": {
     "node": ">= 10"
   },
@@ -99,6 +92,11 @@
     "testURL": "http://localhost/",
     "verbose": true
   },
+  "peerDependencies": {
+    "react": "^17",
+    "react-dom": "^17",
+    "styled-components": "^5"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -115,5 +113,7 @@
     "plugins": [
       "jsx-a11y"
     ]
-  }
+  },
+  "umd:main": "dist/microlink.umd.js",
+  "unpkg": "dist/microlink.umd.js"
 }
