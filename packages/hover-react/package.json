@@ -49,7 +49,7 @@
     "enzyme": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "husky": "latest",
-    "jest": "26",
+    "jest": "27",
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
     "jest-styled-components": "latest",
