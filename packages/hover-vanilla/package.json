@@ -33,7 +33,6 @@
     "@rollup/plugin-commonjs": "latest",
     "@rollup/plugin-node-resolve": "latest",
     "@rollup/plugin-replace": "latest",
-    "husky": "latest",
     "prettier-standard": "latest",
     "rollup": "latest",
     "rollup-plugin-copy": "latest",

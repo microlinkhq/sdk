@@ -35,7 +35,7 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "lerna": "latest",
-    "lint-staged": "latest",
+    "nano-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
     "simple-git-hooks": "latest",
@@ -66,19 +66,19 @@
       "@commitlint/config-conventional"
     ]
   },
-  "lint-staged": {
-    "package.json": [
-      "finepack"
-    ],
+  "nano-staged": {
     "*.js,!*.min.js,": [
       "prettier-standard"
     ],
     "*.md": [
       "standard-markdown"
+    ],
+    "package.json": [
+      "finepack"
     ]
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit",
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx nano-staged"
   }
 }
