@@ -27,9 +27,10 @@ function parseJSON (value) {
   }
 }
 
-function parseObject (obj) {
+function parseObject (obj) {function parseObject (obj) {
   return Object.keys(obj).reduce(function (acc, key) {
-    return Object.assign(acc, { [key]: parseJSON(obj[key]) })
+    acc[key] = parseJSON(obj[key])
+    return acc
   }, {})
 }
 
