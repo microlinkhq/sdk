@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.8](https://github.com/microlinkhq/sdk/compare/v5.5.7...v5.5.8) (2022-03-13)
+
+
+### Bug Fixes
+
+* avoid to pass apikey ([#277](https://github.com/microlinkhq/sdk/issues/277)) ([747243f](https://github.com/microlinkhq/sdk/commit/747243f7711b8a7f84d7ea22743bddd04b14b582))
+
+
+
+
+
 ## [5.5.7](https://github.com/microlinkhq/sdk/compare/v5.5.6...v5.5.7) (2021-10-04)
 
 **Note:** Version bump only for package @microlink/react
