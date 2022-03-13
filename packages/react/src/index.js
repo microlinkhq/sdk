@@ -39,6 +39,7 @@ const Card = props => {
     setData,
     url,
     apiKey, // destructuring to avoid pass it
+    placeholderComponent: CardEmpty,
     ...restProps
   } = props
 
@@ -224,6 +225,7 @@ const Microlink = props => (
 Microlink.defaultProps = {
   className: '',
   apiKey: undefined,
+  placeholderComponent: CardEmpty,
   autoPlay: true,
   controls: true,
   direction: 'ltr',

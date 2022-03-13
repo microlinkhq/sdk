@@ -26,7 +26,7 @@ storiesOf('props', module)
       createStoryEntry({ url, media: 'video', controls: false })
     )
   )
-  .add('loading', () => createStoryEntry({ loading: true }))
+  .add('loading', () => createStoryEntry({ loading: true, fetchData: false }))
   .add('lazy', () => [
     createStoryEntry({ lazy: false }, true),
     createStoryEntry({ lazy: { threshold: 1 } }, true)

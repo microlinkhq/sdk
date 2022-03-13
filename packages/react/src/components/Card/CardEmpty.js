@@ -9,11 +9,15 @@ import { Content } from './CardContent'
 import { GlobalContext } from '../../context/GlobalState'
 import { isLarge, isSmall } from '../../utils'
 
+const Placeholder = styled.span.attrs({
+  className: 'microlink_card_placeholder'
+})``
+
 const MediaEmpty = styled(CardImage)`
   ${emptyStateImageAnimation};
 `
 
-const HeaderEmpty = styled('span')`
+const HeaderEmpty = styled(Placeholder)`
   opacity: 0.8;
   height: 16px;
   width: ${({ cardSize }) => (!isSmall(cardSize) ? '60%' : '75%')};
@@ -30,7 +34,7 @@ const HeaderEmpty = styled('span')`
   `};
 `
 
-const DescriptionEmpty = styled('span')`
+const DescriptionEmpty = styled(Placeholder)`
   opacity: 0.8;
   height: 14px;
   width: 95%;
@@ -40,12 +44,13 @@ const DescriptionEmpty = styled('span')`
   animation-delay: 0.125s;
 `
 
-const FooterEmpty = styled('span')`
+const FooterEmpty = styled(Placeholder)`
   opacity: 0.8;
   height: 12px;
   width: 30%;
   display: block;
-  ${emptyStateAnimation} animation-delay: .25s;
+  ${emptyStateAnimation};
+  animation-delay: 0.25s;
 
   ${({ cardSize }) =>
     !isLarge(cardSize) &&
