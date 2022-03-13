@@ -38,6 +38,7 @@ const Card = props => {
     media: mediaProp,
     setData,
     url,
+    apiKey, // destructuring to avoid pass it
     ...restProps
   } = props
 
