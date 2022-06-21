@@ -114,6 +114,7 @@ const BASE_CLASSNAME = 'microlink_card'
 const CONTENT_BASE_CLASSNAME = `${BASE_CLASSNAME}__content`
 const MEDIA_BASE_CLASSNAME = `${BASE_CLASSNAME}__media`
 const CONTROLS_BASE_CLASSNAME = `${MEDIA_BASE_CLASSNAME}__controls`
+const PLACEHOLDER_BASE_CLASSNAME = `${BASE_CLASSNAME}__placeholder`
 
 export const classNames = {
   main: BASE_CLASSNAME,
@@ -137,5 +138,8 @@ export const classNames = {
   progressBar: `${CONTROLS_BASE_CLASSNAME}_progress_bar`,
   progressTime: `${CONTROLS_BASE_CLASSNAME}_progress_time`,
   spinner: `${CONTROLS_BASE_CLASSNAME}_spinner`,
-  iframe: `${BASE_CLASSNAME}__iframe`
+  iframe: `${BASE_CLASSNAME}__iframe`,
+  placeholder: PLACEHOLDER_BASE_CLASSNAME,
+  placeholderMedia: `${PLACEHOLDER_BASE_CLASSNAME}_media`,
+  placeholderContent: `${PLACEHOLDER_BASE_CLASSNAME}_content`
 }

@@ -32,6 +32,7 @@ import { useIntersectionObserver } from './utils/hooks'
 const Card = props => {
   const {
     className,
+    components,
     fetchData,
     lazy,
     loading,
@@ -39,7 +40,6 @@ const Card = props => {
     setData,
     url,
     apiKey, // destructuring to avoid pass it
-    placeholderComponent: CardEmpty,
     ...restProps
   } = props
 
@@ -53,6 +53,10 @@ const Card = props => {
     () => getApiUrl({ ...props, media: mediaProps }),
     [mediaProps, props]
   )
+
+  const { PlaceholderComponent = CardEmpty } = components
+
+  const isLoading = isLoadingUndefined ? loadingState : loading
 
   const isLazyEnabled = useMemo(
     () => isLazySupported && (lazy === true || isObject(lazy)),
@@ -68,6 +72,12 @@ const Card = props => {
     () => !isLazyEnabled || (isLazyEnabled && hasIntersected),
     [isLazyEnabled, hasIntersected]
   )
+
+  const cardWrapClassName = useMemo(() => {
+    const base = `${classNames.main} ${isLoading ? classNames.placeholder : ''}`.trim()
+
+    return `${base} ${className}`.trim()
+  }, [className, isLoading])
 
   const toFetchData = useCallback(() => {
     if (canFetchData) {
@@ -167,8 +177,6 @@ microlink.io/${error.code.toLowerCase()}
 
   useEffect(toFetchData, [url, setData, hasIntersected])
 
-  const isLoading = isLoadingUndefined ? loadingState : loading
-
   if (isError) {
     return (
       <a href={url} {...restProps}>
@@ -200,14 +208,14 @@ microlink.io/${error.code.toLowerCase()}
 
   return (
     <CardWrap
-      className={`${classNames.main} ${className}`.trim()}
+      className={cardWrapClassName}
       href={url}
       isLoading={isLoading}
       ref={cardRef}
       {...restProps}
     >
       {isLoading ? (
-        <CardEmpty />
+        <PlaceholderComponent />
       ) : (
         <>
           <CardMedia />
@@ -225,8 +233,8 @@ const Microlink = props => (
 Microlink.defaultProps = {
   className: '',
   apiKey: undefined,
-  placeholderComponent: CardEmpty,
   autoPlay: true,
+  components: { PlaceholderComponent: CardEmpty },
   controls: true,
   direction: 'ltr',
   lazy: true,
@@ -241,6 +249,7 @@ Microlink.defaultProps = {
 Microlink.propTypes = {
   apiKey: PropTypes.string,
   autoPlay: PropTypes.bool,
+  components: PropTypes.shape({ PlaceholderComponent: PropTypes.elementType }),
   contrast: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   controls: PropTypes.bool,
   direction: PropTypes.string,

@@ -1,5 +1,6 @@
 import 'unfetch/polyfill'
 
+import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import { urls, urlsVideo, urlsAudio, urlsIframe } from './data'
@@ -207,3 +208,13 @@ storiesOf('style', module)
       })
     )
   )
+
+const PlaceholderComponent = () => <strong style={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>loading...</strong>
+
+storiesOf('components', module)
+  .add('PlaceholderComponent', () =>
+    createStoryEntry({
+      loading: true,
+      fetchData: false,
+      components: { PlaceholderComponent }
+    }))

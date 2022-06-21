@@ -7,13 +7,13 @@ import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
 import CardImage from './CardMedia/Image'
 import { Content } from './CardContent'
 import { GlobalContext } from '../../context/GlobalState'
-import { isLarge, isSmall } from '../../utils'
+import { classNames, isLarge, isSmall } from '../../utils'
 
 const Placeholder = styled.span.attrs({
-  className: 'microlink_card_placeholder'
+  className: classNames.placeholderContent
 })``
 
-const MediaEmpty = styled(CardImage)`
+const MediaEmpty = styled(CardImage).attrs({ className: classNames.placeholderMedia })`
   ${emptyStateImageAnimation};
 `
 
