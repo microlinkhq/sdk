@@ -54,7 +54,6 @@
     "jest-enzyme": "latest",
     "jest-styled-components": "latest",
     "lodash": "latest",
-    "prettier-standard": "latest",
     "prop-types": "latest",
     "react": "^17",
     "react-dom": "^17",
@@ -63,7 +62,6 @@
     "rollup-plugin-replace": "latest",
     "rollup-plugin-terser": "latest",
     "rollup-plugin-visualizer": "latest",
-    "standard": "latest",
     "styled-components": "latest",
     "unfetch": "latest"
   },
@@ -77,8 +75,6 @@
     "build": "NODE_ENV=production rollup -c rollup.config.js",
     "build-storybook": "NODE_ENV=production build-storybook --quiet",
     "dev": "start-storybook -p 6006",
-    "lint": "standard",
-    "pretest": "npm run lint",
     "start": "node scripts/start.js",
     "test": "NODE_ENV=test jest --detectOpenHandles"
   },
@@ -98,20 +94,6 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "standard": {
-    "globals": [
-      "fetch"
-    ],
-    "ignore": [
-      "/dist/",
-      "/lib/",
-      "/storybook-static/"
-    ],
-    "parser": "babel-eslint",
-    "plugins": [
-      "jsx-a11y"
-    ]
   },
   "umd:main": "dist/microlink.umd.js",
   "unpkg": "dist/microlink.umd.js"
