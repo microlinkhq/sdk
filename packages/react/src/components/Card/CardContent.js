@@ -120,7 +120,7 @@ const CardContent = () => {
   const handleOnClick = useCallback(e => {
     e.preventDefault()
     window.open('https://www.microlink.io', '_blank')
-  })
+  }, [])
 
   return (
     <Content cardSize={size}>

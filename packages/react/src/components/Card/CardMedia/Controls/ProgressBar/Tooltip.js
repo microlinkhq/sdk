@@ -8,15 +8,17 @@ const BASE_FONT_SIZE = 11
 const sizeScales = { normal: 0.8 }
 const getMarkerFontSize = size => BASE_FONT_SIZE * (sizeScales[size] || 1)
 
-const Tooltip = styled('span').attrs(({ position, isDragging, visible }) => ({
-  style: {
-    left: `${position}px`,
-    top: visible ? '-4px' : '0px',
-    visibility: visible ? 'visible' : 'hidden',
-    opacity: visible ? 1 : 0,
-    transform: `translate(-50%, ${!isDragging ? -100 : -110}%)`
-  }
-}))`
+const TooltipBase = styled('span').attrs(
+  ({ position, isDragging, visible }) => ({
+    style: {
+      left: `${position}px`,
+      top: visible ? '-4px' : '0px',
+      visibility: visible ? 'visible' : 'hidden',
+      opacity: visible ? 1 : 0,
+      transform: `translate(-50%, ${!isDragging ? -100 : -110}%)`
+    }
+  })
+)`
   position: absolute;
   background: rgba(24, 25, 25, 0.75);
   color: #fff;
@@ -26,25 +28,16 @@ const Tooltip = styled('span').attrs(({ position, isDragging, visible }) => ({
   font-family: ${font.mono};
   font-size: ${({ cardSize }) => getMarkerFontSize(cardSize)}px;
   line-height: 1;
-  transition: ${transition.medium('opacity', 'visibility', 'transform')}, ${transition.long('top')};
+  transition: ${transition.medium('opacity', 'visibility', 'transform')},
+    ${transition.long('top')};
   will-change: top, left, visibility, opacity, transform;
   backface-visibility: hidden;
 `
 
-export default forwardRef(
-  (
-    {
-      isDragging,
-      isVisible,
-      label,
-      positionX,
-      size,
-      ...props
-    },
-    ref
-  ) => (
+const Tooltip = forwardRef(
+  ({ isDragging, isVisible, label, positionX, size, ...props }, ref) => (
     <>
-      <Tooltip
+      <TooltipBase
         visible={isVisible}
         position={positionX}
         cardSize={size}
@@ -53,7 +46,11 @@ export default forwardRef(
         {...props}
       >
         {label}
-      </Tooltip>
+      </TooltipBase>
     </>
   )
 )
+
+Tooltip.displayName = 'Tooltip'
+
+export default Tooltip
