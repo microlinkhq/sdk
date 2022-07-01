@@ -19,6 +19,7 @@ const Audio = props => {
   )
 
   return (
+    // eslint-disable-next-line
     <Image
       className={`${classNames.mediaWrapper} ${classNames.audioWrapper}`}
       {...props}
