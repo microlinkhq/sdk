@@ -7707,6 +7707,413 @@ exports[`Storyshots setData object 1`] = `
 </div>
 `;
 
+exports[`Storyshots setData prefer media 1`] = `
+Array [
+  .c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c4 {
+  background: transparent no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  z-index: 1;
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c5 {
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
+}
+
+.c7 {
+  opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c8 {
+  opacity: 0.8;
+  height: 14px;
+  width: 95%;
+  display: block;
+  position: relative;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c9 {
+  opacity: 0.8;
+  height: 12px;
+  width: 30%;
+  display: block;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+  height: 10px;
+}
+
+.c2 {
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
+  overflow: hidden;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="https://youtube.com"
+    >
+      https://youtube.com
+    </a>
+    <a
+      className="c2 microlink_card c3"
+      direction="ltr"
+      href="https://youtube.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c4 c5 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c6 microlink_card__content"
+      >
+        <span
+          className="c7"
+        />
+        <span
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
+        />
+        <span
+          className="c9"
+        />
+      </div>
+    </a>
+  </div>,
+  .c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c4 {
+  background: transparent no-repeat center center / cover;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  -webkit-flex: 0 0 125px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 125px;
+}
+
+.c4::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e1e8ed;
+  z-index: 1;
+  -webkit-transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  transition: opacity 150ms cubic-bezier(.25,.8,.25,1),visibility 150ms cubic-bezier(.25,.8,.25,1);
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c5 {
+  -webkit-animation: kHwByW 1.25s linear infinite;
+  animation: kHwByW 1.25s linear infinite;
+}
+
+.c7 {
+  opacity: 0.8;
+  height: 16px;
+  width: 60%;
+  display: block;
+  background: #e1e8ed;
+  margin: 2px 0 8px;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  height: 15px;
+}
+
+.c8 {
+  opacity: 0.8;
+  height: 14px;
+  width: 95%;
+  display: block;
+  position: relative;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  -webkit-animation-delay: 0.125s;
+  animation-delay: 0.125s;
+}
+
+.c9 {
+  opacity: 0.8;
+  height: 12px;
+  width: 30%;
+  display: block;
+  -webkit-animation: ibPKPZ .75s linear infinite;
+  animation: ibPKPZ .75s linear infinite;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+  height: 10px;
+}
+
+.c2 {
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
+  overflow: hidden;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    -webkit-flex: 0 0 92px;
+    -ms-flex: 0 0 92px;
+    flex: 0 0 92px;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="https://example.com"
+    >
+      https://example.com
+    </a>
+    <a
+      className="c2 microlink_card c3"
+      direction="ltr"
+      href="https://example.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="c4 c5 microlink_card__media microlink_card__media_image"
+      />
+      <div
+        className="c6 microlink_card__content"
+      >
+        <span
+          className="c7"
+        />
+        <span
+          className="c8"
+        />
+        <span
+          className="c8"
+          style={
+            Object {
+              "marginBottom": "12px",
+            }
+          }
+        />
+        <span
+          className="c9"
+        />
+      </div>
+    </a>
+  </div>,
+]
+`;
+
 exports[`Storyshots style border radius 1`] = `
 Array [
   .c6 {

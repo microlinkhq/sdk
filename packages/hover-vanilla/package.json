@@ -33,13 +33,11 @@
     "@rollup/plugin-commonjs": "latest",
     "@rollup/plugin-node-resolve": "latest",
     "@rollup/plugin-replace": "latest",
-    "prettier-standard": "latest",
     "rollup": "latest",
     "rollup-plugin-copy": "latest",
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-terser": "latest",
-    "rollup-plugin-visualizer": "latest",
-    "standard": "latest"
+    "rollup-plugin-visualizer": "latest"
   },
   "engines": {
     "node": ">= 10"
@@ -50,11 +48,7 @@
   "scripts": {
     "build": "NODE_ENV=production npm run rollup",
     "dev": "NODE_ENV=development npm run rollup -- -w",
-    "lint": "standard src",
-    "pretest": "npm run lint",
-    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
-    "rollup": "rollup -c rollup.config.js",
-    "test": "exit 0"
+    "rollup": "rollup -c rollup.config.js"
   },
   "license": "MIT",
   "publishConfig": {

@@ -322,7 +322,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
         }
       }
     },
-    [duration, isDragging, jumpTo, togglePlayback]
+    [isDragging, jumpTo, togglePlayback]
   )
 
   const outerWrapEvents = useMemo(

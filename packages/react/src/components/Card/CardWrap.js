@@ -95,6 +95,8 @@ const CardWrap = forwardRef(({ href, rel, target, ...restProps }, ref) => {
   })
 })
 
+CardWrap.displayName = 'CardWrap'
+
 CardWrap.defaultProps = {
   as: 'a',
   rel: 'noopener noreferrer',
