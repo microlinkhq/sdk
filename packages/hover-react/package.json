@@ -87,8 +87,8 @@
     "verbose": true
   },
   "peerDependencies": {
-    "react": "^17",
-    "react-dom": "^17",
+    "react": ">= 17",
+    "react-dom": ">= 17",
     "styled-components": "^5"
   },
   "publishConfig": {

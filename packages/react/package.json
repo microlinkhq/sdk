@@ -24,7 +24,7 @@
     "react"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.10.19",
+    "@microlink/mql": "~0.10.26",
     "is-localhost-url": "~1.0.3",
     "nanoclamp": "~1.4.1"
   },
@@ -86,8 +86,8 @@
     "verbose": true
   },
   "peerDependencies": {
-    "react": "^17",
-    "react-dom": "^17",
+    "react": ">= 17",
+    "react-dom": ">= 17",
     "styled-components": "^5"
   },
   "publishConfig": {
