@@ -47,7 +47,7 @@
     "babel-plugin-transform-react-remove-prop-types": "latest",
     "enzyme": "latest",
     "enzyme-adapter-react-16": "latest",
-    "jest": "26",
+    "jest": "28",
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
     "jest-styled-components": "latest",
