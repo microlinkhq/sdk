@@ -1,9 +1,9 @@
 import nodeResolve from '@rollup/plugin-node-resolve'
-import visualizer from 'rollup-plugin-visualizer'
+import { visualizer } from 'rollup-plugin-visualizer'
 import commonjs from '@rollup/plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
-import { terser } from 'rollup-plugin-terser'
-import replace from 'rollup-plugin-replace'
+import replace from '@rollup/plugin-replace'
+import terser from '@rollup/plugin-terser'
 import babel from '@rollup/plugin-babel'
 import fs from 'fs'
 
@@ -18,7 +18,11 @@ const globals = {
 
 const plugins = ({ compress }) => [
   nodeResolve(),
-  babel({ babelrc: false, ...babelRc, babelHelpers: 'bundled' }),
+  babel({
+    babelrc: false,
+    ...babelRc,
+    babelHelpers: 'runtime'
+  }),
   commonjs(),
   compress && terser(),
   filesize(),
@@ -40,12 +44,12 @@ const build = ({ file, format, name, exports }) => {
       name,
       globals
     },
-    external: Object.keys(globals),
+    external: [/@babel\/runtime/].concat(Object.keys(globals)),
     plugins: plugins({ compress })
   }
 }
 
-export default [
+const builds = [
   build({
     format: 'umd',
     file: 'dist/microlink.umd.js',
@@ -77,3 +81,5 @@ export default [
     exports: 'named'
   })
 ]
+
+export default builds
