@@ -24,23 +24,29 @@
     "react"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.10.26",
+    "@microlink/mql": "~0.10.30",
     "is-localhost-url": "~1.0.3",
-    "nanoclamp": "~1.4.1"
+    "nanoclamp": "~2.0.4"
   },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/plugin-proposal-class-properties": "latest",
     "@babel/plugin-proposal-object-rest-spread": "latest",
     "@babel/plugin-transform-react-constant-elements": "latest",
+    "@babel/plugin-transform-runtime": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
+    "@babel/runtime": "latest",
     "@microlink/demo-links": "latest",
     "@rollup/plugin-babel": "latest",
     "@rollup/plugin-commonjs": "latest",
     "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-replace": "latest",
+    "@rollup/plugin-terser": "latest",
     "@storybook/addon-storyshots": "latest",
     "@storybook/addons": "latest",
+    "@storybook/builder-webpack5": "latest",
+    "@storybook/manager-webpack5": "latest",
     "@storybook/react": "latest",
     "@storybook/theming": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
@@ -57,8 +63,6 @@
     "react-dom": "^17",
     "rollup": "latest",
     "rollup-plugin-filesize": "latest",
-    "rollup-plugin-replace": "latest",
-    "rollup-plugin-terser": "latest",
     "rollup-plugin-visualizer": "latest",
     "styled-components": "latest",
     "unfetch": "latest"
@@ -70,7 +74,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "NODE_ENV=production rollup -c rollup.config.js",
+    "build": "NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs",
     "build-storybook": "NODE_ENV=production build-storybook --quiet",
     "dev": "start-storybook -p 6006",
     "start": "node scripts/start.js",

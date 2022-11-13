@@ -36,7 +36,7 @@
     "rollup": "latest",
     "rollup-plugin-copy": "latest",
     "rollup-plugin-filesize": "latest",
-    "rollup-plugin-terser": "latest",
+    "@rollup/plugin-terser": "latest",
     "rollup-plugin-visualizer": "latest"
   },
   "engines": {
@@ -48,7 +48,7 @@
   "scripts": {
     "build": "NODE_ENV=production npm run rollup",
     "dev": "NODE_ENV=development npm run rollup -- -w",
-    "rollup": "rollup -c rollup.config.js"
+    "rollup": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
   "license": "MIT",
   "publishConfig": {
