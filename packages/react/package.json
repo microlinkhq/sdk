@@ -2,7 +2,7 @@
   "name": "@microlink/react",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/sdk",
-  "version": "5.5.10",
+  "version": "5.5.11",
   "main": "dist/microlink.cjs",
   "module": "dist/microlink.mjs",
   "jsnext:main": "dist/microlink.mjs",
