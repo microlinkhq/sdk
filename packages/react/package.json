@@ -78,7 +78,8 @@
     "build-storybook": "NODE_ENV=production build-storybook --quiet",
     "dev": "start-storybook -p 6006",
     "start": "node scripts/start.js",
-    "test": "NODE_ENV=test jest --detectOpenHandles"
+    "pretest": "npm run build",
+    "test": "node -e \"require('./')\" && NODE_ENV=test jest --detectOpenHandles"
   },
   "license": "MIT",
   "jest": {
