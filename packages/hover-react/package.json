@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "@babel/core": "latest",
+    "@storybook/builder-webpack5": "latest",
+    "@storybook/manager-webpack5": "latest",
     "@babel/plugin-proposal-class-properties": "latest",
     "@babel/plugin-proposal-object-rest-spread": "latest",
     "@babel/plugin-transform-react-constant-elements": "latest",
