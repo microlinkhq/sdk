@@ -3,9 +3,9 @@
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/sdk",
   "version": "5.5.10",
-  "main": "dist/microlink.js",
-  "module": "dist/microlink.module.js",
-  "jsnext:main": "dist/microlink.module.js",
+  "main": "dist/microlink.cjs",
+  "module": "dist/microlink.mjs",
+  "jsnext:main": "dist/microlink.mjs",
   "repository": {
     "directory": "packages/react",
     "type": "git",
@@ -78,7 +78,8 @@
     "build-storybook": "NODE_ENV=production build-storybook --quiet",
     "dev": "start-storybook -p 6006",
     "start": "node scripts/start.js",
-    "test": "NODE_ENV=test jest --detectOpenHandles"
+    "pretest": "npm run build",
+    "test": "node -e \"require('./')\" && NODE_ENV=test jest --detectOpenHandles"
   },
   "license": "MIT",
   "jest": {
@@ -96,7 +97,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "umd:main": "dist/microlink.umd.js",
-  "unpkg": "dist/microlink.umd.js"
+  }
 }

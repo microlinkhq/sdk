@@ -28,7 +28,10 @@ const plugins = ({ compress }) => [
   filesize(),
   visualizer({ template: 'treemap' }),
   replace({
-    'process.env.NODE_ENV': JSON.stringify('production')
+    preventAssignment: true,
+    values: {
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }
   })
 ]
 
@@ -51,33 +54,23 @@ const build = ({ file, format, name, exports }) => {
 
 const builds = [
   build({
-    format: 'umd',
-    file: 'dist/microlink.umd.js',
-    name: 'microlink'
-  }),
-  build({
-    format: 'umd',
-    file: 'dist/microlink.umd.min.js',
-    name: 'microlink'
-  }),
-  build({
     format: 'esm',
-    file: 'dist/microlink.module.js',
+    file: 'dist/microlink.mjs',
     exports: 'named'
   }),
   build({
     format: 'esm',
-    file: 'dist/microlink.module.min.js',
+    file: 'dist/microlink.min.mjs',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.js',
+    file: 'dist/microlink.cjs',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.min.js',
+    file: 'dist/microlink.min.cjs',
     exports: 'named'
   })
 ]
