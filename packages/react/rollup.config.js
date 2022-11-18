@@ -40,6 +40,7 @@ const build = ({ file, format, name, exports }) => {
   return {
     input: './src/index.js',
     output: {
+      interop: id => (id === 'styled-components' ? 'esModule' : 'default'),
       sourcemap: compress,
       file,
       format,
