@@ -53,7 +53,7 @@
     "clean": "pnpm run clean:node && pnpm run clean:build",
     "clean:build": "pnpm -r exec -- rm -rf dist",
     "clean:node": "pnpm -r exec -- rm -rf node_modules",
-    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: add contributors' --no-verify) || true",
+    "contributors": "(npx git-authors-cli && npx finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "lint": "eslint \"packages/*/src/*/**\" && standard-markdown README.md --fix && standard --fix",
     "prepublishOnly": "pnpm run build",
     "prerelease": "pnpm run contributors",
