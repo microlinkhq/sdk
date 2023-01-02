@@ -106,16 +106,8 @@ microlink.io/${error.code.toLowerCase()}
         ? setData(fetchedData)
         : { ...fetchedData, ...setData }
 
-      const {
-        title,
-        description,
-        url,
-        video,
-        audio,
-        image,
-        logo,
-        iframe
-      } = payload
+      const { title, description, url, video, audio, image, logo, iframe } =
+        payload
 
       const mediaFallback = image || logo || {}
       let media = mediaFallback
