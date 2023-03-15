@@ -68,38 +68,6 @@ const Card = props => {
     [isLazyEnabled, hasIntersected]
   )
 
-  const toFetchData = useCallback(() => {
-    if (canFetchData) {
-      setLoading(true)
-
-      const fetch = fetchData
-        ? fetchFromApi(apiUrl, apiUrlProps)
-        : Promise.resolve({})
-
-      fetch
-        .then(({ data }) => mergeData(data))
-        .catch(error => {
-          setLoading(false)
-          setIsError(true)
-          console.error(`
-┌───────────────┐
-│ Microlink SDK │
-└───────────────┘
-
-${error.description}
-
-${JSON.stringify(error.data)}
-
-id   ${error.headers['x-request-id']}
-uri  ${error.url}
-code ${error.code} (${error.statusCode})
-
-microlink.io/${error.code.toLowerCase()}
-`)
-        })
-    }
-  }, [apiUrl, canFetchData, setData, apiUrlProps.headers['x-api-key'], url])
-
   const mergeData = useCallback(
     fetchedData => {
       const payload = isFunction(setData)
@@ -153,10 +121,42 @@ microlink.io/${error.code.toLowerCase()}
 
       setLoading(false)
     },
-    [mediaProps, setData]
+    [updateState, mediaProps, setData]
   )
 
-  useEffect(toFetchData, [url, setData, hasIntersected])
+  const toFetchData = useCallback(() => {
+    if (canFetchData) {
+      setLoading(true)
+
+      const fetch = fetchData
+        ? fetchFromApi(apiUrl, apiUrlProps)
+        : Promise.resolve({})
+
+      fetch
+        .then(({ data }) => mergeData(data))
+        .catch(error => {
+          setLoading(false)
+          setIsError(true)
+          console.error(`
+┌───────────────┐
+│ Microlink SDK │
+└───────────────┘
+
+${error.description}
+
+${JSON.stringify(error.data)}
+
+id   ${error.headers['x-request-id']}
+uri  ${error.url}
+code ${error.code} (${error.statusCode})
+
+microlink.io/${error.code.toLowerCase()}
+`)
+        })
+    }
+  }, [apiUrlProps, fetchData, apiUrl, mergeData, canFetchData])
+
+  useEffect(toFetchData, [toFetchData, url, setData, hasIntersected])
 
   const isLoading = isLoadingUndefined ? loadingState : loading
 
