@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.13](https://github.com/microlinkhq/sdk/compare/v5.5.12...v5.5.13) (2023-03-15)
+
+### Bug Fixes
+
+* linter warnings ([#296](https://github.com/microlinkhq/sdk/issues/296)) ([4222c9c](https://github.com/microlinkhq/sdk/commit/4222c9c593ce8ac42737d6129b83eec12aeeb074))
+* **linter:** glob pattern ([#297](https://github.com/microlinkhq/sdk/issues/297)) ([41db186](https://github.com/microlinkhq/sdk/commit/41db1866a282096688a54fd7a00fd3618bbfcf49))
+
 ## [5.5.12](https://github.com/microlinkhq/sdk/compare/v5.5.11...v5.5.12) (2023-01-02)
 
 ### Bug Fixes
