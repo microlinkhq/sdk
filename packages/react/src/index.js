@@ -156,7 +156,7 @@ microlink.io/${error.code.toLowerCase()}
     }
   }, [apiUrlProps, fetchData, apiUrl, mergeData, canFetchData])
 
-  useEffect(toFetchData, [toFetchData, url, setData, hasIntersected])
+  useEffect(toFetchData, [url, setData, hasIntersected])
 
   const isLoading = isLoadingUndefined ? loadingState : loading
 
