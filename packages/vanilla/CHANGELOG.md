@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.14](https://github.com/microlinkhq/sdk/compare/v5.5.13...v5.5.14) (2023-03-22)
+
+**Note:** Version bump only for package @microlink/vanilla
+
 ## [5.5.13](https://github.com/microlinkhq/sdk/compare/v5.5.12...v5.5.13) (2023-03-15)
 
 **Note:** Version bump only for package @microlink/vanilla

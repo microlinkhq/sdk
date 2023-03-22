@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.14](https://github.com/microlinkhq/sdk/compare/v5.5.13...v5.5.14) (2023-03-22)
+
+### Bug Fixes
+
+* infinite loading ([#298](https://github.com/microlinkhq/sdk/issues/298)) ([159f1d5](https://github.com/microlinkhq/sdk/commit/159f1d55b4170f4660318f74c03fd119ad495f37))
+
 ## [5.5.13](https://github.com/microlinkhq/sdk/compare/v5.5.12...v5.5.13) (2023-03-15)
 
 ### Bug Fixes
