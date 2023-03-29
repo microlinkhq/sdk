@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import styled from 'styled-components'
 import MicrolinkHover from '@microlink/hover-react'
-import isLocalhostUrl from 'is-localhost-url'
+import localhostUrl from 'localhost-url-regex'
+import styled from 'styled-components'
+import ReactDOM from 'react-dom'
+import React from 'react'
 
 function toArray (selector) {
   const collection = Array.from(
@@ -16,7 +16,7 @@ function toArray (selector) {
       el.href = new URL(el.href).toString()
       return el
     })
-    .filter(el => el.href.startsWith('http') && !isLocalhostUrl(el.href))
+    .filter(el => el.href.startsWith('http') && !localhostUrl().test(el.href))
 }
 
 function parseJSON (value) {
