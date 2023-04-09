@@ -4,12 +4,12 @@ import styled from 'styled-components'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-function toArray (selector) {
-  const collection = Array.from(
-    typeof selector === 'string'
-      ? document.querySelectorAll(selector)
-      : selector
-  )
+function toArray (input) {
+  const collection = (
+    typeof input === 'string'
+      ? Array.from(document.querySelectorAll(input))
+      : [].concat(input)
+  ).filter(Boolean)
 
   return collection
     .map(el => {
