@@ -42,7 +42,7 @@
     "@rollup/plugin-node-resolve": "latest",
     "@rollup/plugin-replace": "latest",
     "@rollup/plugin-terser": "latest",
-    "@storybook/addon-storyshots": "~6.5.16",
+    "@storybook/addon-storyshots": "~7.0.6",
     "@storybook/addons": "~6.5.16",
     "@storybook/builder-webpack5": "~6.5.16",
     "@storybook/manager-webpack5": "~6.5.16",
