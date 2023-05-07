@@ -1,22 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import styled from 'styled-components'
 import MicrolinkHover from '@microlink/hover-react'
-import isLocalhostUrl from 'is-localhost-url'
+import localhostUrl from 'localhost-url-regex'
+import styled from 'styled-components'
+import ReactDOM from 'react-dom'
+import React from 'react'
 
-function toArray (selector) {
-  const collection = Array.from(
-    typeof selector === 'string'
-      ? document.querySelectorAll(selector)
-      : selector
-  )
+function toArray (input) {
+  const collection = (
+    typeof input === 'string'
+      ? Array.from(document.querySelectorAll(input))
+      : [].concat(input)
+  ).filter(Boolean)
 
   return collection
     .map(el => {
       el.href = new URL(el.href).toString()
       return el
     })
-    .filter(el => el.href.startsWith('http') && !isLocalhostUrl(el.href))
+    .filter(el => el.href.startsWith('http') && !localhostUrl().test(el.href))
 }
 
 function parseJSON (value) {

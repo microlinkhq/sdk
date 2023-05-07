@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.15](https://github.com/microlinkhq/sdk/compare/v5.5.14...v5.5.15) (2023-03-29)
+
+**Note:** Version bump only for package @microlink/react
+
+## [5.5.14](https://github.com/microlinkhq/sdk/compare/v5.5.13...v5.5.14) (2023-03-22)
+
+### Bug Fixes
+
+* infinite loading ([#298](https://github.com/microlinkhq/sdk/issues/298)) ([159f1d5](https://github.com/microlinkhq/sdk/commit/159f1d55b4170f4660318f74c03fd119ad495f37))
+
+## [5.5.13](https://github.com/microlinkhq/sdk/compare/v5.5.12...v5.5.13) (2023-03-15)
+
+### Bug Fixes
+
+* linter warnings ([#296](https://github.com/microlinkhq/sdk/issues/296)) ([4222c9c](https://github.com/microlinkhq/sdk/commit/4222c9c593ce8ac42737d6129b83eec12aeeb074))
+
+## [5.5.12](https://github.com/microlinkhq/sdk/compare/v5.5.11...v5.5.12) (2023-01-02)
+
+### Bug Fixes
+
+* **image-proxy:** add image fallback ([#294](https://github.com/microlinkhq/sdk/issues/294)) ([4098f23](https://github.com/microlinkhq/sdk/commit/4098f23cb6c3b2fc09906e03ded0682808cdf1c7))
+
+## [5.5.11](https://github.com/microlinkhq/sdk/compare/v5.5.10...v5.5.11) (2022-11-18)
+
+**Note:** Version bump only for package @microlink/react
+
+## [5.5.10](https://github.com/microlinkhq/sdk/compare/v5.5.9...v5.5.10) (2022-11-13)
+
+**Note:** Version bump only for package @microlink/react
+
 ## [5.5.9](https://github.com/microlinkhq/sdk/compare/v5.5.8...v5.5.9) (2022-07-01)
 
 **Note:** Version bump only for package @microlink/react

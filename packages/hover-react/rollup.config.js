@@ -1,9 +1,9 @@
 import nodeResolve from '@rollup/plugin-node-resolve'
-import visualizer from 'rollup-plugin-visualizer'
+import { visualizer } from 'rollup-plugin-visualizer'
 import commonjs from '@rollup/plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
-import { terser } from 'rollup-plugin-terser'
-import replace from 'rollup-plugin-replace'
+import replace from '@rollup/plugin-replace'
+import terser from '@rollup/plugin-terser'
 import babel from '@rollup/plugin-babel'
 import fs from 'fs'
 
@@ -18,13 +18,20 @@ const globals = {
 
 const plugins = ({ compress }) => [
   nodeResolve(),
-  babel({ babelrc: false, ...babelRc, babelHelpers: 'bundled' }),
+  babel({
+    babelrc: false,
+    ...babelRc,
+    babelHelpers: 'runtime'
+  }),
   commonjs(),
   compress && terser(),
   filesize(),
   visualizer({ template: 'treemap' }),
   replace({
-    'process.env.NODE_ENV': JSON.stringify('production')
+    preventAssignment: true,
+    values: {
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }
   })
 ]
 
@@ -40,40 +47,32 @@ const build = ({ file, format, name, exports }) => {
       name,
       globals
     },
-    external: Object.keys(globals),
+    external: [/@babel\/runtime/].concat(Object.keys(globals)),
     plugins: plugins({ compress })
   }
 }
 
-export default [
-  build({
-    format: 'umd',
-    file: 'dist/microlink.umd.js',
-    name: 'microlink'
-  }),
-  build({
-    format: 'umd',
-    file: 'dist/microlink.umd.min.js',
-    name: 'microlink'
-  }),
+const builds = [
   build({
     format: 'esm',
-    file: 'dist/microlink.module.js',
+    file: 'dist/microlink.mjs',
     exports: 'named'
   }),
   build({
     format: 'esm',
-    file: 'dist/microlink.module.min.js',
+    file: 'dist/microlink.min.mjs',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.js',
+    file: 'dist/microlink.cjs',
     exports: 'named'
   }),
   build({
     format: 'cjs',
-    file: 'dist/microlink.min.js',
+    file: 'dist/microlink.min.cjs',
     exports: 'named'
   })
 ]
+
+export default builds

@@ -17,13 +17,12 @@ function parseObject (obj) {
   }, {})
 }
 
-function toArray (selector) {
-  const elements =
-    typeof selector === 'string'
-      ? document.querySelectorAll(selector)
-      : selector
-
-  return elements ? Array.from(elements) : []
+function toArray (input) {
+  return (
+    typeof input === 'string'
+      ? Array.from(document.querySelectorAll(input))
+      : [].concat(input)
+  ).filter(Boolean)
 }
 
 function microlink (selector, opts, rootNode) {

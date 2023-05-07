@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.15](https://github.com/microlinkhq/sdk/compare/v5.5.14...v5.5.15) (2023-03-29)
+
+**Note:** Version bump only for package @microlink/hover-vanilla
+
+## [5.5.14](https://github.com/microlinkhq/sdk/compare/v5.5.13...v5.5.14) (2023-03-22)
+
+**Note:** Version bump only for package @microlink/hover-vanilla
+
+## [5.5.13](https://github.com/microlinkhq/sdk/compare/v5.5.12...v5.5.13) (2023-03-15)
+
+**Note:** Version bump only for package @microlink/hover-vanilla
+
+## [5.5.12](https://github.com/microlinkhq/sdk/compare/v5.5.11...v5.5.12) (2023-01-02)
+
+**Note:** Version bump only for package @microlink/hover-vanilla
+
+## [5.5.11](https://github.com/microlinkhq/sdk/compare/v5.5.10...v5.5.11) (2022-11-18)
+
+**Note:** Version bump only for package @microlink/hover-vanilla
+
+## [5.5.10](https://github.com/microlinkhq/sdk/compare/v5.5.9...v5.5.10) (2022-11-13)
+
+**Note:** Version bump only for package @microlink/hover-vanilla
+
 ## [5.5.9](https://github.com/microlinkhq/sdk/compare/v5.5.8...v5.5.9) (2022-07-01)
 
 **Note:** Version bump only for package @microlink/hover-vanilla
