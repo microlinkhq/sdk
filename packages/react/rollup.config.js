@@ -12,8 +12,8 @@ const babelRc = JSON.parse(fs.readFileSync('./.babelrc'))
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
-  '@emotion/styled': 'emotionStyled',
   '@emotion/react': 'emotionReact',
+  '@emotion/styled': 'emotionStyled',
   '@microlink/mql': 'mql'
 }
 
