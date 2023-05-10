@@ -1,4 +1,4 @@
-import { css, keyframes } from 'styled-components'
+import { css, keyframes } from '@emotion/react'
 
 const emptyStatePulse = keyframes`
   0% {

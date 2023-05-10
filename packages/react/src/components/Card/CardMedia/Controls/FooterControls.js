@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 import MediaButton from './MediaButton'
 import { classNames, media, isLarge } from '../../../../utils'
@@ -48,9 +48,7 @@ const VolumeIcon = styled('svg')`
   stroke: #fff;
 `
 
-const VolumeButton = styled(MediaButton).attrs({
-  className: classNames.volumeControl
-})`
+const VolumeButton = styled(MediaButton)`
   ${VolumeIcon} {
     width: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
     height: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
@@ -64,9 +62,7 @@ const VolumeButton = styled(MediaButton).attrs({
   }
 `
 
-const PlaybackRateButton = styled(MediaButton).attrs({
-  className: classNames.rateControl
-})`
+const PlaybackRateButton = styled(MediaButton)`
   font-size: ${({ cardSize }) => (isLarge(cardSize) ? 12 : 10)}px;
   min-width: ${({ cardSize }) => (isLarge(cardSize) ? 33 : 28)}px;
   line-height: 1;
@@ -87,7 +83,7 @@ const PlaybackRateButton = styled(MediaButton).attrs({
   `}
 `
 
-const TimeLabel = styled('span').attrs({ className: classNames.progressTime })`
+const TimeLabel = styled('span')`
   margin: ${({ right }) => (!right ? '0 auto 0 0' : '0 0 0 auto')};
   font-family: ${font.mono};
   font-size: 12px;
@@ -95,6 +91,8 @@ const TimeLabel = styled('span').attrs({ className: classNames.progressTime })`
   color: #fff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 `
+
+TimeLabel.defaultProps = { className: classNames.progressTime }
 
 const FooterControls = ({
   cardSize,
@@ -115,17 +113,19 @@ const FooterControls = ({
       {isLargeCard && <TimeLabel>{currentTime}</TimeLabel>}
 
       <VolumeButton
-        title={isMuted ? 'Unmute' : 'Mute'}
         cardSize={cardSize}
+        className={classNames.volumeControl}
         onClick={onMuteClick}
+        title={isMuted ? 'Unmute' : 'Mute'}
       >
         <VolumeIcon as={VolumeComponent} />
       </VolumeButton>
 
       <PlaybackRateButton
-        title='Playback Rate'
         cardSize={cardSize}
+        className={classNames.rateControl}
         onClick={onPlaybackRateClick}
+        title='Playback Rate'
       >
         <span>{playbackRate}x</span>
       </PlaybackRateButton>

@@ -1,7 +1,8 @@
 /* eslint-disable multiline-ternary */
 
 import React from 'react'
-import styled, { css } from 'styled-components'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 import NanoClamp from 'nanoclamp'
 
 import { isNil } from '../../utils'

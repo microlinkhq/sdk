@@ -1,5 +1,6 @@
 import React from 'react'
-import styled, { css, keyframes } from 'styled-components'
+import { css, keyframes } from '@emotion/react'
+import styled from '@emotion/styled'
 
 import { transition } from '../../../../theme'
 import { classNames } from '../../../../utils'
@@ -38,12 +39,7 @@ const dash = keyframes`
   }
 `
 
-const Wrap = styled(MediaButton).attrs(({ isVisible }) => ({
-  style: {
-    opacity: isVisible ? 1 : 0,
-    visibility: isVisible ? 'visible' : 'hidden'
-  }
-}))(({ cardSize }) => {
+const Wrap = styled(MediaButton)(({ cardSize }) => {
   const size = `${getSpinnerSize(cardSize)}px`
   const offset = `${getSpinnerOffset(cardSize)}px`
 
@@ -74,7 +70,12 @@ const Circle = styled('circle')`
 `
 
 const Spinner = ({ size, isVisible }) => (
-  <Wrap cardSize={size} className={classNames.spinner} isVisible={isVisible}>
+  <Wrap
+    cardSize={size} className={classNames.spinner} style={{
+      opacity: isVisible ? 1 : 0,
+      visibility: isVisible ? 'visible' : 'hidden'
+    }}
+  >
     <Svg viewBox='0 0 50 50'>
       <Circle cx='25' cy='25' r='20' />
     </Svg>

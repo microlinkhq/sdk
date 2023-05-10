@@ -1,4 +1,6 @@
-import styled, { css } from 'styled-components'
+import React from 'react'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
 import { transition } from '../../../../../theme'
 
@@ -9,14 +11,7 @@ const scrubberSizeScales = { normal: 0.8, small: 0.9 }
 const getScrubberSize = size =>
   Math.floor(SCRUBBER_SIZE * (scrubberSizeScales[size] || 1))
 
-const Scrubber = styled('div').attrs(({ isVisible, positionX }) => ({
-  style: {
-    left: positionX,
-    transform: `scale(${isVisible ? 1 : 0.5}) translate(-50%, -50%)`,
-    opacity: isVisible ? 1 : 0,
-    visibility: isVisible ? 'visible' : 'hidden'
-  }
-}))`
+const StyledScrubber = styled('div')`
   position: absolute;
   top: 50%;
   background: #ffffff;
@@ -37,5 +32,18 @@ const Scrubber = styled('div').attrs(({ isVisible, positionX }) => ({
     `
   }}
 `
+
+const Scrubber = ({ cardSize, isVisible, positionX }) => {
+  return (
+    <StyledScrubber
+      cardSize={cardSize} style={{
+        left: positionX,
+        transform: `scale(${isVisible ? 1 : 0.5}) translate(-50%, -50%)`,
+        opacity: isVisible ? 1 : 0,
+        visibility: isVisible ? 'visible' : 'hidden'
+      }}
+    />
+  )
+}
 
 export default Scrubber

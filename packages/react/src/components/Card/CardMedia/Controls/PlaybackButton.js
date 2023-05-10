@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
-import styled, { css } from 'styled-components'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
 import MediaButton from './MediaButton'
 import { classNames, isSmall, isLarge, media } from '../../../../utils'
@@ -40,9 +41,7 @@ const PlaybackIcon = styled('svg')`
   stroke: #fff;
 `
 
-const PlaybackButtonWrap = styled(MediaButton).attrs({
-  className: classNames.playbackControl
-})`
+const PlaybackButtonWrap = styled(MediaButton)`
   ${PlaybackIcon} {
     ${({ cardSize }) => css`
       width: ${iconSizes[cardSize]};
@@ -58,6 +57,8 @@ const PlaybackButtonWrap = styled(MediaButton).attrs({
     `}
   }
 `
+
+PlaybackButtonWrap.defaultProps = { className: classNames.playbackControl }
 
 const PlaybackButton = ({ isPlaying, ...props }) => {
   const PlaybackComponent = useMemo(() => (isPlaying ? Pause : Play), [
