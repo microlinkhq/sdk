@@ -37,6 +37,7 @@
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
     "@babel/runtime": "latest",
+    "@emotion/babel-plugin": "latest",
     "@emotion/jest": "latest",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
