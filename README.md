@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://cdn.microlink.io/banner/sdk.png" alt="microlink logo">
+  <img src="https://github.com/microlinkhq/cdn/raw/master/dist/banner/sdk.png#gh-light-mode-only" alt="microlink sdk">
+  <img src="https://github.com/microlinkhq/cdn/raw/master/dist/banner/sdk-dark.png#gh-dark-mode-only" alt="microlink sdk">
 </div>
 
 ###### [Documentation](https://microlink.io/sdk) | [Storybook](https://sdk-react.microlink.io) | [Chat](https://microlink.io/chat)
