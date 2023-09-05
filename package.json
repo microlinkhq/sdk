@@ -32,6 +32,7 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@ksmithut/prettier-standard": "latest",
     "@lerna-lite/cli": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
@@ -39,7 +40,6 @@
     "git-authors-cli": "latest",
     "nano-staged": "latest",
     "next": "latest",
-    "prettier-standard": "latest",
     "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
@@ -75,7 +75,8 @@
   },
   "nano-staged": {
     "*.js,!*.min.js,": [
-      "prettier-standard"
+      "prettier-standard",
+      "standard --fix"
     ],
     "*.md": [
       "standard-markdown"

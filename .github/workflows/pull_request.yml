@@ -27,4 +27,4 @@ jobs:
           version: latest
           run_install: true
       - name: Test
-        run: npm test
+        run: pnpm test
