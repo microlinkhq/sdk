@@ -1,5 +1,172 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots components PlaceholderComponent 1`] = `
+.c2 {
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
+  overflow: hidden;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+}
+
+.c2:active,
+.c2:hover {
+  outline: 0;
+}
+
+.c4 {
+  max-width: var(--microlink-max-width,500px);
+  background-color: var(--microlink-background-color,#fff);
+  border-width: var(--microlink-border-width,1px);
+  border-style: var(--microlink-border-style,solid);
+  border-color: var(--microlink-border-color,#e1e8ed);
+  color: var(--microlink-color,#181919);
+  overflow: hidden;
+  font-family: InterUI,-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Oxygen,Ubuntu,Cantarell,'Open Sans',sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: 1;
+  position: relative;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  transition-timing-function: cubic-bezier(.25,.8,.25,1);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 382px;
+}
+
+.c4:active,
+.c4:hover {
+  outline: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c0:not(:last-child):not(:only-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.c1 {
+  color: #0366d6;
+  margin-bottom: 32px;
+}
+
+.c3:not(:last-child):not(:only-child) {
+  margin-bottom: 32px;
+}
+
+@media (max-width:48em) {
+  .c4 {
+    height: calc(382px * 7/9);
+  }
+}
+
+<div
+  className="c0"
+>
+  <a
+    className="c1"
+    href="https://microlink.io"
+  >
+    https://microlink.io
+  </a>
+  <a
+    className="c2 microlink_card microlink_card__placeholder c3"
+    direction="ltr"
+    href="https://microlink.io"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <strong
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      loading...
+    </strong>
+  </a>
+  <a
+    className="c2 microlink_card microlink_card__placeholder c3"
+    direction="ltr"
+    href="https://microlink.io"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <strong
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      loading...
+    </strong>
+  </a>
+  <a
+    className="c4 microlink_card microlink_card__placeholder c3"
+    direction="ltr"
+    href="https://microlink.io"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <strong
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      loading...
+    </strong>
+  </a>
+</div>
+`;
+
 exports[`Storyshots media audio 1`] = `
 .c6 {
   display: -webkit-box;
@@ -235,8 +402,8 @@ exports[`Storyshots media audio 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -349,26 +516,26 @@ exports[`Storyshots media audio 1`] = `
     https://open.spotify.com/track/1W2919zs8SBCLTrOB1ftQT?si=4PcqgjH5RlWCvB5q4ukdnw
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://open.spotify.com/track/1W2919zs8SBCLTrOB1ftQT?si=4PcqgjH5RlWCvB5q4ukdnw"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -376,52 +543,52 @@ exports[`Storyshots media audio 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://open.spotify.com/track/1W2919zs8SBCLTrOB1ftQT?si=4PcqgjH5RlWCvB5q4ukdnw"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://open.spotify.com/track/1W2919zs8SBCLTrOB1ftQT?si=4PcqgjH5RlWCvB5q4ukdnw"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -429,7 +596,7 @@ exports[`Storyshots media audio 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -530,8 +697,8 @@ exports[`Storyshots media iframe 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -606,26 +773,26 @@ exports[`Storyshots media iframe 1`] = `
     https://twitter.com/futurism/status/882987478541533189
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://twitter.com/futurism/status/882987478541533189"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -633,7 +800,7 @@ exports[`Storyshots media iframe 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -875,8 +1042,8 @@ exports[`Storyshots media image 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -989,26 +1156,26 @@ exports[`Storyshots media image 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -1016,52 +1183,52 @@ exports[`Storyshots media image 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -1069,7 +1236,7 @@ exports[`Storyshots media image 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -1311,8 +1478,8 @@ exports[`Storyshots media logo 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -1425,26 +1592,26 @@ exports[`Storyshots media logo 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -1452,52 +1619,52 @@ exports[`Storyshots media logo 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -1505,7 +1672,7 @@ exports[`Storyshots media logo 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -1747,8 +1914,8 @@ exports[`Storyshots media screenshot 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -1861,26 +2028,26 @@ exports[`Storyshots media screenshot 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -1888,52 +2055,52 @@ exports[`Storyshots media screenshot 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -1941,7 +2108,7 @@ exports[`Storyshots media screenshot 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -2183,8 +2350,8 @@ exports[`Storyshots media video 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -2297,26 +2464,26 @@ exports[`Storyshots media video 1`] = `
     https://www.facebook.com/natgeo/videos/10156364216738951/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -2324,52 +2491,52 @@ exports[`Storyshots media video 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -2377,7 +2544,7 @@ exports[`Storyshots media video 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -2619,8 +2786,8 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -2733,26 +2900,26 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
     https://www.facebook.com/natgeo/videos/10156364216738951/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -2760,52 +2927,52 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -2813,7 +2980,7 @@ exports[`Storyshots props autoPlay (disabled) 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -3055,8 +3222,8 @@ exports[`Storyshots props contrast 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -3185,26 +3352,26 @@ exports[`Storyshots props contrast 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -3212,52 +3379,52 @@ exports[`Storyshots props contrast 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -3265,7 +3432,7 @@ exports[`Storyshots props contrast 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -3507,8 +3674,8 @@ exports[`Storyshots props controls (disabled) 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -3621,26 +3788,26 @@ exports[`Storyshots props controls (disabled) 1`] = `
     https://www.facebook.com/natgeo/videos/10156364216738951/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -3648,52 +3815,52 @@ exports[`Storyshots props controls (disabled) 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -3701,7 +3868,7 @@ exports[`Storyshots props controls (disabled) 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -3943,8 +4110,8 @@ exports[`Storyshots props default 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -4057,26 +4224,26 @@ exports[`Storyshots props default 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -4084,52 +4251,52 @@ exports[`Storyshots props default 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -4137,7 +4304,7 @@ exports[`Storyshots props default 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -4379,8 +4546,8 @@ exports[`Storyshots props direction + contrast 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -4515,26 +4682,26 @@ exports[`Storyshots props direction + contrast 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="rtl"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -4542,52 +4709,52 @@ exports[`Storyshots props direction + contrast 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="rtl"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="rtl"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -4595,7 +4762,7 @@ exports[`Storyshots props direction + contrast 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -4837,8 +5004,8 @@ exports[`Storyshots props direction 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -4957,26 +5124,26 @@ exports[`Storyshots props direction 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="rtl"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -4984,52 +5151,52 @@ exports[`Storyshots props direction 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="rtl"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="rtl"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -5037,7 +5204,7 @@ exports[`Storyshots props direction 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -5280,8 +5447,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -5417,26 +5584,26 @@ Array [
       </pre>
     </div>
     <a
-      className="c3 microlink_card c4"
+      className="c3 microlink_card microlink_card__placeholder c4"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c5 c6 microlink_card__media microlink_card__media_image"
+        className="c5 c6 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c7 microlink_card__content"
       >
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -5444,52 +5611,52 @@ Array [
           }
         />
         <span
-          className="c10"
+          className=" c10 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c3 microlink_card c4"
+      className="c3 microlink_card microlink_card__placeholder c4"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c11 c6 microlink_card__media microlink_card__media_image"
+        className="c11 c6 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c12 microlink_card__content"
       >
         <span
-          className="c13"
+          className=" c13 microlink_card__placeholder_content"
         />
         <span
-          className="c10"
+          className=" c10 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c14 microlink_card c4"
+      className="c14 microlink_card microlink_card__placeholder c4"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c15 c6 microlink_card__media microlink_card__media_image"
+        className="c15 c6 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c16 microlink_card__content"
       >
         <span
-          className="c17"
+          className=" c17 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -5497,7 +5664,7 @@ Array [
           }
         />
         <span
-          className="c10"
+          className=" c10 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -5736,8 +5903,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -5875,26 +6042,26 @@ Array [
       </pre>
     </div>
     <a
-      className="c3 microlink_card c4"
+      className="c3 microlink_card microlink_card__placeholder c4"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c5 c6 microlink_card__media microlink_card__media_image"
+        className="c5 c6 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c7 microlink_card__content"
       >
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -5902,52 +6069,52 @@ Array [
           }
         />
         <span
-          className="c10"
+          className=" c10 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c3 microlink_card c4"
+      className="c3 microlink_card microlink_card__placeholder c4"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c11 c6 microlink_card__media microlink_card__media_image"
+        className="c11 c6 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c12 microlink_card__content"
       >
         <span
-          className="c13"
+          className=" c13 microlink_card__placeholder_content"
         />
         <span
-          className="c10"
+          className=" c10 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c14 microlink_card c4"
+      className="c14 microlink_card microlink_card__placeholder c4"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c15 c6 microlink_card__media microlink_card__media_image"
+        className="c15 c6 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c16 microlink_card__content"
       >
         <span
-          className="c17"
+          className=" c17 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -5955,7 +6122,7 @@ Array [
           }
         />
         <span
-          className="c10"
+          className=" c10 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -6198,8 +6365,8 @@ exports[`Storyshots props loading 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -6312,26 +6479,26 @@ exports[`Storyshots props loading 1`] = `
     https://microlink.io
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -6339,52 +6506,52 @@ exports[`Storyshots props loading 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -6392,7 +6559,7 @@ exports[`Storyshots props loading 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -6634,8 +6801,8 @@ exports[`Storyshots props mediaRef 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -6748,26 +6915,26 @@ exports[`Storyshots props mediaRef 1`] = `
     https://www.facebook.com/natgeo/videos/10156364216738951/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -6775,52 +6942,52 @@ exports[`Storyshots props mediaRef 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.facebook.com/natgeo/videos/10156364216738951/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -6828,7 +6995,7 @@ exports[`Storyshots props mediaRef 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -7070,8 +7237,8 @@ exports[`Storyshots setData function 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -7184,26 +7351,26 @@ exports[`Storyshots setData function 1`] = `
     https://microlink.io
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -7211,52 +7378,52 @@ exports[`Storyshots setData function 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -7264,7 +7431,7 @@ exports[`Storyshots setData function 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -7506,8 +7673,8 @@ exports[`Storyshots setData object 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -7620,26 +7787,26 @@ exports[`Storyshots setData object 1`] = `
     https://microlink.io
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -7647,52 +7814,52 @@ exports[`Storyshots setData object 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://microlink.io"
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -7700,7 +7867,7 @@ exports[`Storyshots setData object 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -7802,8 +7969,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -7878,26 +8045,26 @@ Array [
       https://youtube.com
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://youtube.com"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -7905,7 +8072,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -8003,8 +8170,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -8079,26 +8246,26 @@ Array [
       https://example.com
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://example.com"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -8106,7 +8273,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -8350,8 +8517,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -8464,7 +8631,7 @@ Array [
       https://www.apple.com/music/
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -8477,19 +8644,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -8497,12 +8664,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -8515,21 +8682,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -8542,19 +8709,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -8562,7 +8729,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -8801,8 +8968,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -8915,7 +9082,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -8928,19 +9095,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -8948,12 +9115,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -8966,21 +9133,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -8993,19 +9160,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -9013,7 +9180,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -9252,8 +9419,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -9366,7 +9533,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -9379,19 +9546,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -9399,12 +9566,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -9417,21 +9584,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -9444,19 +9611,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -9464,7 +9631,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -9708,8 +9875,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -9822,7 +9989,7 @@ Array [
       https://www.apple.com/music/
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -9835,19 +10002,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -9855,12 +10022,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -9873,21 +10040,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -9900,19 +10067,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -9920,7 +10087,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -10159,8 +10326,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -10273,7 +10440,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -10286,19 +10453,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -10306,12 +10473,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -10324,21 +10491,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -10351,19 +10518,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -10371,7 +10538,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -10610,8 +10777,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -10724,7 +10891,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -10737,19 +10904,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -10757,12 +10924,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -10775,21 +10942,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -10802,19 +10969,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -10822,7 +10989,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -11061,8 +11228,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -11175,7 +11342,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -11188,19 +11355,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -11208,12 +11375,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -11226,21 +11393,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -11253,19 +11420,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -11273,7 +11440,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -11512,8 +11679,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -11626,7 +11793,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -11639,19 +11806,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -11659,12 +11826,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -11677,21 +11844,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -11704,19 +11871,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -11724,7 +11891,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -11963,8 +12130,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -12077,7 +12244,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -12090,19 +12257,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -12110,12 +12277,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -12128,21 +12295,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -12155,19 +12322,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -12175,7 +12342,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -12418,8 +12585,8 @@ exports[`Storyshots style misc 1`] = `
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -12532,7 +12699,7 @@ exports[`Storyshots style misc 1`] = `
     https://www.apple.com/music/
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
@@ -12546,19 +12713,19 @@ exports[`Storyshots style misc 1`] = `
     target="_blank"
   >
     <div
-      className="c4 c5 microlink_card__media microlink_card__media_image"
+      className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c6 microlink_card__content"
     >
       <span
-        className="c7"
+        className=" c7 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -12566,12 +12733,12 @@ exports[`Storyshots style misc 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c2 microlink_card c3"
+    className="c2 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
@@ -12585,21 +12752,21 @@ exports[`Storyshots style misc 1`] = `
     target="_blank"
   >
     <div
-      className="c10 c5 microlink_card__media microlink_card__media_image"
+      className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c11 microlink_card__content"
     >
       <span
-        className="c12"
+        className=" c12 microlink_card__placeholder_content"
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
   <a
-    className="c13 microlink_card c3"
+    className="c13 microlink_card microlink_card__placeholder c3"
     direction="ltr"
     href="https://www.apple.com/music/"
     rel="noopener noreferrer"
@@ -12613,19 +12780,19 @@ exports[`Storyshots style misc 1`] = `
     target="_blank"
   >
     <div
-      className="c14 c5 microlink_card__media microlink_card__media_image"
+      className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
     />
     <div
       className="c15 microlink_card__content"
     >
       <span
-        className="c16"
+        className=" c16 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
       />
       <span
-        className="c8"
+        className=" c8 microlink_card__placeholder_content"
         style={
           Object {
             "marginBottom": "12px",
@@ -12633,7 +12800,7 @@ exports[`Storyshots style misc 1`] = `
         }
       />
       <span
-        className="c9"
+        className=" c9 microlink_card__placeholder_content"
       />
     </div>
   </a>
@@ -12876,8 +13043,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -12990,7 +13157,7 @@ Array [
       https://www.apple.com/music/
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -13003,19 +13170,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -13023,12 +13190,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -13041,21 +13208,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://www.apple.com/music/"
       rel="noopener noreferrer"
@@ -13068,19 +13235,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -13088,7 +13255,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -13327,8 +13494,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -13441,7 +13608,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -13454,19 +13621,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -13474,12 +13641,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -13492,21 +13659,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -13519,19 +13686,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -13539,7 +13706,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -13778,8 +13945,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -13892,7 +14059,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -13905,19 +14072,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -13925,12 +14092,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -13943,21 +14110,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -13970,19 +14137,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -13990,7 +14157,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -14229,8 +14396,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -14343,7 +14510,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -14356,19 +14523,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -14376,12 +14543,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -14394,21 +14561,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -14421,19 +14588,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -14441,7 +14608,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -14680,8 +14847,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -14794,7 +14961,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -14807,19 +14974,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -14827,12 +14994,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -14845,21 +15012,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -14872,19 +15039,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -14892,7 +15059,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
@@ -15131,8 +15298,8 @@ Array [
   display: block;
   -webkit-animation: ibPKPZ .75s linear infinite;
   animation: ibPKPZ .75s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   height: 10px;
 }
 
@@ -15245,7 +15412,7 @@ Array [
       https://microlink.io
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -15258,19 +15425,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c4 c5 microlink_card__media microlink_card__media_image"
+        className="c4 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c6 microlink_card__content"
       >
         <span
-          className="c7"
+          className=" c7 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -15278,12 +15445,12 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c2 microlink_card c3"
+      className="c2 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -15296,21 +15463,21 @@ Array [
       target="_blank"
     >
       <div
-        className="c10 c5 microlink_card__media microlink_card__media_image"
+        className="c10 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c11 microlink_card__content"
       >
         <span
-          className="c12"
+          className=" c12 microlink_card__placeholder_content"
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
     <a
-      className="c13 microlink_card c3"
+      className="c13 microlink_card microlink_card__placeholder c3"
       direction="ltr"
       href="https://microlink.io"
       rel="noopener noreferrer"
@@ -15323,19 +15490,19 @@ Array [
       target="_blank"
     >
       <div
-        className="c14 c5 microlink_card__media microlink_card__media_image"
+        className="c14 c5 microlink_card__placeholder_media microlink_card__media microlink_card__media_image"
       />
       <div
         className="c15 microlink_card__content"
       >
         <span
-          className="c16"
+          className=" c16 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
         />
         <span
-          className="c8"
+          className=" c8 microlink_card__placeholder_content"
           style={
             Object {
               "marginBottom": "12px",
@@ -15343,7 +15510,7 @@ Array [
           }
         />
         <span
-          className="c9"
+          className=" c9 microlink_card__placeholder_content"
         />
       </div>
     </a>
