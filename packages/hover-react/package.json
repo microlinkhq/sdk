@@ -36,6 +36,10 @@
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
     "@babel/runtime": "latest",
+    "@emotion/babel-plugin": "latest",
+    "@emotion/jest": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
     "@microlink/demo-links": "latest",
     "@rollup/plugin-babel": "latest",
     "@rollup/plugin-commonjs": "latest",
@@ -57,7 +61,6 @@
     "jest": "26",
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
-    "jest-styled-components": "latest",
     "lodash": "latest",
     "prop-types": "latest",
     "react": "^17",
@@ -65,7 +68,6 @@
     "rollup": "latest",
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-visualizer": "latest",
-    "styled-components": "latest",
     "unfetch": "latest"
   },
   "engines": {
@@ -91,9 +93,10 @@
     "verbose": true
   },
   "peerDependencies": {
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "react": ">= 17",
-    "react-dom": ">= 17",
-    "styled-components": "^5"
+    "react-dom": ">= 17"
   },
   "publishConfig": {
     "access": "public"

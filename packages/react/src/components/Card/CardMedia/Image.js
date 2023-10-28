@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 import Wrap from './Wrap'
 import { GlobalContext } from '../../../context/GlobalState'
 import { classNames, imageProxy } from '../../../utils'
 
-const ImageWrap = styled(Wrap).attrs({
-  className: `${classNames.media} ${classNames.image}`
-})`
+const ImageWrap = styled(Wrap)`
   background-image: ${({ url }) => (url ? `url('${imageProxy(url)}')` : '')};
 `
+
+ImageWrap.defaultProps = { className: `${classNames.media} ${classNames.image}` }
 
 const ImageComponent = props => {
   const {

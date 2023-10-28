@@ -1,7 +1,7 @@
 /* eslint-disable multiline-ternary */
 
 import React, { useContext } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 import { emptyStateAnimation, emptyStateImageAnimation } from './CardAnimation'
 import CardImage from './CardMedia/Image'

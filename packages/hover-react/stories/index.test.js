@@ -1,4 +1,8 @@
+/* global expect */
+
 import initStoryshots from '@storybook/addon-storyshots'
-import 'jest-styled-components'
+import { createSerializer } from '@emotion/jest'
+
+expect.addSnapshotSerializer(createSerializer())
 
 initStoryshots()

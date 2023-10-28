@@ -1,5 +1,6 @@
 import React, { useCallback, useContext, useMemo, useRef } from 'react'
-import styled, { css } from 'styled-components'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
 import { transition } from '../../../../../theme'
 import {
@@ -25,28 +26,14 @@ const getProgressBarHeight = size =>
 const getProgressBarActiveHeight = size =>
   Math.floor(HEIGHT * (activeHeightScales[size] || 1))
 
-const OuterWrap = styled('div').attrs(() => ({
-  className: classNames.progressBar
-}))`
+const OuterWrap = styled('div')`
   position: relative;
   padding: ${PADDING}px ${PADDING / 2}px ${PADDING / 2}px;
   z-index: 2;
   backface-visibility: hidden;
 `
 
-const BarsWrap = styled('div').attrs(({ cardSize, isDragging }) => {
-  if (isDragging) {
-    const activeHeight = getProgressBarActiveHeight(cardSize)
-
-    return {
-      style: {
-        height: `${activeHeight}px`
-      }
-    }
-  }
-
-  return {}
-})`
+const BarsWrap = styled('div')`
   background: transparent;
   border-radius: 9999px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -77,11 +64,7 @@ const ProgressLine = styled('div')`
   overflow: hidden;
 `
 
-const ProgressMask = styled('div').attrs(({ maskScale }) => ({
-  style: {
-    transform: `scaleX(${maskScale})`
-  }
-}))`
+const ProgressMask = styled('div')`
   position: absolute;
   left: 0;
   top: -50%;
@@ -92,16 +75,7 @@ const ProgressMask = styled('div').attrs(({ maskScale }) => ({
   will-change: transform;
 `
 
-const ProgressHover = styled('div').attrs(
-  ({ cursorRatio, isHovering, progressPercent }) => ({
-    style: {
-      left: progressPercent,
-      transform: `scaleX(${cursorRatio})`,
-      opacity: isHovering ? 1 : 0,
-      visibility: isHovering ? 'visible' : 'hidden'
-    }
-  })
-)`
+const ProgressHover = styled('div')`
   position: absolute;
   top: 0;
   right: 0;
@@ -112,12 +86,7 @@ const ProgressHover = styled('div').attrs(
   will-change: left, transform, opacity, visible;
 `
 
-const BufferedChunk = styled('div').attrs(({ start, end }) => ({
-  style: {
-    left: `${start}px`,
-    right: `${end}px`
-  }
-}))`
+const BufferedChunk = styled('div')`
   background: rgba(255, 255, 255, 0.35);
   position: absolute;
   top: 0;
@@ -152,6 +121,20 @@ const ProgressBar = ({
 
     return 0
   }, [])
+
+  const barsWrapStyles = useMemo(() => {
+    if (isDragging) {
+      const activeHeight = getProgressBarActiveHeight(size)
+
+      return {
+        style: {
+          height: `${activeHeight}px`
+        }
+      }
+    }
+
+    return {}
+  }, [isDragging, size])
 
   const progressRatio = useMemo(() => clampNumber(progress / duration, 0, 1), [
     duration,
@@ -218,20 +201,23 @@ const ProgressBar = ({
   ])
 
   return (
-    <OuterWrap cardSize={size} ref={wrapRef} {...mouseEvents}>
-      <BarsWrap cardSize={size} isDragging={isDragging}>
+    <OuterWrap cardSize={size} className={classNames.progressBar} ref={wrapRef} {...mouseEvents}>
+      <BarsWrap cardSize={size} style={barsWrapStyles}>
         <ProgressLine>
           <ProgressHover
-            cursorRatio={cursorRatio}
-            isHovering={isHovering}
-            progressPercent={progressPercent}
+            style={{
+              left: progressPercent,
+              transform: `scaleX(${cursorRatio})`,
+              opacity: isHovering ? 1 : 0,
+              visibility: isHovering ? 'visible' : 'hidden'
+            }}
           />
 
-          {bufferedMediaChunks.map(({ key, ...chunk }) => (
-            <BufferedChunk key={key} {...chunk} />
+          {bufferedMediaChunks.map(({ key, end, start }) => (
+            <BufferedChunk key={key} style={{ left: `${start}px`, right: `${end}px` }} />
           ))}
 
-          <ProgressMask maskScale={progressRatio} />
+          <ProgressMask style={{ transform: `scaleX(${progressRatio})` }} />
         </ProgressLine>
 
         <Scrubber

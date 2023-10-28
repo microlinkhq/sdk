@@ -12,7 +12,8 @@ const babelRc = JSON.parse(fs.readFileSync('./.babelrc'))
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
-  'styled-components': 'styled',
+  '@emotion/react': 'emotionReact',
+  '@emotion/styled': 'emotionStyled',
   '@microlink/mql': 'mql'
 }
 
@@ -40,7 +41,6 @@ const build = ({ file, format, name, exports }) => {
   return {
     input: './src/index.js',
     output: {
-      interop: id => (id === 'styled-components' ? 'esModule' : 'default'),
       sourcemap: compress,
       file,
       format,

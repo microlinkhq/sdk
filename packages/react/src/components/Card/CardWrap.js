@@ -1,5 +1,6 @@
 import { createElement, forwardRef, useContext } from 'react'
-import styled, { css } from 'styled-components'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
 import { GlobalContext } from '../../context/GlobalState'
 import { font, animation, speed } from '../../theme'
@@ -43,8 +44,7 @@ const rtlStyle = ({ cardSize }) => css`
   flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'};
 `
 
-const baseStyle = css(
-  () => `
+const baseStyle = css`
   max-width: var(--microlink-max-width, 500px);
   background-color: var(--microlink-background-color, #fff);
   border-width: var(--microlink-border-width, 1px);
@@ -65,18 +65,22 @@ const baseStyle = css(
     outline: 0;
   }
 `
-)
 
-const Element = styled('a')(
-  baseStyle,
-  ({ isLoading, contrast }) => !isLoading && !contrast && hoverStyle,
-  ({ cardSize }) => isLarge(cardSize) && largeStyle,
-  ({ direction }) => direction === 'rtl' && rtlStyle,
-  ({ backgroundColor, color, contrast }) =>
-    contrast && color && backgroundColor && contrastStyle,
-  ({ backgroundColor, color, contrast }) =>
-    contrast && (!color || !backgroundColor) && hoverStyle
-)
+const styles = ({ backgroundColor, cardSize, color, contrast, direction, isLoading }) => css`
+  ${baseStyle}
+
+  ${!isLoading && !contrast && hoverStyle}
+
+  ${isLarge(cardSize) && largeStyle}
+
+  ${direction === 'rtl' && rtlStyle({ cardSize })}
+
+  ${contrast && color && backgroundColor && contrastStyle({ backgroundColor, color })}
+
+  ${contrast && (!color || !backgroundColor) && hoverStyle}
+`
+
+const Element = styled('a')`${styles}`
 
 const CardWrap = forwardRef(({ href, rel, target, ...restProps }, ref) => {
   const {

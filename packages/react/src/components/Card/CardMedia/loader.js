@@ -1,4 +1,6 @@
-import styled, { css } from 'styled-components'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
+
 import { transition } from '../../../theme'
 
 export const ImageLoadCatcher = styled('img')`
@@ -8,7 +10,7 @@ export const ImageLoadCatcher = styled('img')`
   z-index: -1;
 `
 
-export const loadingOverlay = css`
+export const loadingOverlay = ({ isLoading }) => css`
   &::after {
     content: '';
     position: absolute;
@@ -20,10 +22,7 @@ export const loadingOverlay = css`
     z-index: 1;
     transition: ${transition.medium('opacity', 'visibility')};
     will-change: opacity;
-
-    ${({ isLoading }) => css`
-      opacity: ${(isLoading ? 1 : 0)};
-      visibility: ${(isLoading ? 'visible' : 'hidden')};
-    `};
+    opacity: ${(isLoading ? 1 : 0)};
+    visibility: ${(isLoading ? 'visible' : 'hidden')};
   }
 `

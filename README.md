@@ -10,7 +10,7 @@
 ### React
 
 ```
-npm install @microlink/react styled-components --save
+npm install @microlink/react @emotion/react @emotion/styled --save
 ```
 
 ### Vanilla

@@ -1,6 +1,6 @@
 import MicrolinkHover from '@microlink/hover-react'
 import localhostUrl from 'localhost-url-regex'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import ReactDOM from 'react-dom'
 import React from 'react'
 

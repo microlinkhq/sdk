@@ -8,8 +8,8 @@ import React, {
   useRef,
   useState
 } from 'react'
-
-import styled, { css } from 'styled-components'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
 import FooterControls from './FooterControls'
 import PlaybackButton from './PlaybackButton'
@@ -17,7 +17,6 @@ import ProgressBar from './ProgressBar'
 import SeekButton from './SeekButton'
 import Spinner from './Spinner'
 import { transition } from '../../../../theme'
-
 import {
   classNames,
   formatSeconds,
@@ -25,7 +24,6 @@ import {
   isFunction,
   clampNumber
 } from '../../../../utils'
-
 import { GlobalContext } from '../../../../context/GlobalState'
 
 const SPACE_KEY = 32
@@ -33,7 +31,7 @@ const L_ARROW_KEY = 37
 const R_ARROW_KEY = 39
 const M_KEY = 77
 
-const OuterWrap = styled('div').attrs({ className: classNames.mediaControls })`
+const OuterWrap = styled('div')`
   position: absolute;
   left: 0;
   top: 0;
@@ -431,6 +429,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
       {controls && (
         <OuterWrap
           {...outerWrapTitle}
+          className={classNames.mediaControls}
           tabIndex={0}
           hasInteracted={hasInteracted}
           isDragging={isDragging}

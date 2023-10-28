@@ -1,9 +1,10 @@
-/* global jest */
+/* global jest, expect */
 
 import initStoryshots from '@storybook/addon-storyshots'
 import { Headers, Request, Response } from 'node-fetch'
+import { createSerializer } from '@emotion/jest'
 
-import 'jest-styled-components'
+expect.addSnapshotSerializer(createSerializer())
 
 jest.mock('@microlink/mql', () =>
   require('@microlink/mql/' + require('@microlink/mql/package.json').browser)

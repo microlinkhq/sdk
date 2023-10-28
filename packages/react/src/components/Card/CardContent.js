@@ -1,9 +1,10 @@
 /* global URL */
 
 import React, { useCallback, useMemo, useContext } from 'react'
-import styled, { css } from 'styled-components'
-import CardText from './CardText'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
+import CardText from './CardText'
 import { transition } from '../../theme'
 import { classNames, media, isLarge, isSmall, isNil } from '../../utils'
 import { GlobalContext } from '../../context/GlobalState'
@@ -28,7 +29,7 @@ const mobileDescriptionStyle = css`
   `};
 `
 
-export const Content = styled('div').attrs({ className: classNames.content })`
+export const Content = styled('div')`
   display: flex;
   padding: 10px 15px;
   min-width: 0;
@@ -41,7 +42,9 @@ export const Content = styled('div').attrs({ className: classNames.content })`
   `};
 `
 
-const Header = styled('header').attrs({ className: classNames.title })`
+Content.defaultProps = { className: classNames.content }
+
+const Header = styled('header')`
   text-align: left;
   font-weight: bold;
   margin: 0;
@@ -58,7 +61,7 @@ const Header = styled('header').attrs({ className: classNames.title })`
   `}
 `
 
-const Description = styled('div').attrs({ className: classNames.description })`
+const Description = styled('div')`
   text-align: left;
   font-size: 14px;
   flex-grow: 2;
@@ -68,7 +71,7 @@ const Description = styled('div').attrs({ className: classNames.description })`
   ${({ cardSize }) => !isLarge(cardSize) && mobileDescriptionStyle};
 `
 
-const Footer = styled('footer').attrs({ className: classNames.url })`
+const Footer = styled('footer')`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,7 +95,7 @@ const Author = styled(CardText)`
   }
 `
 
-const PoweredBy = styled('span').attrs({ title: 'microlink.io' })`
+const PoweredBy = styled('span')`
   background: url('https://cdn.microlink.io/logo/logo.svg') no-repeat center
     center;
   display: block;
@@ -124,17 +127,17 @@ const CardContent = () => {
 
   return (
     <Content cardSize={size}>
-      <Header cardSize={size}>
+      <Header cardSize={size} className={classNames.title}>
         <CardText useNanoClamp={false}>{title}</CardText>
       </Header>
       {!isSmallCard && (
-        <Description cardSize={size}>
+        <Description cardSize={size} className={classNames.description}>
           <CardText lines={2}>{description}</CardText>
         </Description>
       )}
-      <Footer cardSize={size}>
+      <Footer cardSize={size} className={classNames.url}>
         <Author useNanoClamp={false}>{formattedUrl}</Author>
-        <PoweredBy onClick={handleOnClick} />
+        <PoweredBy onClick={handleOnClick} title='microlink.io' />
       </Footer>
     </Content>
   )

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import styled, { css } from 'styled-components'
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
 import { GlobalContext } from '../../../context/GlobalState'
 import { media } from '../../../utils'
@@ -38,9 +39,10 @@ const StyledWrap = styled('div')`
     display: block;
   }
 
-  ${({ cardSize }) => mediaSizeStyles[cardSize]};
-
-  ${loadingOverlay};
+  ${({ isLoading, cardSize }) => css`
+    ${mediaSizeStyles[cardSize]}
+    ${loadingOverlay({ isLoading })}
+  `};
 `
 
 const Wrap = props => {
