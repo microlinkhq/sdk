@@ -24,7 +24,7 @@
     "react"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.11.1",
+    "@microlink/mql": "~0.12.0",
     "localhost-url-regex": "~1.0.4",
     "nanoclamp": "~2.0.4"
   },
@@ -43,7 +43,6 @@
     "@rollup/plugin-node-resolve": "latest",
     "@rollup/plugin-replace": "latest",
     "@rollup/plugin-terser": "latest",
-    "@storybook/addon-storyshots": "~6.5.16",
     "@storybook/addons": "~6.5.16",
     "@storybook/builder-webpack5": "~6.5.16",
     "@storybook/manager-webpack5": "~6.5.16",
@@ -56,8 +55,8 @@
     "jest": "26",
     "jest-environment-enzyme": "latest",
     "jest-enzyme": "latest",
-    "jest-styled-components": "latest",
     "lodash": "latest",
+    "esbuild": "latest",
     "prop-types": "latest",
     "react": "^17",
     "react-dom": "^17",
@@ -76,9 +75,11 @@
   "scripts": {
     "build": "NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs",
     "build-storybook": "NODE_ENV=production build-storybook --quiet",
+    "transpile": "echo \"export { fetchFromApi, getApiUrl } from '@microlink/mql'\" | esbuild --bundle --target=ES2019 --format=esm --minify-whitespace --minify-identifiers > src/utils/mql.js",
     "dev": "start-storybook -p 6006",
     "start": "node scripts/start.js",
     "pretest": "npm run build",
+    "postinstall": "npm run transpile",
     "test": "NODE_ENV=test jest --detectOpenHandles"
   },
   "license": "MIT",

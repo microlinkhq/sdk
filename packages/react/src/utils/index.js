@@ -1,4 +1,4 @@
-import { fetchFromApi, getApiUrl as createApiUrl } from '@microlink/mql'
+import { fetchFromApi, getApiUrl as createApiUrl } from './mql'
 import localhostUrl from 'localhost-url-regex'
 import { css } from 'styled-components'
 
