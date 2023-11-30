@@ -43,12 +43,6 @@
     "@rollup/plugin-node-resolve": "latest",
     "@rollup/plugin-replace": "latest",
     "@rollup/plugin-terser": "latest",
-    "@storybook/addon-storyshots": "~6.5.16",
-    "@storybook/addons": "~6.5.16",
-    "@storybook/builder-webpack5": "~6.5.16",
-    "@storybook/manager-webpack5": "~6.5.16",
-    "@storybook/react": "~6.5.16",
-    "@storybook/theming": "~6.5.16",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
     "enzyme": "latest",
@@ -64,8 +58,7 @@
     "rollup": "latest",
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-visualizer": "latest",
-    "styled-components": "latest",
-    "unfetch": "latest"
+    "styled-components": "latest"
   },
   "engines": {
     "node": ">= 10"
@@ -75,8 +68,6 @@
   ],
   "scripts": {
     "build": "NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs",
-    "build-storybook": "NODE_ENV=production build-storybook --quiet",
-    "dev": "start-storybook -p 6006",
     "start": "node scripts/start.js",
     "pretest": "npm run build",
     "test": "NODE_ENV=test jest --detectOpenHandles"

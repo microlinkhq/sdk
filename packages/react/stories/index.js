@@ -1,5 +1,3 @@
-import 'unfetch/polyfill'
-
 import { storiesOf } from '@storybook/react'
 
 import { urls, urlsVideo, urlsAudio, urlsIframe } from './data'
@@ -83,8 +81,7 @@ storiesOf('setData', module)
     createStoryEntry({
       setData: {
         image: {
-          url:
-            'https://media.tenor.com/images/5d4791abbfa98823cdbcd82b7ece2ced/tenor.gif'
+          url: 'https://media.tenor.com/images/5d4791abbfa98823cdbcd82b7ece2ced/tenor.gif'
         },
         title: 'Microlink Query Language',
         description: 'Turns any web into data',
@@ -114,8 +111,7 @@ storiesOf('setData', module)
             size_pretty: '8.94 MB'
           },
           video: {
-            url:
-              'https://cdn.microlink.io/data/assets/youtube.com!watch!v=9P6rdqiybaw/r3---sn-ab5l6nzl.googlevideo.com!videoplayback!c=WEB&dur=552.054&ei=-fbwXa7LFq2Khwaf6JnoDg&expire=15.mp4',
+            url: 'https://cdn.microlink.io/data/assets/youtube.com!watch!v=9P6rdqiybaw/r3---sn-ab5l6nzl.googlevideo.com!videoplayback!c=WEB&dur=552.054&ei=-fbwXa7LFq2Khwaf6JnoDg&expire=15.mp4',
             type: 'mp4',
             duration: 552.007943,
             size: 54633895,
@@ -132,8 +128,7 @@ storiesOf('setData', module)
         media: ['iframe', 'video', 'audio'],
         setData: data => ({
           iframe: {
-            html:
-              "<marquee>welcome to microlink.io! You're the visitor number 12242! CONGRATS!! You win an API key, just send 1$ to hello@microlink.io for receiving it into your inbox</marquee>",
+            html: "<marquee>welcome to microlink.io! You're the visitor number 12242! CONGRATS!! You win an API key, just send 1$ to hello@microlink.io for receiving it into your inbox</marquee>",
             scripts: []
           },
           audio: {
@@ -145,8 +140,7 @@ storiesOf('setData', module)
             size_pretty: '8.94 MB'
           },
           video: {
-            url:
-              'https://cdn.microlink.io/data/assets/youtube.com!watch!v=9P6rdqiybaw/r3---sn-ab5l6nzl.googlevideo.com!videoplayback!c=WEB&dur=552.054&ei=-fbwXa7LFq2Khwaf6JnoDg&expire=15.mp4',
+            url: 'https://cdn.microlink.io/data/assets/youtube.com!watch!v=9P6rdqiybaw/r3---sn-ab5l6nzl.googlevideo.com!videoplayback!c=WEB&dur=552.054&ei=-fbwXa7LFq2Khwaf6JnoDg&expire=15.mp4',
             type: 'mp4',
             duration: 552.007943,
             size: 54633895,
