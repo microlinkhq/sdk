@@ -60,7 +60,8 @@
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-visualizer": "latest",
     "storybook": "7",
-    "styled-components": "latest"
+    "styled-components": "latest",
+    "vitest": "latest"
   },
   "engines": {
     "node": ">= 10"
@@ -73,7 +74,8 @@
     "build-storybook": "storybook build",
     "pretest": "npm run build",
     "start": "node scripts/start.js",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "test": "vitest"
   },
   "license": "MIT",
   "peerDependencies": {
