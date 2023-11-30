@@ -52,12 +52,6 @@
     "@storybook/test": "7",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
-    "enzyme": "latest",
-    "enzyme-adapter-react-16": "latest",
-    "jest": "26",
-    "jest-environment-enzyme": "latest",
-    "jest-enzyme": "latest",
-    "jest-styled-components": "latest",
     "lodash": "latest",
     "prop-types": "latest",
     "react": "^17",
@@ -79,18 +73,9 @@
     "build-storybook": "storybook build",
     "pretest": "npm run build",
     "start": "node scripts/start.js",
-    "storybook": "storybook dev -p 6006",
-    "test": "NODE_ENV=test jest --detectOpenHandles"
+    "storybook": "storybook dev -p 6006"
   },
   "license": "MIT",
-  "jest": {
-    "setupFilesAfterEnv": [
-      "jest-enzyme"
-    ],
-    "testEnvironment": "enzyme",
-    "testURL": "http://localhost/",
-    "verbose": true
-  },
   "peerDependencies": {
     "react": ">= 17",
     "react-dom": ">= 17",
