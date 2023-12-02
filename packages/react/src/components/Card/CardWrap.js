@@ -69,7 +69,7 @@ const baseStyle = css(
 
 const Element = styled('a')(
   baseStyle,
-  ({ isLoading, contrast }) => !isLoading && !contrast && hoverStyle,
+  ({ $isLoading, contrast }) => !$isLoading && !contrast && hoverStyle,
   ({ $cardSize }) => isLarge($cardSize) && largeStyle,
   ({ direction }) => direction === 'rtl' && rtlStyle,
   ({ backgroundColor, color, contrast }) =>
