@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 import MediaButton from './MediaButton'
 import { classNames, media, isLarge } from '../../../../utils'
@@ -56,7 +56,7 @@ const VolumeButton = styled(MediaButton).attrs({
     height: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
 
     ${({ cardSize }) =>
-    !isLarge(cardSize) &&
+      !isLarge(cardSize) &&
       media.mobile`
       width: 12px;
       height: 12px;
@@ -105,9 +105,10 @@ const FooterControls = ({
   onPlaybackRateClick,
   playbackRate
 }) => {
-  const VolumeComponent = useMemo(() => (isMuted ? VolumeMute : VolumeUp), [
-    isMuted
-  ])
+  const VolumeComponent = useMemo(
+    () => (isMuted ? VolumeMute : VolumeUp),
+    [isMuted]
+  )
   const isLargeCard = useMemo(() => isLarge(cardSize), [cardSize])
 
   return (

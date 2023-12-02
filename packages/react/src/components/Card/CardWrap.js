@@ -1,5 +1,5 @@
 import { createElement, forwardRef, useContext } from 'react'
-import styled, { css } from 'styled-components'
+import { styled, css } from 'styled-components'
 
 import { GlobalContext } from '../../context/GlobalState'
 import { font, animation, speed } from '../../theme'
@@ -35,7 +35,7 @@ const hoverStyle = css`
   will-change: background, border-color;
   &:hover {
     background-color: var(--microlink-hover-background-color, #f5f8fa);
-    border-color: var(--microlink-hover-border-color, #8899A680);
+    border-color: var(--microlink-hover-border-color, #8899a680);
   }
 `
 

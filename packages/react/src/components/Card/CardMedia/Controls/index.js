@@ -9,7 +9,7 @@ import React, {
   useState
 } from 'react'
 
-import styled, { css } from 'styled-components'
+import { styled, css } from 'styled-components'
 
 import FooterControls from './FooterControls'
 import PlaybackButton from './PlaybackButton'
@@ -81,12 +81,12 @@ const ControlsTop = styled('div')`
   ${({ isVisible }) =>
     !isVisible &&
     css`
-    *[class*="${classNames.mediaControls}"]:not(.${classNames.progressTime}) {
-      transition: ${transition.medium('opacity', 'visibility')};
-      opacity: 0;
-      visibility: hidden;
-    }
-  `}
+      *[class*='${classNames.mediaControls}']:not(.${classNames.progressTime}) {
+        transition: ${transition.medium('opacity', 'visibility')};
+        opacity: 0;
+        visibility: hidden;
+      }
+    `}
 `
 
 const getNextPlaybackRate = rate => {
@@ -336,9 +336,10 @@ const Controls = ({ MediaComponent, mediaProps }) => {
     [onWrapClick, onWrapKeyDown, onWrapMouseMove, onWrapMouseOver]
   )
 
-  const outerWrapTitle = useMemo(() => (hasInteracted ? { title: '' } : {}), [
-    hasInteracted
-  ])
+  const outerWrapTitle = useMemo(
+    () => (hasInteracted ? { title: '' } : {}),
+    [hasInteracted]
+  )
 
   const bufferedMedia = useMemo(() => {
     if (buffered && buffered.length && mediaRef.current) {

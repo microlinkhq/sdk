@@ -1,5 +1,5 @@
 import React, { useContext, useMemo } from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 import Wrap from './Wrap'
 import Controls from './Controls'
