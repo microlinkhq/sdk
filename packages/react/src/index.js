@@ -58,8 +58,10 @@ const Card = props => {
     [lazy]
   )
   const lazyOptions = useMemo(() => (isObject(lazy) ? lazy : undefined), [lazy])
-  const [hasIntersected, cardRef] = useIntersectionObserver(
+  const cardRef = React.useRef(null)
+  const hasIntersected = useIntersectionObserver(
     isLazyEnabled,
+    cardRef,
     lazyOptions
   )
 
@@ -156,7 +158,7 @@ microlink.io/${error.code.toLowerCase()}
     }
   }, [apiUrlProps, fetchData, apiUrl, mergeData, canFetchData])
 
-  useEffect(toFetchData, [url, setData, hasIntersected])
+  useEffect(toFetchData, [url, toFetchData, setData, hasIntersected])
 
   const isLoading = isLoadingUndefined ? loadingState : loading
 
@@ -194,7 +196,6 @@ microlink.io/${error.code.toLowerCase()}
       className={`${classNames.main} ${className}`.trim()}
       href={url}
       $isLoading={isLoading}
-      ref={cardRef}
       {...restProps}
     >
       {isLoading ? (
