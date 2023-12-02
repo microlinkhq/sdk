@@ -39,8 +39,8 @@ const hoverStyle = css`
   }
 `
 
-const rtlStyle = ({ cardSize }) => css`
-  flex-direction: ${isLarge(cardSize) ? 'column-reverse' : 'row-reverse'};
+const rtlStyle = ({ $cardSize }) => css`
+  flex-direction: ${isLarge($cardSize) ? 'column-reverse' : 'row-reverse'};
 `
 
 const baseStyle = css(
@@ -70,7 +70,7 @@ const baseStyle = css(
 const Element = styled('a')(
   baseStyle,
   ({ isLoading, contrast }) => !isLoading && !contrast && hoverStyle,
-  ({ cardSize }) => isLarge(cardSize) && largeStyle,
+  ({ $cardSize }) => isLarge($cardSize) && largeStyle,
   ({ direction }) => direction === 'rtl' && rtlStyle,
   ({ backgroundColor, color, contrast }) =>
     contrast && color && backgroundColor && contrastStyle,
@@ -81,14 +81,14 @@ const Element = styled('a')(
 const CardWrap = forwardRef(({ href, rel, target, ...restProps }, ref) => {
   const {
     state: { backgroundColor, color, title },
-    props: { size: cardSize }
+    props: { size: $cardSize }
   } = useContext(GlobalContext)
 
   return createElement(Element, {
     ...(restProps.as === 'a' ? { href, rel, target } : undefined),
     ...restProps,
     backgroundColor,
-    cardSize,
+    $cardSize,
     color,
     ref,
     title

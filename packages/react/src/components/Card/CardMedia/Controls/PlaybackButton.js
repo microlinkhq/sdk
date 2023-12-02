@@ -44,13 +44,13 @@ const PlaybackButtonWrap = styled(MediaButton).attrs({
   className: classNames.playbackControl
 })`
   ${PlaybackIcon} {
-    ${({ cardSize }) => css`
-      width: ${iconSizes[cardSize]};
-      height: ${iconSizes[cardSize]};
-      padding: ${isLarge(cardSize) ? 0 : '8px'};
+    ${({ $cardSize }) => css`
+      width: ${iconSizes[$cardSize]};
+      height: ${iconSizes[$cardSize]};
+      padding: ${isLarge($cardSize) ? 0 : '8px'};
 
-      ${!isLarge(cardSize) &&
-      !isSmall(cardSize) &&
+      ${!isLarge($cardSize) &&
+      !isSmall($cardSize) &&
       media.mobile`
         width: calc(${iconSizes.small} * 1.2);
         height: calc(${iconSizes.small} * 1.2);

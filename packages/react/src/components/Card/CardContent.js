@@ -33,11 +33,11 @@ export const Content = styled('div').attrs({ className: classNames.content })`
   padding: 10px 15px;
   min-width: 0;
   box-sizing: border-box;
-  ${({ cardSize }) => css`
-    flex: ${!isLarge(cardSize) ? 1 : '0 0 125px'};
-    justify-content: ${!isSmall(cardSize) ? 'space-around' : 'space-between'};
-    flex-direction: ${!isSmall(cardSize) ? 'column' : 'row'};
-    align-items: ${!isSmall(cardSize) ? 'stretch' : 'center'};
+  ${({ $cardSize }) => css`
+    flex: ${!isLarge($cardSize) ? 1 : '0 0 125px'};
+    justify-content: ${!isSmall($cardSize) ? 'space-around' : 'space-between'};
+    flex-direction: ${!isSmall($cardSize) ? 'column' : 'row'};
+    align-items: ${!isSmall($cardSize) ? 'stretch' : 'center'};
   `};
 `
 
@@ -46,11 +46,11 @@ const Header = styled('header').attrs({ className: classNames.title })`
   font-weight: bold;
   margin: 0;
   width: 100%;
-  ${({ cardSize }) => css`
-    flex-grow: ${!isSmall(cardSize) ? 1.2 : 0.8};
-    font-size: ${!isSmall(cardSize) ? '16px' : '15px'};
+  ${({ $cardSize }) => css`
+    flex-grow: ${!isSmall($cardSize) ? 1.2 : 0.8};
+    font-size: ${!isSmall($cardSize) ? '16px' : '15px'};
 
-    ${isSmall(cardSize) &&
+    ${isSmall($cardSize) &&
     css`
       min-width: 0;
       padding-right: 14px;
@@ -65,7 +65,7 @@ const Description = styled('div').attrs({ className: classNames.description })`
   margin: auto 0;
   line-height: 18px;
   font-weight: normal;
-  ${({ cardSize }) => !isLarge(cardSize) && mobileDescriptionStyle};
+  ${({ $cardSize }) => !isLarge($cardSize) && mobileDescriptionStyle};
 `
 
 const Footer = styled('footer').attrs({ className: classNames.url })`
@@ -76,9 +76,9 @@ const Footer = styled('footer').attrs({ className: classNames.url })`
   margin: 0;
   flex-grow: 0;
   font-weight: normal;
-  ${({ cardSize }) => css`
-    font-size: ${!isSmall(cardSize) ? '12px' : '10px'};
-    ${!isSmall(cardSize) && 'width: 100%;'}
+  ${({ $cardSize }) => css`
+    font-size: ${!isSmall($cardSize) ? '12px' : '10px'};
+    ${!isSmall($cardSize) && 'width: 100%;'}
   `};
 `
 
@@ -123,16 +123,16 @@ const CardContent = () => {
   }, [])
 
   return (
-    <Content cardSize={size}>
-      <Header cardSize={size}>
+    <Content $cardSize={size}>
+      <Header $cardSize={size}>
         <CardText useNanoClamp={false}>{title}</CardText>
       </Header>
       {!isSmallCard && (
-        <Description cardSize={size}>
+        <Description $cardSize={size}>
           <CardText lines={2}>{description}</CardText>
         </Description>
       )}
-      <Footer cardSize={size}>
+      <Footer $cardSize={size}>
         <Author useNanoClamp={false}>{formattedUrl}</Author>
         <PoweredBy onClick={handleOnClick} />
       </Footer>

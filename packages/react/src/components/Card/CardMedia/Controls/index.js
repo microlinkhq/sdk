@@ -359,7 +359,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
 
   const footerControlsProps = useMemo(
     () => ({
-      cardSize: size,
+      $cardSize: size,
       currentTime,
       endTime,
       isMuted,
@@ -442,7 +442,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
 
           {!hasInteracted ? (
             <InnerWrap>
-              <PlaybackButton cardSize={size} />
+              <PlaybackButton $cardSize={size} />
             </InnerWrap>
           ) : (
             <>
@@ -452,18 +452,18 @@ const Controls = ({ MediaComponent, mediaProps }) => {
                     <SeekButton
                       className={classNames.rwControl}
                       type='rewind'
-                      cardSize={size}
+                      $cardSize={size}
                       onClick={event => onSeekClick(event, 'rewind')}
                     />
                   )}
 
-                  <PlaybackButton cardSize={size} isPlaying={isPlaying} />
+                  <PlaybackButton $cardSize={size} isPlaying={isPlaying} />
 
                   {isNotSmall && (
                     <SeekButton
                       className={classNames.ffwControl}
                       type='fastforward'
-                      cardSize={size}
+                      $cardSize={size}
                       onClick={event => onSeekClick(event, 'fastforward')}
                     />
                   )}
