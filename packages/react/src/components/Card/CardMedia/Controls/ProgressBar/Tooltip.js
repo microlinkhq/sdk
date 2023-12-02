@@ -26,7 +26,7 @@ const TooltipBase = styled('span').attrs(
   padding: 2px 3px;
   border-radius: 4px;
   font-family: ${font.mono};
-  font-size: ${({ cardSize }) => getMarkerFontSize(cardSize)}px;
+  font-size: ${({ $cardSize }) => getMarkerFontSize($cardSize)}px;
   line-height: 1;
   transition: ${transition.medium('opacity', 'visibility', 'transform')},
     ${transition.long('top')};
@@ -40,7 +40,7 @@ const Tooltip = forwardRef(
       <TooltipBase
         visible={isVisible}
         position={positionX}
-        cardSize={size}
+        $cardSize={size}
         ref={ref}
         isDragging={isDragging}
         {...props}

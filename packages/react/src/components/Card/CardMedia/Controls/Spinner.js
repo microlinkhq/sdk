@@ -43,9 +43,9 @@ const Wrap = styled(MediaButton).attrs(({ isVisible }) => ({
     opacity: isVisible ? 1 : 0,
     visibility: isVisible ? 'visible' : 'hidden'
   }
-}))(({ cardSize }) => {
-  const size = `${getSpinnerSize(cardSize)}px`
-  const offset = `${getSpinnerOffset(cardSize)}px`
+}))(({ $cardSize }) => {
+  const size = `${getSpinnerSize($cardSize)}px`
+  const offset = `${getSpinnerOffset($cardSize)}px`
 
   return css`
     position: absolute;
@@ -74,7 +74,7 @@ const Circle = styled('circle')`
 `
 
 const Spinner = ({ size, isVisible }) => (
-  <Wrap cardSize={size} className={classNames.spinner} isVisible={isVisible}>
+  <Wrap $cardSize={size} className={classNames.spinner} isVisible={isVisible}>
     <Svg viewBox='0 0 50 50'>
       <Circle cx='25' cy='25' r='20' />
     </Svg>

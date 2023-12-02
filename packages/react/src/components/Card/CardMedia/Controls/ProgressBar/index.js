@@ -34,9 +34,9 @@ const OuterWrap = styled('div').attrs(() => ({
   backface-visibility: hidden;
 `
 
-const BarsWrap = styled('div').attrs(({ cardSize, isDragging }) => {
+const BarsWrap = styled('div').attrs(({ $cardSize, isDragging }) => {
   if (isDragging) {
-    const activeHeight = getProgressBarActiveHeight(cardSize)
+    const activeHeight = getProgressBarActiveHeight($cardSize)
 
     return {
       style: {
@@ -56,9 +56,9 @@ const BarsWrap = styled('div').attrs(({ cardSize, isDragging }) => {
   pointer-events: none;
   position: relative;
 
-  ${({ cardSize }) => {
-    const height = getProgressBarHeight(cardSize)
-    const activeHeight = getProgressBarActiveHeight(cardSize)
+  ${({ $cardSize }) => {
+    const height = getProgressBarHeight($cardSize)
+    const activeHeight = getProgressBarActiveHeight($cardSize)
 
     return css`
       height: ${height}px;
@@ -218,8 +218,8 @@ const ProgressBar = ({
   )
 
   return (
-    <OuterWrap cardSize={size} ref={wrapRef} {...mouseEvents}>
-      <BarsWrap cardSize={size} isDragging={isDragging}>
+    <OuterWrap $cardSize={size} ref={wrapRef} {...mouseEvents}>
+      <BarsWrap $cardSize={size} isDragging={isDragging}>
         <ProgressLine>
           <ProgressHover
             cursorRatio={cursorRatio}
@@ -235,7 +235,7 @@ const ProgressBar = ({
         </ProgressLine>
 
         <Scrubber
-          cardSize={size}
+          $cardSize={size}
           isVisible={showAccessories}
           positionX={progressPercent}
         />

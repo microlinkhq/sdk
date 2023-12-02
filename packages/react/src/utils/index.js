@@ -84,13 +84,13 @@ export const imageProxy = url =>
   localhostUrl().test(url)
     ? url
     : `https://images.weserv.nl/?${new URLSearchParams({
-        url,
-        default: url,
-        l: 9,
-        af: '',
-        il: '',
-        n: -1
-      }).toString()}`
+      url,
+      default: url,
+      l: 9,
+      af: '',
+      il: '',
+      n: -1
+    }).toString()}`
 
 export const isLazySupported = !isSSR && 'IntersectionObserver' in window
 

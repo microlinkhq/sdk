@@ -28,9 +28,8 @@ const Scrubber = styled('div').attrs(({ isVisible, positionX }) => ({
   backface-visibility: hidden;
   z-index: 3;
 
-  ${({ cardSize }) => {
-    const scrubberSize = getScrubberSize(cardSize)
-
+  ${({ $cardSize }) => {
+    const scrubberSize = getScrubberSize($cardSize)
     return css`
       height: ${scrubberSize}px;
       width: ${scrubberSize}px;

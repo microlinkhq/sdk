@@ -193,7 +193,7 @@ microlink.io/${error.code.toLowerCase()}
     <CardWrap
       className={`${classNames.main} ${className}`.trim()}
       href={url}
-      isLoading={isLoading}
+      $isLoading={isLoading}
       ref={cardRef}
       {...restProps}
     >

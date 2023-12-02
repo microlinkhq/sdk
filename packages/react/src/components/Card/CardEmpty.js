@@ -16,15 +16,15 @@ const MediaEmpty = styled(CardImage)`
 const HeaderEmpty = styled('span')`
   opacity: 0.8;
   height: 16px;
-  width: ${({ cardSize }) => (!isSmall(cardSize) ? '60%' : '75%')};
+  width: ${({ $cardSize }) => (!isSmall($cardSize) ? '60%' : '75%')};
   display: block;
   background: #e1e8ed;
-  margin: ${({ cardSize }) =>
-    !isSmall(cardSize) ? '2px 0 8px' : '0 20px 0 0'};
+  margin: ${({ $cardSize }) =>
+    !isSmall($cardSize) ? '2px 0 8px' : '0 20px 0 0'};
   ${emptyStateAnimation};
 
-  ${({ cardSize }) =>
-    !isLarge(cardSize) &&
+  ${({ $cardSize }) =>
+    !isLarge($cardSize) &&
     `
     height: 15px;
   `};
@@ -47,8 +47,8 @@ const FooterEmpty = styled('span')`
   display: block;
   ${emptyStateAnimation} animation-delay: .25s;
 
-  ${({ cardSize }) =>
-    !isLarge(cardSize) &&
+  ${({ $cardSize }) =>
+    !isLarge($cardSize) &&
     `
     height: 10px;
   `};
@@ -62,14 +62,14 @@ const CardEmptyState = () => {
 
   return (
     <>
-      <MediaEmpty cardSize={size} />
-      <Content cardSize={size}>
-        <HeaderEmpty cardSize={size} />
+      <MediaEmpty $cardSize={size} />
+      <Content $cardSize={size}>
+        <HeaderEmpty $cardSize={size} />
         {!isSmallCard ? (
           <>
-            <DescriptionEmpty cardSize={size} />
+            <DescriptionEmpty $cardSize={size} />
             <DescriptionEmpty
-              cardSize={size}
+              $cardSize={size}
               style={{ marginBottom: '12px' }}
             />
           </>

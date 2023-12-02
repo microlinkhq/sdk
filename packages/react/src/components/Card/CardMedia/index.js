@@ -31,7 +31,7 @@ const CardMedia = () => {
 
   return (
     <>
-      <MediaComponent isLoading={isLoading} />
+      <MediaComponent $isLoading={isLoading} />
       {isLoading && (
         <ImageLoadCatcher src={imageUrl} onLoad={() => setIsLoading(false)} />
       )}

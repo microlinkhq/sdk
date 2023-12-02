@@ -21,9 +21,9 @@ export const loadingOverlay = css`
     transition: ${transition.medium('opacity', 'visibility')};
     will-change: opacity;
 
-    ${({ isLoading }) => css`
-      opacity: ${isLoading ? 1 : 0};
-      visibility: ${isLoading ? 'visible' : 'hidden'};
+    ${({ $isLoading }) => css`
+      opacity: ${$isLoading ? 1 : 0};
+      visibility: ${$isLoading ? 'visible' : 'hidden'};
     `};
   }
 `

@@ -34,7 +34,7 @@ const VolumeUp = props => (
 const BottomControls = styled('div')`
   z-index: 2;
   position: absolute;
-  bottom: ${({ cardSize }) => (isLarge(cardSize) ? 18 : 14)}px;
+  bottom: ${({ $cardSize }) => (isLarge($cardSize) ? 18 : 14)}px;
   left: 0;
   right: 0;
   display: flex;
@@ -52,11 +52,11 @@ const VolumeButton = styled(MediaButton).attrs({
   className: classNames.volumeControl
 })`
   ${VolumeIcon} {
-    width: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
-    height: ${({ cardSize }) => (isLarge(cardSize) ? 16 : 14)}px;
+    width: ${({ $cardSize }) => (isLarge($cardSize) ? 16 : 14)}px;
+    height: ${({ $cardSize }) => (isLarge($cardSize) ? 16 : 14)}px;
 
-    ${({ cardSize }) =>
-      !isLarge(cardSize) &&
+    ${({ $cardSize }) =>
+      !isLarge($cardSize) &&
       media.mobile`
       width: 12px;
       height: 12px;
@@ -67,8 +67,8 @@ const VolumeButton = styled(MediaButton).attrs({
 const PlaybackRateButton = styled(MediaButton).attrs({
   className: classNames.rateControl
 })`
-  font-size: ${({ cardSize }) => (isLarge(cardSize) ? 12 : 10)}px;
-  min-width: ${({ cardSize }) => (isLarge(cardSize) ? 33 : 28)}px;
+  font-size: ${({ $cardSize }) => (isLarge($cardSize) ? 12 : 10)}px;
+  min-width: ${({ $cardSize }) => (isLarge($cardSize) ? 33 : 28)}px;
   line-height: 1;
   font-weight: bold;
   border: 1.5px solid #fff;
@@ -78,8 +78,8 @@ const PlaybackRateButton = styled(MediaButton).attrs({
   color: #fff;
   margin-left: 10px;
 
-  ${({ cardSize }) =>
-    !isLarge(cardSize) &&
+  ${({ $cardSize }) =>
+    !isLarge($cardSize) &&
     media.mobile`
     font-size: 8px;
     margin-left: 8px;
@@ -97,7 +97,7 @@ const TimeLabel = styled('span').attrs({ className: classNames.progressTime })`
 `
 
 const FooterControls = ({
-  cardSize,
+  $cardSize,
   currentTime,
   endTime,
   isMuted,
@@ -109,15 +109,15 @@ const FooterControls = ({
     () => (isMuted ? VolumeMute : VolumeUp),
     [isMuted]
   )
-  const isLargeCard = useMemo(() => isLarge(cardSize), [cardSize])
+  const isLargeCard = useMemo(() => isLarge($cardSize), [$cardSize])
 
   return (
-    <BottomControls cardSize={cardSize}>
+    <BottomControls $cardSize={$cardSize}>
       {isLargeCard && <TimeLabel>{currentTime}</TimeLabel>}
 
       <VolumeButton
         title={isMuted ? 'Unmute' : 'Mute'}
-        cardSize={cardSize}
+        $cardSize={$cardSize}
         onClick={onMuteClick}
       >
         <VolumeIcon as={VolumeComponent} />
@@ -125,7 +125,7 @@ const FooterControls = ({
 
       <PlaybackRateButton
         title='Playback Rate'
-        cardSize={cardSize}
+        $cardSize={$cardSize}
         onClick={onPlaybackRateClick}
       >
         <span>{playbackRate}x</span>

@@ -38,7 +38,7 @@ const StyledWrap = styled('div')`
     display: block;
   }
 
-  ${({ cardSize }) => mediaSizeStyles[cardSize]};
+  ${({ $cardSize }) => mediaSizeStyles[$cardSize]};
 
   ${loadingOverlay};
 `
@@ -48,7 +48,7 @@ const Wrap = props => {
     props: { size }
   } = useContext(GlobalContext)
 
-  return <StyledWrap cardSize={size} {...props} />
+  return <StyledWrap $cardSize={size} {...props} />
 }
 
 export default Wrap

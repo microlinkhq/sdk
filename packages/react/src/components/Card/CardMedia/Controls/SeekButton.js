@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 import MediaButton from './MediaButton'
 import { media, isLarge } from '../../../../utils'
 
-const Backward = ({ cardSize, ...props }) => (
+const Backward = ({ $cardSize, ...props }) => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 29' {...props}>
     <path
       fill='#FFF'
@@ -17,7 +17,7 @@ const Backward = ({ cardSize, ...props }) => (
   </svg>
 )
 
-const Forward = ({ cardSize, ...props }) => (
+const Forward = ({ $cardSize, ...props }) => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 29' {...props}>
     <path
       fill='#FFF'
@@ -32,11 +32,11 @@ const Forward = ({ cardSize, ...props }) => (
 
 const SeekIcon = styled('svg')`
   stroke: #fff;
-  width: ${({ cardSize }) => (isLarge(cardSize) ? 30 : 24)}px;
-  height: ${({ cardSize }) => (isLarge(cardSize) ? 30 : 24)}px;
+  width: ${({ $cardSize }) => (isLarge($cardSize) ? 30 : 24)}px;
+  height: ${({ $cardSize }) => (isLarge($cardSize) ? 30 : 24)}px;
 
-  ${({ cardSize }) =>
-    !isLarge(cardSize) &&
+  ${({ $cardSize }) =>
+    !isLarge($cardSize) &&
     media.mobile`
     width: 0;
     height: 0;
@@ -44,10 +44,10 @@ const SeekIcon = styled('svg')`
 `
 
 const SeekButtonWrap = styled(MediaButton)`
-  margin: 0 ${({ cardSize }) => (isLarge(cardSize) ? '28px' : '3px')};
+  margin: 0 ${({ $cardSize }) => (isLarge($cardSize) ? '28px' : '3px')};
 `
 
-const SeekButton = ({ type = 'rewind', cardSize, ...props }) => {
+const SeekButton = ({ type = 'rewind', $cardSize, ...props }) => {
   const IconComponent = useMemo(
     () => (type === 'rewind' ? Backward : Forward),
     [type]
@@ -56,10 +56,10 @@ const SeekButton = ({ type = 'rewind', cardSize, ...props }) => {
   return (
     <SeekButtonWrap
       title={type === 'rewind' ? 'Rewind' : 'Forward'}
-      cardSize={cardSize}
+      $cardSize={$cardSize}
       {...props}
     >
-      <SeekIcon as={IconComponent} cardSize={cardSize} />
+      <SeekIcon as={IconComponent} $cardSize={$cardSize} />
     </SeekButtonWrap>
   )
 }
