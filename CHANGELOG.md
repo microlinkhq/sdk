@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.16](https://github.com/microlinkhq/sdk/compare/v5.5.15...v5.5.16) (2023-12-02)
+
+### Bug Fixes
+
+* linter warnings related with transient props ([#330](https://github.com/microlinkhq/sdk/issues/330)) ([cebb363](https://github.com/microlinkhq/sdk/commit/cebb363a31c699d85a78b0dff55b5694465fed43))
+* replace __VERSION__ ([#300](https://github.com/microlinkhq/sdk/issues/300)) ([c2789a4](https://github.com/microlinkhq/sdk/commit/c2789a47f8a4c3bf5c793de53f9a5a5aa2fccba5))
+
 ## [5.5.15](https://github.com/microlinkhq/sdk/compare/v5.5.14...v5.5.15) (2023-03-29)
 
 **Note:** Version bump only for package @microlink/root
