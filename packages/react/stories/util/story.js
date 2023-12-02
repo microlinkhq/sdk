@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
-import Microlink from '../src'
+import Microlink from '../../src'
 
 const StoryEntry = styled('div')`
   display: flex;
@@ -46,7 +46,7 @@ const VisualProps = ({ children }) => (
   </div>
 )
 
-const createStoryEntry = (storyProps = {}, showProps = false) => {
+export const Story = (storyProps = {}, showProps = false) => {
   const {
     url = 'https://microlink.io',
     sizes = ['normal', 'small', 'large'],
@@ -65,5 +65,3 @@ const createStoryEntry = (storyProps = {}, showProps = false) => {
     </StoryEntry>
   )
 }
-
-export default createStoryEntry

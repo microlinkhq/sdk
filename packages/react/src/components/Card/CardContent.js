@@ -1,7 +1,7 @@
 /* global URL */
 
 import React, { useCallback, useMemo, useContext } from 'react'
-import styled, { css } from 'styled-components'
+import { styled, css } from 'styled-components'
 import CardText from './CardText'
 
 import { transition } from '../../theme'
@@ -51,10 +51,10 @@ const Header = styled('header').attrs({ className: classNames.title })`
     font-size: ${!isSmall(cardSize) ? '16px' : '15px'};
 
     ${isSmall(cardSize) &&
-      css`
-        min-width: 0;
-        padding-right: 14px;
-      `}
+    css`
+      min-width: 0;
+      padding-right: 14px;
+    `}
   `}
 `
 

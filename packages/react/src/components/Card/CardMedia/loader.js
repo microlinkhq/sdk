@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import { styled, css } from 'styled-components'
 import { transition } from '../../../theme'
 
 export const ImageLoadCatcher = styled('img')`
@@ -22,8 +22,8 @@ export const loadingOverlay = css`
     will-change: opacity;
 
     ${({ isLoading }) => css`
-      opacity: ${(isLoading ? 1 : 0)};
-      visibility: ${(isLoading ? 'visible' : 'hidden')};
+      opacity: ${isLoading ? 1 : 0};
+      visibility: ${isLoading ? 'visible' : 'hidden'};
     `};
   }
 `

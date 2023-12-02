@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 import { font, transition } from '../../../../../theme'
 

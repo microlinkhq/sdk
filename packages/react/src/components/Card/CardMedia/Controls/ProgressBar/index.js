@@ -1,5 +1,5 @@
 import React, { useCallback, useContext, useMemo, useRef } from 'react'
-import styled, { css } from 'styled-components'
+import { styled, css } from 'styled-components'
 
 import { transition } from '../../../../../theme'
 import {
@@ -153,10 +153,10 @@ const ProgressBar = ({
     return 0
   }, [])
 
-  const progressRatio = useMemo(() => clampNumber(progress / duration, 0, 1), [
-    duration,
-    progress
-  ])
+  const progressRatio = useMemo(
+    () => clampNumber(progress / duration, 0, 1),
+    [duration, progress]
+  )
 
   const progressPercent = useMemo(
     () => `${clampNumber(progressRatio * 100, 1, 99)}%`,
@@ -212,10 +212,10 @@ const ProgressBar = ({
     [onClick, onMouseDown, onMouseOver]
   )
 
-  const showAccessories = useMemo(() => isDragging || isHovering, [
-    isDragging,
-    isHovering
-  ])
+  const showAccessories = useMemo(
+    () => isDragging || isHovering,
+    [isDragging, isHovering]
+  )
 
   return (
     <OuterWrap cardSize={size} ref={wrapRef} {...mouseEvents}>

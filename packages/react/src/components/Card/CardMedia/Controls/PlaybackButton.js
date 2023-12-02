@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import styled, { css } from 'styled-components'
+import { styled, css } from 'styled-components'
 
 import MediaButton from './MediaButton'
 import { classNames, isSmall, isLarge, media } from '../../../../utils'
@@ -50,8 +50,8 @@ const PlaybackButtonWrap = styled(MediaButton).attrs({
       padding: ${isLarge(cardSize) ? 0 : '8px'};
 
       ${!isLarge(cardSize) &&
-        !isSmall(cardSize) &&
-        media.mobile`
+      !isSmall(cardSize) &&
+      media.mobile`
         width: calc(${iconSizes.small} * 1.2);
         height: calc(${iconSizes.small} * 1.2);
       `}
@@ -60,9 +60,10 @@ const PlaybackButtonWrap = styled(MediaButton).attrs({
 `
 
 const PlaybackButton = ({ isPlaying, ...props }) => {
-  const PlaybackComponent = useMemo(() => (isPlaying ? Pause : Play), [
-    isPlaying
-  ])
+  const PlaybackComponent = useMemo(
+    () => (isPlaying ? Pause : Play),
+    [isPlaying]
+  )
 
   return (
     <PlaybackButtonWrap title={isPlaying ? 'Pause' : 'Play'} {...props}>
