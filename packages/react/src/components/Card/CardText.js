@@ -19,8 +19,8 @@ const StyledClamp = styled(Clamp)`
     color: inherit;
     margin: 0;
 
-    ${({ useNanoClamp }) =>
-      !useNanoClamp &&
+    ${({ $useNanoClamp }) =>
+      !$useNanoClamp &&
       css`
         overflow: hidden;
         white-space: nowrap;
@@ -35,7 +35,7 @@ const CardText = ({ useNanoClamp = true, children, ...props }) => {
     : { ...props, as: 'p', title: children }
 
   return (
-    <StyledClamp useNanoClamp={useNanoClamp} {...textProps}>
+    <StyledClamp $useNanoClamp={useNanoClamp} {...textProps}>
       {children}
     </StyledClamp>
   )

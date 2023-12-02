@@ -125,7 +125,7 @@ const CardContent = () => {
   return (
     <Content $cardSize={size}>
       <Header $cardSize={size}>
-        <CardText useNanoClamp={false}>{title}</CardText>
+        <CardText $useNanoClamp={false}>{title}</CardText>
       </Header>
       {!isSmallCard && (
         <Description $cardSize={size}>
@@ -133,7 +133,7 @@ const CardContent = () => {
         </Description>
       )}
       <Footer $cardSize={size}>
-        <Author useNanoClamp={false}>{formattedUrl}</Author>
+        <Author $useNanoClamp={false}>{formattedUrl}</Author>
         <PoweredBy onClick={handleOnClick} />
       </Footer>
     </Content>
