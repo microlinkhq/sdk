@@ -74,7 +74,6 @@
     "build": "NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs",
     "build-storybook": "storybook build",
     "pretest": "npm run build",
-    "start": "node scripts/start.js",
     "storybook": "storybook dev -p 6006",
     "test": "ava"
   },

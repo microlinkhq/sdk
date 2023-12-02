@@ -1,3 +1,4 @@
+import React from 'react'
 import { Story } from './util/story'
 
 export default { title: 'setData' }
@@ -33,7 +34,8 @@ export const preferMedia = {
         url: 'https://youtube.com',
         sizes: ['normal'],
         media: ['iframe', 'video', 'audio'],
-        setData: data => ({
+        fetchData: false,
+        setData: () => ({
           iframe: null,
           audio: {
             url: 'https://invalidurl.lol',
@@ -59,7 +61,8 @@ export const preferMedia = {
         url: 'https://example.com',
         sizes: ['normal'],
         media: ['iframe', 'video', 'audio'],
-        setData: data => ({
+        fetchData: false,
+        setData: () => ({
           iframe: {
             html: "<marquee>welcome to microlink.io! You're the visitor number 12242! CONGRATS!! You win an API key, just send 1$ to hello@microlink.io for receiving it into your inbox</marquee>",
             scripts: []

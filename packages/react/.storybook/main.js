@@ -16,9 +16,6 @@ const config = {
         useSWC: true
       }
     }
-  },
-  docs: {
-    autodocs: 'tag'
   }
 }
 export default config
