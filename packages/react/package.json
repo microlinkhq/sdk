@@ -50,18 +50,19 @@
     "@storybook/react": "7",
     "@storybook/react-webpack5": "7",
     "@storybook/test": "7",
+    "ava": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
+    "execa": "latest",
     "lodash": "latest",
     "prop-types": "latest",
-    "react": "^17",
-    "react-dom": "^17",
+    "react": "18",
+    "react-dom": "18",
     "rollup": "latest",
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-visualizer": "latest",
     "storybook": "7",
-    "styled-components": "latest",
-    "vitest": "latest"
+    "styled-components": "latest"
   },
   "engines": {
     "node": ">= 10"
@@ -75,13 +76,13 @@
     "pretest": "npm run build",
     "start": "node scripts/start.js",
     "storybook": "storybook dev -p 6006",
-    "test": "vitest"
+    "test": "ava"
   },
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 17",
     "react-dom": ">= 17",
-    "styled-components": "^5"
+    "styled-components": " >= 5"
   },
   "publishConfig": {
     "access": "public"
