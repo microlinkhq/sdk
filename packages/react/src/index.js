@@ -1,11 +1,12 @@
 /* eslint-disable multiline-ternary */
 
 import React, {
-  useState,
-  useEffect,
   useCallback,
+  useContext,
+  useEffect,
   useMemo,
-  useContext
+  useRef,
+  useState
 } from 'react'
 
 import PropTypes from 'prop-types'
@@ -58,7 +59,7 @@ const Card = props => {
     [lazy]
   )
   const lazyOptions = useMemo(() => (isObject(lazy) ? lazy : undefined), [lazy])
-  const cardRef = React.useRef(null)
+  const cardRef = useRef(null)
   const hasIntersected = useIntersectionObserver(
     isLazyEnabled,
     cardRef,
