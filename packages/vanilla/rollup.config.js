@@ -14,6 +14,7 @@ const plugins = ({ compress }) => [
   replace({
     preventAssignment: true,
     values: {
+      'styledComponents.styled': 'styledComponents',
       'process.env.NODE_ENV': JSON.stringify('production'),
       __VERSION__: require('./package').version
     }

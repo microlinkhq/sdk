@@ -19,6 +19,7 @@ const plugins = ({ compress }) =>
       preventAssignment: true,
       values: {
         'process.env.NODE_ENV': JSON.stringify('production'),
+        'styled$1.styled': 'styled$1',
         __VERSION__: require('./package').version
       }
     }),
