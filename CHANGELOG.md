@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.17](https://github.com/microlinkhq/sdk/compare/v5.5.16...v5.5.17) (2023-12-10)
+
+### Bug Fixes
+
+* script ([12c45c5](https://github.com/microlinkhq/sdk/commit/12c45c5f31cdb33d99871573466c240cb966284f))
+* vanilla build alias ([7e004ec](https://github.com/microlinkhq/sdk/commit/7e004ecaa493c4f667fd54b91c5811f994c5ed18))
+
 ## [5.5.16](https://github.com/microlinkhq/sdk/compare/v5.5.15...v5.5.16) (2023-12-02)
 
 ### Bug Fixes
