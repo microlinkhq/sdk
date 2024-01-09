@@ -53,7 +53,7 @@
     "ava": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
-    "execa": "latest",
+    "tinyspawn": "latest",
     "lodash": "latest",
     "prop-types": "latest",
     "react": "18",

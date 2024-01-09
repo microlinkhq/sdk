@@ -1,8 +1,8 @@
-import { $ } from 'execa'
+import $ from 'tinyspawn'
 import test from 'ava'
 
-const evalScript = code => $`node --eval ${code}`.then(({ stdout }) => stdout)
-evalScript.esm = code => $`node --input-type module --eval ${code}`.then(({ stdout }) => stdout)
+const evalScript = (code, flags = []) => $('node', ['--eval', code, ...flags]).then(({ stdout }) => stdout)
+evalScript.esm = code => evalScript(code, ['--input-type', 'module'])
 
 test('cjs', async t => {
   t.snapshot((await evalScript("console.log(require('./dist/microlink.cjs'))")))
