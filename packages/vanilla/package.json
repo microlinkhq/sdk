@@ -2,7 +2,7 @@
   "name": "@microlink/vanilla",
   "description": "Turn links into beautiful previews.",
   "homepage": "https://microlink.io/sdk",
-  "version": "5.5.17",
+  "version": "5.5.18",
   "main": "dist/microlink.cjs",
   "module": "dist/microlink.mjs",
   "jsnext:main": "dist/microlink.mjs",
@@ -25,7 +25,7 @@
     "vanilla"
   ],
   "dependencies": {
-    "@microlink/react": "^5.5.16"
+    "@microlink/react": "^5.5.18"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",
