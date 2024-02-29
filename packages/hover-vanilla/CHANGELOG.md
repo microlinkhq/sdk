@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.19](https://github.com/microlinkhq/sdk/compare/v5.5.18...v5.5.19) (2024-02-29)
+
+### Bug Fixes
+
+* **vanilla:** disable mangle ([abfdc45](https://github.com/microlinkhq/sdk/commit/abfdc45a404df4a491f28db2713ddfe9e2a95aa4))
+
 ## [5.5.18](https://github.com/microlinkhq/sdk/compare/v5.5.17...v5.5.18) (2024-01-09)
 
 **Note:** Version bump only for package @microlink/hover-vanilla
