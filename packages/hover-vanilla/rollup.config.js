@@ -12,7 +12,7 @@ const plugins = ({ compress }) =>
   [
     commonjs(),
     nodeResolve(),
-    compress && terser(),
+    compress && terser({ mangle: false }),
     filesize(),
     visualizer({ template: 'treemap' }),
     replace({
