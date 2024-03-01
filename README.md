@@ -3,7 +3,7 @@
   <img src="https://github.com/microlinkhq/cdn/raw/master/dist/banner/sdk-dark.png#gh-dark-mode-only" alt="microlink sdk">
 </div>
 
-###### [Documentation](https://microlink.io/sdk) | [Storybook](https://sdk-react.microlink.io) | [Chat](https://microlink.io/chat)
+###### [Documentation](https://microlink.io/sdk) | [Storybook](https://sdk-react.microlink.io) | [Vanilla](https://sdk-vanilla.microlink.io/)
 
 ## Installation
 
