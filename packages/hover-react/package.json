@@ -47,7 +47,7 @@
     "@storybook/builder-webpack5": "~6.5.16",
     "@storybook/manager-webpack5": "~6.5.16",
     "@storybook/react": "~6.5.16",
-    "@storybook/theming": "~6.5.16",
+    "@storybook/theming": "~8.0.0",
     "babel-eslint": "latest",
     "babel-loader": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
