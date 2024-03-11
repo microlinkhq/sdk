@@ -49,7 +49,7 @@
     "@storybook/blocks": "7",
     "@storybook/react": "7",
     "@storybook/react-webpack5": "7",
-    "@storybook/test": "7",
+    "@storybook/test": "8",
     "ava": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
     "babel-plugin-transform-react-remove-prop-types": "latest",
