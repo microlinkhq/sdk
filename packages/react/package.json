@@ -24,7 +24,7 @@
     "react"
   ],
   "dependencies": {
-    "@microlink/mql": "~0.12.2",
+    "@microlink/mql": "~0.13.4",
     "localhost-url-regex": "~1.0.4",
     "nanoclamp": "~2.0.4"
   },
