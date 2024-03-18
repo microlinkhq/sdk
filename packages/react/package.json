@@ -46,7 +46,7 @@
     "@storybook/addon-a11y": "7",
     "@storybook/addon-essentials": "7",
     "@storybook/addon-interactions": "7",
-    "@storybook/blocks": "7",
+    "@storybook/blocks": "8",
     "@storybook/react": "7",
     "@storybook/react-webpack5": "7",
     "@storybook/test": "7",
