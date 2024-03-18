@@ -48,7 +48,7 @@
     "@storybook/addon-interactions": "7",
     "@storybook/blocks": "7",
     "@storybook/react": "7",
-    "@storybook/react-webpack5": "7",
+    "@storybook/react-webpack5": "8",
     "@storybook/test": "7",
     "ava": "latest",
     "babel-plugin-transform-react-pure-class-to-function": "latest",
