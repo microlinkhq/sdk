@@ -60,7 +60,7 @@
     "rollup": "latest",
     "rollup-plugin-filesize": "latest",
     "rollup-plugin-visualizer": "latest",
-    "storybook": "7",
+    "storybook": "8",
     "styled-components": "latest",
     "tinyspawn": "latest"
   },
