@@ -1,7 +1,7 @@
 import MicrolinkHover from '@microlink/hover-react'
 import localhostUrl from 'localhost-url-regex'
+import { createRoot } from 'react-dom'
 import styled from 'styled-components'
-import ReactDOM from 'react-dom'
 import React from 'react'
 
 function toArray (input) {
@@ -36,7 +36,7 @@ function parseObject (obj) {
 
 function microlink (selector, opts, rootNode) {
   return toArray(selector).forEach(function (el) {
-    ReactDOM.render(
+    createRoot(rootNode || el).render(
       React.createElement(
         MicrolinkHover.withHover,
         Object.assign(
@@ -49,8 +49,7 @@ function microlink (selector, opts, rootNode) {
           opts,
           parseObject(el.dataset)
         )
-      ),
-      rootNode || el
+      )
     )
   })
 }
