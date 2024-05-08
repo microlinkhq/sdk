@@ -35,7 +35,7 @@
     "@ksmithut/prettier-standard": "latest",
     "@lerna-lite/cli": "latest",
     "@lerna-lite/publish": "latest",
-    "eslint": "latest",
+    "eslint": "8",
     "eslint-config-next": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
@@ -66,7 +66,12 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
-    ]
+    ],
+    "rules": {
+      "body-max-line-length": [
+        0
+      ]
+    }
   },
   "eslintConfig": {
     "extends": "eslint-config-next",

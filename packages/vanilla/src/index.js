@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
 import Microlink from '@microlink/react'
+import { createRoot } from 'react-dom'
+import React from 'react'
 
 function parseJSON (value) {
   try {
@@ -28,8 +28,7 @@ function toArray (input) {
 function microlink (selector, opts, rootNode) {
   return toArray(selector).forEach(function (el) {
     el.classList.add('microlink_vanilla')
-
-    ReactDOM.render(
+    createRoot(rootNode || el).render(
       React.createElement(
         Microlink,
         Object.assign(
@@ -40,8 +39,7 @@ function microlink (selector, opts, rootNode) {
           opts,
           parseObject(el.dataset)
         )
-      ),
-      rootNode || el
+      )
     )
   })
 }
