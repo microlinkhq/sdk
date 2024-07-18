@@ -209,24 +209,39 @@ microlink.io/${error.code.toLowerCase()}
   )
 }
 
-const Microlink = props => (
-  <GlobalState {...props}>{otherProps => <Card {...otherProps} />}</GlobalState>
+const Microlink = ({
+  className = '',
+  apiKey = undefined,
+  autoPlay = true,
+  controls = true,
+  direction = 'ltr',
+  lazy = true,
+  loop = true,
+  media = ['iframe', 'video', 'audio', 'image', 'logo'],
+  fetchData = true,
+  muted = true,
+  playsInline = true,
+  size = 'normal',
+  ...props
+}) => (
+  <GlobalState
+    className={className}
+    apiKey={apiKey}
+    autoPlay={autoPlay}
+    controls={controls}
+    direction={direction}
+    lazy={lazy}
+    loop={loop}
+    media={media}
+    fetchData={fetchData}
+    muted={muted}
+    playsInline={playsInline}
+    size={size}
+    {...props}
+  >
+    {otherProps => <Card {...otherProps} />}
+  </GlobalState>
 )
-
-Microlink.defaultProps = {
-  className: '',
-  apiKey: undefined,
-  autoPlay: true,
-  controls: true,
-  direction: 'ltr',
-  lazy: true,
-  loop: true,
-  media: ['iframe', 'video', 'audio', 'image', 'logo'],
-  fetchData: true,
-  muted: true,
-  playsInline: true,
-  size: 'normal'
-}
 
 Microlink.propTypes = {
   apiKey: PropTypes.string,
