@@ -38,10 +38,10 @@ const dash = keyframes`
   }
 `
 
-const Wrap = styled(MediaButton).attrs(({ isVisible }) => ({
+const Wrap = styled(MediaButton).attrs(({ $isVisible }) => ({
   style: {
-    opacity: isVisible ? 1 : 0,
-    visibility: isVisible ? 'visible' : 'hidden'
+    opacity: $isVisible ? 1 : 0,
+    visibility: $isVisible ? '$visible' : 'hidden'
   }
 }))(({ $cardSize }) => {
   const size = `${getSpinnerSize($cardSize)}px`
@@ -73,8 +73,8 @@ const Circle = styled('circle')`
   will-change: stroke-dasharray, stroke-dashoffset;
 `
 
-const Spinner = ({ size, isVisible }) => (
-  <Wrap $cardSize={size} className={classNames.spinner} isVisible={isVisible}>
+const Spinner = ({ size, $isVisible }) => (
+  <Wrap $cardSize={size} className={classNames.spinner} $isVisible={$isVisible}>
     <Svg viewBox='0 0 50 50'>
       <Circle cx='25' cy='25' r='20' />
     </Svg>

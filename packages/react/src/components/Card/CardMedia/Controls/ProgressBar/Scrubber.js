@@ -9,12 +9,12 @@ const scrubberSizeScales = { normal: 0.8, small: 0.9 }
 const getScrubberSize = size =>
   Math.floor(SCRUBBER_SIZE * (scrubberSizeScales[size] || 1))
 
-const Scrubber = styled('div').attrs(({ isVisible, positionX }) => ({
+const Scrubber = styled('div').attrs(({ $isVisible, $positionX }) => ({
   style: {
-    left: positionX,
-    transform: `scale(${isVisible ? 1 : 0.5}) translate(-50%, -50%)`,
-    opacity: isVisible ? 1 : 0,
-    visibility: isVisible ? 'visible' : 'hidden'
+    left: $positionX,
+    transform: `scale(${$isVisible ? 1 : 0.5}) translate(-50%, -50%)`,
+    opacity: $isVisible ? 1 : 0,
+    visibility: $isVisible ? '$visible' : 'hidden'
   }
 }))`
   position: absolute;

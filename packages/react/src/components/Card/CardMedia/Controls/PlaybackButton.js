@@ -59,14 +59,14 @@ const PlaybackButtonWrap = styled(MediaButton).attrs({
   }
 `
 
-const PlaybackButton = ({ isPlaying, ...props }) => {
+const PlaybackButton = ({ $isPlaying, ...props }) => {
   const PlaybackComponent = useMemo(
-    () => (isPlaying ? Pause : Play),
-    [isPlaying]
+    () => ($isPlaying ? Pause : Play),
+    [$isPlaying]
   )
 
   return (
-    <PlaybackButtonWrap title={isPlaying ? 'Pause' : 'Play'} {...props}>
+    <PlaybackButtonWrap title={$isPlaying ? 'Pause' : 'Play'} {...props}>
       <PlaybackIcon as={PlaybackComponent} />
     </PlaybackButtonWrap>
   )

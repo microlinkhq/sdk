@@ -23,7 +23,7 @@ export const loadingOverlay = css`
 
     ${({ $isLoading }) => css`
       opacity: ${$isLoading ? 1 : 0};
-      visibility: ${$isLoading ? 'visible' : 'hidden'};
+      visibility: ${$isLoading ? '$visible' : 'hidden'};
     `};
   }
 `

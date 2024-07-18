@@ -104,7 +104,7 @@ const Card = props => {
       }
 
       const imageUrl = getUrlPath(media)
-      const { color, background_color: backgroundColor } = media
+      const { color, background_color: $backgroundColor } = media
 
       updateState({
         url,
@@ -116,7 +116,7 @@ const Card = props => {
         audioUrl,
         isVideo,
         isAudio,
-        backgroundColor
+        $backgroundColor
       })
 
       setLoading(false)

@@ -7,8 +7,8 @@ import { media, isLarge } from '../../utils'
 
 const HEIGHT = '382px'
 
-const contrastStyle = ({ backgroundColor, color }) => css`
-  background-color: ${backgroundColor};
+const contrastStyle = ({ $backgroundColor, color }) => css`
+  background-color: ${$backgroundColor};
   border-color: ${color};
   transition-property: filter;
   will-change: filter;
@@ -72,10 +72,10 @@ const Element = styled('a')(
   ({ $isLoading, contrast }) => !$isLoading && !contrast && hoverStyle,
   ({ $cardSize }) => isLarge($cardSize) && largeStyle,
   ({ direction }) => direction === 'rtl' && rtlStyle,
-  ({ backgroundColor, color, contrast }) =>
-    contrast && color && backgroundColor && contrastStyle,
-  ({ backgroundColor, color, contrast }) =>
-    contrast && (!color || !backgroundColor) && hoverStyle
+  ({ $backgroundColor, color, contrast }) =>
+    contrast && color && $backgroundColor && contrastStyle,
+  ({ $backgroundColor, color, contrast }) =>
+    contrast && (!color || !$backgroundColor) && hoverStyle
 )
 
 const CardWrap = forwardRef(
@@ -90,14 +90,14 @@ const CardWrap = forwardRef(
     ref
   ) => {
     const {
-      state: { backgroundColor, color, title },
+      state: { $backgroundColor, color, title },
       props: { size: $cardSize }
     } = useContext(GlobalContext)
 
     return createElement(Element, {
       ...(as === 'a' ? { href, rel, target } : undefined),
       ...restProps,
-      backgroundColor,
+      $backgroundColor,
       $cardSize,
       color,
       ref,

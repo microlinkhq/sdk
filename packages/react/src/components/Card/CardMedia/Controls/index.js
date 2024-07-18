@@ -45,18 +45,18 @@ const OuterWrap = styled('div').attrs({ className: classNames.mediaControls })`
   flex-direction: column;
   pointer-events: auto;
 
-  ${({ hasInteracted, isDragging, isPlaying }) => {
+  ${({ $hasInteracted, $isDragging, $isPlaying }) => {
     const bg = 'rgba(0, 0, 0, 0.35)'
     const dragBg = 'rgba(0, 0, 0, 0.2)'
-    const isPaused = hasInteracted && !isPlaying
+    const isPaused = $hasInteracted && !$isPlaying
 
     return css`
       .${classNames.main}:hover & {
-        background: ${!isDragging ? bg : dragBg};
+        background: ${!$isDragging ? bg : dragBg};
       }
 
       .${classNames.main}:not(:hover) & {
-        opacity: ${!hasInteracted || isPaused ? 1 : 0};
+        opacity: ${!$hasInteracted || isPaused ? 1 : 0};
         ${isPaused && `background: ${bg}`};
       }
     `
@@ -78,8 +78,8 @@ const InnerWrap = styled('div')`
 const ControlsTop = styled('div')`
   flex: 1;
 
-  ${({ isVisible }) =>
-    !isVisible &&
+  ${({ $isVisible }) =>
+    !$isVisible &&
     css`
       *[class*='${classNames.mediaControls}']:not(.${classNames.progressTime}) {
         transition: ${transition.medium('opacity', 'visibility')};
@@ -111,13 +111,13 @@ const Controls = ({ MediaComponent, mediaProps }) => {
   const [buffered, setBuffered] = useState([])
   const [cursorX, setCursorX] = useState(0)
   const [hoveredTime, setHoveredTime] = useState(0)
-  const [isPlaying, setIsPlaying] = useState(autoPlay)
+  const [$isPlaying, setIsPlaying] = useState(autoPlay)
   const [isMuted, setIsMuted] = useState(muted)
   const [isBuffering, setIsBuffering] = useState(false)
-  const [isHovering, setIsHovering] = useState(false)
-  const [isDragging, setIsDragging] = useState(false)
+  const [$isHovering, setIsHovering] = useState(false)
+  const [$isDragging, setIsDragging] = useState(false)
   const [playbackRate, setPlaybackRate] = useState(1)
-  const [hasInteracted, setHasInteracted] = useState(autoPlay)
+  const [$hasInteracted, setHasInteracted] = useState(autoPlay)
   const [pausedByDrag, setPausedByDrag] = useState(false)
 
   const mediaRef = useRef()
@@ -173,7 +173,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
   const togglePlayback = useCallback(() => {
     if (mediaRef.current) {
       if (mediaRef.current.paused) {
-        if (!hasInteracted) {
+        if (!$hasInteracted) {
           setHasInteracted(true)
         }
 
@@ -182,7 +182,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
         mediaRef.current.pause()
       }
     }
-  }, [hasInteracted])
+  }, [$hasInteracted])
 
   const jumpTo = useCallback(time => {
     if (mediaRef.current) {
@@ -252,25 +252,25 @@ const Controls = ({ MediaComponent, mediaProps }) => {
       event.preventDefault()
       event.stopPropagation()
 
-      if (isDragging) {
+      if ($isDragging) {
         setIsDragging(false)
       } else {
         togglePlayback()
       }
     },
-    [isDragging, togglePlayback]
+    [$isDragging, togglePlayback]
   )
 
   const onWrapMouseMove = useCallback(
     event => {
-      if ((isDragging || isHovering) && mediaRef.current) {
+      if (($isDragging || $isHovering) && mediaRef.current) {
         event.preventDefault()
         const { cursor, time } = evaluateCursorPosition(event)
 
         setHoveredTime(time)
         setCursorX(cursor)
 
-        if (isDragging) {
+        if ($isDragging) {
           if (!mediaRef.current.paused) {
             mediaRef.current.pause()
             setPausedByDrag(true)
@@ -280,21 +280,21 @@ const Controls = ({ MediaComponent, mediaProps }) => {
         }
       }
     },
-    [evaluateCursorPosition, isDragging, isHovering, jumpTo]
+    [evaluateCursorPosition, $isDragging, $isHovering, jumpTo]
   )
 
   const onWrapMouseOver = useCallback(
     event => {
-      if (isDragging && event.buttons === 0) {
+      if ($isDragging && event.buttons === 0) {
         setIsDragging(false)
       }
     },
-    [isDragging]
+    [$isDragging]
   )
 
   const onWrapKeyDown = useCallback(
     event => {
-      if (isDragging) {
+      if ($isDragging) {
         return
       }
 
@@ -322,7 +322,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
         }
       }
     },
-    [isDragging, jumpTo, togglePlayback]
+    [$isDragging, jumpTo, togglePlayback]
   )
 
   const outerWrapEvents = useMemo(
@@ -337,8 +337,8 @@ const Controls = ({ MediaComponent, mediaProps }) => {
   )
 
   const outerWrapTitle = useMemo(
-    () => (hasInteracted ? { title: '' } : {}),
-    [hasInteracted]
+    () => ($hasInteracted ? { title: '' } : {}),
+    [$hasInteracted]
   )
 
   const bufferedMedia = useMemo(() => {
@@ -384,21 +384,21 @@ const Controls = ({ MediaComponent, mediaProps }) => {
       cursorX,
       duration,
       hoveredTime,
-      isDragging,
-      isHovering,
+      $isDragging,
+      $isHovering,
       onClick: onProgressBarClick,
       onMouseDown: onProgressBarMouseDown,
       onMouseOver: onProgressBarMouseOver,
       progress,
-      showTooltip: isDragging || isHovering
+      showTooltip: $isDragging || $isHovering
     }),
     [
       bufferedMedia,
       cursorX,
       duration,
       hoveredTime,
-      isDragging,
-      isHovering,
+      $isDragging,
+      $isHovering,
       onProgressBarClick,
       onProgressBarMouseDown,
       onProgressBarMouseOver,
@@ -408,7 +408,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
 
   useEffect(() => {
     if (
-      !isDragging &&
+      !$isDragging &&
       pausedByDrag &&
       mediaRef.current &&
       mediaRef.current.paused
@@ -416,7 +416,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
       mediaRef.current.play()
       setPausedByDrag(false)
     }
-  }, [pausedByDrag, isDragging])
+  }, [pausedByDrag, $isDragging])
 
   return (
     <>
@@ -433,20 +433,20 @@ const Controls = ({ MediaComponent, mediaProps }) => {
         <OuterWrap
           {...outerWrapTitle}
           tabIndex={0}
-          hasInteracted={hasInteracted}
-          isDragging={isDragging}
-          isPlaying={isPlaying}
+          $hasInteracted={$hasInteracted}
+          $isDragging={$isDragging}
+          $isPlaying={$isPlaying}
           {...outerWrapEvents}
         >
-          <Spinner size={size} isVisible={isBuffering} />
+          <Spinner size={size} $isVisible={isBuffering} />
 
-          {!hasInteracted ? (
+          {!$hasInteracted ? (
             <InnerWrap>
               <PlaybackButton $cardSize={size} />
             </InnerWrap>
           ) : (
             <>
-              <ControlsTop isVisible={!isDragging}>
+              <ControlsTop $isVisible={!$isDragging}>
                 <InnerWrap>
                   {isNotSmall && (
                     <SeekButton
@@ -457,7 +457,7 @@ const Controls = ({ MediaComponent, mediaProps }) => {
                     />
                   )}
 
-                  <PlaybackButton $cardSize={size} isPlaying={isPlaying} />
+                  <PlaybackButton $cardSize={size} $isPlaying={$isPlaying} />
 
                   {isNotSmall && (
                     <SeekButton

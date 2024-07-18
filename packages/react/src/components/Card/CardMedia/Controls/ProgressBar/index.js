@@ -34,8 +34,8 @@ const OuterWrap = styled('div').attrs(() => ({
   backface-visibility: hidden;
 `
 
-const BarsWrap = styled('div').attrs(({ $cardSize, isDragging }) => {
-  if (isDragging) {
+const BarsWrap = styled('div').attrs(({ $cardSize, $isDragging }) => {
+  if ($isDragging) {
     const activeHeight = getProgressBarActiveHeight($cardSize)
 
     return {
@@ -77,9 +77,9 @@ const ProgressLine = styled('div')`
   overflow: hidden;
 `
 
-const ProgressMask = styled('div').attrs(({ maskScale }) => ({
+const ProgressMask = styled('div').attrs(({ $maskScale }) => ({
   style: {
-    transform: `scaleX(${maskScale})`
+    transform: `scaleX(${$maskScale})`
   }
 }))`
   position: absolute;
@@ -93,12 +93,12 @@ const ProgressMask = styled('div').attrs(({ maskScale }) => ({
 `
 
 const ProgressHover = styled('div').attrs(
-  ({ cursorRatio, isHovering, progressPercent }) => ({
+  ({ $cursorRatio, $isHovering, $progressPercent }) => ({
     style: {
-      left: progressPercent,
-      transform: `scaleX(${cursorRatio})`,
-      opacity: isHovering ? 1 : 0,
-      visibility: isHovering ? 'visible' : 'hidden'
+      left: $progressPercent,
+      transform: `scaleX(${$cursorRatio})`,
+      opacity: $isHovering ? 1 : 0,
+      visibility: $isHovering ? '$visible' : 'hidden'
     }
   })
 )`
@@ -109,7 +109,7 @@ const ProgressHover = styled('div').attrs(
   background: rgba(255, 255, 255, 0.4);
   transform-origin: left center;
   transition: ${transition.short('opacity', 'visibility')};
-  will-change: left, transform, opacity, visible;
+  will-change: left, transform, opacity, $visible;
 `
 
 const BufferedChunk = styled('div').attrs(({ start, end }) => ({
@@ -129,8 +129,8 @@ const ProgressBar = ({
   cursorX,
   duration,
   hoveredTime,
-  isDragging,
-  isHovering,
+  $isDragging,
+  $isHovering,
   onClick,
   onMouseDown,
   onMouseOver,
@@ -158,12 +158,12 @@ const ProgressBar = ({
     [duration, progress]
   )
 
-  const progressPercent = useMemo(
+  const $progressPercent = useMemo(
     () => `${clampNumber(progressRatio * 100, 1, 99)}%`,
     [progressRatio]
   )
 
-  const cursorRatio = useMemo(() => {
+  const $cursorRatio = useMemo(() => {
     if (wrapRef.current) {
       const wrapWidth = getWrapWidth()
       const startPoint = progressRatio * wrapWidth
@@ -213,39 +213,39 @@ const ProgressBar = ({
   )
 
   const showAccessories = useMemo(
-    () => isDragging || isHovering,
-    [isDragging, isHovering]
+    () => $isDragging || $isHovering,
+    [$isDragging, $isHovering]
   )
 
   return (
     <OuterWrap $cardSize={size} ref={wrapRef} {...mouseEvents}>
-      <BarsWrap $cardSize={size} isDragging={isDragging}>
+      <BarsWrap $cardSize={size} $isDragging={$isDragging}>
         <ProgressLine>
           <ProgressHover
-            cursorRatio={cursorRatio}
-            isHovering={isHovering}
-            progressPercent={progressPercent}
+            $cursorRatio={$cursorRatio}
+            $isHovering={$isHovering}
+            $progressPercent={$progressPercent}
           />
 
           {bufferedMediaChunks.map(({ key, ...chunk }) => (
             <BufferedChunk key={key} {...chunk} />
           ))}
 
-          <ProgressMask maskScale={progressRatio} />
+          <ProgressMask $maskScale={progressRatio} />
         </ProgressLine>
 
         <Scrubber
           $cardSize={size}
-          isVisible={showAccessories}
-          positionX={progressPercent}
+          $isVisible={showAccessories}
+          $positionX={$progressPercent}
         />
 
         {!isSmallCard && (
           <Tooltip
-            isDragging={isDragging}
-            isVisible={showAccessories}
+            $isDragging={$isDragging}
+            $isVisible={showAccessories}
             label={tooltipLabel}
-            positionX={tooltipPositionX}
+            $positionX={tooltipPositionX}
             ref={tooltipRef}
             size={size}
           />
