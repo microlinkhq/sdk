@@ -78,29 +78,34 @@ const Element = styled('a')(
     contrast && (!color || !backgroundColor) && hoverStyle
 )
 
-const CardWrap = forwardRef(({ href, rel, target, ...restProps }, ref) => {
-  const {
-    state: { backgroundColor, color, title },
-    props: { size: $cardSize }
-  } = useContext(GlobalContext)
+const CardWrap = forwardRef(
+  (
+    {
+      href,
+      rel = 'noopener noreferrer',
+      target = '_blank',
+      as = 'a',
+      ...restProps
+    },
+    ref
+  ) => {
+    const {
+      state: { backgroundColor, color, title },
+      props: { size: $cardSize }
+    } = useContext(GlobalContext)
 
-  return createElement(Element, {
-    ...(restProps.as === 'a' ? { href, rel, target } : undefined),
-    ...restProps,
-    backgroundColor,
-    $cardSize,
-    color,
-    ref,
-    title
-  })
-})
+    return createElement(Element, {
+      ...(as === 'a' ? { href, rel, target } : undefined),
+      ...restProps,
+      backgroundColor,
+      $cardSize,
+      color,
+      ref,
+      title
+    })
+  }
+)
 
 CardWrap.displayName = 'CardWrap'
-
-CardWrap.defaultProps = {
-  as: 'a',
-  rel: 'noopener noreferrer',
-  target: '_blank'
-}
 
 export default CardWrap
