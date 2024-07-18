@@ -88,7 +88,7 @@ const PlaybackRateButton = styled(MediaButton).attrs({
 `
 
 const TimeLabel = styled('span').attrs({ className: classNames.progressTime })`
-  margin: ${({ right }) => (!right ? '0 auto 0 0' : '0 0 0 auto')};
+  margin: ${({ $right }) => (!$right ? '0 auto 0 0' : '0 0 0 auto')};
   font-family: ${font.mono};
   font-size: 12px;
   padding: 0 16px;
@@ -131,7 +131,7 @@ const FooterControls = ({
         <span>{playbackRate}x</span>
       </PlaybackRateButton>
 
-      {isLargeCard && <TimeLabel right>{endTime}</TimeLabel>}
+      {isLargeCard && <TimeLabel $right>{endTime}</TimeLabel>}
     </BottomControls>
   )
 }

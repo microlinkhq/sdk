@@ -9,13 +9,13 @@ const sizeScales = { normal: 0.8 }
 const getMarkerFontSize = size => BASE_FONT_SIZE * (sizeScales[size] || 1)
 
 const TooltipBase = styled('span').attrs(
-  ({ position, isDragging, visible }) => ({
+  ({ position, $isDragging, $visible }) => ({
     style: {
       left: `${position}px`,
-      top: visible ? '-4px' : '0px',
-      visibility: visible ? 'visible' : 'hidden',
-      opacity: visible ? 1 : 0,
-      transform: `translate(-50%, ${!isDragging ? -100 : -110}%)`
+      top: $visible ? '-4px' : '0px',
+      visibility: $visible ? '$visible' : 'hidden',
+      opacity: $visible ? 1 : 0,
+      transform: `translate(-50%, ${!$isDragging ? -100 : -110}%)`
     }
   })
 )`
@@ -35,14 +35,14 @@ const TooltipBase = styled('span').attrs(
 `
 
 const Tooltip = forwardRef(
-  ({ isDragging, isVisible, label, positionX, size, ...props }, ref) => (
+  ({ $isDragging, $isVisible, label, $positionX, size, ...props }, ref) => (
     <>
       <TooltipBase
-        visible={isVisible}
-        position={positionX}
+        $visible={$isVisible}
+        position={$positionX}
         $cardSize={size}
         ref={ref}
-        isDragging={isDragging}
+        $isDragging={$isDragging}
         {...props}
       >
         {label}
