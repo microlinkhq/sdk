@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.23](https://github.com/microlinkhq/sdk/compare/v5.5.22...v5.5.23) (2025-02-15)
+
+**Note:** Version bump only for package @microlink/hover-react
+
 ## [5.5.22](https://github.com/microlinkhq/sdk/compare/v5.5.21...v5.5.22) (2024-07-18)
 
 **Note:** Version bump only for package @microlink/hover-react
