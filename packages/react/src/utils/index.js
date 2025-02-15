@@ -1,5 +1,5 @@
 import { fetchFromApi, getApiUrl as createApiUrl } from '@microlink/mql'
-import localhostUrl from 'localhost-url-regex'
+import isLocalAddress from 'is-local-address'
 import { css } from 'styled-components'
 
 export const isSSR = typeof window === 'undefined'
@@ -81,7 +81,7 @@ export const isLarge = cardSize => cardSize === 'large'
 export const isSmall = cardSize => cardSize === 'small'
 
 export const imageProxy = url =>
-  localhostUrl().test(url)
+  isLocalAddress(new URL(url).hostname)
     ? url
     : `https://images.weserv.nl/?${new URLSearchParams({
       url,

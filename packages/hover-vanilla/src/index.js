@@ -1,5 +1,5 @@
 import MicrolinkHover from '@microlink/hover-react'
-import localhostUrl from 'localhost-url-regex'
+import isLocalAddress from 'is-local-address'
 import { createRoot } from 'react-dom'
 import styled from 'styled-components'
 import React from 'react'
@@ -16,7 +16,10 @@ function toArray (input) {
       el.href = new URL(el.href).toString()
       return el
     })
-    .filter(el => el.href.startsWith('http') && !localhostUrl().test(el.href))
+    .filter(el => {
+      const { protocol, hostname } = new URL(el.href)
+      return protocol === 'http:' && !isLocalAddress(hostname)
+    })
 }
 
 function parseJSON (value) {
