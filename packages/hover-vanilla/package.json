@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "@microlink/hover-react": "^5.5.22",
-    "localhost-url-regex": "~1.0.4"
+    "is-local-address": "~2.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",
