@@ -24,7 +24,7 @@ const setData = () => ({
   url: 'https://microlink.io',
   date: '2020-05-07T15:10:41.692Z',
   logo: {
-    url: 'https://cdn.microlink.io/logo/trim.png',
+    url: 'https://cdn.microlink.io/logo/logo.png',
     type: 'png',
     size: 5050,
     height: 500,
