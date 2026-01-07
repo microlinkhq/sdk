@@ -29,13 +29,13 @@ const StyledClamp = styled(Clamp)`
   }
 `
 
-const CardText = ({ useNanoClamp = true, children, ...props }) => {
-  const textProps = useNanoClamp
+const CardText = ({ $useNanoClamp = true, children, ...props }) => {
+  const textProps = $useNanoClamp
     ? props
     : { ...props, as: 'p', title: children }
 
   return (
-    <StyledClamp $useNanoClamp={useNanoClamp} {...textProps}>
+    <StyledClamp $useNanoClamp={$useNanoClamp} {...textProps}>
       {children}
     </StyledClamp>
   )
