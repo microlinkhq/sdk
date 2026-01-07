@@ -36,7 +36,7 @@
     "@lerna-lite/cli": "latest",
     "@lerna-lite/publish": "latest",
     "eslint": "8",
-    "eslint-config-next": "latest",
+    "eslint-config-next": "14",
     "finepack": "latest",
     "git-authors-cli": "latest",
     "nano-staged": "latest",
