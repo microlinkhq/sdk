@@ -5,6 +5,7 @@
   "version": "5.5.24",
   "main": "dist/microlink.cjs",
   "module": "dist/microlink.mjs",
+  "types": "src/index.d.ts",
   "jsnext:main": "dist/microlink.mjs",
   "repository": {
     "directory": "packages/react",
