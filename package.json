@@ -36,7 +36,6 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@ksmithut/prettier-standard": "latest",
     "@lerna-lite/cli": "latest",
     "@lerna-lite/publish": "latest",
     "eslint": "8",
@@ -84,7 +83,6 @@
   },
   "nano-staged": {
     "*.js": [
-      "prettier-standard",
       "standard --fix"
     ],
     "package.json": [
