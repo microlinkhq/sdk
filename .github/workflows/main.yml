@@ -48,6 +48,7 @@ jobs:
         uses: pnpm/action-setup@v6
         with:
           version: latest
-          run_install: true
+      - name: Install
+        run: pnpm install --ignore-scripts
       - name: Test
         run: pnpm test
