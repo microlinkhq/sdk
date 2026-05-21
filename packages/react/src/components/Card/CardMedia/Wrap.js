@@ -26,7 +26,10 @@ const mediaSizeStyles = {
 }
 
 const StyledWrap = styled('div')`
-  background: transparent no-repeat center center / cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: block;
   overflow: hidden;
   height: auto;
