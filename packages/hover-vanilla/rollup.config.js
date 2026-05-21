@@ -5,6 +5,9 @@ import filesize from 'rollup-plugin-filesize'
 import replace from '@rollup/plugin-replace'
 import terser from '@rollup/plugin-terser'
 import copy from 'rollup-plugin-copy'
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
 
 const isProduction = process.env.NODE_ENV === 'production'
 

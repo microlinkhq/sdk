@@ -71,7 +71,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs",
+    "build": "NODE_ENV=production rollup -c rollup.config.js",
     "build-storybook": "storybook build",
     "pretest": "npm run build",
     "storybook": "storybook dev -p 6006",

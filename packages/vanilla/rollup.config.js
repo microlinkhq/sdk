@@ -4,6 +4,9 @@ import commonjs from '@rollup/plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
 import replace from '@rollup/plugin-replace'
 import terser from '@rollup/plugin-terser'
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
 
 const plugins = ({ compress }) => [
   commonjs(),

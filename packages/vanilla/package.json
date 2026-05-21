@@ -43,7 +43,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs",
+    "build": "NODE_ENV=production rollup -c rollup.config.js",
     "dev": "npm run build -- -w"
   },
   "license": "MIT",
