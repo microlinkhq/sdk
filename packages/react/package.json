@@ -55,7 +55,7 @@
     "babel-plugin-transform-react-remove-prop-types": "latest",
     "lodash": "latest",
     "prop-types": "latest",
-    "react": "18",
+    "react": "19",
     "react-dom": "18",
     "rollup": "latest",
     "rollup-plugin-filesize": "latest",
